@@ -1,0 +1,402 @@
+[
+	{
+		"id": "c5b12290-26b9-4659-9ca8-9aac47113ab9",
+		"name": "gpt-4o-2024-08-06",
+		"component": {
+			"vision": null,
+			"language": "GPT-4"
+		}
+	},
+	{
+		"id": "3b7f3638-9364-41c0-bbfe-5288176f3072",
+		"name": "LLaVA-NeXT-Video-7B-Qwen2",
+		"component": {
+			"vision": "Qwen2-7B",
+			"language": "SigLIP-So400m"
+		}
+	},
+	{
+		"id": "86657687-00d9-4968-90d3-5f4e3d8b6132",
+		"name": "MiniCPM-V 2.6",
+		"component": {
+			"vision": "Qwen2-7B",
+			"language": "SigLIP-So400m"
+		}
+	},
+	{
+		"id": "e9672027-30d6-4501-b17f-75152789cbc4",
+		"name": "mPLUG-Owl3",
+		"component": {
+			"vision": "Qwen2-7B",
+			"language": "SigLIP-So400m"
+		}
+	},
+	{
+		"id": "aef63eca-3dde-495a-a922-c803d956568f",
+		"name": "Qwen2.5-VL-3B-Instruct",
+		"component": {
+			"vision": "Qwen2.5",
+			"language": "Redesigned ViT"
+		}
+	},
+	{
+		"id": "82dd6b52-ee0e-487e-ae7f-c982050f8506",
+		"name": "MiniCPM-V",
+		"component": {
+			"vision": "MiniCPM 2B",
+			"language": "SigLIP SoViT-400m/14"
+		}
+	},
+	{
+		"id": "03383a4f-37a0-4046-80f1-52b61dc452a7",
+		"name": "EmbodiedGPT-8B",
+		"component": {
+			"vision": "LLaMA-7B",
+			"language": "ViT-G/14"
+		}
+	},
+	{
+		"id": "8a656dd4-3104-4471-b8d8-0d6368975f74",
+		"name": "Phi-3-vision-128k-instruct",
+		"component": {
+			"vision": "Phi-3 Mini",
+			"language": "CLIP ViT-L/14"
+		}
+	},
+	{
+		"id": "0963c6fe-8edb-4165-98c7-6070bb745abf",
+		"name": "LLava-7B",
+		"component": {
+			"vision": "Vicuna-7B",
+			"language": "CLIP"
+		}
+	},
+	{
+		"id": "65b0728a-15d2-4d76-909d-86a505c25405",
+		"name": "Instructblip-flant5xl",
+		"component": {
+			"vision": "Flan-T5-xl",
+			"language": "BLIP-2"
+		}
+	},
+	{
+		"id": "0de64c8a-593d-4961-929e-e6d06c1c4678",
+		"name": "llama-vid-7b-full-224-video-fps-1",
+		"component": {
+			"vision": "Vicuna-7B",
+			"language": "EVA-G"
+		}
+	},
+	{
+		"id": "80939e8a-be9d-4652-95e0-ff3c73a1ddda",
+		"name": "Video-LLaVA-7B",
+		"component": {
+			"vision": "Vicuna-7B",
+			"language": "EVA-G"
+		}
+	},
+	{
+		"id": "dfcea64f-ee5e-4ea6-a448-e09f2fb64271",
+		"name": "pllava-7b",
+		"component": {
+			"vision": "Vicuna-7B",
+			"language": "ViT/L"
+		}
+	},
+	{
+		"id": "587b8069-98e6-46a8-985b-4c607dff6b33",
+		"name": "navillm",
+		"component": {
+			"vision": "Vicuna-7B",
+			"language": "EVA-CLIP"
+		}
+	},
+	{
+		"id": "26d4f948-64f7-4cbb-a413-e7fec49dc45f",
+		"name": "BLIP-2-flant5xl",
+		"component": {
+			"vision": "Flan-T5-xl",
+			"language": "ViT-L/14 from CLIP and ViT-g/14 from EVA-CLIP"
+		}
+	},
+	{
+		"id": "8596e3d7-c65d-46e1-9063-16e83f0647cc",
+		"name": "llama-vid-7b-full-224",
+		"component": {
+			"vision": "Vicuna-7B",
+			"language": "EVA-G"
+		}
+	},
+	{
+		"id": "ba940652-9040-4510-b232-52da5cbce5a8",
+		"name": "MiniGPT-4-7B",
+		"component": {
+			"vision": "Vicuna-7B",
+			"language": "ViT-g/14 from EVA-CLIP"
+		}
+	},
+	{
+		"id": "f0fc7970-1e20-4ea2-a5fd-65ed7dd6802a",
+		"name": "GPT-O3",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "9321375f-e8e4-4b03-9f04-fbd2864afa2f",
+		"name": "Ours",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "25c4756a-f32e-4b4a-b826-99624617c140",
+		"name": "Gemini-1.5 Pro",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "94c703af-e678-410f-9bac-879d79afd993",
+		"name": "Gemini-1.5 Flash",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "989f3769-fe45-4472-85aa-a4f071577271",
+		"name": "LLaVA-NeXT-Video-72B",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "38e71976-4a59-41bf-9367-95f2fc5bf6f5",
+		"name": "LLaVA-OneVision-72B",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "f3590a86-b3b2-491e-8320-2fc48ec5f095",
+		"name": "Qwen2.5-VL-7B-Ins",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "6e39d9f5-4b6a-471d-92d6-07a37b559070",
+		"name": "InternVL2-40B",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "4f7bf0d0-bb2c-477d-9b76-94d6050eb664",
+		"name": "LLaVA-NeXT-Video-7B",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "5db29ede-6e63-432c-96c1-f65700028165",
+		"name": "InternVL2-8B",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "6d2b9e8a-97ff-400f-8ea1-f403c7452408",
+		"name": "GPT-4o",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "4e387c03-f76e-43e0-9d9c-d80f05e40ed4",
+		"name": "LLaVA-OneVision-7B",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "7a21af4c-f57d-4311-8fae-b7b8dafd03bd",
+		"name": "VILA-1.5-40B",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "51f2b003-5aa9-462a-a5b4-538ec3f28c17",
+		"name": "LongVA-7B",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "5f43440f-9161-462b-94ce-9dc03f676587",
+		"name": "GPT-4o",
+		"component": {
+			"vision": null,
+			"language": "GPT-4"
+		}
+	},
+	{
+		"id": "af35bb7c-f716-47a0-bcce-2f045a108735",
+		"name": "Gemini-2.0-flash",
+		"component": {
+			"vision": null,
+			"language": "gemini-2.0-flash"
+		}
+	},
+	{
+		"id": "50b75743-251c-40f8-ad52-0773e9865e88",
+		"name": "InternVL2.5-38B-MPO",
+		"component": {
+			"vision": "InternViT-6B-448px-V2_5",
+			"language": "Qwen2.5-32B-Instruct"
+		}
+	},
+	{
+		"id": "638048e4-d5ad-4e67-abfd-c326697048aa",
+		"name": "InternVL2.5-78B-MPO",
+		"component": {
+			"vision": "InternViT-6B-448px-V2_5",
+			"language": "Qwen2.5-72B-Instruct"
+		}
+	},
+	{
+		"id": "e8dafa04-5593-47ac-977b-73a5911edc74",
+		"name": "Qwen2.5-VL-72B-Ins",
+		"component": {
+			"vision": "Redesigned ViT",
+			"language": "Qwen2.5"
+		}
+	},
+	{
+		"id": "85034696-05d3-44c9-8fc6-1786f0d86aab",
+		"name": "Claude-3.5-Sonnet",
+		"component": {
+			"vision": null,
+			"language": "Claude-3.5-Sonnet"
+		}
+	},
+	{
+		"id": "9a722f4d-1622-4ed4-9482-5024b95e06fb",
+		"name": "Gemini-1.5-flash",
+		"component": {
+			"vision": null,
+			"language": "gemini-1.5-flash"
+		}
+	},
+	{
+		"id": "3cfdaff3-8301-4951-9f3b-cf8134b4ed10",
+		"name": "Qwen-VL-Max",
+		"component": {
+			"vision": "Redesigned ViT",
+			"language": "Qwen"
+		}
+	},
+	{
+		"id": "a0515273-7168-4717-a07a-b143b0208074",
+		"name": "GPT-4o-mini",
+		"component": {
+			"vision": null,
+			"language": "GPT-4o mini"
+		}
+	},
+	{
+		"id": "80bcf574-1d7c-4798-a1c0-37ac1c32a724",
+		"name": "InternVL2.5-78B",
+		"component": {
+			"vision": "InternViT-6B-448px-V2_5",
+			"language": "Qwen2.5-72B-Instruct"
+		}
+	},
+	{
+		"id": "63263829-1e9c-4ac5-bf29-965f540518a6",
+		"name": "InternVL2.5-38B",
+		"component": {
+			"vision": "InternViT-6B-448px-V2_5",
+			"language": "Qwen2.5-32B-Instruct"
+		}
+	},
+	{
+		"id": "87f1ac67-6ac8-4f58-9644-f877741326cb",
+		"name": "Llama-3.2-90B-Vision-Ins",
+		"component": {
+			"vision": "A separately trained vision adapter",
+			"language": "Llama 3.1"
+		}
+	},
+	{
+		"id": "cb6e23ea-bc8a-4bef-91d6-ba174280faaf",
+		"name": "Qwen2.5-VL-7B-Ins",
+		"component": {
+			"vision": "Redesigned ViT",
+			"language": "Qwen2.5"
+		}
+	},
+	{
+		"id": "ce19cba4-e888-4c92-9700-d25bc4dbbad3",
+		"name": "Gemini-1.5-Pro",
+		"component": {
+			"vision": null,
+			"language": "gemini-1.5-Pro"
+		}
+	},
+	{
+		"id": "e6010b47-eb88-403c-8aee-858d1c913af2",
+		"name": "Llama-3.2-11B-Vision-Ins",
+		"component": {
+			"vision": "A separately trained vision adapter",
+			"language": "Llama 3.1"
+		}
+	},
+	{
+		"id": "525c4c5c-e4ef-42ef-9a80-0b7d059f1c95",
+		"name": "InternVL2.5-8B",
+		"component": {
+			"vision": "InternViT-300M-448px-V2_5",
+			"language": "internlm2_5-7b-chat"
+		}
+	},
+	{
+		"id": "2bd83c3e-58ed-4898-a1a1-a445513e31c1",
+		"name": "Qwen2-VL-72B-Ins",
+		"component": {
+			"vision": "Redesigned ViT",
+			"language": "Qwen2"
+		}
+	},
+	{
+		"id": "69a2667c-2439-4c0a-b4dd-7fa2c134217c",
+		"name": "Qwen2-VL-7B-Ins",
+		"component": {
+			"vision": "Redesigned ViT",
+			"language": "Qwen2"
+		}
+	},
+	{
+		"id": "e40d9b56-19c8-4387-8f71-4a3b39d7d1ef",
+		"name": "InternVL25-8B-MPO",
+		"component": {
+			"vision": "InternViT-300M-448px-V2_5",
+			"language": "internlm2_5-7b-chat"
+		}
+	}
+]

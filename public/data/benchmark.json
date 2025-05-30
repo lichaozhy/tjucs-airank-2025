@@ -1,0 +1,61 @@
+[
+	{
+		"id": "034bf6b5-dc18-45da-bfaf-337589125632",
+		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
+		"name": "UniEQA",
+		"properties": {
+			"ObjectType": 0,
+			"ObjectProperty": 1,
+			"ObjectState": 2,
+			"SpatiaPerception": 3,
+			"ActionPerception": 4,
+			"TemporalPerception": 5,
+			"Affordance": 6,
+			"WorldKnowledge": 7,
+			"TaskRelatedObjectReasoning": 8,
+			"SituatedReasoning": 9,
+			"ClosedLoopPlanning": 10,
+			"OpenLoopPlanning": 11
+		}
+	},
+	{
+		"id": "ba0be521-6b10-4881-964c-97cd4d2d6070",
+		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
+		"name": "OpenEQA",
+		"properties": {
+			"ObjectType": 0,
+			"ObjectProperty": 1,
+			"ObjectState": 2,
+			"Affordance": 3,
+			"WorldKnowledge": 4,
+			"SpatialPerception": 5
+		}
+	},
+	{
+		"id": "25206b0f-a955-4e39-86cf-53dcc9528bfc",
+		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
+		"name": "VSI",
+		"properties": {
+			"ObjectCount": 0,
+			"AbsoluteDistance": 1,
+			"ObjectSize": 2,
+			"RoomSize": 3,
+			"RelativeDistance": 4,
+			"RelativeDirection": 5,
+			"RoutePlan": 6,
+			"AppearanceOrder": 7
+		}
+	},
+	{
+		"id": "73de273a-7d38-40c0-b869-2b2e6156c897",
+		"leaderboard": "263e7d41-65a5-4b7b-8f48-5c7b94ca916b",
+		"name": "EB-Navigation",
+		"properties": {
+			"Base": 0,
+			"Common": 1,
+			"Complex": 2,
+			"Visual": 3,
+			"Long": 4
+		}
+	}
+]
