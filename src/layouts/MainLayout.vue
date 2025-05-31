@@ -4,7 +4,10 @@
 			<q-toolbar>
 				<q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
 
-				<q-toolbar-title> TJU CS AIRank </q-toolbar-title>
+				<!-- <q-toolbar-title> TJU CS AIRank </q-toolbar-title> -->
+				<q-toolbar-title>
+					<router-link :to="{ name: 'app.home' }"> TJU CS AIRank </router-link>
+				</q-toolbar-title>
 
 				<div>v.{{ 2025 }}</div>
 			</q-toolbar>
