@@ -1,6 +1,6 @@
 <template>
-	<q-page padding>
-		<div v-if="model">
+	<q-page padding class="flex justify-center">
+		<div class="model-detail" v-if="model">
 			<h1 class="text-h4">{{ model.name }}</h1>
 
 			<div v-if="model.component" class="q-mt-md">
@@ -94,3 +94,12 @@ onMounted(async () => {
 	}));
 });
 </script>
+
+<style scoped>
+.model-detail {
+	padding: 16px;
+	min-width: 600px;
+	max-width: 1680px;
+	width: 100%;
+}
+</style>
