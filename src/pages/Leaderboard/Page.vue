@@ -1,50 +1,150 @@
 <template>
-	<div class="leaderboard-page">
-		<div class="content">
-			<div class="title">
-				<h4>AIRank</h4>
-				<h6>
-					Comprehensive Benchmarking Multi-modal Large Language Models for Embodied Intelligence
-				</h6>
-			</div>
-			<q-tabs v-model="tab" class="text-teal">
-				<q-tab v-for="item in leaderboard" :key="item.id" :name="item.id" :label="item.name" />
-			</q-tabs>
-			<div class="row">
-				<div class="col-6 q-pa-lg" v-for="benchmark in benchmarkList" :key="benchmark.id">
-					<AppBenchmark :leaderboardId="tab" :benchmarkId="benchmark.id" />
+	<q-page padding>
+		<div class="ranking-page">
+			<div class="content" v-if="currentBenchmark">
+				<h5 class="q-ma-md">{{ leaderboard!.name }} Rankings</h5>
+				<h6 class="q-ma-md">{{ currentBenchmark.name }} Rankings</h6>
+				<div class="q-pa-md">
+					<q-btn-toggle
+						v-model="currentBenchmarkIndex"
+						toggle-color="primary"
+						:options="
+							benchmarkList.map((b, index) => ({
+								label: b.name,
+								value: index,
+							}))
+						"
+					/>
 				</div>
+				<q-table
+					class="my-sticky-column-table width-full"
+					:rows="scores"
+					:columns="columns"
+					row-key="model.id"
+					:loading="loading"
+					:pagination="{ rowsPerPage: 20 }"
+				>
+					<template v-slot:body-cell-model="props">
+						<q-td :props="props">
+							<router-link :to="{ name: 'app.model.detail', params: { id: props.row.model.id } }">
+								{{ props.row.model.name }}
+							</router-link>
+							<!-- {{ props.row.model.name }} -->
+						</q-td>
+					</template>
+				</q-table>
 			</div>
+			<div class="content" v-else>Loading benchmark details...{{ leaderboardId }}</div>
 		</div>
-	</div>
+	</q-page>
 </template>
 
 <script setup lang="ts">
-defineOptions({ name: 'AppLeaderboardPage' });
+defineOptions({ name: 'BenchmarkRankPage' });
+import { ref, computed, onMounted } from 'vue';
+import { useRoute } from 'vue-router';
 import type * as Spec from 'src/spec';
-import { onMounted, ref, watch } from 'vue';
 import { API } from 'src/backend';
-import AppBenchmark from 'src/components/Benchmark.vue';
 
-const leaderboard = ref<Array<Spec.Leaderboard.Type>>([]);
-const benchmarkList = ref<Array<Spec.Benchmark.Type>>([]);
-const tab = ref<string>(leaderboard.value[0]?.id ?? '');
+interface Benchmark {
+	id: string;
+	name: string;
+	properties?: Record<string, number>;
+}
 
-onMounted(async () => {
-	leaderboard.value = await API.Leaderboard.query();
-	tab.value = leaderboard.value[0]?.id ?? '';
-	benchmarkList.value = await API.Leaderboard(tab.value).Benchmark.query();
+interface Model {
+	id: string;
+	name: string;
+}
+
+interface ScoreRow {
+	model: Model;
+	[key: `prop_${number}`]: number;
+}
+
+const route = useRoute();
+const leaderboardId = route.params.id as string;
+
+const leaderboard = ref<Spec.Leaderboard.Type | null>(null);
+const benchmarkList = ref<Array<Benchmark>>([]);
+const currentBenchmarkIndex = ref<number | null>(null);
+const scores = ref<ScoreRow[]>([]);
+const modelList = ref<Spec.Model.Type[]>([]);
+const loading = ref(true);
+
+const currentBenchmark = computed(() => {
+	if (currentBenchmarkIndex.value === null) return null;
+	return benchmarkList.value[currentBenchmarkIndex.value] || null;
 });
 
-watch(tab, async (newTab: string) => {
-	if (newTab) {
-		benchmarkList.value = await API.Leaderboard(newTab).Benchmark.query();
+const columns = computed(() => {
+	if (!currentBenchmark.value) return [];
+
+	const cols = [
+		{
+			name: 'model',
+			label: 'Model',
+			field: 'model',
+			align: 'left' as 'left' | 'right' | 'center',
+			sortable: true,
+		},
+	];
+
+	// Add columns for each property
+	if (currentBenchmark.value.properties) {
+		Object.entries(currentBenchmark.value.properties).forEach(([name, index]) => {
+			cols.push({
+				name: `prop_${index}`,
+				label: name,
+				field: `prop_${index}`,
+				align: 'right' as 'left' | 'right' | 'center',
+				sortable: true,
+			});
+		});
 	}
+
+	return cols;
+});
+
+onMounted(async () => {
+	// Find benchmark by ID
+	leaderboard.value = await API.Leaderboard(leaderboardId).get();
+	benchmarkList.value = await API.Leaderboard(leaderboardId).Benchmark.query();
+	modelList.value = await API.Model.query();
+
+	currentBenchmarkIndex.value = 0;
+
+	// Get scores for this benchmark
+	const benchmarkScores = (await API.Benchmark(currentBenchmark.value!.id).Score.query()) || [];
+
+	// Map scores to rows with model details
+	scores.value = benchmarkScores.map((score) => {
+		const model = modelList.value.find((m) => m.id === score.model) || {
+			id: score.model,
+			name: 'Unknown Model',
+		};
+		const row: ScoreRow = {
+			model,
+		};
+
+		// Add properties to row
+		if (currentBenchmark.value?.properties) {
+			Object.values(currentBenchmark.value.properties).forEach((index) => {
+				row[`prop_${index}`] = score.items[index] || 0;
+			});
+		}
+
+		return row;
+	});
+
+	// Sort by total score descending
+	// scores.value.sort((a, b) => b['prop_total'] - a['prop_total']);
+	loading.value = false;
 });
 </script>
 
 <style scoped>
-.leaderboard-page {
+.ranking-page {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -52,8 +152,9 @@ watch(tab, async (newTab: string) => {
 
 	.content {
 		padding: 16px;
-		width: 1680px;
+		min-width: 600px;
 		max-width: 1680px;
+		width: 100%;
 
 		.title {
 			display: flex;
@@ -61,6 +162,54 @@ watch(tab, async (newTab: string) => {
 			align-items: center;
 			justify-content: center;
 		}
+
+		/* .my-sticky-column-table {
+			width: 100%;
+
+			thead tr th {
+				background-color: #00b4ff;
+				color: white;
+			}
+
+			thead tr:first-child th:first-child {
+				background-color: #00b4ff;
+			}
+
+			tr:first-child td:first-child {
+				background-color: #00b4ff;
+			}
+
+			td:first-child {
+				background-color: #00b4ff;
+			}
+
+			th:first-child,
+			td:first-child {
+				position: sticky;
+				left: 0;
+				z-index: 1;
+			}
+		} */
 	}
 }
+</style>
+
+<style lang="sass">
+.my-sticky-column-table
+  min-width: 600px
+  max-width: 1680px
+  width: 100%
+
+  thead tr:first-child th:first-child
+    /* bg color is important for th; just specify one */
+    background-color: #e4e4e4
+
+  td:first-child
+    background-color: #e4e4e4
+
+  th:first-child,
+  td:first-child
+    position: sticky
+    left: 0
+    z-index: 1
 </style>

@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<router-link :to="{ name: 'app.benchmark.rank', params: { id: benchmark?.id ?? '123' } }">
+		<router-link :to="{ name: 'app.leaderboard.rank', params: { id: leaderboardId } }">
 			<h2 class="text-h6">
 				{{ benchmark?.name }}
 			</h2>

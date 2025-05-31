@@ -43,7 +43,7 @@ export const API = {
 			return {
 				async get() {
 					const leaderboardList = await fetchAllLeaderboard();
-					return leaderboardList.find((leaderboard) => leaderboard.id === id);
+					return leaderboardList.find((leaderboard) => leaderboard.id === id)!;
 				},
 				Benchmark: {
 					async query() {

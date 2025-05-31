@@ -38,3 +38,14 @@
 // 	leftDrawerOpen.value = !leftDrawerOpen.value;
 // }
 </script>
+
+<style scoped>
+body {
+	/* 所有浏览器通用方案 */
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none; /* IE/Edge */
+}
+body::-webkit-scrollbar {
+	display: none; /* Chrome/Safari/Edge */
+}
+</style>

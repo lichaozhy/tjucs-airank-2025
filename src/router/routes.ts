@@ -4,12 +4,17 @@ const routes: RouteRecordRaw[] = [
 	{
 		name: 'app.home',
 		path: '/',
-		redirect: { name: 'app.leaderboard' },
+		redirect: { name: 'app.home.overview' },
 		component: () => import('layouts/MainLayout.vue'),
 		children: [
 			{
-				name: 'app.leaderboard',
-				path: 'leaderboard',
+				name: 'app.home.overview',
+				path: 'home',
+				component: () => import('pages/Home/Page.vue'),
+			},
+			{
+				name: 'app.leaderboard.rank',
+				path: 'leaderboard/:id',
 				component: () => import('pages/Leaderboard/Page.vue'),
 			},
 			// {
@@ -17,11 +22,11 @@ const routes: RouteRecordRaw[] = [
 			// 	path: 'benchmark/:name',
 			// 	component: () => import('pages/BenchmarkRank/Page.vue'),
 			// },
-			{
-				name: 'app.benchmark.rank',
-				path: 'benchmark/:id',
-				component: () => import('pages/BenchmarkRank/Page.vue'),
-			},
+			// {
+			// 	name: 'app.benchmark.rank',
+			// 	path: 'benchmark/:id',
+			// 	component: () => import('pages/BenchmarkRank/Page.vue'),
+			// },
 			{
 				name: 'app.model.detail',
 				path: 'model/:id',
