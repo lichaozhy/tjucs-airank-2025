@@ -51,7 +51,7 @@
 
 <script setup lang="ts">
 defineOptions({ name: 'AppBenchmark' });
-import { defineProps, computed, onMounted, ref } from 'vue';
+import { computed, onMounted, ref } from 'vue';
 import * as Spec from 'src/spec';
 import { API } from 'src/backend';
 
