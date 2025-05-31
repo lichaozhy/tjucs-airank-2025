@@ -398,5 +398,149 @@
 			"vision": "InternViT-300M-448px-V2_5",
 			"language": "internlm2_5-7b-chat"
 		}
+	},
+	{
+		"id": "47130974-a85a-4090-ab93-04542244c04e",
+		"name": "Gemini2.0 Pro w CoT",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "b98ae0e6-2bcf-487d-8ada-6423bcce8f9c",
+		"name": "GPT-4o w CoT",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "4a42979f-36cb-4c3e-8ebf-a198a68b90e6",
+		"name": "Gemini2.0 Pro",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "2b8ad6b5-fd3b-4eef-a852-0648bc312bba",
+		"name": "Ours (16 frames)",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "87e7bee8-251c-44e8-8e67-500bfdd1f348",
+		"name": "Video-3D LLM (32 frames)",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "70634caf-f6d3-47e8-9e9c-2754a40b53a2",
+		"name": "Video-3D LLM (16 frames)",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "3efd880e-f132-4d0f-ba66-67142efb9470",
+		"name": "LLaVA-3D",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "8472d27d-9c33-4ea2-854c-2ec882f303b6",
+		"name": "Chat-3D v2",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "b0e697a1-bef6-488c-b3df-1680c3694f48",
+		"name": "ChatScene",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "dfb3cf12-beee-48f1-87f5-66d40176d517",
+		"name": "SceneLLM",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "d7a24483-5295-4afb-9ecd-8538b5d92e53",
+		"name": "LEO",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "dfb947dc-4326-489d-8a69-eb9ecbd3725e",
+		"name": "Qwen2.5-VL-7B",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "7b3f0bae-5319-4d34-b7ad-62ba67a43da4",
+		"name": "PQ3D",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "529c2206-513e-45fa-a762-1d8a6adf548f",
+		"name": "Qwen2-VL-7B",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "0cb4cf61-fe9a-4974-9c89-96c023957e9f",
+		"name": "3D-LLM(BLIP2-flant5)",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "323ef65f-630b-49df-bff8-e7bc32815387",
+		"name": "3D-LLM(Flamingo)",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "af3acd4e-d0b0-4aec-b45a-2ad7088a54f8",
+		"name": "Grounded 3D-LLM",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "09929601-b5f9-439b-94d3-fe8dedb11b13",
+		"name": "LL3DA",
+		"component": {
+			"vision": null,
+			"language": null
+		}
 	}
 ]

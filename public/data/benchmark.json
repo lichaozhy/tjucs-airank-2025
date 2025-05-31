@@ -47,6 +47,47 @@
 		}
 	},
 	{
+		"id": "5df5ca38-7ca9-4d35-81c6-3dfe52700755",
+		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
+		"name": "ERQA",
+		"properties": {
+			"ActionReasoning": 0,
+			"MultiviewReasoning": 1,
+			"Pointing": 2,
+			"SpatialReasoning": 3,
+			"StateEstimation": 4,
+			"TaskReasoning": 5,
+			"TrajectoryReasoning": 6,
+			"Other": 7
+		}
+	},
+	{
+		"id": "8b56c6cf-becf-4bef-b612-1804d2f20cda",
+		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
+		"name": "SQA3D",
+		"properties": {
+			"EM": 0
+		}
+	},
+	{
+		"id": "e0465aba-17b0-4f34-9aa4-345c9bacdac2",
+		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
+		"name": "ScanQA",
+		"properties": {
+			"CIDEr": 0,
+			"EM": 1
+		}
+	},
+	{
+		"id": "df46aa1a-099f-4841-bc02-ba9608e18c7d",
+		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
+		"name": "Scan2Cap",
+		"properties": {
+			"CIDEr": 0,
+			"B-4": 1
+		}
+	},
+	{
 		"id": "73de273a-7d38-40c0-b869-2b2e6156c897",
 		"leaderboard": "263e7d41-65a5-4b7b-8f48-5c7b94ca916b",
 		"name": "EB-Navigation",
