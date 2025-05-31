@@ -28,7 +28,10 @@
 						v-for="score in modelScores"
 						:key="score.benchmark"
 						clickable
-						:to="{ name: 'app.benchmark.rank', params: { id: score.benchmark } }"
+						:to="{
+							name: 'app.leaderboard.rank',
+							params: { id: score.leaderboard, benchmarkId: score.benchmark },
+						}"
 					>
 						<q-item-section>
 							<q-item-label>{{ getBenchmarkName(score.benchmark) }}</q-item-label>
@@ -59,6 +62,7 @@ interface Model {
 }
 
 interface Score {
+	leaderboard: string;
 	benchmark: string;
 	model: string;
 	total: number;
@@ -85,6 +89,7 @@ onMounted(async () => {
 	model.value = modelResponse as Model;
 	modelScores.value = scoresResponse.map((score) => ({
 		...score,
+		leaderboard: benchmarkList.value.find((bm) => bm.id === score.benchmark)?.leaderboard || '',
 		total: score.items.at(-1) || 0,
 	}));
 });

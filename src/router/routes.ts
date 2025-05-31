@@ -14,7 +14,7 @@ const routes: RouteRecordRaw[] = [
 			},
 			{
 				name: 'app.leaderboard.rank',
-				path: 'leaderboard/:id',
+				path: 'leaderboard/:id/:benchmarkId?',
 				component: () => import('pages/Leaderboard/Page.vue'),
 			},
 			// {

@@ -64,6 +64,7 @@ interface ScoreRow {
 
 const route = useRoute();
 const leaderboardId = route.params.id as string;
+const benchmarkId = route.params.benchmarkId as string | undefined;
 
 const leaderboard = ref<Spec.Leaderboard.Type | null>(null);
 const benchmarkList = ref<Array<Benchmark>>([]);
@@ -112,7 +113,16 @@ onMounted(async () => {
 	benchmarkList.value = await API.Leaderboard(leaderboardId).Benchmark.query();
 	modelList.value = await API.Model.query();
 
-	currentBenchmarkIndex.value = 0;
+	if (benchmarkId) {
+		const benchmark = benchmarkList.value.find((b) => b.id === benchmarkId);
+		if (benchmark) {
+			currentBenchmarkIndex.value = benchmarkList.value.indexOf(benchmark);
+		} else {
+			currentBenchmarkIndex.value = 0; // Default to first if not found
+		}
+	} else {
+		currentBenchmarkIndex.value = 0; // Default to first if no benchmarkId
+	}
 
 	// Get scores for this benchmark
 	const benchmarkScores = (await API.Benchmark(currentBenchmark.value!.id).Score.query()) || [];
