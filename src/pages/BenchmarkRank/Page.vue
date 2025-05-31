@@ -1,25 +1,28 @@
 <template>
 	<q-page padding>
-		<div v-if="benchmark">
-			<h1 class="text-h4">{{ benchmark.name }} Rankings</h1>
-			<q-table
-				:rows="scores"
-				:columns="columns"
-				row-key="model.id"
-				:loading="loading"
-				:pagination="{ rowsPerPage: 20 }"
-			>
-				<template v-slot:body-cell-model="props">
-					<q-td :props="props">
-						<router-link :to="{ name: 'app.model.detail', params: { id: props.row.model.id } }">
-							{{ props.row.model.name }}
-						</router-link>
-						<!-- {{ props.row.model.name }} -->
-					</q-td>
-				</template>
-			</q-table>
+		<div class="ranking-page">
+			<div class="content" v-if="benchmark">
+				<h1 class="text-h4">{{ benchmark.name }} Rankings</h1>
+				<q-table
+					class="my-sticky-column-table width-full"
+					:rows="scores"
+					:columns="columns"
+					row-key="model.id"
+					:loading="loading"
+					:pagination="{ rowsPerPage: 20 }"
+				>
+					<template v-slot:body-cell-model="props">
+						<q-td :props="props">
+							<router-link :to="{ name: 'app.model.detail', params: { id: props.row.model.id } }">
+								{{ props.row.model.name }}
+							</router-link>
+							<!-- {{ props.row.model.name }} -->
+						</q-td>
+					</template>
+				</q-table>
+			</div>
+			<div class="content" v-else>Loading benchmark details...</div>
 		</div>
-		<div v-else>Loading benchmark details...</div>
 	</q-page>
 </template>
 
@@ -116,3 +119,74 @@ onMounted(async () => {
 	loading.value = false;
 });
 </script>
+
+<style scoped>
+.ranking-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	.content {
+		padding: 16px;
+		min-width: 600px;
+		max-width: 1680px;
+		width: 100%;
+
+		.title {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		/* .my-sticky-column-table {
+			width: 100%;
+
+			thead tr th {
+				background-color: #00b4ff;
+				color: white;
+			}
+
+			thead tr:first-child th:first-child {
+				background-color: #00b4ff;
+			}
+
+			tr:first-child td:first-child {
+				background-color: #00b4ff;
+			}
+
+			td:first-child {
+				background-color: #00b4ff;
+			}
+
+			th:first-child,
+			td:first-child {
+				position: sticky;
+				left: 0;
+				z-index: 1;
+			}
+		} */
+	}
+}
+</style>
+
+<style lang="sass">
+.my-sticky-column-table
+  min-width: 600px
+  max-width: 1680px
+  width: 100%
+
+  thead tr:first-child th:first-child
+    /* bg color is important for th; just specify one */
+    background-color: #e4e4e4
+
+  td:first-child
+    background-color: #e4e4e4
+
+  th:first-child,
+  td:first-child
+    position: sticky
+    left: 0
+    z-index: 1
+</style>
