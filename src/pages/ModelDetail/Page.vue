@@ -42,12 +42,12 @@
 	</q-page>
 </template>
 
-<script lang="ts">
-import { defineComponent, ref, onMounted } from 'vue';
+<script setup lang="ts">
+defineOptions({ name: 'ModelDetailPage' });
+import * as Spec from 'src/spec';
+import { ref, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
-import modelData from '../../../public/data/model.json';
-import benchmarkData from '../../../public/data/benchmark.json';
-import scoreData from '../../../public/data/score.json';
+import { API } from 'src/backend';
 
 interface Model {
 	id: string;
@@ -65,40 +65,27 @@ interface Score {
 	items: Array<number | null>;
 }
 
-export default defineComponent({
-	name: 'ModelDetailPage',
-	setup() {
-		const route = useRoute();
-		const modelId = route.params.id as string;
+const model = ref<Model | null>(null);
+const modelScores = ref<Score[]>([]);
+const benchmarkList = ref<Array<Spec.Benchmark.Type>>([]);
 
-		const model = ref<Model | null>(null);
-		const modelScores = ref<Score[]>([]);
+const getBenchmarkName = (id: string) => {
+	const benchmark = benchmarkList.value.find((bm) => bm.id === id);
+	return benchmark ? benchmark.name : `Benchmark ${id}`;
+};
 
-		const getBenchmarkName = (id: string) => {
-			const benchmark = benchmarkData.find((bm) => bm.id === id);
-			return benchmark ? benchmark.name : `Benchmark ${id}`;
-		};
+onMounted(async () => {
+	const route = useRoute();
+	const modelId = route.params.id as string;
 
-		onMounted(() => {
-			// Find model by ID
-			model.value = modelData.find((m) => m.id === modelId) || null;
+	const modelResponse = await API.Model(modelId).get();
+	const scoresResponse = await API.Model(modelId).Score.query();
+	benchmarkList.value = await API.Benchmark.query();
 
-			// Get scores for this model
-			modelScores.value = scoreData
-				.filter((score) => score.model === modelId)
-				.map((score) => {
-					return {
-						...score,
-						total: score.items.at(-1) || 0,
-					};
-				});
-		});
-
-		return {
-			model,
-			modelScores,
-			getBenchmarkName,
-		};
-	},
+	model.value = modelResponse as Model;
+	modelScores.value = scoresResponse.map((score) => ({
+		...score,
+		total: score.items.at(-1) || 0,
+	}));
 });
 </script>

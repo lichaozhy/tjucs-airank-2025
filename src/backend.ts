@@ -89,6 +89,12 @@ export const API = {
 					const modelList = await fetchAllModel();
 					return modelList.find((model) => model.id === modelId)!;
 				},
+				Score: {
+					async query() {
+						const scoreList = await fetchAllScore();
+						return scoreList.filter((score) => score.model === modelId);
+					},
+				},
 			};
 		},
 		{
