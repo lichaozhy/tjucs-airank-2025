@@ -1,8 +1,10 @@
 <template>
 	<div>
-		<h4>
-			{{ benchmark?.name }}
-		</h4>
+		<router-link :to="{ name: 'app.benchmark.rank', params: { id: benchmark?.id ?? '123' } }">
+			<h2 class="text-h6">
+				{{ benchmark?.name }}
+			</h2>
+		</router-link>
 		<div>
 			<q-btn-dropdown color="primary" :label="currentPropName" no-caret>
 				<q-list>
