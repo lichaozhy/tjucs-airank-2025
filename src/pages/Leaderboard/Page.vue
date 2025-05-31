@@ -6,6 +6,7 @@
 				<h6 class="q-ma-md">{{ currentBenchmark.name }} Rankings</h6>
 				<div class="q-pa-md">
 					<q-btn-toggle
+						no-caps
 						v-model="currentBenchmarkIndex"
 						toggle-color="primary"
 						:options="
