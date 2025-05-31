@@ -44,7 +44,7 @@
 
 <script setup lang="ts">
 defineOptions({ name: 'ModelDetailPage' });
-import * as Spec from 'src/spec';
+import type * as Spec from 'src/spec';
 import { ref, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 import { API } from 'src/backend';

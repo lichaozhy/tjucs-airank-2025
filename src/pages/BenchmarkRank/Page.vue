@@ -27,7 +27,7 @@
 defineOptions({ name: 'BenchmarkRankPage' });
 import { ref, computed, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
-import * as Spec from 'src/spec';
+import type * as Spec from 'src/spec';
 import { API } from 'src/backend';
 
 interface Benchmark {

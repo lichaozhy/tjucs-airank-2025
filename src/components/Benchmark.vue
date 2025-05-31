@@ -52,7 +52,7 @@
 <script setup lang="ts">
 defineOptions({ name: 'AppBenchmark' });
 import { computed, onMounted, ref } from 'vue';
-import * as Spec from 'src/spec';
+import type * as Spec from 'src/spec';
 import { API } from 'src/backend';
 
 interface ScoreRow {
