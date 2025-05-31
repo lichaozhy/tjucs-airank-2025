@@ -1,14 +1,17 @@
 <template>
 	<div class="leaderboard-page">
 		<div class="content">
-			<h2>
-				Comprehensive Benchmarking Multi-modal Large Language Models for Embodied Intelligence
-			</h2>
+			<div class="title">
+				<h4>AIRank</h4>
+				<h6>
+					Comprehensive Benchmarking Multi-modal Large Language Models for Embodied Intelligence
+				</h6>
+			</div>
 			<q-tabs v-model="tab" class="text-teal">
 				<q-tab v-for="item in leaderboard" :key="item.id" :name="item.id" :label="item.name" />
 			</q-tabs>
 			<div class="row">
-				<div class="col-6" v-for="benchmark in benchmarkList" :key="benchmark.id">
+				<div class="col-6 q-pa-lg" v-for="benchmark in benchmarkList" :key="benchmark.id">
 					<AppBenchmark :leaderboardId="tab" :benchmarkId="benchmark.id" />
 				</div>
 			</div>
@@ -51,6 +54,13 @@ watch(tab, async (newTab: string) => {
 		padding: 16px;
 		width: 1680px;
 		max-width: 1680px;
+
+		.title {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
 	}
 }
 </style>
