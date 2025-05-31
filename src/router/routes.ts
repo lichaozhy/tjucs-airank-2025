@@ -12,10 +12,20 @@ const routes: RouteRecordRaw[] = [
 				path: 'leaderboard',
 				component: () => import('pages/Leaderboard/Page.vue'),
 			},
+			// {
+			// 	name: 'app.benchmark.rank',
+			// 	path: 'benchmark/:name',
+			// 	component: () => import('pages/BenchmarkRank/Page.vue'),
+			// },
 			{
 				name: 'app.benchmark.rank',
-				path: 'benchmark/:name',
+				path: 'benchmark/:id',
 				component: () => import('pages/BenchmarkRank/Page.vue'),
+			},
+			{
+				name: 'app.model.detail',
+				path: 'model/:id',
+				component: () => import('pages/ModelDetail/Page.vue'),
 			},
 		],
 	},
