@@ -1,19 +1,20 @@
 <template>
 	<div>
 		<q-tabs v-model="tab" class="text-teal">
-			<q-tab name="mails" icon="mail" label="Mails" />
-			<q-tab name="alarms" icon="alarm" label="Alarms" />
-			<q-tab name="movies" icon="movie" label="Movies" />
+			<q-tab v-for="item in leaderboard" :key="item.id" :name="item.id" :label="item.name" />
 		</q-tabs>
+		<AppBenchmark :leaderboardId="tab" />
 	</div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
 defineOptions({ name: 'AppLeaderboardPage' });
+import { ref } from 'vue';
 import { data } from 'src/data';
+import AppBenchmark from 'src/components/Benchmark.vue';
+const { configuration, leaderboard } = data;
 
 console.log(data);
 
-const tab = ref('mails');
+const tab = ref<string>(leaderboard[0]?.id ?? '');
 </script>
