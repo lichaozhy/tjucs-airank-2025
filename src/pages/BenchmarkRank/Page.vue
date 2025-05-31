@@ -66,6 +66,7 @@ const columns = computed(() => {
 			label: 'Model',
 			field: 'model',
 			align: 'left' as 'left' | 'right' | 'center',
+			headerStyle: 'width: 240px;',
 			sortable: true,
 		},
 	];
@@ -78,10 +79,16 @@ const columns = computed(() => {
 				label: name,
 				field: `prop_${index}`,
 				align: 'right' as 'left' | 'right' | 'center',
+				headerStyle: 'width: 180px;',
 				sortable: true,
 			});
 		});
 	}
+
+	cols.push({
+		name: '',
+		label: '',
+	} as any);
 
 	return cols;
 });
@@ -189,4 +196,12 @@ onMounted(async () => {
     position: sticky
     left: 0
     z-index: 1
+</style>
+
+<style lang="scss">
+.fixed-layout-table {
+	table {
+		table-layout: fixed;
+	}
+}
 </style>
