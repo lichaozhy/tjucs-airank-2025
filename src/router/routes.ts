@@ -13,15 +13,24 @@ const routes: RouteRecordRaw[] = [
 				component: () => import('pages/Leaderboard/Page.vue'),
 			},
 			{
+				name: 'app.leaderboard.detail',
+				path: 'leaderboard/:id',
+				component: () => import('pages/LeaderboardDetail/Page.vue'),
+			},
+			{
 				name: 'app.benchmark.rank',
-				path: 'benchmark/:name',
+				path: 'benchmark/:id',
 				component: () => import('pages/BenchmarkRank/Page.vue'),
+			},
+			{
+				name: 'app.model.detail',
+				path: 'model/:id',
+				component: () => import('pages/ModelDetail/Page.vue'),
 			},
 		],
 	},
 
-	// Always leave this as last one,
-	// but you can also remove it
+	// Always leave this as last one
 	{
 		path: '/:catchAll(.*)*',
 		component: () => import('pages/ErrorNotFound.vue'),
