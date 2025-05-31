@@ -21,13 +21,17 @@
 			</q-btn-dropdown>
 		</div>
 		<q-list bordered separator>
-			<q-item v-for="(score, index) in scores" :key="score.model.id" clickable v-ripple>
+			<q-item
+				v-for="(score, index) in scores"
+				:key="score.model.id"
+				clickable
+				v-ripple
+				:to="{ name: 'app.model.detail', params: { id: score.model.id } }"
+			>
 				<q-item-section avatar> {{ index + 1 }} </q-item-section>
 				<q-item-section>
 					<q-item-label>
-						<router-link :to="{ name: 'app.model.detail', params: { id: score.model.id } }">
-							{{ score.model.name }}
-						</router-link>
+						{{ score.model.name }}
 					</q-item-label>
 					<q-item-label caption>Model ID: {{ score.model.id }}</q-item-label>
 				</q-item-section>
