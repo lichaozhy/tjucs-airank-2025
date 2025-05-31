@@ -52,9 +52,8 @@
 <script setup lang="ts">
 defineOptions({ name: 'AppBenchmark' });
 import { defineProps, computed, onMounted, ref } from 'vue';
-import { data } from 'src/data';
 import * as Spec from 'src/spec';
-const { configuration, leaderboard, model } = data;
+import { API } from 'src/backend';
 
 interface ScoreRow {
 	benchmark: Spec.Benchmark.Type;
@@ -68,13 +67,22 @@ const { leaderboardId, benchmarkId } = defineProps<{
 	benchmarkId: string;
 }>();
 
-const benchmark = computed(() =>
-	data.benchmark.find((item) => item.leaderboard === leaderboardId && item.id === benchmarkId),
-);
+const benchmark = ref<Spec.Benchmark.Type | null>(null);
+const scoreList = ref<Array<Spec.Score.Type>>([]);
+const modelList = ref<Array<Spec.Model.Type>>([]);
 
-const propsIndex = ref<number>(
-	benchmark.value?.properties ? Object.keys(benchmark.value?.properties).length - 1 : 0,
-);
+onMounted(async () => {
+	benchmark.value =
+		(await API.Leaderboard(leaderboardId).Benchmark.query()).find((b) => b.id === benchmarkId) ??
+		null;
+	scoreList.value = await API.Benchmark(benchmarkId).Score.query();
+	modelList.value = await API.Model.query();
+	propsIndex.value = benchmark.value?.properties
+		? Object.keys(benchmark.value.properties).length - 1
+		: 0;
+});
+
+const propsIndex = ref<number>(0);
 
 const propsOptions = computed(() => {
 	return Object.entries(benchmark.value?.properties ?? {}).map(([key, value], index) => ({
@@ -96,10 +104,10 @@ const changeProps = (index: number) => {
 };
 
 const scores = computed(() => {
-	return data.score
+	return scoreList.value
 		.filter((score) => score.benchmark === benchmarkId)
 		.map((score) => {
-			const modelDetails = model.find((m) => m.id === score.model) || {
+			const modelDetails = modelList.value.find((m) => m.id === score.model) || {
 				id: score.model,
 				name: 'Unknown Model',
 				component: {},

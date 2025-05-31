@@ -15,15 +15,18 @@
 
 <script setup lang="ts">
 defineOptions({ name: 'AppLeaderboardPage' });
-import { computed, ref } from 'vue';
-import { data } from 'src/data';
+import * as Spec from 'src/spec';
+import { onMounted, ref } from 'vue';
+import { API } from 'src/backend';
 import AppBenchmark from 'src/components/Benchmark.vue';
-const { configuration, leaderboard } = data;
 
-console.log(data);
+const leaderboard = ref<Array<Spec.Leaderboard.Type>>([]);
+const benchmarkList = ref<Array<Spec.Benchmark.Type>>([]);
+const tab = ref<string>(leaderboard.value[0]?.id ?? '');
 
-const tab = ref<string>(leaderboard[0]?.id ?? '');
-const benchmarkList = computed(() =>
-	data.benchmark.filter((item) => item.leaderboard === tab.value),
-);
+onMounted(async () => {
+	leaderboard.value = await API.Leaderboard.query();
+	tab.value = leaderboard.value[0]?.id ?? '';
+	benchmarkList.value = await API.Leaderboard(tab.value).Benchmark.query();
+});
 </script>
