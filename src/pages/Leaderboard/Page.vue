@@ -4,12 +4,11 @@
 		<q-tabs v-model="tab" class="text-teal">
 			<q-tab v-for="item in leaderboard" :key="item.id" :name="item.id" :label="item.name" />
 		</q-tabs>
-		<AppBenchmark
-			v-for="benchmark in benchmarkList"
-			:key="benchmark.id"
-			:leaderboardId="tab"
-			:benchmarkId="benchmark.id"
-		/>
+		<div class="row">
+			<div class="col-6" v-for="benchmark in benchmarkList" :key="benchmark.id">
+				<AppBenchmark :leaderboardId="tab" :benchmarkId="benchmark.id" />
+			</div>
+		</div>
 		<h2>Tianjin University Deep Reinforcement Learning Laboratory</h2>
 	</div>
 </template>
