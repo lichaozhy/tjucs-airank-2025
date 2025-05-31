@@ -15,7 +15,8 @@
 			"TaskRelatedObjectReasoning": 8,
 			"SituatedReasoning": 9,
 			"ClosedLoopPlanning": 10,
-			"OpenLoopPlanning": 11
+			"OpenLoopPlanning": 11,
+			"Total": 12
 		}
 	},
 	{
@@ -28,7 +29,8 @@
 			"ObjectState": 2,
 			"Affordance": 3,
 			"WorldKnowledge": 4,
-			"SpatialPerception": 5
+			"SpatialPerception": 5,
+			"Total": 6
 		}
 	},
 	{
@@ -43,7 +45,8 @@
 			"RelativeDistance": 4,
 			"RelativeDirection": 5,
 			"RoutePlan": 6,
-			"AppearanceOrder": 7
+			"AppearanceOrder": 7,
+			"Total": 8
 		}
 	},
 	{
@@ -58,7 +61,8 @@
 			"StateEstimation": 4,
 			"TaskReasoning": 5,
 			"TrajectoryReasoning": 6,
-			"Other": 7
+			"Other": 7,
+			"Total": 8
 		}
 	},
 	{
@@ -96,7 +100,8 @@
 			"Common": 1,
 			"Complex": 2,
 			"Visual": 3,
-			"Long": 4
+			"Long": 4,
+			"Total": 5
 		}
 	}
 ]
