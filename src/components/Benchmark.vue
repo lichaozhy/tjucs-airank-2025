@@ -3,7 +3,7 @@
 		<router-link
 			:to="{
 				name: 'app.leaderboard.rank',
-				params: { id: leaderboardId, benchmarkId },
+				params: { id: leaderboardId, benchmarkId: benchmark.id },
 			}"
 		>
 			<h2 class="text-h6">
@@ -58,7 +58,7 @@
 
 <script setup lang="ts">
 defineOptions({ name: 'AppBenchmark' });
-import { computed, onMounted, ref } from 'vue';
+import { computed, onMounted, onBeforeMount, ref } from 'vue';
 import type * as Spec from 'src/spec';
 import { API } from 'src/backend';
 
@@ -69,30 +69,19 @@ interface ScoreRow {
 	items: Spec.Score.Type['items'];
 }
 
-const { leaderboardId, benchmarkId } = defineProps<{
+const { leaderboardId, benchmark, scoreList, modelList } = defineProps<{
 	leaderboardId: string;
-	benchmarkId: string;
+	benchmark: Spec.Benchmark.Type;
+	scoreList: Array<Spec.Score.Type>;
+	modelList: Array<Spec.Model.Type>;
 }>();
 
-const benchmark = ref<Spec.Benchmark.Type | null>(null);
-const scoreList = ref<Array<Spec.Score.Type>>([]);
-const modelList = ref<Array<Spec.Model.Type>>([]);
-
-onMounted(async () => {
-	benchmark.value =
-		(await API.Leaderboard(leaderboardId).Benchmark.query()).find((b) => b.id === benchmarkId) ??
-		null;
-	scoreList.value = await API.Benchmark(benchmarkId).Score.query();
-	modelList.value = await API.Model.query();
-	propsIndex.value = benchmark.value?.properties
-		? Object.keys(benchmark.value.properties).length - 1
-		: 0;
-});
+console.log('AppBenchmark', leaderboardId, benchmark, scoreList, modelList);
 
 const propsIndex = ref<number>(0);
 
 const propsOptions = computed(() => {
-	return Object.entries(benchmark.value?.properties ?? {}).map(([key, value], index) => ({
+	return Object.entries(benchmark.properties).map(([key, value], index) => ({
 		index,
 		prop: {
 			key,
@@ -111,10 +100,10 @@ const changeProps = (index: number) => {
 };
 
 const scores = computed(() => {
-	return scoreList.value
-		.filter((score) => score.benchmark === benchmarkId)
+	return scoreList
+		.filter((score) => score.benchmark === benchmark.id)
 		.map((score) => {
-			const modelDetails = modelList.value.find((m) => m.id === score.model) || {
+			const modelDetails = modelList.find((m) => m.id === score.model) || {
 				id: score.model,
 				name: 'Unknown Model',
 				component: {},
@@ -122,7 +111,7 @@ const scores = computed(() => {
 
 			const row: ScoreRow = {
 				model: modelDetails,
-				benchmark: benchmark.value!,
+				benchmark: benchmark,
 				items: score.items,
 			};
 

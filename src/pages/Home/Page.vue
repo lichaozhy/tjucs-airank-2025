@@ -8,11 +8,16 @@
 				</h6>
 			</div>
 			<q-tabs v-model="tab" class="text-teal">
-				<q-tab v-for="item in leaderboard" :key="item.id" :name="item.id" :label="item.name" />
+				<q-tab v-for="item in leaderboardList" :key="item.id" :name="item.id" :label="item.name" />
 			</q-tabs>
-			<div class="row">
-				<div class="col-6 q-pa-lg" v-for="benchmark in benchmarkList" :key="benchmark.id">
-					<AppBenchmark :leaderboardId="tab" :benchmarkId="benchmark.id" />
+			<div class="row" v-if="benchmarkShowList.length !== 0">
+				<div class="col-6 q-pa-lg" v-for="benchmark in benchmarkShowList" :key="benchmark.id">
+					<AppBenchmark
+						:leaderboardId="tab"
+						:benchmark="benchmark"
+						:scoreList="scoreList"
+						:modelList="modelList"
+					/>
 				</div>
 			</div>
 		</div>
@@ -22,24 +27,30 @@
 <script setup lang="ts">
 defineOptions({ name: 'AppLeaderboardPage' });
 import type * as Spec from 'src/spec';
-import { onMounted, ref, watch } from 'vue';
+import { computed, onBeforeMount, onMounted, ref, watch } from 'vue';
 import { API } from 'src/backend';
 import AppBenchmark from 'src/components/Benchmark.vue';
 
-const leaderboard = ref<Array<Spec.Leaderboard.Type>>([]);
+const leaderboardList = ref<Array<Spec.Leaderboard.Type>>([]);
 const benchmarkList = ref<Array<Spec.Benchmark.Type>>([]);
-const tab = ref<string>(leaderboard.value[0]?.id ?? '');
+const scoreList = ref<Array<Spec.Score.Type>>([]);
+const modelList = ref<Array<Spec.Model.Type>>([]);
+const tab = ref<string>(leaderboardList.value[0]?.id ?? '');
 
-onMounted(async () => {
-	leaderboard.value = await API.Leaderboard.query();
-	tab.value = leaderboard.value[0]?.id ?? '';
-	benchmarkList.value = await API.Leaderboard(tab.value).Benchmark.query();
+onBeforeMount(async () => {
+	leaderboardList.value = await API.Leaderboard.query();
+	benchmarkList.value = await API.Benchmark.query();
+	scoreList.value = await API.Score.query();
+	modelList.value = await API.Model.query();
+
+	tab.value = leaderboardList.value[0]?.id ?? '';
+	console.log('tab.value', tab.value);
 });
 
-watch(tab, async (newTab: string) => {
-	if (newTab) {
-		benchmarkList.value = await API.Leaderboard(newTab).Benchmark.query();
-	}
+const benchmarkShowList = computed(() => {
+	return benchmarkList.value.filter((benchmark) => {
+		return benchmark.leaderboard === tab.value;
+	});
 });
 </script>
 
