@@ -7,8 +7,12 @@
 						name: 'app.leaderboard.rank',
 						params: { id: leaderboardId, benchmarkId: benchmark.id },
 					}"
+					custom
+					v-slot="{ navigate }"
 				>
-					<h2 class="text-h6">{{ benchmark?.name }} Benchmark</h2>
+					<div @click="navigate" class="text-h6" style="cursor: pointer; color: white">
+						{{ benchmark?.name }} Benchmark
+					</div>
 				</router-link>
 			</q-item-section>
 			<q-item-section style="flex: 0 0 auto">
