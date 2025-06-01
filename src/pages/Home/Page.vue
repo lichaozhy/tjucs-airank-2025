@@ -7,7 +7,7 @@
 			</div>
 		</div>
 		<div class="content">
-			<q-tabs v-model="tab" class="text-teal">
+			<q-tabs noCaps v-model="tab" class="text-teal">
 				<q-tab v-for="item in leaderboardList" :key="item.id" :name="item.id" :label="item.name" />
 			</q-tabs>
 			<div class="row" v-if="benchmarkShowList.length !== 0">
