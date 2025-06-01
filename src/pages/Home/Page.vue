@@ -1,10 +1,10 @@
 <template>
 	<div class="leaderboard-page">
 		<div class="title">
-			<h4>AIRank</h4>
-			<h6>
+			<div class="main-title">AIRank</div>
+			<div class="title-description">
 				Comprehensive Benchmarking Multi-modal Large Language Models for Embodied Intelligence
-			</h6>
+			</div>
 		</div>
 		<div class="content">
 			<q-tabs v-model="tab" class="text-teal">
@@ -84,6 +84,19 @@ const benchmarkShowList = computed(() => {
 
 		> * {
 			background-color: transparent;
+		}
+
+		.main-title {
+			font-size: 2.5rem;
+			font-weight: bold;
+			color: #165ea7;
+			margin-bottom: 8px;
+		}
+
+		.title-description {
+			font-size: 1.2rem;
+			color: #165ea7;
+			text-align: center;
 		}
 	}
 
