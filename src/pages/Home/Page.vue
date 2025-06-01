@@ -57,7 +57,7 @@ const benchmarkShowList = computed(() => {
 });
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .leaderboard-page {
 	display: flex;
 	flex-direction: column;
@@ -70,6 +70,21 @@ const benchmarkShowList = computed(() => {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		background:
+			linear-gradient(
+				to bottom,
+				rgba($primary, 0.4) 0%,
+				rgba($primary, 0.45) 25%,
+				rgba($primary, 0.5) 50%,
+				rgba($primary, 0.55) 75%,
+				rgba($primary, 0.6) 100%
+			),
+			url('/image/29085492_1944-no.jpg') center/cover;
+		height: 200px;
+
+		> * {
+			background-color: transparent;
+		}
 	}
 
 	.content {

@@ -6,7 +6,11 @@
 
 				<!-- <q-toolbar-title> TJU CS AIRank </q-toolbar-title> -->
 				<q-toolbar-title>
-					<router-link :to="{ name: 'app.home' }"> TJU CS AIRank </router-link>
+					<router-link :to="{ name: 'app.home' }" custom v-slot="{ navigate }">
+						<div @click="navigate" class="text-h6" style="cursor: pointer; color: white">
+							TJU CS AIRank
+						</div>
+					</router-link>
 				</q-toolbar-title>
 
 				<div>v.{{ 2025 }}</div>
