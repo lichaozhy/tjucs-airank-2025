@@ -1,6 +1,6 @@
 <template>
 	<q-card square>
-		<q-item>
+		<q-item class="card-header">
 			<q-item-section>
 				<router-link
 					:to="{
@@ -11,8 +11,7 @@
 					<h2 class="text-h6">{{ benchmark?.name }} Benchmark</h2>
 				</router-link>
 			</q-item-section>
-			<q-item-section />
-			<q-item-section>
+			<q-item-section style="flex: 0 0 auto">
 				<q-btn-dropdown no-caps color="primary" :label="currentPropName" no-caret>
 					<q-list>
 						<q-item
@@ -147,7 +146,14 @@ const scores = computed(() => {
 });
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.card-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-image: $gradient-primary;
+}
+
 .rank-badge {
 	display: flex;
 	align-items: center;
