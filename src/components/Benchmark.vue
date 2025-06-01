@@ -1,17 +1,18 @@
 <template>
 	<q-card square>
-		<q-card-section>
-			<router-link
-				:to="{
-					name: 'app.leaderboard.rank',
-					params: { id: leaderboardId, benchmarkId: benchmark.id },
-				}"
-			>
-				<h2 class="text-h6">
-					{{ benchmark?.name }}
-				</h2>
-			</router-link>
-			<div>
+		<q-item>
+			<q-item-section>
+				<router-link
+					:to="{
+						name: 'app.leaderboard.rank',
+						params: { id: leaderboardId, benchmarkId: benchmark.id },
+					}"
+				>
+					<h2 class="text-h6">{{ benchmark?.name }} Benchmark</h2>
+				</router-link>
+			</q-item-section>
+			<q-item-section />
+			<q-item-section>
 				<q-btn-dropdown no-caps color="primary" :label="currentPropName" no-caret>
 					<q-list>
 						<q-item
@@ -27,8 +28,8 @@
 						</q-item>
 					</q-list>
 				</q-btn-dropdown>
-			</div>
-		</q-card-section>
+			</q-item-section>
+		</q-item>
 
 		<q-list bordered separator>
 			<q-item
