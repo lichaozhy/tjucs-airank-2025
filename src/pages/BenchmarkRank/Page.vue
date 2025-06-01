@@ -88,6 +88,7 @@ const columns = computed(() => {
 	cols.push({
 		name: '',
 		label: '',
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	} as any);
 
 	return cols;
