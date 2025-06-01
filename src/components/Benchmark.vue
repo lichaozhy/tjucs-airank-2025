@@ -113,7 +113,7 @@ const { leaderboardId, benchmark, scoreList, modelList } = defineProps<{
 	modelList: Array<Spec.Model.Type>;
 }>();
 
-const propsIndex = ref<number>(0);
+const propsIndex = ref<number>(Object.keys(benchmark.properties).length - 1);
 
 const propsOptions = computed(() => {
 	return Object.entries(benchmark.properties).map(([key, value], index) => ({
