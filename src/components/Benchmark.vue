@@ -96,8 +96,10 @@ const rankingColorRgbaMap: Record<number | string, string> = {
 
 const rankingIconMap: Record<number | string, string> = {
 	1: 'fas fa-crown',
-	2: 'fas fa-trophy',
-	3: 'fas fa-medal',
+	2: 'fas fa-crown',
+	3: 'fas fa-crown',
+	// 2: 'fas fa-trophy',
+	// 3: 'fas fa-medal',
 	default: 'fas fa-star',
 };
 
