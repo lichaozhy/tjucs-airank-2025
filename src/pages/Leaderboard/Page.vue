@@ -42,7 +42,7 @@
 
 <script setup lang="ts">
 defineOptions({ name: 'BenchmarkRankPage' });
-import { ref, computed, onMounted } from 'vue';
+import { ref, computed, onMounted, onBeforeMount } from 'vue';
 import { useRoute } from 'vue-router';
 import type * as Spec from 'src/spec';
 import { API } from 'src/backend';
@@ -69,8 +69,8 @@ const benchmarkId = route.params.benchmarkId as string | undefined;
 
 const leaderboard = ref<Spec.Leaderboard.Type | null>(null);
 const benchmarkList = ref<Array<Benchmark>>([]);
+const scoreList = ref<Array<Spec.Score.Type>>([]);
 const currentBenchmarkIndex = ref<number | null>(null);
-const scores = ref<ScoreRow[]>([]);
 const modelList = ref<Spec.Model.Type[]>([]);
 const loading = ref(true);
 
@@ -110,33 +110,22 @@ const columns = computed(() => {
 	cols.push({
 		name: '',
 		label: '',
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	} as any);
 
 	return cols;
 });
 
-onMounted(async () => {
-	// Find benchmark by ID
-	leaderboard.value = await API.Leaderboard(leaderboardId).get();
-	benchmarkList.value = await API.Leaderboard(leaderboardId).Benchmark.query();
-	modelList.value = await API.Model.query();
-
-	if (benchmarkId) {
-		const benchmark = benchmarkList.value.find((b) => b.id === benchmarkId);
-		if (benchmark) {
-			currentBenchmarkIndex.value = benchmarkList.value.indexOf(benchmark);
-		} else {
-			currentBenchmarkIndex.value = 0; // Default to first if not found
-		}
-	} else {
-		currentBenchmarkIndex.value = 0; // Default to first if no benchmarkId
-	}
+const scores = computed(() => {
+	if (currentBenchmark.value === null) return [];
 
 	// Get scores for this benchmark
-	const benchmarkScores = (await API.Benchmark(currentBenchmark.value!.id).Score.query()) || [];
+	const benchmarkScoreList = scoreList.value.filter(
+		(score) => score.benchmark === currentBenchmark.value!.id,
+	);
 
 	// Map scores to rows with model details
-	scores.value = benchmarkScores.map((score) => {
+	return benchmarkScoreList.map((score) => {
 		const model = modelList.value.find((m) => m.id === score.model) || {
 			id: score.model,
 			name: 'Unknown Model',
@@ -154,6 +143,24 @@ onMounted(async () => {
 
 		return row;
 	});
+});
+
+onBeforeMount(async () => {
+	leaderboard.value = await API.Leaderboard(leaderboardId).get();
+	benchmarkList.value = await API.Leaderboard(leaderboardId).Benchmark.query();
+	scoreList.value = await API.Score.query();
+	modelList.value = await API.Model.query();
+
+	if (benchmarkId) {
+		const benchmark = benchmarkList.value.find((b) => b.id === benchmarkId);
+		if (benchmark) {
+			currentBenchmarkIndex.value = benchmarkList.value.indexOf(benchmark);
+		} else {
+			currentBenchmarkIndex.value = 0; // Default to first if not found
+		}
+	} else {
+		currentBenchmarkIndex.value = 0; // Default to first if no benchmarkId
+	}
 
 	// Sort by total score descending
 	// scores.value.sort((a, b) => b['prop_total'] - a['prop_total']);

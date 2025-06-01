@@ -87,7 +87,6 @@ export default defineConfigWithVueTs(
 			'@typescript-eslint/no-unused-vars': 'warn',
 			'@typescript-eslint/consistent-type-imports': 'warn',
 			'@typescript-eslint/no-floating-promises': 'warn',
-			'@typescript-eslint/no-explicit-any': 'warn',
 		},
 	},
 	{
