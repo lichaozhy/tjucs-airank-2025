@@ -12,7 +12,7 @@
 				</h2>
 			</router-link>
 			<div>
-				<q-btn-dropdown color="primary" :label="currentPropName" no-caret>
+				<q-btn-dropdown no-caps color="primary" :label="currentPropName" no-caret>
 					<q-list>
 						<q-item
 							clickable
@@ -38,7 +38,15 @@
 				v-ripple
 				:to="{ name: 'app.model.detail', params: { id: score.model.id } }"
 			>
-				<q-item-section avatar> {{ index + 1 }} </q-item-section>
+				<q-item-section avatar>
+					<q-avatar
+						:style="{
+							backgroundColor: rankingColorRgbaMap[index + 1] ?? rankingColorRgbaMap.default,
+						}"
+						text-color="white"
+						>{{ index + 1 }}</q-avatar
+					>
+				</q-item-section>
 				<q-item-section>
 					<q-item-label>
 						{{ score.model.name }}
@@ -70,6 +78,13 @@ interface ScoreRow {
 	// [key: `prop_${number}`]: number;
 	items: Spec.Score.Type['items'];
 }
+
+const rankingColorRgbaMap: Record<number | string, string> = {
+	1: 'rgba(255, 215, 0, 1)', //golden
+	2: 'rgba(192, 192, 192, 1)', //silver
+	3: 'rgba(205, 127, 50, 1)', //bronze
+	default: 'rgba(128, 128, 128, 0.2)', //grey
+};
 
 const { leaderboardId, benchmark, scoreList, modelList } = defineProps<{
 	leaderboardId: string;
