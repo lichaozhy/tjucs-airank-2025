@@ -42,7 +42,7 @@
 
 <script setup lang="ts">
 defineOptions({ name: 'BenchmarkRankPage' });
-import { ref, computed, onMounted, onBeforeMount } from 'vue';
+import { ref, computed, onBeforeMount } from 'vue';
 import { useRoute } from 'vue-router';
 import type * as Spec from 'src/spec';
 import { API } from 'src/backend';

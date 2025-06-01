@@ -58,9 +58,8 @@
 
 <script setup lang="ts">
 defineOptions({ name: 'AppBenchmark' });
-import { computed, onMounted, onBeforeMount, ref } from 'vue';
+import { computed, ref } from 'vue';
 import type * as Spec from 'src/spec';
-import { API } from 'src/backend';
 
 interface ScoreRow {
 	benchmark: Spec.Benchmark.Type;
@@ -75,8 +74,6 @@ const { leaderboardId, benchmark, scoreList, modelList } = defineProps<{
 	scoreList: Array<Spec.Score.Type>;
 	modelList: Array<Spec.Model.Type>;
 }>();
-
-console.log('AppBenchmark', leaderboardId, benchmark, scoreList, modelList);
 
 const propsIndex = ref<number>(0);
 

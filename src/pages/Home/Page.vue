@@ -27,7 +27,7 @@
 <script setup lang="ts">
 defineOptions({ name: 'AppLeaderboardPage' });
 import type * as Spec from 'src/spec';
-import { computed, onBeforeMount, onMounted, ref, watch } from 'vue';
+import { computed, onBeforeMount, ref } from 'vue';
 import { API } from 'src/backend';
 import AppBenchmark from 'src/components/Benchmark.vue';
 
