@@ -50,8 +50,11 @@
 							:style="{ color: rankingColorRgbaMap[index + 1] ?? rankingColorRgbaMap.default }"
 						>
 						</q-icon>
-						<div class="rank-badge">
-							{{ index + 1 > 3 ? index + 1 : '' }}
+						<div
+							class="rank-number"
+							:class="index + 1 > 3 ? 'rank-number-rest' : 'rank-number-best'"
+						>
+							{{ index + 1 }}
 						</div>
 					</q-avatar>
 				</q-item-section>
@@ -160,18 +163,25 @@ const scores = computed(() => {
 	background-image: $gradient-primary;
 }
 
-.rank-badge {
+.rank-number {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
 	position: absolute;
-	top: 3%;
 	height: 100%;
 	width: 100%;
 
 	color: white;
 	font-size: 0.7em;
 	font-weight: bold;
+}
+
+.rank-number-best {
+	top: 12%;
+}
+
+.rank-number-rest {
+	top: 4%;
 }
 </style>
