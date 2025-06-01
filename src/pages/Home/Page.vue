@@ -63,7 +63,7 @@ const benchmarkShowList = computed(() => {
 
 	.content {
 		padding: 16px;
-		width: 1680px;
+		min-width: 800px;
 		max-width: 1680px;
 
 		.title {
