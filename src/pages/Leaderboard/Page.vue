@@ -19,11 +19,12 @@
 				</div>
 				<q-table
 					class="my-sticky-column-table fixed-layout-table width-full"
-					:rows="scores"
+					:rows="scores.slice(0, 10)"
 					:columns="columns"
 					row-key="model.id"
 					:loading="loading"
-					:pagination="{ rowsPerPage: 20 }"
+					:pagination="{ rowsPerPage: 10 }"
+					:hide-pagination="true"
 				>
 					<template v-slot:body-cell-model="props">
 						<q-td :props="props">

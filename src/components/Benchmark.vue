@@ -1,35 +1,38 @@
 <template>
-	<div>
-		<router-link
-			:to="{
-				name: 'app.leaderboard.rank',
-				params: { id: leaderboardId, benchmarkId: benchmark.id },
-			}"
-		>
-			<h2 class="text-h6">
-				{{ benchmark?.name }}
-			</h2>
-		</router-link>
-		<div>
-			<q-btn-dropdown color="primary" :label="currentPropName" no-caret>
-				<q-list>
-					<q-item
-						clickable
-						v-close-popup
-						:key="key"
-						v-for="(value, key) in propsOptions"
-						@click="changeProps(key)"
-					>
-						<q-item-section>
-							<q-item-label>{{ value.prop.key }}</q-item-label>
-						</q-item-section>
-					</q-item>
-				</q-list>
-			</q-btn-dropdown>
-		</div>
+	<q-card square>
+		<q-card-section>
+			<router-link
+				:to="{
+					name: 'app.leaderboard.rank',
+					params: { id: leaderboardId, benchmarkId: benchmark.id },
+				}"
+			>
+				<h2 class="text-h6">
+					{{ benchmark?.name }}
+				</h2>
+			</router-link>
+			<div>
+				<q-btn-dropdown color="primary" :label="currentPropName" no-caret>
+					<q-list>
+						<q-item
+							clickable
+							v-close-popup
+							:key="key"
+							v-for="(value, key) in propsOptions"
+							@click="changeProps(key)"
+						>
+							<q-item-section>
+								<q-item-label>{{ value.prop.key }}</q-item-label>
+							</q-item-section>
+						</q-item>
+					</q-list>
+				</q-btn-dropdown>
+			</div>
+		</q-card-section>
+
 		<q-list bordered separator>
 			<q-item
-				v-for="(score, index) in scores"
+				v-for="(score, index) in scores.slice(0, 10)"
 				:key="score.model.id"
 				clickable
 				v-ripple
@@ -53,7 +56,7 @@
 				</q-item-section>
 			</q-item>
 		</q-list>
-	</div>
+	</q-card>
 </template>
 
 <script setup lang="ts">
