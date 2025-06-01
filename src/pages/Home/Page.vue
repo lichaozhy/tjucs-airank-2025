@@ -48,7 +48,6 @@ onBeforeMount(async () => {
 	modelList.value = await API.Model.query();
 
 	tab.value = leaderboardList.value[0]?.id ?? '';
-	console.log('tab.value', tab.value);
 });
 
 const benchmarkShowList = computed(() => {

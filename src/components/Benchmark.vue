@@ -40,13 +40,17 @@
 				:to="{ name: 'app.model.detail', params: { id: score.model.id } }"
 			>
 				<q-item-section avatar>
-					<q-avatar
-						:style="{
-							backgroundColor: rankingColorRgbaMap[index + 1] ?? rankingColorRgbaMap.default,
-						}"
-						text-color="white"
-						>{{ index + 1 }}</q-avatar
-					>
+					<q-avatar square text-color="white">
+						<q-icon
+							:name="rankingIconMap[index + 1] ?? rankingIconMap.default"
+							size="md"
+							:style="{ color: rankingColorRgbaMap[index + 1] ?? rankingColorRgbaMap.default }"
+						>
+						</q-icon>
+						<div class="rank-badge">
+							{{ index + 1 > 3 ? index + 1 : '' }}
+						</div>
+					</q-avatar>
 				</q-item-section>
 				<q-item-section>
 					<q-item-label>
@@ -85,6 +89,13 @@ const rankingColorRgbaMap: Record<number | string, string> = {
 	2: 'rgba(192, 192, 192, 1)', //silver
 	3: 'rgba(205, 127, 50, 1)', //bronze
 	default: 'rgba(128, 128, 128, 0.2)', //grey
+};
+
+const rankingIconMap: Record<number | string, string> = {
+	1: 'fas fa-crown',
+	2: 'fas fa-trophy',
+	3: 'fas fa-medal',
+	default: 'fas fa-star',
 };
 
 const { leaderboardId, benchmark, scoreList, modelList } = defineProps<{
@@ -135,3 +146,20 @@ const scores = computed(() => {
 		});
 });
 </script>
+
+<style scoped>
+.rank-badge {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	position: absolute;
+	top: 3%;
+	height: 100%;
+	width: 100%;
+
+	color: white;
+	font-size: 0.7em;
+	font-weight: bold;
+}
+</style>

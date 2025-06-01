@@ -27,8 +27,10 @@ export default defineConfig((ctx) => {
 			// 'line-awesome',
 			// 'roboto-font-latin-ext', // this or either 'roboto-font', NEVER both!
 
+			'mdi-v7',
 			'roboto-font', // optional, you are not bound to it
 			'material-icons', // optional, you are not bound to it
+			'fontawesome-v6', // optional, you are not bound to it
 		],
 
 		// Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#build
@@ -222,13 +224,13 @@ export default defineConfig((ctx) => {
 			// extendBexManifestJson (json) {},
 
 			/**
-       * The list of extra scripts (js/ts) not in your bex manifest that you want to
-       * compile and use in your browser extension. Maybe dynamic use them?
-       *
-       * Each entry in the list should be a relative filename to /src-bex/
-       *
-       * @example [ 'my-script.ts', 'sub-folder/my-other-script.js' ]
-       */
+			 * The list of extra scripts (js/ts) not in your bex manifest that you want to
+			 * compile and use in your browser extension. Maybe dynamic use them?
+			 *
+			 * Each entry in the list should be a relative filename to /src-bex/
+			 *
+			 * @example [ 'my-script.ts', 'sub-folder/my-other-script.js' ]
+			 */
 			extraScripts: [],
 		},
 	};
