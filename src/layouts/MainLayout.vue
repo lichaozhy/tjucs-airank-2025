@@ -1,5 +1,5 @@
 <template>
-	<q-layout view="lHh Lpr lFf">
+	<q-layout class="main-layout" view="lHh Lpr lFf">
 		<q-header elevated>
 			<q-toolbar>
 				<!-- <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" /> -->
@@ -39,7 +39,11 @@
 // }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.main-layout {
+	background-image: linear-gradient(to bottom, #f0f4f8, rgba($primary, 0.3));
+}
+
 body {
 	/* 所有浏览器通用方案 */
 	scrollbar-width: none; /* Firefox */

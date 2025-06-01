@@ -1,12 +1,12 @@
 <template>
 	<div class="leaderboard-page">
+		<div class="title">
+			<h4>AIRank</h4>
+			<h6>
+				Comprehensive Benchmarking Multi-modal Large Language Models for Embodied Intelligence
+			</h6>
+		</div>
 		<div class="content">
-			<div class="title">
-				<h4>AIRank</h4>
-				<h6>
-					Comprehensive Benchmarking Multi-modal Large Language Models for Embodied Intelligence
-				</h6>
-			</div>
 			<q-tabs v-model="tab" class="text-teal">
 				<q-tab v-for="item in leaderboardList" :key="item.id" :name="item.id" :label="item.name" />
 			</q-tabs>
@@ -64,17 +64,17 @@ const benchmarkShowList = computed(() => {
 	align-items: center;
 	justify-content: center;
 
+	.title {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
 	.content {
-		padding: 16px;
 		min-width: 800px;
 		max-width: 1680px;
-
-		.title {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-		}
 	}
 }
 </style>
