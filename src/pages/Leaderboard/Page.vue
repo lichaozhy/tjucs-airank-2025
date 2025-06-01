@@ -18,6 +18,7 @@
 					/>
 				</div>
 				<q-table
+					square
 					class="my-sticky-column-table fixed-layout-table width-full"
 					:rows="scores.slice(0, 10)"
 					:columns="columns"
