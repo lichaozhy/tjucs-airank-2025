@@ -11,7 +11,11 @@
 				<q-tab v-for="item in leaderboardList" :key="item.id" :name="item.id" :label="item.name" />
 			</q-tabs>
 			<div class="row" v-if="benchmarkShowList.length !== 0">
-				<div class="col-6 q-pa-lg" v-for="benchmark in benchmarkShowList" :key="benchmark.id">
+				<div
+					class="col-6 col-grow q-pa-lg"
+					v-for="benchmark in benchmarkShowList"
+					:key="benchmark.id"
+				>
 					<AppBenchmark
 						:leaderboardId="tab"
 						:benchmark="benchmark"
