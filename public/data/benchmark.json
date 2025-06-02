@@ -101,7 +101,46 @@
 			"Complex": 2,
 			"Visual": 3,
 			"Long": 4,
-			"Total": 5
+			"TotalSR": 5
+		}
+	},
+	{
+		"id": "68bf8b5b-d8d4-49d7-9e7e-03e4d547189b",
+		"leaderboard": "1143b13b-2754-4660-9f79-d0d0dc1f273e",
+		"name": "ET-Plan-Bench",
+		"properties": {
+			"NaviLayoutMap": 0,
+			"Navi": 1,
+			"NaviRelation": 2,
+			"TotalSR": 3
+		}
+	},
+	{
+		"id": "1961aa46-9085-42ed-b384-d9ffe52921a8",
+		"leaderboard": "1143b13b-2754-4660-9f79-d0d0dc1f273e",
+		"name": "EB-ALFRED",
+		"properties": {
+			"Base": 0,
+			"Common": 1,
+			"Complex": 2,
+			"Visual": 3,
+			"Spatial": 4,
+			"Long": 5,
+			"TotalSR": 6
+		}
+	},
+	{
+		"id": "cbb64d1c-4377-4231-a465-73ffb10972c5",
+		"leaderboard": "1143b13b-2754-4660-9f79-d0d0dc1f273e",
+		"name": "EB-Habitat",
+		"properties": {
+			"Base": 0,
+			"Common": 1,
+			"Complex": 2,
+			"Visual": 3,
+			"Spatial": 4,
+			"Long": 5,
+			"TotalSR": 6
 		}
 	}
 ]

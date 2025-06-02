@@ -6,5 +6,9 @@
 	{
 		"id": "263e7d41-65a5-4b7b-8f48-5c7b94ca916b",
 		"name": "Embodied Navigation Leaderboard"
+	},
+	{
+		"id": "1143b13b-2754-4660-9f79-d0d0dc1f273e",
+		"name": "Embodied Task Planning Leaderboard"
 	}
 ]

@@ -542,5 +542,173 @@
 			"vision": null,
 			"language": null
 		}
+	},
+	{
+		"id": "314244f5-7c42-4279-957b-6fbc2c4b9aee",
+		"name": "GPT-4",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "94d720cf-6600-439d-85ad-5fd0b024c4ea",
+		"name": "Llama3-70B",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "12e98a0d-5bd3-4af8-a45d-4ebaa59cf45c",
+		"name": "Llama3-70B",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "df53089f-9407-49d7-b93e-199fffe7db94",
+		"name": "Llama3-8B",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "81cdd531-2f0a-4b49-8edb-aa122345c862",
+		"name": "Claude 3.5-Sonnet",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "c520103e-1da8-4ec4-95a4-9481a6da95bc",
+		"name": "Gemini-1.5-Pro",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "e5d0db43-bf0a-41ce-b0f2-6ca92c61c811",
+		"name": "Gemini-2.0-flash",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "1926254e-b425-4279-928f-155842a3ceb1",
+		"name": "Qwen-VL-Max",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "b8a2e78b-e9dd-4ca1-b8d5-4f3f54ffd22d",
+		"name": "InternVL2.5-7B8-MPO",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "77fec115-2a6a-4478-8e0e-60fd8698ea20",
+		"name": "Qwen2.5-VL-72B-Ins",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "3b0d50a0-37ec-4234-ada0-4a727f9972ab",
+		"name": "Gemini-1.5-chat",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "9fe6fa5b-6b7a-4422-8fe6-9c78fc7577e4",
+		"name": "InternVL2.5-78B",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "9941e377-6f53-422c-a156-8cb895f16514",
+		"name": "Qwen2-VL-72B-Ins",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "0cc2c45e-af32-4f14-b6e5-4bf9128c15d5",
+		"name": "Llama-3.2-90B-Vision-Ins",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "3fb0da53-f2cc-4854-9d26-3d16943be090",
+		"name": "InternVL2.5-33B-MPO",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "80ec5db3-a3a7-42e4-a30d-313f4ca20009",
+		"name": "GPT-4o-mini",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "1ff580e8-1775-4dc3-b7f6-191f98b432e8",
+		"name": "InternVL2.5-33B",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "d94d9e0b-9df9-4f3f-bc0e-6edb80a4b312",
+		"name": "Llama-3.2-11B-Vision-Ins",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "85ced4c3-d578-43c2-81e9-90aecef79e2f",
+		"name": "InternVL2.5-8B-MPO",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "f0cf558f-d983-4a12-9649-c746003aee5e",
+		"name": "InternVL2.5-8B",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "e687e55b-94ba-44cf-959a-634ab1f58b1b",
+		"name": "Qwen2-VL-7B-Ins",
+		"component": {
+			"vision": null,
+			"language": null
+		}
 	}
 ]
