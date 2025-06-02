@@ -41,28 +41,17 @@ import { useRoute } from 'vue-router';
 import type * as Spec from 'src/spec';
 import { API } from 'src/backend';
 
-interface Benchmark {
-	id: string
-	name: string
-	properties?: Record<string, number>
-}
-
-interface Model {
-	id: string
-	name: string
-}
-
 interface ScoreRow {
-	model: Model
+	model: Spec.Model.Type
 	[key: `prop_${number}`]: number
 }
 
 const route = useRoute();
 const benchmarkId = route.params.id as string;
 
-const benchmark = ref<Benchmark | null>(null);
-const scores = ref<ScoreRow[]>([]);
-const modelList = ref<Spec.Model.Type[]>([]);
+const benchmark = ref<Spec.Benchmark.Type | null>(null);
+const scores = ref<Array<ScoreRow>>([]);
+const modelList = ref<Array<Spec.Model.Type>>([]);
 const loading = ref(true);
 
 const columns = computed(() => {
@@ -81,11 +70,11 @@ const columns = computed(() => {
 
 	// Add columns for each property
 	if (benchmark.value.properties) {
-		Object.entries(benchmark.value.properties).forEach(([name, index]) => {
+		Object.entries(benchmark.value.properties).forEach(([name, prop]) => {
 			cols.push({
-				name: `prop_${index}`,
-				label: name,
-				field: `prop_${index}`,
+				name: `prop_${prop.index}`,
+				label: prop.label,
+				field: `prop_${prop.index}`,
 				align: 'right' as 'left' | 'right' | 'center',
 				headerStyle: 'width: 180px;',
 				sortable: true,
@@ -112,18 +101,20 @@ onMounted(async () => {
 
 	// Map scores to rows with model details
 	scores.value = benchmarkScores.map((score) => {
-		const model = modelList.value.find((m) => m.id === score.model) || {
-			id: score.model,
-			name: 'Unknown Model',
-		};
+		const model = modelList.value.find((m) => m.id === score.model);
+
+		if (model === undefined) {
+			throw new Error('bad dataset');
+		}
+
 		const row: ScoreRow = {
 			model,
 		};
 
 		// Add properties to row
 		if (benchmark.value?.properties) {
-			Object.values(benchmark.value.properties).forEach((index) => {
-				row[`prop_${index}`] = score.items[index] || 0;
+			Object.values(benchmark.value.properties).forEach((prop) => {
+				row[`prop_${prop.index}`] = score.items[prop.index] || 0;
 			});
 		}
 

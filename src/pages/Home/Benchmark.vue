@@ -36,7 +36,7 @@
 							@click="changeProps(key)"
 						>
 							<q-item-section>
-								<q-item-label>{{ value.prop.key }}</q-item-label>
+								<q-item-label>{{ value.prop.value.label }}</q-item-label>
 							</q-item-section>
 						</q-item>
 					</q-list>
@@ -83,7 +83,8 @@
 				<q-item-section side>
 					<!-- <q-btn flat icon="edit" /> -->
 					<q-item-label class="text-bold">
-						{{ score.items[propsOptions[propsIndex]?.prop.value!] }}
+						{{ score.items[propsOptions[propsIndex]?.prop.value!.index!] }}
+						{{ propsOptions[propsIndex]?.prop.value.unit ?? '' }}
 					</q-item-label>
 					<q-item-label caption>{{ currentPropName }}</q-item-label>
 				</q-item-section>

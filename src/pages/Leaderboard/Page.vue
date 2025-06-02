@@ -91,19 +91,8 @@ import { useRoute } from 'vue-router';
 import type * as Spec from 'src/spec';
 import { API } from 'src/backend';
 
-interface Benchmark {
-	id: string
-	name: string
-	properties?: Record<string, number>
-}
-
-interface Model {
-	id: string
-	name: string
-}
-
 interface ScoreRow {
-	model: Model
+	model: Spec.Model.Type
 	[key: `prop_${number}`]: number
 }
 
@@ -112,7 +101,7 @@ const leaderboardId = route.params.id as string;
 const benchmarkId = route.params.benchmarkId as string | undefined;
 
 const leaderboard = ref<Spec.Leaderboard.Type | null>(null);
-const benchmarkList = ref<Array<Benchmark>>([]);
+const benchmarkList = ref<Array<Spec.Benchmark.Type>>([]);
 const scoreList = ref<Array<Spec.Score.Type>>([]);
 const currentBenchmarkIndex = ref<number | null>(null);
 const modelList = ref<Spec.Model.Type[]>([]);
@@ -153,6 +142,15 @@ const currentModelOptionList = computed(() => {
 	}));
 });
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const columnFormatter = (unit: string | null) => (val: number | null | undefined, row: any) => {
+	console.log('columnFormatter', val, row);
+	if (val === null || val === undefined) {
+		return '-';
+	}
+	return val.toFixed(2) + (unit ? ` ${unit}` : '');
+};
+
 const columns = computed(() => {
 	if (!currentBenchmark.value) return [];
 
@@ -162,6 +160,7 @@ const columns = computed(() => {
 			label: 'Model',
 			field: 'model',
 			align: 'left' as 'left' | 'right' | 'center',
+			format: columnFormatter(null),
 			headerStyle: 'width: 260px;',
 			sortable: true,
 		},
@@ -169,12 +168,15 @@ const columns = computed(() => {
 
 	// Add columns for each property
 	if (currentBenchmark.value.properties) {
-		Object.entries(currentBenchmark.value.properties).forEach(([name, index]) => {
+		Object.entries(currentBenchmark.value.properties).forEach(([name, prop]) => {
+			console.log(prop.label, name);
 			cols.push({
-				name: `prop_${index}`,
-				label: name,
-				field: `prop_${index}`,
+				name: `prop_${prop.index}`,
+				label: prop.label,
+				// label: name,
+				field: `prop_${prop.index}`,
 				align: 'right' as 'left' | 'right' | 'center',
+				format: columnFormatter(prop.unit),
 				headerStyle: 'width: 180px;',
 				sortable: true,
 			});
@@ -211,8 +213,8 @@ const scores = computed(() => {
 
 			// Add properties to row
 			if (currentBenchmark.value?.properties) {
-				Object.values(currentBenchmark.value.properties).forEach((index) => {
-					row[`prop_${index}`] = score.items[index] || 0;
+				Object.values(currentBenchmark.value.properties).forEach((prop) => {
+					row[`prop_${prop.index}`] = score.items[prop.index] || 0;
 				});
 			}
 
