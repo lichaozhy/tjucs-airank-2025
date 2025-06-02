@@ -83,7 +83,7 @@
 				<q-item-section side>
 					<!-- <q-btn flat icon="edit" /> -->
 					<q-item-label class="text-bold">
-						{{ score.items[propsOptions[propsIndex]?.prop.value!.index!] }}
+						{{ score.items[propsOptions[propsIndex]?.prop.value!.index!]?.toFixed(2) }}
 						{{ propsOptions[propsIndex]?.prop.value.unit ?? '' }}
 					</q-item-label>
 					<q-item-label caption>{{ currentPropName }}</q-item-label>
