@@ -7,14 +7,14 @@
 			class="content full-width"
 			v-if="currentBenchmark"
 		>
-			<h5 class="q-my-md">{{ leaderboard!.name }} Rankings</h5>
-			<h6 class="q-my-md">{{ currentBenchmark.name }} Rankings</h6>
+			<h5 class="q-my-md title-leaderboard-name">{{ leaderboard!.name }} Rankings</h5>
+			<h6 class="q-my-md title-benchmark-name">{{ currentBenchmark.name }} Rankings</h6>
 			<div class="q-py-md">
 				<q-btn-toggle
 					no-caps
 					square
 					v-model="currentBenchmarkIndex"
-					toggle-color="primary"
+					toggle-color="secondary"
 					:options="
 						benchmarkList.map((b, index) => ({
 							label: b.name,
@@ -60,10 +60,17 @@
 			>
 				<template v-slot:body-cell-model="props">
 					<q-td :props="props">
-						<router-link :to="{ name: 'app.model.detail', params: { id: props.row.model.id } }">
-							{{ props.row.model.name }}
-						</router-link>
-						<!-- {{ props.row.model.name }} -->
+						<q-btn
+							:to="{ name: 'app.model.detail', params: { id: props.row.model.id } }"
+							dense
+							no-caps
+							square
+							flat
+							class="col-shrink text-primary"
+							size="md"
+						>
+							<div class="text-weight-light">{{ props.row.model.name }}</div>
+						</q-btn>
 					</q-td>
 				</template>
 			</q-table>
@@ -222,12 +229,9 @@ const filterFn = (val: string, update: (fn: () => void) => void) => {
 	});
 };
 
-watch(
-	currentBenchmarkIndex,
-	() => {
-		selectedModelList.value = [];
-	},
-);
+watch(currentBenchmarkIndex, () => {
+	selectedModelList.value = [];
+});
 
 onBeforeMount(async () => {
 	leaderboard.value = await API.Leaderboard(leaderboardId).get();
@@ -310,10 +314,10 @@ onBeforeMount(async () => {
 
   thead tr:first-child th:first-child
     /* bg color is important for th; just specify one */
-    background-color: #e4e4e4
+    background-color: rgba($primary, 0.2)
 
   td:first-child
-    background-color: #e4e4e4
+    background-color: rgba($primary, 0.2)
 
   th:first-child,
   td:first-child
