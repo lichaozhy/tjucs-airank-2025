@@ -70,7 +70,7 @@ const columns = computed(() => {
 
 	// Add columns for each property
 	if (benchmark.value.properties) {
-		Object.entries(benchmark.value.properties).forEach(([name, prop]) => {
+		Object.entries(benchmark.value.properties).forEach(([, prop]) => {
 			cols.push({
 				name: `prop_${prop.index}`,
 				label: prop.label,

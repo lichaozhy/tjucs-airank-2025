@@ -49,7 +49,7 @@
 			},
 			"TaskRelatedObjectReasoning": {
 				"index": 8,
-				"label": "TaskRelated Object Reasoning",
+				"label": "Task Related Object Reasoning",
 				"unit": null
 			},
 			"SituatedReasoning": {
