@@ -38,7 +38,6 @@ export const API = {
 	},
 	Leaderboard: Object.assign(
 		(id: string) => {
-			console.log(id);
 
 			return {
 				async get() {

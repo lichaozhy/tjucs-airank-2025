@@ -46,7 +46,7 @@
 				:columns="columns"
 				row-key="model.id"
 				:loading="loading"
-				:pagination="{ rowsPerPage: 10 }"
+				:pagination="{ rowsPerPage: 0 }"
 				:hide-pagination="true"
 			>
 				<template v-slot:body-cell-model="props">
