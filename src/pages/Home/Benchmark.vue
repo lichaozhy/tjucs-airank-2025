@@ -1,32 +1,37 @@
 <template>
 	<q-card square>
-		<q-item class="card-header">
-			<q-item-section>
-				<router-link
+		<q-item class="card-header justify-between">
+			<q-item-section class="col-shrink">
+				<q-btn
 					:to="{
 						name: 'app.leaderboard.rank',
 						params: { id: leaderboardId, benchmarkId: benchmark.id },
 					}"
-					custom
-					v-slot="{ navigate }"
+					dense
+					no-caps
+					square
+					flat
+					class="col-shrink text-white"
+					size="lg"
 				>
 					<div
-						@click="navigate"
-						class="text-h6"
-						style="cursor: pointer; color: white"
+						class="text-weight-light"
 					>
-						{{ benchmark?.name }} Benchmark
+						{{ benchmark.name }} Benchmark
 					</div>
-				</router-link>
+				</q-btn>
 			</q-item-section>
 			<q-item-section style="flex: 0 0 auto">
 				<q-btn-dropdown
 					no-caps
+					square
 					color="primary"
 					:label="currentPropName"
 					no-caret
+					dense
+					class="q-pl-md"
 				>
-					<q-list>
+					<q-list dense>
 						<q-item
 							clickable
 							v-close-popup
@@ -74,17 +79,15 @@
 					</q-avatar>
 				</q-item-section>
 				<q-item-section>
-					<q-item-label>
+					<q-item-label class="text-weight-bold">
 						{{ score.model.name }}
 					</q-item-label>
-					<q-item-label caption>Model ID: {{ score.model.id }}</q-item-label>
+					<q-item-label caption>{{ score.caption }}</q-item-label>
 				</q-item-section>
 				<q-item-section side>
 					<!-- <q-btn flat icon="edit" /> -->
-					<q-item-label>
-						<div>
-							{{ score.items[propsOptions[propsIndex]?.prop.value!] }}
-						</div>
+					<q-item-label class="text-bold">
+						{{ score.items[propsOptions[propsIndex]?.prop.value!] }}
 					</q-item-label>
 					<q-item-label caption>{{ currentPropName }}</q-item-label>
 				</q-item-section>
@@ -102,7 +105,8 @@ interface ScoreRow {
 	benchmark: Spec.Benchmark.Type
 	model: Spec.Model.Type
 	// [key: `prop_${number}`]: number;
-	items: Spec.Score.Type['items']
+	items: Spec.Score.Type['items'];
+	caption: string;
 }
 
 const rankingColorRgbaMap: Record<number | string, string> = {
@@ -145,28 +149,58 @@ const currentPropName = computed(() => {
 });
 
 const changeProps = (index: number) => {
-	console.log('Item clicked:', index);
 	propsIndex.value = index;
 };
 
+function asNumber(value: null | undefined | number) {
+	if (value === null || value === undefined) {
+		return 0;
+	}
+
+	return value;
+}
+
+function toCaption(model: Spec.Model.Type) {
+	const captionSectionList: string[] = [];
+	const { vision, language } = model.component;
+
+	if (vision !== null) {
+		captionSectionList.push(`Vision: ${vision}`);
+	}
+
+	if (language !== null) {
+		captionSectionList.push(`Language: ${language}`);
+	}
+
+	if (captionSectionList.length === 0) {
+		captionSectionList.push(`Model ID: ${model.id}`);
+	}
+
+	return captionSectionList.join(' / ');
+}
+
 const scores = computed(() => {
+	const itemIndex = propsIndex.value;
+
 	return scoreList
 		.filter((score) => score.benchmark === benchmark.id)
 		.map((score) => {
-			const modelDetails = modelList.find((m) => m.id === score.model) || {
-				id: score.model,
-				name: 'Unknown Model',
-				component: {},
-			};
+			const modelDetails = modelList.find((m) => m.id === score.model);
+
+			if (modelDetails === undefined) {
+				throw new Error('Bad dataset.');
+			}
 
 			const row: ScoreRow = {
 				model: modelDetails,
 				benchmark: benchmark,
 				items: score.items,
+				caption: toCaption(modelDetails),
 			};
 
 			return row;
-		});
+		})
+		.sort((a, b) => asNumber(b.items[itemIndex]) - asNumber(a.items[itemIndex]));
 });
 </script>
 
