@@ -1,51 +1,55 @@
 <template>
-	<q-page padding>
-		<div class="ranking-page">
-			<div
-				class="content"
-				v-if="currentBenchmark"
-			>
-				<h5 class="q-ma-md">{{ leaderboard!.name }} Rankings</h5>
-				<h6 class="q-ma-md">{{ currentBenchmark.name }} Rankings</h6>
-				<div class="q-pa-md">
-					<q-btn-toggle
-						no-caps
-						v-model="currentBenchmarkIndex"
-						toggle-color="primary"
-						:options="
-							benchmarkList.map((b, index) => ({
-								label: b.name,
-								value: index,
-							}))
-						"
-					/>
-				</div>
-				<q-table
+	<q-page
+		padding
+		class="ranking-page"
+	>
+		<div
+			class="content full-width"
+			v-if="currentBenchmark"
+		>
+			<h5 class="q-my-md">{{ leaderboard!.name }} Rankings</h5>
+			<h6 class="q-my-md">{{ currentBenchmark.name }} Rankings</h6>
+			<div class="q-py-md">
+				<q-btn-toggle
+					no-caps
 					square
-					class="my-sticky-column-table fixed-layout-table width-full"
-					:rows="scores.slice(0, 10)"
-					:columns="columns"
-					row-key="model.id"
-					:loading="loading"
-					:pagination="{ rowsPerPage: 10 }"
-					:hide-pagination="true"
-				>
-					<template v-slot:body-cell-model="props">
-						<q-td :props="props">
-							<router-link :to="{ name: 'app.model.detail', params: { id: props.row.model.id } }">
-								{{ props.row.model.name }}
-							</router-link>
-							<!-- {{ props.row.model.name }} -->
-						</q-td>
-					</template>
-				</q-table>
+					v-model="currentBenchmarkIndex"
+					toggle-color="primary"
+					:options="
+						benchmarkList.map((b, index) => ({
+							label: b.name,
+							value: index,
+						}))
+					"
+				/>
 			</div>
-			<div
-				class="content"
-				v-else
+			<q-table
+				square
+				flat
+				borderd
+				class="my-sticky-column-table fixed-layout-table width-full"
+				:rows="scores.slice(0, 10)"
+				:columns="columns"
+				row-key="model.id"
+				:loading="loading"
+				:pagination="{ rowsPerPage: 10 }"
+				:hide-pagination="true"
 			>
-				Loading benchmark details...{{ leaderboardId }}
-			</div>
+				<template v-slot:body-cell-model="props">
+					<q-td :props="props">
+						<router-link :to="{ name: 'app.model.detail', params: { id: props.row.model.id } }">
+							{{ props.row.model.name }}
+						</router-link>
+						<!-- {{ props.row.model.name }} -->
+					</q-td>
+				</template>
+			</q-table>
+		</div>
+		<div
+			class="content"
+			v-else
+		>
+			Loading benchmark details...{{ leaderboardId }}
 		</div>
 	</q-page>
 </template>
@@ -183,13 +187,12 @@ onBeforeMount(async () => {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: start;
 
 	.content {
 		padding: 16px;
 		min-width: 600px;
 		max-width: 1680px;
-		width: 100%;
 
 		.title {
 			display: flex;
