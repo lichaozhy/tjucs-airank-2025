@@ -34,7 +34,16 @@
 					filled
 					class="width-100"
 					placeholder="Filter Model"
-				/>
+				>
+				<template v-slot:append>
+          <q-icon
+            v-if="selectedModelList.length > 0"
+            class="cursor-pointer"
+            name="clear"
+            @click.stop.prevent="selectedModelList = []"
+          />
+        </template>
+				</q-select>
 			</div>
 			<div class="q-py-md"></div>
 			<q-table
