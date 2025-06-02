@@ -42,7 +42,7 @@
 				flat
 				borderd
 				class="my-sticky-column-table fixed-layout-table width-full"
-				:rows="scores.slice(0, 10)"
+				:rows="scores"
 				:columns="columns"
 				row-key="model.id"
 				:loading="loading"
