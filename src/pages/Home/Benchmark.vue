@@ -10,13 +10,22 @@
 					custom
 					v-slot="{ navigate }"
 				>
-					<div @click="navigate" class="text-h6" style="cursor: pointer; color: white">
+					<div
+						@click="navigate"
+						class="text-h6"
+						style="cursor: pointer; color: white"
+					>
 						{{ benchmark?.name }} Benchmark
 					</div>
 				</router-link>
 			</q-item-section>
 			<q-item-section style="flex: 0 0 auto">
-				<q-btn-dropdown no-caps color="primary" :label="currentPropName" no-caret>
+				<q-btn-dropdown
+					no-caps
+					color="primary"
+					:label="currentPropName"
+					no-caret
+				>
 					<q-list>
 						<q-item
 							clickable
@@ -34,7 +43,10 @@
 			</q-item-section>
 		</q-item>
 
-		<q-list bordered separator>
+		<q-list
+			bordered
+			separator
+		>
 			<q-item
 				v-for="(score, index) in scores.slice(0, 10)"
 				:key="score.model.id"
@@ -43,7 +55,10 @@
 				:to="{ name: 'app.model.detail', params: { id: score.model.id } }"
 			>
 				<q-item-section avatar>
-					<q-avatar square text-color="white">
+					<q-avatar
+						square
+						text-color="white"
+					>
 						<q-icon
 							:name="rankingIconMap[index + 1] ?? rankingIconMap.default"
 							size="md"
@@ -84,10 +99,10 @@ import { computed, ref } from 'vue';
 import type * as Spec from 'src/spec';
 
 interface ScoreRow {
-	benchmark: Spec.Benchmark.Type;
-	model: Spec.Model.Type;
+	benchmark: Spec.Benchmark.Type
+	model: Spec.Model.Type
 	// [key: `prop_${number}`]: number;
-	items: Spec.Score.Type['items'];
+	items: Spec.Score.Type['items']
 }
 
 const rankingColorRgbaMap: Record<number | string, string> = {
@@ -107,10 +122,10 @@ const rankingIconMap: Record<number | string, string> = {
 };
 
 const { leaderboardId, benchmark, scoreList, modelList } = defineProps<{
-	leaderboardId: string;
-	benchmark: Spec.Benchmark.Type;
-	scoreList: Array<Spec.Score.Type>;
-	modelList: Array<Spec.Model.Type>;
+	leaderboardId: string
+	benchmark: Spec.Benchmark.Type
+	scoreList: Array<Spec.Score.Type>
+	modelList: Array<Spec.Model.Type>
 }>();
 
 const propsIndex = ref<number>(Object.keys(benchmark.properties).length - 1);

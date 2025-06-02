@@ -1,9 +1,18 @@
 <template>
-	<q-page padding class="flex justify-center">
-		<div class="model-detail" v-if="model">
+	<q-page
+		padding
+		class="flex justify-center"
+	>
+		<div
+			class="model-detail"
+			v-if="model"
+		>
 			<h1 class="text-h4">{{ model.name }}</h1>
 
-			<div v-if="model.component" class="q-mt-md">
+			<div
+				v-if="model.component"
+				class="q-mt-md"
+			>
 				<h2 class="text-h6">Components</h2>
 				<q-list bordered>
 					<q-item v-if="model.component.vision">
@@ -23,7 +32,10 @@
 
 			<div class="q-mt-lg">
 				<h2 class="text-h6">Benchmark Scores</h2>
-				<q-list bordered separator>
+				<q-list
+					bordered
+					separator
+				>
 					<q-item
 						v-for="score in modelScores"
 						:key="score.benchmark"
@@ -53,20 +65,20 @@ import { useRoute } from 'vue-router';
 import { API } from 'src/backend';
 
 interface Model {
-	id: string;
-	name: string;
+	id: string
+	name: string
 	component: {
-		vision: string | null;
-		language: string | null;
-	};
+		vision: string | null
+		language: string | null
+	}
 }
 
 interface Score {
-	leaderboard: string;
-	benchmark: string;
-	model: string;
-	total: number;
-	items: Array<number | null>;
+	leaderboard: string
+	benchmark: string
+	model: string
+	total: number
+	items: Array<number | null>
 }
 
 const model = ref<Model | null>(null);

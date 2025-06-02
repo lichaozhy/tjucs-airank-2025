@@ -1,7 +1,10 @@
 <template>
 	<q-page padding>
 		<div class="ranking-page">
-			<div class="content" v-if="currentBenchmark">
+			<div
+				class="content"
+				v-if="currentBenchmark"
+			>
 				<h5 class="q-ma-md">{{ leaderboard!.name }} Rankings</h5>
 				<h6 class="q-ma-md">{{ currentBenchmark.name }} Rankings</h6>
 				<div class="q-pa-md">
@@ -37,7 +40,12 @@
 					</template>
 				</q-table>
 			</div>
-			<div class="content" v-else>Loading benchmark details...{{ leaderboardId }}</div>
+			<div
+				class="content"
+				v-else
+			>
+				Loading benchmark details...{{ leaderboardId }}
+			</div>
 		</div>
 	</q-page>
 </template>
@@ -50,19 +58,19 @@ import type * as Spec from 'src/spec';
 import { API } from 'src/backend';
 
 interface Benchmark {
-	id: string;
-	name: string;
-	properties?: Record<string, number>;
+	id: string
+	name: string
+	properties?: Record<string, number>
 }
 
 interface Model {
-	id: string;
-	name: string;
+	id: string
+	name: string
 }
 
 interface ScoreRow {
-	model: Model;
-	[key: `prop_${number}`]: number;
+	model: Model
+	[key: `prop_${number}`]: number
 }
 
 const route = useRoute();

@@ -8,4 +8,4 @@ export const Schema = z.object({
 	properties: z.record(z.string(), z.number()),
 });
 
-export type Type = z.infer<typeof Schema>;
+export type Type = z.infer<typeof Schema>

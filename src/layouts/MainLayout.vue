@@ -1,59 +1,60 @@
 <template>
-	<q-layout class="main-layout" view="lHh Lpr lFf">
-		<q-header elevated>
+	<q-layout
+		class="main-layout"
+		view="lHh Lpr fFf"
+	>
+		<q-header bordered>
 			<q-toolbar>
-				<!-- <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" /> -->
-
-				<!-- <q-toolbar-title> TJU CS AIRank </q-toolbar-title> -->
 				<q-toolbar-title>
-					<router-link :to="{ name: 'app.home' }" custom v-slot="{ navigate }">
-						<div @click="navigate" class="text-h6" style="cursor: pointer; color: white">
-							TJU CS AIRank
-						</div>
+					<router-link
+						:to="{ name: 'app.home' }"
+						custom
+						v-slot="{ navigate }"
+					>
+						<div
+							@click="navigate"
+							class="text-h6"
+							style="cursor: pointer; color: white"
+						>{{ $t('spec.project.name') }}</div>
 					</router-link>
 				</q-toolbar-title>
 
-				<div>v.{{ 2025 }}</div>
+				<q-space></q-space>
 			</q-toolbar>
 		</q-header>
 
-		<q-page-container>
-			<router-view />
-		</q-page-container>
+		<q-scroll-area class="absolute-full">
+			<q-page-container>
+				<router-view />
+			</q-page-container>
+		</q-scroll-area>
 
-		<q-footer>
-			<q-toolbar>
-				<q-toolbar-title class="flex">
-					<span>© 2025 Tianjin University All Rights Reserved</span>
-					<q-separator class="q-mx-md bg-white" vertical />
-					<span>Tianjin University Deep Reinforcement Learning Laboratory</span>
-				</q-toolbar-title>
+		<q-footer
+			bordered
+			reveal
+			class="bg-grey-3 text-grey-10"
+		>
+			<q-toolbar class="flex-center text-overline">
+				<q-space />
+				<div>{{ $t('spec.rights') }}</div>
+				<q-separator
+					vertical
+					inset
+					spaced
+				/>
+				<div>{{ $t('spec.subject') }}</div>
+				<q-space />
 			</q-toolbar>
 		</q-footer>
 	</q-layout>
 </template>
 
 <script setup lang="ts">
-// import { ref } from 'vue';
-
-// const leftDrawerOpen = ref(false);
-
-// function toggleLeftDrawer() {
-// 	leftDrawerOpen.value = !leftDrawerOpen.value;
-// }
+defineOptions({ name: 'AppMainLayout' });
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .main-layout {
-	background-image: linear-gradient(to bottom, #f0f4f8, rgba($primary, 0.3));
-}
-
-body {
-	/* 所有浏览器通用方案 */
-	scrollbar-width: none; /* Firefox */
-	-ms-overflow-style: none; /* IE/Edge */
-}
-body::-webkit-scrollbar {
-	display: none; /* Chrome/Safari/Edge */
+	background-image: linear-gradient(to bottom, #f0f4f8, rgba($primary, 0.1));
 }
 </style>

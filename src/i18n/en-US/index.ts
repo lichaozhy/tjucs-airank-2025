@@ -4,4 +4,19 @@
 export default {
 	failed: 'Action failed',
 	success: 'Action was successful',
+	spec: {
+		project: {
+			name: 'TJU CS AIRank',
+		},
+		rights: '© 2025 Tianjin University All Rights Reserved',
+		subject: 'Tianjin University Deep Reinforcement Learning Laboratory',
+	},
+	p: {
+		leaderboard: {
+			banner: {
+				title: 'AIRank',
+				description: 'Comprehensive Benchmarking Multi-modal Large Language Models for Embodied Intelligence',
+			},
+		},
+	},
 };
