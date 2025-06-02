@@ -38,7 +38,6 @@ export const API = {
 	},
 	Leaderboard: Object.assign(
 		(id: string) => {
-
 			return {
 				async get() {
 					const leaderboardList = await fetchAllLeaderboard();

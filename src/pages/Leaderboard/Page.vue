@@ -35,14 +35,14 @@
 					class="width-100"
 					placeholder="Filter Model"
 				>
-				<template v-slot:append>
-          <q-icon
-            v-if="selectedModelList.length > 0"
-            class="cursor-pointer"
-            name="clear"
-            @click.stop.prevent="selectedModelList = []"
-          />
-        </template>
+					<template v-slot:append>
+						<q-icon
+							v-if="selectedModelList.length > 0"
+							class="cursor-pointer"
+							name="clear"
+							@click.stop.prevent="selectedModelList = []"
+						/>
+					</template>
 				</q-select>
 			</div>
 			<div class="q-py-md"></div>
@@ -112,18 +112,38 @@ const modelList = ref<Spec.Model.Type[]>([]);
 const selectedModelList = ref<Array<{ label: string; value: string }>>([]);
 const loading = ref(true);
 
-const modelOptionList = computed(() => {
-	return modelList.value.map((model) => ({
-		label: model.name,
-		value: model.id,
-	}));
-});
-
 const filteredModelOptionList = ref<Array<{ label: string; value: string }>>([]);
 
 const currentBenchmark = computed(() => {
 	if (currentBenchmarkIndex.value === null) return null;
 	return benchmarkList.value[currentBenchmarkIndex.value] || null;
+});
+
+const currentScoreList = computed(() => {
+	if (currentBenchmark.value === null) return [];
+
+	// Get scores for this benchmark
+	return scoreList.value.filter((score) => score.benchmark === currentBenchmark.value!.id);
+});
+
+const currentModelList = computed(() => {
+	// Filter models based on selected models
+	return currentScoreList.value.map((s) => {
+		const model = modelList.value.find((m) => m.id === s.model);
+
+		if (model === undefined) {
+			throw new Error('Bad dataset.');
+		}
+
+		return model;
+	});
+});
+
+const currentModelOptionList = computed(() => {
+	return currentModelList.value.map((model) => ({
+		label: model.name,
+		value: model.id,
+	}));
 });
 
 const columns = computed(() => {
@@ -164,44 +184,39 @@ const columns = computed(() => {
 });
 
 const scores = computed(() => {
-	if (currentBenchmark.value === null) return [];
-
-	// Get scores for this benchmark
-	const benchmarkScoreList = scoreList.value.filter((score) => {
-		return (
-			score.benchmark === currentBenchmark.value!.id &&
-			(selectedModelList.value.length === 0 ||
-				selectedModelList.value.map((m) => m.value).includes(score.model))
-		);
-	});
-
 	// Map scores to rows with model details
-	return benchmarkScoreList.map((score) => {
-		const model = modelList.value.find((m) => m.id === score.model);
+	return currentScoreList.value
+		.filter(
+			(s) =>
+				selectedModelList.value.length === 0 ||
+				selectedModelList.value.some((sm) => sm.value === s.model),
+		)
+		.map((score) => {
+			const model = modelList.value.find((m) => m.id === score.model);
 
-		if (model === undefined) {
-			throw new Error('Bad dataset.');
-		}
+			if (model === undefined) {
+				throw new Error('Bad dataset.');
+			}
 
-		const row: ScoreRow = {
-			model,
-		};
+			const row: ScoreRow = {
+				model,
+			};
 
-		// Add properties to row
-		if (currentBenchmark.value?.properties) {
-			Object.values(currentBenchmark.value.properties).forEach((index) => {
-				row[`prop_${index}`] = score.items[index] || 0;
-			});
-		}
+			// Add properties to row
+			if (currentBenchmark.value?.properties) {
+				Object.values(currentBenchmark.value.properties).forEach((index) => {
+					row[`prop_${index}`] = score.items[index] || 0;
+				});
+			}
 
-		return row;
-	});
+			return row;
+		});
 });
 
 const filterFn = (val, update, abort) => {
 	update(() => {
 		const needle = val.toLowerCase();
-		filteredModelOptionList.value = modelOptionList.value.filter(
+		filteredModelOptionList.value = currentModelOptionList.value.filter(
 			(v) => v.label.toLowerCase().indexOf(needle) > -1,
 		);
 	});
