@@ -24,12 +24,12 @@
 			},
 			"SpatiaPerception": {
 				"index": 3,
-				"label": "",
+				"label": "Spatia Perception",
 				"unit": null
 			},
 			"ActionPerception": {
 				"index": 4,
-				"label": "Spatia Perception",
+				"label": "Action Perception",
 				"unit": null
 			},
 			"TemporalPerception": {
