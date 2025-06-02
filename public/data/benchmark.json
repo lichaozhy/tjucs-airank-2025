@@ -69,7 +69,7 @@
 			},
 			"Total": {
 				"index": 12,
-				"label": "Total",
+				"label": "Total Score",
 				"unit": null
 			}
 		}
@@ -114,7 +114,7 @@
 			},
 			"Total": {
 				"index": 6,
-				"label": "Total",
+				"label": "Total Score",
 				"unit": null
 			}
 		}
@@ -169,7 +169,7 @@
 			},
 			"Total": {
 				"index": 8,
-				"label": "Total",
+				"label": "Total Score",
 				"unit": null
 			}
 		}
@@ -224,7 +224,7 @@
 			},
 			"Total": {
 				"index": 8,
-				"label": "Total",
+				"label": "Total Score",
 				"unit": null
 			}
 		}
@@ -425,22 +425,22 @@
 			"NaviLayoutMap": {
 				"index": 0,
 				"label": "Navi +Layout Map",
-				"unit": "%"
+				"unit": ""
 			},
 			"Navi": {
 				"index": 1,
 				"label": "Navi",
-				"unit": "%"
+				"unit": ""
 			},
 			"NaviRelation": {
 				"index": 2,
 				"label": "Navi+ Relation",
-				"unit": "%"
+				"unit": ""
 			},
 			"TotalSR": {
 				"index": 3,
 				"label": "Total SR",
-				"unit": "%"
+				"unit": ""
 			}
 		}
 	}
