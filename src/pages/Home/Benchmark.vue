@@ -14,11 +14,7 @@
 					class="col-shrink text-white"
 					size="lg"
 				>
-					<div
-						class="text-weight-light"
-					>
-						{{ benchmark.name }} Benchmark
-					</div>
+					<div class="text-weight-light">{{ benchmark.name }} Benchmark</div>
 				</q-btn>
 			</q-item-section>
 			<q-item-section style="flex: 0 0 auto">
@@ -105,8 +101,8 @@ interface ScoreRow {
 	benchmark: Spec.Benchmark.Type
 	model: Spec.Model.Type
 	// [key: `prop_${number}`]: number;
-	items: Spec.Score.Type['items'];
-	caption: string;
+	items: Spec.Score.Type['items']
+	caption: string
 }
 
 const rankingColorRgbaMap: Record<number | string, string> = {

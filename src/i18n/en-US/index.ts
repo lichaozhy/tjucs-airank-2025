@@ -15,7 +15,8 @@ export default {
 		leaderboard: {
 			banner: {
 				title: 'AIRank',
-				description: 'Comprehensive Benchmarking Multi-modal Large Language Models for Embodied Intelligence',
+				description:
+					'Comprehensive Benchmarking Multi-modal Large Language Models for Embodied Intelligence',
 			},
 		},
 	},

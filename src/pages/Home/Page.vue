@@ -9,10 +9,15 @@
 			style="height: 230px"
 		>
 			<div class="text-h2 text-weight-light">{{ $t('p.leaderboard.banner.title') }}</div>
-			<div class="text-subtitle1 q-mt-md text-weight-light">{{ $t('p.leaderboard.banner.description') }}</div>
+			<div class="text-subtitle1 q-mt-md text-weight-light">
+				{{ $t('p.leaderboard.banner.description') }}
+			</div>
 		</div>
 
-		<div style="max-width: 1680px; margin-top: 200px" class="full-width">
+		<div
+			style="max-width: 1680px; margin-top: 200px"
+			class="full-width"
+		>
 			<q-tabs
 				no-caps
 				v-model="tab"
