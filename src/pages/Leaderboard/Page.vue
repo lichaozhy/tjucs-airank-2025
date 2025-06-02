@@ -69,7 +69,7 @@
 							class="col-shrink text-primary"
 							size="md"
 						>
-							<div class="text-weight-light">{{ props.row.model.name }}</div>
+							<div class="q-px-xs text-weight-light">{{ props.row.model.name }}</div>
 						</q-btn>
 					</q-td>
 				</template>
@@ -162,7 +162,7 @@ const columns = computed(() => {
 			label: 'Model',
 			field: 'model',
 			align: 'left' as 'left' | 'right' | 'center',
-			headerStyle: 'width: 240px;',
+			headerStyle: 'width: 260px;',
 			sortable: true,
 		},
 	];
