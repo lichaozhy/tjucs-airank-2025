@@ -285,7 +285,7 @@ onBeforeMount(async () => {
 				rgba($primary, 0.3) 70%,
 				rgba($primary, 0.25) 80%,
 				rgba(#f0f4f8, 0.6) 100%
-			)
+			);
 		}
 
 		.title-benchmark-name {

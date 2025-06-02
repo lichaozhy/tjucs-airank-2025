@@ -50,7 +50,7 @@
 		>
 			<q-item
 				v-for="(score, index) in scores.slice(0, 10)"
-				:key="score.model.id"
+				:key="index"
 				clickable
 				v-ripple
 				:to="{ name: 'app.model.detail', params: { id: score.model.id } }"
