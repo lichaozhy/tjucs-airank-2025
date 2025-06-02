@@ -325,36 +325,6 @@
 		}
 	},
 	{
-		"id": "68bf8b5b-d8d4-49d7-9e7e-03e4d547189b",
-		"leaderboard": "1143b13b-2754-4660-9f79-d0d0dc1f273e",
-		"name": "ET-Plan-Bench",
-		"default": {
-			"property": "TotalSR"
-		},
-		"properties": {
-			"NaviLayoutMap": {
-				"index": 0,
-				"label": "Navi +Layout Map",
-				"unit": "%"
-			},
-			"Navi": {
-				"index": 1,
-				"label": "Navi",
-				"unit": "%"
-			},
-			"NaviRelation": {
-				"index": 2,
-				"label": "Navi+ Relation",
-				"unit": "%"
-			},
-			"TotalSR": {
-				"index": 3,
-				"label": "Total SR",
-				"unit": "%"
-			}
-		}
-	},
-	{
 		"id": "1961aa46-9085-42ed-b384-d9ffe52921a8",
 		"leaderboard": "1143b13b-2754-4660-9f79-d0d0dc1f273e",
 		"name": "EB-ALFRED",
@@ -441,6 +411,36 @@
 				"index": 6,
 				"label": "Total SR",
 				"unit": null
+			}
+		}
+	},
+	{
+		"id": "68bf8b5b-d8d4-49d7-9e7e-03e4d547189b",
+		"leaderboard": "1143b13b-2754-4660-9f79-d0d0dc1f273e",
+		"name": "ET-Plan-Bench",
+		"default": {
+			"property": "TotalSR"
+		},
+		"properties": {
+			"NaviLayoutMap": {
+				"index": 0,
+				"label": "Navi +Layout Map",
+				"unit": "%"
+			},
+			"Navi": {
+				"index": 1,
+				"label": "Navi",
+				"unit": "%"
+			},
+			"NaviRelation": {
+				"index": 2,
+				"label": "Navi+ Relation",
+				"unit": "%"
+			},
+			"TotalSR": {
+				"index": 3,
+				"label": "Total SR",
+				"unit": "%"
 			}
 		}
 	}
