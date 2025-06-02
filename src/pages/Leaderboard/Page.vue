@@ -79,7 +79,7 @@
 
 <script setup lang="ts">
 defineOptions({ name: 'BenchmarkRankPage' });
-import { ref, computed, onBeforeMount } from 'vue';
+import { ref, computed, onBeforeMount, watch } from 'vue';
 import { useRoute } from 'vue-router';
 import type * as Spec from 'src/spec';
 import { API } from 'src/backend';
@@ -213,7 +213,7 @@ const scores = computed(() => {
 		});
 });
 
-const filterFn = (val, update, abort) => {
+const filterFn = (val: string, update: (fn: () => void) => void) => {
 	update(() => {
 		const needle = val.toLowerCase();
 		filteredModelOptionList.value = currentModelOptionList.value.filter(
@@ -221,6 +221,13 @@ const filterFn = (val, update, abort) => {
 		);
 	});
 };
+
+watch(
+	currentBenchmarkIndex,
+	() => {
+		selectedModelList.value = [];
+	},
+);
 
 onBeforeMount(async () => {
 	leaderboard.value = await API.Leaderboard(leaderboardId).get();
