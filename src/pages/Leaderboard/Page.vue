@@ -7,8 +7,8 @@
 			class="content full-width"
 			v-if="currentBenchmark"
 		>
-			<h5 class="q-my-md title-leaderboard-name">{{ leaderboard!.name }} Rankings</h5>
-			<h6 class="q-my-md title-benchmark-name">{{ currentBenchmark.name }} Rankings</h6>
+			<div class="q-my-md q-pa-md title-leaderboard-name">{{ leaderboard!.name }} Rankings</div>
+			<div class="q-my-md q-pa-md title-benchmark-name">{{ currentBenchmark.name }} Benchmark</div>
 			<div class="q-py-md">
 				<q-btn-toggle
 					no-caps
@@ -256,7 +256,7 @@ onBeforeMount(async () => {
 });
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .ranking-page {
 	display: flex;
 	flex-direction: column;
@@ -268,40 +268,30 @@ onBeforeMount(async () => {
 		min-width: 600px;
 		max-width: 1680px;
 
-		.title {
+		/* .title {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
+		} */
+
+		.title-leaderboard-name {
+			font-size: 1.2rem;
+			background-image: linear-gradient(
+				90deg,
+				rgba($primary, 0.6) 0%,
+				rgba($primary, 0.55) 25%,
+				rgba($primary, 0.4) 50%,
+				rgba($primary, 0.3) 70%,
+				rgba($primary, 0.25) 80%,
+				rgba(#f0f4f8, 0.6) 100%
+			)
 		}
 
-		/* .my-sticky-column-table {
-			width: 100%;
-
-			thead tr th {
-				background-color: #00b4ff;
-				color: white;
-			}
-
-			thead tr:first-child th:first-child {
-				background-color: #00b4ff;
-			}
-
-			tr:first-child td:first-child {
-				background-color: #00b4ff;
-			}
-
-			td:first-child {
-				background-color: #00b4ff;
-			}
-
-			th:first-child,
-			td:first-child {
-				position: sticky;
-				left: 0;
-				z-index: 1;
-			}
-		} */
+		.title-benchmark-name {
+			font-size: 2rem;
+			/* background-image: linear-gradient(90deg, $secondary, #ffffff); */
+		}
 	}
 }
 </style>
