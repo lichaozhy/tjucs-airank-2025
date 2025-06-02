@@ -86,7 +86,7 @@
 						{{ score.items[propsOptions[propsIndex]?.prop.value!.index!]?.toFixed(2) }}
 						{{ propsOptions[propsIndex]?.prop.value.unit ?? '' }}
 					</q-item-label>
-					<q-item-label caption>{{ currentPropName }}</q-item-label>
+					<q-item-label caption>{{ propsOptions[propsIndex]?.prop.value.label }}</q-item-label>
 				</q-item-section>
 			</q-item>
 		</q-list>
@@ -142,7 +142,7 @@ const propsOptions = computed(() => {
 });
 
 const currentPropName = computed(() => {
-	return propsOptions.value[propsIndex.value]?.prop.key ?? 'Select Property';
+	return propsOptions.value[propsIndex.value]?.prop.value.label;
 });
 
 const changeProps = (index: number) => {
