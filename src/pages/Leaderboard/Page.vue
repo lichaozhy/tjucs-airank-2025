@@ -23,6 +23,20 @@
 					"
 				/>
 			</div>
+			<div class="q-py-md">
+				<q-select
+					v-model="selectedModelList"
+					:options="filteredModelOptionList"
+					use-input
+					@filter="filterFn"
+					multiple
+					dense
+					filled
+					class="width-100"
+					placeholder="Filter Model"
+				/>
+			</div>
+			<div class="q-py-md"></div>
 			<q-table
 				square
 				flat
@@ -86,7 +100,17 @@ const benchmarkList = ref<Array<Benchmark>>([]);
 const scoreList = ref<Array<Spec.Score.Type>>([]);
 const currentBenchmarkIndex = ref<number | null>(null);
 const modelList = ref<Spec.Model.Type[]>([]);
+const selectedModelList = ref<Array<{ label: string; value: string }>>([]);
 const loading = ref(true);
+
+const modelOptionList = computed(() => {
+	return modelList.value.map((model) => ({
+		label: model.name,
+		value: model.id,
+	}));
+});
+
+const filteredModelOptionList = ref<Array<{ label: string; value: string }>>([]);
 
 const currentBenchmark = computed(() => {
 	if (currentBenchmarkIndex.value === null) return null;
@@ -134,16 +158,22 @@ const scores = computed(() => {
 	if (currentBenchmark.value === null) return [];
 
 	// Get scores for this benchmark
-	const benchmarkScoreList = scoreList.value.filter(
-		(score) => score.benchmark === currentBenchmark.value!.id,
-	);
+	const benchmarkScoreList = scoreList.value.filter((score) => {
+		return (
+			score.benchmark === currentBenchmark.value!.id &&
+			(selectedModelList.value.length === 0 ||
+				selectedModelList.value.map((m) => m.value).includes(score.model))
+		);
+	});
 
 	// Map scores to rows with model details
 	return benchmarkScoreList.map((score) => {
-		const model = modelList.value.find((m) => m.id === score.model) || {
-			id: score.model,
-			name: 'Unknown Model',
-		};
+		const model = modelList.value.find((m) => m.id === score.model);
+
+		if (model === undefined) {
+			throw new Error('Bad dataset.');
+		}
+
 		const row: ScoreRow = {
 			model,
 		};
@@ -158,6 +188,15 @@ const scores = computed(() => {
 		return row;
 	});
 });
+
+const filterFn = (val, update, abort) => {
+	update(() => {
+		const needle = val.toLowerCase();
+		filteredModelOptionList.value = modelOptionList.value.filter(
+			(v) => v.label.toLowerCase().indexOf(needle) > -1,
+		);
+	});
+};
 
 onBeforeMount(async () => {
 	leaderboard.value = await API.Leaderboard(leaderboardId).get();
