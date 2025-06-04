@@ -67,7 +67,7 @@ import * as Spec from 'src/spec';
 import { computed, onBeforeMount, ref } from 'vue';
 
 const nameFilter = ref('');
-const propsFilter = ref<string | 'all'>('all');
+const propsFilter = ref<string>('all');
 const benchmarkList = ref<Array<Spec.Benchmark.Type>>([]);
 onBeforeMount(async () => {
 	benchmarkList.value = await API.Benchmark.query();
@@ -79,7 +79,7 @@ const propsOptions = computed(() => {
 	const propsGroup = Object.groupBy(benchmarkPropList, ([name, prop]) => name);
 
 	const list = Object.entries(propsGroup).map(([name, propList]) => {
-		const prop = propList![0]![1]!;
+		const prop = propList![0]![1];
 		return {
 			value: name,
 			label: prop.label,
@@ -128,8 +128,8 @@ const filteredBenchmarkList = computed(() => {
 				max-width: 320px;
 			}
 
-			.q-btn-toggle {
-			}
+			/* .q-btn-toggle {
+			} */
 		}
 
 		.benchmark-list {
