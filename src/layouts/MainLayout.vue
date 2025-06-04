@@ -22,6 +22,36 @@
 						</router-link>
 					</q-toolbar-title>
 
+					<router-link
+						v-for="leaderboard in leaderboardList"
+						:key="leaderboard.id"
+						:to="{ name: 'app.leaderboard.detail', params: { leaderboardId: leaderboard.id } }"
+						custom
+						v-slot="{ navigate }"
+					>
+						<div
+							@click="navigate"
+							class="text-subtitle q-ml-md"
+							style="cursor: pointer; color: white"
+						>
+							{{ leaderboard.name }}
+						</div>
+					</router-link>
+
+					<router-link
+						:to="{ name: 'app.benchmark' }"
+						custom
+						v-slot="{ navigate }"
+					>
+						<div
+							@click="navigate"
+							class="text-subtitle q-ml-md"
+							style="cursor: pointer; color: white"
+						>
+							Benchmark Hub
+						</div>
+					</router-link>
+
 					<q-space></q-space>
 				</q-toolbar>
 			</q-header>
@@ -52,7 +82,18 @@
 </template>
 
 <script setup lang="ts">
+import { onBeforeMount, ref } from 'vue';
+import type * as Spec from 'src/spec';
+import * as Backend from 'src/backend';
+
 defineOptions({ name: 'AppMainLayout' });
+
+const leaderboardList = ref<Array<Spec.Leaderboard.Type>>([]);
+const LeaderboardAPI = Backend.API.Leaderboard;
+
+onBeforeMount(async () => {
+	leaderboardList.value = await LeaderboardAPI.query();
+});
 </script>
 
 <style lang="scss">
