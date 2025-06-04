@@ -230,16 +230,36 @@
 		}
 	},
 	{
+		"id": "a9228f2e-3191-4a08-8f03-64e73cae2e78",
+		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
+		"name": "Where2Place",
+		"default": {
+			"property": "Total"
+		},
+		"properties": {
+			"Total": {
+				"index": 0,
+				"label": "Total Score",
+				"unit": null
+			}
+		}
+	},
+	{
 		"id": "8b56c6cf-becf-4bef-b612-1804d2f20cda",
 		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
 		"name": "SQA3D",
 		"default": {
-			"property": "EM"
+			"property": "Total"
 		},
 		"properties": {
 			"EM": {
 				"index": 0,
 				"label": "EM",
+				"unit": null
+			},
+			"Total": {
+				"index": 1,
+				"label": "Total Score",
 				"unit": null
 			}
 		}
@@ -249,7 +269,7 @@
 		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
 		"name": "ScanQA",
 		"default": {
-			"property": "CIDEr"
+			"property": "Total"
 		},
 		"properties": {
 			"CIDEr": {
@@ -261,6 +281,11 @@
 				"index": 1,
 				"label": "EM",
 				"unit": null
+			},
+			"Total": {
+				"index": 2,
+				"label": "Total Score",
+				"unit": null
 			}
 		}
 	},
@@ -269,7 +294,7 @@
 		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
 		"name": "Scan2Cap",
 		"default": {
-			"property": "CIDEr"
+			"property": "Total"
 		},
 		"properties": {
 			"CIDEr": {
@@ -280,6 +305,11 @@
 			"B4": {
 				"index": 1,
 				"label": "B-4",
+				"unit": null
+			},
+			"Total": {
+				"index": 2,
+				"label": "Total Score",
 				"unit": null
 			}
 		}
@@ -319,6 +349,36 @@
 			},
 			"TotalSR": {
 				"index": 5,
+				"label": "Total SR",
+				"unit": null
+			}
+		}
+	},
+	{
+		"id": "1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09",
+		"leaderboard": "263e7d41-65a5-4b7b-8f48-5c7b94ca916b",
+		"name": "R2R-CE",
+		"default": {
+			"property": "TotalSR"
+		},
+		"properties": {
+			"TotalSR": {
+				"index": 0,
+				"label": "Total SR",
+				"unit": null
+			}
+		}
+	},
+	{
+		"id": "025ca0fe-f04c-4d17-9f4c-9d1aca6666bd",
+		"leaderboard": "263e7d41-65a5-4b7b-8f48-5c7b94ca916b",
+		"name": "RxR-CE",
+		"default": {
+			"property": "TotalSR"
+		},
+		"properties": {
+			"TotalSR": {
+				"index": 0,
 				"label": "Total SR",
 				"unit": null
 			}
