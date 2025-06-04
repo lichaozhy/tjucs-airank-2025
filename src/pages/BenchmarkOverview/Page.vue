@@ -63,7 +63,7 @@
 defineOptions({ name: 'BenchmarkIndexPage' });
 import { API } from 'src/backend';
 import AppBenchmarkCard from './BenchmarkCard.vue';
-import * as Spec from 'src/spec';
+import type * as Spec from 'src/spec';
 import { computed, onBeforeMount, ref } from 'vue';
 
 const nameFilter = ref('');
@@ -76,7 +76,7 @@ onBeforeMount(async () => {
 const propsOptions = computed(() => {
 	const benchmarkPropList = benchmarkList.value.map((b) => Object.entries(b.properties)).flat();
 
-	const propsGroup = Object.groupBy(benchmarkPropList, ([name, prop]) => name);
+	const propsGroup = Object.groupBy(benchmarkPropList, ([name]) => name);
 
 	const list = Object.entries(propsGroup).map(([name, propList]) => {
 		const prop = propList![0]![1];
