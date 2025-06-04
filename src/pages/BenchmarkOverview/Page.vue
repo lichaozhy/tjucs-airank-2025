@@ -117,7 +117,7 @@ const filteredBenchmarkList = computed(() => {
 		display: flex;
 		flex-direction: column;
 		/* min-width: 800px; */
-		width: 1680px;
+		max-width: 1680px;
 
 		.filter {
 			display: flex;
