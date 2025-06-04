@@ -34,7 +34,7 @@
 defineOptions({ name: 'BenchmarkIndexPage' });
 import { API } from 'src/backend';
 import AppBenchmarkCard from './BenchmarkCard.vue';
-import * as Spec from 'src/spec';
+import type * as Spec from 'src/spec';
 import { onBeforeMount, ref } from 'vue';
 
 const benchmarkList = ref<Array<Spec.Benchmark.Type>>([]);

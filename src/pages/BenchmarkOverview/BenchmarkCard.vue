@@ -58,9 +58,8 @@
 </template>
 
 <script setup lang="ts">
-defineOptions({ name: 'BenchmarkCard' });
-import { computed, defineProps, ref } from 'vue';
-import * as Spec from 'src/spec';
+import { computed, defineProps } from 'vue';
+import type * as Spec from 'src/spec';
 
 const { benchmark, isNew } = defineProps<{
 	benchmark: Spec.Benchmark.Type;
@@ -154,8 +153,8 @@ function lorem(options: { words?: number; sentences?: number; paragraphs?: numbe
 
 const tagList = computed(() => {
 	return Object.entries(benchmark.properties)
-		.filter(([key, value]) => key !== benchmark.default.property)
-		.map(([key, value]) => `${value.label}`)
+		.filter(([key]) => key !== benchmark.default.property)
+		.map(([, value]) => `${value.label}`)
 		.concat(
 			lorem({ words: 5 })
 				.split(' ')
@@ -164,4 +163,5 @@ const tagList = computed(() => {
 });
 
 // const isNew = Math.random() < 0.5;
+defineOptions({ name: 'BenchmarkCard' });
 </script>
