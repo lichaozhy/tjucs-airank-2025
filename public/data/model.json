@@ -145,7 +145,7 @@
 	},
 	{
 		"id": "9321375f-e8e4-4b03-9f04-fbd2864afa2f",
-		"name": "Ours",
+		"name": "Noah(UniE-VLM)",
 		"component": {
 			"vision": null,
 			"language": null
@@ -425,7 +425,7 @@
 	},
 	{
 		"id": "2b8ad6b5-fd3b-4eef-a852-0648bc312bba",
-		"name": "Ours (16 frames)",
+		"name": "Noah(UniE-VLM) (16 frames)",
 		"component": {
 			"vision": null,
 			"language": null
@@ -706,6 +706,38 @@
 	{
 		"id": "e687e55b-94ba-44cf-959a-634ab1f58b1b",
 		"name": "Qwen2-VL-7B-Ins",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "d43c7af4-55f6-4054-bcd4-88d27efd0d10",
+		"name": "Navid",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "8d42636e-05c2-4179-a0d1-625f474f1622",
+		"name": "UniNavid",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "bfee5170-8314-49ea-96e6-762fc8e2bba4",
+		"name": "MapNav",
+		"component": {
+			"vision": null,
+			"language": null
+		}
+	},
+	{
+		"id": "a7bde639-b09a-4cbf-a647-cbde9a634e6c",
+		"name": "RoboPoint",
 		"component": {
 			"vision": null,
 			"language": null
