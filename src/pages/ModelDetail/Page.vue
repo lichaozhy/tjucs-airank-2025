@@ -42,7 +42,10 @@
 						clickable
 						:to="{
 							name: 'app.leaderboard.rank',
-							params: { id: score.leaderboard, benchmarkId: score.benchmark },
+							params: {
+								leaderboardId: score.leaderboard,
+								benchmarkId: score.benchmark
+							},
 						}"
 					>
 						<q-item-section>

@@ -15,36 +15,21 @@
 		</div>
 
 		<div
-			style="max-width: 1680px; margin-top: 200px"
+			style="max-width: 1680px; margin-top: 240px"
 			class="full-width"
 		>
-			<q-tabs
-				no-caps
-				v-model="tab"
-				class="q-my-lg"
-			>
-				<q-tab
-					v-for="item in leaderboardList"
-					:key="item.id"
-					:name="item.id"
-					:label="item.name"
-				/>
-			</q-tabs>
-
 			<div
 				class="row q-col-gutter-lg"
-				v-if="benchmarkShowList.length !== 0"
+				v-if="benchmarkList.length !== 0"
 			>
 				<div
 					class="col-6 col-grow"
-					v-for="benchmark in benchmarkShowList"
+					v-for="benchmark in benchmarkList"
 					:key="benchmark.id"
 				>
 					<AppBenchmark
-						:leaderboardId="tab"
+						:leaderboardId="leaderboardId"
 						:benchmark="benchmark"
-						:scoreList="scoreList"
-						:modelList="modelList"
 					/>
 				</div>
 			</div>
@@ -53,30 +38,25 @@
 </template>
 
 <script setup lang="ts">
+import { onBeforeMount, ref } from 'vue';
+import { useRoute } from 'vue-router';
+
 import type * as Spec from 'src/spec';
-import { computed, onBeforeMount, ref } from 'vue';
-import { API } from 'src/backend';
+import * as Backend from 'src/backend';
 import AppBenchmark from './Benchmark.vue';
 
-const leaderboardList = ref<Array<Spec.Leaderboard.Type>>([]);
+const { params } = useRoute();
+const leaderboardId = String(params.leaderboardId);
+const LeaderboardAPI = Backend.API.Leaderboard(leaderboardId);
+
 const benchmarkList = ref<Array<Spec.Benchmark.Type>>([]);
 const scoreList = ref<Array<Spec.Score.Type>>([]);
 const modelList = ref<Array<Spec.Model.Type>>([]);
-const tab = ref<string>(leaderboardList.value[0]?.id ?? '');
 
 onBeforeMount(async () => {
-	leaderboardList.value = await API.Leaderboard.query();
-	benchmarkList.value = await API.Benchmark.query();
-	scoreList.value = await API.Score.query();
-	modelList.value = await API.Model.query();
-
-	tab.value = leaderboardList.value[0]?.id ?? '';
-});
-
-const benchmarkShowList = computed(() => {
-	return benchmarkList.value.filter((benchmark) => {
-		return benchmark.leaderboard === tab.value;
-	});
+	benchmarkList.value = await LeaderboardAPI.Benchmark.query();
+	scoreList.value = await Backend.API.Score.query();
+	modelList.value = await Backend.API.Model.query();
 });
 
 defineOptions({ name: 'AppLeaderboardPage' });

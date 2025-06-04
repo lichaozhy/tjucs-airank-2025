@@ -4,8 +4,8 @@
 			<q-item-section class="col-shrink">
 				<q-btn
 					:to="{
-						name: 'app.leaderboard.rank',
-						params: { id: leaderboardId, benchmarkId: benchmark.id },
+						name: 'app.rank.leaderboard',
+						params: { leaderboardId, benchmarkId: benchmark.id },
 					}"
 					dense
 					no-caps
@@ -49,7 +49,7 @@
 			separator
 		>
 			<q-item
-				v-for="(score, index) in scores.slice(0, 10)"
+				v-for="(score, index) in scoreViewDataList.slice(0, 10)"
 				:key="index"
 				clickable
 				v-ripple
@@ -94,11 +94,30 @@
 </template>
 
 <script setup lang="ts">
-defineOptions({ name: 'AppBenchmark' });
-import { computed, ref } from 'vue';
-import type * as Spec from 'src/spec';
+import { computed, onBeforeMount, ref } from 'vue';
 
-interface ScoreRow {
+import type * as Spec from 'src/spec';
+import * as Backend from 'src/backend';
+
+const { leaderboardId, benchmark } = defineProps<{
+	leaderboardId: string
+	benchmark: Spec.Benchmark.Type
+}>();
+
+const BenchmarkAPI = Backend.API.Benchmark(benchmark.id);
+const scoreList = ref<Spec.Score.Type[]>([]);
+const modelList = ref<Spec.Model.Type[]>([]);
+
+async function fetchModelFromScore(score: Spec.Score.Type) {
+	return Backend.API.Model(score.model).get();
+}
+
+onBeforeMount(async () => {
+	scoreList.value = await BenchmarkAPI.Score.query();
+	modelList.value = await Promise.all(scoreList.value.map(fetchModelFromScore));
+});
+
+interface ScoreViewData {
 	benchmark: Spec.Benchmark.Type
 	model: Spec.Model.Type
 	// [key: `prop_${number}`]: number;
@@ -121,13 +140,6 @@ const rankingIconMap: Record<number | string, string> = {
 	// 3: 'fas fa-medal',
 	default: 'fas fa-star',
 };
-
-const { leaderboardId, benchmark, scoreList, modelList } = defineProps<{
-	leaderboardId: string
-	benchmark: Spec.Benchmark.Type
-	scoreList: Array<Spec.Score.Type>
-	modelList: Array<Spec.Model.Type>
-}>();
 
 const propsIndex = ref<number>(Object.keys(benchmark.properties).length - 1);
 
@@ -176,29 +188,32 @@ function toCaption(model: Spec.Model.Type) {
 	return captionSectionList.join(' / ');
 }
 
-const scores = computed(() => {
+const scoreViewDataList = computed<ScoreViewData[]>(() => {
 	const itemIndex = propsIndex.value;
 
-	return scoreList
-		.filter((score) => score.benchmark === benchmark.id)
+	if (scoreList.value.length === 0 || modelList.value.length === 0) {
+		return [];
+	}
+
+	return scoreList.value
 		.map((score) => {
-			const modelDetails = modelList.find((m) => m.id === score.model);
+			const modelDetails = modelList.value.find((m) => m.id === score.model);
 
 			if (modelDetails === undefined) {
 				throw new Error('Bad dataset.');
 			}
 
-			const row: ScoreRow = {
+			return {
 				model: modelDetails,
 				benchmark: benchmark,
 				items: score.items,
 				caption: toCaption(modelDetails),
 			};
-
-			return row;
 		})
 		.sort((a, b) => asNumber(b.items[itemIndex]) - asNumber(a.items[itemIndex]));
 });
+
+defineOptions({ name: 'AppBenchmark' });
 </script>
 
 <style lang="scss" scoped>

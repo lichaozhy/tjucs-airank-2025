@@ -97,8 +97,8 @@ interface ScoreRow {
 }
 
 const route = useRoute();
-const leaderboardId = route.params.id as string;
-const benchmarkId = route.params.benchmarkId as string | undefined;
+const { params } = route;
+const { leaderboardId, benchmarkId } = params;
 
 const leaderboard = ref<Spec.Leaderboard.Type | null>(null);
 const benchmarkList = ref<Array<Spec.Benchmark.Type>>([]);
