@@ -18,5 +18,18 @@ export default {
 				description: 'Comprehensive Benchmarking Foundation Models for Embodied Intelligence',
 			},
 		},
+		benchmark: {
+			banner: {
+				title: 'Benchmark Hub',
+				description: 'Comprehensive Benchmarking Foundation Models for Embodied Intelligence',
+			},
+		},
+	},
+	nav: {
+		app: {
+			benchmark: {
+				index: 'Benchmark Hub',
+			},
+		},
 	},
 };

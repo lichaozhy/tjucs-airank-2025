@@ -5,6 +5,9 @@ export const Schema = z.object({
 	id: z.string(),
 	leaderboard: Leaderboard.Schema.shape.id,
 	name: z.string(),
+	default: z.object({
+		property: z.string(),
+	}),
 	properties: z.record(
 		z.string(),
 		z.object({
@@ -15,4 +18,4 @@ export const Schema = z.object({
 	),
 });
 
-export type Type = z.infer<typeof Schema>
+export type Type = z.infer<typeof Schema>;

@@ -28,6 +28,11 @@ const routes: RouteRecordRaw[] = [
 				component: () => import('pages/BenchmarkOverview/Page.vue'),
 			},
 			{
+				name: 'app.benchmark.detail',
+				path: 'benchmark/:id',
+				component: () => import('pages/BenchmarkDetail/Page.vue'),
+			},
+			{
 				name: 'app.model.detail',
 				path: 'model/:id',
 				component: () => import('pages/ModelDetail/Page.vue'),
