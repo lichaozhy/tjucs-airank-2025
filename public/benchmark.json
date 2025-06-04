@@ -1,0 +1,447 @@
+[
+	{
+		"id": "034bf6b5-dc18-45da-bfaf-337589125632",
+		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
+		"name": "UniEQA",
+		"default": {
+			"property": "Total"
+		},
+		"properties": {
+			"ObjectType": {
+				"index": 0,
+				"label": "Object Type",
+				"unit": null
+			},
+			"ObjectProperty": {
+				"index": 1,
+				"label": "Object Property",
+				"unit": null
+			},
+			"ObjectState": {
+				"index": 2,
+				"label": "Object State",
+				"unit": null
+			},
+			"SpatiaPerception": {
+				"index": 3,
+				"label": "Spatia Perception",
+				"unit": null
+			},
+			"ActionPerception": {
+				"index": 4,
+				"label": "Action Perception",
+				"unit": null
+			},
+			"TemporalPerception": {
+				"index": 5,
+				"label": "Temporal Perception",
+				"unit": null
+			},
+			"Affordance": {
+				"index": 6,
+				"label": "Affordance",
+				"unit": null
+			},
+			"WorldKnowledge": {
+				"index": 7,
+				"label": "World Knowledge",
+				"unit": null
+			},
+			"TaskRelatedObjectReasoning": {
+				"index": 8,
+				"label": "Task Related Object Reasoning",
+				"unit": null
+			},
+			"SituatedReasoning": {
+				"index": 9,
+				"label": "Situated Reasoning",
+				"unit": null
+			},
+			"ClosedLoopPlanning": {
+				"index": 10,
+				"label": "Closed-Loop Planning",
+				"unit": null
+			},
+			"OpenLoopPlanning": {
+				"index": 11,
+				"label": "Open-Loop Planning",
+				"unit": null
+			},
+			"Total": {
+				"index": 12,
+				"label": "Total Score",
+				"unit": null
+			}
+		}
+	},
+	{
+		"id": "ba0be521-6b10-4881-964c-97cd4d2d6070",
+		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
+		"name": "OpenEQA",
+		"default": {
+			"property": "Total"
+		},
+		"properties": {
+			"ObjectType": {
+				"index": 0,
+				"label": "Object Type",
+				"unit": null
+			},
+			"ObjectProperty": {
+				"index": 1,
+				"label": "Object Property",
+				"unit": null
+			},
+			"ObjectState": {
+				"index": 2,
+				"label": "Object State",
+				"unit": null
+			},
+			"Affordance": {
+				"index": 3,
+				"label": "Affordance",
+				"unit": null
+			},
+			"WorldKnowledge": {
+				"index": 4,
+				"label": "World Knowledge",
+				"unit": null
+			},
+			"SpatialPerception": {
+				"index": 5,
+				"label": "Spatial Perception",
+				"unit": null
+			},
+			"Total": {
+				"index": 6,
+				"label": "Total Score",
+				"unit": null
+			}
+		}
+	},
+	{
+		"id": "25206b0f-a955-4e39-86cf-53dcc9528bfc",
+		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
+		"name": "VSI",
+		"default": {
+			"property": "Total"
+		},
+		"properties": {
+			"ObjectCount": {
+				"index": 0,
+				"label": "Object Count",
+				"unit": null
+			},
+			"AbsoluteDistance": {
+				"index": 1,
+				"label": "Absolute Distance",
+				"unit": null
+			},
+			"ObjectSize": {
+				"index": 2,
+				"label": "Object Size",
+				"unit": null
+			},
+			"RoomSize": {
+				"index": 3,
+				"label": "Room Size",
+				"unit": null
+			},
+			"RelativeDistance": {
+				"index": 4,
+				"label": "Relative Distance",
+				"unit": null
+			},
+			"RelativeDirection": {
+				"index": 5,
+				"label": "Relative Direction",
+				"unit": null
+			},
+			"RoutePlan": {
+				"index": 6,
+				"label": "Route Plan",
+				"unit": null
+			},
+			"AppearanceOrder": {
+				"index": 7,
+				"label": "Appearance Order",
+				"unit": null
+			},
+			"Total": {
+				"index": 8,
+				"label": "Total Score",
+				"unit": null
+			}
+		}
+	},
+	{
+		"id": "5df5ca38-7ca9-4d35-81c6-3dfe52700755",
+		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
+		"name": "ERQA",
+		"default": {
+			"property": "Total"
+		},
+		"properties": {
+			"ActionReasoning": {
+				"index": 0,
+				"label": "Action Reasoning",
+				"unit": null
+			},
+			"MultiviewReasoning": {
+				"index": 1,
+				"label": "Multiview Reasoning",
+				"unit": null
+			},
+			"Pointing": {
+				"index": 2,
+				"label": "Pointing",
+				"unit": null
+			},
+			"SpatialReasoning": {
+				"index": 3,
+				"label": "Spatial Reasoning",
+				"unit": null
+			},
+			"StateEstimation": {
+				"index": 4,
+				"label": "State Estimation",
+				"unit": null
+			},
+			"TaskReasoning": {
+				"index": 5,
+				"label": "Task Reasoning",
+				"unit": null
+			},
+			"TrajectoryReasoning": {
+				"index": 6,
+				"label": "Trajectory Reasoning",
+				"unit": null
+			},
+			"Other": {
+				"index": 7,
+				"label": "Other",
+				"unit": null
+			},
+			"Total": {
+				"index": 8,
+				"label": "Total Score",
+				"unit": null
+			}
+		}
+	},
+	{
+		"id": "8b56c6cf-becf-4bef-b612-1804d2f20cda",
+		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
+		"name": "SQA3D",
+		"default": {
+			"property": "EM"
+		},
+		"properties": {
+			"EM": {
+				"index": 0,
+				"label": "EM",
+				"unit": null
+			}
+		}
+	},
+	{
+		"id": "e0465aba-17b0-4f34-9aa4-345c9bacdac2",
+		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
+		"name": "ScanQA",
+		"default": {
+			"property": "CIDEr"
+		},
+		"properties": {
+			"CIDEr": {
+				"index": 0,
+				"label": "CIDEr",
+				"unit": null
+			},
+			"EM": {
+				"index": 1,
+				"label": "EM",
+				"unit": null
+			}
+		}
+	},
+	{
+		"id": "df46aa1a-099f-4841-bc02-ba9608e18c7d",
+		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
+		"name": "Scan2Cap",
+		"default": {
+			"property": "CIDEr"
+		},
+		"properties": {
+			"CIDEr": {
+				"index": 0,
+				"label": "CIDEr",
+				"unit": null
+			},
+			"B4": {
+				"index": 1,
+				"label": "B-4",
+				"unit": null
+			}
+		}
+	},
+	{
+		"id": "73de273a-7d38-40c0-b869-2b2e6156c897",
+		"leaderboard": "263e7d41-65a5-4b7b-8f48-5c7b94ca916b",
+		"name": "EB-Navigation",
+		"default": {
+			"property": "TotalSR"
+		},
+		"properties": {
+			"Base": {
+				"index": 0,
+				"label": "Base",
+				"unit": null
+			},
+			"Common": {
+				"index": 1,
+				"label": "Common",
+				"unit": null
+			},
+			"Complex": {
+				"index": 2,
+				"label": "Complex",
+				"unit": null
+			},
+			"Visual": {
+				"index": 3,
+				"label": "Visual",
+				"unit": null
+			},
+			"Long": {
+				"index": 4,
+				"label": "Long",
+				"unit": null
+			},
+			"TotalSR": {
+				"index": 5,
+				"label": "Total SR",
+				"unit": null
+			}
+		}
+	},
+	{
+		"id": "1961aa46-9085-42ed-b384-d9ffe52921a8",
+		"leaderboard": "1143b13b-2754-4660-9f79-d0d0dc1f273e",
+		"name": "EB-ALFRED",
+		"default": {
+			"property": "TotalSR"
+		},
+		"properties": {
+			"Base": {
+				"index": 0,
+				"label": "Base",
+				"unit": null
+			},
+			"Common": {
+				"index": 1,
+				"label": "Common",
+				"unit": null
+			},
+			"Complex": {
+				"index": 2,
+				"label": "Complex",
+				"unit": null
+			},
+			"Visual": {
+				"index": 3,
+				"label": "Visual",
+				"unit": null
+			},
+			"Spatial": {
+				"index": 4,
+				"label": "Spatial",
+				"unit": null
+			},
+			"Long": {
+				"index": 5,
+				"label": "Long",
+				"unit": null
+			},
+			"TotalSR": {
+				"index": 6,
+				"label": "Total SR",
+				"unit": null
+			}
+		}
+	},
+	{
+		"id": "cbb64d1c-4377-4231-a465-73ffb10972c5",
+		"leaderboard": "1143b13b-2754-4660-9f79-d0d0dc1f273e",
+		"name": "EB-Habitat",
+		"default": {
+			"property": "TotalSR"
+		},
+		"properties": {
+			"Base": {
+				"index": 0,
+				"label": "Base",
+				"unit": null
+			},
+			"Common": {
+				"index": 1,
+				"label": "Common",
+				"unit": null
+			},
+			"Complex": {
+				"index": 2,
+				"label": "Complex",
+				"unit": null
+			},
+			"Visual": {
+				"index": 3,
+				"label": "Visual",
+				"unit": null
+			},
+			"Spatial": {
+				"index": 4,
+				"label": "Spatial",
+				"unit": null
+			},
+			"Long": {
+				"index": 5,
+				"label": "Long",
+				"unit": null
+			},
+			"TotalSR": {
+				"index": 6,
+				"label": "Total SR",
+				"unit": null
+			}
+		}
+	},
+	{
+		"id": "68bf8b5b-d8d4-49d7-9e7e-03e4d547189b",
+		"leaderboard": "1143b13b-2754-4660-9f79-d0d0dc1f273e",
+		"name": "ET-Plan-Bench",
+		"default": {
+			"property": "TotalSR"
+		},
+		"properties": {
+			"NaviLayoutMap": {
+				"index": 0,
+				"label": "Navi +Layout Map",
+				"unit": ""
+			},
+			"Navi": {
+				"index": 1,
+				"label": "Navi",
+				"unit": ""
+			},
+			"NaviRelation": {
+				"index": 2,
+				"label": "Navi+ Relation",
+				"unit": ""
+			},
+			"TotalSR": {
+				"index": 3,
+				"label": "Total SR",
+				"unit": ""
+			}
+		}
+	}
+]
