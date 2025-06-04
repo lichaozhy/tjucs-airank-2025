@@ -1,15 +1,4 @@
 import type { RouteRecordRaw } from 'vue-router';
-import { h } from 'vue';
-import { RouterView } from 'vue-router';
-
-import * as Backend from 'src/backend';
-
-const MIDDLE_ROUTER_VIEW = {
-	name: 'MiddleRouterView',
-	render: () => h(RouterView),
-};
-
-const Configuration = await Backend.API.Configuration.get();
 
 const routes: RouteRecordRaw[] = [
 	{
@@ -18,7 +7,7 @@ const routes: RouteRecordRaw[] = [
 		redirect: {
 			name: 'app.leaderboard.detail',
 			params: {
-				leaderboardId: Configuration.DEFAULT_LEADERBOARD,
+				leaderboardId: '09b4a56a-2e41-4103-a330-129381c24450',
 			},
 		},
 		component: () => import('layouts/MainLayout.vue'),

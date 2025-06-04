@@ -28,20 +28,38 @@ const fetchAllScore = async () => {
 	return Spec.Score.Schema.array().parse(scoreList);
 };
 
-const Data = {
-	Leaderboard: await fetchAllLeaderboard(),
-	Benchmark: await fetchAllBenchmark(),
-	Model: await fetchAllModel(),
-	Score: await fetchAllScore(),
+export const Data: {
+	Leaderboard: Spec.Leaderboard.Type[];
+	Benchmark: Spec.Benchmark.Type[];
+	Model: Spec.Model.Type[];
+	Score: Spec.Score.Type[];
+	Configuration: Spec.Configuration.Type | null;
+} = {
+	Leaderboard: [],
+	Benchmark: [],
+	Model: [],
+	Score: [],
+	Configuration: null,
 };
 
-export const API = {
-	Configuration: {
-		async get() {
+export async function init() {
+	Object.assign(Data, {
+		Leaderboard: await fetchAllLeaderboard(),
+		Benchmark: await fetchAllBenchmark(),
+		Model: await fetchAllModel(),
+		Score: await fetchAllScore(),
+		Configuration: await (async () => {
 			const request = await fetch('/data/configuration.json');
 			const configuration = await request.json();
 
 			return Spec.Configuration.Schema.parse(configuration);
+		})(),
+	});
+}
+
+export const API = {
+	Configuration: {
+		async get() {
 		},
 	},
 	Leaderboard: Object.assign(

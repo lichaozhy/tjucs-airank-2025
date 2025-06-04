@@ -5,6 +5,8 @@ import {
 	createWebHashHistory,
 	createWebHistory,
 } from 'vue-router';
+
+import * as Backend from 'src/backend';
 import routes from './routes';
 
 /*
@@ -16,12 +18,14 @@ import routes from './routes';
  * with the Router instance.
  */
 
-export default defineRouter(function (/* { store, ssrContext } */) {
+export default defineRouter(async function (/* { store, ssrContext } */) {
 	const createHistory = process.env.SERVER
 		? createMemoryHistory
 		: process.env.VUE_ROUTER_MODE === 'history'
 			? createWebHistory
 			: createWebHashHistory;
+
+	await Backend.init();
 
 	const Router = createRouter({
 		scrollBehavior: () => ({ left: 0, top: 0 }),
