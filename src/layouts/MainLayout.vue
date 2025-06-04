@@ -22,37 +22,65 @@
 						</router-link>
 					</q-toolbar-title>
 
-					<router-link
-						v-for="leaderboard in leaderboardList"
-						:key="leaderboard.id"
-						:to="{ name: 'app.leaderboard.detail', params: { leaderboardId: leaderboard.id } }"
-						custom
-						v-slot="{ navigate }"
-					>
-						<div
-							@click="navigate"
-							class="text-subtitle q-ml-md"
-							style="cursor: pointer; color: white"
-						>
-							{{ leaderboard.name }}
-						</div>
-					</router-link>
+					<q-space></q-space>
 
-					<router-link
+					<q-btn
+						no-caps
+						flat
 						:to="{ name: 'app.benchmark' }"
-						custom
-						v-slot="{ navigate }"
 					>
-						<div
-							@click="navigate"
-							class="text-subtitle q-ml-md"
-							style="cursor: pointer; color: white"
-						>
-							Benchmark Hub
-						</div>
-					</router-link>
+						EmbodiedBenchmarks
+					</q-btn>
+
+					<q-btn-dropdown
+						no-caps
+						flat
+						label="EmbodiedRank"
+					>
+						<q-list>
+							<q-item
+								clickable
+								v-close-popup
+								v-for="leaderboard in leaderboardList"
+								:key="leaderboard.id"
+								:to="{ name: 'app.leaderboard.detail', params: { leaderboardId: leaderboard.id } }"
+							>
+								<q-item-section>
+									<q-item-label>{{ leaderboard.name }}</q-item-label>
+								</q-item-section>
+							</q-item>
+						</q-list>
+					</q-btn-dropdown>
+
+					<q-btn
+						no-caps
+						flat
+					>
+						EmbodiedLeaderboard Rules
+					</q-btn>
+
+					<q-btn
+						no-caps
+						flat
+					>
+						EmbodiedEval
+					</q-btn>
+
+					<q-btn
+						no-caps
+						flat
+					>
+						Docs
+					</q-btn>
 
 					<q-space></q-space>
+
+					<q-btn
+						no-caps
+						flat
+					>
+						Online Evaluation
+					</q-btn>
 				</q-toolbar>
 			</q-header>
 
