@@ -2,7 +2,7 @@
 	"name": "tjucs-airank-2025",
 	"version": "0.0.1",
 	"description": "A Quasar Project",
-	"productName": "Airank",
+	"productName": "Embodied Compass",
 	"author": "chaoslee <chaos2lee@qq.com>",
 	"type": "module",
 	"private": true,
