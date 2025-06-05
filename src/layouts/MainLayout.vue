@@ -54,14 +54,7 @@
 						no-caps
 						flat
 						stretch
-						label="Embodied Eval"
-					></q-btn>
-
-					<q-btn
-						no-caps
-						flat
-						stretch
-						label="Docs"
+						label="User Guide"
 					>
 					</q-btn>
 
@@ -72,6 +65,14 @@
 						outline
 						rounded
 						label="Online Evaluation"
+					></q-btn>
+
+					<q-btn
+						no-caps
+						outline
+						rounded
+						label="Contribute Benchmark"
+						class="q-ml-md"
 					></q-btn>
 				</q-toolbar>
 			</q-header>

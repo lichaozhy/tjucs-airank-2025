@@ -6,7 +6,7 @@ export default {
 	success: 'Action was successful',
 	spec: {
 		project: {
-			name: 'TJU CS AIRank',
+			name: 'Embodied Compass',
 		},
 		rights: '© 2025 Tianjin University All Rights Reserved',
 		subject: 'Tianjin University Deep Reinforcement Learning Laboratory',
