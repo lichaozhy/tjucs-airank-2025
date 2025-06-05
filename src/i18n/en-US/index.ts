@@ -6,7 +6,7 @@ export default {
 	success: 'Action was successful',
 	spec: {
 		project: {
-			name: 'Embodied Compass',
+			name: 'Embodied Arena',
 		},
 		rights: '© 2025 Tianjin University All Rights Reserved',
 		subject: 'Tianjin University Deep Reinforcement Learning Laboratory',
@@ -14,8 +14,8 @@ export default {
 	p: {
 		leaderboard: {
 			banner: {
-				title: 'Embodied AI Rank',
-				description: 'Comprehensive Evaluation Compass for Embodied AI Benchmarks & Models',
+				title: 'Embodied Arena Ranking',
+				description: 'Comprehensive Evaluation Arena for Embodied AI Benchmarks & Models',
 			},
 		},
 		benchmark: {
