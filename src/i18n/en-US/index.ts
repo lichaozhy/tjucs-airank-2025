@@ -14,8 +14,8 @@ export default {
 	p: {
 		leaderboard: {
 			banner: {
-				title: 'AIRank',
-				description: 'Comprehensive Benchmarking Foundation Models for Embodied Intelligence',
+				title: 'Embodied AI Rank',
+				description: 'Comprehensive Evaluation Compass for Embodied AI Benchmarks & Models',
 			},
 		},
 		benchmark: {
