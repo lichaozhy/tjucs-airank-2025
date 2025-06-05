@@ -60,6 +60,7 @@ export async function init() {
 export const API = {
 	Configuration: {
 		async get() {
+			return Data.Configuration;
 		},
 	},
 	Leaderboard: Object.assign(

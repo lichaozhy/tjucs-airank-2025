@@ -4,9 +4,9 @@
 			class="main-layout"
 			view="lHh Lpr fFf"
 		>
-			<q-header bordered>
+			<q-header bordered class="justify-center">
 				<q-toolbar>
-					<q-toolbar-title>
+					<q-toolbar-title shrink>
 						<router-link
 							:to="{ name: 'app.home' }"
 							custom
@@ -27,60 +27,52 @@
 					<q-btn
 						no-caps
 						flat
+						label="Embodied Benchmarks"
 						:to="{ name: 'app.benchmark' }"
-					>
-						EmbodiedBenchmarks
-					</q-btn>
-
-					<q-btn-dropdown
-						no-caps
-						flat
-						label="EmbodiedRank"
-					>
-						<q-list>
-							<q-item
-								clickable
-								v-close-popup
-								v-for="leaderboard in leaderboardList"
-								:key="leaderboard.id"
-								:to="{ name: 'app.leaderboard.detail', params: { leaderboardId: leaderboard.id } }"
-							>
-								<q-item-section>
-									<q-item-label>{{ leaderboard.name }}</q-item-label>
-								</q-item-section>
-							</q-item>
-						</q-list>
-					</q-btn-dropdown>
+						stretch
+					></q-btn>
 
 					<q-btn
 						no-caps
 						flat
-					>
-						EmbodiedLeaderboard Rules
-					</q-btn>
+						stretch
+						:to="{
+							name: 'app.leaderboard.detail',
+							params: { leaderboardId: defaultLeaderboardId } }
+						"
+						label="Embodied Rank"
+					></q-btn>
 
 					<q-btn
 						no-caps
 						flat
-					>
-						EmbodiedEval
-					</q-btn>
+						stretch
+						label="Embodied Leaderboard Rules"
+					></q-btn>
 
 					<q-btn
 						no-caps
 						flat
+						stretch
+						label="Embodied Eval"
+					></q-btn>
+
+					<q-btn
+						no-caps
+						flat
+						stretch
+						label="Docs"
 					>
-						Docs
 					</q-btn>
 
 					<q-space></q-space>
 
 					<q-btn
 						no-caps
-						flat
-					>
-						Online Evaluation
-					</q-btn>
+						outline
+						rounded
+						label="Online Evaluation"
+					></q-btn>
 				</q-toolbar>
 			</q-header>
 
@@ -111,16 +103,18 @@
 
 <script setup lang="ts">
 import { onBeforeMount, ref } from 'vue';
-import type * as Spec from 'src/spec';
 import * as Backend from 'src/backend';
 
 defineOptions({ name: 'AppMainLayout' });
 
-const leaderboardList = ref<Array<Spec.Leaderboard.Type>>([]);
-const LeaderboardAPI = Backend.API.Leaderboard;
+const defaultLeaderboardId = ref<string | null>(null);
 
 onBeforeMount(async () => {
-	leaderboardList.value = await LeaderboardAPI.query();
+	const Configuration = await Backend.API.Configuration.get();
+
+	if (Configuration !== null) {
+		defaultLeaderboardId.value = Configuration.DEFAULT_LEADERBOARD;
+	}
 });
 </script>
 

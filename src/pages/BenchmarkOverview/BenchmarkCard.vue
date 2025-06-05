@@ -59,7 +59,7 @@
 
 <script setup lang="ts">
 defineOptions({ name: 'BenchmarkCard' });
-import { computed, defineProps } from 'vue';
+import { computed } from 'vue';
 import type * as Spec from 'src/spec';
 
 const { benchmark, isNew } = defineProps<{
