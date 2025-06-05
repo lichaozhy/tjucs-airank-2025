@@ -13,9 +13,16 @@ const routes: RouteRecordRaw[] = [
 		component: () => import('layouts/MainLayout.vue'),
 		children: [
 			{
-				name: 'app.leaderboard.detail',
-				path: 'leaderboard/:leaderboardId',
-				component: () => import('pages/LeaderboardDetail/Page.vue'),
+				name: 'app.leaderboard',
+				path: 'leaderboard',
+				component: () => import('pages/LeaderboardLayout/Page.vue'),
+				children: [
+					{
+						name: 'app.leaderboard.detail',
+						path: ':leaderboardId',
+						component: () => import('pages/LeaderboardDetail/Page.vue'),
+					},
+				],
 			},
 			{
 				name: 'app.rank.leaderboard',
