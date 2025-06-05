@@ -216,13 +216,7 @@ const scoreViewDataList = computed<ScoreViewData[]>(() => {
 defineOptions({ name: 'AppBenchmark' });
 </script>
 
-<style lang="scss" scoped>
-.card-header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	background-image: $gradient-primary;
-}
+<style lang="scss">
 
 .rank-number {
 	display: flex;

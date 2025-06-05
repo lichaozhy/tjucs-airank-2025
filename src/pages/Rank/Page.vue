@@ -236,8 +236,8 @@ watch(currentBenchmarkIndex, () => {
 });
 
 onBeforeMount(async () => {
-	leaderboard.value = await API.Leaderboard(leaderboardId).get();
-	benchmarkList.value = await API.Leaderboard(leaderboardId).Benchmark.query();
+	leaderboard.value = await API.Leaderboard(leaderboardId as string).get();
+	benchmarkList.value = await API.Leaderboard(leaderboardId as string).Benchmark.query();
 	scoreList.value = await API.Score.query();
 	modelList.value = await API.Model.query();
 
@@ -294,34 +294,6 @@ onBeforeMount(async () => {
 			font-size: 2rem;
 			/* background-image: linear-gradient(90deg, $secondary, #ffffff); */
 		}
-	}
-}
-</style>
-
-<style lang="sass">
-.my-sticky-column-table
-  min-width: 600px
-  max-width: 1680px
-  width: 100%
-
-  thead tr:first-child th:first-child
-    /* bg color is important for th; just specify one */
-    background-color: rgba($primary, 0.2)
-
-  td:first-child
-    background-color: rgba($primary, 0.2)
-
-  th:first-child,
-  td:first-child
-    position: sticky
-    left: 0
-    z-index: 1
-</style>
-
-<style lang="scss">
-.fixed-layout-table {
-	table {
-		table-layout: fixed;
 	}
 }
 </style>

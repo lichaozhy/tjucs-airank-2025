@@ -63,25 +63,40 @@ export const API = {
 			return Data.Configuration;
 		},
 	},
-	Leaderboard: Object.assign(
-		(leaderboardId: string) => {
-			return {
-				async get() {
-					return Data.Leaderboard.find(leaderboard => leaderboard.id === leaderboardId)!;
-				},
-				Benchmark: {
-					async query() {
-						return Data.Benchmark.filter(benchmark => benchmark.leaderboard === leaderboardId);
-					},
-				},
-			};
-		},
-		{
-			async query() {
-				return Promise.resolve(Data.Leaderboard);
+	Leaderboard: Object.assign((leaderboardId: string) => {
+		const leaderboard = Data.Leaderboard.find(function idMatched(leaderboard) {
+			return leaderboard.id === leaderboardId;
+		})!;
+
+		return {
+			async get() {
+				return leaderboard;
 			},
+			Benchmark: {
+				async query() {
+					return Data.Benchmark.filter(benchmark => benchmark.leaderboard === leaderboardId);
+				},
+			},
+			Summary: Object.assign((summaryId: string) => {
+				const summary = leaderboard.summaries.find(({ id }) => id === summaryId);
+
+				return {
+					async get() {
+						return summary;
+					},
+				};
+			}, {
+				async query() {
+					return leaderboard.summaries;
+				},
+			}),
+		};
+	},
+	{
+		async query() {
+			return Promise.resolve(Data.Leaderboard);
 		},
-	),
+	}),
 	Benchmark: Object.assign(
 		(benchmarkId: string) => {
 			return {

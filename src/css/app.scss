@@ -7,3 +7,38 @@
 html {
 	scrollbar-width: none;
 }
+
+.my-sticky-column-table {
+	min-width: 600px;
+	max-width: 1680px;
+	width: 100%;
+
+	thead tr:first-child th:first-child {
+		/* bg color is important for th; just specify one */
+		background-color: rgba($primary, 0.2);
+	}
+
+	td:first-child {
+		background-color: rgba($primary, 0.2);
+	}
+
+	th:first-child,
+	td:first-child {
+		position: sticky;
+		left: 0;
+		z-index: 1;
+	}
+}
+
+.fixed-layout-table {
+	table {
+		table-layout: fixed;
+	}
+}
+
+.card-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-image: $gradient-primary;
+}

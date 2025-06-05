@@ -1,14 +1,116 @@
 [
 	{
 		"id": "09b4a56a-2e41-4103-a330-129381c24450",
-		"name": "Embodied Question Answering Leaderboard"
+		"name": "Embodied Question Answering Leaderboard",
+		"summaries": [
+			{
+				"id": "d6ba913a-6e26-4dcc-b192-04b9bee6fd8e",
+				"name": "2D-All Benchmarks",
+				"properties": [
+					{
+						"type": "computed",
+						"label": "Total Score"
+					},
+					{
+						"type": "reference",
+						"label": "UniEQA",
+						"ref": {
+							"benchmark": "034bf6b5-dc18-45da-bfaf-337589125632",
+							"key": "Total"
+						}
+					},
+					{
+						"type": "reference",
+						"label": "OpenEQA",
+						"ref": {
+							"benchmark": "ba0be521-6b10-4881-964c-97cd4d2d6070",
+							"key": "Total"
+						}
+					}
+				]
+			},
+			{
+				"id": "22d6526a-6707-4a1e-ae3d-9c337feba2e8",
+				"name": "3D-All Benchmarks",
+				"properties": [
+					{
+						"type": "computed",
+						"label": "Total Score"
+					},
+					{
+						"type": "reference",
+						"label": "SQA3D",
+						"ref": {
+							"benchmark": "8b56c6cf-becf-4bef-b612-1804d2f20cda",
+							"key": "Total"
+						}
+					},
+					{
+						"type": "reference",
+						"label": "ScanQA",
+						"ref": {
+							"benchmark": "e0465aba-17b0-4f34-9aa4-345c9bacdac2",
+							"key": "Total"
+						}
+					}
+				]
+			}
+		]
 	},
 	{
 		"id": "263e7d41-65a5-4b7b-8f48-5c7b94ca916b",
-		"name": "Embodied Navigation Leaderboard"
+		"name": "Embodied Navigation Leaderboard",
+		"summaries": [
+			{
+				"id": "2e5899bb-60bb-43d0-8ce0-fd186d66b3fb",
+				"name": "All Benchmarks",
+				"properties": [
+					{
+						"type": "computed",
+						"label": "Total SR"
+					},
+					{
+						"type": "reference",
+						"label": "EB-Navigation",
+						"ref": {
+							"benchmark": "73de273a-7d38-40c0-b869-2b2e6156c897",
+							"key": "TotalSR"
+						}
+					}
+				]
+			}
+		]
 	},
 	{
 		"id": "1143b13b-2754-4660-9f79-d0d0dc1f273e",
-		"name": "Embodied Task Planning Leaderboard"
+		"name": "Embodied Task Planning Leaderboard",
+		"summaries": [
+			{
+				"id": "3a43d3d8-f078-43fd-b45c-ab2af7a0c283",
+				"name": "All Benchmarks",
+				"properties": [
+					{
+						"type": "computed",
+						"label": "Total SR"
+					},
+					{
+						"type": "reference",
+						"label": "EB-ALFRED",
+						"ref": {
+							"benchmark": "1961aa46-9085-42ed-b384-d9ffe52921a8",
+							"key": "TotalSR"
+						}
+					},
+					{
+						"type": "reference",
+						"label": "EB-ALFRED",
+						"ref": {
+							"benchmark": "cbb64d1c-4377-4231-a465-73ffb10972c5",
+							"key": "TotalSR"
+						}
+					}
+				]
+			}
+		]
 	}
 ]
