@@ -14,46 +14,128 @@
 			</div>
 		</div>
 
-		<q-tabs
-			no-caps
-			class="q-my-lg"
-			style="margin-top: 220px;"
-		>
-			<q-route-tab
-				v-for="item in leaderboardList"
-				:key="item.id"
-				:name="item.id"
-				:label="item.name"
-				:to="{
-					name: 'app.leaderboard.detail',
-					params: { leaderboardId: item.id }
-				}"
-			/>
-		</q-tabs>
-
 		<div
 			style="max-width: 1680px"
 			class="full-width"
 		>
+			<q-tabs
+				no-caps
+				dense
+				class="q-my-lg"
+				style="margin-top: 220px;"
+			>
+				<q-route-tab
+					v-for="item in leaderboardList"
+					:key="item.id"
+					:name="item.id"
+					:to="{
+						name: 'app.leaderboard.detail',
+						params: { leaderboardId: item.id }
+					}"
+					class="text-h6 text-weight-regular text-grey-8"
+					active-class="text-black"
+				>
+					<div class="row">
+						<div class="">{{ item.name }}</div>
+						<q-btn-dropdown
+							:class="{ invisible: $route.params.leaderboardId !== item.id }"
+							flat
+							dense
+							rounded
+						>
+							<q-list dense>
+								<q-item-label header>Summary</q-item-label>
+								<q-item
+									tag="label"
+									v-for="summary in summaryList"
+									:key="summary.id"
+									clickable
+								>
+									<q-item-section side top>
+										<q-checkbox v-model="selectedSummary[summary.id]" />
+									</q-item-section>
+									<q-item-section>
+										<q-item-label>{{ summary.name }}</q-item-label>
+									</q-item-section>
+								</q-item>
+								<q-separator />
+								<q-item-label header>Benchmark</q-item-label>
+								<q-item
+									tag="label"
+									v-for="benchmark in benchmarkList"
+									:key="benchmark.id"
+									clickable
+								>
+									<q-item-section side top>
+										<q-checkbox v-model="selectedBenchmark[benchmark.id]" />
+									</q-item-section>
+									<q-item-section>
+										<q-item-label>{{ benchmark.name }}</q-item-label>
+									</q-item-section>
+								</q-item>
+							</q-list>
+					</q-btn-dropdown>
+					</div>
+				</q-route-tab>
+			</q-tabs>
+
 			<router-view></router-view>
 		</div>
 	</q-page>
 </template>
 
 <script setup lang="ts">
-import { onBeforeMount, ref } from 'vue';
+import { computed, onBeforeMount, reactive, ref, provide } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
 
 import * as Backend from 'src/backend';
-import type * as Spec from 'src/spec';
+import * as Spec from 'src/spec';
 
+const route = useRoute();
+const router = useRouter();
+const leaderboard = ref<Spec.Leaderboard.Type | null>(null);
 const leaderboardList = ref<Spec.Leaderboard.Type[]>([]);
+const benchmarkList = ref<Spec.Benchmark.Type[]>([]);
+const selectedBenchmark = reactive<{ [key: string]: boolean }>({});
+const selectedSummary = reactive<{ [key: string]: boolean }>({});
 
-async function fetchAllLeaderboard() {
-	leaderboardList.value = await Backend.API.Leaderboard.query();
-}
+provide(Spec.INJECTION_KEY.LEADERBOARD_SUMMARY_SELECTED, selectedSummary);
+provide(Spec.INJECTION_KEY.LEADERBOARD_BENCHMARK_SELECTED, selectedBenchmark);
+
+const summaryList = computed(() => {
+	if (leaderboard.value === null) {
+		return [];
+	}
+
+	return leaderboard.value.summaries;
+});
 
 onBeforeMount(async () => {
-	await fetchAllLeaderboard();
+	const leaderboardListData = await Backend.API.Leaderboard.query();
+
+	if (!Object.hasOwn(route.params, 'leaderboardId')) {
+		return await router.replace({
+			name: 'app.leaderboard.detail',
+			params: { leaderboardId: leaderboardListData[0]?.id },
+		});
+	}
+
+	const { leaderboardId } = route.params;
+	const LeaderboardAPI = Backend.API.Leaderboard(leaderboardId as string);
+	const leaderboardData = await LeaderboardAPI.get();
+	const benchmarkListData = await LeaderboardAPI.Benchmark.query();
+
+	leaderboard.value = leaderboardData;
+	leaderboardList.value = leaderboardListData;
+	benchmarkList.value = benchmarkListData;
+
+	for (const benchmark of benchmarkListData) {
+		selectedBenchmark[benchmark.id] = true;
+	}
+
+	for (const summary of leaderboardData.summaries) {
+		selectedSummary[summary.id] = true;
+	}
 });
 
 defineOptions({ name: 'AppLeaderboardLayout' });

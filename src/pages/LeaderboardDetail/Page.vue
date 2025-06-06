@@ -5,7 +5,7 @@
 	>
 		<div
 			class="col-12"
-			v-for="summary in leaderboard!.summaries"
+			v-for="summary in filterdSummaryList"
 			:key="summary.id"
 		>
 			<AppLeaderboardSummary
@@ -16,7 +16,7 @@
 
 		<div
 			class="col-12"
-			v-for="benchmark in benchmarkList"
+			v-for="benchmark in filteredBenchmarkList"
 			:key="benchmark.id"
 		>
 			<AppLeaderboardBenchmark
@@ -28,12 +28,12 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onBeforeMount, ref } from 'vue';
+import { computed, onBeforeMount, ref, inject } from 'vue';
 import { useRoute } from 'vue-router';
 
 import AppLeaderboardBenchmark from './Benchmark.vue';
 import AppLeaderboardSummary from './Summary.vue';
-import type * as Spec from 'src/spec';
+import * as Spec from 'src/spec';
 import * as Backend from 'src/backend';
 
 const { params } = useRoute();
@@ -43,8 +43,33 @@ const LeaderboardAPI = Backend.API.Leaderboard(leaderboardId);
 const leaderboard = ref<Spec.Leaderboard.Type | null>(null);
 const benchmarkList = ref<Array<Spec.Benchmark.Type>>([]);
 
+const selectedBenchmark = inject(Spec.INJECTION_KEY.LEADERBOARD_BENCHMARK_SELECTED);
+const selectedSummary = inject(Spec.INJECTION_KEY.LEADERBOARD_SUMMARY_SELECTED);
+
+if (selectedBenchmark === undefined || selectedSummary === undefined) {
+	throw new Error('AppLeaderboardDetailPage MUST be in AppLeaderboardLayoutPage');
+}
+
 const isReady = computed(() => {
 	return benchmarkList.value.length > 0 && leaderboard.value !== null;
+});
+
+const filterdSummaryList = computed(() => {
+	if (!isReady.value) {
+		return [];
+	}
+
+	return leaderboard.value!.summaries
+		.filter(summary => selectedSummary[summary.id]);
+});
+
+const filteredBenchmarkList = computed(() => {
+	if (!isReady.value) {
+		return [];
+	}
+
+	return benchmarkList.value
+		.filter(benchmark => selectedBenchmark[benchmark.id]);
 });
 
 onBeforeMount(async () => {
@@ -52,5 +77,5 @@ onBeforeMount(async () => {
 	benchmarkList.value = await LeaderboardAPI.Benchmark.query();
 });
 
-defineOptions({ name: 'AppLeaderboardPage' });
+defineOptions({ name: 'AppLeaderboardDetailPage' });
 </script>
