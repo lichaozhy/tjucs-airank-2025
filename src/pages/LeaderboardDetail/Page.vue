@@ -15,7 +15,7 @@
 		</div>
 
 		<div
-			class="col-6 col-grow"
+			class="col-12"
 			v-for="benchmark in benchmarkList"
 			:key="benchmark.id"
 		>

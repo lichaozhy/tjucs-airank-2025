@@ -1,5 +1,5 @@
 <template>
-	<q-card flat square>
+	<q-card square>
 		<q-item class="card-header justify-between">
 			<q-item-section class="col-shrink">
 				<div class="text-weight-light text-h6 q-py-sm text-white">{{ summary?.name }}</div>
@@ -11,11 +11,11 @@
 			:rows="rowList"
 			:columns="columnList"
 			hide-pagination
-			dense
 			square
 			flat
 			:pagination="{ rowsPerPage: 30 }"
 			bordered
+			dense
 		>
 			<template v-slot:body-cell-model="props">
 				<q-td :props="props">
@@ -37,6 +37,7 @@ import { computed, onBeforeMount, ref } from 'vue';
 
 import type * as Spec from 'src/spec';
 import * as Backend from 'src/backend';
+import { getColumnEMWidth } from './utils';
 
 const props = defineProps<{
 	summaryId: string;
@@ -83,7 +84,7 @@ const columnList = computed(() => {
 			label: property.label,
 			align: 'right' as 'left' | 'right' | 'center',
 			sortable: true,
-			headerStyle: 'width: 180px;',
+			headerStyle: `width: ${getColumnEMWidth(property.label.length)}em`,
 		};
 	});
 

@@ -11,6 +11,7 @@ export const Schema = z.object({
 	properties: z.record(
 		z.string(),
 		z.object({
+			order: z.number(),
 			index: z.number(),
 			label: z.string(),
 			unit: z.string().nullable(),
