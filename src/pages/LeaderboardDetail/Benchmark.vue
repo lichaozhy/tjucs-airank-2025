@@ -123,10 +123,10 @@ const columnList = computed(() => {
 
 	const itemColumns = Object.values(benchmark.properties)
 		.sort((a, b) => a.order - b.order)
-		.map((property, index) => {
+		.map((property) => {
 			return {
-				name: `item-${index}`,
-				field: `property:${index}`,
+				name: `item-${property.index}`,
+				field: `property:${property.index}`,
 				label: property.label,
 				align: 'right' as 'left' | 'right' | 'center',
 				sortable: true,
