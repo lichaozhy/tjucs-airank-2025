@@ -130,7 +130,7 @@ onBeforeMount(async () => {
 	benchmarkList.value = benchmarkListData;
 
 	for (const benchmark of benchmarkListData) {
-		selectedBenchmark[benchmark.id] = true;
+		selectedBenchmark[benchmark.id] = false;
 	}
 
 	for (const summary of leaderboardData.summaries) {
