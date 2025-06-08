@@ -69,10 +69,6 @@ const BenchmarkAPI = Backend.API.Benchmark(benchmark.id);
 const scoreList = ref<Spec.Score.Type[]>([]);
 const modelList = ref<Spec.Model.Type[]>([]);
 
-async function fetchModelFromScore(score: Spec.Score.Type) {
-	return Backend.API.Model(score.model).get();
-}
-
 function toNoneOrFixed(value: number | null) {
 	return value === null ? '-' : value.toFixed(2);
 }
@@ -150,6 +146,20 @@ const columnList = computed(() => {
 		},
 	];
 });
+
+async function fetchModelFromScore(score: Spec.Score.Type) {
+	const model = await Backend.API.Model(score.model).get();
+
+	if (model === undefined) {
+		console.log('Bad Date!!! There is no matched model data.');
+		console.log('Score is:', JSON.stringify(score));
+		console.log('But model is NOT found.', score.model);
+		/* eslint no-debugger: "off" */
+		debugger;
+	}
+
+	return model;
+}
 
 onBeforeMount(async () => {
 	scoreList.value = await BenchmarkAPI.Score.query();
