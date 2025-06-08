@@ -1,7 +1,7 @@
 [
 	{
-		"id": "c5b12290-26b9-4659-9ca8-9aac47113ab9",
-		"name": "gpt-4o-2024-08-06",
+		"id": "6d2b9e8a-97ff-400f-8ea1-f403c7452408",
+		"name": "GPT-4o",
 		"component": {
 			"vision": null,
 			"language": "GPT-4"
@@ -9,7 +9,7 @@
 	},
 	{
 		"id": "3b7f3638-9364-41c0-bbfe-5288176f3072",
-		"name": "LLaVA-NeXT-Video-7B-Qwen2",
+		"name": "LLaVA-NeXT-Video-7B",
 		"component": {
 			"vision": "Qwen2-7B",
 			"language": "SigLIP-So400m"
@@ -33,7 +33,7 @@
 	},
 	{
 		"id": "aef63eca-3dde-495a-a922-c803d956568f",
-		"name": "Qwen2.5-VL-3B-Instruct",
+		"name": "Qwen2.5-VL-3B-Ins",
 		"component": {
 			"vision": "Qwen2.5",
 			"language": "Redesigned ViT"
@@ -49,7 +49,7 @@
 	},
 	{
 		"id": "03383a4f-37a0-4046-80f1-52b61dc452a7",
-		"name": "EmbodiedGPT-8B",
+		"name": "EmbodiedGPT",
 		"component": {
 			"vision": "LLaMA-7B",
 			"language": "ViT-G/14"
@@ -77,14 +77,6 @@
 		"component": {
 			"vision": "Flan-T5-xl",
 			"language": "BLIP-2"
-		}
-	},
-	{
-		"id": "0de64c8a-593d-4961-929e-e6d06c1c4678",
-		"name": "llama-vid-7b-full-224-video-fps-1",
-		"component": {
-			"vision": "Vicuna-7B",
-			"language": "EVA-G"
 		}
 	},
 	{
@@ -137,7 +129,7 @@
 	},
 	{
 		"id": "f0fc7970-1e20-4ea2-a5fd-65ed7dd6802a",
-		"name": "GPT-O3",
+		"name": "o3",
 		"component": {
 			"vision": null,
 			"language": null
@@ -146,22 +138,6 @@
 	{
 		"id": "9321375f-e8e4-4b03-9f04-fbd2864afa2f",
 		"name": "Noah(UniE-VLM)",
-		"component": {
-			"vision": null,
-			"language": null
-		}
-	},
-	{
-		"id": "25c4756a-f32e-4b4a-b826-99624617c140",
-		"name": "Gemini-1.5 Pro",
-		"component": {
-			"vision": null,
-			"language": null
-		}
-	},
-	{
-		"id": "94c703af-e678-410f-9bac-879d79afd993",
-		"name": "Gemini-1.5 Flash",
 		"component": {
 			"vision": null,
 			"language": null
@@ -184,14 +160,6 @@
 		}
 	},
 	{
-		"id": "f3590a86-b3b2-491e-8320-2fc48ec5f095",
-		"name": "Qwen2.5-VL-7B-Ins",
-		"component": {
-			"vision": null,
-			"language": null
-		}
-	},
-	{
 		"id": "6e39d9f5-4b6a-471d-92d6-07a37b559070",
 		"name": "InternVL2-40B",
 		"component": {
@@ -200,24 +168,8 @@
 		}
 	},
 	{
-		"id": "4f7bf0d0-bb2c-477d-9b76-94d6050eb664",
-		"name": "LLaVA-NeXT-Video-7B",
-		"component": {
-			"vision": null,
-			"language": null
-		}
-	},
-	{
 		"id": "5db29ede-6e63-432c-96c1-f65700028165",
 		"name": "InternVL2-8B",
-		"component": {
-			"vision": null,
-			"language": null
-		}
-	},
-	{
-		"id": "6d2b9e8a-97ff-400f-8ea1-f403c7452408",
-		"name": "GPT-4o",
 		"component": {
 			"vision": null,
 			"language": null
@@ -245,14 +197,6 @@
 		"component": {
 			"vision": null,
 			"language": null
-		}
-	},
-	{
-		"id": "5f43440f-9161-462b-94ce-9dc03f676587",
-		"name": "GPT-4o",
-		"component": {
-			"vision": null,
-			"language": "GPT-4"
 		}
 	},
 	{
@@ -393,7 +337,7 @@
 	},
 	{
 		"id": "e40d9b56-19c8-4387-8f71-4a3b39d7d1ef",
-		"name": "InternVL25-8B-MPO",
+		"name": "InternVL2.5-8B-MPO",
 		"component": {
 			"vision": "InternViT-300M-448px-V2_5",
 			"language": "internlm2_5-7b-chat"
@@ -401,7 +345,7 @@
 	},
 	{
 		"id": "47130974-a85a-4090-ab93-04542244c04e",
-		"name": "Gemini2.0 Pro w CoT",
+		"name": "Gemini-2.0-Pro w CoT",
 		"component": {
 			"vision": null,
 			"language": null
@@ -417,7 +361,7 @@
 	},
 	{
 		"id": "4a42979f-36cb-4c3e-8ebf-a198a68b90e6",
-		"name": "Gemini2.0 Pro",
+		"name": "Gemini-2.0-Pro",
 		"component": {
 			"vision": null,
 			"language": null
@@ -552,14 +496,6 @@
 		}
 	},
 	{
-		"id": "94d720cf-6600-439d-85ad-5fd0b024c4ea",
-		"name": "Llama3-70B",
-		"component": {
-			"vision": null,
-			"language": null
-		}
-	},
-	{
 		"id": "12e98a0d-5bd3-4af8-a45d-4ebaa59cf45c",
 		"name": "Llama3-70B",
 		"component": {
@@ -576,80 +512,8 @@
 		}
 	},
 	{
-		"id": "81cdd531-2f0a-4b49-8edb-aa122345c862",
-		"name": "Claude 3.5-Sonnet",
-		"component": {
-			"vision": null,
-			"language": null
-		}
-	},
-	{
-		"id": "c520103e-1da8-4ec4-95a4-9481a6da95bc",
-		"name": "Gemini-1.5-Pro",
-		"component": {
-			"vision": null,
-			"language": null
-		}
-	},
-	{
-		"id": "e5d0db43-bf0a-41ce-b0f2-6ca92c61c811",
-		"name": "Gemini-2.0-flash",
-		"component": {
-			"vision": null,
-			"language": null
-		}
-	},
-	{
-		"id": "1926254e-b425-4279-928f-155842a3ceb1",
-		"name": "Qwen-VL-Max",
-		"component": {
-			"vision": null,
-			"language": null
-		}
-	},
-	{
-		"id": "b8a2e78b-e9dd-4ca1-b8d5-4f3f54ffd22d",
-		"name": "InternVL2.5-7B8-MPO",
-		"component": {
-			"vision": null,
-			"language": null
-		}
-	},
-	{
-		"id": "77fec115-2a6a-4478-8e0e-60fd8698ea20",
-		"name": "Qwen2.5-VL-72B-Ins",
-		"component": {
-			"vision": null,
-			"language": null
-		}
-	},
-	{
 		"id": "3b0d50a0-37ec-4234-ada0-4a727f9972ab",
 		"name": "Gemini-1.5-chat",
-		"component": {
-			"vision": null,
-			"language": null
-		}
-	},
-	{
-		"id": "9fe6fa5b-6b7a-4422-8fe6-9c78fc7577e4",
-		"name": "InternVL2.5-78B",
-		"component": {
-			"vision": null,
-			"language": null
-		}
-	},
-	{
-		"id": "9941e377-6f53-422c-a156-8cb895f16514",
-		"name": "Qwen2-VL-72B-Ins",
-		"component": {
-			"vision": null,
-			"language": null
-		}
-	},
-	{
-		"id": "0cc2c45e-af32-4f14-b6e5-4bf9128c15d5",
-		"name": "Llama-3.2-90B-Vision-Ins",
 		"component": {
 			"vision": null,
 			"language": null
@@ -664,48 +528,8 @@
 		}
 	},
 	{
-		"id": "80ec5db3-a3a7-42e4-a30d-313f4ca20009",
-		"name": "GPT-4o-mini",
-		"component": {
-			"vision": null,
-			"language": null
-		}
-	},
-	{
 		"id": "1ff580e8-1775-4dc3-b7f6-191f98b432e8",
 		"name": "InternVL2.5-33B",
-		"component": {
-			"vision": null,
-			"language": null
-		}
-	},
-	{
-		"id": "d94d9e0b-9df9-4f3f-bc0e-6edb80a4b312",
-		"name": "Llama-3.2-11B-Vision-Ins",
-		"component": {
-			"vision": null,
-			"language": null
-		}
-	},
-	{
-		"id": "85ced4c3-d578-43c2-81e9-90aecef79e2f",
-		"name": "InternVL2.5-8B-MPO",
-		"component": {
-			"vision": null,
-			"language": null
-		}
-	},
-	{
-		"id": "f0cf558f-d983-4a12-9649-c746003aee5e",
-		"name": "InternVL2.5-8B",
-		"component": {
-			"vision": null,
-			"language": null
-		}
-	},
-	{
-		"id": "e687e55b-94ba-44cf-959a-634ab1f58b1b",
-		"name": "Qwen2-VL-7B-Ins",
 		"component": {
 			"vision": null,
 			"language": null
