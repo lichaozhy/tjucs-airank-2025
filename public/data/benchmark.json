@@ -98,25 +98,25 @@
 			"ObjectType": {
 				"order": 1,
 				"index": 0,
-				"label": "Object Type",
+				"label": "Object Recognition",
 				"unit": null
 			},
 			"ObjectProperty": {
 				"order": 2,
 				"index": 1,
-				"label": "Object Property",
+				"label": "Attribute Recognition",
 				"unit": null
 			},
 			"ObjectState": {
 				"order": 3,
 				"index": 2,
-				"label": "Object State",
+				"label": "Object State Recognition",
 				"unit": null
 			},
 			"Affordance": {
 				"order": 4,
 				"index": 3,
-				"label": "Affordance",
+				"label": "Functional Reasoning",
 				"unit": null
 			},
 			"WorldKnowledge": {
