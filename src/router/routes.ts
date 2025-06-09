@@ -1,4 +1,12 @@
 import type { RouteRecordRaw } from 'vue-router';
+import { h } from 'vue';
+import { RouterView } from 'vue-router';
+
+const MIDDLE_ROUTER_VIEW = {
+	name: 'MiddleRouterView',
+	render: () => h(RouterView),
+};
+
 
 const routes: RouteRecordRaw[] = [
 	{
@@ -32,7 +40,20 @@ const routes: RouteRecordRaw[] = [
 			{
 				name: 'app.benchmark',
 				path: 'benchmark',
-				component: () => import('pages/BenchmarkOverview/Page.vue'),
+				redirect: { name: 'app.benchmark.overview' },
+				component: MIDDLE_ROUTER_VIEW,
+				children: [
+					{
+						name: 'app.benchmark.overview',
+						path: '',
+						component: () => import('pages/BenchmarkOverview/Page.vue'),
+					},
+					{
+						name: 'app.benchmark.detail',
+						path: ':benchmarkId',
+						component: () => import('pages/BenchmarkDetail/Page.vue'),
+					},
+				],
 			},
 			{
 				name: 'app.benchmark.detail',
