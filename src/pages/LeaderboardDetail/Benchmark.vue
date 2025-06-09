@@ -14,7 +14,7 @@
 					class="col-shrink text-white"
 					size="lg"
 				>
-					<div class="text-weight-light">{{ benchmark.name }} Benchmark</div>
+					<div class="text-weight-regular">{{ benchmark.name }} Benchmark</div>
 				</q-btn>
 			</q-item-section>
 		</q-item>
@@ -28,16 +28,21 @@
 			flat
 			:pagination="{ rowsPerPage: 30 }"
 			bordered
-			dense
 		>
+			<template #body-cell-rank="props">
+				<q-td :props="props">
+					<AppRankBadge :order="props.rowIndex + 1"></AppRankBadge>
+				</q-td>
+			</template>
+
 			<template v-slot:body-cell-model="props">
 				<q-td :props="props">
 					<router-link
 						style="text-decoration: none"
 						:to="{ name: 'app.model.detail', params: { id: props.row.model.id } }"
-						class="col-shrink text-primary"
+						class="col-shrink text-black"
 					>
-						<div class="q-px-xs text-weight-light">{{ props.row.model.name }}</div>
+						<div class="text-weight-bold">{{ props.row.model.name }}</div>
 					</router-link>
 				</q-td>
 			</template>
@@ -58,7 +63,16 @@ import { computed, onBeforeMount, ref } from 'vue';
 
 import type * as Spec from 'src/spec';
 import * as Backend from 'src/backend';
-import { getColumnEMWidth, toNumberOrNull } from './utils';
+
+import {
+	getColumnEMWidth,
+	toNumberOrNull,
+	toNoneOrFixed,
+	STATIC_COLUMN_LIST,
+	TAIL_BLANK_COLUMN,
+} from './utils';
+
+import AppRankBadge from './RankBadge.vue';
 
 const { leaderboardId, benchmark } = defineProps<{
 	leaderboardId: string;
@@ -68,10 +82,6 @@ const { leaderboardId, benchmark } = defineProps<{
 const BenchmarkAPI = Backend.API.Benchmark(benchmark.id);
 const scoreList = ref<Spec.Score.Type[]>([]);
 const modelList = ref<Spec.Model.Type[]>([]);
-
-function toNoneOrFixed(value: number | null) {
-	return value === null ? '-' : value.toFixed(2);
-}
 
 const isReady = computed(() => {
 	if (scoreList.value.length === 0) {
@@ -130,35 +140,11 @@ const columnList = computed(() => {
 			};
 		});
 
-	return [
-		{
-			name: 'model',
-			label: 'Model',
-			field: 'model',
-			align: 'left' as 'left' | 'right' | 'center',
-			headerStyle: 'width: 260px;',
-		},
-		...itemColumns,
-		{
-			name: 'blank',
-			label: ' ',
-			field: () => null,
-		},
-	];
+	return [...STATIC_COLUMN_LIST, ...itemColumns, TAIL_BLANK_COLUMN];
 });
 
 async function fetchModelFromScore(score: Spec.Score.Type) {
-	const model = await Backend.API.Model(score.model).get();
-
-	if (model === undefined) {
-		console.log('Bad Date!!! There is no matched model data.');
-		console.log('Score is:', JSON.stringify(score));
-		console.log('But model is NOT found.', score.model);
-		/* eslint no-debugger: "off" */
-		debugger;
-	}
-
-	return model;
+	return await Backend.API.Model(score.model).get();
 }
 
 onBeforeMount(async () => {

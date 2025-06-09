@@ -32,8 +32,9 @@
 						name: 'app.leaderboard.detail',
 						params: { leaderboardId: item.id }
 					}"
-					class="text-h6 text-weight-regular text-grey-8"
-					active-class="text-black"
+					class="text-h6 text-black text-weight-regular"
+					style="opacity: .6;"
+					active-class="app-solid-tab"
 				>
 					<div class="row">
 						<div class="">{{ item.name }}</div>
@@ -153,5 +154,9 @@ defineOptions({ name: 'AppLeaderboardLayout' });
 			rgba($primary, 0.6) 100%
 		),
 		url('/image/29085492_1944-no.jpg') center/cover;
+}
+
+.app-solid-tab {
+	opacity: 1 !important;
 }
 </style>
