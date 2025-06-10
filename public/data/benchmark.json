@@ -1,5 +1,21 @@
 [
 	{
+		"id": "025ca0fe-f04c-4d17-9f4c-9d1aca6666bd",
+		"leaderboard": "263e7d41-65a5-4b7b-8f48-5c7b94ca916b",
+		"name": "RxR-CE",
+		"default": {
+			"property": "TotalSR"
+		},
+		"properties": {
+			"TotalSR": {
+				"order": 0,
+				"index": 0,
+				"label": "Total SR",
+				"unit": null
+			}
+		}
+	},
+	{
 		"id": "034bf6b5-dc18-45da-bfaf-337589125632",
 		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
 		"name": "UniEQA",
@@ -88,53 +104,69 @@
 		}
 	},
 	{
-		"id": "ba0be521-6b10-4881-964c-97cd4d2d6070",
-		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
-		"name": "OpenEQA",
+		"id": "1961aa46-9085-42ed-b384-d9ffe52921a8",
+		"leaderboard": "1143b13b-2754-4660-9f79-d0d0dc1f273e",
+		"name": "EB-ALFRED",
 		"default": {
-			"property": "Total"
+			"property": "TotalSR"
 		},
 		"properties": {
-			"ObjectType": {
+			"Base": {
 				"order": 1,
 				"index": 0,
-				"label": "Object Recognition",
+				"label": "Base",
 				"unit": null
 			},
-			"ObjectProperty": {
+			"Common": {
 				"order": 2,
 				"index": 1,
-				"label": "Attribute Recognition",
+				"label": "Common",
 				"unit": null
 			},
-			"ObjectState": {
+			"Complex": {
 				"order": 3,
 				"index": 2,
-				"label": "Object State Recognition",
+				"label": "Complex",
 				"unit": null
 			},
-			"Affordance": {
+			"Visual": {
 				"order": 4,
 				"index": 3,
-				"label": "Functional Reasoning",
+				"label": "Visual",
 				"unit": null
 			},
-			"WorldKnowledge": {
+			"Spatial": {
 				"order": 5,
 				"index": 4,
-				"label": "World Knowledge",
+				"label": "Spatial",
 				"unit": null
 			},
-			"SpatialPerception": {
+			"Long": {
 				"order": 6,
 				"index": 5,
-				"label": "Spatial Perception",
+				"label": "Long",
 				"unit": null
 			},
-			"Total": {
+			"TotalSR": {
 				"order": 0,
 				"index": 6,
-				"label": "Total Score",
+				"label": "Total SR",
+				"unit": null
+			}
+		}
+	},
+	{
+		"id": "1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09",
+		"leaderboard": "263e7d41-65a5-4b7b-8f48-5c7b94ca916b",
+		"name": "R2R-CE",
+		"default": {
+			"property": "TotalSR"
+		},
+		"properties": {
+			"TotalSR": {
+				"order": 0,
+				"index": 0,
+				"label": "Total SR",
 				"unit": null
 			}
 		}
@@ -268,96 +300,36 @@
 		}
 	},
 	{
-		"id": "a9228f2e-3191-4a08-8f03-64e73cae2e78",
-		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
-		"name": "Where2Place",
+		"id": "68bf8b5b-d8d4-49d7-9e7e-03e4d547189b",
+		"leaderboard": "1143b13b-2754-4660-9f79-d0d0dc1f273e",
+		"name": "ET-Plan-Bench",
 		"default": {
-			"property": "Total"
+			"property": "TotalSR"
 		},
 		"properties": {
-			"Total": {
-				"order": 0,
-				"index": 0,
-				"label": "Total Score",
-				"unit": null
-			}
-		}
-	},
-	{
-		"id": "8b56c6cf-becf-4bef-b612-1804d2f20cda",
-		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
-		"name": "SQA3D",
-		"default": {
-			"property": "Total"
-		},
-		"properties": {
-			"EM": {
-				"order": 0,
-				"index": 0,
-				"label": "EM",
-				"unit": null
-			},
-			"Total": {
-				"order": 1,
-				"index": 1,
-				"label": "Total Score",
-				"unit": null
-			}
-		}
-	},
-	{
-		"id": "e0465aba-17b0-4f34-9aa4-345c9bacdac2",
-		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
-		"name": "ScanQA",
-		"default": {
-			"property": "Total"
-		},
-		"properties": {
-			"CIDEr": {
+			"NaviLayoutMap": {
 				"order": 1,
 				"index": 0,
-				"label": "CIDEr",
-				"unit": null
+				"label": "Navi +Layout Map",
+				"unit": ""
 			},
-			"EM": {
+			"Navi": {
 				"order": 2,
 				"index": 1,
-				"label": "EM",
-				"unit": null
+				"label": "Navi",
+				"unit": ""
 			},
-			"Total": {
-				"order": 0,
+			"NaviRelation": {
+				"order": 3,
 				"index": 2,
-				"label": "Total Score",
-				"unit": null
-			}
-		}
-	},
-	{
-		"id": "df46aa1a-099f-4841-bc02-ba9608e18c7d",
-		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
-		"name": "Scan2Cap",
-		"default": {
-			"property": "Total"
-		},
-		"properties": {
-			"CIDEr": {
-				"order": 1,
-				"index": 0,
-				"label": "CIDEr",
-				"unit": null
+				"label": "Navi+ Relation",
+				"unit": ""
 			},
-			"B4": {
-				"order": 2,
-				"index": 1,
-				"label": "B-4",
-				"unit": null
-			},
-			"Total": {
+			"TotalSR": {
 				"order": 0,
-				"index": 2,
-				"label": "Total Score",
-				"unit": null
+				"index": 3,
+				"label": "Total SR",
+				"unit": ""
 			}
 		}
 	},
@@ -408,85 +380,91 @@
 		}
 	},
 	{
-		"id": "1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09",
-		"leaderboard": "263e7d41-65a5-4b7b-8f48-5c7b94ca916b",
-		"name": "R2R-CE",
+		"id": "8b56c6cf-becf-4bef-b612-1804d2f20cda",
+		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
+		"name": "SQA3D",
 		"default": {
-			"property": "TotalSR"
+			"property": "Total"
 		},
 		"properties": {
-			"TotalSR": {
+			"EM": {
 				"order": 0,
 				"index": 0,
-				"label": "Total SR",
+				"label": "EM",
+				"unit": null
+			},
+			"Total": {
+				"order": 1,
+				"index": 1,
+				"label": "Total Score",
 				"unit": null
 			}
 		}
 	},
 	{
-		"id": "025ca0fe-f04c-4d17-9f4c-9d1aca6666bd",
-		"leaderboard": "263e7d41-65a5-4b7b-8f48-5c7b94ca916b",
-		"name": "RxR-CE",
+		"id": "a9228f2e-3191-4a08-8f03-64e73cae2e78",
+		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
+		"name": "Where2Place",
 		"default": {
-			"property": "TotalSR"
+			"property": "Total"
 		},
 		"properties": {
-			"TotalSR": {
+			"Total": {
 				"order": 0,
 				"index": 0,
-				"label": "Total SR",
+				"label": "Total Score",
 				"unit": null
 			}
 		}
 	},
 	{
-		"id": "1961aa46-9085-42ed-b384-d9ffe52921a8",
-		"leaderboard": "1143b13b-2754-4660-9f79-d0d0dc1f273e",
-		"name": "EB-ALFRED",
+		"id": "ba0be521-6b10-4881-964c-97cd4d2d6070",
+		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
+		"name": "OpenEQA",
 		"default": {
-			"property": "TotalSR"
+			"property": "Total"
 		},
 		"properties": {
-			"Base": {
+			"ObjectType": {
 				"order": 1,
 				"index": 0,
-				"label": "Base",
+				"label": "Object Recognition",
 				"unit": null
 			},
-			"Common": {
+			"ObjectProperty": {
 				"order": 2,
 				"index": 1,
-				"label": "Common",
+				"label": "Attribute Recognition",
 				"unit": null
 			},
-			"Complex": {
+			"ObjectState": {
 				"order": 3,
 				"index": 2,
-				"label": "Complex",
+				"label": "Object State Recognition",
 				"unit": null
 			},
-			"Visual": {
+			"Affordance": {
 				"order": 4,
 				"index": 3,
-				"label": "Visual",
+				"label": "Functional Reasoning",
 				"unit": null
 			},
-			"Spatial": {
+			"WorldKnowledge": {
 				"order": 5,
 				"index": 4,
-				"label": "Spatial",
+				"label": "World Knowledge",
 				"unit": null
 			},
-			"Long": {
+			"SpatialPerception": {
 				"order": 6,
 				"index": 5,
-				"label": "Long",
+				"label": "Spatial Perception",
 				"unit": null
 			},
-			"TotalSR": {
+			"Total": {
 				"order": 0,
 				"index": 6,
-				"label": "Total SR",
+				"label": "Total Score",
 				"unit": null
 			}
 		}
@@ -544,36 +522,58 @@
 		}
 	},
 	{
-		"id": "68bf8b5b-d8d4-49d7-9e7e-03e4d547189b",
-		"leaderboard": "1143b13b-2754-4660-9f79-d0d0dc1f273e",
-		"name": "ET-Plan-Bench",
+		"id": "df46aa1a-099f-4841-bc02-ba9608e18c7d",
+		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
+		"name": "Scan2Cap",
 		"default": {
-			"property": "TotalSR"
+			"property": "Total"
 		},
 		"properties": {
-			"NaviLayoutMap": {
+			"CIDEr": {
 				"order": 1,
 				"index": 0,
-				"label": "Navi +Layout Map",
-				"unit": ""
+				"label": "CIDEr",
+				"unit": null
 			},
-			"Navi": {
+			"B4": {
 				"order": 2,
 				"index": 1,
-				"label": "Navi",
-				"unit": ""
+				"label": "B-4",
+				"unit": null
 			},
-			"NaviRelation": {
-				"order": 3,
-				"index": 2,
-				"label": "Navi+ Relation",
-				"unit": ""
-			},
-			"TotalSR": {
+			"Total": {
 				"order": 0,
-				"index": 3,
-				"label": "Total SR",
-				"unit": ""
+				"index": 2,
+				"label": "Total Score",
+				"unit": null
+			}
+		}
+	},
+	{
+		"id": "e0465aba-17b0-4f34-9aa4-345c9bacdac2",
+		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
+		"name": "ScanQA",
+		"default": {
+			"property": "Total"
+		},
+		"properties": {
+			"CIDEr": {
+				"order": 1,
+				"index": 0,
+				"label": "CIDEr",
+				"unit": null
+			},
+			"EM": {
+				"order": 2,
+				"index": 1,
+				"label": "EM",
+				"unit": null
+			},
+			"Total": {
+				"order": 0,
+				"index": 2,
+				"label": "Total Score",
+				"unit": null
 			}
 		}
 	}
