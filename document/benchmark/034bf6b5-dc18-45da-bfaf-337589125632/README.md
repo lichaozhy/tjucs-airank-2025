@@ -1,6 +1,17 @@
 ---
 leaderboard: 09b4a56a-2e41-4103-a330-129381c24450
 name: UniEQA
+description: >
+  UniEQA & UniEval: A Unified Benchmark and Evaluation Platform for Multimodal Foundation Models in Embodied Question Answering
+organization: cn.edu.tju.example
+released:
+  at:
+    year: 2025
+    month: 5
+    date: null
+repository: https://github.com/TJURL-Lab/UniEQA
+reference: https://huggingface.co/datasets/TJURL-Lab/UniEQA
+website: https://github.com/TJURL-Lab/UniEQA
 default:
   property: Total
 properties:
@@ -70,17 +81,6 @@ properties:
     label: Total Score
     unit: null
 ---
-
-UniEQA & UniEval: A Unified Benchmark and Evaluation Platform for Multimodal Foundation
-Models in Embodied Question Answering
-=====================================
-
-## Publish information
-
-- Organization: Null
-- Release Date: 2025-5
-- Hugging face: https://huggingface.co/datasets/TJURL-Lab/UniEQA
-- Github:  https://github.com/TJURL-Lab/UniEQA
 
 ## Benchmark Introduction
 
