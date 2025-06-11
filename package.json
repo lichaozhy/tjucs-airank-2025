@@ -11,7 +11,9 @@
 		"format": "prettier --write \"**/*.{js,ts,vue,scss,html,md,json}\" --ignore-path .gitignore",
 		"test": "echo \"No test specified\" && exit 0",
 		"dev": "quasar dev",
-		"build": "quasar build",
+		"build": "npm run gen && quasar build",
+		"gen:doc-benchmark": "node ./script/benchmark.mjs",
+		"gen": "npm run gen:doc-benchmark",
 		"postinstall": "quasar prepare"
 	},
 	"dependencies": {

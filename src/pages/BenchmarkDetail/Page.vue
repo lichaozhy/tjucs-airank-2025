@@ -1,25 +1,27 @@
 <template>
 	<q-page
-		class="column content-center benchmark-detail"
+		class="column content-center"
 		padding
 	>
-		<div class="q-pa-md q-gutter-sm">
-			<q-breadcrumbs class="q-mb-md">
+		<div
+			class="full-width"
+			style="max-width: 1680px"
+		>
+			<q-breadcrumbs>
 				<q-breadcrumbs-el
 					:label="$t('nav.app.benchmark.index')"
-					:to="{ name: 'app.benchmark.index' }"
+					:to="{ name: 'app.benchmark' }"
 				/>
-				<q-breadcrumbs-el :label="benchmark?.name" />
+				<q-breadcrumbs-el
+					class="text-weight-bold"
+					:label="benchmark?.name"
+				/>
 			</q-breadcrumbs>
-		</div>
 
-		<div
-			class="column content-center"
-			style="width: 1000px"
-		>
 			<q-card
 				square
-				class="q-pa-md full-width"
+				flat
+				class="q-pa-md full-width q-mt-md"
 			>
 				<div class="text-h4 text-weight-light">{{ benchmark?.name }}</div>
 				<div class="text-subtitle3 q-mt-md text-weight-light">
@@ -31,66 +33,45 @@
 				</div>
 			</q-card>
 
-			<div class="content full-width">
-				<div class="readme">readme</div>
-				<div class="information">information</div>
+			<div class="row q-mt-none q-col-gutter-md">
+				<div class="col-9">
+					<q-card square flat>
+						<q-card-section>
+							<div
+								class="app-markdown-html"
+								v-html="documentHTML"
+							></div>
+						</q-card-section>
+					</q-card>
+				</div>
+				<div class="col-3">information</div>
 			</div>
 		</div>
-
-		<!-- <div
-			id="app-leaderboard-banner"
-			class="title column justify-center items-center absolute-full"
-			style="height: 230px"
-		>
-			<div class="text-h2 text-weight-light">{{ $t('p.leaderboard.banner.title') }}</div>
-			<div class="text-subtitle1 q-mt-md text-weight-light">
-				{{ $t('p.leaderboard.banner.description') }}
-			</div>
-		</div> -->
 	</q-page>
 </template>
 
 <script setup lang="ts">
-defineOptions({ name: 'BenchmarkDetailPage' });
-import { useRoute } from 'vue-router';
-import type * as Spec from 'src/spec';
 import { onBeforeMount, ref } from 'vue';
-import { API } from 'src/backend';
+import { useRoute } from 'vue-router';
+
+import type * as Spec from 'src/spec';
+import * as Backend from 'src/backend';
 
 const route = useRoute();
 const benchmarkId = route.params.id as string;
+const BenchmarkAPI = Backend.API.Benchmark(benchmarkId);
 const benchmark = ref<Spec.Benchmark.Type | null>(null);
+const documentHTML = ref<string>('');
 
 onBeforeMount(async () => {
-	benchmark.value = await API.Benchmark(benchmarkId).get();
+	benchmark.value = await BenchmarkAPI.get();
+
 	if (!benchmark.value) {
 		throw new Error(`Benchmark with ID ${benchmarkId} not found`);
 	}
+
+	documentHTML.value = await BenchmarkAPI.Document.get();
 });
+
+defineOptions({ name: 'BenchmarkDetailPage' });
 </script>
-
-<style lang="scss" scoped>
-.benchmark-detail {
-	.content {
-		$content-background: #ffffff;
-		margin-top: 32px;
-		display: grid;
-		grid-template-columns: 2fr 1fr;
-
-		.readme {
-			padding: 16px;
-			background-color: $content-background;
-			overflow-y: auto;
-			min-height: 600px;
-		}
-
-		.information {
-			padding: 16px;
-			background-color: $content-background;
-			border-left: 1px solid #888888;
-			overflow-y: auto;
-			min-height: 600px;
-		}
-	}
-}
-</style>

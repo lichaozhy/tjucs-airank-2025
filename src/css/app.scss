@@ -1,8 +1,5 @@
 // app global css in SCSS form
-// html,body {
-// 	height: 100%;
-// 	width: 100%;
-// }
+@import './markdown.scss';
 
 html {
 	scrollbar-width: none;

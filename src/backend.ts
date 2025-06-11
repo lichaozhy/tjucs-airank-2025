@@ -103,6 +103,13 @@ export const API = {
 				async get() {
 					return Data.Benchmark.find((benchmark) => benchmark.id === benchmarkId)!;
 				},
+				Document: {
+					async get() {
+						const response = await fetch(`/html/benchmark/${benchmarkId}.html`);
+
+						return response.text();
+					},
+				},
 				Score: {
 					async query() {
 						return Data.Score.filter((score) => score.benchmark === benchmarkId);
