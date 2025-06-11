@@ -25,14 +25,6 @@
 			>
 				<q-card-section>
 					<div class="text-h4 text-weight-light q-mb-sm">{{ benchmark?.name }}</div>
-					<q-badge
-						rounded
-						v-for="property of benchmark?.properties"
-						:key="property.index"
-						:label="property.label"
-						class="q-mr-sm text-weight-light"
-						color="positive"
-					></q-badge>
 				</q-card-section>
 				<q-separator inset />
 				<q-card-section>{{ benchmark?.description }}</q-card-section>
