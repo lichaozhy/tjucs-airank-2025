@@ -48,6 +48,7 @@
 						flat
 						stretch
 						label="Embodied Leaderboard Rules"
+						:to="{ name: 'app.rule' }"
 					></q-btn>
 
 					<q-btn
