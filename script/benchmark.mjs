@@ -40,6 +40,7 @@ await ensureDirectory(PATH.TARGET.HTML);
 const MDParser = MarkdownIt({ html: true, linkify: true });
 
 const benchmarkDataList = [];
+const missingPathname = [];
 
 for (const dirent of await fs.promises.readdir(PATH.SOURCE.DIRECTORY, {
 	withFileTypes: true,
@@ -54,6 +55,12 @@ for (const dirent of await fs.promises.readdir(PATH.SOURCE.DIRECTORY, {
 	for (const imageElement of bodyElement.querySelectorAll('img')) {
 		const { src } = imageElement;
 		const sourcePathname = path.join(dirname, src);
+
+		if (!fs.existsSync(sourcePathname)) {
+			missingPathname.push(sourcePathname);
+			continue;
+		}
+
 		const buffer = await fs.promises.readFile(sourcePathname);
 		const hash = Hash(buffer);
 		const extname = path.extname(src);
@@ -71,3 +78,8 @@ for (const dirent of await fs.promises.readdir(PATH.SOURCE.DIRECTORY, {
 const benchmarkFileData = JSON.stringify(benchmarkDataList, null, '\t');
 
 await fs.promises.writeFile(PATH.TARGET.METADATA, benchmarkFileData);
+
+if (missingPathname.length > 0) {
+	console.error(JSON.stringify(missingPathname, null, '  '));
+	throw new Error('Files missing.');
+}

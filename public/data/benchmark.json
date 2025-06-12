@@ -3,6 +3,18 @@
 		"id": "025ca0fe-f04c-4d17-9f4c-9d1aca6666bd",
 		"leaderboard": "263e7d41-65a5-4b7b-8f48-5c7b94ca916b",
 		"name": "RxR-CE",
+		"description": "Beyond the Nav-Graph: Vision and Language Navigation in Continuous Environments\n",
+		"organization": "Oregon State University, Georgia Institute of Technology, Facebook AI Research",
+		"released": {
+			"at": {
+				"year": 2020,
+				"month": 4,
+				"date": 6
+			}
+		},
+		"Github": "https://github.com/jacobkrantz/VLN-CE",
+		"Hugging face": null,
+		"Project": "https://jacobkrantz.github.io/vlnce/",
 		"default": {
 			"property": "TotalSR"
 		},
@@ -20,7 +32,7 @@
 		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
 		"name": "UniEQA",
 		"description": "UniEQA & UniEval: A Unified Benchmark and Evaluation Platform for Multimodal Foundation Models in Embodied Question Answering\n",
-		"organization": "cn.edu.tju.example",
+		"organization": "Tianjin University",
 		"released": {
 			"at": {
 				"year": 2025,
@@ -28,9 +40,9 @@
 				"date": null
 			}
 		},
-		"repository": "https://github.com/TJURL-Lab/UniEQA",
-		"reference": "https://huggingface.co/datasets/TJURL-Lab/UniEQA",
-		"website": "https://github.com/TJURL-Lab/UniEQA",
+		"Github": "https://github.com/TJURL-Lab/UniEQA",
+		"Hugging face": "https://huggingface.co/datasets/TJURL-Lab/UniEQA",
+		"Project": null,
 		"default": {
 			"property": "Total"
 		},
@@ -119,6 +131,18 @@
 		"id": "1961aa46-9085-42ed-b384-d9ffe52921a8",
 		"leaderboard": "1143b13b-2754-4660-9f79-d0d0dc1f273e",
 		"name": "EB-ALFRED",
+		"description": "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents\n",
+		"organization": "University of Illinois Urbana-Champaign, Northwestern University, University of Toronto, Toyota Technological Institute at Chicago",
+		"released": {
+			"at": {
+				"year": 2025,
+				"month": 2,
+				"date": null
+			}
+		},
+		"Github": "https://github.com/EmbodiedBench/EmbodiedBench",
+		"Hugging face": null,
+		"Project": "https://embodiedbench.github.io/",
 		"default": {
 			"property": "TotalSR"
 		},
@@ -171,6 +195,18 @@
 		"id": "1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09",
 		"leaderboard": "263e7d41-65a5-4b7b-8f48-5c7b94ca916b",
 		"name": "R2R-CE",
+		"description": "Beyond the Nav-Graph: Vision and Language Navigation in Continuous Environments\n",
+		"organization": "Oregon State University, Georgia Institute of Technology, Facebook AI Research",
+		"released": {
+			"at": {
+				"year": 2020,
+				"month": 4,
+				"date": 6
+			}
+		},
+		"Github": "https://github.com/jacobkrantz/VLN-CE",
+		"Hugging face": null,
+		"Project": "https://jacobkrantz.github.io/vlnce/",
 		"default": {
 			"property": "TotalSR"
 		},
@@ -187,6 +223,18 @@
 		"id": "25206b0f-a955-4e39-86cf-53dcc9528bfc",
 		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
 		"name": "VSI",
+		"description": "Thinking in Space: How Multimodal Large Language Models See, Remember and Recall Spaces\n",
+		"organization": "New York University",
+		"released": {
+			"at": {
+				"year": 2024,
+				"month": 12,
+				"date": 18
+			}
+		},
+		"Github": "https://github.com/vision-x-nyu/thinking-in-space",
+		"Hugging face": null,
+		"Project": "https://vision-x-nyu.github.io/thinking-in-space.github.io/",
 		"default": {
 			"property": "Total"
 		},
@@ -251,6 +299,18 @@
 		"id": "5df5ca38-7ca9-4d35-81c6-3dfe52700755",
 		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
 		"name": "ERQA",
+		"description": "Gemini Robotics: Bringing AI into the Physical World\n",
+		"organization": "Google",
+		"released": {
+			"at": {
+				"year": 2025,
+				"month": 3,
+				"date": null
+			}
+		},
+		"Github": "https://github.com/embodiedreasoning/ERQA",
+		"Hugging face": null,
+		"Project": "https://deepmind.google/discover/blog/gemini-robotics-brings-ai-into-the-physical-world/",
 		"default": {
 			"property": "Total"
 		},
@@ -315,6 +375,18 @@
 		"id": "68bf8b5b-d8d4-49d7-9e7e-03e4d547189b",
 		"leaderboard": "1143b13b-2754-4660-9f79-d0d0dc1f273e",
 		"name": "ET-Plan-Bench",
+		"description": "ET-PLAN-BENCH: EMBODIED TASK-LEVEL PLANNING BENCHMARK TOWARDS SPATIAL-TEMPORAL COGNITION WITH FOUNDATION MODELS\n",
+		"organization": "Huawei Noah’s Ark Lab, Huawei Cloud",
+		"released": {
+			"at": {
+				"year": 2025,
+				"month": 2,
+				"date": null
+			}
+		},
+		"Github": null,
+		"Hugging face": null,
+		"Project": null,
 		"default": {
 			"property": "TotalSR"
 		},
@@ -349,6 +421,18 @@
 		"id": "73de273a-7d38-40c0-b869-2b2e6156c897",
 		"leaderboard": "263e7d41-65a5-4b7b-8f48-5c7b94ca916b",
 		"name": "EB-Navigation",
+		"description": "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents\n",
+		"organization": "University of Illinois Urbana-Champaign, Northwestern University, University of Toronto, Toyota Technological Institute at Chicago",
+		"released": {
+			"at": {
+				"year": 2025,
+				"month": 2,
+				"date": null
+			}
+		},
+		"Github": "https://github.com/EmbodiedBench/EmbodiedBench",
+		"Hugging face": null,
+		"Project": "https://embodiedbench.github.io/",
 		"default": {
 			"property": "TotalSR"
 		},
@@ -395,6 +479,18 @@
 		"id": "8b56c6cf-becf-4bef-b612-1804d2f20cda",
 		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
 		"name": "SQA3D",
+		"description": "SQA3D: Situated Question Answering in 3D Scenes\n",
+		"organization": "Beijing Institute for General Artificial Intelligence (BIGAI), UCLA, Tsinghua University, Peking University",
+		"released": {
+			"at": {
+				"year": 2023,
+				"month": 1,
+				"date": 30
+			}
+		},
+		"Github": "https://github.com/SilongYong/SQA3D",
+		"Hugging face": null,
+		"Project": "https://sqa3d.github.io/",
 		"default": {
 			"property": "Total"
 		},
@@ -417,6 +513,18 @@
 		"id": "a9228f2e-3191-4a08-8f03-64e73cae2e78",
 		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
 		"name": "Where2Place",
+		"description": "RoboPoint: A Vision-Language Model for Spatial Affordance Prediction for Robotics\n",
+		"organization": "University of Washington",
+		"released": {
+			"at": {
+				"year": 2024,
+				"month": 10,
+				"date": 4
+			}
+		},
+		"Github": "https://github.com/wentaoyuan/RoboPoint",
+		"Hugging face": null,
+		"Project": "https://robo-point.github.io/",
 		"default": {
 			"property": "Total"
 		},
@@ -433,6 +541,18 @@
 		"id": "ba0be521-6b10-4881-964c-97cd4d2d6070",
 		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
 		"name": "OpenEQA",
+		"description": "UniEQA & UniEval: A Unified Benchmark and Evaluation Platform for Multimodal Foundation Models in Embodied Question Answering\n",
+		"organization": "Tianjin University",
+		"released": {
+			"at": {
+				"year": 2025,
+				"month": 5,
+				"date": null
+			}
+		},
+		"Github": "https://github.com/TJURL-Lab/UniEQA",
+		"Hugging face": "https://huggingface.co/datasets/TJURL-Lab/UniEQA",
+		"Project": null,
 		"default": {
 			"property": "Total"
 		},
@@ -485,6 +605,18 @@
 		"id": "cbb64d1c-4377-4231-a465-73ffb10972c5",
 		"leaderboard": "1143b13b-2754-4660-9f79-d0d0dc1f273e",
 		"name": "EB-Habitat",
+		"description": "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents\n",
+		"organization": "University of Illinois Urbana-Champaign, Northwestern University, University of Toronto, Toyota Technological Institute at Chicago",
+		"released": {
+			"at": {
+				"year": 2025,
+				"month": 2,
+				"date": null
+			}
+		},
+		"Github": "https://github.com/EmbodiedBench/EmbodiedBench",
+		"Hugging face": null,
+		"Project": "https://embodiedbench.github.io/",
 		"default": {
 			"property": "TotalSR"
 		},
@@ -537,6 +669,18 @@
 		"id": "df46aa1a-099f-4841-bc02-ba9608e18c7d",
 		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
 		"name": "Scan2Cap",
+		"description": "Scan2Cap: Context-aware Dense Captioning in RGB-D Scans\n",
+		"organization": "Technical University of Munich, Simon Fraser University",
+		"released": {
+			"at": {
+				"year": 2020,
+				"month": 12,
+				"date": 7
+			}
+		},
+		"Github": "https://github.com/daveredrum/Scan2Cap",
+		"Hugging face": null,
+		"Project": "https://daveredrum.github.io/Scan2Cap/",
 		"default": {
 			"property": "Total"
 		},
@@ -565,6 +709,18 @@
 		"id": "e0465aba-17b0-4f34-9aa4-345c9bacdac2",
 		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
 		"name": "ScanQA",
+		"description": "ScanQA: 3D Question Answering for Spatial Scene Understanding\n",
+		"organization": "Kyoto University, ATR, RIKEN AIP, etc",
+		"released": {
+			"at": {
+				"year": 2022,
+				"month": 5,
+				"date": 1
+			}
+		},
+		"Github": "https://github.com/ATR-DBI/ScanQA",
+		"Hugging face": null,
+		"Project": null,
 		"default": {
 			"property": "Total"
 		},
