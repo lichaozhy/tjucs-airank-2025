@@ -3,568 +3,705 @@
 		"id": "6d2b9e8a-97ff-400f-8ea1-f403c7452408",
 		"name": "GPT-4o",
 		"component": {
-			"vision": null,
-			"language": "GPT-4"
-		}
+			"vision": [],
+			"language": [
+				"GPT-4"
+			]
+		},
+		"size": null,
+		"author": [
+			"OpenAI"
+		],
+		"release": {
+			"year": 2024
+		},
+		"opensource": false,
+		"qa": [
+			"2D"
+		],
+		"navigation": true,
+		"taskPlanning": true
 	},
 	{
 		"id": "3b7f3638-9364-41c0-bbfe-5288176f3072",
 		"name": "LLaVA-NeXT-Video-7B",
 		"component": {
-			"vision": "Qwen2-7B",
-			"language": "SigLIP-So400m"
+			"vision": [
+				"Qwen2-7B"
+			],
+			"language": [
+				"SigLIP-So400m"
+			]
 		}
 	},
 	{
 		"id": "86657687-00d9-4968-90d3-5f4e3d8b6132",
 		"name": "MiniCPM-V 2.6",
 		"component": {
-			"vision": "Qwen2-7B",
-			"language": "SigLIP-So400m"
+			"vision": [
+				"Qwen2-7B"
+			],
+			"language": [
+				"SigLIP-So400m"
+			]
 		}
 	},
 	{
 		"id": "e9672027-30d6-4501-b17f-75152789cbc4",
 		"name": "mPLUG-Owl3",
 		"component": {
-			"vision": "Qwen2-7B",
-			"language": "SigLIP-So400m"
+			"vision": [
+				"Qwen2-7B"
+			],
+			"language": [
+				"SigLIP-So400m"
+			]
 		}
 	},
 	{
 		"id": "aef63eca-3dde-495a-a922-c803d956568f",
 		"name": "Qwen2.5-VL-3B-Ins",
 		"component": {
-			"vision": "Qwen2.5",
-			"language": "Redesigned ViT"
+			"vision": [
+				"Qwen2.5"
+			],
+			"language": [
+				"Redesigned ViT"
+			]
 		}
 	},
 	{
 		"id": "82dd6b52-ee0e-487e-ae7f-c982050f8506",
 		"name": "MiniCPM-V",
 		"component": {
-			"vision": "MiniCPM 2B",
-			"language": "SigLIP SoViT-400m/14"
+			"vision": [
+				"MiniCPM 2B"
+			],
+			"language": [
+				"SigLIP SoViT-400m/14"
+			]
 		}
 	},
 	{
 		"id": "03383a4f-37a0-4046-80f1-52b61dc452a7",
 		"name": "EmbodiedGPT",
 		"component": {
-			"vision": "LLaMA-7B",
-			"language": "ViT-G/14"
+			"vision": [
+				"LLaMA-7B"
+			],
+			"language": [
+				"ViT-G/14"
+			]
 		}
 	},
 	{
 		"id": "8a656dd4-3104-4471-b8d8-0d6368975f74",
 		"name": "Phi-3-vision-128k-instruct",
 		"component": {
-			"vision": "Phi-3 Mini",
-			"language": "CLIP ViT-L/14"
+			"vision": [
+				"Phi-3 Mini"
+			],
+			"language": [
+				"CLIP ViT-L/14"
+			]
 		}
 	},
 	{
 		"id": "0963c6fe-8edb-4165-98c7-6070bb745abf",
 		"name": "LLava-7B",
 		"component": {
-			"vision": "Vicuna-7B",
-			"language": "CLIP"
+			"vision": [
+				"Vicuna-7B"
+			],
+			"language": [
+				"CLIP"
+			]
 		}
 	},
 	{
 		"id": "65b0728a-15d2-4d76-909d-86a505c25405",
 		"name": "Instructblip-flant5xl",
 		"component": {
-			"vision": "Flan-T5-xl",
-			"language": "BLIP-2"
+			"vision": [
+				"Flan-T5-xl"
+			],
+			"language": [
+				"BLIP-2"
+			]
 		}
 	},
 	{
 		"id": "80939e8a-be9d-4652-95e0-ff3c73a1ddda",
 		"name": "Video-LLaVA-7B",
 		"component": {
-			"vision": "Vicuna-7B",
-			"language": "EVA-G"
+			"vision": [
+				"Vicuna-7B"
+			],
+			"language": [
+				"EVA-G"
+			]
 		}
 	},
 	{
 		"id": "dfcea64f-ee5e-4ea6-a448-e09f2fb64271",
 		"name": "pllava-7b",
 		"component": {
-			"vision": "Vicuna-7B",
-			"language": "ViT/L"
+			"vision": [
+				"Vicuna-7B"
+			],
+			"language": [
+				"ViT/L"
+			]
 		}
 	},
 	{
 		"id": "587b8069-98e6-46a8-985b-4c607dff6b33",
 		"name": "navillm",
 		"component": {
-			"vision": "Vicuna-7B",
-			"language": "EVA-CLIP"
+			"vision": [
+				"Vicuna-7B"
+			],
+			"language": [
+				"EVA-CLIP"
+			]
 		}
 	},
 	{
 		"id": "26d4f948-64f7-4cbb-a413-e7fec49dc45f",
 		"name": "BLIP-2-flant5xl",
 		"component": {
-			"vision": "Flan-T5-xl",
-			"language": "ViT-L/14 from CLIP and ViT-g/14 from EVA-CLIP"
+			"vision": [
+				"Flan-T5-xl"
+			],
+			"language": [
+				"ViT-L/14 from CLIP and ViT-g/14 from EVA-CLIP"
+			]
 		}
 	},
 	{
 		"id": "8596e3d7-c65d-46e1-9063-16e83f0647cc",
 		"name": "llama-vid-7b-full-224",
 		"component": {
-			"vision": "Vicuna-7B",
-			"language": "EVA-G"
+			"vision": [
+				"Vicuna-7B"
+			],
+			"language": [
+				"EVA-G"
+			]
 		}
 	},
 	{
 		"id": "ba940652-9040-4510-b232-52da5cbce5a8",
 		"name": "MiniGPT-4-7B",
 		"component": {
-			"vision": "Vicuna-7B",
-			"language": "ViT-g/14 from EVA-CLIP"
+			"vision": [
+				"Vicuna-7B"
+			],
+			"language": [
+				"ViT-g/14 from EVA-CLIP"
+			]
 		}
 	},
 	{
 		"id": "f0fc7970-1e20-4ea2-a5fd-65ed7dd6802a",
 		"name": "o3",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "9321375f-e8e4-4b03-9f04-fbd2864afa2f",
 		"name": "Noah(UniE-VLM)",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "989f3769-fe45-4472-85aa-a4f071577271",
 		"name": "LLaVA-NeXT-Video-72B",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "38e71976-4a59-41bf-9367-95f2fc5bf6f5",
 		"name": "LLaVA-OneVision-72B",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "6e39d9f5-4b6a-471d-92d6-07a37b559070",
 		"name": "InternVL2-40B",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "5db29ede-6e63-432c-96c1-f65700028165",
 		"name": "InternVL2-8B",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "4e387c03-f76e-43e0-9d9c-d80f05e40ed4",
 		"name": "LLaVA-OneVision-7B",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "7a21af4c-f57d-4311-8fae-b7b8dafd03bd",
 		"name": "VILA-1.5-40B",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "51f2b003-5aa9-462a-a5b4-538ec3f28c17",
 		"name": "LongVA-7B",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "af35bb7c-f716-47a0-bcce-2f045a108735",
 		"name": "Gemini-2.0-flash",
 		"component": {
-			"vision": null,
-			"language": "gemini-2.0-flash"
+			"vision": [],
+			"language": [
+				"gemini-2.0-flash"
+			]
 		}
 	},
 	{
 		"id": "50b75743-251c-40f8-ad52-0773e9865e88",
 		"name": "InternVL2.5-38B-MPO",
 		"component": {
-			"vision": "InternViT-6B-448px-V2_5",
-			"language": "Qwen2.5-32B-Instruct"
+			"vision": [
+				"InternViT-6B-448px-V2_5"
+			],
+			"language": [
+				"Qwen2.5-32B-Instruct"
+			]
 		}
 	},
 	{
 		"id": "638048e4-d5ad-4e67-abfd-c326697048aa",
 		"name": "InternVL2.5-78B-MPO",
 		"component": {
-			"vision": "InternViT-6B-448px-V2_5",
-			"language": "Qwen2.5-72B-Instruct"
+			"vision": [
+				"InternViT-6B-448px-V2_5"
+			],
+			"language": [
+				"Qwen2.5-72B-Instruct"
+			]
 		}
 	},
 	{
 		"id": "e8dafa04-5593-47ac-977b-73a5911edc74",
 		"name": "Qwen2.5-VL-72B-Ins",
 		"component": {
-			"vision": "Redesigned ViT",
-			"language": "Qwen2.5"
+			"vision": [
+				"Redesigned ViT"
+			],
+			"language": [
+				"Qwen2.5"
+			]
 		}
 	},
 	{
 		"id": "85034696-05d3-44c9-8fc6-1786f0d86aab",
 		"name": "Claude-3.5-Sonnet",
 		"component": {
-			"vision": null,
-			"language": "Claude-3.5-Sonnet"
+			"vision": [],
+			"language": [
+				"Claude-3.5-Sonnet"
+			]
 		}
 	},
 	{
 		"id": "9a722f4d-1622-4ed4-9482-5024b95e06fb",
 		"name": "Gemini-1.5-flash",
 		"component": {
-			"vision": null,
-			"language": "gemini-1.5-flash"
+			"vision": [],
+			"language": [
+				"gemini-1.5-flash"
+			]
 		}
 	},
 	{
 		"id": "3cfdaff3-8301-4951-9f3b-cf8134b4ed10",
 		"name": "Qwen-VL-Max",
 		"component": {
-			"vision": "Redesigned ViT",
-			"language": "Qwen"
+			"vision": [
+				"Redesigned ViT"
+			],
+			"language": [
+				"Qwen"
+			]
 		}
 	},
 	{
 		"id": "a0515273-7168-4717-a07a-b143b0208074",
 		"name": "GPT-4o-mini",
 		"component": {
-			"vision": null,
-			"language": "GPT-4o mini"
+			"vision": [],
+			"language": [
+				"GPT-4o mini"
+			]
 		}
 	},
 	{
 		"id": "80bcf574-1d7c-4798-a1c0-37ac1c32a724",
 		"name": "InternVL2.5-78B",
 		"component": {
-			"vision": "InternViT-6B-448px-V2_5",
-			"language": "Qwen2.5-72B-Instruct"
+			"vision": [
+				"InternViT-6B-448px-V2_5"
+			],
+			"language": [
+				"Qwen2.5-72B-Instruct"
+			]
 		}
 	},
 	{
 		"id": "63263829-1e9c-4ac5-bf29-965f540518a6",
 		"name": "InternVL2.5-38B",
 		"component": {
-			"vision": "InternViT-6B-448px-V2_5",
-			"language": "Qwen2.5-32B-Instruct"
+			"vision": [
+				"InternViT-6B-448px-V2_5"
+			],
+			"language": [
+				"Qwen2.5-32B-Instruct"
+			]
 		}
 	},
 	{
 		"id": "87f1ac67-6ac8-4f58-9644-f877741326cb",
 		"name": "Llama-3.2-90B-Vision-Ins",
 		"component": {
-			"vision": "A separately trained vision adapter",
-			"language": "Llama 3.1"
+			"vision": [
+				"A separately trained vision adapter"
+			],
+			"language": [
+				"Llama 3.1"
+			]
 		}
 	},
 	{
 		"id": "cb6e23ea-bc8a-4bef-91d6-ba174280faaf",
 		"name": "Qwen2.5-VL-7B-Ins",
 		"component": {
-			"vision": "Redesigned ViT",
-			"language": "Qwen2.5"
+			"vision": [
+				"Redesigned ViT"
+			],
+			"language": [
+				"Qwen2.5"
+			]
 		}
 	},
 	{
 		"id": "ce19cba4-e888-4c92-9700-d25bc4dbbad3",
 		"name": "Gemini-1.5-Pro",
 		"component": {
-			"vision": null,
-			"language": "gemini-1.5-Pro"
+			"vision": [],
+			"language": [
+				"gemini-1.5-Pro"
+			]
 		}
 	},
 	{
 		"id": "e6010b47-eb88-403c-8aee-858d1c913af2",
 		"name": "Llama-3.2-11B-Vision-Ins",
 		"component": {
-			"vision": "A separately trained vision adapter",
-			"language": "Llama 3.1"
+			"vision": [
+				"A separately trained vision adapter"
+			],
+			"language": [
+				"Llama 3.1"
+			]
 		}
 	},
 	{
 		"id": "525c4c5c-e4ef-42ef-9a80-0b7d059f1c95",
 		"name": "InternVL2.5-8B",
 		"component": {
-			"vision": "InternViT-300M-448px-V2_5",
-			"language": "internlm2_5-7b-chat"
+			"vision": [
+				"InternViT-300M-448px-V2_5"
+			],
+			"language": [
+				"internlm2_5-7b-chat"
+			]
 		}
 	},
 	{
 		"id": "2bd83c3e-58ed-4898-a1a1-a445513e31c1",
 		"name": "Qwen2-VL-72B-Ins",
 		"component": {
-			"vision": "Redesigned ViT",
-			"language": "Qwen2"
+			"vision": [
+				"Redesigned ViT"
+			],
+			"language": [
+				"Qwen2"
+			]
 		}
 	},
 	{
 		"id": "69a2667c-2439-4c0a-b4dd-7fa2c134217c",
 		"name": "Qwen2-VL-7B-Ins",
 		"component": {
-			"vision": "Redesigned ViT",
-			"language": "Qwen2"
+			"vision": [
+				"Redesigned ViT"
+			],
+			"language": [
+				"Qwen2"
+			]
 		}
 	},
 	{
 		"id": "e40d9b56-19c8-4387-8f71-4a3b39d7d1ef",
 		"name": "InternVL2.5-8B-MPO",
 		"component": {
-			"vision": "InternViT-300M-448px-V2_5",
-			"language": "internlm2_5-7b-chat"
+			"vision": [
+				"InternViT-300M-448px-V2_5"
+			],
+			"language": [
+				"internlm2_5-7b-chat"
+			]
 		}
 	},
 	{
 		"id": "47130974-a85a-4090-ab93-04542244c04e",
 		"name": "Gemini-2.0-Pro w CoT",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "b98ae0e6-2bcf-487d-8ada-6423bcce8f9c",
 		"name": "GPT-4o w CoT",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "4a42979f-36cb-4c3e-8ebf-a198a68b90e6",
 		"name": "Gemini-2.0-Pro",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "2b8ad6b5-fd3b-4eef-a852-0648bc312bba",
 		"name": "Noah(UniE-VLM) (16 frames)",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "87e7bee8-251c-44e8-8e67-500bfdd1f348",
 		"name": "Video-3D LLM (32 frames)",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "70634caf-f6d3-47e8-9e9c-2754a40b53a2",
 		"name": "Video-3D LLM (16 frames)",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "3efd880e-f132-4d0f-ba66-67142efb9470",
 		"name": "LLaVA-3D",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "8472d27d-9c33-4ea2-854c-2ec882f303b6",
 		"name": "Chat-3D v2",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "b0e697a1-bef6-488c-b3df-1680c3694f48",
 		"name": "ChatScene",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "dfb3cf12-beee-48f1-87f5-66d40176d517",
 		"name": "SceneLLM",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "d7a24483-5295-4afb-9ecd-8538b5d92e53",
 		"name": "LEO",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "dfb947dc-4326-489d-8a69-eb9ecbd3725e",
 		"name": "Qwen2.5-VL-7B",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "7b3f0bae-5319-4d34-b7ad-62ba67a43da4",
 		"name": "PQ3D",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "529c2206-513e-45fa-a762-1d8a6adf548f",
 		"name": "Qwen2-VL-7B",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "0cb4cf61-fe9a-4974-9c89-96c023957e9f",
 		"name": "3D-LLM(BLIP2-flant5)",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "323ef65f-630b-49df-bff8-e7bc32815387",
 		"name": "3D-LLM(Flamingo)",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "af3acd4e-d0b0-4aec-b45a-2ad7088a54f8",
 		"name": "Grounded 3D-LLM",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "09929601-b5f9-439b-94d3-fe8dedb11b13",
 		"name": "LL3DA",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "314244f5-7c42-4279-957b-6fbc2c4b9aee",
 		"name": "GPT-4",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "12e98a0d-5bd3-4af8-a45d-4ebaa59cf45c",
 		"name": "Llama3-70B",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "df53089f-9407-49d7-b93e-199fffe7db94",
 		"name": "Llama3-8B",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "3b0d50a0-37ec-4234-ada0-4a727f9972ab",
 		"name": "Gemini-1.5-chat",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "3fb0da53-f2cc-4854-9d26-3d16943be090",
 		"name": "InternVL2.5-33B-MPO",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "1ff580e8-1775-4dc3-b7f6-191f98b432e8",
 		"name": "InternVL2.5-33B",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "d43c7af4-55f6-4054-bcd4-88d27efd0d10",
 		"name": "Navid",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "8d42636e-05c2-4179-a0d1-625f474f1622",
 		"name": "UniNavid",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "bfee5170-8314-49ea-96e6-762fc8e2bba4",
 		"name": "MapNav",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	},
 	{
 		"id": "a7bde639-b09a-4cbf-a647-cbde9a634e6c",
 		"name": "RoboPoint",
 		"component": {
-			"vision": null,
-			"language": null
+			"vision": [],
+			"language": []
 		}
 	}
 ]
