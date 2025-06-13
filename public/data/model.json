@@ -8,7 +8,7 @@
 				"GPT-4"
 			]
 		},
-		"size": null,
+		"size": [],
 		"author": [
 			"OpenAI"
 		],
@@ -20,7 +20,13 @@
 			"2D"
 		],
 		"navigation": true,
-		"taskPlanning": true
+		"taskPlanning": true,
+		"website": "https://openai.com/index/hello-gpt-4o/",
+		"dimension": [
+			"2D"
+		],
+		"reason": true,
+		"imageVideo": "image/video"
 	},
 	{
 		"id": "3b7f3638-9364-41c0-bbfe-5288176f3072",
