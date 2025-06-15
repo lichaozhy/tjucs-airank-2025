@@ -1,29 +1,33 @@
 [
     {
-        "id": "85034696-05d3-44c9-8fc6-1786f0d86aab",
-        "name": "Claude-3.5-Sonnet",
+        "id": "3efd880e-f132-4d0f-ba66-67142efb9470",
+        "name": "LLaVA-3D",
         "component": {
-            "vision": [],
+            "vision": [
+                "CLIP"
+            ],
             "language": [
-                "Claude-3.5-Sonnet"
+                "LLaVA-Video-7B"
             ]
         },
-        "size": [],
+        "size": [
+            "7B"
+        ],
         "author": [
-            "Anthropic"
+            "The University of Hong Kong & Shanghai AI Lab"
         ],
         "release": {
             "year": 2024
         },
         "opensource": false,
         "qa": [
-            "2D"
+            "3D"
         ],
         "navigation": false,
         "taskPlanning": false,
-        "website": "https://www.anthropic.com/news/claude-3-5-sonnet",
+        "website": "https://huggingface.co/ChaimZhu/LLaVA-3D-7B",
         "dimension": [
-            "2D"
+            "3D"
         ],
         "reason": false,
         "imageVideo": "Image"
@@ -58,16 +62,280 @@
         "imageVideo": "image/video"
     },
     {
-        "id": "d7a24483-5295-4afb-9ecd-8538b5d92e53",
-        "name": "LEO",
+        "id": "cb6e23ea-bc8a-4bef-91d6-ba174280faaf",
+        "name": "Qwen2.5-VL-7B-Ins",
         "component": {
-            "vision": [],
-            "language": []
+            "vision": [
+                "ViT"
+            ],
+            "language": [
+                "Qwen2.5-7B"
+            ]
         },
-        "size": [],
-        "author": [],
+        "size": [
+            "7B"
+        ],
+        "author": [
+            "Alibaba"
+        ],
+        "release": {
+            "year": 2025
+        },
+        "opensource": false,
+        "qa": [
+            "2D"
+        ],
+        "navigation": false,
+        "taskPlanning": false,
+        "website": "https://huggingface.co/collections/Qwen/qwen25-vl-6795ffac22b334a837c0f9a5",
+        "dimension": [
+            "2D"
+        ],
+        "reason": false,
+        "imageVideo": "image/video"
+    },
+    {
+        "id": "8d42636e-05c2-4179-a0d1-625f474f1622",
+        "name": "UniNavid",
+        "component": {
+            "vision": [
+                "EVA-CLIP"
+            ],
+            "language": [
+                "Vicuna-7B-v1.5"
+            ]
+        },
+        "size": [
+            "7B"
+        ],
+        "author": [
+            "Peking University"
+        ],
+        "release": {
+            "year": 2024
+        },
+        "opensource": false,
+        "qa": [
+            "2D"
+        ],
+        "navigation": false,
+        "taskPlanning": false,
+        "website": "https://pku-epic.github.io/Uni-NaVid/",
+        "dimension": [
+            "2D"
+        ],
+        "reason": false,
+        "imageVideo": "image/video"
+    },
+    {
+        "id": "03383a4f-37a0-4046-80f1-52b61dc452a7",
+        "name": "EmbodiedGPT",
+        "component": {
+            "vision": [
+                " ViT-G/14"
+            ],
+            "language": [
+                " LLaMA-7B"
+            ]
+        },
+        "size": [
+            "7B"
+        ],
+        "author": [
+            "The University of Hong Kong"
+        ],
         "release": {
             "year": 2023
+        },
+        "opensource": false,
+        "qa": [
+            "2D"
+        ],
+        "navigation": false,
+        "taskPlanning": false,
+        "website": "https://embodiedgpt.github.io/",
+        "dimension": [
+            "2D"
+        ],
+        "reason": false,
+        "imageVideo": "image/video"
+    },
+    {
+        "id": "85034696-05d3-44c9-8fc6-1786f0d86aab",
+        "name": "Claude-3.5-Sonnet",
+        "component": {
+            "vision": [],
+            "language": [
+                "Claude-3.5-Sonnet"
+            ]
+        },
+        "size": [],
+        "author": [
+            "Anthropic"
+        ],
+        "release": {
+            "year": 2024
+        },
+        "opensource": false,
+        "qa": [
+            "2D"
+        ],
+        "navigation": false,
+        "taskPlanning": false,
+        "website": "https://www.anthropic.com/news/claude-3-5-sonnet",
+        "dimension": [
+            "2D"
+        ],
+        "reason": false,
+        "imageVideo": "Image"
+    },
+    {
+        "id": "a7bde639-b09a-4cbf-a647-cbde9a634e6c",
+        "name": "RoboPoint",
+        "component": {
+            "vision": [
+                "ViT-L/14 336px"
+            ],
+            "language": [
+                "Vicuna-v1.5-13B"
+            ]
+        },
+        "size": [
+            "13B"
+        ],
+        "author": [
+            "University of Washington"
+        ],
+        "release": {
+            "year": 2024
+        },
+        "opensource": false,
+        "qa": [
+            "2D"
+        ],
+        "navigation": false,
+        "taskPlanning": false,
+        "website": "https://github.com/wentaoyuan/RoboPoint",
+        "dimension": [
+            "2D"
+        ],
+        "reason": false,
+        "imageVideo": "Image"
+    },
+    {
+        "id": "af35bb7c-f716-47a0-bcce-2f045a108735",
+        "name": "Gemini-2.0-flash",
+        "component": {
+            "vision": [],
+            "language": [
+                "Gemini-2.0-flash"
+            ]
+        },
+        "size": [],
+        "author": [
+            "Google DeepMind"
+        ],
+        "release": {
+            "year": 2025
+        },
+        "opensource": false,
+        "qa": [
+            "2D"
+        ],
+        "navigation": false,
+        "taskPlanning": false,
+        "website": "https://ai.google.dev/gemini-api/docs/models",
+        "dimension": [
+            "2D"
+        ],
+        "reason": false,
+        "imageVideo": "image/video"
+    },
+    {
+        "id": "38e71976-4a59-41bf-9367-95f2fc5bf6f5",
+        "name": "LLaVA-OneVision-72B",
+        "component": {
+            "vision": [
+                "SigLIP"
+            ],
+            "language": [
+                "Qwen2-72B"
+            ]
+        },
+        "size": [
+            "72B"
+        ],
+        "author": [
+            "ByteDance"
+        ],
+        "release": {
+            "year": 2024
+        },
+        "opensource": false,
+        "qa": [
+            "2D"
+        ],
+        "navigation": false,
+        "taskPlanning": false,
+        "website": "https://huggingface.co/collections/lmms-lab/llava-onevision-66a259c3526e15166d6bba37",
+        "dimension": [
+            "2D"
+        ],
+        "reason": false,
+        "imageVideo": "image/video"
+    },
+    {
+        "id": "d43c7af4-55f6-4054-bcd4-88d27efd0d10",
+        "name": "Navid",
+        "component": {
+            "vision": [
+                "EVA-CLIP"
+            ],
+            "language": [
+                "Vicuna-7B-v1.5"
+            ]
+        },
+        "size": [
+            "7B"
+        ],
+        "author": [
+            "Peking University"
+        ],
+        "release": {
+            "year": 2024
+        },
+        "opensource": false,
+        "qa": [
+            "2D"
+        ],
+        "navigation": false,
+        "taskPlanning": false,
+        "website": "https://pku-epic.github.io/NaVid/",
+        "dimension": [
+            "2D"
+        ],
+        "reason": false,
+        "imageVideo": "image/video"
+    },
+    {
+        "id": "af3acd4e-d0b0-4aec-b45a-2ad7088a54f8",
+        "name": "Grounded 3D-LLM",
+        "component": {
+            "vision": [
+                "Submanifold Sparse Convolutional Networks"
+            ],
+            "language": [
+                "Tiny-Vicuna-1B"
+            ]
+        },
+        "size": [
+            "1B"
+        ],
+        "author": [
+            "Shanghai AI Lab & Zhejiang University & The Chinese University of Hong Kong"
+        ],
+        "release": {
+            "year": 2024
         },
         "opensource": false,
         "qa": [
@@ -75,10 +343,41 @@
         ],
         "navigation": false,
         "taskPlanning": false,
-        "website": "https://embodied-generalist.github.io/",
-        "dimension": [],
+        "website": "https://github.com/OpenRobotLab/Grounded_3D-LLM",
+        "dimension": [
+            "3D"
+        ],
         "reason": false,
         "imageVideo": "Point Clouds"
+    },
+    {
+        "id": "4a42979f-36cb-4c3e-8ebf-a198a68b90e6",
+        "name": "Gemini-2.0-Pro",
+        "component": {
+            "vision": [],
+            "language": [
+                "Gemini-2.0-Pro"
+            ]
+        },
+        "size": [],
+        "author": [
+            "Google DeepMind"
+        ],
+        "release": {
+            "year": 2025
+        },
+        "opensource": false,
+        "qa": [
+            "2D"
+        ],
+        "navigation": false,
+        "taskPlanning": false,
+        "website": "https://ai.google.dev/gemini-api/docs/models",
+        "dimension": [
+            "2D"
+        ],
+        "reason": false,
+        "imageVideo": "image/video"
     },
     {
         "id": "f0fc7970-1e20-4ea2-a5fd-65ed7dd6802a",
@@ -143,163 +442,6 @@
         "imageVideo": "image/video"
     },
     {
-        "id": "38e71976-4a59-41bf-9367-95f2fc5bf6f5",
-        "name": "LLaVA-OneVision-72B",
-        "component": {
-            "vision": [
-                "SigLIP"
-            ],
-            "language": [
-                "Qwen2-72B"
-            ]
-        },
-        "size": [
-            "72B"
-        ],
-        "author": [
-            "ByteDance"
-        ],
-        "release": {
-            "year": 2024
-        },
-        "opensource": false,
-        "qa": [
-            "2D"
-        ],
-        "navigation": false,
-        "taskPlanning": false,
-        "website": "https://huggingface.co/collections/lmms-lab/llava-onevision-66a259c3526e15166d6bba37",
-        "dimension": [
-            "2D"
-        ],
-        "reason": false,
-        "imageVideo": "image/video"
-    },
-    {
-        "id": "4a42979f-36cb-4c3e-8ebf-a198a68b90e6",
-        "name": "Gemini-2.0-Pro",
-        "component": {
-            "vision": [],
-            "language": [
-                "Gemini-2.0-Pro"
-            ]
-        },
-        "size": [],
-        "author": [
-            "Google DeepMind"
-        ],
-        "release": {
-            "year": 2025
-        },
-        "opensource": false,
-        "qa": [
-            "2D"
-        ],
-        "navigation": false,
-        "taskPlanning": false,
-        "website": "https://ai.google.dev/gemini-api/docs/models",
-        "dimension": [
-            "2D"
-        ],
-        "reason": false,
-        "imageVideo": "image/video"
-    },
-    {
-        "id": "d43c7af4-55f6-4054-bcd4-88d27efd0d10",
-        "name": "Navid",
-        "component": {
-            "vision": [
-                "EVA-CLIP"
-            ],
-            "language": [
-                "Vicuna-7B-v1.5"
-            ]
-        },
-        "size": [
-            "7B"
-        ],
-        "author": [
-            "Peking University"
-        ],
-        "release": {
-            "year": 2024
-        },
-        "opensource": false,
-        "qa": [
-            "2D"
-        ],
-        "navigation": false,
-        "taskPlanning": false,
-        "website": "https://pku-epic.github.io/NaVid/",
-        "dimension": [
-            "2D"
-        ],
-        "reason": false,
-        "imageVideo": "image/video"
-    },
-    {
-        "id": "8d42636e-05c2-4179-a0d1-625f474f1622",
-        "name": "UniNavid",
-        "component": {
-            "vision": [
-                "EVA-CLIP"
-            ],
-            "language": [
-                "Vicuna-7B-v1.5"
-            ]
-        },
-        "size": [
-            "7B"
-        ],
-        "author": [
-            "Peking University"
-        ],
-        "release": {
-            "year": 2024
-        },
-        "opensource": false,
-        "qa": [
-            "2D"
-        ],
-        "navigation": false,
-        "taskPlanning": false,
-        "website": "https://pku-epic.github.io/Uni-NaVid/",
-        "dimension": [
-            "2D"
-        ],
-        "reason": false,
-        "imageVideo": "image/video"
-    },
-    {
-        "id": "af35bb7c-f716-47a0-bcce-2f045a108735",
-        "name": "Gemini-2.0-flash",
-        "component": {
-            "vision": [],
-            "language": [
-                "Gemini-2.0-flash"
-            ]
-        },
-        "size": [],
-        "author": [
-            "Google DeepMind"
-        ],
-        "release": {
-            "year": 2025
-        },
-        "opensource": false,
-        "qa": [
-            "2D"
-        ],
-        "navigation": false,
-        "taskPlanning": false,
-        "website": "https://ai.google.dev/gemini-api/docs/models",
-        "dimension": [
-            "2D"
-        ],
-        "reason": false,
-        "imageVideo": "image/video"
-    },
-    {
         "id": "aef63eca-3dde-495a-a922-c803d956568f",
         "name": "Qwen2.5-VL-3B-Ins",
         "component": {
@@ -333,24 +475,49 @@
         "imageVideo": "image/video"
     },
     {
-        "id": "3efd880e-f132-4d0f-ba66-67142efb9470",
-        "name": "LLaVA-3D",
+        "id": "4e387c03-f76e-43e0-9d9c-d80f05e40ed4",
+        "name": "LLaVA-OneVision-7B",
         "component": {
             "vision": [
-                "CLIP"
+                "SigLIP"
             ],
             "language": [
-                "LLaVA-Video-7B"
+                "Qwen2-7B"
             ]
         },
         "size": [
             "7B"
         ],
         "author": [
-            "The University of Hong Kong & Shanghai AI Lab"
+            "ByteDance"
         ],
         "release": {
             "year": 2024
+        },
+        "opensource": false,
+        "qa": [
+            "2D"
+        ],
+        "navigation": false,
+        "taskPlanning": false,
+        "website": "https://huggingface.co/collections/lmms-lab/llava-onevision-66a259c3526e15166d6bba37",
+        "dimension": [
+            "2D"
+        ],
+        "reason": false,
+        "imageVideo": "image/video"
+    },
+    {
+        "id": "d7a24483-5295-4afb-9ecd-8538b5d92e53",
+        "name": "LEO",
+        "component": {
+            "vision": [],
+            "language": []
+        },
+        "size": [],
+        "author": [],
+        "release": {
+            "year": 2023
         },
         "opensource": false,
         "qa": [
@@ -358,9 +525,36 @@
         ],
         "navigation": false,
         "taskPlanning": false,
-        "website": "https://huggingface.co/ChaimZhu/LLaVA-3D-7B",
+        "website": "https://embodied-generalist.github.io/",
+        "dimension": [],
+        "reason": false,
+        "imageVideo": "Point Clouds"
+    },
+    {
+        "id": "3cfdaff3-8301-4951-9f3b-cf8134b4ed10",
+        "name": "Qwen-VL-Max",
+        "component": {
+            "vision": [],
+            "language": [
+                "Qwen-VL-Max"
+            ]
+        },
+        "size": [],
+        "author": [
+            "Alibaba"
+        ],
+        "release": {
+            "year": 2024
+        },
+        "opensource": false,
+        "qa": [
+            "2D"
+        ],
+        "navigation": false,
+        "taskPlanning": false,
+        "website": "https://huggingface.co/spaces/Qwen/Qwen-VL-Max",
         "dimension": [
-            "3D"
+            "2D"
         ],
         "reason": false,
         "imageVideo": "Image"
@@ -399,202 +593,70 @@
         "imageVideo": "image/video"
     },
     {
-        "id": "3cfdaff3-8301-4951-9f3b-cf8134b4ed10",
-        "name": "Qwen-VL-Max",
+        "id": "9a722f4d-1622-4ed4-9482-5024b95e06fb",
+        "name": "Gemini-1.5-flash",
         "component": {
             "vision": [],
             "language": [
-                "Qwen-VL-Max"
+                "gemini-1.5-flash"
             ]
-        },
-        "size": [],
-        "author": [
-            "Alibaba"
-        ],
-        "release": {
-            "year": 2024
-        },
-        "opensource": false,
-        "qa": [
-            "2D"
-        ],
-        "navigation": false,
-        "taskPlanning": false,
-        "website": "https://huggingface.co/spaces/Qwen/Qwen-VL-Max",
-        "dimension": [
-            "2D"
-        ],
-        "reason": false,
-        "imageVideo": "Image"
+        }
     },
     {
-        "id": "af3acd4e-d0b0-4aec-b45a-2ad7088a54f8",
-        "name": "Grounded 3D-LLM",
+        "id": "3b0d50a0-37ec-4234-ada0-4a727f9972ab",
+        "name": "Gemini-1.5-chat",
+        "component": {
+            "vision": [],
+            "language": []
+        }
+    },
+    {
+        "id": "323ef65f-630b-49df-bff8-e7bc32815387",
+        "name": "3D-LLM(Flamingo)",
+        "component": {
+            "vision": [],
+            "language": []
+        }
+    },
+    {
+        "id": "7b3f0bae-5319-4d34-b7ad-62ba67a43da4",
+        "name": "PQ3D",
+        "component": {
+            "vision": [],
+            "language": []
+        }
+    },
+    {
+        "id": "12e98a0d-5bd3-4af8-a45d-4ebaa59cf45c",
+        "name": "Llama3-70B",
+        "component": {
+            "vision": [],
+            "language": []
+        }
+    },
+    {
+        "id": "b98ae0e6-2bcf-487d-8ada-6423bcce8f9c",
+        "name": "GPT-4o w CoT",
+        "component": {
+            "vision": [],
+            "language": []
+        }
+    },
+    {
+        "id": "e6010b47-eb88-403c-8aee-858d1c913af2",
+        "name": "Llama-3.2-11B-Vision-Ins",
         "component": {
             "vision": [
-                "Submanifold Sparse Convolutional Networks"
+                "A separately trained vision adapter"
             ],
             "language": [
-                "Tiny-Vicuna-1B"
+                "Llama 3.1"
             ]
-        },
-        "size": [
-            "1B"
-        ],
-        "author": [
-            "Shanghai AI Lab & Zhejiang University & The Chinese University of Hong Kong"
-        ],
-        "release": {
-            "year": 2024
-        },
-        "opensource": false,
-        "qa": [
-            "3D"
-        ],
-        "navigation": false,
-        "taskPlanning": false,
-        "website": "https://github.com/OpenRobotLab/Grounded_3D-LLM",
-        "dimension": [
-            "3D"
-        ],
-        "reason": false,
-        "imageVideo": "Point Clouds"
+        }
     },
     {
-        "id": "4e387c03-f76e-43e0-9d9c-d80f05e40ed4",
-        "name": "LLaVA-OneVision-7B",
-        "component": {
-            "vision": [
-                "SigLIP"
-            ],
-            "language": [
-                "Qwen2-7B"
-            ]
-        },
-        "size": [
-            "7B"
-        ],
-        "author": [
-            "ByteDance"
-        ],
-        "release": {
-            "year": 2024
-        },
-        "opensource": false,
-        "qa": [
-            "2D"
-        ],
-        "navigation": false,
-        "taskPlanning": false,
-        "website": "https://huggingface.co/collections/lmms-lab/llava-onevision-66a259c3526e15166d6bba37",
-        "dimension": [
-            "2D"
-        ],
-        "reason": false,
-        "imageVideo": "image/video"
-    },
-    {
-        "id": "cb6e23ea-bc8a-4bef-91d6-ba174280faaf",
-        "name": "Qwen2.5-VL-7B-Ins",
-        "component": {
-            "vision": [
-                "ViT"
-            ],
-            "language": [
-                "Qwen2.5-7B"
-            ]
-        },
-        "size": [
-            "7B"
-        ],
-        "author": [
-            "Alibaba"
-        ],
-        "release": {
-            "year": 2025
-        },
-        "opensource": false,
-        "qa": [
-            "2D"
-        ],
-        "navigation": false,
-        "taskPlanning": false,
-        "website": "https://huggingface.co/collections/Qwen/qwen25-vl-6795ffac22b334a837c0f9a5",
-        "dimension": [
-            "2D"
-        ],
-        "reason": false,
-        "imageVideo": "image/video"
-    },
-    {
-        "id": "a7bde639-b09a-4cbf-a647-cbde9a634e6c",
-        "name": "RoboPoint",
-        "component": {
-            "vision": [
-                "ViT-L/14 336px"
-            ],
-            "language": [
-                "Vicuna-v1.5-13B"
-            ]
-        },
-        "size": [
-            "13B"
-        ],
-        "author": [
-            "University of Washington"
-        ],
-        "release": {
-            "year": 2024
-        },
-        "opensource": false,
-        "qa": [
-            "2D"
-        ],
-        "navigation": false,
-        "taskPlanning": false,
-        "website": "https://github.com/wentaoyuan/RoboPoint",
-        "dimension": [
-            "2D"
-        ],
-        "reason": false,
-        "imageVideo": "Image"
-    },
-    {
-        "id": "03383a4f-37a0-4046-80f1-52b61dc452a7",
-        "name": "EmbodiedGPT",
-        "component": {
-            "vision": [
-                " ViT-G/14"
-            ],
-            "language": [
-                " LLaMA-7B"
-            ]
-        },
-        "size": [
-            "7B"
-        ],
-        "author": [
-            "The University of Hong Kong"
-        ],
-        "release": {
-            "year": 2023
-        },
-        "opensource": false,
-        "qa": [
-            "2D"
-        ],
-        "navigation": false,
-        "taskPlanning": false,
-        "website": "https://embodiedgpt.github.io/",
-        "dimension": [
-            "2D"
-        ],
-        "reason": false,
-        "imageVideo": "image/video"
-    },
-    {
-        "id": "e9672027-30d6-4501-b17f-75152789cbc4",
-        "name": "mPLUG-Owl3",
+        "id": "3b7f3638-9364-41c0-bbfe-5288176f3072",
+        "name": "LLaVA-NeXT-Video-7B",
         "component": {
             "vision": [
                 "Qwen2-7B"
@@ -605,16 +667,8 @@
         }
     },
     {
-        "id": "b0e697a1-bef6-488c-b3df-1680c3694f48",
-        "name": "ChatScene",
-        "component": {
-            "vision": [],
-            "language": []
-        }
-    },
-    {
-        "id": "e40d9b56-19c8-4387-8f71-4a3b39d7d1ef",
-        "name": "InternVL2.5-8B-MPO",
+        "id": "525c4c5c-e4ef-42ef-9a80-0b7d059f1c95",
+        "name": "InternVL2.5-8B",
         "component": {
             "vision": [
                 "InternViT-300M-448px-V2_5"
@@ -637,33 +691,23 @@
         }
     },
     {
-        "id": "a0515273-7168-4717-a07a-b143b0208074",
-        "name": "GPT-4o-mini",
-        "component": {
-            "vision": [],
-            "language": [
-                "GPT-4o mini"
-            ]
-        }
-    },
-    {
-        "id": "80939e8a-be9d-4652-95e0-ff3c73a1ddda",
-        "name": "Video-LLaVA-7B",
-        "component": {
-            "vision": [
-                "Vicuna-7B"
-            ],
-            "language": [
-                "EVA-G"
-            ]
-        }
-    },
-    {
         "id": "09929601-b5f9-439b-94d3-fe8dedb11b13",
         "name": "LL3DA",
         "component": {
             "vision": [],
             "language": []
+        }
+    },
+    {
+        "id": "87f1ac67-6ac8-4f58-9644-f877741326cb",
+        "name": "Llama-3.2-90B-Vision-Ins",
+        "component": {
+            "vision": [
+                "A separately trained vision adapter"
+            ],
+            "language": [
+                "Llama 3.1"
+            ]
         }
     },
     {
@@ -679,243 +723,11 @@
         }
     },
     {
-        "id": "2bd83c3e-58ed-4898-a1a1-a445513e31c1",
-        "name": "Qwen2-VL-72B-Ins",
-        "component": {
-            "vision": [
-                "Redesigned ViT"
-            ],
-            "language": [
-                "Qwen2"
-            ]
-        }
-    },
-    {
-        "id": "587b8069-98e6-46a8-985b-4c607dff6b33",
-        "name": "navillm",
-        "component": {
-            "vision": [
-                "Vicuna-7B"
-            ],
-            "language": [
-                "EVA-CLIP"
-            ]
-        }
-    },
-    {
-        "id": "3b0d50a0-37ec-4234-ada0-4a727f9972ab",
-        "name": "Gemini-1.5-chat",
+        "id": "70634caf-f6d3-47e8-9e9c-2754a40b53a2",
+        "name": "Video-3D LLM (16 frames)",
         "component": {
             "vision": [],
             "language": []
-        }
-    },
-    {
-        "id": "87e7bee8-251c-44e8-8e67-500bfdd1f348",
-        "name": "Video-3D LLM (32 frames)",
-        "component": {
-            "vision": [],
-            "language": []
-        }
-    },
-    {
-        "id": "12e98a0d-5bd3-4af8-a45d-4ebaa59cf45c",
-        "name": "Llama3-70B",
-        "component": {
-            "vision": [],
-            "language": []
-        }
-    },
-    {
-        "id": "323ef65f-630b-49df-bff8-e7bc32815387",
-        "name": "3D-LLM(Flamingo)",
-        "component": {
-            "vision": [],
-            "language": []
-        }
-    },
-    {
-        "id": "9a722f4d-1622-4ed4-9482-5024b95e06fb",
-        "name": "Gemini-1.5-flash",
-        "component": {
-            "vision": [],
-            "language": [
-                "gemini-1.5-flash"
-            ]
-        }
-    },
-    {
-        "id": "5db29ede-6e63-432c-96c1-f65700028165",
-        "name": "InternVL2-8B",
-        "component": {
-            "vision": [],
-            "language": []
-        }
-    },
-    {
-        "id": "3fb0da53-f2cc-4854-9d26-3d16943be090",
-        "name": "InternVL2.5-33B-MPO",
-        "component": {
-            "vision": [],
-            "language": []
-        }
-    },
-    {
-        "id": "525c4c5c-e4ef-42ef-9a80-0b7d059f1c95",
-        "name": "InternVL2.5-8B",
-        "component": {
-            "vision": [
-                "InternViT-300M-448px-V2_5"
-            ],
-            "language": [
-                "internlm2_5-7b-chat"
-            ]
-        }
-    },
-    {
-        "id": "50b75743-251c-40f8-ad52-0773e9865e88",
-        "name": "InternVL2.5-38B-MPO",
-        "component": {
-            "vision": [
-                "InternViT-6B-448px-V2_5"
-            ],
-            "language": [
-                "Qwen2.5-32B-Instruct"
-            ]
-        }
-    },
-    {
-        "id": "314244f5-7c42-4279-957b-6fbc2c4b9aee",
-        "name": "GPT-4",
-        "component": {
-            "vision": [],
-            "language": []
-        }
-    },
-    {
-        "id": "47130974-a85a-4090-ab93-04542244c04e",
-        "name": "Gemini-2.0-Pro w CoT",
-        "component": {
-            "vision": [],
-            "language": []
-        }
-    },
-    {
-        "id": "3b7f3638-9364-41c0-bbfe-5288176f3072",
-        "name": "LLaVA-NeXT-Video-7B",
-        "component": {
-            "vision": [
-                "Qwen2-7B"
-            ],
-            "language": [
-                "SigLIP-So400m"
-            ]
-        }
-    },
-    {
-        "id": "bfee5170-8314-49ea-96e6-762fc8e2bba4",
-        "name": "MapNav",
-        "component": {
-            "vision": [],
-            "language": []
-        }
-    },
-    {
-        "id": "ce19cba4-e888-4c92-9700-d25bc4dbbad3",
-        "name": "Gemini-1.5-Pro",
-        "component": {
-            "vision": [],
-            "language": [
-                "gemini-1.5-Pro"
-            ]
-        }
-    },
-    {
-        "id": "8596e3d7-c65d-46e1-9063-16e83f0647cc",
-        "name": "llama-vid-7b-full-224",
-        "component": {
-            "vision": [
-                "Vicuna-7B"
-            ],
-            "language": [
-                "EVA-G"
-            ]
-        }
-    },
-    {
-        "id": "ba940652-9040-4510-b232-52da5cbce5a8",
-        "name": "MiniGPT-4-7B",
-        "component": {
-            "vision": [
-                "Vicuna-7B"
-            ],
-            "language": [
-                "ViT-g/14 from EVA-CLIP"
-            ]
-        }
-    },
-    {
-        "id": "dfcea64f-ee5e-4ea6-a448-e09f2fb64271",
-        "name": "pllava-7b",
-        "component": {
-            "vision": [
-                "Vicuna-7B"
-            ],
-            "language": [
-                "ViT/L"
-            ]
-        }
-    },
-    {
-        "id": "51f2b003-5aa9-462a-a5b4-538ec3f28c17",
-        "name": "LongVA-7B",
-        "component": {
-            "vision": [],
-            "language": []
-        }
-    },
-    {
-        "id": "638048e4-d5ad-4e67-abfd-c326697048aa",
-        "name": "InternVL2.5-78B-MPO",
-        "component": {
-            "vision": [
-                "InternViT-6B-448px-V2_5"
-            ],
-            "language": [
-                "Qwen2.5-72B-Instruct"
-            ]
-        }
-    },
-    {
-        "id": "8472d27d-9c33-4ea2-854c-2ec882f303b6",
-        "name": "Chat-3D v2",
-        "component": {
-            "vision": [],
-            "language": []
-        }
-    },
-    {
-        "id": "0963c6fe-8edb-4165-98c7-6070bb745abf",
-        "name": "LLava-7B",
-        "component": {
-            "vision": [
-                "Vicuna-7B"
-            ],
-            "language": [
-                "CLIP"
-            ]
-        }
-    },
-    {
-        "id": "86657687-00d9-4968-90d3-5f4e3d8b6132",
-        "name": "MiniCPM-V 2.6",
-        "component": {
-            "vision": [
-                "Qwen2-7B"
-            ],
-            "language": [
-                "SigLIP-So400m"
-            ]
         }
     },
     {
@@ -943,19 +755,15 @@
         }
     },
     {
-        "id": "6e39d9f5-4b6a-471d-92d6-07a37b559070",
-        "name": "InternVL2-40B",
+        "id": "8596e3d7-c65d-46e1-9063-16e83f0647cc",
+        "name": "llama-vid-7b-full-224",
         "component": {
-            "vision": [],
-            "language": []
-        }
-    },
-    {
-        "id": "989f3769-fe45-4472-85aa-a4f071577271",
-        "name": "LLaVA-NeXT-Video-72B",
-        "component": {
-            "vision": [],
-            "language": []
+            "vision": [
+                "Vicuna-7B"
+            ],
+            "language": [
+                "EVA-G"
+            ]
         }
     },
     {
@@ -971,116 +779,8 @@
         }
     },
     {
-        "id": "dfb3cf12-beee-48f1-87f5-66d40176d517",
-        "name": "SceneLLM",
-        "component": {
-            "vision": [],
-            "language": []
-        }
-    },
-    {
-        "id": "70634caf-f6d3-47e8-9e9c-2754a40b53a2",
-        "name": "Video-3D LLM (16 frames)",
-        "component": {
-            "vision": [],
-            "language": []
-        }
-    },
-    {
-        "id": "2b8ad6b5-fd3b-4eef-a852-0648bc312bba",
-        "name": "Noah(UniE-VLM) (16 frames)",
-        "component": {
-            "vision": [],
-            "language": []
-        }
-    },
-    {
-        "id": "9321375f-e8e4-4b03-9f04-fbd2864afa2f",
-        "name": "Noah(UniE-VLM)",
-        "component": {
-            "vision": [],
-            "language": []
-        }
-    },
-    {
-        "id": "7b3f0bae-5319-4d34-b7ad-62ba67a43da4",
-        "name": "PQ3D",
-        "component": {
-            "vision": [],
-            "language": []
-        }
-    },
-    {
-        "id": "1ff580e8-1775-4dc3-b7f6-191f98b432e8",
-        "name": "InternVL2.5-33B",
-        "component": {
-            "vision": [],
-            "language": []
-        }
-    },
-    {
-        "id": "8a656dd4-3104-4471-b8d8-0d6368975f74",
-        "name": "Phi-3-vision-128k-instruct",
-        "component": {
-            "vision": [
-                "Phi-3 Mini"
-            ],
-            "language": [
-                "CLIP ViT-L/14"
-            ]
-        }
-    },
-    {
-        "id": "df53089f-9407-49d7-b93e-199fffe7db94",
-        "name": "Llama3-8B",
-        "component": {
-            "vision": [],
-            "language": []
-        }
-    },
-    {
-        "id": "87f1ac67-6ac8-4f58-9644-f877741326cb",
-        "name": "Llama-3.2-90B-Vision-Ins",
-        "component": {
-            "vision": [
-                "A separately trained vision adapter"
-            ],
-            "language": [
-                "Llama 3.1"
-            ]
-        }
-    },
-    {
-        "id": "e6010b47-eb88-403c-8aee-858d1c913af2",
-        "name": "Llama-3.2-11B-Vision-Ins",
-        "component": {
-            "vision": [
-                "A separately trained vision adapter"
-            ],
-            "language": [
-                "Llama 3.1"
-            ]
-        }
-    },
-    {
         "id": "dfb947dc-4326-489d-8a69-eb9ecbd3725e",
         "name": "Qwen2.5-VL-7B",
-        "component": {
-            "vision": [],
-            "language": []
-        }
-    },
-    {
-        "id": "0cb4cf61-fe9a-4974-9c89-96c023957e9f",
-        "name": "3D-LLM(BLIP2-flant5)",
-        "component": {
-            "vision": [],
-            "language": []
-        }
-    },
-    {
-        "id": "b98ae0e6-2bcf-487d-8ada-6423bcce8f9c",
-        "name": "GPT-4o w CoT",
         "component": {
             "vision": [],
             "language": []
@@ -1099,6 +799,244 @@
         }
     },
     {
+        "id": "3fb0da53-f2cc-4854-9d26-3d16943be090",
+        "name": "InternVL2.5-33B-MPO",
+        "component": {
+            "vision": [],
+            "language": []
+        }
+    },
+    {
+        "id": "8472d27d-9c33-4ea2-854c-2ec882f303b6",
+        "name": "Chat-3D v2",
+        "component": {
+            "vision": [],
+            "language": []
+        }
+    },
+    {
+        "id": "86657687-00d9-4968-90d3-5f4e3d8b6132",
+        "name": "MiniCPM-V 2.6",
+        "component": {
+            "vision": [
+                "Qwen2-7B"
+            ],
+            "language": [
+                "SigLIP-So400m"
+            ]
+        }
+    },
+    {
+        "id": "87e7bee8-251c-44e8-8e67-500bfdd1f348",
+        "name": "Video-3D LLM (32 frames)",
+        "component": {
+            "vision": [],
+            "language": []
+        }
+    },
+    {
+        "id": "47130974-a85a-4090-ab93-04542244c04e",
+        "name": "Gemini-2.0-Pro w CoT",
+        "component": {
+            "vision": [],
+            "language": []
+        }
+    },
+    {
+        "id": "ce19cba4-e888-4c92-9700-d25bc4dbbad3",
+        "name": "Gemini-1.5-Pro",
+        "component": {
+            "vision": [],
+            "language": [
+                "gemini-1.5-Pro"
+            ]
+        }
+    },
+    {
+        "id": "989f3769-fe45-4472-85aa-a4f071577271",
+        "name": "LLaVA-NeXT-Video-72B",
+        "component": {
+            "vision": [],
+            "language": []
+        }
+    },
+    {
+        "id": "0cb4cf61-fe9a-4974-9c89-96c023957e9f",
+        "name": "3D-LLM(BLIP2-flant5)",
+        "component": {
+            "vision": [],
+            "language": []
+        }
+    },
+    {
+        "id": "314244f5-7c42-4279-957b-6fbc2c4b9aee",
+        "name": "GPT-4",
+        "component": {
+            "vision": [],
+            "language": []
+        }
+    },
+    {
+        "id": "5db29ede-6e63-432c-96c1-f65700028165",
+        "name": "InternVL2-8B",
+        "component": {
+            "vision": [],
+            "language": []
+        }
+    },
+    {
+        "id": "2bd83c3e-58ed-4898-a1a1-a445513e31c1",
+        "name": "Qwen2-VL-72B-Ins",
+        "component": {
+            "vision": [
+                "Redesigned ViT"
+            ],
+            "language": [
+                "Qwen2"
+            ]
+        }
+    },
+    {
+        "id": "638048e4-d5ad-4e67-abfd-c326697048aa",
+        "name": "InternVL2.5-78B-MPO",
+        "component": {
+            "vision": [
+                "InternViT-6B-448px-V2_5"
+            ],
+            "language": [
+                "Qwen2.5-72B-Instruct"
+            ]
+        }
+    },
+    {
+        "id": "0963c6fe-8edb-4165-98c7-6070bb745abf",
+        "name": "LLava-7B",
+        "component": {
+            "vision": [
+                "Vicuna-7B"
+            ],
+            "language": [
+                "CLIP"
+            ]
+        }
+    },
+    {
+        "id": "df53089f-9407-49d7-b93e-199fffe7db94",
+        "name": "Llama3-8B",
+        "component": {
+            "vision": [],
+            "language": []
+        }
+    },
+    {
+        "id": "1ff580e8-1775-4dc3-b7f6-191f98b432e8",
+        "name": "InternVL2.5-33B",
+        "component": {
+            "vision": [],
+            "language": []
+        }
+    },
+    {
+        "id": "50b75743-251c-40f8-ad52-0773e9865e88",
+        "name": "InternVL2.5-38B-MPO",
+        "component": {
+            "vision": [
+                "InternViT-6B-448px-V2_5"
+            ],
+            "language": [
+                "Qwen2.5-32B-Instruct"
+            ]
+        }
+    },
+    {
+        "id": "e9672027-30d6-4501-b17f-75152789cbc4",
+        "name": "mPLUG-Owl3",
+        "component": {
+            "vision": [
+                "Qwen2-7B"
+            ],
+            "language": [
+                "SigLIP-So400m"
+            ]
+        }
+    },
+    {
+        "id": "8a656dd4-3104-4471-b8d8-0d6368975f74",
+        "name": "Phi-3-vision-128k-instruct",
+        "component": {
+            "vision": [
+                "Phi-3 Mini"
+            ],
+            "language": [
+                "CLIP ViT-L/14"
+            ]
+        }
+    },
+    {
+        "id": "dfcea64f-ee5e-4ea6-a448-e09f2fb64271",
+        "name": "pllava-7b",
+        "component": {
+            "vision": [
+                "Vicuna-7B"
+            ],
+            "language": [
+                "ViT/L"
+            ]
+        }
+    },
+    {
+        "id": "ba940652-9040-4510-b232-52da5cbce5a8",
+        "name": "MiniGPT-4-7B",
+        "component": {
+            "vision": [
+                "Vicuna-7B"
+            ],
+            "language": [
+                "ViT-g/14 from EVA-CLIP"
+            ]
+        }
+    },
+    {
+        "id": "9321375f-e8e4-4b03-9f04-fbd2864afa2f",
+        "name": "Noah(UniE-VLM)",
+        "component": {
+            "vision": [],
+            "language": []
+        }
+    },
+    {
+        "id": "dfb3cf12-beee-48f1-87f5-66d40176d517",
+        "name": "SceneLLM",
+        "component": {
+            "vision": [],
+            "language": []
+        }
+    },
+    {
+        "id": "bfee5170-8314-49ea-96e6-762fc8e2bba4",
+        "name": "MapNav",
+        "component": {
+            "vision": [],
+            "language": []
+        }
+    },
+    {
+        "id": "2b8ad6b5-fd3b-4eef-a852-0648bc312bba",
+        "name": "Noah(UniE-VLM) (16 frames)",
+        "component": {
+            "vision": [],
+            "language": []
+        }
+    },
+    {
+        "id": "b0e697a1-bef6-488c-b3df-1680c3694f48",
+        "name": "ChatScene",
+        "component": {
+            "vision": [],
+            "language": []
+        }
+    },
+    {
         "id": "529c2206-513e-45fa-a762-1d8a6adf548f",
         "name": "Qwen2-VL-7B",
         "component": {
@@ -1107,321 +1045,69 @@
         }
     },
     {
-        "id": "cc37be9d-ecc8-4a16-891d-1e250be931a5",
-        "name": "SpatialVLM",
-        "component": {
-            "vision": [
-                "ViT"
-            ],
-            "language": [
-                "PaLM-E 12B"
-            ]
-        },
-        "size": [
-            "12B"
-        ],
-        "author": [
-            "Google DeepMind"
-        ],
-        "release": {
-            "year": 2024
-        },
-        "opensource": false,
-        "qa": [
-            "2D"
-        ],
-        "navigation": false,
-        "taskPlanning": false,
-        "website": "https://spatial-vlm.github.io/",
-        "dimension": [
-            "2D"
-        ],
-        "reason": false,
-        "imageVideo": "image/video"
-    },
-    {
-        "id": "be92f580-2ed0-4d69-8b12-c78da33bd9a0",
-        "name": "GPT4Scene",
-        "component": {
-            "vision": [
-                "Qwen2-VL-7B "
-            ],
-            "language": [
-                "Qwen2-VL-7B "
-            ]
-        },
-        "size": [
-            "8B"
-        ],
-        "author": [
-            "The University of Hong Kong & Shanghai AI Lab"
-        ],
-        "release": {
-            "year": 2024
-        },
-        "opensource": false,
-        "qa": [
-            "3D"
-        ],
-        "navigation": false,
-        "taskPlanning": false,
-        "website": "https://github.com/Qi-Zhangyang/gpt4scene",
-        "dimension": [
-            "3D"
-        ],
-        "reason": false,
-        "imageVideo": "Video"
-    },
-    {
-        "id": "39e0108f-cd0f-4a33-b379-c035be0e6cb6",
-        "name": "InternVL3-38B",
-        "component": {
-            "vision": [
-                "InternViT-6B-448px-V2.5"
-            ],
-            "language": [
-                "Qwen2.5-32B"
-            ]
-        },
-        "size": [
-            "38B"
-        ],
-        "author": [
-            "Shanghai AI Lab & Tsinghua"
-        ],
-        "release": {
-            "year": 2025
-        },
-        "opensource": false,
-        "qa": [
-            "2D"
-        ],
-        "navigation": false,
-        "taskPlanning": false,
-        "website": "https://huggingface.co/OpenGVLab/InternVL3-38B",
-        "dimension": [
-            "2D"
-        ],
-        "reason": false,
-        "imageVideo": "image/video"
-    },
-    {
-        "id": "c5807d35-62e9-4dae-989c-4592e449a4de",
-        "name": "Gemini-2.5-Pro",
-        "component": {
-            "vision": [],
-            "language": [
-                "Gemini-2.5-Pro"
-            ]
-        },
-        "size": [],
-        "author": [
-            "Google DeepMind"
-        ],
-        "release": {
-            "year": 2025
-        },
-        "opensource": false,
-        "qa": [
-            "2D"
-        ],
-        "navigation": false,
-        "taskPlanning": false,
-        "website": "https://ai.google.dev/gemini-api/docs/models",
-        "dimension": [
-            "2D"
-        ],
-        "reason": false,
-        "imageVideo": "image/video"
-    },
-    {
-        "id": "b6ab715b-0228-4173-8be7-2ff1954c313c",
-        "name": "",
+        "id": "6e39d9f5-4b6a-471d-92d6-07a37b559070",
+        "name": "InternVL2-40B",
         "component": {
             "vision": [],
             "language": []
-        },
-        "size": [],
-        "author": [],
-        "release": {
-            "year": 0
-        },
-        "opensource": false,
-        "qa": [],
-        "navigation": false,
-        "taskPlanning": false,
-        "website": "",
-        "dimension": [],
-        "reason": false,
-        "imageVideo": ""
+        }
     },
     {
-        "id": "72a2d643-7e79-474e-9c1a-c4026c2e120f",
-        "name": "InternVL3-14B",
+        "id": "e40d9b56-19c8-4387-8f71-4a3b39d7d1ef",
+        "name": "InternVL2.5-8B-MPO",
         "component": {
             "vision": [
-                "InternViT-300M-448px-V2.5"
+                "InternViT-300M-448px-V2_5"
             ],
             "language": [
-                "Qwen2.5-14B"
+                "internlm2_5-7b-chat"
             ]
-        },
-        "size": [
-            "14B"
-        ],
-        "author": [
-            "Shanghai AI Lab & Tsinghua"
-        ],
-        "release": {
-            "year": 2025
-        },
-        "opensource": false,
-        "qa": [
-            "2D"
-        ],
-        "navigation": false,
-        "taskPlanning": false,
-        "website": "https://huggingface.co/OpenGVLab/InternVL3-14B",
-        "dimension": [
-            "2D"
-        ],
-        "reason": false,
-        "imageVideo": "image/video"
+        }
     },
     {
-        "id": "222ef2fe-22ee-4933-887c-46a7a1366b17",
-        "name": "InternVL3-8B",
+        "id": "80939e8a-be9d-4652-95e0-ff3c73a1ddda",
+        "name": "Video-LLaVA-7B",
         "component": {
             "vision": [
-                "InternViT-300M-448px-V2.5"
+                "Vicuna-7B"
             ],
             "language": [
-                "Qwen2.5-7B"
+                "EVA-G"
             ]
-        },
-        "size": [
-            "8B"
-        ],
-        "author": [
-            "Shanghai AI Lab & Tsinghua"
-        ],
-        "release": {
-            "year": 2025
-        },
-        "opensource": false,
-        "qa": [
-            "2D"
-        ],
-        "navigation": false,
-        "taskPlanning": false,
-        "website": "https://huggingface.co/OpenGVLab/InternVL3-8B",
-        "dimension": [
-            "2D"
-        ],
-        "reason": false,
-        "imageVideo": "image/video"
+        }
     },
     {
-        "id": "78d4e536-10e9-4699-a880-8b6bdd694eda",
-        "name": "Embodied-FSD",
+        "id": "51f2b003-5aa9-462a-a5b4-538ec3f28c17",
+        "name": "LongVA-7B",
+        "component": {
+            "vision": [],
+            "language": []
+        }
+    },
+    {
+        "id": "a0515273-7168-4717-a07a-b143b0208074",
+        "name": "GPT-4o-mini",
+        "component": {
+            "vision": [],
+            "language": [
+                "GPT-4o mini"
+            ]
+        }
+    },
+    {
+        "id": "587b8069-98e6-46a8-985b-4c607dff6b33",
+        "name": "navillm",
         "component": {
             "vision": [
-                "CLIP-ViT-L-336px"
+                "Vicuna-7B"
             ],
             "language": [
-                "Vicuna-13B"
+                "EVA-CLIP"
             ]
-        },
-        "size": [
-            "13B"
-        ],
-        "author": [
-            "Tianjin University"
-        ],
-        "release": {
-            "year": 2025
-        },
-        "opensource": false,
-        "qa": [
-            "2D"
-        ],
-        "navigation": false,
-        "taskPlanning": false,
-        "website": "https://github.com/pickxiguapi/Embodied-FSD",
-        "dimension": [
-            "2D"
-        ],
-        "reason": false,
-        "imageVideo": "image/video"
+        }
     },
     {
-        "id": "82f04966-37cc-4d59-bd60-602af6938e7c",
-        "name": "3D-Mem",
-        "component": {
-            "vision": [
-                " CLIP"
-            ],
-            "language": [
-                "LLaVA-1.5-7B"
-            ]
-        },
-        "size": [
-            "7B"
-        ],
-        "author": [
-            "UMass Amherst"
-        ],
-        "release": {
-            "year": 2025
-        },
-        "opensource": false,
-        "qa": [
-            "3D"
-        ],
-        "navigation": false,
-        "taskPlanning": false,
-        "website": "https://github.com/UMass-Embodied-AGI/3D-Mem",
-        "dimension": [
-            "3D"
-        ],
-        "reason": false,
-        "imageVideo": "image/video"
-    },
-    {
-        "id": "4a825393-aab5-401e-aac8-7275d1d64d3d",
-        "name": "SpatialBot",
-        "component": {
-            "vision": [
-                "SigLIP"
-            ],
-            "language": [
-                "Phi-2-3B, Phi-3-4B ,QWen-1.5-4B  and Llama-3-8B"
-            ]
-        },
-        "size": [
-            "3B/4B/8B"
-        ],
-        "author": [
-            " Shanghai Jiao Tong University"
-        ],
-        "release": {
-            "year": 2024
-        },
-        "opensource": false,
-        "qa": [
-            "2D/3D"
-        ],
-        "navigation": false,
-        "taskPlanning": false,
-        "website": "https://github.com/BAAI-DCAI/SpatialBot",
-        "dimension": [
-            "3D"
-        ],
-        "reason": false,
-        "imageVideo": "Image"
-    },
-    {
-        "id": "908c1042-8ded-45b2-ac73-bf784880c368",
+        "id": "79112d4e-747e-4a80-9437-748c003dc2c0",
         "name": "Seed1.5-VL",
         "component": {
             "vision": [],
@@ -1450,52 +1136,21 @@
         "imageVideo": "image/video"
     },
     {
-        "id": "7c60da24-4ae1-4c65-bc34-a42d08e5f41b",
-        "name": "Mem2Ego",
-        "component": {
-            "vision": [],
-            "language": [
-                "Llama3.2-11B"
-            ]
-        },
-        "size": [
-            "11B"
-        ],
-        "author": [
-            "Huawei Noah’s Ark Lab"
-        ],
-        "release": {
-            "year": 2025
-        },
-        "opensource": false,
-        "qa": [
-            "3D"
-        ],
-        "navigation": false,
-        "taskPlanning": false,
-        "website": "https://arxiv.org/pdf/2502.14254",
-        "dimension": [
-            "3D"
-        ],
-        "reason": false,
-        "imageVideo": "Image"
-    },
-    {
-        "id": "d59ac346-9961-45a6-a97d-70df0b92004e",
-        "name": "SAT",
+        "id": "781f8c4d-9b7f-42c3-bfd2-ad7a437d81bc",
+        "name": "VILA-1.5-13B",
         "component": {
             "vision": [
-                "ViT"
+                "SigLIP"
             ],
             "language": [
-                "LLaVA-1.5-7B/13B"
+                "Qwen2"
             ]
         },
         "size": [
-            "7B/13B"
+            "13B"
         ],
         "author": [
-            "Boston University"
+            "NVIDIA"
         ],
         "release": {
             "year": 2024
@@ -1506,7 +1161,7 @@
         ],
         "navigation": false,
         "taskPlanning": false,
-        "website": "https://github.com/arijitray1993/SAT",
+        "website": "https://huggingface.co/Efficient-Large-Model/VILA1.5-13b",
         "dimension": [
             "2D"
         ],
@@ -1514,40 +1169,7 @@
         "imageVideo": "image/video"
     },
     {
-        "id": "dd3d3498-bada-472a-bde7-520ff6e16a0e",
-        "name": "InternVL3-78B",
-        "component": {
-            "vision": [
-                "InternViT-6B-448px-V2.5"
-            ],
-            "language": [
-                "Qwen2.5-72B"
-            ]
-        },
-        "size": [
-            "78B"
-        ],
-        "author": [
-            "Shanghai AI Lab & Tsinghua"
-        ],
-        "release": {
-            "year": 2025
-        },
-        "opensource": false,
-        "qa": [
-            "2D"
-        ],
-        "navigation": false,
-        "taskPlanning": false,
-        "website": "https://huggingface.co/OpenGVLab/InternVL3-78B",
-        "dimension": [
-            "2D"
-        ],
-        "reason": false,
-        "imageVideo": "image/video"
-    },
-    {
-        "id": "3f32fc2a-d9e4-46d0-a0dd-825053e8b93a",
+        "id": "f867a74d-f6bb-452f-a5e0-d5f62c98e88c",
         "name": "Video-3D LLM",
         "component": {
             "vision": [
@@ -1580,16 +1202,55 @@
         "imageVideo": "Video"
     },
     {
-        "id": "92753d4f-6540-4d6c-b578-76862ded0639",
-        "name": "3D-LLM",
+        "id": "4abf49b7-d35f-4c26-bd19-46e31c6f369c",
+        "name": "InternVL3-78B",
+        "component": {
+            "vision": [
+                "InternViT-6B-448px-V2.5"
+            ],
+            "language": [
+                "Qwen2.5-72B"
+            ]
+        },
+        "size": [
+            "78B"
+        ],
+        "author": [
+            "Shanghai AI Lab & Tsinghua"
+        ],
+        "release": {
+            "year": 2025
+        },
+        "opensource": false,
+        "qa": [
+            "2D"
+        ],
+        "navigation": false,
+        "taskPlanning": false,
+        "website": "https://huggingface.co/OpenGVLab/InternVL3-78B",
+        "dimension": [
+            "2D"
+        ],
+        "reason": false,
+        "imageVideo": "image/video"
+    },
+    {
+        "id": "868eb408-f43f-4b94-933d-37ac38468aaf",
+        "name": "Mem2Ego",
         "component": {
             "vision": [],
-            "language": []
+            "language": [
+                "Llama3.2-11B"
+            ]
         },
-        "size": [],
-        "author": [],
+        "size": [
+            "11B"
+        ],
+        "author": [
+            "Huawei Noah’s Ark Lab"
+        ],
         "release": {
-            "year": 2023
+            "year": 2025
         },
         "opensource": false,
         "qa": [
@@ -1597,13 +1258,172 @@
         ],
         "navigation": false,
         "taskPlanning": false,
-        "website": "https://github.com/UMass-Embodied-AGI/3D-LLM",
-        "dimension": [],
+        "website": "https://arxiv.org/pdf/2502.14254",
+        "dimension": [
+            "3D"
+        ],
         "reason": false,
-        "imageVideo": "Point Clouds"
+        "imageVideo": "Image"
     },
     {
-        "id": "76b8f91d-d7be-4e76-a109-0894301198e5",
+        "id": "9f236a44-02e7-412d-a88f-532963b9decf",
+        "name": "SAT",
+        "component": {
+            "vision": [
+                "ViT"
+            ],
+            "language": [
+                "LLaVA-1.5-7B/13B"
+            ]
+        },
+        "size": [
+            "7B/13B"
+        ],
+        "author": [
+            "Boston University"
+        ],
+        "release": {
+            "year": 2024
+        },
+        "opensource": false,
+        "qa": [
+            "2D"
+        ],
+        "navigation": false,
+        "taskPlanning": false,
+        "website": "https://github.com/arijitray1993/SAT",
+        "dimension": [
+            "2D"
+        ],
+        "reason": false,
+        "imageVideo": "image/video"
+    },
+    {
+        "id": "a3165a69-57ae-4062-8b51-268cbb060d15",
+        "name": "InternVL3-38B",
+        "component": {
+            "vision": [
+                "InternViT-6B-448px-V2.5"
+            ],
+            "language": [
+                "Qwen2.5-32B"
+            ]
+        },
+        "size": [
+            "38B"
+        ],
+        "author": [
+            "Shanghai AI Lab & Tsinghua"
+        ],
+        "release": {
+            "year": 2025
+        },
+        "opensource": false,
+        "qa": [
+            "2D"
+        ],
+        "navigation": false,
+        "taskPlanning": false,
+        "website": "https://huggingface.co/OpenGVLab/InternVL3-38B",
+        "dimension": [
+            "2D"
+        ],
+        "reason": false,
+        "imageVideo": "image/video"
+    },
+    {
+        "id": "f5f59f3b-8099-4208-ba37-d5535c21bb7d",
+        "name": "o4-mini",
+        "component": {
+            "vision": [],
+            "language": [
+                "o4-mini"
+            ]
+        },
+        "size": [],
+        "author": [
+            "OpenAI"
+        ],
+        "release": {
+            "year": 2025
+        },
+        "opensource": false,
+        "qa": [
+            "2D"
+        ],
+        "navigation": false,
+        "taskPlanning": false,
+        "website": "https://openai.com/index/introducing-o3-and-o4-mini/",
+        "dimension": [
+            "2D"
+        ],
+        "reason": false,
+        "imageVideo": "Image"
+    },
+    {
+        "id": "0a2edc37-fc07-4e1c-b60e-e8bb41f429fd",
+        "name": "Claude-3.7-Sonnet",
+        "component": {
+            "vision": [],
+            "language": [
+                "Claude-3.7-Sonnet"
+            ]
+        },
+        "size": [],
+        "author": [
+            "Anthropic"
+        ],
+        "release": {
+            "year": 2025
+        },
+        "opensource": false,
+        "qa": [
+            "2D"
+        ],
+        "navigation": false,
+        "taskPlanning": false,
+        "website": "https://www.anthropic.com/news/claude-3-7-sonnet",
+        "dimension": [
+            "2D"
+        ],
+        "reason": false,
+        "imageVideo": "Image"
+    },
+    {
+        "id": "22c43973-3616-4219-be27-3470b75c7b30",
+        "name": "SpatialVLM",
+        "component": {
+            "vision": [
+                "ViT"
+            ],
+            "language": [
+                "PaLM-E 12B"
+            ]
+        },
+        "size": [
+            "12B"
+        ],
+        "author": [
+            "Google DeepMind"
+        ],
+        "release": {
+            "year": 2024
+        },
+        "opensource": false,
+        "qa": [
+            "2D"
+        ],
+        "navigation": false,
+        "taskPlanning": false,
+        "website": "https://spatial-vlm.github.io/",
+        "dimension": [
+            "2D"
+        ],
+        "reason": false,
+        "imageVideo": "image/video"
+    },
+    {
+        "id": "69fcf57f-ea05-46fb-93df-dc2c2b9fbaed",
         "name": "PhysVLM",
         "component": {
             "vision": [
@@ -1636,17 +1456,21 @@
         "imageVideo": "image/video"
     },
     {
-        "id": "ec3978aa-c0be-4bfd-abb9-684bfbd45434",
-        "name": "o4-mini",
+        "id": "edb89db0-378c-44cd-92ea-0d5d1d862d9f",
+        "name": "InternVL3-8B",
         "component": {
-            "vision": [],
+            "vision": [
+                "InternViT-300M-448px-V2.5"
+            ],
             "language": [
-                "o4-mini"
+                "Qwen2.5-7B"
             ]
         },
-        "size": [],
+        "size": [
+            "8B"
+        ],
         "author": [
-            "OpenAI"
+            "Shanghai AI Lab & Tsinghua"
         ],
         "release": {
             "year": 2025
@@ -1657,40 +1481,7 @@
         ],
         "navigation": false,
         "taskPlanning": false,
-        "website": "https://openai.com/index/introducing-o3-and-o4-mini/",
-        "dimension": [
-            "2D"
-        ],
-        "reason": false,
-        "imageVideo": "Image"
-    },
-    {
-        "id": "a25c8e9c-3c39-4993-949e-17d9d538fe58",
-        "name": "RoboAnnotatorX",
-        "component": {
-            "vision": [
-                "ViT"
-            ],
-            "language": [
-                "Vicuna-7B"
-            ]
-        },
-        "size": [
-            "7B"
-        ],
-        "author": [
-            "Tianjin University"
-        ],
-        "release": {
-            "year": 2024
-        },
-        "opensource": false,
-        "qa": [
-            "2D"
-        ],
-        "navigation": false,
-        "taskPlanning": false,
-        "website": "https://github.com/LongXinKou/RoboannotatorX",
+        "website": "https://huggingface.co/OpenGVLab/InternVL3-8B",
         "dimension": [
             "2D"
         ],
@@ -1698,21 +1489,21 @@
         "imageVideo": "image/video"
     },
     {
-        "id": "ab7407cb-eea0-475c-8371-19cce293159e",
-        "name": "SpatialCoT",
+        "id": "982272e0-6e35-4ae6-92ba-b6fb1305d452",
+        "name": "InternVL3-14B",
         "component": {
             "vision": [
-                "Vit"
+                "InternViT-300M-448px-V2.5"
             ],
             "language": [
-                "Vicuna-v1.5-13B"
+                "Qwen2.5-14B"
             ]
         },
         "size": [
-            "13B"
+            "14B"
         ],
         "author": [
-            "Huawei Noah’s Ark Lab"
+            "Shanghai AI Lab & Tsinghua"
         ],
         "release": {
             "year": 2025
@@ -1723,48 +1514,15 @@
         ],
         "navigation": false,
         "taskPlanning": false,
-        "website": "https://spatialcot.github.io/",
+        "website": "https://huggingface.co/OpenGVLab/InternVL3-14B",
         "dimension": [
             "2D"
         ],
         "reason": false,
-        "imageVideo": "Image"
+        "imageVideo": "image/video"
     },
     {
-        "id": "55ff76ee-c1cc-4fa3-b53a-4b6b7bc9a13e",
-        "name": "3DMIT",
-        "component": {
-            "vision": [
-                "EPCL, Ulip2 & Uni3D"
-            ],
-            "language": [
-                "Vicuna-7B & LLaVA1.5-7B"
-            ]
-        },
-        "size": [
-            "7B"
-        ],
-        "author": [
-            "Beijing University of Posts and Telecommunications & Beijing Digital Native Digital City Research Center & Peking University & Beihang University & Beijing University of Science and Technology"
-        ],
-        "release": {
-            "year": 2024
-        },
-        "opensource": false,
-        "qa": [
-            "3D"
-        ],
-        "navigation": false,
-        "taskPlanning": false,
-        "website": "https://github.com/staymylove/3DMIT",
-        "dimension": [
-            "3D"
-        ],
-        "reason": false,
-        "imageVideo": "Point Clouds"
-    },
-    {
-        "id": "431015a8-131f-48e4-b253-f2f805103550",
+        "id": "9a85d15c-aa5a-4694-b3ef-80e7c2cc882d",
         "name": "RoboBrain",
         "component": {
             "vision": [
@@ -1797,17 +1555,54 @@
         "imageVideo": "image/video"
     },
     {
-        "id": "e069121d-d0f0-438c-ae9d-c1d1da00e227",
-        "name": "Claude-3.7-Sonnet",
+        "id": "9d1ffe02-e21a-479c-9c97-16a2d797e517",
+        "name": "SpatialBot",
         "component": {
-            "vision": [],
+            "vision": [
+                "SigLIP"
+            ],
             "language": [
-                "Claude-3.7-Sonnet"
+                "Phi-2-3B, Phi-3-4B ,QWen-1.5-4B  and Llama-3-8B"
             ]
         },
-        "size": [],
+        "size": [
+            "3B/4B/8B"
+        ],
         "author": [
-            "Anthropic"
+            " Shanghai Jiao Tong University"
+        ],
+        "release": {
+            "year": 2024
+        },
+        "opensource": false,
+        "qa": [
+            "2D/3D"
+        ],
+        "navigation": false,
+        "taskPlanning": false,
+        "website": "https://github.com/BAAI-DCAI/SpatialBot",
+        "dimension": [
+            "3D"
+        ],
+        "reason": false,
+        "imageVideo": "Image"
+    },
+    {
+        "id": "2197f5f8-688a-4598-9e9b-3f1a16bc6e59",
+        "name": "SpatialCoT",
+        "component": {
+            "vision": [
+                "Vit"
+            ],
+            "language": [
+                "Vicuna-v1.5-13B"
+            ]
+        },
+        "size": [
+            "13B"
+        ],
+        "author": [
+            "Huawei Noah’s Ark Lab"
         ],
         "release": {
             "year": 2025
@@ -1818,7 +1613,7 @@
         ],
         "navigation": false,
         "taskPlanning": false,
-        "website": "https://www.anthropic.com/news/claude-3-7-sonnet",
+        "website": "https://spatialcot.github.io/",
         "dimension": [
             "2D"
         ],
@@ -1826,21 +1621,205 @@
         "imageVideo": "Image"
     },
     {
-        "id": "6128ba4e-3629-4de8-b256-9def9d55c746",
-        "name": "VILA-1.5-13B",
+        "id": "0926c1e7-9c84-4064-a317-f1acb707da8b",
+        "name": "Embodied-FSD",
         "component": {
             "vision": [
-                "SigLIP"
+                "CLIP-ViT-L-336px"
             ],
             "language": [
-                "Qwen2"
+                "Vicuna-13B"
             ]
         },
         "size": [
             "13B"
         ],
         "author": [
-            "NVIDIA"
+            "Tianjin University"
+        ],
+        "release": {
+            "year": 2025
+        },
+        "opensource": false,
+        "qa": [
+            "2D"
+        ],
+        "navigation": false,
+        "taskPlanning": false,
+        "website": "https://github.com/pickxiguapi/Embodied-FSD",
+        "dimension": [
+            "2D"
+        ],
+        "reason": false,
+        "imageVideo": "image/video"
+    },
+    {
+        "id": "bf245e1b-8673-4b9a-95bc-600ef95566fb",
+        "name": "Gemini-2.5-Pro",
+        "component": {
+            "vision": [],
+            "language": [
+                "Gemini-2.5-Pro"
+            ]
+        },
+        "size": [],
+        "author": [
+            "Google DeepMind"
+        ],
+        "release": {
+            "year": 2025
+        },
+        "opensource": false,
+        "qa": [
+            "2D"
+        ],
+        "navigation": false,
+        "taskPlanning": false,
+        "website": "https://ai.google.dev/gemini-api/docs/models",
+        "dimension": [
+            "2D"
+        ],
+        "reason": false,
+        "imageVideo": "image/video"
+    },
+    {
+        "id": "577e4e8b-1e5e-4e4b-b3d8-b75ba091dc88",
+        "name": "3DMIT",
+        "component": {
+            "vision": [
+                "EPCL, Ulip2 & Uni3D"
+            ],
+            "language": [
+                "Vicuna-7B & LLaVA1.5-7B"
+            ]
+        },
+        "size": [
+            "7B"
+        ],
+        "author": [
+            "Beijing University of Posts and Telecommunications & Beijing Digital Native Digital City Research Center & Peking University & Beihang University & Beijing University of Science and Technology"
+        ],
+        "release": {
+            "year": 2024
+        },
+        "opensource": false,
+        "qa": [
+            "3D"
+        ],
+        "navigation": false,
+        "taskPlanning": false,
+        "website": "https://github.com/staymylove/3DMIT",
+        "dimension": [
+            "3D"
+        ],
+        "reason": false,
+        "imageVideo": "Point Clouds"
+    },
+    {
+        "id": "2e9ed10c-7da7-48a9-b2bd-1cbc0278552b",
+        "name": "GPT4Scene",
+        "component": {
+            "vision": [
+                "Qwen2-VL-7B "
+            ],
+            "language": [
+                "Qwen2-VL-7B "
+            ]
+        },
+        "size": [
+            "8B"
+        ],
+        "author": [
+            "The University of Hong Kong & Shanghai AI Lab"
+        ],
+        "release": {
+            "year": 2024
+        },
+        "opensource": false,
+        "qa": [
+            "3D"
+        ],
+        "navigation": false,
+        "taskPlanning": false,
+        "website": "https://github.com/Qi-Zhangyang/gpt4scene",
+        "dimension": [
+            "3D"
+        ],
+        "reason": false,
+        "imageVideo": "Video"
+    },
+    {
+        "id": "c1966527-da69-46a2-8734-02fac6cb6fbe",
+        "name": "3D-Mem",
+        "component": {
+            "vision": [
+                " CLIP"
+            ],
+            "language": [
+                "LLaVA-1.5-7B"
+            ]
+        },
+        "size": [
+            "7B"
+        ],
+        "author": [
+            "UMass Amherst"
+        ],
+        "release": {
+            "year": 2025
+        },
+        "opensource": false,
+        "qa": [
+            "3D"
+        ],
+        "navigation": false,
+        "taskPlanning": false,
+        "website": "https://github.com/UMass-Embodied-AGI/3D-Mem",
+        "dimension": [
+            "3D"
+        ],
+        "reason": false,
+        "imageVideo": "image/video"
+    },
+    {
+        "id": "fe814b7f-29fa-41ba-bf21-28e3119c7dd7",
+        "name": "3D-LLM",
+        "component": {
+            "vision": [],
+            "language": []
+        },
+        "size": [],
+        "author": [],
+        "release": {
+            "year": 2023
+        },
+        "opensource": false,
+        "qa": [
+            "3D"
+        ],
+        "navigation": false,
+        "taskPlanning": false,
+        "website": "https://github.com/UMass-Embodied-AGI/3D-LLM",
+        "dimension": [],
+        "reason": false,
+        "imageVideo": "Point Clouds"
+    },
+    {
+        "id": "3301ab87-f6d3-49bd-9f99-f8ae1510c6ae",
+        "name": "RoboAnnotatorX",
+        "component": {
+            "vision": [
+                "ViT"
+            ],
+            "language": [
+                "Vicuna-7B"
+            ]
+        },
+        "size": [
+            "7B"
+        ],
+        "author": [
+            "Tianjin University"
         ],
         "release": {
             "year": 2024
@@ -1851,11 +1830,32 @@
         ],
         "navigation": false,
         "taskPlanning": false,
-        "website": "https://huggingface.co/Efficient-Large-Model/VILA1.5-13b",
+        "website": "https://github.com/LongXinKou/RoboannotatorX",
         "dimension": [
             "2D"
         ],
         "reason": false,
         "imageVideo": "image/video"
+    },
+    {
+        "id": "e5b752d9-882d-4082-af7f-45d1743139f2",
+        "name": "",
+        "component": {
+            "vision": [],
+            "language": []
+        },
+        "size": [],
+        "author": [],
+        "release": {
+            "year": 0
+        },
+        "opensource": false,
+        "qa": [],
+        "navigation": false,
+        "taskPlanning": false,
+        "website": "",
+        "dimension": [],
+        "reason": false,
+        "imageVideo": ""
     }
 ]
