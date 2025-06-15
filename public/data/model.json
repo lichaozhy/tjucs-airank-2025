@@ -1837,4 +1837,9 @@
         "taskPlanning": false,
         "website": "https://arxiv.org/pdf/2502.14254",
         "dimension": [
- 
+            "3D"
+        ],
+        "reason": false,
+        "imageVideo": "Image"
+    }
+]
