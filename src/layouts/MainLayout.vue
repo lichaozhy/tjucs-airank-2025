@@ -4,7 +4,9 @@
 			class="main-layout"
 			view="lHh Lpr fFf"
 		>
-			<q-header bordered class="justify-center">
+			<q-header
+				class="justify-center"
+			>
 				<q-toolbar>
 					<q-toolbar-title shrink>
 						<router-link
@@ -25,6 +27,7 @@
 					<q-space></q-space>
 
 					<q-btn
+						class="app-navbar-feature-item text-weight-regular"
 						no-caps
 						flat
 						label="Embodied Benchmarks"
@@ -33,17 +36,19 @@
 					></q-btn>
 
 					<q-btn
+						class="app-navbar-feature-item text-weight-regular"
 						no-caps
 						flat
 						stretch
 						:to="{
 							name: 'app.leaderboard.detail',
-							params: { leaderboardId: defaultLeaderboardId } }
-						"
+							params: { leaderboardId: defaultLeaderboardId },
+						}"
 						label="Embodied Rank"
 					></q-btn>
 
 					<q-btn
+						class="app-navbar-feature-item text-weight-regular"
 						no-caps
 						flat
 						stretch
@@ -51,6 +56,7 @@
 					></q-btn>
 
 					<q-btn
+						class="app-navbar-feature-item text-weight-regular"
 						no-caps
 						flat
 						stretch
@@ -61,6 +67,7 @@
 					<q-space></q-space>
 
 					<q-btn
+						class="app-navbar-service-item text-weight-regular"
 						no-caps
 						outline
 						rounded
@@ -68,11 +75,11 @@
 					></q-btn>
 
 					<q-btn
+						class="app-navbar-service-item text-weight-regular q-ml-md"
 						no-caps
 						outline
 						rounded
 						label="Contribute Benchmark"
-						class="q-ml-md"
 					></q-btn>
 				</q-toolbar>
 			</q-header>
@@ -122,5 +129,14 @@ onBeforeMount(async () => {
 <style lang="scss">
 .main-layout {
 	background-image: linear-gradient(to bottom, #f0f4f8, rgba($primary, 0.1));
+}
+
+.app-navbar-feature-item {
+	font-family: Helvetica;
+	font-feature-settings: "clig" 0, "liga" 0;
+}
+
+.app-navbar-service-item {
+	font-family: 'PingFang SC';
 }
 </style>

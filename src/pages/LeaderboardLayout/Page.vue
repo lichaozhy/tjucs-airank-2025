@@ -32,7 +32,7 @@
 						name: 'app.leaderboard.detail',
 						params: { leaderboardId: item.id }
 					}"
-					class="text-h6 text-black text-weight-regular"
+					class="text-h6 text-black text-weight-medieum"
 					style="opacity: .6;"
 					active-class="app-solid-tab"
 				>

@@ -2,12 +2,12 @@
 	<q-card square>
 		<q-item class="card-header justify-between">
 			<q-item-section class="col-shrink">
-				<div class="text-weight-regular text-h6 q-py-sm text-white">{{ summary?.name }}</div>
+				<div class="text-h6 text-weight-600 q-py-sm text-white">{{ summary?.name }}</div>
 			</q-item-section>
 		</q-item>
 
 		<q-table
-			class="my-sticky-column-table fixed-layout-table width-full"
+			class="app-rank-table fixed-layout-table width-full"
 			:rows="rowList"
 			:columns="columnList"
 			hide-pagination
@@ -29,7 +29,7 @@
 						:to="{ name: 'app.model.detail', params: { id: props.row.model.id } }"
 						class="col-shrink text-black"
 					>
-						<div class="text-weight-bold">{{ props.row.model.name }}</div>
+						<div class="text-weight-medium">{{ props.row.model.name }}</div>
 					</router-link>
 				</q-td>
 			</template>

@@ -50,7 +50,7 @@
 				square
 				flat
 				borderd
-				class="my-sticky-column-table fixed-layout-table width-full"
+				class="app-rank-table fixed-layout-table width-full"
 				:rows="scores"
 				:columns="columns"
 				row-key="model.id"

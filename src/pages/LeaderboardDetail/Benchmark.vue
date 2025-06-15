@@ -14,13 +14,13 @@
 					class="col-shrink text-white"
 					size="lg"
 				>
-					<div class="text-weight-regular">{{ benchmark.name }} Benchmark</div>
+					<div class="text-h6 text-weight-600">{{ benchmark.name }} Benchmark</div>
 				</q-btn>
 			</q-item-section>
 		</q-item>
 
 		<q-table
-			class="my-sticky-column-table fixed-layout-table width-full"
+			class="app-rank-table fixed-layout-table width-full"
 			:rows="rowList"
 			:columns="columnList"
 			hide-pagination
@@ -42,7 +42,7 @@
 						:to="{ name: 'app.model.detail', params: { id: props.row.model.id } }"
 						class="col-shrink text-black"
 					>
-						<div class="text-weight-bold">{{ props.row.model.name }}</div>
+						<div class="text-weight-medium">{{ props.row.model.name }}</div>
 					</router-link>
 				</q-td>
 			</template>
