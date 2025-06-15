@@ -76,7 +76,7 @@
             ]
         },
         "size": [
-            "3B"
+            3
         ],
         "author": [
             "Alibaba"
@@ -114,14 +114,14 @@
         "name": "EmbodiedGPT",
         "component": {
             "vision": [
-                " ViT-G/14"
+                "ViT-G/14"
             ],
             "language": [
-                " LLaMA-7B"
+                "LLaMA-7B"
             ]
         },
         "size": [
-            "7B"
+            7
         ],
         "author": [
             "The University of Hong Kong"
@@ -307,7 +307,7 @@
             ]
         },
         "size": [
-            "72B"
+            72
         ],
         "author": [
             "ByteDance"
@@ -356,7 +356,7 @@
             ]
         },
         "size": [
-            "7B"
+            7
         ],
         "author": [
             "ByteDance"
@@ -389,7 +389,7 @@
             ]
         },
         "size": [
-            "40B"
+            40
         ],
         "author": [
             "NVIDIA"
@@ -483,7 +483,7 @@
             ]
         },
         "size": [
-            "72B"
+            72
         ],
         "author": [
             "Alibaba"
@@ -630,7 +630,7 @@
             ]
         },
         "size": [
-            "7B"
+            7
         ],
         "author": [
             "Alibaba"
@@ -802,7 +802,7 @@
             ]
         },
         "size": [
-            "7B"
+            7
         ],
         "author": [
             "The University of Hong Kong & Shanghai AI Lab"
@@ -922,7 +922,7 @@
             ]
         },
         "size": [
-            "1B"
+            1
         ],
         "author": [
             "Shanghai AI Lab & Zhejiang University & The Chinese University of Hong Kong"
@@ -1011,7 +1011,7 @@
             ]
         },
         "size": [
-            "7B"
+            7
         ],
         "author": [
             "Peking University"
@@ -1044,7 +1044,7 @@
             ]
         },
         "size": [
-            "7B"
+            7
         ],
         "author": [
             "Peking University"
@@ -1085,7 +1085,7 @@
             ]
         },
         "size": [
-            "13B"
+            13
         ],
         "author": [
             "University of Washington"
@@ -1107,7 +1107,7 @@
         "imageVideo": "Image"
     },
     {
-        "id": "20aa28c6-d9f4-4419-9d50-35c61794eb34",
+        "id": "5c4c504e-f1a9-4e12-8c3a-845deb57f5b7",
         "name": "o4-mini",
         "component": {
             "vision": [],
@@ -1136,7 +1136,7 @@
         "imageVideo": "Image"
     },
     {
-        "id": "20ef6ed3-e9f8-4c78-bd01-638106dfc73f",
+        "id": "f534f505-7eda-4cc1-831c-4415723d8af9",
         "name": "Gemini-2.5-Pro",
         "component": {
             "vision": [],
@@ -1165,7 +1165,7 @@
         "imageVideo": "image/video"
     },
     {
-        "id": "9afc0f18-1690-470c-928b-dbe0e614d248",
+        "id": "f472369f-8477-4a88-9472-5f916895e7f2",
         "name": "Claude-3.7-Sonnet",
         "component": {
             "vision": [],
@@ -1194,7 +1194,7 @@
         "imageVideo": "Image"
     },
     {
-        "id": "24d31329-2bdf-4eef-9220-abac740153df",
+        "id": "6f629a8d-3dcb-431c-8918-27471740475b",
         "name": "Seed1.5-VL",
         "component": {
             "vision": [],
@@ -1223,7 +1223,7 @@
         "imageVideo": "image/video"
     },
     {
-        "id": "486cdae6-5206-4a51-b3df-2e1c22927c43",
+        "id": "376f7e5a-811e-4494-9e31-4e34c8539aa3",
         "name": "InternVL3-8B",
         "component": {
             "vision": [
@@ -1234,7 +1234,7 @@
             ]
         },
         "size": [
-            "8B"
+            8
         ],
         "author": [
             "Shanghai AI Lab & Tsinghua"
@@ -1256,7 +1256,7 @@
         "imageVideo": "image/video"
     },
     {
-        "id": "f1383efc-fc30-4e54-a30c-02d4ee731cd1",
+        "id": "1b87db3c-30a2-46ea-abb8-eee149f7fc15",
         "name": "InternVL3-14B",
         "component": {
             "vision": [
@@ -1267,7 +1267,7 @@
             ]
         },
         "size": [
-            "14B"
+            14
         ],
         "author": [
             "Shanghai AI Lab & Tsinghua"
@@ -1289,7 +1289,7 @@
         "imageVideo": "image/video"
     },
     {
-        "id": "518b469d-bb51-44be-9e59-eae55efb5d75",
+        "id": "ce132939-c79d-4874-972d-582416258446",
         "name": "InternVL3-38B",
         "component": {
             "vision": [
@@ -1300,7 +1300,7 @@
             ]
         },
         "size": [
-            "38B"
+            38
         ],
         "author": [
             "Shanghai AI Lab & Tsinghua"
@@ -1322,7 +1322,7 @@
         "imageVideo": "image/video"
     },
     {
-        "id": "74612736-f92c-4e07-9df0-3ec9b5021047",
+        "id": "b74af493-b816-48c8-a2eb-1edbc9b3c8b8",
         "name": "InternVL3-78B",
         "component": {
             "vision": [
@@ -1333,7 +1333,7 @@
             ]
         },
         "size": [
-            "78B"
+            78
         ],
         "author": [
             "Shanghai AI Lab & Tsinghua"
@@ -1355,7 +1355,7 @@
         "imageVideo": "image/video"
     },
     {
-        "id": "b06bcb87-c4e7-4c2d-bf9d-f620add4c9d3",
+        "id": "1c3c9e25-b132-41ad-b5bc-6d89ade84f86",
         "name": "VILA-1.5-13B",
         "component": {
             "vision": [
@@ -1366,7 +1366,7 @@
             ]
         },
         "size": [
-            "13B"
+            13
         ],
         "author": [
             "NVIDIA"
@@ -1388,7 +1388,7 @@
         "imageVideo": "image/video"
     },
     {
-        "id": "07bd6303-a839-4a15-ab3f-672ce61702ee",
+        "id": "08a2962f-6d62-4324-ac71-7b304240817a",
         "name": "Video-3D LLM",
         "component": {
             "vision": [
@@ -1399,7 +1399,7 @@
             ]
         },
         "size": [
-            "8B"
+            8
         ],
         "author": [
             "The Chinese University of Hong Kong"
@@ -1421,18 +1421,18 @@
         "imageVideo": "Video"
     },
     {
-        "id": "f01857df-cdaa-4c78-8de1-873915dce9ad",
+        "id": "3fc9c6c4-8090-44ee-a48f-389abfe71945",
         "name": "GPT4Scene",
         "component": {
             "vision": [
-                "Qwen2-VL-7B "
+                "Qwen2-VL-7B"
             ],
             "language": [
-                "Qwen2-VL-7B "
+                "Qwen2-VL-7B"
             ]
         },
         "size": [
-            "8B"
+            8
         ],
         "author": [
             "The University of Hong Kong & Shanghai AI Lab"
@@ -1454,7 +1454,7 @@
         "imageVideo": "Video"
     },
     {
-        "id": "48266d49-85eb-4351-98dd-d5a6c755831d",
+        "id": "46ccfa91-9a09-4bca-ab96-2b66a5b8becc",
         "name": "3DMIT",
         "component": {
             "vision": [
@@ -1465,7 +1465,7 @@
             ]
         },
         "size": [
-            "7B"
+            7
         ],
         "author": [
             "Beijing University of Posts and Telecommunications & Beijing Digital Native Digital City Research Center & Peking University & Beihang University & Beijing University of Science and Technology"
@@ -1487,7 +1487,7 @@
         "imageVideo": "Point Clouds"
     },
     {
-        "id": "1cb5a7c6-6759-4f8e-91d4-c8f3c601ffe2",
+        "id": "88eb7e53-4d71-4edc-b0fc-1d3919e15817",
         "name": "3D-LLM",
         "component": {
             "vision": [],
@@ -1510,7 +1510,7 @@
         "imageVideo": "Point Clouds"
     },
     {
-        "id": "fb6987a1-e6ea-44ee-a403-80cd57e2f2e8",
+        "id": "e744ea5b-a1ed-4791-aa9f-bdcecbc3ccb2",
         "name": "PhysVLM",
         "component": {
             "vision": [
@@ -1521,17 +1521,18 @@
             ]
         },
         "size": [
-            "3B"
+            3
         ],
         "author": [
-            " Beijing Jiaotong University"
+            "Beijing Jiaotong University"
         ],
         "release": {
             "year": 2025
         },
         "opensource": false,
         "qa": [
-            "2D/3D"
+            "2D",
+            "3D"
         ],
         "navigation": false,
         "taskPlanning": false,
@@ -1543,21 +1544,21 @@
         "imageVideo": "image/video"
     },
     {
-        "id": "0c80aa5f-dd5a-413b-96c1-026679290641",
+        "id": "cf7b9a53-4d72-42f7-8655-0cd5451afb96",
         "name": "RoboBrain",
         "component": {
             "vision": [
                 "SigLIP"
             ],
             "language": [
-                " Qwen2.5-7B-Instruct"
+                "Qwen2.5-7B-Instruct"
             ]
         },
         "size": [
-            "7B"
+            7
         ],
         "author": [
-            " Peking University"
+            "Peking University"
         ],
         "release": {
             "year": 2025
@@ -1576,7 +1577,7 @@
         "imageVideo": "image/video"
     },
     {
-        "id": "cf030bb1-47d8-4599-bf2b-5bdb96a3a525",
+        "id": "2d7ad557-4750-492e-a01e-8929676abd73",
         "name": "RoboAnnotatorX",
         "component": {
             "vision": [
@@ -1587,7 +1588,7 @@
             ]
         },
         "size": [
-            "7B"
+            7
         ],
         "author": [
             "Tianjin University"
@@ -1609,7 +1610,7 @@
         "imageVideo": "image/video"
     },
     {
-        "id": "c5fb141f-e3c3-4a0f-84aa-0326f3559eed",
+        "id": "cd9daae5-2ded-4910-b10d-dadf5725fef6",
         "name": "Embodied-FSD",
         "component": {
             "vision": [
@@ -1620,7 +1621,7 @@
             ]
         },
         "size": [
-            "13B"
+            13
         ],
         "author": [
             "Tianjin University"
@@ -1642,7 +1643,7 @@
         "imageVideo": "image/video"
     },
     {
-        "id": "4f46e70b-434b-41ff-9969-c1685754e3fd",
+        "id": "cbeda8e7-6eb6-4802-9128-eb09dc6aaaa4",
         "name": "SAT",
         "component": {
             "vision": [
@@ -1653,7 +1654,8 @@
             ]
         },
         "size": [
-            "7B/13B"
+            7,
+            13
         ],
         "author": [
             "Boston University"
@@ -1675,7 +1677,7 @@
         "imageVideo": "image/video"
     },
     {
-        "id": "477feb93-a1c4-488b-b3e1-ee089f37707d",
+        "id": "ab88a7ef-0ea4-4294-9a49-41e169371628",
         "name": "SpatialBot",
         "component": {
             "vision": [
@@ -1686,17 +1688,20 @@
             ]
         },
         "size": [
-            "3B/4B/8B"
+            3,
+            4,
+            8
         ],
         "author": [
-            " Shanghai Jiao Tong University"
+            "Shanghai Jiao Tong University"
         ],
         "release": {
             "year": 2024
         },
         "opensource": false,
         "qa": [
-            "2D/3D"
+            "2D",
+            "3D"
         ],
         "navigation": false,
         "taskPlanning": false,
@@ -1708,7 +1713,7 @@
         "imageVideo": "Image"
     },
     {
-        "id": "605e43f7-053e-4f13-aea0-ff5740b9ab52",
+        "id": "e6bc078c-741c-46d8-9ff4-c1441cfe8e0c",
         "name": "SpatialVLM",
         "component": {
             "vision": [
@@ -1719,7 +1724,7 @@
             ]
         },
         "size": [
-            "12B"
+            12
         ],
         "author": [
             "Google DeepMind"
@@ -1741,7 +1746,7 @@
         "imageVideo": "image/video"
     },
     {
-        "id": "84b1d01b-61b8-4c9a-b0ee-d1df69b175b6",
+        "id": "a9666a6f-8752-4b61-b5ef-4a389547be34",
         "name": "SpatialCoT",
         "component": {
             "vision": [
@@ -1752,7 +1757,7 @@
             ]
         },
         "size": [
-            "13B"
+            13
         ],
         "author": [
             "Huawei Noah’s Ark Lab"
@@ -1774,18 +1779,18 @@
         "imageVideo": "Image"
     },
     {
-        "id": "85413b6d-eccd-4293-a516-a77be371407e",
+        "id": "8024983e-d058-41db-8349-87c12832a0c3",
         "name": "3D-Mem",
         "component": {
             "vision": [
-                " CLIP"
+                "CLIP"
             ],
             "language": [
                 "LLaVA-1.5-7B"
             ]
         },
         "size": [
-            "7B"
+            7
         ],
         "author": [
             "UMass Amherst"
@@ -1807,7 +1812,7 @@
         "imageVideo": "image/video"
     },
     {
-        "id": "3ae7fb91-1690-422e-81f8-3ed8dea70ef1",
+        "id": "d2c9db3d-11a2-4eba-aa66-f6fc18857700",
         "name": "Mem2Ego",
         "component": {
             "vision": [],
@@ -1816,7 +1821,7 @@
             ]
         },
         "size": [
-            "11B"
+            11
         ],
         "author": [
             "Huawei Noah’s Ark Lab"
@@ -1832,9 +1837,4 @@
         "taskPlanning": false,
         "website": "https://arxiv.org/pdf/2502.14254",
         "dimension": [
-            "3D"
-        ],
-        "reason": false,
-        "imageVideo": "Image"
-    }
-]
+ 
