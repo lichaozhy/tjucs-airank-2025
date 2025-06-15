@@ -13,11 +13,10 @@
 							:to="{ name: 'app.home' }"
 							custom
 							v-slot="{ navigate }"
+							style="cursor: pointer; color: white;font-size: 25px;"
 						>
 							<div
 								@click="navigate"
-								class="text-h6"
-								style="cursor: pointer; color: white"
 							>
 								{{ $t('spec.project.name') }}
 							</div>
@@ -33,6 +32,7 @@
 						label="Embodied Benchmarks"
 						:to="{ name: 'app.benchmark' }"
 						stretch
+						:class="{ active: routeMatched('app.benchmark') }"
 					></q-btn>
 
 					<q-btn
@@ -45,6 +45,7 @@
 							params: { leaderboardId: defaultLeaderboardId },
 						}"
 						label="Embodied Rank"
+						:class="{ active: routeMatched('app.leaderboard') }"
 					></q-btn>
 
 					<q-btn
@@ -53,6 +54,7 @@
 						flat
 						stretch
 						label="Embodied Leaderboard Rules"
+						:class="{ active: routeMatched('app.rule') }"
 					></q-btn>
 
 					<q-btn
@@ -111,11 +113,16 @@
 
 <script setup lang="ts">
 import { onBeforeMount, ref } from 'vue';
+import { useRoute } from 'vue-router';
+
 import * as Backend from 'src/backend';
 
-defineOptions({ name: 'AppMainLayout' });
-
+const route = useRoute();
 const defaultLeaderboardId = ref<string | null>(null);
+
+function routeMatched(name: string) {
+	return route.matched.some(route => route.name === name);
+}
 
 onBeforeMount(async () => {
 	const Configuration = await Backend.API.Configuration.get();
@@ -124,6 +131,8 @@ onBeforeMount(async () => {
 		defaultLeaderboardId.value = Configuration.DEFAULT_LEADERBOARD;
 	}
 });
+
+defineOptions({ name: 'AppMainLayout' });
 </script>
 
 <style lang="scss">
@@ -134,9 +143,16 @@ onBeforeMount(async () => {
 .app-navbar-feature-item {
 	font-family: Helvetica;
 	font-feature-settings: "clig" 0, "liga" 0;
+	font-weight: 400;
+	font-size: 16px;
+
+	&.active {
+		font-weight: 600;
+	}
 }
 
 .app-navbar-service-item {
 	font-family: 'PingFang SC';
+	font-weight: 400;
 }
 </style>
