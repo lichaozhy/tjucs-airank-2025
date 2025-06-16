@@ -6,4 +6,4 @@ export const Schema = z.object({
 	component: z.record(z.enum(['vision', 'language']), z.string().nullable()),
 });
 
-export type Type = z.infer<typeof Schema>
+export type Type = z.infer<typeof Schema>;

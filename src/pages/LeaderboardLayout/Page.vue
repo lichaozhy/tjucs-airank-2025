@@ -22,7 +22,7 @@
 				no-caps
 				dense
 				class="q-my-lg"
-				style="margin-top: 220px;"
+				style="margin-top: 220px"
 			>
 				<q-route-tab
 					v-for="item in leaderboardList"
@@ -30,10 +30,10 @@
 					:name="item.id"
 					:to="{
 						name: 'app.leaderboard.detail',
-						params: { leaderboardId: item.id }
+						params: { leaderboardId: item.id },
 					}"
 					class="text-h6 text-black text-weight-medieum"
-					style="opacity: .6;"
+					style="opacity: 0.6"
 					active-class="app-solid-tab"
 				>
 					<div class="row">
@@ -52,7 +52,10 @@
 									:key="summary.id"
 									clickable
 								>
-									<q-item-section side top>
+									<q-item-section
+										side
+										top
+									>
 										<q-checkbox v-model="selectedSummary[summary.id]" />
 									</q-item-section>
 									<q-item-section>
@@ -67,7 +70,10 @@
 									:key="benchmark.id"
 									clickable
 								>
-									<q-item-section side top>
+									<q-item-section
+										side
+										top
+									>
 										<q-checkbox v-model="selectedBenchmark[benchmark.id]" />
 									</q-item-section>
 									<q-item-section>
@@ -75,7 +81,7 @@
 									</q-item-section>
 								</q-item>
 							</q-list>
-					</q-btn-dropdown>
+						</q-btn-dropdown>
 					</div>
 				</q-route-tab>
 			</q-tabs>

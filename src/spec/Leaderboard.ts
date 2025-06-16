@@ -25,5 +25,5 @@ export const Schema = z.object({
 	summaries: z.array(Summary),
 });
 
-export type Type = z.infer<typeof Schema>
+export type Type = z.infer<typeof Schema>;
 export type Summary = z.infer<typeof Summary>;

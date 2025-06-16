@@ -44,7 +44,7 @@
 							name: 'app.leaderboard.rank',
 							params: {
 								leaderboardId: score.leaderboard,
-								benchmarkId: score.benchmark
+								benchmarkId: score.benchmark,
 							},
 						}"
 					>
@@ -68,20 +68,20 @@ import { useRoute } from 'vue-router';
 import { API } from 'src/backend';
 
 interface Model {
-	id: string
-	name: string
+	id: string;
+	name: string;
 	component: {
-		vision: string | null
-		language: string | null
-	}
+		vision: string | null;
+		language: string | null;
+	};
 }
 
 interface Score {
-	leaderboard: string
-	benchmark: string
-	model: string
-	total: number
-	items: Array<number | null>
+	leaderboard: string;
+	benchmark: string;
+	model: string;
+	total: number;
+	items: Array<number | null>;
 }
 
 const model = ref<Model | null>(null);

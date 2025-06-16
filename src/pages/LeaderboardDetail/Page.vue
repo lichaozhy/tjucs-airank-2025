@@ -59,8 +59,7 @@ const filterdSummaryList = computed(() => {
 		return [];
 	}
 
-	return leaderboard.value!.summaries
-		.filter(summary => selectedSummary[summary.id]);
+	return leaderboard.value!.summaries.filter((summary) => selectedSummary[summary.id]);
 });
 
 const filteredBenchmarkList = computed(() => {
@@ -68,8 +67,7 @@ const filteredBenchmarkList = computed(() => {
 		return [];
 	}
 
-	return benchmarkList.value
-		.filter(benchmark => selectedBenchmark[benchmark.id]);
+	return benchmarkList.value.filter((benchmark) => selectedBenchmark[benchmark.id]);
 });
 
 onBeforeMount(async () => {

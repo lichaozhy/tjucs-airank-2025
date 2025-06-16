@@ -9,7 +9,7 @@ released:
     year: 2023
     month: 1
     date: 30
-Github:  https://github.com/SilongYong/SQA3D
+Github: https://github.com/SilongYong/SQA3D
 Hugging face: null
 Project: https://sqa3d.github.io/
 default:
@@ -38,6 +38,7 @@ A new benchmark for embodied scene understanding, aiming at bridging the gap bet
 SQA3D imposes a significant challenge to current multi-modal especially 3D reasoning models. We evaluate various state-of-the-art approaches and find that the best one only achieves an overall score of 47.20%, while amateur human participants can reach 90.06%.
 
 ## Citation
+
 ```
 @inproceedings{ma2022sqa3d,
     title={SQA3D: Situated Question Answering in 3D Scenes},

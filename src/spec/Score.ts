@@ -8,4 +8,4 @@ export const Schema = z.object({
 	items: z.array(z.number().nullable()),
 });
 
-export type Type = z.infer<typeof Schema>
+export type Type = z.infer<typeof Schema>;

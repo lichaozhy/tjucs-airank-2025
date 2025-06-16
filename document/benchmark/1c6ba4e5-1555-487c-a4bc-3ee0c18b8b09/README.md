@@ -22,7 +22,6 @@ properties:
     unit: null
 ---
 
-
 ## Benchmark Introduction
 
 ![alt text](assets/1-1.png)

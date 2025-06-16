@@ -4,20 +4,16 @@
 			class="main-layout"
 			view="lHh Lpr fFf"
 		>
-			<q-header
-				class="justify-center"
-			>
+			<q-header class="justify-center">
 				<q-toolbar>
 					<q-toolbar-title shrink>
 						<router-link
 							:to="{ name: 'app.home' }"
 							custom
 							v-slot="{ navigate }"
-							style="cursor: pointer; color: white;font-size: 25px;"
+							style="cursor: pointer; color: white; font-size: 25px"
 						>
-							<div
-								@click="navigate"
-							>
+							<div @click="navigate">
 								{{ $t('spec.project.name') }}
 							</div>
 						</router-link>
@@ -121,7 +117,7 @@ const route = useRoute();
 const defaultLeaderboardId = ref<string | null>(null);
 
 function routeMatched(name: string) {
-	return route.matched.some(route => route.name === name);
+	return route.matched.some((route) => route.name === name);
 }
 
 onBeforeMount(async () => {
@@ -142,7 +138,9 @@ defineOptions({ name: 'AppMainLayout' });
 
 .app-navbar-feature-item {
 	font-family: Helvetica;
-	font-feature-settings: "clig" 0, "liga" 0;
+	font-feature-settings:
+		'clig' 0,
+		'liga' 0;
 	font-weight: 400;
 	font-size: 16px;
 

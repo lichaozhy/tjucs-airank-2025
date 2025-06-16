@@ -92,8 +92,8 @@ import type * as Spec from 'src/spec';
 import { API } from 'src/backend';
 
 interface ScoreRow {
-	model: Spec.Model.Type
-	[key: `prop_${number}`]: number
+	model: Spec.Model.Type;
+	[key: `prop_${number}`]: number;
 }
 
 const route = useRoute();

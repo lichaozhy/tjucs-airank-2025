@@ -12,7 +12,9 @@
 		<div
 			class="absolute text-caption"
 			:style="{ top }"
-		>{{ props.order }}</div>
+		>
+			{{ props.order }}
+		</div>
 	</q-avatar>
 </template>
 

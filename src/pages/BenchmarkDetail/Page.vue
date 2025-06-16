@@ -50,8 +50,8 @@
 				</div>
 				<div class="col-4">
 					<q-card
-					square
-					flat
+						square
+						flat
 					>
 						<q-card-section class="q-py-none bg-secondary text-white">
 							<div class="text-h6 text-weight-regular">Property List</div>
@@ -60,7 +60,10 @@
 
 						<q-list>
 							<q-item clickable>
-								<q-item-section avatar style="min-width: 40px;">
+								<q-item-section
+									avatar
+									style="min-width: 40px"
+								>
 									<q-icon name="publish" />
 								</q-item-section>
 								<q-item-section>
@@ -70,7 +73,10 @@
 							</q-item>
 
 							<q-item clickable>
-								<q-item-section avatar style="min-width: 40px;">
+								<q-item-section
+									avatar
+									style="min-width: 40px"
+								>
 									<q-icon name="domain" />
 								</q-item-section>
 								<q-item-section>
@@ -177,9 +183,7 @@ const information = computed<InformationData>(() => {
 	};
 
 	if (benchmark.value !== null) {
-		const {
-			reference, organization, repository, released, website,
-		} = benchmark.value;
+		const { reference, organization, repository, released, website } = benchmark.value;
 
 		if (reference !== undefined) {
 			data.reference = reference;

@@ -73,6 +73,7 @@ To capture progress in embodied reasoning for VLMs, we introduce ERQA, short for
 ERQA also provide an example of a lightweight evaluation harness for querying multimodal APIs (Gemini 2.0 and OpenAI) with examples loaded from the ERQA benchmark.
 
 ## Citation
+
 ```
 @misc{geminiroboticsteam2025geminiroboticsbringingai,
       title={Gemini Robotics: Bringing AI into the Physical World},
