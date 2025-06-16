@@ -5,7 +5,9 @@
 			class="title column justify-center items-center full-width"
 			style="height: 230px"
 		>
-			<div class="text-h2 text-weight-light">{{ $t('p.benchmark.banner.title') }}</div>
+			<div class="text-h2 text-weight-light">
+				{{ $t('p.benchmark.banner.title') }}
+			</div>
 			<div class="text-subtitle1 q-mt-md text-weight-light">
 				{{ $t('p.benchmark.banner.description') }}
 			</div>
@@ -74,7 +76,9 @@ onBeforeMount(async () => {
 });
 
 const propsOptions = computed(() => {
-	const benchmarkPropList = benchmarkList.value.map((b) => Object.entries(b.properties)).flat();
+	const benchmarkPropList = benchmarkList.value
+		.map((b) => Object.entries(b.properties))
+		.flat();
 
 	const propsGroup = Object.groupBy(benchmarkPropList, ([name]) => name);
 
@@ -95,7 +99,8 @@ const propsOptions = computed(() => {
 });
 
 const filteredBenchmarkList = computed(() => {
-	if (!nameFilter.value && propsFilter.value === 'all') return benchmarkList.value;
+	if (!nameFilter.value && propsFilter.value === 'all')
+		return benchmarkList.value;
 	return benchmarkList.value.filter((b) => {
 		return (
 			b.name.toLowerCase().includes(nameFilter.value.toLowerCase()) &&

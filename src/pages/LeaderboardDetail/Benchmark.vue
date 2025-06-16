@@ -14,7 +14,9 @@
 					class="col-shrink text-white"
 					size="lg"
 				>
-					<div class="text-h6 text-weight-600">{{ benchmark.name }} Benchmark</div>
+					<div class="text-h6 text-weight-600">
+						{{ benchmark.name }} Benchmark
+					</div>
 				</q-btn>
 			</q-item-section>
 		</q-item>
@@ -39,7 +41,10 @@
 				<q-td :props="props">
 					<router-link
 						style="text-decoration: none"
-						:to="{ name: 'app.model.detail', params: { id: props.row.model.id } }"
+						:to="{
+							name: 'app.model.detail',
+							params: { id: props.row.model.id },
+						}"
 						class="col-shrink text-black"
 					>
 						<div class="text-weight-medium">{{ props.row.model.name }}</div>
@@ -52,7 +57,9 @@
 				:key="property.index"
 				#[`body-cell-item-${property.index}`]="props"
 			>
-				<q-td :props="props">{{ toNoneOrFixed(props.row[`property:${property.index}`]) }}</q-td>
+				<q-td :props="props">{{
+					toNoneOrFixed(props.row[`property:${property.index}`])
+				}}</q-td>
 			</template>
 		</q-table>
 	</q-card>

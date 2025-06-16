@@ -41,7 +41,7 @@
 
 <script setup lang="ts">
 import PJS from 'particles.js-es';
-import { onBeforeMount, onDeactivated, onMounted, ref } from 'vue';
+import { onBeforeMount, onBeforeUnmount, onMounted, ref } from 'vue';
 
 import options from './particlesjs-config.json';
 import * as Backend from 'src/backend';
@@ -70,7 +70,7 @@ onMounted(() => {
 	PJS.init('particles-js', options);
 });
 
-onDeactivated(() => {
+onBeforeUnmount(() => {
 	PJS.destroy('particles-js');
 });
 

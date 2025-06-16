@@ -24,7 +24,9 @@
 				class="full-width q-mt-md"
 			>
 				<q-card-section>
-					<div class="text-h4 text-weight-light q-mb-sm">{{ benchmark?.name }}</div>
+					<div class="text-h4 text-weight-light q-mb-sm">
+						{{ benchmark?.name }}
+					</div>
 				</q-card-section>
 				<q-separator inset />
 				<q-card-section>{{ benchmark?.description }}</q-card-section>
@@ -67,8 +69,12 @@
 									<q-icon name="publish" />
 								</q-item-section>
 								<q-item-section>
-									<q-item-label class="text-weight-bold">Released At</q-item-label>
-									<q-item-label caption>{{ information.releasedAt || '-' }}</q-item-label>
+									<q-item-label class="text-weight-bold"
+										>Released At</q-item-label
+									>
+									<q-item-label caption>{{
+										information.releasedAt || '-'
+									}}</q-item-label>
 								</q-item-section>
 							</q-item>
 
@@ -80,15 +86,23 @@
 									<q-icon name="domain" />
 								</q-item-section>
 								<q-item-section>
-									<q-item-label class="text-weight-bold">Organization</q-item-label>
-									<q-item-label caption>{{ information.organization || '-' }}</q-item-label>
+									<q-item-label class="text-weight-bold"
+										>Organization</q-item-label
+									>
+									<q-item-label caption>{{
+										information.organization || '-'
+									}}</q-item-label>
 								</q-item-section>
 							</q-item>
 
 							<q-item clickable>
 								<q-item-section>
-									<q-item-label class="text-weight-bold">Reference</q-item-label>
-									<q-item-label caption>{{ information.reference || '-' }}</q-item-label>
+									<q-item-label class="text-weight-bold"
+										>Reference</q-item-label
+									>
+									<q-item-label caption>{{
+										information.reference || '-'
+									}}</q-item-label>
 								</q-item-section>
 								<q-item-section avatar>
 									<q-btn
@@ -105,8 +119,12 @@
 
 							<q-item clickable>
 								<q-item-section>
-									<q-item-label class="text-weight-bold">Repository</q-item-label>
-									<q-item-label caption>{{ information.repository || '-' }}</q-item-label>
+									<q-item-label class="text-weight-bold"
+										>Repository</q-item-label
+									>
+									<q-item-label caption>{{
+										information.repository || '-'
+									}}</q-item-label>
 								</q-item-section>
 								<q-item-section avatar>
 									<q-btn
@@ -124,7 +142,9 @@
 							<q-item clickable>
 								<q-item-section>
 									<q-item-label class="text-weight-bold">Website</q-item-label>
-									<q-item-label caption>{{ information.repository || '-' }}</q-item-label>
+									<q-item-label caption>{{
+										information.repository || '-'
+									}}</q-item-label>
 								</q-item-section>
 								<q-item-section avatar>
 									<q-btn
@@ -183,7 +203,8 @@ const information = computed<InformationData>(() => {
 	};
 
 	if (benchmark.value !== null) {
-		const { reference, organization, repository, released, website } = benchmark.value;
+		const { reference, organization, repository, released, website } =
+			benchmark.value;
 
 		if (reference !== undefined) {
 			data.reference = reference;
@@ -202,7 +223,10 @@ const information = computed<InformationData>(() => {
 				const { year, month, date } = released.at;
 				const at = new Date(year, month - 1, date === null ? 1 : date);
 
-				data.releasedAt = Q.date.formatDate(at, date === null ? MASK.YM : MASK.YMD);
+				data.releasedAt = Q.date.formatDate(
+					at,
+					date === null ? MASK.YM : MASK.YMD,
+				);
 			}
 		}
 

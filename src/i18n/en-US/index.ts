@@ -15,13 +15,15 @@ export default {
 		leaderboard: {
 			banner: {
 				title: 'Embodied Arena Ranking',
-				description: 'Comprehensive Evaluation Arena for Embodied AI Benchmarks & Models',
+				description:
+					'Comprehensive Evaluation Arena for Embodied AI Benchmarks & Models',
 			},
 		},
 		benchmark: {
 			banner: {
 				title: 'Benchmark Hub',
-				description: 'Comprehensive Benchmarking Foundation Models for Embodied Intelligence',
+				description:
+					'Comprehensive Benchmarking Foundation Models for Embodied Intelligence',
 			},
 		},
 	},

@@ -181,7 +181,8 @@ $link-hover: #e74c3c;
 	}
 
 	code {
-		font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+		font-family:
+			'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
 		background-color: rgba($code-bg, 0.7);
 		padding: 0.2em 0.4em;
 		border-radius: 4px;
@@ -273,7 +274,12 @@ $link-hover: #e74c3c;
 	hr {
 		border: none;
 		height: 1px;
-		background: linear-gradient(to right, transparent, $border-color, transparent);
+		background: linear-gradient(
+			to right,
+			transparent,
+			$border-color,
+			transparent
+		);
 		margin: 2.5em 0;
 	}
 

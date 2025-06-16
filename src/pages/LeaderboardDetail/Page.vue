@@ -43,11 +43,15 @@ const LeaderboardAPI = Backend.API.Leaderboard(leaderboardId);
 const leaderboard = ref<Spec.Leaderboard.Type | null>(null);
 const benchmarkList = ref<Array<Spec.Benchmark.Type>>([]);
 
-const selectedBenchmark = inject(Spec.INJECTION_KEY.LEADERBOARD_BENCHMARK_SELECTED);
+const selectedBenchmark = inject(
+	Spec.INJECTION_KEY.LEADERBOARD_BENCHMARK_SELECTED,
+);
 const selectedSummary = inject(Spec.INJECTION_KEY.LEADERBOARD_SUMMARY_SELECTED);
 
 if (selectedBenchmark === undefined || selectedSummary === undefined) {
-	throw new Error('AppLeaderboardDetailPage MUST be in AppLeaderboardLayoutPage');
+	throw new Error(
+		'AppLeaderboardDetailPage MUST be in AppLeaderboardLayoutPage',
+	);
 }
 
 const isReady = computed(() => {
@@ -59,7 +63,9 @@ const filterdSummaryList = computed(() => {
 		return [];
 	}
 
-	return leaderboard.value!.summaries.filter((summary) => selectedSummary[summary.id]);
+	return leaderboard.value!.summaries.filter(
+		(summary) => selectedSummary[summary.id],
+	);
 });
 
 const filteredBenchmarkList = computed(() => {
@@ -67,7 +73,9 @@ const filteredBenchmarkList = computed(() => {
 		return [];
 	}
 
-	return benchmarkList.value.filter((benchmark) => selectedBenchmark[benchmark.id]);
+	return benchmarkList.value.filter(
+		(benchmark) => selectedBenchmark[benchmark.id],
+	);
 });
 
 onBeforeMount(async () => {

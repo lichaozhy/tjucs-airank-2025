@@ -2,7 +2,9 @@
 	<q-card square>
 		<q-item class="card-header justify-between">
 			<q-item-section class="col-shrink">
-				<div class="text-h6 text-weight-600 q-py-sm text-white">{{ summary?.name }}</div>
+				<div class="text-h6 text-weight-600 q-py-sm text-white">
+					{{ summary?.name }}
+				</div>
 			</q-item-section>
 		</q-item>
 
@@ -26,7 +28,10 @@
 				<q-td :props="props">
 					<router-link
 						style="text-decoration: none"
-						:to="{ name: 'app.model.detail', params: { id: props.row.model.id } }"
+						:to="{
+							name: 'app.model.detail',
+							params: { id: props.row.model.id },
+						}"
 						class="col-shrink text-black"
 					>
 						<div class="text-weight-medium">{{ props.row.model.name }}</div>
@@ -39,7 +44,9 @@
 				:key="index"
 				#[`body-cell-item-index(${index})`]="props"
 			>
-				<q-td :props="props">{{ toNoneOrFixed(props.row[`property:${index}`]) }}</q-td>
+				<q-td :props="props">{{
+					toNoneOrFixed(props.row[`property:${index}`])
+				}}</q-td>
 			</template>
 		</q-table>
 	</q-card>
@@ -67,7 +74,8 @@ const props = defineProps<{
 	leaderboardId: string;
 }>();
 
-const avg = (a: number[]) => (a.length ? a.reduce((a, b) => a + b) / a.length : null);
+const avg = (a: number[]) =>
+	a.length ? a.reduce((a, b) => a + b) / a.length : null;
 const LeaderboardAPI = Backend.API.Leaderboard(props.leaderboardId);
 const SummaryAPI = LeaderboardAPI.Summary(props.summaryId);
 const summary = ref<Spec.Leaderboard.Summary | null>(null);

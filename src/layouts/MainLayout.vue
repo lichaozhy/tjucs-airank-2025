@@ -1,5 +1,8 @@
 <template>
-	<q-scroll-area class="absolute-full">
+	<q-scroll-area
+		class="absolute-full"
+		ref="scrollArea"
+	>
 		<q-layout
 			class="main-layout"
 			view="lHh Lpr fFf"
@@ -96,7 +99,10 @@
 			</q-header>
 
 			<q-page-container id="app-container">
-				<router-view :key="$route.fullPath" />
+				<router-view
+					:key="$route.fullPath"
+					@vue:mounted="scrollTop"
+				/>
 			</q-page-container>
 
 			<q-footer
@@ -121,6 +127,7 @@
 </template>
 
 <script setup lang="ts">
+import type * as Quasar from 'quasar';
 import { onBeforeMount, ref } from 'vue';
 import { useRoute } from 'vue-router';
 
@@ -128,6 +135,7 @@ import * as Backend from 'src/backend';
 
 const route = useRoute();
 const defaultLeaderboardId = ref<string | null>(null);
+const scrollArea = ref<Quasar.QScrollArea | null>(null);
 
 function routeMatched(name: string) {
 	return route.matched.some((route) => route.name === name);
@@ -140,6 +148,12 @@ onBeforeMount(async () => {
 		defaultLeaderboardId.value = Configuration.DEFAULT_LEADERBOARD;
 	}
 });
+
+function scrollTop() {
+	if (scrollArea.value !== null) {
+		scrollArea.value?.setScrollPosition('vertical', 0);
+	}
+}
 
 defineOptions({ name: 'AppMainLayout' });
 </script>

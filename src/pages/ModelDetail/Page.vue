@@ -24,7 +24,9 @@
 					<q-item v-if="model.component.language">
 						<q-item-section>
 							<q-item-label>Language Component</q-item-label>
-							<q-item-label caption>{{ model.component.language }}</q-item-label>
+							<q-item-label caption>{{
+								model.component.language
+							}}</q-item-label>
 						</q-item-section>
 					</q-item>
 				</q-list>
@@ -49,8 +51,12 @@
 						}"
 					>
 						<q-item-section>
-							<q-item-label>{{ getBenchmarkName(score.benchmark) }}</q-item-label>
-							<q-item-label caption>Total Score: {{ score.total }}</q-item-label>
+							<q-item-label>{{
+								getBenchmarkName(score.benchmark)
+							}}</q-item-label>
+							<q-item-label caption
+								>Total Score: {{ score.total }}</q-item-label
+							>
 						</q-item-section>
 					</q-item>
 				</q-list>
@@ -104,7 +110,9 @@ onMounted(async () => {
 	model.value = modelResponse as Model;
 	modelScores.value = scoresResponse.map((score) => ({
 		...score,
-		leaderboard: benchmarkList.value.find((bm) => bm.id === score.benchmark)?.leaderboard || '',
+		leaderboard:
+			benchmarkList.value.find((bm) => bm.id === score.benchmark)
+				?.leaderboard || '',
 		total: score.items.at(-1) || 0,
 	}));
 });

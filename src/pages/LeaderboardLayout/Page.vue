@@ -8,7 +8,9 @@
 			class="title column justify-center items-center absolute-full"
 			style="height: 230px"
 		>
-			<div class="text-h2 text-weight-light">{{ $t('p.leaderboard.banner.title') }}</div>
+			<div class="text-h2 text-weight-light">
+				{{ $t('p.leaderboard.banner.title') }}
+			</div>
 			<div class="text-subtitle1 q-mt-md text-weight-light">
 				{{ $t('p.leaderboard.banner.description') }}
 			</div>

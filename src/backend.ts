@@ -65,9 +65,11 @@ export const API = {
 	},
 	Leaderboard: Object.assign(
 		(leaderboardId: string) => {
-			const leaderboard = Data.Leaderboard.find(function idMatched(leaderboard) {
-				return leaderboard.id === leaderboardId;
-			})!;
+			const leaderboard = Data.Leaderboard.find(
+				function idMatched(leaderboard) {
+					return leaderboard.id === leaderboardId;
+				},
+			)!;
 
 			return {
 				async get() {
@@ -75,12 +77,16 @@ export const API = {
 				},
 				Benchmark: {
 					async query() {
-						return Data.Benchmark.filter((benchmark) => benchmark.leaderboard === leaderboardId);
+						return Data.Benchmark.filter(
+							(benchmark) => benchmark.leaderboard === leaderboardId,
+						);
 					},
 				},
 				Summary: Object.assign(
 					(summaryId: string) => {
-						const summary = leaderboard.summaries.find(({ id }) => id === summaryId);
+						const summary = leaderboard.summaries.find(
+							({ id }) => id === summaryId,
+						);
 
 						return {
 							async get() {
@@ -106,7 +112,9 @@ export const API = {
 		(benchmarkId: string) => {
 			return {
 				async get() {
-					return Data.Benchmark.find((benchmark) => benchmark.id === benchmarkId)!;
+					return Data.Benchmark.find(
+						(benchmark) => benchmark.id === benchmarkId,
+					)!;
 				},
 				Document: {
 					async get() {
@@ -117,7 +125,9 @@ export const API = {
 				},
 				Score: {
 					async query() {
-						return Data.Score.filter((score) => score.benchmark === benchmarkId);
+						return Data.Score.filter(
+							(score) => score.benchmark === benchmarkId,
+						);
 					},
 				},
 			};

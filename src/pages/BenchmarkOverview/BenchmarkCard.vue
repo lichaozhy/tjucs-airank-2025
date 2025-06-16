@@ -67,7 +67,9 @@ const { benchmark, isNew } = defineProps<{
 	isNew: boolean; //temporary, remove later
 }>();
 
-function lorem(options: { words?: number; sentences?: number; paragraphs?: number } = {}): string {
+function lorem(
+	options: { words?: number; sentences?: number; paragraphs?: number } = {},
+): string {
 	// 基础词库
 	const vocab = [
 		'lorem',
@@ -129,17 +131,23 @@ function lorem(options: { words?: number; sentences?: number; paragraphs?: numbe
 
 	// 根据参数优先级生成文本
 	if (options.words) {
-		const words = Array.from({ length: options.words }, () => randomChoice(vocab));
+		const words = Array.from({ length: options.words }, () =>
+			randomChoice(vocab),
+		);
 		words[0] = words[0]!.charAt(0).toUpperCase() + words[0]!.slice(1);
 		return words.join(' ');
 	}
 
 	if (options.sentences) {
-		return Array.from({ length: options.sentences }, generateSentence).join(' ');
+		return Array.from({ length: options.sentences }, generateSentence).join(
+			' ',
+		);
 	}
 
 	if (options.paragraphs) {
-		return Array.from({ length: options.paragraphs }, generateParagraph).join('\n\n');
+		return Array.from({ length: options.paragraphs }, generateParagraph).join(
+			'\n\n',
+		);
 	}
 
 	// 默认返回一个段落

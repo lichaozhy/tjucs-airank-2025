@@ -7,8 +7,12 @@
 			class="content full-width"
 			v-if="currentBenchmark"
 		>
-			<div class="q-my-md q-pa-md title-leaderboard-name">{{ leaderboard!.name }} Rankings</div>
-			<div class="q-my-md q-pa-md title-benchmark-name">{{ currentBenchmark.name }} Benchmark</div>
+			<div class="q-my-md q-pa-md title-leaderboard-name">
+				{{ leaderboard!.name }} Rankings
+			</div>
+			<div class="q-my-md q-pa-md title-benchmark-name">
+				{{ currentBenchmark.name }} Benchmark
+			</div>
 			<div class="q-py-md">
 				<q-btn-toggle
 					no-caps
@@ -61,7 +65,10 @@
 				<template v-slot:body-cell-model="props">
 					<q-td :props="props">
 						<q-btn
-							:to="{ name: 'app.model.detail', params: { id: props.row.model.id } }"
+							:to="{
+								name: 'app.model.detail',
+								params: { id: props.row.model.id },
+							}"
 							dense
 							no-caps
 							square
@@ -69,7 +76,9 @@
 							class="col-shrink text-primary"
 							size="md"
 						>
-							<div class="q-px-xs text-weight-light">{{ props.row.model.name }}</div>
+							<div class="q-px-xs text-weight-light">
+								{{ props.row.model.name }}
+							</div>
 						</q-btn>
 					</q-td>
 				</template>
@@ -108,7 +117,9 @@ const modelList = ref<Spec.Model.Type[]>([]);
 const selectedModelList = ref<Array<{ label: string; value: string }>>([]);
 const loading = ref(true);
 
-const filteredModelOptionList = ref<Array<{ label: string; value: string }>>([]);
+const filteredModelOptionList = ref<Array<{ label: string; value: string }>>(
+	[],
+);
 
 const currentBenchmark = computed(() => {
 	if (currentBenchmarkIndex.value === null) return null;
@@ -119,7 +130,9 @@ const currentScoreList = computed(() => {
 	if (currentBenchmark.value === null) return [];
 
 	// Get scores for this benchmark
-	return scoreList.value.filter((score) => score.benchmark === currentBenchmark.value!.id);
+	return scoreList.value.filter(
+		(score) => score.benchmark === currentBenchmark.value!.id,
+	);
 });
 
 const currentModelList = computed(() => {
@@ -142,14 +155,14 @@ const currentModelOptionList = computed(() => {
 	}));
 });
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const columnFormatter = (unit: string | null) => (val: number | null | undefined, row: any) => {
-	console.log('columnFormatter', val, row);
-	if (val === null || val === undefined) {
-		return '-';
-	}
-	return val.toFixed(2) + (unit ? ` ${unit}` : '');
-};
+const columnFormatter =
+	(unit: string | null) => (val: number | null | undefined, row: unknown) => {
+		console.log('columnFormatter', val, row);
+		if (val === null || val === undefined) {
+			return '-';
+		}
+		return val.toFixed(2) + (unit ? ` ${unit}` : '');
+	};
 
 const columns = computed(() => {
 	if (!currentBenchmark.value) return [];
@@ -168,19 +181,21 @@ const columns = computed(() => {
 
 	// Add columns for each property
 	if (currentBenchmark.value.properties) {
-		Object.entries(currentBenchmark.value.properties).forEach(([name, prop]) => {
-			console.log(prop.label, name);
-			cols.push({
-				name: `prop_${prop.index}`,
-				label: prop.label,
-				// label: name,
-				field: `prop_${prop.index}`,
-				align: 'right' as 'left' | 'right' | 'center',
-				format: columnFormatter(prop.unit),
-				headerStyle: 'width: 180px;',
-				sortable: true,
-			});
-		});
+		Object.entries(currentBenchmark.value.properties).forEach(
+			([name, prop]) => {
+				console.log(prop.label, name);
+				cols.push({
+					name: `prop_${prop.index}`,
+					label: prop.label,
+					// label: name,
+					field: `prop_${prop.index}`,
+					align: 'right' as 'left' | 'right' | 'center',
+					format: columnFormatter(prop.unit),
+					headerStyle: 'width: 180px;',
+					sortable: true,
+				});
+			},
+		);
 	}
 
 	cols.push({
@@ -237,7 +252,9 @@ watch(currentBenchmarkIndex, () => {
 
 onBeforeMount(async () => {
 	leaderboard.value = await API.Leaderboard(leaderboardId as string).get();
-	benchmarkList.value = await API.Leaderboard(leaderboardId as string).Benchmark.query();
+	benchmarkList.value = await API.Leaderboard(
+		leaderboardId as string,
+	).Benchmark.query();
 	scoreList.value = await API.Score.query();
 	modelList.value = await API.Model.query();
 
