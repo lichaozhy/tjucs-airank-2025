@@ -1,31 +1,21 @@
 <template>
 	<q-page id="app-home">
-		<component
-			v-for="(SectionComponent, index) in sectionList"
-			:key="index"
-			:is="SectionComponent"
-		></component>
+		<app-home-banner-section />
+		<app-home-benchmark-rank-section />
+		<app-home-evaluation />
+		<app-home-feature />
+		<app-home-cooperation />
+		<app-home-contribution />
 	</q-page>
 </template>
 
 <script setup lang="ts">
-import Banner from './Section/Banner.vue';
-import Benchmark from './Section/Benchmark.vue';
-import Rank from './Section/Rank.vue';
-import Evaluation from './Section/Evaluation.vue';
-import Feature from './Section/Feature.vue';
-import Cooperation from './Section/Cooperation.vue';
-import Contribution from './Section/Contribution.vue';
-
-const sectionList = [
-	Banner,
-	Benchmark,
-	Rank,
-	Evaluation,
-	Feature,
-	Cooperation,
-	Contribution,
-];
+import AppHomeBannerSection from './BannerSection.vue';
+import AppHomeBenchmarkRankSection from './BenchmarkRankSection.vue';
+import AppHomeEvaluation from './EvaluationSection.vue';
+import AppHomeFeature from './FeatureSection.vue';
+import AppHomeCooperation from './CooperationSection.vue';
+import AppHomeContribution from './ContributionSection.vue';
 
 defineOptions({ name: 'AppPageHome' });
 </script>
