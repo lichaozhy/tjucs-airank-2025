@@ -4,7 +4,10 @@
 			class="main-layout"
 			view="lHh Lpr fFf"
 		>
-			<q-header class="justify-center">
+			<q-header
+				id="app-header"
+				class="justify-center"
+			>
 				<q-toolbar>
 					<q-toolbar-title shrink>
 						<router-link
@@ -20,6 +23,16 @@
 					</q-toolbar-title>
 
 					<q-space></q-space>
+
+					<q-btn
+						class="app-navbar-feature-item text-weight-regular"
+						no-caps
+						flat
+						label="Home"
+						:to="{ name: 'app.home' }"
+						stretch
+						:class="{ active: routeMatched('app.home') }"
+					></q-btn>
 
 					<q-btn
 						class="app-navbar-feature-item text-weight-regular"
@@ -82,7 +95,7 @@
 				</q-toolbar>
 			</q-header>
 
-			<q-page-container>
+			<q-page-container id="app-container">
 				<router-view :key="$route.fullPath" />
 			</q-page-container>
 

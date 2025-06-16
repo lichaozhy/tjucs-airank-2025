@@ -7,19 +7,18 @@ const MIDDLE_ROUTER_VIEW = {
 	render: () => h(RouterView),
 };
 
-
 const routes: RouteRecordRaw[] = [
 	{
-		name: 'app.home',
+		name: 'app.layout',
 		path: '/',
-		redirect: {
-			name: 'app.leaderboard.detail',
-			params: {
-				leaderboardId: '09b4a56a-2e41-4103-a330-129381c24450',
-			},
-		},
+		redirect: { name: 'app.home' },
 		component: () => import('layouts/MainLayout.vue'),
 		children: [
+			{
+				name: 'app.home',
+				path: '',
+				component: () => import('pages/Home/Page.vue'),
+			},
 			{
 				name: 'app.leaderboard',
 				path: 'leaderboard',
