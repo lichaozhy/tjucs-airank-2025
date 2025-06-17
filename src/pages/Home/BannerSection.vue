@@ -23,12 +23,14 @@
 					size="xl"
 					label="Online Evaluation"
 					outline
+					square
 				></q-btn>
 				<q-btn
 					class="q-ma-md q-px-xl"
 					size="xl"
 					label="View Leaderboards →"
 					outline
+					square
 					:to="{
 						name: 'app.leaderboard.detail',
 						params: { leaderboardId: defaultLeaderboardId },

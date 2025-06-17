@@ -25,7 +25,7 @@
 				<q-separator vertical class="full-height" color="indigo-1" />
 			</div>
 
-			<div class="col-shrink relative-postion">
+			<div class="col-shrink relative-postion text-black">
 				<div class="text-h5 text-right text-weight-medium">Core Tasks</div>
 				<div class="text-body1 q-my-lg">{{ lorem }}</div>
 
@@ -68,11 +68,12 @@
 			</div>
 		</div>
 		<q-btn
-			class="q-mt-xl"
-			label="Go to view all benchmarks →"
+			class="q-mt-lg"
+			label="Go to EmbodiedBenchmarks to view all benchmarks →"
 			flat
 			dense
 			:to="{ name: 'app.benchmark' }"
+			no-caps
 		></q-btn>
 	</div>
 </template>

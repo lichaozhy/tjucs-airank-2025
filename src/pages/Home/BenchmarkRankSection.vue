@@ -6,7 +6,7 @@
 					class="q-pr-xl col-grow"
 					style="max-width: 30em;"
 				>
-					<div style="position: sticky;top: 80px">
+					<div class="q-mb-xl q-pb-xl" style="position: sticky;top: 80px">
 						<div class="text-h4">{{ PROFILE.TITLE }}</div>
 						<div class="text-body1 q-mt-xl">{{ PROFILE.COMMENT }}</div>
 					</div>

@@ -16,3 +16,5 @@ export const INJECTION_KEY = {
 	LEADERBOARD_SUMMARY_SELECTED: Symbol() as InjectionKey<SelectedRecord>,
 	LEADERBOARD_BENCHMARK_SELECTED: Symbol() as InjectionKey<SelectedRecord>,
 };
+
+export type Alignment = 'left' | 'center' | 'right';

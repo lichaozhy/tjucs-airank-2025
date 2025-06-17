@@ -3,137 +3,224 @@
 		<div class="bg-indigo-10 text-h5 q-pa-md text-white">
 			{{ INTRODUCTION.TITLE }}
 		</div>
-		<q-space class="q-my-lg" />
+
+		<p class="text-body1 text-grey-7 q-my-md">{{ INTRODUCTION.COMMENT }}</p>
+
 		<div class="row q-col-gutter-lg no-wrap">
-			<div class="col-grow">
+			<div class="col-shrink row">
 				<q-tabs
+					v-model="category"
 					vertical
 					stretch
 					inline-label
-					v-model="leaderboard"
 				>
 					<q-tab
 						content-class="q-pr-lg q-py-sm"
-						v-for="leaderboard in INTRODUCTION.LEADERBOARD"
-						:key="leaderboard.NAME"
-						:label="leaderboard.LABEL"
-						:icon="leaderboard.ICOM"
-						style="justify-content: start"
-						:name="leaderboard.NAME"
-					></q-tab>
-				</q-tabs>
-			</div>
-
-			<div class="col-shrink relative-postion">
-				<div class="text-h5 text-right text-weight-medium">Core Tasks</div>
-				<div class="text-body1 q-my-lg">{{ lorem }}</div>
-
-				<div class="text-h5 text-right text-weight-medium q-mt-xl">
-					Benchmarks
-				</div>
-
-				<q-tabs
-					v-model="benchmark"
-					class="q-mt-md"
-				>
-					<q-tab
-						v-for="name in benchmarkList"
-						:key="name"
-						:label="name"
-						:name="name"
-						no-caps
-						align="justify"
+						v-for="category in MODEL_CATEGORY"
+						:key="category.NAME"
+						:label="`${category.LABEL} Models`"
+						:name="category.NAME"
+						:icon="category.ICON"
 						narrow-indicator
+						style="justify-content: start"
 					></q-tab>
 				</q-tabs>
-
+				<q-separator
+					vertical
+					class="full-height"
+					color="indigo-1"
+				/>
+			</div>
+			<div class="col-grow">
 				<q-tab-panels
 					class="bg-transparent"
-					v-model="benchmark"
+					v-model="category"
 					animated
 					swipeable
 					infinite
-					style="height: 200px"
+					style="height: 800px"
 				>
 					<q-tab-panel
-						class="q-px-none text-body1"
-						v-for="name in benchmarkList"
-						:key="name"
-						:name="name"
+						class="q-pa-none"
+						v-for="category in MODEL_CATEGORY"
+						:key="category.NAME"
+						:name="category.NAME"
 					>
-						{{ lorem }}{{ lorem }}{{ lorem }}
+						<q-table
+							flat
+							square
+							:columns="columns"
+							:rows="rows"
+							hide-pagination
+							:pagination="{ rowsPerPage: 0 }"
+							class="bg-transparent"
+						>
+							<template #body-cell-item-org="props">
+								<q-td :props="props">{{
+									props.row.organizationList.join(' / ')
+								}}</q-td>
+							</template>
+						</q-table>
 					</q-tab-panel>
 				</q-tab-panels>
 			</div>
 		</div>
+
 		<q-btn
-			class="q-mt-xl"
-			label="Go to view all benchmarks →"
+			class="q-mt-lg"
+			label="Go to EmbodiedRank view the evaluation leaderboards →"
 			flat
 			dense
-			:to="{ name: 'app.benchmark' }"
+			:to="{ name: 'app.leaderboard' }"
+			no-caps
 		></q-btn>
 	</div>
 </template>
 
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue';
+import { computed, ref } from 'vue';
+import type * as Utils from 'src/spec';
 
 const INTRODUCTION = {
-	TITLE: '3 Key Leaderboard · 20+ Core Tasks · 50+ Evaluation Datasets',
-	LEADERBOARD: [
-		{
-			LABEL: 'Question Answering',
-			ICOM: 'question_answer',
-			NAME: 'qa',
-			BENCHMARKS: [
-				'UniEQA',
-				'OpenEQA',
-				'VSI',
-				'ERQA',
-				'SQA3D',
-				'ScanQA',
-				'Scan2Cap',
-				'PointBench',
-				'PhyBlock',
-				'MineAnyBuild',
-				'RoboVQA',
-				'where2place',
-			],
-		},
-		{
-			LABEL: 'Navigation',
-			ICOM: 'near_me',
-			NAME: 'nav',
-			BENCHMARKS: ['EB-Navigation', 'VLN-CE R2R', 'VLN-CE RxR', 'hm3d', 'mp3d'],
-		},
-		{
-			LABEL: 'Task Planning',
-			ICOM: 'view_timeline',
-			NAME: 'task',
-			BENCHMARKS: ['ET-Plan-Bench', 'EB-ALFRED', 'EB-Habitat'],
-		},
-	],
+	TITLE: 'Over 50 Major Embodied AI Models have joined Evaluation',
+	COMMENT: [
+		'Includes Leading Commercial Models from Major Companies',
+		'Popular Open-Source Models',
+		'Specialized Embodied AI Models',
+	].join(' | '),
 };
 
-const lorem =
-	'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.';
-const leaderboard = ref<string>('qa');
-const benchmark = ref<string>('');
-
-const benchmarkList = computed(() => {
-	return INTRODUCTION.LEADERBOARD.find(
-		({ NAME }) => NAME === leaderboard.value,
-	)!.BENCHMARKS;
-});
-
-watch(
-	leaderboard,
-	() => {
-		benchmark.value = benchmarkList.value[0]!;
+const MODEL_CATEGORY = [
+	{
+		NAME: 'language',
+		LABEL: 'General Language',
+		ICON: 'translate',
+		RECORD: [
+			{
+				organizationList: ['OpenAI'],
+				modelList: ['GPT-4o', 'GPT-4V', 'GPT-3.5-Turbo'],
+			},
+			{
+				organizationList: ['Google DeepMind'],
+				modelList: ['Gemini-2.0-Flash', 'Gemini-2.0-Pro', 'Gemini-2.5-Pro'],
+			},
+			{
+				organizationList: ['Anthropic'],
+				modelList: ['Claude-3.5-Sonnet', 'Claude-3.7-Sonnet'],
+			},
+			{
+				organizationList: ['Alibaba Group'],
+				modelList: [
+					'Qwen-VL-Max',
+					'Qwen2.5-VL-3B-Ins',
+					'Qwen2.5-VL-7B-Ins',
+					'Qwen2.5-VL-72B-Ins',
+				],
+			},
+			{
+				organizationList: ['ByteDance'],
+				modelList: ['Seed1.5-VL', 'LLaVA-OneVision'],
+			},
+			{
+				organizationList: ['Shanghai AI Lab', 'Tsinghua'],
+				modelList: ['InternVL3'],
+			},
+			{
+				organizationList: ['NVIDIA'],
+				modelList: ['VILA-1.5'],
+			},
+		],
 	},
-	{ immediate: true },
-);
+	{
+		NAME: 'embodied',
+		LABEL: 'Embodied',
+		ICON: 'smart_toy',
+		RECORD: [
+			{
+				organizationList: ['Beijing Jiaotong University', 'Peking University'],
+				modelList: ['PhysVLM'],
+			},
+			{
+				organizationList: ['Tianjin University'],
+				modelList: ['RoboBrain', 'RoboAnnotatorX', 'Embodied-FSD'],
+			},
+			{
+				organizationList: ['The University of Hong Kong'],
+				modelList: ['EmbodiedGPT'],
+			},
+			{
+				organizationList: ['Boston University'],
+				modelList: ['SAT'],
+			},
+			{
+				organizationList: ['University of Washington'],
+				modelList: ['RoboPoint'],
+			},
+			{
+				organizationList: ['Shanghai Jiao Tong University'],
+				modelList: ['SpatialBot'],
+			},
+			{
+				organizationList: ['Google DeepMind'],
+				modelList: ['SpatialVLM'],
+			},
+			{
+				organizationList: ['Huawei Noah\'s Ark Lab'],
+				modelList: ['SpatialCoT'],
+			},
+			{
+				organizationList: ['Peking University'],
+				modelList: ['UniNavid', 'Navid'],
+			},
+			{
+				organizationList: ['The Chinese University of Hong Kong'],
+				modelList: ['Video-3D LLM', 'LLaVA-3D'],
+			},
+			{
+				organizationList: ['The University of Hong Kong', 'Shanghai AI Lab'],
+				modelList: ['GPT4Scene'],
+			},
+			{
+				organizationList: ['Shanghai AI Lab', 'Zhejiang University'],
+				modelList: ['Grounded-3D-LLM'],
+			},
+			{
+				organizationList: ['Beijing University of Posts and Telecom'],
+				modelList: ['3DMIT'],
+			},
+			{
+				organizationList: ['UMass Amherst'],
+				modelList: ['3D-Mem'],
+			},
+			{
+				organizationList: ['Huawei Noah\'s Ark Lab'],
+				modelList: ['Mem2Ego'],
+			},
+		],
+	},
+];
+
+const category = ref<string>(MODEL_CATEGORY[0]!.NAME);
+
+const columns = [
+	{
+		name: 'org',
+		label: 'Organization',
+		field: 'organizationList',
+		align: 'left' as Utils.Alignment,
+		headerStyle: 'width: 30em',
+	},
+	{
+		name: 'model',
+		label: 'Model(s)',
+		field: 'modelList',
+		align: 'left' as Utils.Alignment,
+	},
+];
+
+const rows = computed(() => {
+	return MODEL_CATEGORY.find(({ NAME }) => NAME === category.value)!.RECORD;
+});
 
 defineOptions({ name: 'AppPageHomeRankProfile' });
 </script>
