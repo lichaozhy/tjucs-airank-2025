@@ -12,7 +12,8 @@ body {
 		'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-.app-content-main {
+.app-content-main,
+.app-max-width-1680 {
 	max-width: 1680px;
 }
 
