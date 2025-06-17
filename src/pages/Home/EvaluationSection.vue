@@ -3,7 +3,7 @@
 		id="app-home-evaluation"
 		class="column content-center justify-center q-pa-xl relative-position bg-white text-center items-center"
 	>
-		<h1 class="text-indigo-10 text-weight-bold">{{ SECTION.TITLE }}</h1>
+		<h2 class="text-indigo-10 text-weight-bold">{{ SECTION.TITLE }}</h2>
 		<p
 			class="text-center text-body1 text-grey-8"
 			style="max-width: 70em"
