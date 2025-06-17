@@ -55,9 +55,15 @@
 							:pagination="{ rowsPerPage: 0 }"
 							class="bg-transparent"
 						>
-							<template #body-cell-item-org="props">
+							<template #body-cell-org="props">
 								<q-td :props="props">{{
 									props.row.organizationList.join(' / ')
+								}}</q-td>
+							</template>
+
+							<template #body-cell-model="props">
+								<q-td :props="props">{{
+									props.row.modelList.join(' / ')
 								}}</q-td>
 							</template>
 						</q-table>
