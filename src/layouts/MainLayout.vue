@@ -67,6 +67,7 @@
 						stretch
 						label="Embodied Leaderboard Rules"
 						:class="{ active: routeMatched('app.rule') }"
+						:to="{ name: 'app.rule' }"
 					></q-btn>
 
 					<q-btn

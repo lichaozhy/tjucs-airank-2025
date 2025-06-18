@@ -42,7 +42,7 @@
 		"gray-matter": "^4.0.3",
 		"jsdom": "^26.1.0",
 		"markdown-it": "^14.1.0",
-		"particles.js": "^2.0.0",
+		"markdown-it-anchor": "^9.2.0",
 		"prettier": "^3.5.3",
 		"typescript": "~5.8.3",
 		"vite-plugin-checker": "^0.9.3",
