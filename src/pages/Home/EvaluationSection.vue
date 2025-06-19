@@ -16,7 +16,7 @@
 			flat
 			dense
 			color="indigo-10"
-			:to="{ name: 'app.benchmark' }"
+			:to="{ name: 'app.rule' }"
 			no-caps
 		></q-btn>
 		<q-img

@@ -38,11 +38,11 @@ $link-hover: #e74c3c;
 		position: relative;
 
 		&[id]::before {
-			content: '';
-			display: block;
-			height: 6em;
-			margin-top: -em;
-			visibility: hidden;
+			// content: '';
+			// display: block;
+			// height: 6em;
+			// margin-top: -em;
+			// visibility: hidden;
 		}
 	}
 

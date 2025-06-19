@@ -3,6 +3,7 @@ import * as path from 'node:path';
 import * as crypto from 'node:crypto';
 import MarkdownIt from 'markdown-it';
 import MarkdownItAnchor from 'markdown-it-anchor';
+import slugify from '@sindresorhus/slugify';
 import { JSDOM } from 'jsdom';
 
 const { dirname } = import.meta;
@@ -25,7 +26,7 @@ const PATH = {
 
 const MDParser = MarkdownIt({ html: true, linkify: true });
 
-MDParser.use(MarkdownItAnchor);
+MDParser.use(MarkdownItAnchor, { slugify: s => slugify(s) });
 
 const PUBLIC_PATH = '/html/assets/';
 const documentData = await fs.promises.readFile(PATH.SOURCE, 'utf-8');

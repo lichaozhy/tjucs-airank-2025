@@ -1,74 +1,38 @@
-# 具身问答竞技榜单建设规范
+# Embodied Arena Leaderboard Rules
 
-面向具身问答任务，具身问答竞技榜单精选国内外在该领域具有广泛影响力、任务类型多样化的开源学术评测集，对通识模型、具身领域开源模型和可访问的API模型进行评测，形成榜单。
+The Embodied Arena Leaderboards select benchmarks with wide influence in the field of embodied intelligence, and evaluate influential models and academic frontier models at home and abroad to form the Leaderboards.
 
-## 1.1 评测模型类型
+## 1.1 Benchmark Source
+- Influential academic benchmarks:
+  - Embodied Question Answering Benchmarks:
+    - OpenEQA, VSI-Bench, ScanQA (3D), etc.
+  - Embodied Navigation Benchmarks:
+    - HM3D, MP3D, EB-Navigation, etc.
+  - Embodied Task Planning Benchmarks:
+    - ET-Plan-Bench, EB-Habitat, EB-ALFRED, etc.
+## 1.2 Model Type
+- Influential Models
+  - GPT-4o, Gemini-2.5-Pro, Claude-3.5-Sonnet, Qwen-VL-Max, LLaVA-OneVision, InternVL3, VILA-1.5, etc.
+- Academic frontier models
+  - RoboBrain, RoboPoint, UniNavid, SpatialVLM, etc.
+- Models willing to join (please write an email to ***@tju.edu.cn to apply to join the Leaderboards)
+  - Please provide the weight link of Hugging Face or ModelScope.
+  - Please provide the API URL link, and indicate the model version supporting the OpenAI protocol interface.
+  (! Note: Please provide the key of the corresponding model to ***@tju.edu.cn)
 
-### 国内外有重要影响力的开源模型
+## 1.3 Update Frequency
 
-### 可访问的API模型
+### Regular update mechanism
+- The Leaderboards are updated once a month, and a snapshot of the results is taken on the first working day of each month, as the leaderboards of the previous month.
 
-### 愿意加入榜单建设的模型 (请写邮件至\*\*\*@tju.edu.cn 申请加入评测榜单)
+- Each manufacturer is only supported to submit an evaluation application once a month. After receiving the evaluation application, it is generally updated within 7 working days
 
-        提供 Hugging Face 或 ModelScope 模型权重及链接
-        提供 API 网址链接，并写明模型版本，支持OpenAI 协议接口
+## Contact us
 
-（！注意事项：请厂商提供对应模型的 key opencompass@pjlab.org.cn）
+- **Organizer**: Tianjin University Deep Reinforcement Learning Laboratory
+- **Copyright Statement**: © 2025 Tianjin University All Rights Reserved
+- **Technical Support**: Tianjin University Deep Reinforcement Learning Laboratory
 
-## 1.2 更新频率
+---
 
-### 常规更新机制
-
-榜单每x月更新一次,每月初第一个工作日进行一次结果快照，作为上个月度榜单
-
-仅支持每家厂商每月提交一次评测申请, 接到评测申请后，一般7个工作日内更新
-
-# 具身导航竞技榜单建设规范
-
-面向具身导航任务，具身导航竞技榜单精选国内外在该领域具有广泛影响力、任务类型多样化的开源学术评测集，对通识模型、具身领域开源模型和可访问的API模型进行评测，形成榜单。
-
-## 2.1 评测模型类型
-
-### 国内外有重要影响力的开源模型
-
-### 可访问的API模型
-
-### 愿意加入榜单建设的模型 (请写邮件至\*\*\*@tju.edu.cn 申请加入评测榜单)
-
-        提供 Hugging Face 或 ModelScope 模型权重及链接
-        提供 API 网址链接，并写明模型版本，支持OpenAI 协议接口
-
-（！注意事项：请厂商提供对应模型的 key opencompass@pjlab.org.cn）
-
-## 2.2 更新频率
-
-### 常规更新机制
-
-榜单每x月更新一次,每月初第一个工作日进行一次结果快照，作为上个月度榜单
-
-仅支持每家厂商每月提交一次评测申请, 接到评测申请后，一般7个工作日内更新
-
-# 具身任务规划竞技榜单建设规范
-
-面向具身任务规划任务，具身任务规划竞技榜单精选国内外在该领域具有广泛影响力、任务类型多样化的开源学术评测集，对通识模型、具身领域开源模型和可访问的API模型进行评测，形成榜单。
-
-## 3.1 评测模型类型
-
-### 国内外有重要影响力的开源模型
-
-### 可访问的API模型
-
-### 愿意加入榜单建设的模型 (请写邮件至\*\*\*@tju.edu.cn 申请加入评测榜单)
-
-        提供 Hugging Face 或 ModelScope 模型权重及链接
-        提供 API 网址链接，并写明模型版本，支持OpenAI 协议接口
-
-（！注意事项：请厂商提供对应模型的 key opencompass@pjlab.org.cn）
-
-## 3.2 更新频率
-
-### 常规更新机制
-
-榜单每x月更新一次,每月初第一个工作日进行一次结果快照，作为上个月度榜单
-
-仅支持每家厂商每月提交一次评测申请, 接到评测申请后，一般7个工作日内更新
+**Embodied Arena** - A professional evaluation platform to promote the development of embodied intelligence technology

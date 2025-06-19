@@ -9,6 +9,8 @@ import {
 import * as Backend from 'src/backend';
 import routes from './routes';
 
+const sleep = (ms = 1000) => new Promise((resolve) => setTimeout(resolve, ms));
+
 /*
  * If not building with SSR mode, you can
  * directly export the Router instantiation;
@@ -28,7 +30,24 @@ export default defineRouter(async function (/* { store, ssrContext } */) {
 	await Backend.init();
 
 	const Router = createRouter({
-		scrollBehavior: () => ({ left: 0, top: 0 }),
+		async scrollBehavior(to, from, saved) {
+			if (to.hash === '' || to.hash === '#') {
+				return { top: 0 };
+			}
+
+			await sleep(100);
+
+			const el = document.getElementById(to.hash.substring(1));
+
+			if (el === null) {
+				return { ...saved };
+			}
+
+			console.log(el);
+
+			// el.scrollIntoView({ top: 60 });
+			return { el, top: 60 };
+		},
 		routes,
 
 		// Leave this as is and make changes in quasar.conf.js instead!

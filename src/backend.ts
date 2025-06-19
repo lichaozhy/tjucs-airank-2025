@@ -162,4 +162,13 @@ export const API = {
 			return Data.Score;
 		},
 	}),
+	Document: {
+		Rule: {
+			async get() {
+				const response = await fetch('/html/rule.html');
+
+				return await response.text();
+			},
+		},
+	},
 };
