@@ -13,7 +13,8 @@
 		"dev": "quasar dev",
 		"build": "npm run gen && quasar build",
 		"gen:doc-benchmark": "node ./script/benchmark.mjs",
-		"gen": "npm run gen:doc-benchmark",
+		"gen:doc-rule": "node ./script/rule.mjs",
+		"gen": "npm run gen:doc-benchmark && npm run gen:doc-rule",
 		"postinstall": "quasar prepare"
 	},
 	"dependencies": {

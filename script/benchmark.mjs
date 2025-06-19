@@ -1,19 +1,13 @@
 import * as fs from 'node:fs';
 import * as path from 'node:path';
-import * as crypto from 'node:crypto';
 import matter from 'gray-matter';
 import MarkdownIt from 'markdown-it';
 import { JSDOM } from 'jsdom';
 
+import { ensureDirectory, Hash } from './utils.mjs';
+
 const { dirname } = import.meta;
 
-function Hash(buffer) {
-	const hash = crypto.createHash('MD5');
-
-	hash.update(buffer);
-
-	return hash.digest('hex');
-}
 
 const PATH = {
 	SOURCE: {
@@ -27,12 +21,6 @@ const PATH = {
 };
 
 const PUBLIC_PATH = '/html/assets/';
-
-async function ensureDirectory(pathname) {
-	if (!fs.existsSync(pathname)) {
-		await fs.promises.mkdir(pathname, { recursive: true });
-	}
-}
 
 await ensureDirectory(PATH.TARGET.ASSETS);
 await ensureDirectory(PATH.TARGET.HTML);
