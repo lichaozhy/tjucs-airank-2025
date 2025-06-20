@@ -57,7 +57,12 @@ body {
 	background-image: linear-gradient(45deg, $indigo-10, $primary);
 }
 
+main.q-page:has(> .app-page-banner) {
+	padding-top: $app-page-banner-height;
+}
+
 .app-page-banner {
+	height: $app-page-banner-height;
 	background:
 		linear-gradient(
 			to bottom,

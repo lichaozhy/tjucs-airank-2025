@@ -1,9 +1,8 @@
 <template>
-	<div id="benchmark-index">
+	<q-page id="benchmark-index">
 		<div
 			id="app-benchmark-banner"
-			class="app-page-banner column justify-center items-center full-width text-white"
-			style="height: 300px"
+			class="app-page-banner column justify-center items-center absolute-full text-white"
 		>
 			<div class="text-h2 text-weight-light">
 				{{ $t('p.benchmark.banner.title') }}
@@ -58,7 +57,7 @@
 				</router-link>
 			</div>
 		</div>
-	</div>
+	</q-page>
 </template>
 
 <script setup lang="ts">

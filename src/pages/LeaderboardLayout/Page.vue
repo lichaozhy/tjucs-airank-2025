@@ -6,7 +6,6 @@
 		<div
 			id="app-leaderboard-banner"
 			class="app-page-banner column justify-center items-center absolute-full text-white"
-			style="height: 300px"
 		>
 			<div class="text-h2 text-weight-light">
 				{{ $t('p.leaderboard.banner.title') }}
@@ -24,7 +23,6 @@
 				no-caps
 				dense
 				class="q-my-lg"
-				style="margin-top: 300px"
 			>
 				<q-route-tab
 					v-for="item in leaderboardList"
