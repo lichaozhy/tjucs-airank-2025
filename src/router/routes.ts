@@ -60,6 +60,11 @@ const routes: RouteRecordRaw[] = [
 				component: () => import('pages/Rule/Page.vue'),
 			},
 			{
+				name: 'app.guide',
+				path: 'guide',
+				component: () => import('pages/Guide/Page.vue'),
+			},
+			{
 				name: 'app.benchmark.detail',
 				path: 'benchmark/:id',
 				component: () => import('pages/BenchmarkDetail/Page.vue'),

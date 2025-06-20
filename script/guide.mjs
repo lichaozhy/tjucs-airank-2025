@@ -10,10 +10,10 @@ import { Hash } from './utils.mjs';
 const { dirname } = import.meta;
 
 const PATH = {
-	SOURCE: path.join(dirname, '../document/rule/README.md'),
+	SOURCE: path.join(dirname, '../document/guide/README.md'),
 	TARGET: {
 		ASSETS: path.join(dirname, '../public/html/assets'),
-		HTML: path.join(dirname, '../public/html/rule.html'),
+		HTML: path.join(dirname, '../public/html/guide.html'),
 	},
 };
 

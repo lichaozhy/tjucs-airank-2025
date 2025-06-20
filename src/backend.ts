@@ -165,9 +165,12 @@ export const API = {
 	Document: {
 		Rule: {
 			async get() {
-				const response = await fetch('/html/rule.html');
-
-				return await response.text();
+				return fetch('/html/rule.html').then(res => res.text());
+			},
+		},
+		Guide: {
+			async get() {
+				return fetch('/html/guide.html').then(res => res.text());
 			},
 		},
 	},

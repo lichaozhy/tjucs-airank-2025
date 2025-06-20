@@ -74,3 +74,8 @@ main.q-page:has(> .app-page-banner) {
 		),
 		url('/image/29085492_1944-no.jpg') center/cover;
 }
+
+.app-toc {
+	position: sticky;
+	top: 60px;
+}

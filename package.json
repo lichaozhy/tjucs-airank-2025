@@ -12,9 +12,10 @@
 		"test": "echo \"No test specified\" && exit 0",
 		"dev": "quasar dev",
 		"build": "npm run gen && quasar build",
-		"gen:doc-benchmark": "node ./script/benchmark.mjs",
-		"gen:doc-rule": "node ./script/rule.mjs",
-		"gen": "npm run gen:doc-benchmark && npm run gen:doc-rule",
+		"gen:benchmark": "node ./script/benchmark.mjs",
+		"gen:rule": "node ./script/rule.mjs",
+		"gen:guide": "node ./script/guide.mjs",
+		"gen": "npm run gen:benchmark && npm run gen:rule && npm run gen:guide",
 		"postinstall": "quasar prepare"
 	},
 	"dependencies": {

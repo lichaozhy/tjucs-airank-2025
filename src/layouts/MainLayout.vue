@@ -72,6 +72,8 @@
 					flat
 					stretch
 					label="User Guide"
+					:class="{ active: routeMatched('app.guide') }"
+					:to="{ name: 'app.guide' }"
 				>
 				</q-btn>
 
