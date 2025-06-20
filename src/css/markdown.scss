@@ -15,7 +15,7 @@ $link-color: #2980b9;
 $link-hover: #e74c3c;
 
 .app-markdown-html {
-	line-height: 1;
+	line-height: 1.755;
 
 	// 重置样式
 	* {
@@ -31,9 +31,9 @@ $link-hover: #e74c3c;
 	h4,
 	h5,
 	h6 {
-		line-height: 1.2;
-		margin: 0 0 0.8em;
-		font-weight: 400;
+		line-height: 1.25;
+		margin: 0 0 1em 0;
+		font-weight: 700;
 		color: $dark-bg;
 		position: relative;
 
@@ -47,36 +47,36 @@ $link-hover: #e74c3c;
 	}
 
 	h1 {
-		font-size: 2.2em;
-		border-bottom: 2px solid $border-color;
-		padding-bottom: 0.8em;
+		font-size: 2em;
+		// border-bottom: 2px solid $border-color;
+		// padding-bottom: 0.8em;
 	}
 
 	h2 {
-		font-size: 1.8em;
-		border-bottom: 1px solid $border-color;
-		padding-bottom: 0.6em;
+		font-size: 1.5em;
+		// border-bottom: 1px solid $border-color;
+		// padding-bottom: 0.6em;
 	}
 
 	h3 {
-		font-size: 1.5em;
+		font-size: 1.25em;
 	}
 
 	h4 {
-		font-size: 1.3em;
+		font-size: 1em;
 	}
 
 	h5 {
-		font-size: 1.1em;
+		font-size: 0.875em;
 	}
 
 	h6 {
-		font-size: 1em;
+		font-size: 0.85em;
 		color: #777;
 	}
 
 	p {
-		margin: 1.2em 0;
+		margin: 0 0 1.25em 0;
 		hyphens: auto;
 
 		&:has(img) {
@@ -86,7 +86,6 @@ $link-hover: #e74c3c;
 
 	strong {
 		font-weight: 700;
-		color: color.adjust($text-color, $lightness: 15%);
 	}
 
 	em {
@@ -125,8 +124,8 @@ $link-hover: #e74c3c;
 	}
 
 	li {
-		margin: 0.5em 0;
-		line-height: 1.8;
+		// margin: 0.5em 0;
+		line-height: 1.65;
 
 		> p {
 			margin: 0.5em 0;

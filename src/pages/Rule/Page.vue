@@ -17,6 +17,7 @@
 							<div
 								ref="document"
 								class="app-markdown-html"
+								style="font-size: 16px"
 								v-html="documentHTML"
 							></div>
 						</q-card-section>
