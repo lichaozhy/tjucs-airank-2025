@@ -1,9 +1,9 @@
 // app global css in SCSS form
 @import './markdown.scss';
 
-// html {
-// 	scrollbar-width: none;
-// }
+html {
+	overflow: scroll;
+}
 
 body {
 	font-family:
