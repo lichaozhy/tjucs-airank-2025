@@ -302,32 +302,32 @@
 	{
 		"benchmark": "ed3fc303-b421-4e73-936a-e93a5aada777",
 		"model": "4e387c03-f76e-43e0-9d9c-d80f05e40ed4",
-		"items": [35.81, 16.09, 12.09, 9.43]
+		"items": [35.81, 16.09, 12.09, 9.43, 18.36]
 	},
 	{
 		"benchmark": "ed3fc303-b421-4e73-936a-e93a5aada777",
 		"model": "cb6e23ea-bc8a-4bef-91d6-ba174280faaf",
-		"items": [40.18, 12.23, 8.95, 5.98]
+		"items": [40.18, 12.23, 8.95, 5.98, 16.84]
 	},
 	{
 		"benchmark": "ed3fc303-b421-4e73-936a-e93a5aada777",
 		"model": "b30fbf25-94f2-4c76-9780-7c65e4cd5afc",
-		"items": [30.51, 17.63, 12.68, 8.31]
+		"items": [30.51, 17.63, 12.68, 8.31, 17.28]
 	},
 	{
 		"benchmark": "ed3fc303-b421-4e73-936a-e93a5aada777",
 		"model": "a72406cc-1374-4992-ad62-b052f23908f8",
-		"items": [73.45, 46.34, 38.41, 26.22]
+		"items": [73.45, 46.34, 38.41, 26.22, 46.11]
 	},
 	{
 		"benchmark": "ed3fc303-b421-4e73-936a-e93a5aada777",
 		"model": "bd0aff87-62c1-494b-a1e1-fb3ef55f0150",
-		"items": [12.4, 9.3, 8, 7.2]
+		"items": [12.4, 9.3, 8, 7.2, 9.23]
 	},
 	{
 		"benchmark": "ed3fc303-b421-4e73-936a-e93a5aada777",
 		"model": "8cb6f6bb-9534-4da7-bff7-b25f4359faec",
-		"items": [5.1, 3, 1.9, 1.2]
+		"items": [5.1, 3, 1.9, 1.2, 2.8]
 	},
 	{
 		"benchmark": "5df5ca38-7ca9-4d35-81c6-3dfe52700755",
