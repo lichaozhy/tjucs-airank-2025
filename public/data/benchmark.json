@@ -760,7 +760,7 @@
 		},
 		"Github": "https://github.com/google-deepmind/robovqa/tree/main",
 		"Hugging face": null,
-		"Project": https://robovqa.github.io/,
+		"Project": "https://robovqa.github.io/",
 		"default": {
 			"property": "Total"
 		},
