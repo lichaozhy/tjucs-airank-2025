@@ -5,7 +5,7 @@
 	>
 		<q-header
 			id="app-header"
-			class="justify-center"
+			class="justify-center bg-indigo-10"
 		>
 			<q-toolbar>
 				<q-toolbar-title shrink>

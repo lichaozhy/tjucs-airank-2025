@@ -287,13 +287,6 @@ onBeforeMount(async () => {
 		min-width: 600px;
 		max-width: 1680px;
 
-		/* .title {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-		} */
-
 		.title-leaderboard-name {
 			font-size: 1.2rem;
 			background-image: linear-gradient(

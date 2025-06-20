@@ -5,8 +5,8 @@
 	>
 		<div
 			id="app-leaderboard-banner"
-			class="title column justify-center items-center absolute-full"
-			style="height: 230px"
+			class="app-page-banner column justify-center items-center absolute-full text-white"
+			style="height: 300px"
 		>
 			<div class="text-h2 text-weight-light">
 				{{ $t('p.leaderboard.banner.title') }}
@@ -24,7 +24,7 @@
 				no-caps
 				dense
 				class="q-my-lg"
-				style="margin-top: 220px"
+				style="margin-top: 300px"
 			>
 				<q-route-tab
 					v-for="item in leaderboardList"
@@ -151,19 +151,6 @@ defineOptions({ name: 'AppLeaderboardLayout' });
 </script>
 
 <style lang="scss">
-#app-leaderboard-banner {
-	background:
-		linear-gradient(
-			to bottom,
-			rgba($primary, 0.4) 0%,
-			rgba($primary, 0.45) 25%,
-			rgba($primary, 0.5) 50%,
-			rgba($primary, 0.55) 75%,
-			rgba($primary, 0.6) 100%
-		),
-		url('/image/29085492_1944-no.jpg') center/cover;
-}
-
 .app-solid-tab {
 	opacity: 1 !important;
 }

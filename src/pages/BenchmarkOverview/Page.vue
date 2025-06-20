@@ -2,8 +2,8 @@
 	<div id="benchmark-index">
 		<div
 			id="app-benchmark-banner"
-			class="title column justify-center items-center full-width"
-			style="height: 230px"
+			class="app-page-banner column justify-center items-center full-width text-white"
+			style="height: 300px"
 		>
 			<div class="text-h2 text-weight-light">
 				{{ $t('p.benchmark.banner.title') }}
@@ -154,18 +154,5 @@ const filteredBenchmarkList = computed(() => {
 				transform 0.3s ease;
 		}
 	}
-}
-
-#app-benchmark-banner {
-	background:
-		linear-gradient(
-			to bottom,
-			rgba($primary, 0.4) 0%,
-			rgba($primary, 0.45) 25%,
-			rgba($primary, 0.5) 50%,
-			rgba($primary, 0.55) 75%,
-			rgba($primary, 0.6) 100%
-		),
-		url('/image/29085492_1944-no.jpg') center/cover;
 }
 </style>

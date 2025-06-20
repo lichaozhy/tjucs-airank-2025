@@ -27,7 +27,7 @@ body:has(#app-home-banner) {
 	}
 
 	#app-header {
-		background-color: rgba(0, 0, 0, 0.6);
+		background-color: rgba(0, 0, 0, 0.6) !important;
 	}
 }
 </style>

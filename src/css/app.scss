@@ -54,5 +54,18 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-image: $gradient-primary;
+	background-image: linear-gradient(45deg, $indigo-10, $primary);
+}
+
+.app-page-banner {
+	background:
+		linear-gradient(
+			to bottom,
+			rgba($indigo-10, 0.6) 0%,
+			rgba($indigo-10, 0.65) 25%,
+			rgba($indigo-10, 0.7) 50%,
+			rgba($indigo-10, 0.75) 75%,
+			rgba($indigo-10, 0.8) 100%
+		),
+		url('/image/29085492_1944-no.jpg') center/cover;
 }
