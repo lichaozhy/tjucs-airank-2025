@@ -2,7 +2,7 @@
 
 The Embodied Arena Leaderboards select benchmarks with wide influence in the field of embodied intelligence, and evaluate influential models and academic frontier models at home and abroad to form the Leaderboards.
 
-## 1.1 Benchmark Source
+## Benchmark Source
 - Influential academic benchmarks:
   - Embodied Question Answering Benchmarks:
     - OpenEQA, VSI-Bench, ScanQA (3D), etc.
@@ -10,7 +10,7 @@ The Embodied Arena Leaderboards select benchmarks with wide influence in the fie
     - HM3D, MP3D, EB-Navigation, etc.
   - Embodied Task Planning Benchmarks:
     - ET-Plan-Bench, EB-Habitat, EB-ALFRED, etc.
-## 1.2 Model Type
+## Model Type
 - Influential Models
   - GPT-4o, Gemini-2.5-Pro, Claude-3.5-Sonnet, Qwen-VL-Max, LLaVA-OneVision, InternVL3, VILA-1.5, etc.
 - Academic frontier models
@@ -20,7 +20,7 @@ The Embodied Arena Leaderboards select benchmarks with wide influence in the fie
   - Please provide the API URL link, and indicate the model version supporting the OpenAI protocol interface.
   (! Note: Please provide the key of the corresponding model to ***@tju.edu.cn)
 
-## 1.3 Update Frequency
+## Update Frequency
 
 ### Regular update mechanism
 - The Leaderboards are updated once a month, and a snapshot of the results is taken on the first working day of each month, as the leaderboards of the previous month.
