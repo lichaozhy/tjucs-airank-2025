@@ -744,5 +744,57 @@
 				"unit": null
 			}
 		}
+	},
+	{
+		"id": "ed3fc303-b421-4e73-936a-e93a5aada777",
+		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
+		"name": "RoboVQA",
+		"description": "RoboVQA: Multimodal Long-Horizon Reasoning for Robotics\n",
+		"organization": "Google DeepMind",
+		"released": {
+			"at": {
+				"year": 2023,
+				"month": 11,
+				"date": 1
+			}
+		},
+		"Github": "https://github.com/google-deepmind/robovqa/tree/main",
+		"Hugging face": null,
+		"Project": "https://robovqa.github.io/",
+		"default": {
+			"property": "Total"
+		},
+		"properties": {
+			"BELU-1": {
+				"order": 1,
+				"index": 0,
+				"label": "BELU-1",
+				"unit": null
+			},
+			"BELU-2": {
+				"order": 2,
+				"index": 1,
+				"label": "BELU-2",
+				"unit": null
+			},
+			"BELU-3": {
+				"order": 3,
+				"index": 2,
+				"label": "BELU-3",
+				"unit": null
+			},
+			"BELU-4": {
+				"order": 4,
+				"index": 3,
+				"label": "BELU-4",
+				"unit": null
+			},
+			"Total": {
+				"order": 0,
+				"index": 4,
+				"label": "Total Score",
+				"unit": null
+			}
+		}
 	}
 ]
