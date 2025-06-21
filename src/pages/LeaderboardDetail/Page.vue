@@ -8,10 +8,10 @@
 			v-for="summary in filterdSummaryList"
 			:key="summary.id"
 		>
-			<AppLeaderboardSummary
+			<AppSummaryScoreCard
 				:leaderboard-id="leaderboardId"
 				:summary-id="summary.id"
-			></AppLeaderboardSummary>
+			></AppSummaryScoreCard>
 		</div>
 
 		<div
@@ -19,8 +19,7 @@
 			v-for="benchmark in filteredBenchmarkList"
 			:key="benchmark.id"
 		>
-			<AppLeaderboardBenchmark
-				:leaderboardId="leaderboardId"
+			<AppBenchmarkScoreCard
 				:benchmark="benchmark"
 			/>
 		</div>
@@ -31,8 +30,8 @@
 import { computed, onBeforeMount, ref, inject } from 'vue';
 import { useRoute } from 'vue-router';
 
-import AppLeaderboardBenchmark from './Benchmark.vue';
-import AppLeaderboardSummary from './Summary.vue';
+import AppSummaryScoreCard from './SummaryScoreCard.vue';
+import AppBenchmarkScoreCard from './BenchmarkScoreCard.vue';
 import * as Spec from 'src/spec';
 import * as Backend from 'src/backend';
 

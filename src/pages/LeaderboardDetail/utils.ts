@@ -1,6 +1,6 @@
 const MIN_WIDTH = 8;
 const EM_RATIO = 0.5;
-const FIXED_SPACE = 5;
+const FIXED_SPACE = 4;
 
 export function getColumnEMWidth(labelLength: number) {
 	return Math.max(Math.ceil(labelLength * EM_RATIO + FIXED_SPACE), MIN_WIDTH);
