@@ -1,35 +1,56 @@
 <template>
 	<q-page
 		padding
-		class="flex justify-center"
+		class="column content-center"
 	>
 		<div
-			class="model-detail"
+			class="full-width"
+			style="max-width: 1680px"
 			v-if="model"
 		>
-			<h1 class="text-h4">{{ model.name }}</h1>
+			<div class="row items-end">
+				<q-toolbar-title shrink class="text-h4">{{ model.name }}</q-toolbar-title>
+				<q-btn
+					v-if="model.website"
+					:href="model.website"
+					icon="public"
+					:label="model.website"
+					flat
+					dense
+					no-caps
+					class="text-caption text-grey-8"
+					target="_blank"
+					size="sm"
+				></q-btn>
+			</div>
 
-			<div
-				v-if="model.component"
-				class="q-mt-md"
-			>
-				<h2 class="text-h6">Components</h2>
-				<q-list bordered>
-					<q-item v-if="model.component.vision">
-						<q-item-section>
-							<q-item-label>Vision Component</q-item-label>
-							<q-item-label caption>{{ model.component.vision }}</q-item-label>
-						</q-item-section>
-					</q-item>
-					<q-item v-if="model.component.language">
-						<q-item-section>
-							<q-item-label>Language Component</q-item-label>
-							<q-item-label caption>{{
-								model.component.language
-							}}</q-item-label>
-						</q-item-section>
-					</q-item>
-				</q-list>
+			<div class="q-mt-sm">
+				<q-chip
+					dense
+					size="12px"
+					square
+					color="teal-5"
+					v-for="(item, index) in propertyEntityList"
+					:key="index"
+					class="glossy q-ml-none"
+				>
+					<q-avatar
+						text-color="white"
+						:icon="item.icon || item.label"
+						:color="item.color || 'primary'"
+						style="margin-right: 0"
+						class="glossy"
+					></q-avatar>
+					<div
+						v-if="item.label && item.icon"
+						class="text-white q-mx-sm text-weight-medium"
+					>{{ item.label }}</div>
+					<div
+						v-if="item.value"
+						class="bg-white q-px-sm glossy text-weight-thin"
+						style="margin-right: -0.4em;"
+					>{{ item.value }}</div>
+				</q-chip>
 			</div>
 
 			<div class="q-mt-lg">
@@ -62,25 +83,14 @@
 				</q-list>
 			</div>
 		</div>
-		<div v-else>Loading model details...</div>
 	</q-page>
 </template>
 
 <script setup lang="ts">
-defineOptions({ name: 'ModelDetailPage' });
 import type * as Spec from 'src/spec';
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, computed } from 'vue';
 import { useRoute } from 'vue-router';
 import { API } from 'src/backend';
-
-interface Model {
-	id: string;
-	name: string;
-	component: {
-		vision: string | null;
-		language: string | null;
-	};
-}
 
 interface Score {
 	leaderboard: string;
@@ -90,7 +100,7 @@ interface Score {
 	items: Array<number | null>;
 }
 
-const model = ref<Model | null>(null);
+const model = ref<Spec.Model.Type | null>(null);
 const modelScores = ref<Score[]>([]);
 const benchmarkList = ref<Array<Spec.Benchmark.Type>>([]);
 
@@ -98,6 +108,124 @@ const getBenchmarkName = (id: string) => {
 	const benchmark = benchmarkList.value.find((bm) => bm.id === id);
 	return benchmark ? benchmark.name : `Benchmark ${id}`;
 };
+
+interface PropertyEntity {
+	icon?: string;
+	label: string;
+	value?: string;
+	color?: string;
+}
+
+const propertyEntityList = computed<PropertyEntity[]>(() => {
+	const list: PropertyEntity[] = [];
+
+	if (model.value !== null) {
+		const {
+			component, size, author, release, opensource,
+			qa, navigation, taskPlanning, website, dimension,
+			reason, imageVideo,
+		} = model.value;
+
+		if (component !== undefined) {
+			if (component.vision !== undefined) {
+				for (const vision of component.vision) {
+					list.push({ label: 'vision', value: vision, icon: 'visibility' });
+				}
+			}
+
+			if (component.language !== undefined) {
+				for (const language of component.language) {
+					list.push({ label: 'language', value: language, icon: 'translate' });
+				}
+			}
+		}
+
+		if (size !== undefined) {
+			for (const sizeValue of size) {
+				list.push({ label: 'Size', value: `${sizeValue}B`, icon: 'open_in_full' });
+			}
+		}
+
+		if (author !== undefined) {
+			for (const authorName of author) {
+				list.push({ label: 'Author', value: authorName, icon: 'hub' });
+			}
+		}
+
+		if (release !== undefined) {
+			const { year, month, date } = release;
+			const sectionList = [year];
+
+			if (month !== undefined) {
+				sectionList.push(month);
+
+				if (date !== undefined) {
+					sectionList.push(date);
+				}
+			}
+
+			list.push({ label: 'Release', value: sectionList.join('-'), icon: 'publish' });
+		}
+
+		if (opensource !== undefined) {
+			list.push({
+				label: 'OpenSource',
+				icon: opensource ? 'check' : 'close',
+				color: opensource ? 'positive' : 'negative',
+			});
+		}
+
+		if (qa !== undefined) {
+			for (const value of qa) {
+				list.push({ icon: 'terminal', label: 'QA', value });
+			}
+		}
+
+		if (navigation !== undefined) {
+			list.push({
+				label: 'Navigation',
+				icon: navigation ? 'check' : 'close',
+				color: navigation ? 'positive' : 'negative',
+			});
+		}
+
+		if (taskPlanning !== undefined) {
+			list.push({
+				label: 'TaskPlanning',
+				icon: taskPlanning ? 'check' : 'close',
+				color: taskPlanning ? 'positive' : 'negative',
+			});
+		}
+
+		if (reason !== undefined) {
+			list.push({
+				label: 'TaskPlanning',
+				icon: reason ? 'check' : 'close',
+				color: reason ? 'positive' : 'negative',
+			});
+		}
+
+		if (dimension !== undefined) {
+			for (const value of dimension) {
+				list.push({
+					label: 'Dimension',
+					icon: 'view_in_ar',
+					value,
+				});
+			}
+		}
+
+		if (imageVideo !== undefined) {
+			list.push({
+				label: 'Image/Video',
+				icon: 'ondemand_video',
+				value: imageVideo,
+			});
+		}
+	}
+
+	return list;
+});
 
 onMounted(async () => {
 	const route = useRoute();
@@ -107,7 +235,7 @@ onMounted(async () => {
 	const scoresResponse = await API.Model(modelId).Score.query();
 	benchmarkList.value = await API.Benchmark.query();
 
-	model.value = modelResponse as Model;
+	model.value = modelResponse;
 	modelScores.value = scoresResponse.map((score) => ({
 		...score,
 		leaderboard:
@@ -116,13 +244,6 @@ onMounted(async () => {
 		total: score.items.at(-1) || 0,
 	}));
 });
-</script>
 
-<style scoped>
-.model-detail {
-	padding: 16px;
-	min-width: 600px;
-	max-width: 1680px;
-	width: 100%;
-}
-</style>
+defineOptions({ name: 'ModelDetailPage' });
+</script>
