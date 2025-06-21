@@ -122,7 +122,7 @@ const propertyEntityList = computed<PropertyEntity[]>(() => {
 	if (model.value !== null) {
 		const {
 			component, size, author, release, opensource,
-			qa, navigation, taskPlanning, website, dimension,
+			qa, navigation, taskPlanning, dimension,
 			reason, imageVideo,
 		} = model.value;
 
