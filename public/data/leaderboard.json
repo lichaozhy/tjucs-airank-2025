@@ -26,6 +26,38 @@
 							"benchmark": "ba0be521-6b10-4881-964c-97cd4d2d6070",
 							"key": "Total"
 						}
+					},
+					{
+						"type": "reference",
+						"label": "VSI",
+						"ref": {
+							"benchmark": "25206b0f-a955-4e39-86cf-53dcc9528bfc",
+							"key": "Total"				
+						}
+					},
+					{
+						"type": "reference",
+						"label": "ERQA",
+						"ref": {
+							"benchmark": "5df5ca38-7ca9-4d35-81c6-3dfe52700755",
+							"key": "Total"
+						}
+					},
+					{
+						"type": "reference",
+						"label": "RoboVQA",
+						"ref": {
+							"benchmark": "ed3fc303-b421-4e73-936a-e93a5aada777",
+							"key": "Total"
+						}
+					},
+					{
+						"type": "reference",
+						"label": "Where2Place",
+						"ref": {
+							"benchmark": "a9228f2e-3191-4a08-8f03-64e73cae2e78",
+							"key": "Total"
+						}
 					}
 				]
 			},
@@ -52,6 +84,14 @@
 							"benchmark": "e0465aba-17b0-4f34-9aa4-345c9bacdac2",
 							"key": "Total"
 						}
+					},
+					{
+						"type": "reference",
+						"label": "Scan2Cap",
+						"ref":{
+							"benchmark": "df46aa1a-099f-4841-bc02-ba9608e18c7d",
+							"key": "Total"
+						}
 					}
 				]
 			}
@@ -63,7 +103,7 @@
 		"summaries": [
 			{
 				"id": "2e5899bb-60bb-43d0-8ce0-fd186d66b3fb",
-				"name": "All Benchmarks",
+				"name": "Nav-All Benchmarks",
 				"properties": [
 					{
 						"type": "computed",
@@ -74,6 +114,22 @@
 						"label": "EB-Navigation",
 						"ref": {
 							"benchmark": "73de273a-7d38-40c0-b869-2b2e6156c897",
+							"key": "TotalSR"
+						}
+					},
+					{
+						"type": "reference",
+						"label": "VLN-CE R2R",
+						"ref": {
+							"benchmark": "1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09",
+							"key": "TotalSR"
+						}
+					},
+					{
+						"type": "reference",
+						"label": "VLN-CE RxR",
+						"ref": {
+							"benchmark": "025ca0fe-f04c-4d17-9f4c-9d1aca6666bd",
 							"key": "TotalSR"
 						}
 					}
@@ -87,11 +143,19 @@
 		"summaries": [
 			{
 				"id": "3a43d3d8-f078-43fd-b45c-ab2af7a0c283",
-				"name": "All Benchmarks",
+				"name": "TP-All Benchmarks",
 				"properties": [
 					{
 						"type": "computed",
 						"label": "Total SR"
+					},
+					{
+						"type": "reference",
+						"label": "ET-Plan_Bench",
+						"ref": {
+							"benchmark": "68bf8b5b-d8d4-49d7-9e7e-03e4d547189b",
+							"key": "TotalSR"
+						}
 					},
 					{
 						"type": "reference",
@@ -103,7 +167,7 @@
 					},
 					{
 						"type": "reference",
-						"label": "EB-ALFRED",
+						"label": "EB-Habitat",
 						"ref": {
 							"benchmark": "cbb64d1c-4377-4231-a465-73ffb10972c5",
 							"key": "TotalSR"
