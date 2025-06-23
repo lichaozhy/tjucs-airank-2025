@@ -27,3 +27,17 @@ export const Schema = z.object({
 });
 
 export type Type = z.infer<typeof Schema>;
+
+export const PROPERTY = {
+	QA: ['2D', '3D'],
+	DIMENSION: ['2D', '3D'],
+	OPENSOURCE: [true, false],
+	NAVIGATION: [true, false],
+	TASK_PLANNING: [true, false],
+	REASON: [true, false],
+	IMAGE_VIDEO: ['both', 'image/video', 'Image', 'Video', 'Point Clouds'],
+	VISION: [],
+	LANGUAGE: [],
+	SIZE: [],
+	AUTHOR: [],
+};
