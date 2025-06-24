@@ -15,7 +15,8 @@
 		"gen:benchmark": "node ./script/benchmark.mjs",
 		"gen:rule": "node ./script/rule.mjs",
 		"gen:guide": "node ./script/guide.mjs",
-		"gen": "npm run gen:benchmark && npm run gen:rule && npm run gen:guide",
+		"gen:model": "node ./script/model.mjs",
+		"gen": "npm run gen:benchmark && npm run gen:rule && npm run gen:guide && npm run gen:model",
 		"postinstall": "quasar prepare"
 	},
 	"dependencies": {

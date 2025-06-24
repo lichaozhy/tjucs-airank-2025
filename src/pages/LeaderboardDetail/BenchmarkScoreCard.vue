@@ -1,11 +1,16 @@
 <template>
 	<AppScoreCard>
 		<template #header>
-			<q-item-section class="col-shrink">
-				<div class="text-h6 text-weight-600 q-py-sm text-white">
-					{{ benchmark.name }}
-				</div>
-			</q-item-section>
+			<q-item class="card-header justify-between">
+				<q-item-section class="col-shrink">
+					<div class="text-h6 text-weight-600 q-py-sm text-white">
+						{{ benchmark.name }}
+					</div>
+				</q-item-section>
+				<q-item-section side>
+					<AppModelFilter @filter-update="setFilter"></AppModelFilter>
+				</q-item-section>
+			</q-item>
 		</template>
 		<AppScoreTable
 			:columns="columnList"
@@ -16,10 +21,12 @@
 
 <script setup lang="ts">
 import type { ModelData } from './ScoreTable.vue';
+import type { ModelFilter } from './ModelFilter.vue';
 import { computed, onBeforeMount, ref } from 'vue';
 
 import AppScoreCard from './ScoreCard.vue';
 import AppScoreTable from './ScoreTable.vue';
+import AppModelFilter from './ModelFilter.vue';
 
 import type * as Spec from 'src/spec';
 import * as Backend from 'src/backend';
@@ -55,6 +62,12 @@ const columnList = computed(() => {
 		.map(property => property.label);
 });
 
+const currentFilter = ref<ModelFilter>(() => true);
+
+function setFilter(filter: ModelFilter) {
+	currentFilter.value = filter;
+}
+
 const rowList = computed<ModelData[]>(() => {
 	const list: ModelData[] = [];
 
@@ -65,7 +78,7 @@ const rowList = computed<ModelData[]>(() => {
 	const scoreRecord = Object.groupBy(scoreList.value, (score) => score.model);
 	const propertyList = Object.values(benchmark.properties);
 
-	for (const model of modelList.value) {
+	for (const model of modelList.value.filter(currentFilter.value)) {
 		const data: ModelData = {
 			id: model.id,
 			name: model.name,

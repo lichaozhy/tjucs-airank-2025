@@ -28,13 +28,29 @@ const fetchAllScore = async () => {
 	return Spec.Score.Schema.array().parse(scoreList);
 };
 
+export type ModelPropertyRecordGroup = {
+	vision: Record<string, number>;
+	language: Record<string, number>;
+	author: Record<string, number>;
+	size: Record<string, number>;
+}
+
+export type ModelPropertyValueGroup = {
+	vision: string[];
+	language: string[];
+	author: string[];
+	size: number[];
+}
+
 export const Data: {
+	ModelProperty: ModelPropertyRecordGroup;
 	Leaderboard: Spec.Leaderboard.Type[];
 	Benchmark: Spec.Benchmark.Type[];
 	Model: Spec.Model.Type[];
 	Score: Spec.Score.Type[];
 	Configuration: Spec.Configuration.Type | null;
 } = {
+	ModelProperty: { vision: {}, language: {}, author: {}, size: {} },
 	Leaderboard: [],
 	Benchmark: [],
 	Model: [],
@@ -53,6 +69,9 @@ export async function init() {
 			const configuration = await request.json();
 
 			return Spec.Configuration.Schema.parse(configuration);
+		})(),
+		ModelProperty: await (async (): Promise<ModelPropertyRecordGroup> => {
+			return fetch('/data/model-property.json').then(res => res.json());
 		})(),
 	});
 }
@@ -154,6 +173,18 @@ export const API = {
 		{
 			async query() {
 				return Data.Model;
+			},
+			Property: {
+				ValueGroup: {
+					async query(): Promise<ModelPropertyValueGroup> {
+						return {
+							vision: Object.keys(Data.ModelProperty.vision),
+							language: Object.keys(Data.ModelProperty.language),
+							author: Object.keys(Data.ModelProperty.author),
+							size: Object.keys(Data.ModelProperty.size).map(v => Number(v)),
+						};
+					},
+				},
 			},
 		},
 	),

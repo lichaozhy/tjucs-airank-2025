@@ -19,7 +19,7 @@ const record = {
 };
 
 for (const model of modelList) {
-	const { author, component } = model;
+	const { author, component, size } = model;
 
 	if (Array.isArray(author)) {
 		for (const value of author) {
@@ -52,6 +52,16 @@ for (const model of modelList) {
 
 				record.language[value] += 1;
 			}
+		}
+	}
+
+	if (Array.isArray(size)) {
+		for (const value of size) {
+			if (!record.size[value]) {
+				record.size[value] = 0;
+			}
+
+			record.size[value] += 1;
 		}
 	}
 }
