@@ -169,6 +169,30 @@
 								</q-item-section>
 							</q-item>
 						</q-list>
+
+						<q-space class="q-my-xl"></q-space>
+
+						<div class="row q-col-gutter-lg">
+							<div class="col-6">
+								<q-btn
+									class="full-width no-shadow"
+									label="Create"
+									square
+									unelevated
+									color="indigo-10"
+								></q-btn>
+							</div>
+							<div class="col-6">
+								<q-btn
+									class="full-width no-shadow"
+									label="Cancel"
+									square
+									unelevated
+									outline
+									color="indigo-10"
+								></q-btn>
+							</div>
+						</div>
 					</q-form>
 				</div>
 			</div>
