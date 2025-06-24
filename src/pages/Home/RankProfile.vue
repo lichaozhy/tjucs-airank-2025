@@ -7,7 +7,7 @@
 		<p class="text-body1 text-grey-7 q-my-md">{{ INTRODUCTION.COMMENT }}</p>
 
 		<div class="row q-col-gutter-lg no-wrap">
-			<div class="col-shrink row">
+			<div class="col-shrink row" style="min-width: fit-content">
 				<q-tabs
 					v-model="category"
 					vertical
@@ -31,9 +31,9 @@
 					color="indigo-1"
 				/>
 			</div>
-			<div class="col-grow">
+			<div class="col">
 				<q-tab-panels
-					class="bg-transparent"
+					class="bg-transparent full-width"
 					v-model="category"
 					animated
 					swipeable
