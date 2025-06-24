@@ -93,6 +93,8 @@
 					outline
 					rounded
 					label="Contribute Benchmark"
+					:class="{ active: routeMatched('app.contribute') }"
+					:to="{ name: 'app.contribute' }"
 				></q-btn>
 			</q-toolbar>
 		</q-header>

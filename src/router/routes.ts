@@ -74,6 +74,11 @@ const routes: RouteRecordRaw[] = [
 				path: 'model/:id',
 				component: () => import('pages/ModelDetail/Page.vue'),
 			},
+			{
+				name: 'app.contribute',
+				path: 'contribute',
+				component: () => import('pages/ContributeBenchmark/Page.vue'),
+			},
 		],
 	},
 
