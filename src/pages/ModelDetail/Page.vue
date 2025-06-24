@@ -122,7 +122,7 @@ const propertyEntityList = computed<PropertyEntity[]>(() => {
 	if (model.value !== null) {
 		const {
 			component, size, author, release, opensource,
-			qa, navigation, taskPlanning, dimension,
+			qa, dimension,
 			reason, imageVideo,
 		} = model.value;
 
@@ -181,25 +181,9 @@ const propertyEntityList = computed<PropertyEntity[]>(() => {
 			}
 		}
 
-		if (navigation !== undefined) {
-			list.push({
-				label: 'Navigation',
-				icon: navigation ? 'check' : 'close',
-				color: navigation ? 'positive' : 'negative',
-			});
-		}
-
-		if (taskPlanning !== undefined) {
-			list.push({
-				label: 'TaskPlanning',
-				icon: taskPlanning ? 'check' : 'close',
-				color: taskPlanning ? 'positive' : 'negative',
-			});
-		}
-
 		if (reason !== undefined) {
 			list.push({
-				label: 'TaskPlanning',
+				label: 'Reason',
 				icon: reason ? 'check' : 'close',
 				color: reason ? 'positive' : 'negative',
 			});
