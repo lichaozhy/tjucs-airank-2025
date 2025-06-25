@@ -179,7 +179,6 @@ const propertyValueOptionList = computed<OptionObject[]>(() => {
 	const name = propertyNameOption.value;
 
 	if (name !== null) {
-		console.log(name);
 		list.push(...PropertyValueOptionsGenerator[name as PropertyNameValue]());
 	}
 
@@ -187,7 +186,6 @@ const propertyValueOptionList = computed<OptionObject[]>(() => {
 });
 
 watch(propertyNameOption, (newNameOption, oldNameOption) => {
-	console.log(newNameOption, oldNameOption);
 	if (newNameOption !== oldNameOption) {
 		propertyValueOption.value = null;
 	}

@@ -43,8 +43,6 @@ export default defineRouter(async function (/* { store, ssrContext } */) {
 				return { ...saved };
 			}
 
-			console.log(el);
-
 			// el.scrollIntoView({ top: 60 });
 			return { el, top: 60 };
 		},
