@@ -32,7 +32,7 @@
 						"label": "VSI",
 						"ref": {
 							"benchmark": "25206b0f-a955-4e39-86cf-53dcc9528bfc",
-							"key": "Total"				
+							"key": "Total"
 						}
 					},
 					{
@@ -59,7 +59,46 @@
 							"key": "Total"
 						}
 					}
-				]
+				],
+				"models": {
+					"6d2b9e8a-97ff-400f-8ea1-f403c7452408": true,
+					"3b7f3638-9364-41c0-bbfe-5288176f3072": true,
+					"86657687-00d9-4968-90d3-5f4e3d8b6132": true,
+					"e9672027-30d6-4501-b17f-75152789cbc4": true,
+					"aef63eca-3dde-495a-a922-c803d956568f": true,
+					"82dd6b52-ee0e-487e-ae7f-c982050f8506": true,
+					"03383a4f-37a0-4046-80f1-52b61dc452a7": true,
+					"8a656dd4-3104-4471-b8d8-0d6368975f74": true,
+					"0963c6fe-8edb-4165-98c7-6070bb745abf": true,
+					"65b0728a-15d2-4d76-909d-86a505c25405": true,
+					"80939e8a-be9d-4652-95e0-ff3c73a1ddda": true,
+					"dfcea64f-ee5e-4ea6-a448-e09f2fb64271": true,
+					"587b8069-98e6-46a8-985b-4c607dff6b33": true,
+					"26d4f948-64f7-4cbb-a413-e7fec49dc45f": true,
+					"8596e3d7-c65d-46e1-9063-16e83f0647cc": true,
+					"ba940652-9040-4510-b232-52da5cbce5a8": true,
+					"4e387c03-f76e-43e0-9d9c-d80f05e40ed4": true,
+					"cb6e23ea-bc8a-4bef-91d6-ba174280faaf": true,
+					"a7bde639-b09a-4cbf-a647-cbde9a634e6c": true,
+					"b30fbf25-94f2-4c76-9780-7c65e4cd5afc": true,
+					"a72406cc-1374-4992-ad62-b052f23908f8": true,
+					"f0fc7970-1e20-4ea2-a5fd-65ed7dd6802a": true,
+					"989f3769-fe45-4472-85aa-a4f071577271": true,
+					"38e71976-4a59-41bf-9367-95f2fc5bf6f5": true,
+					"6e39d9f5-4b6a-471d-92d6-07a37b559070": true,
+					"5db29ede-6e63-432c-96c1-f65700028165": true,
+					"7a21af4c-f57d-4311-8fae-b7b8dafd03bd": true,
+					"51f2b003-5aa9-462a-a5b4-538ec3f28c17": true,
+					"af35bb7c-f716-47a0-bcce-2f045a108735": true,
+					"9a722f4d-1622-4ed4-9482-5024b95e06fb": true,
+					"ce19cba4-e888-4c92-9700-d25bc4dbbad3": true,
+					"dea72f07-4d45-49bf-bfa6-09c7d328246d": true,
+					"eec95564-4fec-4a35-804d-884bad73d16f": true,
+					"69a2667c-2439-4c0a-b4dd-7fa2c134217c": true,
+					"bd0aff87-62c1-494b-a1e1-fb3ef55f0150": true,
+					"8cb6f6bb-9534-4da7-bff7-b25f4359faec": true,
+					"4a42979f-36cb-4c3e-8ebf-a198a68b90e6": true
+				}
 			},
 			{
 				"id": "22d6526a-6707-4a1e-ae3d-9c337feba2e8",
@@ -88,12 +127,29 @@
 					{
 						"type": "reference",
 						"label": "Scan2Cap",
-						"ref":{
+						"ref": {
 							"benchmark": "df46aa1a-099f-4841-bc02-ba9608e18c7d",
 							"key": "Total"
 						}
 					}
-				]
+				],
+				"models": {
+					"2b8ad6b5-fd3b-4eef-a852-0648bc312bba": true,
+					"87e7bee8-251c-44e8-8e67-500bfdd1f348": true,
+					"70634caf-f6d3-47e8-9e9c-2754a40b53a2": true,
+					"3efd880e-f132-4d0f-ba66-67142efb9470": true,
+					"8472d27d-9c33-4ea2-854c-2ec882f303b6": true,
+					"b0e697a1-bef6-488c-b3df-1680c3694f48": true,
+					"dfb3cf12-beee-48f1-87f5-66d40176d517": true,
+					"d7a24483-5295-4afb-9ecd-8538b5d92e53": true,
+					"dfb947dc-4326-489d-8a69-eb9ecbd3725e": true,
+					"7b3f0bae-5319-4d34-b7ad-62ba67a43da4": true,
+					"529c2206-513e-45fa-a762-1d8a6adf548f": true,
+					"0cb4cf61-fe9a-4974-9c89-96c023957e9f": true,
+					"323ef65f-630b-49df-bff8-e7bc32815387": true,
+					"af3acd4e-d0b0-4aec-b45a-2ad7088a54f8": true,
+					"09929601-b5f9-439b-94d3-fe8dedb11b13": true
+				}
 			}
 		]
 	},
@@ -133,7 +189,36 @@
 							"key": "TotalSR"
 						}
 					}
-				]
+				],
+				"models": {
+					"6d2b9e8a-97ff-400f-8ea1-f403c7452408": true,
+					"4e387c03-f76e-43e0-9d9c-d80f05e40ed4": true,
+					"af35bb7c-f716-47a0-bcce-2f045a108735": true,
+					"e8dafa04-5593-47ac-977b-73a5911edc74": true,
+					"85034696-05d3-44c9-8fc6-1786f0d86aab": true,
+					"9a722f4d-1622-4ed4-9482-5024b95e06fb": true,
+					"3cfdaff3-8301-4951-9f3b-cf8134b4ed10": true,
+					"a0515273-7168-4717-a07a-b143b0208074": true,
+					"80bcf574-1d7c-4798-a1c0-37ac1c32a724": true,
+					"63263829-1e9c-4ac5-bf29-965f540518a6": true,
+					"87f1ac67-6ac8-4f58-9644-f877741326cb": true,
+					"cb6e23ea-bc8a-4bef-91d6-ba174280faaf": true,
+					"ce19cba4-e888-4c92-9700-d25bc4dbbad3": true,
+					"e6010b47-eb88-403c-8aee-858d1c913af2": true,
+					"525c4c5c-e4ef-42ef-9a80-0b7d059f1c95": true,
+					"2bd83c3e-58ed-4898-a1a1-a445513e31c1": true,
+					"69a2667c-2439-4c0a-b4dd-7fa2c134217c": true,
+					"1ff580e8-1775-4dc3-b7f6-191f98b432e8": true,
+					"a7bde639-b09a-4cbf-a647-cbde9a634e6c": true,
+					"74443d95-8883-40ab-b4bd-8e7b184ebe54": true,
+					"b30fbf25-94f2-4c76-9780-7c65e4cd5afc": true,
+					"dea72f07-4d45-49bf-bfa6-09c7d328246d": true,
+					"eec95564-4fec-4a35-804d-884bad73d16f": true,
+					"a72406cc-1374-4992-ad62-b052f23908f8": true,
+					"d43c7af4-55f6-4054-bcd4-88d27efd0d10": true,
+					"8d42636e-05c2-4179-a0d1-625f474f1622": true,
+					"bfee5170-8314-49ea-96e6-762fc8e2bba4": true
+				}
 			}
 		]
 	},
@@ -173,7 +258,36 @@
 							"key": "TotalSR"
 						}
 					}
-				]
+				],
+				"models": {
+					"314244f5-7c42-4279-957b-6fbc2c4b9aee": true,
+					"12e98a0d-5bd3-4af8-a45d-4ebaa59cf45c": true,
+					"df53089f-9407-49d7-b93e-199fffe7db94": true,
+					"6d2b9e8a-97ff-400f-8ea1-f403c7452408": true,
+					"4e387c03-f76e-43e0-9d9c-d80f05e40ed4": true,
+					"af35bb7c-f716-47a0-bcce-2f045a108735": true,
+					"e8dafa04-5593-47ac-977b-73a5911edc74": true,
+					"85034696-05d3-44c9-8fc6-1786f0d86aab": true,
+					"9a722f4d-1622-4ed4-9482-5024b95e06fb": true,
+					"3cfdaff3-8301-4951-9f3b-cf8134b4ed10": true,
+					"a0515273-7168-4717-a07a-b143b0208074": true,
+					"80bcf574-1d7c-4798-a1c0-37ac1c32a724": true,
+					"63263829-1e9c-4ac5-bf29-965f540518a6": true,
+					"87f1ac67-6ac8-4f58-9644-f877741326cb": true,
+					"cb6e23ea-bc8a-4bef-91d6-ba174280faaf": true,
+					"ce19cba4-e888-4c92-9700-d25bc4dbbad3": true,
+					"e6010b47-eb88-403c-8aee-858d1c913af2": true,
+					"525c4c5c-e4ef-42ef-9a80-0b7d059f1c95": true,
+					"2bd83c3e-58ed-4898-a1a1-a445513e31c1": true,
+					"69a2667c-2439-4c0a-b4dd-7fa2c134217c": true,
+					"1ff580e8-1775-4dc3-b7f6-191f98b432e8": true,
+					"a7bde639-b09a-4cbf-a647-cbde9a634e6c": true,
+					"74443d95-8883-40ab-b4bd-8e7b184ebe54": true,
+					"b30fbf25-94f2-4c76-9780-7c65e4cd5afc": true,
+					"dea72f07-4d45-49bf-bfa6-09c7d328246d": true,
+					"eec95564-4fec-4a35-804d-884bad73d16f": true,
+					"a72406cc-1374-4992-ad62-b052f23908f8": true
+				}
 			}
 		]
 	}

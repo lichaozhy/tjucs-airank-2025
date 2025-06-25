@@ -17,6 +17,7 @@ export const Summary = z.object({
 	id: z.uuid(),
 	name: z.string(),
 	properties: z.array(SummaryProperty),
+	models: z.record(z.uuid(), z.literal(true)).optional(),
 });
 
 export const Schema = z.object({

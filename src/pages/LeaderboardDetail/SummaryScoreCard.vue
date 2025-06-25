@@ -140,6 +140,7 @@ const rowList = computed<ModelData[]>(() => {
 
 onBeforeMount(async () => {
 	const summaryData = await SummaryAPI.get();
+	const selectedModels = summaryData?.models ?? {};
 
 	if (summaryData === undefined) {
 		throw new Error('Bad data');
@@ -161,7 +162,9 @@ onBeforeMount(async () => {
 	const models: { [key: string]: true } = {};
 
 	for (const score of scoreListData) {
-		models[score.model] = true;
+		if (Object.hasOwn(selectedModels, score.model)) {
+			models[score.model] = true;
+		}
 	}
 
 	const fetchingModelList = Object.keys(models).map((modelId) => {
