@@ -49,7 +49,7 @@ export type ModelFilter = (data: Spec.Model.Type) => boolean;
 const DEFAULT_FILTER = () => true;
 
 const COMMON_UNSELIECTED = Object.freeze({
-	label: 'Unselected',
+	label: 'All',
 	value: null,
 });
 
@@ -101,13 +101,6 @@ const PropertyTester: Record<string, PropertyTester> = {
 
 		return data.author.includes(target as string);
 	},
-	qa: (data, target) => {
-		if (data.qa === undefined) {
-			return false;
-		}
-
-		return data.qa.includes(target as '2D' | '3D');
-	},
 	dimension: (data, target) => {
 		if (data.dimension === undefined) {
 			return false;
@@ -121,27 +114,6 @@ const PropertyTester: Record<string, PropertyTester> = {
 		}
 
 		return data.opensource === target as boolean;
-	},
-	navigation: (data, target) => {
-		if (data.navigation === undefined) {
-			return false;
-		}
-
-		return data.navigation === target as boolean;
-	},
-	taskPlanning: (data, target) => {
-		if (data.taskPlanning === undefined) {
-			return false;
-		}
-
-		return data.taskPlanning === target as boolean;
-	},
-	reason: (data, target) => {
-		if (data.reason === undefined) {
-			return false;
-		}
-
-		return data.reason === target as boolean;
 	},
 	imageVideo: (data, target) => {
 		if (data.imageVideo === undefined) {
@@ -160,19 +132,15 @@ const propertyNameOptionList = computed<OptionObject[]>(() => {
 			value: 'size',
 		},
 		{
-			label: 'Language Component',
+			label: 'Language Model',
 			value: 'language',
 		},
 		{
-			label: 'Vision Component',
+			label: 'Vision Model',
 			value: 'vision',
 		},
 		{
-			label: 'QA',
-			value: 'qa',
-		},
-		{
-			label: 'Author',
+			label: 'Institute',
 			value: 'author',
 		},
 		{
@@ -184,19 +152,7 @@ const propertyNameOptionList = computed<OptionObject[]>(() => {
 			value: 'opensource',
 		},
 		{
-			label: 'Navigation',
-			value: 'navigation',
-		},
-		{
-			label: 'Task Planning',
-			value: 'taskPlanning',
-		},
-		{
-			label: 'Reason',
-			value: 'reason',
-		},
-		{
-			label: 'Image or Video',
+			label: 'Modality',
 			value: 'imageVideo',
 		},
 	];
@@ -211,12 +167,8 @@ const PropertyValueOptionsGenerator = {
 	vision: () => PROPERTY_GROUP.value!.vision.map(toOption),
 	author: () => PROPERTY_GROUP.value!.author.map(toOption),
 	size: () => PROPERTY_GROUP.value!.size.map(toSizeOption),
-	qa: () => Spec.Model.PROPERTY.QA.map(toOption),
 	dimension: () => Spec.Model.PROPERTY.QA.map(toOption),
 	opensource: () => Spec.Model.PROPERTY.OPENSOURCE.map(toBooleanOption),
-	navigation: () => Spec.Model.PROPERTY.NAVIGATION.map(toBooleanOption),
-	taskPlanning: () => Spec.Model.PROPERTY.TASK_PLANNING.map(toBooleanOption),
-	reason: () => Spec.Model.PROPERTY.REASON.map(toBooleanOption),
 	imageVideo: () => Spec.Model.PROPERTY.IMAGE_VIDEO.map(toOption),
 };
 
