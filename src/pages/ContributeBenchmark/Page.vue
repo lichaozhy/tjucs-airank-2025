@@ -21,6 +21,8 @@
 							v-model="form.name"
 							square
 							filled
+							clearable
+							color="indigo-10"
 						></q-input>
 
 						<q-select
@@ -34,6 +36,8 @@
 							v-model="form.leaderboard"
 							square
 							filled
+							clearable
+							color="indigo-10"
 						></q-select>
 
 						<q-input
@@ -45,50 +49,84 @@
 							v-model="form.organization"
 							square
 							filled
+							clearable
+							color="indigo-10"
 						></q-input>
 
 						<q-input
 							class="q-mt-lg"
 							stack-label
 							label="Release Time"
-							placeholder="Please input the name of release organization"
-							name="benchmark-organization"
+							placeholder="Please select release date"
+							name="benchmark-released-at"
 							v-model="form.releasedAt"
 							square
 							filled
-						></q-input>
+							readonly
+							color="indigo-10"
+						>
+							<template v-slot:append>
+								<q-icon
+									name="event"
+									class="cursor-pointer"
+								>
+									<q-popup-proxy
+										cover
+										transition-show="scale"
+										transition-hide="scale"
+									>
+										<q-date v-model="form.releasedAt">
+											<div class="row items-center justify-end">
+												<q-btn
+													v-close-popup
+													label="Close"
+													color="primary"
+													flat
+												/>
+											</div>
+										</q-date>
+									</q-popup-proxy>
+								</q-icon>
+							</template>
+						</q-input>
 
 						<q-input
 							class="q-mt-lg"
 							stack-label
 							label="Repository"
-							placeholder="Please input the name of release organization"
-							name="benchmark-organization"
+							placeholder="Please input repository URL"
+							name="benchmark-repository"
 							v-model="form.repository"
 							square
 							filled
+							color="indigo-10"
+							clearable
 						></q-input>
 
 						<q-input
 							class="q-mt-lg"
 							stack-label
 							label="Paper"
-							placeholder="Please input the name of release organization"
-							name="benchmark-organization"
+							placeholder="Please input paper URL"
+							name="benchmark-paper"
 							v-model="form.paper"
 							square
 							filled
+							color="indigo-10"
+							clearable
 						></q-input>
 
 						<q-input
 							class="q-mt-lg"
 							stack-label
 							label="Website"
-							placeholder="Please input the name of release organization"
-							name="benchmark-organization"
+							placeholder="Please input website URL"
+							name="benchmark-website"
 							v-model="form.website"
 							square
 							filled
+							color="indigo-10"
+							clearable
 						></q-input>
 
 						<q-input
@@ -96,11 +134,12 @@
 							type="textarea"
 							stack-label
 							label="Introduction(English)"
-							placeholder="Please input the name of release organization"
-							name="benchmark-organization"
+							name="benchmark-introduction-enUS"
 							v-model="form.introduction.enUS"
 							square
 							filled
+							color="indigo-10"
+							clearable
 						></q-input>
 
 						<q-input
@@ -108,11 +147,12 @@
 							type="textarea"
 							stack-label
 							label="Introduction(Chinese)"
-							placeholder="Please input the name of release organization"
-							name="benchmark-organization"
+							name="benchmark-introduction-zhCN"
 							v-model="form.introduction.zhCN"
 							square
 							filled
+							color="indigo-10"
+							clearable
 						></q-input>
 
 						<q-separator class="q-my-md" />
@@ -202,6 +242,9 @@
 
 <script setup lang="ts">
 import { reactive, ref } from 'vue';
+import * as Q from 'quasar';
+
+const MASK = 'YYYY/MM/DD';
 
 const form = reactive<{
 	name: string | null;
@@ -219,7 +262,7 @@ const form = reactive<{
 	name: null,
 	leaderboard: null,
 	organization: null,
-	releasedAt: null,
+	releasedAt: Q.date.formatDate(new Date(), MASK),
 	repository: null,
 	paper: null,
 	website: null,
