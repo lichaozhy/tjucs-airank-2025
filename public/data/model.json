@@ -30,49 +30,97 @@
         "id": "3b7f3638-9364-41c0-bbfe-5288176f3072",
         "name": "LLaVA-NeXT-Video-7B",
         "component": {
-            "vision": [
-                "Qwen2-7B"
-            ],
             "language": [
-                "SigLIP-So400m"
+                "lmsys/vicuna-7B-v1.5"
             ]
         },
+        "size": [
+            7
+        ],
+        "author": [
+            "ByteDance"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/lmms-lab/LLaVA-NeXT-Video-7B",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "image/video"
     },
     {
         "id": "86657687-00d9-4968-90d3-5f4e3d8b6132",
         "name": "MiniCPM-V 2.6",
         "component": {
             "vision": [
-                "Qwen2-7B"
+                "SigLip-So400M"
             ],
             "language": [
-                "SigLIP-So400m"
+                "Qwen2-7B"
             ]
         },
+        "size": [
+            7
+        ],
+        "author": [
+            "MiniCPM"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/openbmb/MiniCPM-V-2_6",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "image/video"
     },
     {
         "id": "e9672027-30d6-4501-b17f-75152789cbc4",
         "name": "mPLUG-Owl3",
         "component": {
             "vision": [
-                "Qwen2-7B"
+                "SigLIP-So400M"
             ],
             "language": [
-                "SigLIP-So400m"
+                "Qwen2-7B"
             ]
         },
+        "size": [
+            7
+        ],
+        "author": [
+            "Alibaba"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/mPLUG/mPLUG-Owl3-7B-240728",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "image/video"
     },
     {
         "id": "aef63eca-3dde-495a-a922-c803d956568f",
@@ -111,17 +159,31 @@
         "id": "82dd6b52-ee0e-487e-ae7f-c982050f8506",
         "name": "MiniCPM-V",
         "component": {
-            "vision": [
-                "MiniCPM 2B"
-            ],
             "language": [
-                "SigLIP SoViT-400m/14"
+                "MiniCPM-2.4B"
             ]
         },
+        "size": [
+            3
+        ],
+        "author": [
+            "MiniCPM"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/openbmb/MiniCPM-V",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "image/video"
     },
     {
         "id": "03383a4f-37a0-4046-80f1-52b61dc452a7",
@@ -160,146 +222,291 @@
         "id": "8a656dd4-3104-4471-b8d8-0d6368975f74",
         "name": "Phi-3-vision-128k-instruct",
         "component": {
-            "vision": [
-                "Phi-3 Mini"
-            ],
             "language": [
-                "CLIP ViT-L/14"
+                "Phi-3 Mini"
             ]
         },
+        "size": [
+            4
+        ],
+        "author": [
+            "Microsoft"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/microsoft/Phi-3-vision-128k-instruct",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "Image"
     },
     {
         "id": "0963c6fe-8edb-4165-98c7-6070bb745abf",
-        "name": "LLava-7B",
+        "name": "LLava-v1.5-7B",
         "component": {
             "vision": [
-                "Vicuna-7B"
+                "CLIP ViT-L/14"
             ],
             "language": [
-                "CLIP"
+                "Vicuna‑7B"
             ]
         },
+        "size": [
+            7
+        ],
+        "author": [
+            "University of Wisconsin-Madison",
+            "Microsoft",
+            "Columbia University"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/llava-hf/llava-1.5-7b-hf",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2023
+        },
+        "imageVideo": "Image"
     },
     {
         "id": "65b0728a-15d2-4d76-909d-86a505c25405",
         "name": "Instructblip-flant5xl",
         "component": {
             "vision": [
-                "Flan-T5-xl"
+                "BLIP-2"
             ],
             "language": [
-                "BLIP-2"
+                "Flan-T5-xl"
             ]
         },
+        "size": [
+            3
+        ],
+        "author": [
+            "Salesforce Research"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/Salesforce/instructblip-flan-t5-xl",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2023
+        },
+        "imageVideo": "Image"
     },
     {
         "id": "80939e8a-be9d-4652-95e0-ff3c73a1ddda",
         "name": "Video-LLaVA-7B",
         "component": {
-            "vision": [
-                "Vicuna-7B"
-            ],
             "language": [
-                "EVA-G"
+                "Vicuna-7B-v1.5"
             ]
         },
+        "size": [
+            7
+        ],
+        "author": [
+            "Peking University"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/LanguageBind/Video-LLaVA-7B",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2023
+        },
+        "imageVideo": "image/video"
     },
     {
         "id": "dfcea64f-ee5e-4ea6-a448-e09f2fb64271",
         "name": "pllava-7b",
         "component": {
             "vision": [
-                "Vicuna-7B"
+                "CLIP ViT-L/14"
             ],
             "language": [
-                "ViT/L"
+                "Vicuna-7B-v1.5"
             ]
         },
+        "size": [
+            7
+        ],
+        "author": [
+            "National University of Singapore",
+            "New York University",
+            "Bytedance"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/ermu2001/pllava-7b",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "image/video"
     },
     {
         "id": "587b8069-98e6-46a8-985b-4c607dff6b33",
         "name": "navillm",
         "component": {
             "vision": [
-                "Vicuna-7B"
+                "EVA-CLIP"
             ],
             "language": [
-                "EVA-CLIP"
+                "Vicuna-7B-v1.5"
             ]
         },
+        "size": [
+            7
+        ],
+        "author": [
+            "Chinese University of Hong Kong",
+            "Shanghai AI Laboratory",
+            "Centre for Perceptual and Interactive Intelligence"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://navila-bot.github.io/",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2023
+        },
+        "imageVideo": "Image"
     },
     {
         "id": "26d4f948-64f7-4cbb-a413-e7fec49dc45f",
         "name": "BLIP-2-flant5xl",
         "component": {
             "vision": [
-                "Flan-T5-xl"
+                "Blip-2"
             ],
             "language": [
-                "ViT-L/14 from CLIP",
-                "ViT-g/14 from EVA-CLIP"
+                "Flan-T5-xl"
             ]
         },
+        "author": [
+            "Salesforce Research"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/Salesforce/blip2-flan-t5-xl",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2023
+        },
+        "imageVideo": "Image"
     },
     {
         "id": "8596e3d7-c65d-46e1-9063-16e83f0647cc",
         "name": "llama-vid-7b-full-224",
         "component": {
-            "vision": [
-                "Vicuna-7B"
-            ],
             "language": [
-                "EVA-G"
+                "LLaMA",
+                "Vicuna‑7B"
             ]
         },
+        "size": [
+            7
+        ],
+        "author": [
+            "Chinese University of Hong Kong",
+            "SmartMore"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/YanweiLi/llama-vid-7b-full-224",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2023
+        },
+        "imageVideo": "image/video"
     },
     {
         "id": "ba940652-9040-4510-b232-52da5cbce5a8",
-        "name": "MiniGPT-4-7B",
+        "name": "MiniGPT4-Vicuna7B",
         "component": {
             "vision": [
-                "Vicuna-7B"
+                "Blip-2"
             ],
             "language": [
-                "ViT-g/14 from EVA-CLIP"
+                "Vicuna-7B"
             ]
         },
+        "author": [
+            "King Abdullah University of Science and Technology"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://minigpt-4.github.io/",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2023
+        },
+        "imageVideo": "Image"
     },
     {
         "id": "f0fc7970-1e20-4ea2-a5fd-65ed7dd6802a",
@@ -339,18 +546,40 @@
     {
         "id": "989f3769-fe45-4472-85aa-a4f071577271",
         "name": "LLaVA-NeXT-Video-72B",
+        "component": {
+            "vision": [
+                "SigLip-So400M"
+            ],
+            "language": [
+                "Qwen2-72B"
+            ]
+        },
+        "size": [
+            72
+        ],
+        "author": [
+            "ByteDance"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/lmms-lab/LLaVA-Video-72B-Qwen2",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "image/video"
     },
     {
         "id": "38e71976-4a59-41bf-9367-95f2fc5bf6f5",
         "name": "LLaVA-OneVision-72B",
         "component": {
-            "vision": [
-                "SigLIP"
-            ],
             "language": [
                 "Qwen2-72B"
             ]
@@ -374,36 +603,79 @@
         "opensource": true,
         "release": {
             "year": 2024
-        },
-        "imageVideo": "image/video"
+        }
     },
     {
         "id": "6e39d9f5-4b6a-471d-92d6-07a37b559070",
         "name": "InternVL2-40B",
+        "component": {
+            "vision": [
+                "InternViT-6B-448px-V1-5"
+            ],
+            "language": [
+                "Nous-Hermes-2-Yi-34B"
+            ]
+        },
+        "size": [
+            40
+        ],
+        "author": [
+            "Shanghai AI Lab",
+            "Tsinghua"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/OpenGVLab/InternVL2-40B",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "image/video"
     },
     {
         "id": "5db29ede-6e63-432c-96c1-f65700028165",
         "name": "InternVL2-8B",
+        "component": {
+            "vision": [
+                "InternViT-300M-448px"
+            ],
+            "language": [
+                "internlm2_5-7b-chat"
+            ]
+        },
+        "size": [
+            8
+        ],
+        "author": [
+            "Shanghai AI Lab",
+            "Tsinghua"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/OpenGVLab/InternVL2-8B",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "image/video"
     },
     {
         "id": "4e387c03-f76e-43e0-9d9c-d80f05e40ed4",
         "name": "LLaVA-OneVision-7B",
-        "component": {
-            "vision": [
-                "SigLIP"
-            ],
-            "language": [
-                "Qwen2-7B"
-            ]
-        },
         "size": [
             7
         ],
@@ -423,18 +695,14 @@
         "opensource": true,
         "release": {
             "year": 2024
-        },
-        "imageVideo": "image/video"
+        }
     },
     {
         "id": "7a21af4c-f57d-4311-8fae-b7b8dafd03bd",
         "name": "VILA-1.5-40B",
         "component": {
-            "vision": [
-                "SigLIP"
-            ],
             "language": [
-                "Qwen2"
+                "VILA"
             ]
         },
         "size": [
@@ -462,10 +730,32 @@
     {
         "id": "51f2b003-5aa9-462a-a5b4-538ec3f28c17",
         "name": "LongVA-7B",
+        "component": {
+            "language": [
+                "Qwen2-7B"
+            ]
+        },
+        "size": [
+            7
+        ],
+        "author": [
+            "ByteDance"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/lmms-lab/LongVA-7B",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "image/video"
     },
     {
         "id": "af35bb7c-f716-47a0-bcce-2f045a108735",
@@ -484,7 +774,7 @@
         "dimension": [
             "2D"
         ],
-        "website": "https://ai.google.dev/gemini-api/docs/models",
+        "website": "https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-0-flash",
         "navigation": true,
         "taskPlanning": true,
         "reason": true,
@@ -496,7 +786,7 @@
     },
     {
         "id": "50b75743-251c-40f8-ad52-0773e9865e88",
-        "name": "InternVL2.5-38B-MPO",
+        "name": "InternVL2_5-38B-MPO",
         "component": {
             "vision": [
                 "InternViT-6B-448px-V2_5"
@@ -505,10 +795,28 @@
                 "Qwen2.5-32B-Instruct"
             ]
         },
+        "size": [
+            38
+        ],
+        "author": [
+            "Shanghai AI Lab",
+            "Tsinghua"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/OpenGVLab/InternVL2_5-38B-MPO",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "image/video"
     },
     {
         "id": "638048e4-d5ad-4e67-abfd-c326697048aa",
@@ -521,14 +829,32 @@
                 "Qwen2.5-72B-Instruct"
             ]
         },
+        "size": [
+            78
+        ],
+        "author": [
+            "Shanghai AI Lab",
+            "Tsinghua"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/OpenGVLab/InternVL2_5-78B-MPO",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "image/video"
     },
     {
         "id": "e8dafa04-5593-47ac-977b-73a5911edc74",
-        "name": "Qwen2.5-VL-72B-Ins",
+        "name": "Qwen2.5-VL-72B-Instruct",
         "component": {
             "vision": [
                 "ViT"
@@ -594,10 +920,24 @@
                 "gemini-1.5-flash"
             ]
         },
+        "author": [
+            "Google DeepMind"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/1-5-flash",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": false,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "image/video"
     },
     {
         "id": "3cfdaff3-8301-4951-9f3b-cf8134b4ed10",
@@ -620,7 +960,7 @@
         "navigation": true,
         "taskPlanning": true,
         "reason": true,
-        "opensource": false,
+        "opensource": true,
         "release": {
             "year": 2024
         },
@@ -634,14 +974,28 @@
                 "GPT-4o mini"
             ]
         },
+        "author": [
+            "OpenAI"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": false,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "Image"
     },
     {
         "id": "80bcf574-1d7c-4798-a1c0-37ac1c32a724",
-        "name": "InternVL2.5-78B",
+        "name": "InternVL2_5-78B",
         "component": {
             "vision": [
                 "InternViT-6B-448px-V2_5"
@@ -650,14 +1004,32 @@
                 "Qwen2.5-72B-Instruct"
             ]
         },
+        "size": [
+            78
+        ],
+        "author": [
+            "Shanghai AI Lab",
+            "Tsinghua"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/OpenGVLab/InternVL2_5-78B",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "image/video"
     },
     {
         "id": "63263829-1e9c-4ac5-bf29-965f540518a6",
-        "name": "InternVL2.5-38B",
+        "name": "InternVL2_5-38B",
         "component": {
             "vision": [
                 "InternViT-6B-448px-V2_5"
@@ -666,33 +1038,65 @@
                 "Qwen2.5-32B-Instruct"
             ]
         },
+        "size": [
+            38
+        ],
+        "author": [
+            "Shanghai AI Lab",
+            "Tsinghua"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/OpenGVLab/InternVL2_5-38B",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "image/video"
     },
     {
         "id": "87f1ac67-6ac8-4f58-9644-f877741326cb",
-        "name": "Llama-3.2-90B-Vision-Ins",
+        "name": "Llama-3.2-90B-Vision-Instruct",
         "component": {
-            "vision": [
-                "A separately trained vision adapter"
-            ],
             "language": [
                 "Llama 3.1"
             ]
         },
+        "size": [
+            90
+        ],
+        "author": [
+            "Meta AI"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "Image"
     },
     {
         "id": "cb6e23ea-bc8a-4bef-91d6-ba174280faaf",
-        "name": "Qwen2.5-VL-7B-Ins",
+        "name": "Qwen2.5-VL-7B-Instruct",
         "component": {
             "vision": [
-                "ViT"
+                "Retrained NaViT"
             ],
             "language": [
                 "Qwen2.5-7B"
@@ -728,30 +1132,58 @@
                 "gemini-1.5-Pro"
             ]
         },
+        "author": [
+            "Google DeepMind"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/1-5-pro",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": false,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "image/video"
     },
     {
         "id": "e6010b47-eb88-403c-8aee-858d1c913af2",
-        "name": "Llama-3.2-11B-Vision-Ins",
+        "name": "Llama-3.2-11B-Vision-Instruct",
         "component": {
-            "vision": [
-                "A separately trained vision adapter"
-            ],
             "language": [
                 "Llama 3.1"
             ]
         },
+        "size": [
+            11
+        ],
+        "author": [
+            "Google DeepMind"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "Image"
     },
     {
         "id": "525c4c5c-e4ef-42ef-9a80-0b7d059f1c95",
-        "name": "InternVL2.5-8B",
+        "name": "InternVL2_5-8B",
         "component": {
             "vision": [
                 "InternViT-300M-448px-V2_5"
@@ -760,46 +1192,98 @@
                 "internlm2_5-7b-chat"
             ]
         },
+        "size": [
+            8
+        ],
+        "author": [
+            "Shanghai AI Lab",
+            "Tsinghua"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/OpenGVLab/InternVL2_5-8B",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "image/video"
     },
     {
         "id": "2bd83c3e-58ed-4898-a1a1-a445513e31c1",
-        "name": "Qwen2-VL-72B-Ins",
+        "name": "Qwen2-VL-72B-Instruct",
         "component": {
             "vision": [
-                "Redesigned ViT"
+                "NaViT"
             ],
             "language": [
-                "Qwen2"
+                "Qwen2.5-72B"
             ]
         },
+        "size": [
+            72
+        ],
+        "author": [
+            "Alibaba"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "image/video"
     },
     {
         "id": "69a2667c-2439-4c0a-b4dd-7fa2c134217c",
-        "name": "Qwen2-VL-7B-Ins",
+        "name": "Qwen2-VL-7B-Instruct",
         "component": {
             "vision": [
-                "Redesigned ViT"
+                "NaViT"
             ],
             "language": [
-                "Qwen2"
+                "Qwen2.5-7B"
             ]
         },
+        "size": [
+            7
+        ],
+        "author": [
+            "Alibaba"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "image/video"
     },
     {
         "id": "e40d9b56-19c8-4387-8f71-4a3b39d7d1ef",
-        "name": "InternVL2.5-8B-MPO",
+        "name": "InternVL2_5-8B-MPO",
         "component": {
             "vision": [
                 "InternViT-300M-448px-V2_5"
@@ -808,26 +1292,68 @@
                 "internlm2_5-7b-chat"
             ]
         },
+        "size": [
+            8
+        ],
+        "author": [
+            "Shanghai AI Lab",
+            "Tsinghua"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/OpenGVLab/InternVL2_5-8B-MPO",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "image/video"
     },
     {
         "id": "47130974-a85a-4090-ab93-04542244c04e",
         "name": "Gemini-2.0-Pro w CoT",
+        "author": [
+            "Google DeepMind"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": false,
+        "release": {
+            "year": 2025
+        }
     },
     {
         "id": "b98ae0e6-2bcf-487d-8ada-6423bcce8f9c",
         "name": "GPT-4o w CoT",
+        "author": [
+            "OpenAI"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": false,
+        "release": {
+            "year": 2024
+        }
     },
     {
         "id": "4a42979f-36cb-4c3e-8ebf-a198a68b90e6",
@@ -846,15 +1372,13 @@
         "dimension": [
             "2D"
         ],
-        "website": "https://ai.google.dev/gemini-api/docs/models",
         "navigation": true,
         "taskPlanning": true,
         "reason": true,
         "opensource": false,
         "release": {
             "year": 2025
-        },
-        "imageVideo": "image/video"
+        }
     },
     {
         "id": "2b8ad6b5-fd3b-4eef-a852-0648bc312bba",
@@ -867,26 +1391,67 @@
     {
         "id": "87e7bee8-251c-44e8-8e67-500bfdd1f348",
         "name": "Video-3D LLM (32 frames)",
+        "component": {
+            "vision": [
+                "3D Visual Geometry Encoder combined with 2D Visual Encoder"
+            ],
+            "language": [
+                "Qwen2.5-VL"
+            ]
+        },
+        "author": [
+            "Chinese University of Hong Kong"
+        ],
+        "qa": [
+            "3D"
+        ],
+        "dimension": [
+            "3D"
+        ],
+        "website": "https://github.com/LaVi-Lab/Video-3D-LLM",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "Point Clouds"
     },
     {
         "id": "70634caf-f6d3-47e8-9e9c-2754a40b53a2",
         "name": "Video-3D LLM (16 frames)",
+        "component": {
+            "vision": [
+                "3D Visual Geometry Encoder combined with 2D Visual Encoder"
+            ],
+            "language": [
+                "Qwen2.5-VL"
+            ]
+        },
+        "author": [
+            "Chinese University of Hong Kong"
+        ],
+        "qa": [
+            "3D"
+        ],
+        "dimension": [
+            "3D"
+        ],
+        "website": "https://github.com/LaVi-Lab/Video-3D-LLM",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "Point Clouds"
     },
     {
         "id": "3efd880e-f132-4d0f-ba66-67142efb9470",
         "name": "LLaVA-3D",
         "component": {
-            "vision": [
-                "CLIP"
-            ],
             "language": [
                 "LLaVA-Video-7B"
             ]
@@ -896,7 +1461,7 @@
         ],
         "author": [
             "University of Hong Kong",
-            "Shanghai AI Lab"
+            "Shanghai AI Laboratory"
         ],
         "qa": [
             "3D"
@@ -904,7 +1469,7 @@
         "dimension": [
             "3D"
         ],
-        "website": "https://huggingface.co/ChaimZhu/LLaVA-3D-7B",
+        "website": "https://github.com/ZCMax/LLaVA-3D",
         "navigation": false,
         "taskPlanning": false,
         "reason": true,
@@ -912,36 +1477,123 @@
         "release": {
             "year": 2024
         },
-        "imageVideo": "Image"
+        "imageVideo": "Point Clouds"
     },
     {
         "id": "8472d27d-9c33-4ea2-854c-2ec882f303b6",
         "name": "Chat-3D v2",
+        "component": {
+            "vision": [
+                "PointGroup"
+            ],
+            "language": [
+                "Vicuna-7B-v0"
+            ]
+        },
+        "author": [
+            "Zhejiang University"
+        ],
+        "qa": [
+            "3D"
+        ],
+        "dimension": [
+            "3D"
+        ],
+        "website": "https://chat-3d.github.io/",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2023
+        },
+        "imageVideo": "Point Clouds"
     },
     {
         "id": "b0e697a1-bef6-488c-b3df-1680c3694f48",
         "name": "ChatScene",
+        "component": {
+            "vision": [
+                "Mask3D"
+            ],
+            "language": [
+                "Vicuna-7B-v1.5",
+                "LoRA"
+            ]
+        },
+        "author": [
+            "Zhejiang University",
+            "Shanghai AI Laboratory",
+            "Bytedance"
+        ],
+        "qa": [
+            "3D"
+        ],
+        "dimension": [
+            "3D"
+        ],
+        "website": "https://github.com/ZzZZCHS/Chat-Scene",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "Point Clouds"
     },
     {
         "id": "dfb3cf12-beee-48f1-87f5-66d40176d517",
         "name": "SceneLLM",
+        "component": {
+            "language": [
+                "Llama-2-7B"
+            ]
+        },
+        "author": [
+            "Meta AI"
+        ],
+        "qa": [
+            "3D"
+        ],
+        "dimension": [
+            "3D"
+        ],
+        "website": "https://arxiv.org/abs/2403.11401",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": false,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "Point Clouds"
     },
     {
         "id": "d7a24483-5295-4afb-9ecd-8538b5d92e53",
         "name": "LEO",
+        "component": {
+            "vision": [
+                "PointNet++",
+                "PointBERT"
+            ],
+            "language": [
+                "Vicuna-7B-v1.1"
+            ]
+        },
+        "size": [
+            7
+        ],
+        "author": [
+            "Bejing Institute for General Artificial Intelligence",
+            "Peking University",
+            "Carnegie Mellon University",
+            "Tsinghua University"
+        ],
         "qa": [
+            "3D"
+        ],
+        "dimension": [
             "3D"
         ],
         "website": "https://embodied-generalist.github.io/",
@@ -950,7 +1602,7 @@
         "reason": false,
         "opensource": true,
         "release": {
-            "year": 2023
+            "year": 2024
         },
         "imageVideo": "Point Clouds"
     },
@@ -965,34 +1617,122 @@
     {
         "id": "7b3f0bae-5319-4d34-b7ad-62ba67a43da4",
         "name": "PQ3D",
+        "component": {
+            "vision": [
+                "pretrained CLIP"
+            ]
+        },
+        "author": [
+            "Bejing Institute for General Artificial Intelligence"
+        ],
+        "qa": [
+            "3D"
+        ],
+        "dimension": [
+            "3D"
+        ],
+        "website": "https://pq3d.github.io/",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "Point Clouds"
     },
     {
         "id": "529c2206-513e-45fa-a762-1d8a6adf548f",
         "name": "Qwen2-VL-7B",
+        "component": {
+            "vision": [
+                "NaViT"
+            ],
+            "language": [
+                "Qwen2-VL-7B"
+            ]
+        },
+        "size": [
+            8
+        ],
+        "author": [
+            "Alibaba"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/Qwen/Qwen2-VL-7B",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "image/video"
     },
     {
         "id": "0cb4cf61-fe9a-4974-9c89-96c023957e9f",
         "name": "3D-LLM(BLIP2-flant5)",
+        "component": {
+            "vision": [
+                "BLIP-2"
+            ],
+            "language": [
+                "Flan-T5"
+            ]
+        },
+        "author": [
+            "UMass Embodied AGI Group"
+        ],
+        "qa": [
+            "3D"
+        ],
+        "dimension": [
+            "3D"
+        ],
+        "website": "https://github.com/UMass-Embodied-AGI/3D-LLM",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2023
+        },
+        "imageVideo": "Point Clouds"
     },
     {
         "id": "323ef65f-630b-49df-bff8-e7bc32815387",
         "name": "3D-LLM(Flamingo)",
+        "component": {
+            "vision": [
+                "CLIP"
+            ],
+            "language": [
+                "Open-Flamingo"
+            ]
+        },
+        "author": [
+            "UMass Embodied AGI Group"
+        ],
+        "qa": [
+            "3D"
+        ],
+        "dimension": [
+            "3D"
+        ],
+        "website": "https://github.com/UMass-Embodied-AGI/3D-LLM",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2023
+        },
+        "imageVideo": "Point Clouds"
     },
     {
         "id": "af3acd4e-d0b0-4aec-b45a-2ad7088a54f8",
@@ -1032,34 +1772,109 @@
     {
         "id": "09929601-b5f9-439b-94d3-fe8dedb11b13",
         "name": "LL3DA",
+        "author": [
+            "Tencent PCG"
+        ],
+        "qa": [
+            "3D"
+        ],
+        "dimension": [
+            "3D"
+        ],
+        "website": "https://ll3da.github.io/",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        },
+        "imageVideo": "Point Clouds"
     },
     {
         "id": "314244f5-7c42-4279-957b-6fbc2c4b9aee",
         "name": "GPT-4",
+        "component": {
+            "language": [
+                "GPT-4"
+            ]
+        },
+        "author": [
+            "OpenAI"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://openai.com/index/gpt-4-research/",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": false,
+        "release": {
+            "year": 2023
+        },
+        "imageVideo": "Image"
     },
     {
         "id": "12e98a0d-5bd3-4af8-a45d-4ebaa59cf45c",
         "name": "Llama3-70B",
+        "component": {
+            "language": [
+                "Llama3.0-70B"
+            ]
+        },
+        "size": [
+            70
+        ],
+        "author": [
+            "Meta AI"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/meta-llama/Meta-Llama-3-70B",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        }
     },
     {
         "id": "df53089f-9407-49d7-b93e-199fffe7db94",
         "name": "Llama3-8B",
+        "component": {
+            "language": [
+                "Llama3.0-8B"
+            ]
+        },
+        "size": [
+            8
+        ],
+        "author": [
+            "Meta AI"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": true,
+        "release": {
+            "year": 2024
+        }
     },
     {
         "id": "3b0d50a0-37ec-4234-ada0-4a727f9972ab",
@@ -1154,10 +1969,23 @@
     {
         "id": "bfee5170-8314-49ea-96e6-762fc8e2bba4",
         "name": "MapNav",
+        "author": [
+            "Beijing Academy of Artificial Intelligence"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://arxiv.org/pdf/2502.13451",
         "navigation": false,
         "taskPlanning": false,
         "reason": false,
-        "opensource": false
+        "opensource": false,
+        "release": {
+            "year": 2025
+        }
     },
     {
         "id": "a7bde639-b09a-4cbf-a647-cbde9a634e6c",
@@ -1600,7 +2428,7 @@
                 "SigLip-400M model"
             ],
             "language": [
-                "Qwen-2.5-Instruct-3B mode"
+                "Qwen-2.5-Instruct-3B"
             ]
         },
         "size": [
@@ -1926,5 +2754,58 @@
             "year": 2025
         },
         "imageVideo": "Image"
+    },
+    {
+        "id": "051465b8-2624-4b45-a884-bdfcfde0609f",
+        "name": "LLaVA-OneVision-0.5B",
+        "author": [
+            "ByteDance"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "navigation": false,
+        "taskPlanning": false,
+        "reason": false,
+        "opensource": true,
+        "release": {
+            "year": 2024
+        }
+    },
+    {
+        "id": "0254b277-0f68-496d-b01b-fe0528e67b4b",
+        "name": "Cosmos-Reason-1-7B",
+        "component": {
+            "vision": [
+                "ViT"
+            ],
+            "language": [
+                "Qwen2.5-VL-7B-Instruct"
+            ]
+        },
+        "size": [
+            7
+        ],
+        "author": [
+            "NVIDIA"
+        ],
+        "qa": [
+            "2D"
+        ],
+        "dimension": [
+            "2D"
+        ],
+        "website": "https://huggingface.co/nvidia/Cosmos-Reason1-7B",
+        "navigation": false,
+        "taskPlanning": false,
+        "reason": false,
+        "opensource": true,
+        "release": {
+            "year": 2025
+        },
+        "imageVideo": "image/video"
     }
 ]
