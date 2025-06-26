@@ -26,18 +26,17 @@
 
 			<div class="q-mt-sm">
 				<q-chip
-					dense
-					size="12px"
-					square
-					color="teal-5"
+					size="11px"
+					color="teal-8"
 					v-for="(item, index) in propertyEntityList"
 					:key="index"
-					class="glossy q-ml-none"
+					dense
+					class="glossy q-ml-none q-mr-sm overflow-hidden"
 				>
 					<q-avatar
 						text-color="white"
 						:icon="item.icon || item.label"
-						:color="item.color || 'primary'"
+						:color="item.color || 'indigo-10'"
 						style="margin-right: 0"
 						class="glossy"
 					></q-avatar>
@@ -47,7 +46,7 @@
 					>{{ item.label }}</div>
 					<div
 						v-if="item.value"
-						class="bg-white q-px-sm glossy text-weight-thin"
+						class="bg-indigo-10 q-px-sm glossy text-weight-thin text-white"
 						style="margin-right: -0.4em;"
 					>{{ item.value }}</div>
 				</q-chip>
@@ -129,13 +128,13 @@ const propertyEntityList = computed<PropertyEntity[]>(() => {
 		if (component !== undefined) {
 			if (component.vision !== undefined) {
 				for (const vision of component.vision) {
-					list.push({ label: 'vision', value: vision, icon: 'visibility' });
+					list.push({ label: 'Vision Nodel', value: vision, icon: 'visibility' });
 				}
 			}
 
 			if (component.language !== undefined) {
 				for (const language of component.language) {
-					list.push({ label: 'language', value: language, icon: 'translate' });
+					list.push({ label: 'Language Model', value: language, icon: 'translate' });
 				}
 			}
 		}
@@ -148,7 +147,7 @@ const propertyEntityList = computed<PropertyEntity[]>(() => {
 
 		if (author !== undefined) {
 			for (const authorName of author) {
-				list.push({ label: 'Author', value: authorName, icon: 'hub' });
+				list.push({ label: 'Institute', value: authorName, icon: 'hub' });
 			}
 		}
 
@@ -164,12 +163,12 @@ const propertyEntityList = computed<PropertyEntity[]>(() => {
 				}
 			}
 
-			list.push({ label: 'Release', value: sectionList.join('-'), icon: 'publish' });
+			list.push({ label: 'Release Time', value: sectionList.join('-'), icon: 'publish' });
 		}
 
 		if (opensource !== undefined) {
 			list.push({
-				label: 'OpenSource',
+				label: 'Open Source',
 				icon: opensource ? 'check' : 'close',
 				color: opensource ? 'positive' : 'negative',
 			});
@@ -201,7 +200,7 @@ const propertyEntityList = computed<PropertyEntity[]>(() => {
 
 		if (imageVideo !== undefined) {
 			list.push({
-				label: 'Image/Video',
+				label: 'Modality',
 				icon: 'ondemand_video',
 				value: imageVideo,
 			});
