@@ -33,6 +33,7 @@ export type ModelPropertyRecordGroup = {
 	language: Record<string, number>;
 	author: Record<string, number>;
 	size: Record<string, number>;
+	year: Record<string, number>
 }
 
 export type ModelPropertyValueGroup = {
@@ -40,6 +41,7 @@ export type ModelPropertyValueGroup = {
 	language: string[];
 	author: string[];
 	size: number[];
+	year: number[];
 }
 
 export const Data: {
@@ -182,6 +184,7 @@ export const API = {
 							language: Object.keys(Data.ModelProperty.language),
 							author: Object.keys(Data.ModelProperty.author),
 							size: Object.keys(Data.ModelProperty.size).map(v => Number(v)),
+							year: Object.keys(Data.ModelProperty.year).map(v => Number(v)),
 						};
 					},
 				},

@@ -122,6 +122,13 @@ const PropertyTester: Record<string, PropertyTester> = {
 
 		return data.imageVideo.includes(target as string);
 	},
+	year: (data, target) => {
+		if (data.release === undefined) {
+			return false;
+		}
+
+		return data.release.year === target;
+	},
 };
 
 const propertyNameOptionList = computed<OptionObject[]>(() => {
@@ -144,6 +151,10 @@ const propertyNameOptionList = computed<OptionObject[]>(() => {
 			value: 'author',
 		},
 		{
+			label: 'Release Time(Year)',
+			value: 'year',
+		},
+		{
 			label: 'Dimension',
 			value: 'dimension',
 		},
@@ -161,12 +172,14 @@ const propertyNameOptionList = computed<OptionObject[]>(() => {
 const toOption = (v: string) => ({ label: v, value: v });
 const toSizeOption = (v: number) => ({ label: `${v}B`, value: v });
 const toBooleanOption = (v: boolean) => ({ label: v ? 'Yes' : 'No', value: v });
+const toYearOption = (v: number) => ({ label: `${v}`, value: v });
 
 const PropertyValueOptionsGenerator = {
 	language: () => PROPERTY_GROUP.value!.language.map(toOption),
 	vision: () => PROPERTY_GROUP.value!.vision.map(toOption),
 	author: () => PROPERTY_GROUP.value!.author.map(toOption),
 	size: () => PROPERTY_GROUP.value!.size.map(toSizeOption),
+	year: () => PROPERTY_GROUP.value!.year.map(toYearOption),
 	dimension: () => Spec.Model.PROPERTY.QA.map(toOption),
 	opensource: () => Spec.Model.PROPERTY.OPENSOURCE.map(toBooleanOption),
 	imageVideo: () => Spec.Model.PROPERTY.IMAGE_VIDEO.map(toOption),

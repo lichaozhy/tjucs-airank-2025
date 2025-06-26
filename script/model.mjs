@@ -16,10 +16,11 @@ const record = {
 	language: {},
 	author: {},
 	size: {},
+	year: {},
 };
 
 for (const model of modelList) {
-	const { author, component, size } = model;
+	const { author, component, size, release } = model;
 
 	if (Array.isArray(author)) {
 		for (const value of author) {
@@ -62,6 +63,18 @@ for (const model of modelList) {
 			}
 
 			record.size[value] += 1;
+		}
+	}
+
+	if (release !== undefined) {
+		const { year } = release;
+
+		if (typeof year === 'number') {
+			if (!record.year[year]) {
+				record.year[year] = 0;
+			}
+
+			record.year[year] += 1;
 		}
 	}
 }

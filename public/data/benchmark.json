@@ -749,7 +749,8 @@
 		"id": "ed3fc303-b421-4e73-936a-e93a5aada777",
 		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
 		"name": "RoboVQA",
-		"description": "RoboVQA: Multimodal Long-Horizon Reasoning for Robotics\n",
+		"description": "",
+		"RoboVQA": "Multimodal Long-Horizon Reasoning for Robotics",
 		"organization": "Google DeepMind",
 		"released": {
 			"at": {
