@@ -120,9 +120,7 @@ const propertyEntityList = computed<PropertyEntity[]>(() => {
 
 	if (model.value !== null) {
 		const {
-			component, size, author, release, opensource,
-			qa, dimension,
-			reason, imageVideo,
+			component, size, author, release, opensource, dimension, imageVideo,
 		} = model.value;
 
 		if (component !== undefined) {
@@ -171,20 +169,6 @@ const propertyEntityList = computed<PropertyEntity[]>(() => {
 				label: 'Open Source',
 				icon: opensource ? 'check' : 'close',
 				color: opensource ? 'positive' : 'negative',
-			});
-		}
-
-		if (qa !== undefined) {
-			for (const value of qa) {
-				list.push({ icon: 'terminal', label: 'QA', value });
-			}
-		}
-
-		if (reason !== undefined) {
-			list.push({
-				label: 'Reason',
-				icon: reason ? 'check' : 'close',
-				color: reason ? 'positive' : 'negative',
 			});
 		}
 
