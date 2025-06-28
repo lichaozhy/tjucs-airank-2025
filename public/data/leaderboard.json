@@ -58,6 +58,14 @@
 							"benchmark": "a9228f2e-3191-4a08-8f03-64e73cae2e78",
 							"key": "Total"
 						}
+					},
+					{
+						"type": "reference",
+						"label": "MineAnyBuild",
+						"ref": {
+							"benchmark": "b9a18add-a3fb-4893-89e3-ddeea8053ce2",
+							"key": "Total"
+						}
 					}
 				],
 				"models": {
@@ -65,9 +73,7 @@
 					"f0fc7970-1e20-4ea2-a5fd-65ed7dd6802a": true,
 					"a0515273-7168-4717-a07a-b143b0208074": true,
 					"af35bb7c-f716-47a0-bcce-2f045a108735": true,
-					"4a42979f-36cb-4c3e-8ebf-a198a68b90e6": true,
 					"b585f486-bac8-40d9-bcdb-3b7642bd7be9": true,
-					"85034696-05d3-44c9-8fc6-1786f0d86aab": true,
 					"74443d95-8883-40ab-b4bd-8e7b184ebe54": true,
 					"3cfdaff3-8301-4951-9f3b-cf8134b4ed10": true,
 					"4e387c03-f76e-43e0-9d9c-d80f05e40ed4": true,
@@ -78,7 +84,10 @@
 					"aef63eca-3dde-495a-a922-c803d956568f": true,
 					"cb6e23ea-bc8a-4bef-91d6-ba174280faaf": true,
 					"ec713a22-e012-4acb-8567-c7bbff7c70a2": true,
-					"7a21af4c-f57d-4311-8fae-b7b8dafd03bd": true
+					"a72406cc-1374-4992-ad62-b052f23908f8": true,
+					"8cb6f6bb-9534-4da7-bff7-b25f4359faec": true,
+					"03383a4f-37a0-4046-80f1-52b61dc452a7": true,
+					"0254b277-0f68-496d-b01b-fe0528e67b4b": true
 				}
 			},
 			{
@@ -118,7 +127,13 @@
 					"a72406cc-1374-4992-ad62-b052f23908f8": true,
 					"8cb6f6bb-9534-4da7-bff7-b25f4359faec": true,
 					"03383a4f-37a0-4046-80f1-52b61dc452a7": true,
-					"0254b277-0f68-496d-b01b-fe0528e67b4b": true
+					"0254b277-0f68-496d-b01b-fe0528e67b4b": true,
+					"2b8ad6b5-fd3b-4eef-a852-0648bc312bba": true,
+					"3efd880e-f132-4d0f-ba66-67142efb9470": true,
+					"b0e697a1-bef6-488c-b3df-1680c3694f48": true,
+					"70634caf-f6d3-47e8-9e9c-2754a40b53a2": true,
+					"87e7bee8-251c-44e8-8e67-500bfdd1f348": true,
+					"d7a24483-5295-4afb-9ecd-8538b5d92e53": true
 				}
 			}
 		]
@@ -165,9 +180,7 @@
 					"f0fc7970-1e20-4ea2-a5fd-65ed7dd6802a": true,
 					"a0515273-7168-4717-a07a-b143b0208074": true,
 					"af35bb7c-f716-47a0-bcce-2f045a108735": true,
-					"4a42979f-36cb-4c3e-8ebf-a198a68b90e6": true,
 					"b585f486-bac8-40d9-bcdb-3b7642bd7be9": true,
-					"85034696-05d3-44c9-8fc6-1786f0d86aab": true,
 					"74443d95-8883-40ab-b4bd-8e7b184ebe54": true,
 					"3cfdaff3-8301-4951-9f3b-cf8134b4ed10": true,
 					"4e387c03-f76e-43e0-9d9c-d80f05e40ed4": true,
@@ -178,7 +191,10 @@
 					"aef63eca-3dde-495a-a922-c803d956568f": true,
 					"cb6e23ea-bc8a-4bef-91d6-ba174280faaf": true,
 					"ec713a22-e012-4acb-8567-c7bbff7c70a2": true,
-					"7a21af4c-f57d-4311-8fae-b7b8dafd03bd": true
+					"a72406cc-1374-4992-ad62-b052f23908f8": true,
+					"8cb6f6bb-9534-4da7-bff7-b25f4359faec": true,
+					"03383a4f-37a0-4046-80f1-52b61dc452a7": true,
+					"0254b277-0f68-496d-b01b-fe0528e67b4b": true
 				}
 			}
 		]
@@ -225,9 +241,7 @@
 					"f0fc7970-1e20-4ea2-a5fd-65ed7dd6802a": true,
 					"a0515273-7168-4717-a07a-b143b0208074": true,
 					"af35bb7c-f716-47a0-bcce-2f045a108735": true,
-					"4a42979f-36cb-4c3e-8ebf-a198a68b90e6": true,
 					"b585f486-bac8-40d9-bcdb-3b7642bd7be9": true,
-					"85034696-05d3-44c9-8fc6-1786f0d86aab": true,
 					"74443d95-8883-40ab-b4bd-8e7b184ebe54": true,
 					"3cfdaff3-8301-4951-9f3b-cf8134b4ed10": true,
 					"4e387c03-f76e-43e0-9d9c-d80f05e40ed4": true,
@@ -238,7 +252,10 @@
 					"aef63eca-3dde-495a-a922-c803d956568f": true,
 					"cb6e23ea-bc8a-4bef-91d6-ba174280faaf": true,
 					"ec713a22-e012-4acb-8567-c7bbff7c70a2": true,
-					"7a21af4c-f57d-4311-8fae-b7b8dafd03bd": true
+					"a72406cc-1374-4992-ad62-b052f23908f8": true,
+					"8cb6f6bb-9534-4da7-bff7-b25f4359faec": true,
+					"03383a4f-37a0-4046-80f1-52b61dc452a7": true,
+					"0254b277-0f68-496d-b01b-fe0528e67b4b": true
 				}
 			}
 		]

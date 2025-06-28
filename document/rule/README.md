@@ -7,7 +7,7 @@ The Embodied Arena Leaderboards select benchmarks with wide influence in the fie
   - Embodied Question Answering Benchmarks:
     - OpenEQA, VSI-Bench, ScanQA (3D), etc.
   - Embodied Navigation Benchmarks:
-    - HM3D, MP3D, EB-Navigation, etc.
+    - EB-Navigation, HSSD, R2R, etc.
   - Embodied Task Planning Benchmarks:
     - ET-Plan-Bench, EB-Habitat, EB-ALFRED, etc.
 ## Model Type
@@ -19,13 +19,27 @@ The Embodied Arena Leaderboards select benchmarks with wide influence in the fie
   - Please provide the weight link of Hugging Face or ModelScope.
   - Please provide the API URL link, and indicate the model version supporting the OpenAI protocol interface.
   (! Note: Please provide the key of the corresponding model to ***@tju.edu.cn)
+## Evaluation Metric
+During the evaluation phase, we select the corresponding evaluation metric based on the characteristics of the benchmark itself, which generally include the following types:
 
+- Embodied Question Answering
+  - Accuracy Based on Exact Matching
+    - VSI-Bench, Where2Place, ERQA, etc.
+  - Accuracy Based on Fuzzy Matching 
+  	- Rule-based Metric (e.g., CIDEr, BELU, MRA)
+    	- RoboVQA, Scan2Cap, ScanQA, etc.
+  	- LLM-based Metric
+      - OpenEQA, UniEQA, etc.
+- Embodied Navigation
+  - Success Rate
+    - EB-Navigation, HSSD, R2R, etc.
+- Embodied Task Planning
+  - Success Rate
+    - EB-ALFRED, EB-Habitat, ET-Plan-Bench, etc.
 ## Update Frequency
-
-### Regular update mechanism
 - The Leaderboards are updated once a month, and a snapshot of the results is taken on the first working day of each month, as the leaderboards of the previous month.
 
-- Each manufacturer is only supported to submit an evaluation application once a month. After receiving the evaluation application, it is generally updated within 7 working days
+- Each manufacturer is only allowed to submit an evaluation application once a month. After receiving the evaluation application, it is generally updated within 7 working days
 
 ## Contact us
 
