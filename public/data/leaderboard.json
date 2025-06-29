@@ -58,6 +58,14 @@
 							"benchmark": "a9228f2e-3191-4a08-8f03-64e73cae2e78",
 							"key": "Total"
 						}
+					},
+					{
+						"type": "reference",
+						"label": "MineAnyBuild",
+						"ref": {
+							"benchmark": "b9a18add-a3fb-4893-89e3-ddeea8053ce2",
+							"key": "Total"
+						}
 					}
 				],
 				"models": {
