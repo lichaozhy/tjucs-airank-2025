@@ -25,15 +25,14 @@ During the evaluation phase, we select the corresponding evaluation metric based
 - Embodied Question Answering
   - Accuracy Based on Exact Matching
     - VSI-Bench, Where2Place, ERQA, etc.
-  - Accuracy Based on Fuzzy Matching
-    - RoboVQA, Scan2Cap, ScanQA, etc.
-  - Accuracy Based on LLM Matching
-    - OpenEQA, UniEQA, etc.
-  - Mean Relative Accuracy
-    - VSI-Bench, etc.
+  - Accuracy Based on Fuzzy Matching 
+  	- Rule-based Metric (e.g., CIDEr, BELU, MRA)
+    	- RoboVQA, Scan2Cap, ScanQA, etc.
+  	- LLM-based Metric
+      - OpenEQA, UniEQA, etc.
 - Embodied Navigation
   - Success Rate
-    - EB-Navigation, HM3D, MP3D, etc.
+    - EB-Navigation, HSSD, R2R, etc.
 - Embodied Task Planning
   - Success Rate
     - EB-ALFRED, EB-Habitat, ET-Plan-Bench, etc.
