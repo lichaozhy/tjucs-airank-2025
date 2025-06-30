@@ -296,6 +296,59 @@
 		}
 	},
 	{
+		"id": "27e481d6-6057-49dc-ad80-529f9127245f",
+		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
+		"name": "PhyBlock",
+		"description": "",
+		"PhyBlock": "A Progressive Benchmark for Physical Understanding and Planning via 3D Block Assembly",
+		"organization": "Sun Yat-sen University",
+		"released": {
+			"at": {
+				"year": 2025,
+				"month": 5,
+				"date": 26
+			}
+		},
+		"Github": "https://github.com/PhyBlock/PhyBlock",
+		"Hugging face": "https://huggingface.co/datasets/PhyBlock/PhyBlock_Benchmark",
+		"Project": "https://phyblock.github.io/",
+		"default": {
+			"property": "Total"
+		},
+		"properties": {
+			"Object Property": {
+				"order": 1,
+				"index": 0,
+				"label": "Object Property",
+				"unit": null
+			},
+			"Object Relationship": {
+				"order": 2,
+				"index": 1,
+				"label": "Object Relationship",
+				"unit": null
+			},
+			"Scene Understanding": {
+				"order": 3,
+				"index": 2,
+				"label": "Scene Understanding",
+				"unit": null
+			},
+			"Dynamic Reasoning": {
+				"order": 4,
+				"index": 3,
+				"label": "Dynamic Reasoning",
+				"unit": null
+			},
+			"Total": {
+				"order": 0,
+				"index": 4,
+				"label": "Total Score",
+				"unit": null
+			}
+		}
+	},
+	{
 		"id": "5df5ca38-7ca9-4d35-81c6-3dfe52700755",
 		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
 		"name": "ERQA",
@@ -532,6 +585,47 @@
 			"Total": {
 				"order": 0,
 				"index": 0,
+				"label": "Total Score",
+				"unit": null
+			}
+		}
+	},
+	{
+		"id": "b9a18add-a3fb-4893-89e3-ddeea8053ce2",
+		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
+		"name": "MineAnyBuild",
+		"description": "",
+		"MineAnyBuild": "Benchmarking Spatial Planning for Open-world AI Agents",
+		"organization": "Sun Yat-sen University",
+		"released": {
+			"at": {
+				"year": 2025,
+				"month": 5,
+				"date": 26
+			}
+		},
+		"Github": "https://github.com/MineAnyBuild/MineAnyBuild/tree/main",
+		"Hugging face": "https://huggingface.co/datasets/SaDil/MineAnyBuild",
+		"Project": "https://mineanybuild.github.io/",
+		"default": {
+			"property": "Total"
+		},
+		"properties": {
+			"Spatial Reasoning": {
+				"order": 1,
+				"index": 0,
+				"label": "Spatial Reasoning",
+				"unit": null
+			},
+			"Spatial Commonsense": {
+				"order": 2,
+				"index": 1,
+				"label": "Spatial Commonsense",
+				"unit": null
+			},
+			"Total": {
+				"order": 0,
+				"index": 2,
 				"label": "Total Score",
 				"unit": null
 			}
