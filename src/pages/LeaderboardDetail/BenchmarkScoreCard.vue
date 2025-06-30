@@ -59,7 +59,7 @@ const columnList = computed(() => {
 
 	return Object.values(benchmark.properties)
 		.sort((a, b) => a.order - b.order)
-		.map(property => property.label);
+		.map((property) => property.label);
 });
 
 const currentFilter = ref<ModelFilter>(() => true);
@@ -76,7 +76,9 @@ const rowList = computed<ModelData[]>(() => {
 	}
 
 	const scoreRecord = Object.groupBy(scoreList.value, (score) => score.model);
-	const propertyList = Object.values(benchmark.properties);
+
+	const propertyList = Object.values(benchmark.properties)
+		.sort((a, b) => a.order - b.order);
 
 	for (const model of modelList.value.filter(currentFilter.value)) {
 		const data: ModelData = {
@@ -87,8 +89,8 @@ const rowList = computed<ModelData[]>(() => {
 
 		const { items } = scoreRecord[model.id]![0]!;
 
-		for (const { index } of propertyList) {
-			data.scores[index] = toNumberOrNull(items[index]!);
+		for (const [index, property] of propertyList.entries()) {
+			data.scores[index] = toNumberOrNull(items[property.index]!);
 		}
 
 		list.push(data);
