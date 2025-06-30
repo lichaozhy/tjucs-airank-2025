@@ -16,7 +16,7 @@ default:
   property: Total
 properties:
   ActionReasoning:
-    order: 10
+    order: 8
     index: 0
     label: Action Reasoning
     unit: null
@@ -51,7 +51,7 @@ properties:
     label: Trajectory Reasoning
     unit: null
   Other:
-    order: 8
+    order: 9
     index: 7
     label: Other
     unit: null
