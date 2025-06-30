@@ -38,7 +38,6 @@ During the evaluation phase, we select the corresponding evaluation metric based
   - Success Rate
     - EB-ALFRED, EB-Habitat, ET-Plan-Bench, etc.
 ## Update Frequency
-### Regular update mechanism
 - The Leaderboards are updated once a month, and a snapshot of the results is taken on the first working day of each month, as the leaderboards of the previous month.
 
 - Each manufacturer is only allowed to submit an evaluation application once a month. After receiving the evaluation application, it is generally updated within 7 working days
