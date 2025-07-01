@@ -8,6 +8,8 @@
 		flat
 		:pagination="{ rowsPerPage: 30 }"
 		bordered
+		binary-state-sort
+		ref="table"
 	>
 		<template #body-cell-rank="props">
 			<q-td :props="props">
@@ -43,7 +45,9 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
+import type { QTable } from 'quasar';
+import { computed, onMounted, ref } from 'vue';
+
 import AppRankBadge from './RankBadge.vue';
 import { toNoneOrFixed, getColumnEMWidth } from './utils';
 
@@ -60,7 +64,7 @@ export type ColumnAlignment = 'left' | 'center' | 'right';
 export interface ColumnOptions {
 	name: string;
 	label: string;
-	field: () => null;
+	field: (data: ModelData) => unknown;
 	align: ColumnAlignment;
 	headerStyle: string;
 	[key: string]: unknown;
@@ -102,7 +106,7 @@ const props = withDefaults(
 	},
 );
 
-const NULL_FIELD_ACCESSOR = () => null;
+const table = ref<QTable | null>(null);
 
 const columnList = computed(() => {
 	const propertyColumnList: ColumnOptions[] = [];
@@ -110,7 +114,7 @@ const columnList = computed(() => {
 	for (const [index, name] of props.columns.entries()) {
 		propertyColumnList.push({
 			name: `item(${index})`,
-			field: NULL_FIELD_ACCESSOR,
+			field: data => data.scores[index],
 			label: name,
 			align: 'right',
 			sortable: true,
@@ -119,6 +123,13 @@ const columnList = computed(() => {
 	}
 
 	return [...PREFIX_COLUMN_LIST, ...propertyColumnList, ...SUFFIX_COLUNM_LIST];
+});
+
+onMounted(() => {
+	const tableComponent = table.value!;
+
+	tableComponent.sort('item(0)');
+	tableComponent.sort('item(0)');
 });
 
 defineOptions({ name: 'AppLeaderboardScoreTable' });
