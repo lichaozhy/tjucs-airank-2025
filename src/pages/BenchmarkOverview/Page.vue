@@ -1,5 +1,9 @@
 <template>
-	<q-page id="benchmark-index">
+	<q-page
+		id="app-benchmark-index"
+		class="column content-center"
+		padding
+	>
 		<div
 			id="app-benchmark-banner"
 			class="app-page-banner column justify-center items-center absolute-full text-white"
@@ -11,7 +15,8 @@
 				{{ $t('p.benchmark.banner.description') }}
 			</div>
 		</div>
-		<div class="content">
+
+		<div class="full-width app-max-width-1680">
 			<div class="filter">
 				<div class="q-py-md">
 					<q-btn-toggle
@@ -22,39 +27,18 @@
 						:options="propsOptions.filter((o) => o.label.length < 10)"
 					/>
 				</div>
-				<q-input
-					v-model="nameFilter"
-					placeholder="Search..."
-					class="q-mb-md"
-				>
-					<template v-slot:append>
-						<q-icon
-							v-if="nameFilter.length > 0"
-							class="cursor-pointer"
-							name="clear"
-							@click.stop.prevent="nameFilter = ''"
-						/>
-						<q-icon name="search" />
-					</template>
-				</q-input>
 			</div>
 
-			<div class="benchmark-list">
-				<router-link
-					v-for="(benchmark, index) in filteredBenchmarkList"
+			<div class="row q-col-gutter-md items-stretch">
+				<div
+					class="col-lg-4 col-md-6"
+					v-for="(benchmark) in filteredBenchmarkList"
 					:key="benchmark.id"
-					:to="{ name: 'app.benchmark.detail', params: { id: benchmark.id } }"
-					custom
-					v-slot="{ navigate }"
 				>
 					<AppBenchmarkCard
-						square
-						class="benchmark-card"
 						:benchmark="benchmark"
-						:isNew="index < 5"
-						@click="navigate"
 					/>
-				</router-link>
+				</div>
 			</div>
 		</div>
 	</q-page>
