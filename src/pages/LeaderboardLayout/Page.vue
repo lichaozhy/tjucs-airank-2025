@@ -1,5 +1,6 @@
 <template>
 	<q-page
+		id="app-leaderboard-layout"
 		class="column content-center"
 		padding
 	>
@@ -15,10 +16,7 @@
 			</div>
 		</div>
 
-		<div
-			style="max-width: 1680px"
-			class="full-width"
-		>
+		<div class="full-width app-max-width-1680">
 			<q-tabs
 				no-caps
 				dense
