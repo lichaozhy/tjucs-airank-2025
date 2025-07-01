@@ -24,7 +24,7 @@
 			</div>
 		</q-card-section>
 
-		<q-card-section> {{ lorem() }} </q-card-section>
+		<q-card-section> {{ benchmark.description }} </q-card-section>
 		<q-card-section>
 			<q-item>
 				<q-item-section avatar>
