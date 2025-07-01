@@ -9,13 +9,15 @@
 				color="indigo-10"
 				:label="benchmark.released?.at.year"
 				:outline="benchmark.released?.at.year !== CUTTENT_YEAR"
-				class="q-mr-sm"
+				class="q-mr-sm bg-white"
+				floating
 			/>
 
 			<q-btn
 				size="lg"
 				flat
 				dense
+				class="q-px-none"
 				:to="{ name: 'app.benchmark.detail', params: { id: benchmark.id } }"
 				:label="benchmark.name"
 				no-caps
@@ -71,7 +73,7 @@
 				class="q-ml-none text-white"
 				dense
 				square
-				color="primary"
+				color="grey"
 				size="sm"
 			>
 				{{ tag }}
