@@ -22,9 +22,12 @@
 					<q-btn-toggle
 						no-caps
 						square
-						v-model="propsFilter"
-						toggle-color="secondary"
-						:options="propsOptions.filter((o) => o.label.length < 10)"
+						unelevated
+						color="white"
+						text-color="black"
+						toggle-color="indigo-10"
+						v-model="selectedLeaderboardId"
+						:options="filterItemList"
 					/>
 				</div>
 			</div>
@@ -32,12 +35,10 @@
 			<div class="row q-col-gutter-md items-stretch">
 				<div
 					class="col-lg-4 col-md-6"
-					v-for="(benchmark) in filteredBenchmarkList"
+					v-for="benchmark in filteredBenchmarkList"
 					:key="benchmark.id"
 				>
-					<AppBenchmarkCard
-						:benchmark="benchmark"
-					/>
+					<AppBenchmarkCard :benchmark="benchmark" />
 				</div>
 			</div>
 		</div>
@@ -45,97 +46,40 @@
 </template>
 
 <script setup lang="ts">
-defineOptions({ name: 'BenchmarkIndexPage' });
-import { API } from 'src/backend';
-import AppBenchmarkCard from './BenchmarkCard.vue';
 import type * as Spec from 'src/spec';
 import { computed, onBeforeMount, ref } from 'vue';
 
-const nameFilter = ref('');
-const propsFilter = ref<string>('all');
+import { API } from 'src/backend';
+import * as Backend from 'src/backend';
+import AppBenchmarkCard from './BenchmarkCard.vue';
+
 const benchmarkList = ref<Array<Spec.Benchmark.Type>>([]);
-onBeforeMount(async () => {
-	benchmarkList.value = await API.Benchmark.query();
-});
+const leaderboardList = ref<Spec.Leaderboard.Type[]>([]);
+const selectedLeaderboardId = ref<string | null>(null);
 
-const propsOptions = computed(() => {
-	const benchmarkPropList = benchmarkList.value
-		.map((b) => Object.entries(b.properties))
-		.flat();
-
-	const propsGroup = Object.groupBy(benchmarkPropList, ([name]) => name);
-
-	const list = Object.entries(propsGroup).map(([name, propList]) => {
-		const prop = propList![0]![1];
-		return {
-			value: name,
-			label: prop.label,
-		};
-	});
-
-	list.unshift({
-		value: 'all',
-		label: 'All',
-	});
-
-	return list;
+const filterItemList = computed(() => {
+	return [
+		{
+			value: null,
+			label: 'All',
+		},
+		...leaderboardList.value.map(({ id, name }) => ({ value: id, label: name })),
+	];
 });
 
 const filteredBenchmarkList = computed(() => {
-	if (!nameFilter.value && propsFilter.value === 'all')
+	if (selectedLeaderboardId.value === null) {
 		return benchmarkList.value;
-	return benchmarkList.value.filter((b) => {
-		return (
-			b.name.toLowerCase().includes(nameFilter.value.toLowerCase()) &&
-			(propsFilter.value === 'all' || b.properties[propsFilter.value])
-		);
-	});
-});
-</script>
-
-<style lang="scss" scoped>
-#benchmark-index {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-
-	.content {
-		margin: 48px;
-		display: flex;
-		flex-direction: column;
-		/* min-width: 800px; */
-		max-width: 1680px;
-
-		.filter {
-			display: flex;
-			flex-direction: column;
-			margin-bottom: 24px;
-
-			.q-input {
-				max-width: 320px;
-			}
-
-			/* .q-btn-toggle {
-			} */
-		}
-
-		.benchmark-list {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			gap: 16px;
-			width: 100%;
-			max-width: 1680px;
-		}
-
-		.benchmark-card:hover {
-			cursor: pointer;
-			box-shadow: 0 8px 16px rgba($primary, 0.8);
-			transform: translateY(-2px);
-			transition:
-				box-shadow 0.3s ease,
-				transform 0.3s ease;
-		}
 	}
-}
-</style>
+
+	return benchmarkList.value
+		.filter(({ leaderboard }) => leaderboard === selectedLeaderboardId.value);
+});
+
+onBeforeMount(async () => {
+	leaderboardList.value = await Backend.API.Leaderboard.query();
+	benchmarkList.value = await API.Benchmark.query();
+});
+
+defineOptions({ name: 'BenchmarkIndexPage' });
+</script>

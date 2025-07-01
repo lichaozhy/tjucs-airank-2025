@@ -5,14 +5,21 @@
 		class="full-height"
 	>
 		<q-card-section>
+			<q-badge
+				color="indigo-10"
+				:label="benchmark.released?.at.year"
+				:outline="benchmark.released?.at.year !== CUTTENT_YEAR"
+				class="q-mr-sm"
+			/>
+
 			<q-btn
 				size="lg"
 				flat
 				dense
-				class="q-px-none"
 				:to="{ name: 'app.benchmark.detail', params: { id: benchmark.id } }"
-				>{{ benchmark.name }}</q-btn
-			>
+				:label="benchmark.name"
+				no-caps
+			/>
 
 			<div class="text-caption text-grey-9 ellipsis">
 				<span>
@@ -22,18 +29,19 @@
 						anchor="top start"
 						self="center start"
 						transition-show="fade"
-						transition-hide="fade"
+						transition-hide="none"
+						class="bg-black"
 					>
 						{{ benchmark.organization }}
 					</q-tooltip>
 				</span>
 			</div>
 
-			<div class="text-body q-mt-md">
-				<div
-					style="height: 3em"
-					v-if="benchmark.description"
-				>
+			<div
+				class="text-body q-mt-md"
+				style="height: 5em"
+			>
+				<div v-if="benchmark.description">
 					{{ benchmark.description }}
 				</div>
 
@@ -51,6 +59,7 @@
 				v-if="tagList.length === 0"
 				class="q-ml-none text-white"
 				dense
+				square
 				color="grey-8"
 				size="sm"
 				label="Unknown"
@@ -61,7 +70,8 @@
 				:key="tag"
 				class="q-ml-none text-white"
 				dense
-				color="indigo-10"
+				square
+				color="primary"
 				size="sm"
 			>
 				{{ tag }}
@@ -71,17 +81,18 @@
 </template>
 
 <script setup lang="ts">
-defineOptions({ name: 'BenchmarkCard' });
-import { computed } from 'vue';
 import type * as Spec from 'src/spec';
+import { computed } from 'vue';
+
+const CUTTENT_YEAR = new Date().getFullYear();
 
 const { benchmark } = defineProps<{
 	benchmark: Spec.Benchmark.Type;
 }>();
 
 const tagList = computed(() => {
-	return Object.entries(benchmark.properties)
-		.filter(([key]) => key !== benchmark.default.property)
-		.map(([, value]) => `${value.label}`);
+	return Object.values(benchmark.properties).map((property) => property.label);
 });
+
+defineOptions({ name: 'BenchmarkCard' });
 </script>
