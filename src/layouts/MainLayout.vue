@@ -138,7 +138,7 @@ const defaultLeaderboardId = ref<string | null>(null);
 const scrollArea = ref<Quasar.QScrollArea | null>(null);
 
 function routeMatched(name: string) {
-	return route.matched.some((route) => route.name === name);
+	return route.matched.some((route) => route.name?.toString().includes(name));
 }
 
 onBeforeMount(async () => {
