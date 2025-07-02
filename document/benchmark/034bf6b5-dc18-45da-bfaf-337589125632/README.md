@@ -9,9 +9,9 @@ released:
     year: 2025
     month: 5
     date: null
-Github: https://github.com/TJURL-Lab/UniEQA
-Hugging face: https://huggingface.co/datasets/TJURL-Lab/UniEQA
-Project: null
+repository: https://github.com/TJURL-Lab/UniEQA
+huggingface: https://huggingface.co/datasets/TJURL-Lab/UniEQA
+website: http://example.com
 default:
   property: Total
 properties:
