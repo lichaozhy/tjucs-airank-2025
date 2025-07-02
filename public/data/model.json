@@ -263,9 +263,7 @@
 			7
 		],
 		"author": [
-			"University of Wisconsin-Madison",
-			"Microsoft",
-			"Columbia University"
+			"University of Wisconsin-Madison"
 		],
 		"qa": [
 			"2D"
@@ -361,8 +359,6 @@
 			7
 		],
 		"author": [
-			"National University of Singapore",
-			"New York University",
 			"Bytedance"
 		],
 		"qa": [
@@ -396,9 +392,7 @@
 			7
 		],
 		"author": [
-			"Chinese University of Hong Kong",
-			"Shanghai AI Laboratory",
-			"Centre for Perceptual and Interactive Intelligence"
+			"Shanghai AI Lab"
 		],
 		"qa": [
 			"2D"
@@ -406,7 +400,7 @@
 		"dimension": [
 			"2D"
 		],
-		"website": "https://navila-bot.github.io/",
+		"website": "https://github.com/zd11024/NaviLLM",
 		"navigation": false,
 		"taskPlanning": false,
 		"reason": false,
@@ -459,8 +453,7 @@
 			7
 		],
 		"author": [
-			"Chinese University of Hong Kong",
-			"SmartMore"
+			"Chinese University of Hong Kong"
 		],
 		"qa": [
 			"2D"
@@ -620,8 +613,7 @@
 			40
 		],
 		"author": [
-			"Shanghai AI Lab",
-			"Tsinghua"
+			"Shanghai AI Lab"
 		],
 		"qa": [
 			"2D"
@@ -654,8 +646,7 @@
 			8
 		],
 		"author": [
-			"Shanghai AI Lab",
-			"Tsinghua"
+			"Shanghai AI Lab"
 		],
 		"qa": [
 			"2D"
@@ -799,8 +790,7 @@
 			38
 		],
 		"author": [
-			"Shanghai AI Lab",
-			"Tsinghua"
+			"Shanghai AI Lab"
 		],
 		"qa": [
 			"2D"
@@ -833,8 +823,7 @@
 			78
 		],
 		"author": [
-			"Shanghai AI Lab",
-			"Tsinghua"
+			"Shanghai AI Lab"
 		],
 		"qa": [
 			"2D"
@@ -968,7 +957,7 @@
 	},
 	{
 		"id": "a0515273-7168-4717-a07a-b143b0208074",
-		"name": "GPT-4o-mini",
+		"name": "GPT-4o mini",
 		"component": {
 			"language": [
 				"GPT-4o mini"
@@ -1008,8 +997,7 @@
 			78
 		],
 		"author": [
-			"Shanghai AI Lab",
-			"Tsinghua"
+			"Shanghai AI Lab"
 		],
 		"qa": [
 			"2D"
@@ -1042,8 +1030,7 @@
 			38
 		],
 		"author": [
-			"Shanghai AI Lab",
-			"Tsinghua"
+			"Shanghai AI Lab"
 		],
 		"qa": [
 			"2D"
@@ -1196,8 +1183,7 @@
 			8
 		],
 		"author": [
-			"Shanghai AI Lab",
-			"Tsinghua"
+			"Shanghai AI Lab"
 		],
 		"qa": [
 			"2D"
@@ -1296,8 +1282,7 @@
 			8
 		],
 		"author": [
-			"Shanghai AI Lab",
-			"Tsinghua"
+			"Shanghai AI Lab"
 		],
 		"qa": [
 			"2D"
@@ -1460,8 +1445,7 @@
 			7
 		],
 		"author": [
-			"University of Hong Kong",
-			"Shanghai AI Laboratory"
+			"Shanghai AI Lab"
 		],
 		"qa": [
 			"3D"
@@ -1522,9 +1506,7 @@
 			]
 		},
 		"author": [
-			"Zhejiang University",
-			"Shanghai AI Laboratory",
-			"Bytedance"
+			"Shanghai AI Lab"
 		],
 		"qa": [
 			"3D"
@@ -1585,10 +1567,7 @@
 			7
 		],
 		"author": [
-			"Bejing Institute for General Artificial Intelligence",
-			"Peking University",
-			"Carnegie Mellon University",
-			"Tsinghua University"
+			"Bejing Institute for General Artificial Intelligence"
 		],
 		"qa": [
 			"3D"
@@ -1749,9 +1728,7 @@
 			1
 		],
 		"author": [
-			"Shanghai AI Lab",
-			"Zhejiang University",
-			"Chinese University of Hong Kong"
+			"Shanghai AI Lab"
 		],
 		"qa": [
 			"3D"
@@ -2143,8 +2120,7 @@
 			8
 		],
 		"author": [
-			"Shanghai AI Lab",
-			"Tsinghua"
+			"Shanghai AI Lab"
 		],
 		"qa": [
 			"2D"
@@ -2177,8 +2153,7 @@
 			14
 		],
 		"author": [
-			"Shanghai AI Lab",
-			"Tsinghua"
+			"Shanghai AI Lab"
 		],
 		"qa": [
 			"2D"
@@ -2211,8 +2186,7 @@
 			38
 		],
 		"author": [
-			"Shanghai AI Lab",
-			"Tsinghua"
+			"Shanghai AI Lab"
 		],
 		"qa": [
 			"2D"
@@ -2245,8 +2219,7 @@
 			78
 		],
 		"author": [
-			"Shanghai AI Lab",
-			"Tsinghua"
+			"Shanghai AI Lab"
 		],
 		"qa": [
 			"2D"
@@ -2345,7 +2318,6 @@
 			8
 		],
 		"author": [
-			"University of Hong Kong",
 			"Shanghai AI Lab"
 		],
 		"qa": [
@@ -2382,11 +2354,7 @@
 			7
 		],
 		"author": [
-			"Beijing University of Posts and Telecommunications",
-			"Beijing Digital Native Digital City Research Center",
-			"Peking University",
-			"Beihang University",
-			"Beijing University of Science and Technology"
+			"Beijing University of Posts and Telecommunications"
 		],
 		"qa": [
 			"3D"

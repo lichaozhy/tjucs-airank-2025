@@ -17,7 +17,7 @@ const MetadataNamespace = {
 	released: OptionalNullable(ReleasedSchema),
 	description: OptionalNullable(z.string()),
 	organization: OptionalNullable(z.string()),
-	reference: OptionalNullable(z.url()),
+	huggingface: OptionalNullable(z.url()),
 	repository: OptionalNullable(z.url()),
 	website: OptionalNullable(z.url()),
 };

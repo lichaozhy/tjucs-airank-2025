@@ -38,7 +38,7 @@
 						square
 						flat
 					>
-						<q-card-section class="q-py-none bg-secondary text-white">
+						<q-card-section class="q-py-none bg-indigo-10 text-white">
 							<div class="text-h6 text-weight-regular">Documentation</div>
 						</q-card-section>
 						<q-separator />
@@ -56,7 +56,7 @@
 						square
 						flat
 					>
-						<q-card-section class="q-py-none bg-secondary text-white">
+						<q-card-section class="q-py-none bg-indigo-10 text-white">
 							<div class="text-h6 text-weight-regular">Property List</div>
 						</q-card-section>
 						<q-separator />
@@ -99,20 +99,20 @@
 							<q-item clickable>
 								<q-item-section>
 									<q-item-label class="text-weight-bold"
-										>Reference</q-item-label
+										>Hugging Face</q-item-label
 									>
 									<q-item-label caption>{{
-										information.reference || '-'
+										information.huggingface || '-'
 									}}</q-item-label>
 								</q-item-section>
 								<q-item-section avatar>
 									<q-btn
-										v-if="information.reference !== null"
+										v-if="information.huggingface !== null"
 										icon="link"
 										flat
 										dense
 										color="primary"
-										:href="information.reference"
+										:href="information.huggingface"
 										target="_blank"
 									></q-btn>
 								</q-item-section>
@@ -144,7 +144,7 @@
 								<q-item-section>
 									<q-item-label class="text-weight-bold">Website</q-item-label>
 									<q-item-label caption>{{
-										information.repository || '-'
+										information.website || '-'
 									}}</q-item-label>
 								</q-item-section>
 								<q-item-section avatar>
@@ -184,7 +184,7 @@ const documentHTML = ref<string>('');
 interface InformationData {
 	releasedAt: string | null;
 	organization: string | null;
-	reference: string | null;
+	huggingface: string | null;
 	repository: string | null;
 	website: string | null;
 }
@@ -198,17 +198,17 @@ const information = computed<InformationData>(() => {
 	const data: InformationData = {
 		releasedAt: null,
 		organization: null,
-		reference: null,
+		huggingface: null,
 		repository: null,
 		website: null,
 	};
 
 	if (benchmark.value !== null) {
-		const { reference, organization, repository, released, website } =
+		const { huggingface, organization, repository, released, website } =
 			benchmark.value;
 
-		if (reference !== undefined) {
-			data.reference = reference;
+		if (huggingface !== undefined) {
+			data.huggingface = huggingface;
 		}
 
 		if (organization !== undefined) {
