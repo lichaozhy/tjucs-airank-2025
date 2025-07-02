@@ -2,6 +2,7 @@
 	<q-card
 		flat
 		square
+		bordered
 		class="full-height"
 	>
 		<q-card-section>
