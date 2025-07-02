@@ -38,7 +38,7 @@
 						square
 						flat
 					>
-						<q-card-section class="q-py-none bg-secondary text-white">
+						<q-card-section class="q-py-none bg-indigo-10 text-white">
 							<div class="text-h6 text-weight-regular">Documentation</div>
 						</q-card-section>
 						<q-separator />
@@ -56,7 +56,7 @@
 						square
 						flat
 					>
-						<q-card-section class="q-py-none bg-secondary text-white">
+						<q-card-section class="q-py-none bg-indigo-10 text-white">
 							<div class="text-h6 text-weight-regular">Property List</div>
 						</q-card-section>
 						<q-separator />
