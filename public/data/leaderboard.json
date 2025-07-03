@@ -66,6 +66,14 @@
 							"benchmark": "b9a18add-a3fb-4893-89e3-ddeea8053ce2",
 							"key": "Total"
 						}
+					},
+					{
+						"type": "reference",
+						"label": "PhyBlock",
+						"ref": {
+							"benchmark": "27e481d6-6057-49dc-ad80-529f9127245f",
+							"key": "Total"
+						}
 					}
 				],
 				"models": {
@@ -183,7 +191,6 @@
 					"74443d95-8883-40ab-b4bd-8e7b184ebe54": true,
 					"3cfdaff3-8301-4951-9f3b-cf8134b4ed10": true,
 					"4e387c03-f76e-43e0-9d9c-d80f05e40ed4": true,
-					"051465b8-2624-4b45-a884-bdfcfde0609f": true,
 					"b30fbf25-94f2-4c76-9780-7c65e4cd5afc": true,
 					"75789724-6a39-462a-8974-e2d43d51cfc9": true,
 					"dea72f07-4d45-49bf-bfa6-09c7d328246d": true,
@@ -244,7 +251,6 @@
 					"74443d95-8883-40ab-b4bd-8e7b184ebe54": true,
 					"3cfdaff3-8301-4951-9f3b-cf8134b4ed10": true,
 					"4e387c03-f76e-43e0-9d9c-d80f05e40ed4": true,
-					"051465b8-2624-4b45-a884-bdfcfde0609f": true,
 					"b30fbf25-94f2-4c76-9780-7c65e4cd5afc": true,
 					"75789724-6a39-462a-8974-e2d43d51cfc9": true,
 					"dea72f07-4d45-49bf-bfa6-09c7d328246d": true,
