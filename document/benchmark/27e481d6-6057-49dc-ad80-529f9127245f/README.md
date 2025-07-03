@@ -2,16 +2,16 @@
 leaderboard: 09b4a56a-2e41-4103-a330-129381c24450
 name: PhyBlock
 description: >
-PhyBlock: A Progressive Benchmark for Physical Understanding and Planning via 3D Block Assembly
+  PhyBlock: A Progressive Benchmark for Physical Understanding and Planning via 3D Block Assembly
 organization: Sun Yat-sen University
 released:
   at:
     year: 2025
     month: 5
     date: 26
-Github: https://github.com/PhyBlock/PhyBlock
-Hugging face: https://huggingface.co/datasets/PhyBlock/PhyBlock_Benchmark
-Project: https://phyblock.github.io/
+repository: https://github.com/PhyBlock/PhyBlock
+huggingface: https://huggingface.co/datasets/PhyBlock/PhyBlock_Benchmark
+website: https://phyblock.github.io/
 default:
   property: Total
 properties:
@@ -47,9 +47,7 @@ properties:
 ![alt text](assets/PLANPART.png)
 
 
-While vision-language models (VLMs) have demonstrated promising capabilities in reasoning and planning for embodied agents, their ability to comprehend physical phenomena, particularly within structured 3D environments, remains severely limited. To close this gap, we introduce PhyBlock, a progressive benchmark designed to assess VLMs on physical understanding and planning through robotic 3D block assembly tasks. PhyBlock integrates a novel four-level cognitive hierarchy assembly task alongside targeted Visual Question Answering (VQA) samples, collectively aimed at evaluating progressive spatial reasoning and fundamental physical comprehension, including object properties, spatial relationships, and holistic scene understanding. PhyBlock includes 2600 block tasks (400 assembly tasks, 2200 VQA tasks) and evaluates models across three key dimensions: partial completion, failure diagnosis, and planning robustness. We benchmark 21 state-of-the-art VLMs, highlighting their strengths and limitations in physically grounded, multi-step planning.
-Our empirical findings indicate that the performance of VLMs exhibits pronounced limitations in high-level planning and reasoning capabilities, leading to a notable decline in performance for the growing complexity of the tasks.
-Error analysis reveals persistent difficulties in spatial orientation and dependency reasoning. Surprisingly, chain-of-thought prompting offers minimal improvements, suggesting spatial tasks heavily rely on intuitive model comprehension. We position PhyBlock as a unified testbed to advance embodied reasoning, bridging vision-language understanding and real-world physical problem-solving.
+PhyBlock, a progressive benchmark designed to assess VLMs on physical understanding and planning through robotic 3D block assembly tasks. PhyBlock integrates a novel four-level cognitive hierarchy assembly task alongside targeted Visual Question Answering (VQA) samples, collectively aimed at evaluating progressive spatial reasoning and fundamental physical comprehension, including object properties, spatial relationships, and holistic scene understanding. PhyBlock includes 2600 block tasks (400 assembly tasks, 2200 VQA tasks) and evaluates models across three key dimensions: partial completion, failure diagnosis, and planning robustness.
 
 # Benchmark Characteristics
 ![alt text](assets/PHYPART.png)
@@ -70,8 +68,8 @@ Given an initial scene (RGB-D scans), a goal image, and a textual instruction, t
 The model is queried with simple natural language questions based on block scene images from the Physics Understanding VQA dataset. Prompts target the question, testing the model’s intuitive physical reasoning via direct visual grounding.
 
 ### Evaluation Metrics
-We evaluate performance using precision, recall, and F\textsubscript{1}-score, based on step-wise correctness defined by the AOV constraints: correct steps as True Positives (TP), incorrect as False Positives (FP), and missing required steps as False Negatives (FN). Micro-F1 is computed across all samples and difficulty levels for overall performance.
-In addition, to evaluate the agent’s physical perception and reasoning capabilities, we adopt a simple yet effective metric for the Physics Understanding VQA dataset. Since each question follows a multiple-choice format, we report the accuracy—the proportion of correctly answered questions—as the primary evaluation metric.
+This paper evaluates performance using precision, recall, and F\textsubscript{1}-score, based on step-wise correctness defined by the AOV constraints: correct steps as True Positives (TP), incorrect as False Positives (FP), and missing required steps as False Negatives (FN). Micro-F1 is computed across all samples and difficulty levels for overall performance.
+In addition, to evaluate the agent’s physical perception and reasoning capabilities, this work adopts a simple yet effective metric for the Physics Understanding VQA dataset. Since each question follows a multiple-choice format, it reports the accuracy—the proportion of correctly answered questions—as the primary evaluation metric.
 
 ## Citation
 

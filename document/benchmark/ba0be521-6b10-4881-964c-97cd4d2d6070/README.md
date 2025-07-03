@@ -3,16 +3,16 @@ id: ba0be521-6b10-4881-964c-97cd4d2d6070
 leaderboard: 09b4a56a-2e41-4103-a330-129381c24450
 name: OpenEQA
 description: >
-  UniEQA & UniEval: A Unified Benchmark and Evaluation Platform for Multimodal Foundation Models in Embodied Question Answering
-organization: Tianjin University
+  OpenEQA: Embodied Question Answering in the Era of Foundation Models
+organization: Meta
 released:
   at:
-    year: 2025
-    month: 5
+    year: 2024
+    month: null
     date: null
-Github: https://github.com/TJURL-Lab/UniEQA
-Hugging face: https://huggingface.co/datasets/TJURL-Lab/UniEQA
-Project: null
+repository: https://github.com/facebookresearch/open-eqa
+huggingface: null
+website: https://open-eqa.github.io/
 default:
   property: Total
 properties:
@@ -55,39 +55,26 @@ properties:
 
 ## Benchmark Introduction
 
+OpenEQA, the first open-vocabulary benchmark supporting both approaches, along with an LLM-powered evaluation protocol that aligns well with human judgment. Experiments show state-of-the-art models still lag behind humans, making OpenEQA a challenging and practical benchmark for future research in Embodied AI and related fields.
+
 ![alt text](assets/2-1.png)
-
-In this work, we propose UniEQA, a new unified evaluation benchmark for EAI, designed to evaluate MFMs in terms of 5 core capabilities with 12 detailed dimensions.
-
-## Benchmark characteristics
-
-- **Broad Coverage of Capabilities**: It encompasses 5 core capabilities – object understanding, spatiotemporal perception, embodied knowledge, embodied reasoning, and task planning – and achieves a hierarchical and detailed evaluation from basic cognition to advanced cognitive abilities.
-- **High Data Quality**: It covers 7 data sources, including both simulation and real-world data. It integrates 5 high-quality, multi-modal evaluation datasets in the embodied AI domain and includes 1 newly annotated evaluation dataset, providing a total of over 5000 Q&A Pairs.
-- **Rich Data Types**: It covers multiple data types, including single images, multiple images, videos, and text, as well as 6 types of question-answering instructions such as multiple-choice and sorting.
-- **Flexible Extensibility**: It supports flexible and convenient addition of evaluation datasets.
-- **Automated Evaluation**: It constructs corresponding scoring rules and a unified automated evaluation method for different capability dimensions.
 
 ## Benchmark Statistics
 
-- Data Collection: simulation (VirtualHome, BEHAVIOR-100, AI2-THOR)
-
-  ![real-world (Ego4D, LEMMA, HM3D, and ScanNet)](assets/4-1.png)
+Example questions and dataset statistics of OpenEQA. The episode history H provides a human-like tour of a home. EQA agents must answer diverse, human-generated questions Q from 7 EQA categories, aiming match the ground answers A*. Tours are collected from diverse environments including home and office locations (not shown above). Dataset statistics (right) break down the question distribution by video source (top), question category (middle), and episodic memory vs active setting. Note that, by design, the HM3D questions are shared across the EM-EQA and A-EQA settings.
 
 ## Benchmark Evaluation
+Illustration of LLM-Match evaluation and workflow. While the open-vocabulary nature makes EQA realistic, it poses a challenge for evaluation due to multiplicity of correct answers. One approach to evaluation is human trials, but it can be prohibitively slow and expensive, especially for benchmarks. As an alternative, OpenEQA use an LLM to evaluate the correctness of open-vocabulary answers produced by EQA agents.
 
-![alt text](assets/5-1.png)
-
-In this work, we propose a novel LLM-based evaluation method to improve the efficiency of the evaluation process.
-
-- Evaluation data: we compare only two candidate answers to minimize LLM bias and try to make LLM make more objective decisions based on the semantics and logic of the candidate answers.
-- Evaluation rule: we customize rule prompts for each capability dimension for more reasonable and accurate evaluation.
-- Evaluation results: we use the high-performance, low-overhead GPT-4o-mini as the LLM of evaluation. To avoid accidental errors, we independently evaluate each Q&A pair three times and then take the average as the final evaluation result.
+![alt text](assets/4-1.png)
 
 ## Citation
 
 ```
-@article{UniEQA2025,
-  title={UniEQA & UniEval: A Unified Benchmark and Evaluation Platform fo  Multimodal Foundation Models in Embodied Question Answering},
-  year={2025}
-}
+@inproceedings{OpenEQA2023,
+        title         = {OpenEQA: Embodied Question Answering in the Era of Foundation Models}, 
+        booktitle     = {Conference on Computer Vision and Pattern Recognition (CVPR)},
+        author        = {Majumdar, Arjun and Ajay, Anurag and Zhang, Xiaohan and Putta, Pranav and Yenamandra, Sriram and Henaff, Mikael and Silwal, Sneha and Mcvay, Paul and Maksymets, Oleksandr and Arnaud, Sergio and Yadav, Karmesh and Li, Qiyang and Newman, Ben and Sharma, Mohit and Berges, Vincent and Zhang, Shiqi and Agrawal, Pulkit and Bisk, Yonatan and Batra, Dhruv and Kalakrishnan, Mrinal and Meier, Franziska and Paxton, Chris and Sax, Sasha and Rajeswaran, Aravind},
+        year          = {2024},
+    }
 ```

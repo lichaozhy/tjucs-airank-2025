@@ -9,14 +9,14 @@ released:
     year: 2025
     month: 3
     date: null
-Github: https://github.com/embodiedreasoning/ERQA
-Hugging face: null
-Project: https://deepmind.google/discover/blog/gemini-robotics-brings-ai-into-the-physical-world/
+repository: https://github.com/embodiedreasoning/ERQA
+huggingface: null
+website: https://deepmind.google/discover/blog/gemini-robotics-brings-ai-into-the-physical-world/
 default:
   property: Total
 properties:
   ActionReasoning:
-    order: 8
+    order: 10
     index: 0
     label: Action Reasoning
     unit: null
@@ -51,7 +51,7 @@ properties:
     label: Trajectory Reasoning
     unit: null
   Other:
-    order: 9
+    order: 8
     index: 7
     label: Other
     unit: null
@@ -66,14 +66,26 @@ properties:
 
 ![alt text](assets/1-1.png)
 
-To capture progress in embodied reasoning for VLMs, we introduce ERQA, short for Embodied Reasoning Question Answering, a benchmark that focuses specifically on capabilities likely required by an embodied agent interacting with the physical world. ERQA consists of 400 multiple choice Visual Question Answering (VQA)-style questions across a wide variety of categories, including spatial reasoning, trajectory reasoning, action reasoning, state estimation, pointing, multi-view reasoning, and task reasoning. ERQA is complementary to existing VLM benchmarks, which tend to highlight more atomic capabilities (e.g., object recognition, counting, localization), but in most cases do not take sufficient account of the broader set of capabilities needed to act in the physical world.
+To advance embodied reasoning in Vision-Language Models (VLMs), ERQA (Embodied Reasoning Question Answering) is introduced as a benchmark specifically targeting capabilities essential for agents interacting with the physical world. ERQA includes 400 multiple-choice Visual Question Answering (VQA)-style questions spanning a diverse set of categories, such as spatial reasoning, trajectory reasoning, action reasoning, state estimation, pointing, multi-view reasoning, and task reasoning. Unlike existing VLM benchmarks that primarily focus on atomic skills like object recognition, counting, or localization, ERQA emphasizes higher-level reasoning skills critical for physical interaction, making it a complementary addition to current evaluation suites.
+
+## Benchmark Characteristics
+
+- **Complementary Nature**: ERQA is complementary to existing VLM benchmarks that often focus on more atomic visual understanding tasks.
+- **Open-Source**: The benchmark is open-source and its details can be found on GitHub.
+- **Manual Labeling**: All questions in ERQA were manually labeled to ensure correctness and quality.
+
+## Benchmark Statistics
+
+- **Total Questions**: 400 multiple-choice VQA-style questions.
+- **Image Sources**: Images in the benchmark are either self-taken or sourced from various datasets including OXE, UMI Data, MECCANO, HoloAssist, and EGTEA Gaze+.
+
+![alt text](assets/1-2.png)
 
 ## Benchmark Evaluation
 
 ERQA also provide an example of a lightweight evaluation harness for querying multimodal APIs (Gemini 2.0 and OpenAI) with examples loaded from the ERQA benchmark.
 
 ## Citation
-
 ```
 @misc{geminiroboticsteam2025geminiroboticsbringingai,
       title={Gemini Robotics: Bringing AI into the Physical World},

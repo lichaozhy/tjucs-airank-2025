@@ -1,7 +1,7 @@
 <template>
 	<q-page id="app-home">
 		<app-home-banner-section />
-		<app-home-benchmark-rank-section />
+		<AppHomeProfileSection />
 		<app-home-evaluation />
 		<app-home-feature />
 		<app-contributor-section />
@@ -11,7 +11,7 @@
 
 <script setup lang="ts">
 import AppHomeBannerSection from './BannerSection.vue';
-import AppHomeBenchmarkRankSection from './BenchmarkRankSection.vue';
+import AppHomeProfileSection from './ProfileSection.vue';
 import AppHomeEvaluation from './EvaluationSection.vue';
 import AppHomeFeature from './FeatureSection.vue';
 import AppContributorSection from './ContributorSection.vue';

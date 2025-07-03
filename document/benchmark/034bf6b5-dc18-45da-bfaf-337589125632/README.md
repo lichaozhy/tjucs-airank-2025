@@ -11,7 +11,7 @@ released:
     date: null
 repository: https://github.com/TJURL-Lab/UniEQA
 huggingface: https://huggingface.co/datasets/TJURL-Lab/UniEQA
-website: http://example.com
+website: null
 default:
   property: Total
 properties:
@@ -86,7 +86,7 @@ properties:
 
 ![alt text](assets/2-1.png)
 
-In this work, we propose UniEQA, a new unified evaluation benchmark for EAI, designed to evaluate MFMs in terms of 5 core capabilities with 12 detailed dimensions.
+UniEQA, a new unified evaluation benchmark for EAI, is designed to evaluate MFMs in terms of 5 core capabilities with 12 detailed dimensions. The benchmark is established based on seven heterogeneous data sources, covering simulated and real-world scenarios. Additionally, it includes more realistic, diverse, and complex household tasks.
 
 ## Benchmark characteristics
 
@@ -106,17 +106,17 @@ In this work, we propose UniEQA, a new unified evaluation benchmark for EAI, des
 
 ![alt text](assets/5-1.png)
 
-In this work, we propose a novel LLM-based evaluation method to improve the efficiency of the evaluation process.
+This paper proposes a novel LLM-based evaluation method to improve the efficiency of the evaluation process.
 
-- Evaluation data: we compare only two candidate answers to minimize LLM bias and try to make LLM make more objective decisions based on the semantics and logic of the candidate answers.
-- Evaluation rule: we customize rule prompts for each capability dimension for more reasonable and accurate evaluation.
-- Evaluation results: we use the high-performance, low-overhead GPT-4o-mini as the LLM of evaluation. To avoid accidental errors, we independently evaluate each Q&A pair three times and then take the average as the final evaluation result.
+- Evaluation data: This work compares only two candidate answers to minimize LLM bias and tries to make the LLM make more objective decisions based on the semantics and logic of the candidate answers.
+- Evaluation rule: This work customizes rule prompts for each capability dimension for a more reasonable and accurate evaluation.
+- Evaluation results: This work uses the high-performance, low-overhead GPT-4o-mini as the LLM of evaluation. To avoid accidental errors, it independently evaluates each Q&A pair three times and then takes the average as the final evaluation result.
 
 ## Citation
 
 ```
 @article{UniEQA2025,
-  title={UniEQA & UniEval: A Unified Benchmark and Evaluation Platform fo  Multimodal Foundation Models in Embodied Question Answering},
+  title={UniEQA & UniEval: A Unified Benchmark and Evaluation Platform for  Multimodal Foundation Models in Embodied Question Answering},
   year={2025}
 }
 ```

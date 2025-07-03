@@ -9,9 +9,9 @@ released:
     year: 2025
     month: 2
     date: null
-Github: null
-Hugging face: null
-Project: null
+repository: null
+huggingface: null
+website: null
 default:
   property: TotalSR
 properties:
@@ -41,7 +41,7 @@ properties:
 
 ![alt text](assets/1-1.png)
 
-We introduce a benchmark focusing on various aspects of spatial (relation constrain, object occlusion and global layout map) and temporal understanding (actions dependency and optimal moving path for robot). It provides a detailed and thorough diagnostic assessment of existing foundation models. 
+The ET-Plan-Bench focuses on various aspects of spatial understanding, including relation constraints, object occlusion, and global layout maps, as well as temporal understanding, covering action dependencies and optimal moving paths for robots. It provides a detailed and thorough diagnostic assessment of existing foundation models. 
 
 ## Benchmark characteristics
 
@@ -52,5 +52,4 @@ We introduce a benchmark focusing on various aspects of spatial (relation constr
 ## Citation
 
 ```
-
 ```

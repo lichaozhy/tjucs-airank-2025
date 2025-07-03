@@ -9,9 +9,9 @@ released:
     year: 2020
     month: 4
     date: 6
-Github: https://github.com/jacobkrantz/VLN-CE
-Hugging face: null
-Project: https://jacobkrantz.github.io/vlnce/
+repository: https://github.com/jacobkrantz/VLN-CE
+huggingface: null
+website: https://jacobkrantz.github.io/vlnce/
 default:
   property: TotalSR
 properties:
