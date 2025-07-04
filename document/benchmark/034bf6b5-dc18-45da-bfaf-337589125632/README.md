@@ -81,7 +81,7 @@ properties:
 
 ![alt text](assets/2-1.png)
 
-UniEQA, a new unified evaluation benchmark for EAI, is designed to evaluate MFMs in terms of 5 core capabilities with 12 detailed dimensions.
+UniEQA, a new unified evaluation benchmark for EAI, is designed to evaluate MFMs in terms of 5 core capabilities with 12 detailed dimensions. The benchmark is established based on seven heterogeneous data sources, covering simulated and real-world scenarios. Additionally, it includes more realistic, diverse, and complex household tasks.
 
 ## Benchmark characteristics
 
