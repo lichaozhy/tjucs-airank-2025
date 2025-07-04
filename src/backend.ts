@@ -1,29 +1,33 @@
 import * as Spec from 'src/spec';
 
+function readJSON(response: Response) {
+	return response.json();
+}
+
+function readText(response: Response) {
+	return response.text();
+}
+
 const fetchAllLeaderboard = async () => {
-	const request = await fetch('/data/leaderboard.json');
-	const leaderboardList = await request.json();
+	const leaderboardList = await fetch('/data/leaderboard.json').then(readJSON);
 
 	return Spec.Leaderboard.Schema.array().parse(leaderboardList);
 };
 
 const fetchAllBenchmark = async () => {
-	const request = await fetch('/data/benchmark.json');
-	const benchmarkList = await request.json();
+	const benchmarkList = await fetch('/data/benchmark.json').then(readJSON);
 
 	return Spec.Benchmark.Schema.array().parse(benchmarkList);
 };
 
 const fetchAllModel = async () => {
-	const request = await fetch('/data/model.json');
-	const modelList = await request.json();
+	const modelList = await fetch('/data/model.json').then(readJSON);
 
 	return Spec.Model.Schema.array().parse(modelList);
 };
 
 const fetchAllScore = async () => {
-	const request = await fetch('/data/score.json');
-	const scoreList = await request.json();
+	const scoreList = await fetch('/data/score.json').then(readJSON);
 
 	return Spec.Score.Schema.array().parse(scoreList);
 };
@@ -52,12 +56,20 @@ export const Data: {
 	Score: Spec.Score.Type[];
 	Configuration: Spec.Configuration.Type | null;
 } = {
-	ModelProperty: { vision: {}, language: {}, author: {}, size: {} },
+	ModelProperty: { vision: {}, language: {}, author: {}, size: {}, year: {} },
 	Leaderboard: [],
 	Benchmark: [],
 	Model: [],
 	Score: [],
 	Configuration: null,
+};
+
+export const Capability: {
+	Item: Spec.Capability.Item[];
+	Group: Spec.Capability.Group[];
+} = {
+	Item: [],
+	Group: [],
 };
 
 export async function init() {
@@ -67,15 +79,17 @@ export async function init() {
 		Model: await fetchAllModel(),
 		Score: await fetchAllScore(),
 		Configuration: await (async () => {
-			const request = await fetch('/data/configuration.json');
-			const configuration = await request.json();
+			const configuration = await fetch('/data/configuration.json').then(readJSON);
 
 			return Spec.Configuration.Schema.parse(configuration);
 		})(),
 		ModelProperty: await (async (): Promise<ModelPropertyRecordGroup> => {
-			return fetch('/data/model-property.json').then(res => res.json());
+			return fetch('/data/model-property.json').then(readJSON);
 		})(),
 	});
+
+	Capability.Group = await fetch('/data/capability/group.json').then(readJSON);
+	Capability.Item = await fetch('/data/capability/item.json').then(readJSON);
 }
 
 export const API = {
@@ -196,15 +210,43 @@ export const API = {
 			return Data.Score;
 		},
 	}),
+	Capability: {
+		Group: {
+			async query() {
+				return Capability.Group;
+			},
+		},
+		Item: {
+			async query() {
+				return Capability.Item;
+			},
+		},
+	},
 	Document: {
 		Rule: {
 			async get() {
-				return fetch('/html/rule.html').then(res => res.text());
+				return fetch('/html/rule.html').then(readText);
 			},
 		},
 		Guide: {
 			async get() {
-				return fetch('/html/guide.html').then(res => res.text());
+				return fetch('/html/guide.html').then(readText);
+			},
+		},
+		Capability: {
+			Item(id: string) {
+				return {
+					async get() {
+						return fetch(`/html/capability/item/${id}.html`).then(readText);
+					},
+				};
+			},
+			Group(id: string) {
+				return {
+					async get() {
+						return fetch(`/html/capability/group/${id}.html`).then(readText);
+					},
+				};
 			},
 		},
 	},

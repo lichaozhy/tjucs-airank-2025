@@ -5,6 +5,7 @@ import * as Leaderboard from './Leaderboard';
 import * as Configuration from './Configuration';
 
 export { Benchmark, Model, Score, Leaderboard, Configuration };
+export * as Capability from './Capability';
 
 import type { InjectionKey } from 'vue';
 
