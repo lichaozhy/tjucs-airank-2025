@@ -12,9 +12,11 @@
 					</div>
 				</div>
 				<div class="col">
-					<AppHomeCapabilityProfile />
+					<AppHomeBenchmark />
 					<q-space class="q-my-xl q-py-xl" />
 					<AppHomeRankProfile />
+					<q-space class="q-my-xl q-py-xl" />
+					<AppHomeCapabilityProfile />
 				</div>
 			</div>
 		</div>
@@ -22,6 +24,7 @@
 </template>
 
 <script setup lang="ts">
+import AppHomeBenchmark from './BenchmarkProfile.vue';
 import AppHomeCapabilityProfile from './CapabilityProfile.vue';
 import AppHomeRankProfile from './RankProfile.vue';
 
