@@ -9,9 +9,9 @@ released:
     year: 2024
     month: 10
     date: 4
-Github: https://github.com/wentaoyuan/RoboPoint
-Hugging face: null
-Project: https://robo-point.github.io/
+repository: https://github.com/wentaoyuan/RoboPoint
+huggingface: null
+website: https://robo-point.github.io/
 default:
   property: Total
 properties:
@@ -28,9 +28,20 @@ properties:
 
 Where2Place, a benchmark for spatial free-space reference on challenging real world images This dataset contains 100 real-world images to evaluate free space reference using spatial relations. The images are collected from various cluttered environments. Each image is labeled with a sentence describing the desired some free space and a mask of the desired region.
 
+## Benchmark Characteristics
+
+- Manually annotated, challenging real-world benchmark.
+- Features diverse and cluttered scenes.
+- Includes relation types not present in the synthetic training data (for a subset of 30 examples, WHERE2PLACE (h)).
+
+## Benchmark Statistics:
+
+- Consists of 100 real-world images from homes and offices.
+
+
 ## Benchmark Evaluation
 
-To evaluate on Where2Place, you should first run the command in RoboPoint to generate results, and then compute the accuracy.
+To minimize bias, one group labels each image with an instruction describing a vacant region relative to other entities. A different group labels masks according to the instruction. Accuracy is calculated as the percentage of predicted points within the ground truth target mask.
 
 ## Citation
 

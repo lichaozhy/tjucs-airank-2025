@@ -9,9 +9,9 @@ released:
     year: 2024
     month: 12
     date: 18
-Github: https://github.com/vision-x-nyu/thinking-in-space
-Hugging face: null
-Project: https://vision-x-nyu.github.io/thinking-in-space.github.io/
+repository: https://github.com/vision-x-nyu/thinking-in-space
+huggingface: null
+website: https://vision-x-nyu.github.io/thinking-in-space.github.io/
 default:
   property: Total
 properties:
@@ -68,10 +68,21 @@ properties:
 
 VSI-Bench quantitatively evaluates the visual-spatial intelligence of MLLMs from egocentric video. VSI-Bench comprises over 5,000 question-answer pairs derived from 288 real videos. These videos are sourced from the validation sets of the public indoor 3D scene reconstruction datasets ScanNet, ScanNet++, and ARKitScenes, and represent diverse environments -- including residential spaces, professional settings (e.g., offices, labs), and industrial spaces (e.g., factories) and multiple geographic regions. By repurposing these existing 3D reconstruction and understanding datasets, VSI-Bench benefits from accurate object-level annotations, which are used in question generation and could support future studies exploring the connection between MLLMs and 3D reconstruction.
 
+## Benchmark Characteristics
+
+- **Purpose**: The benchmark specifically focuses on visual-spatial intelligence in real-world environments, requiring capabilities like visual working memory and implicit scene reconstruction, going beyond general video understanding.
+- **Quality**: The benchmark is high-quality, having undergone iterative human review to minimize ambiguity in questions and correct incorrect annotations from the source datasets.
+
+## Benchmark Statistics
+
+- **Data Source**: It comprises over 5,000 question-answer pairs derived from 288 real indoor-scene videos. These videos are sourced from existing public indoor 3D scene reconstruction datasets: ScanNet, ScanNet++, and ARKitScenes. The datasets were chosen for their diverse environments (residential, professional, industrial) and accurate object-level annotations.
+
+| ![](assets/1-2.png) | ![](assets/1-3.png) |
+|---------------------|---------------------|
+
 ## Benchmark Evaluation
 
-VSI-Bench evaluates performance using two metrics: for multiple-choice questions, we use Accuracy, calculated based on exact matches. For numerical-answer questions, we introduce a new metric, MRA (Mean Relative Accuracy), to assess how closely model predictions align with ground truth values. Out-of-the-box evaluation of VSI-Bench in GitHub repository, including the metrics implementation used in our framework
-
+VSI-Bench evaluates performance using two metrics: for multiple-choice questions, Accuracy is used, calculated based on exact matches. For numerical-answer questions, a new metric called MRA (Mean Relative Accuracy) is introduced to assess how closely model predictions align with ground truth values. Out-of-the-box evaluation of VSI-Bench in GitHub repository, including the metrics implementation used in our framework
 ## Citation
 
 ```
