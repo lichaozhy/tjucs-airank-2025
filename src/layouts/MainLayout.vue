@@ -37,23 +37,23 @@
 					class="app-navbar-feature-item text-weight-regular"
 					no-caps
 					flat
-					label="Embodied Benchmarks"
-					:to="{ name: 'app.benchmark' }"
 					stretch
-					:class="{ active: routeMatched('app.benchmark') }"
+					:to="{
+						name: 'app.leaderboard.detail',
+						params: { leaderboardId: defaultLeaderboardId },
+					}"
+					label="Embodied Leaderboards"
+					:class="{ active: routeMatched('app.leaderboard') }"
 				></q-btn>
 
 				<q-btn
 					class="app-navbar-feature-item text-weight-regular"
 					no-caps
 					flat
+					label="Embodied Benchmarks"
+					:to="{ name: 'app.benchmark' }"
 					stretch
-					:to="{
-						name: 'app.leaderboard.detail',
-						params: { leaderboardId: defaultLeaderboardId },
-					}"
-					label="Embodied Rank"
-					:class="{ active: routeMatched('app.leaderboard') }"
+					:class="{ active: routeMatched('app.benchmark') }"
 				></q-btn>
 
 				<q-btn
