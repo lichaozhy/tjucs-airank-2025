@@ -12,9 +12,9 @@
 				"date": 6
 			}
 		},
-		"Github": "https://github.com/jacobkrantz/VLN-CE",
-		"Hugging face": null,
-		"Project": "https://jacobkrantz.github.io/vlnce/",
+		"repository": "https://github.com/jacobkrantz/VLN-CE",
+		"huggingface": null,
+		"website": "https://jacobkrantz.github.io/vlnce/",
 		"default": {
 			"property": "TotalSR"
 		},
@@ -42,7 +42,7 @@
 		},
 		"repository": "https://github.com/TJURL-Lab/UniEQA",
 		"huggingface": "https://huggingface.co/datasets/TJURL-Lab/UniEQA",
-		"website": "http://example.com",
+		"website": null,
 		"default": {
 			"property": "Total"
 		},
@@ -140,9 +140,9 @@
 				"date": null
 			}
 		},
-		"Github": "https://github.com/EmbodiedBench/EmbodiedBench",
-		"Hugging face": null,
-		"Project": "https://embodiedbench.github.io/",
+		"repository": "https://github.com/EmbodiedBench/EmbodiedBench",
+		"huggingface": null,
+		"website": "https://embodiedbench.github.io/",
 		"default": {
 			"property": "TotalSR"
 		},
@@ -204,9 +204,9 @@
 				"date": 6
 			}
 		},
-		"Github": "https://github.com/jacobkrantz/VLN-CE",
-		"Hugging face": null,
-		"Project": "https://jacobkrantz.github.io/vlnce/",
+		"repository": "https://github.com/jacobkrantz/VLN-CE",
+		"huggingface": null,
+		"website": "https://jacobkrantz.github.io/vlnce/",
 		"default": {
 			"property": "TotalSR"
 		},
@@ -232,9 +232,9 @@
 				"date": 18
 			}
 		},
-		"Github": "https://github.com/vision-x-nyu/thinking-in-space",
-		"Hugging face": null,
-		"Project": "https://vision-x-nyu.github.io/thinking-in-space.github.io/",
+		"repository": "https://github.com/vision-x-nyu/thinking-in-space",
+		"huggingface": null,
+		"website": "https://vision-x-nyu.github.io/thinking-in-space.github.io/",
 		"default": {
 			"property": "Total"
 		},
@@ -361,15 +361,15 @@
 				"date": null
 			}
 		},
-		"Github": "https://github.com/embodiedreasoning/ERQA",
-		"Hugging face": null,
-		"Project": "https://deepmind.google/discover/blog/gemini-robotics-brings-ai-into-the-physical-world/",
+		"repository": "https://github.com/embodiedreasoning/ERQA",
+		"huggingface": null,
+		"website": "https://deepmind.google/discover/blog/gemini-robotics-brings-ai-into-the-physical-world/",
 		"default": {
 			"property": "Total"
 		},
 		"properties": {
 			"ActionReasoning": {
-				"order": 8,
+				"order": 10,
 				"index": 0,
 				"label": "Action Reasoning",
 				"unit": null
@@ -411,7 +411,7 @@
 				"unit": null
 			},
 			"Other": {
-				"order": 9,
+				"order": 8,
 				"index": 7,
 				"label": "Other",
 				"unit": null
@@ -437,9 +437,9 @@
 				"date": null
 			}
 		},
-		"Github": null,
-		"Hugging face": null,
-		"Project": null,
+		"repository": null,
+		"huggingface": null,
+		"website": null,
 		"default": {
 			"property": "TotalSR"
 		},
@@ -483,9 +483,9 @@
 				"date": null
 			}
 		},
-		"Github": "https://github.com/EmbodiedBench/EmbodiedBench",
-		"Hugging face": null,
-		"Project": "https://embodiedbench.github.io/",
+		"repository": "https://github.com/EmbodiedBench/EmbodiedBench",
+		"huggingface": null,
+		"website": "https://embodiedbench.github.io/",
 		"default": {
 			"property": "TotalSR"
 		},
@@ -541,9 +541,9 @@
 				"date": 30
 			}
 		},
-		"Github": "https://github.com/SilongYong/SQA3D",
-		"Hugging face": null,
-		"Project": "https://sqa3d.github.io/",
+		"repository": "https://github.com/SilongYong/SQA3D",
+		"huggingface": null,
+		"website": "https://sqa3d.github.io/",
 		"default": {
 			"property": "Total"
 		},
@@ -575,9 +575,9 @@
 				"date": 4
 			}
 		},
-		"Github": "https://github.com/wentaoyuan/RoboPoint",
-		"Hugging face": null,
-		"Project": "https://robo-point.github.io/",
+		"repository": "https://github.com/wentaoyuan/RoboPoint",
+		"huggingface": null,
+		"website": "https://robo-point.github.io/",
 		"default": {
 			"property": "Total"
 		},
@@ -635,18 +635,18 @@
 		"id": "ba0be521-6b10-4881-964c-97cd4d2d6070",
 		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
 		"name": "OpenEQA",
-		"description": "UniEQA & UniEval: A Unified Benchmark and Evaluation Platform for Multimodal Foundation Models in Embodied Question Answering\n",
-		"organization": "Tianjin University",
+		"description": "OpenEQA: Embodied Question Answering in the Era of Foundation Models\n",
+		"organization": "Meta",
 		"released": {
 			"at": {
-				"year": 2025,
-				"month": 5,
+				"year": 2024,
+				"month": null,
 				"date": null
 			}
 		},
-		"Github": "https://github.com/TJURL-Lab/UniEQA",
-		"Hugging face": "https://huggingface.co/datasets/TJURL-Lab/UniEQA",
-		"Project": null,
+		"repository": "https://github.com/facebookresearch/open-eqa",
+		"huggingface": null,
+		"website": "https://open-eqa.github.io/",
 		"default": {
 			"property": "Total"
 		},
@@ -708,9 +708,9 @@
 				"date": null
 			}
 		},
-		"Github": "https://github.com/EmbodiedBench/EmbodiedBench",
-		"Hugging face": null,
-		"Project": "https://embodiedbench.github.io/",
+		"repository": "https://github.com/EmbodiedBench/EmbodiedBench",
+		"huggingface": null,
+		"website": "https://embodiedbench.github.io/",
 		"default": {
 			"property": "TotalSR"
 		},
@@ -772,9 +772,9 @@
 				"date": 7
 			}
 		},
-		"Github": "https://github.com/daveredrum/Scan2Cap",
-		"Hugging face": null,
-		"Project": "https://daveredrum.github.io/Scan2Cap/",
+		"repository": "https://github.com/daveredrum/Scan2Cap",
+		"huggingface": null,
+		"website": "https://daveredrum.github.io/Scan2Cap/",
 		"default": {
 			"property": "Total"
 		},
@@ -812,9 +812,9 @@
 				"date": 1
 			}
 		},
-		"Github": "https://github.com/ATR-DBI/ScanQA",
-		"Hugging face": null,
-		"Project": null,
+		"repository": "https://github.com/ATR-DBI/ScanQA",
+		"huggingface": null,
+		"website": null,
 		"default": {
 			"property": "Total"
 		},

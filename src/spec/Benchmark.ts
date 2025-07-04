@@ -1,17 +1,17 @@
 import { z } from 'zod/v4';
 import * as Leaderboard from './Leaderboard';
 
-const ReleasedSchema = z.object({
-	at: z.object({
-		year: z.number(),
-		month: z.uint32(),
-		date: z.optional(z.nullable(z.number())),
-	}),
-});
-
 function OptionalNullable<T extends z.ZodType>(schema: T) {
 	return z.optional(z.nullable(schema));
 }
+
+const ReleasedSchema = z.object({
+	at: z.object({
+		year: z.uint32(),
+		month: OptionalNullable(z.uint32()),
+		date: OptionalNullable(z.uint32()),
+	}),
+});
 
 const MetadataNamespace = {
 	released: OptionalNullable(ReleasedSchema),

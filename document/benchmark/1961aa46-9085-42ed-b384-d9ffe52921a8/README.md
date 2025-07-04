@@ -9,9 +9,9 @@ released:
     year: 2025
     month: 2
     date: null
-Github: https://github.com/EmbodiedBench/EmbodiedBench
-Hugging face: null
-Project: https://embodiedbench.github.io/
+repository: https://github.com/EmbodiedBench/EmbodiedBench
+huggingface: null
+website: https://embodiedbench.github.io/
 default:
   property: TotalSR
 properties:
@@ -56,13 +56,89 @@ properties:
 
 ![alt text](assets/1-1.png)
 
-We develop EB-ALFRED based on the ALFRED dataset and the AI2-THOR simulator. Our simulator is based on Lota-Bench’s implementation for 8 highlevel skill types: “pick up”, “open”, “close”, “turn on”, “turn off”, “slice”, “put down”, and “find”, each customizable with specific objects, for example, “find an apple”. The simulator provides an egocentric view as observation, along with textual feedback on action validity and possible failure reasons. Despite its strengths, Lota-Bench’s simulator has several limitations. To enhance the simulation, we introduced key improvements, such as support for multiple instances of the same object type, allowing us to cover all task types in ALFRED. Additionally, we streamlined the action space by merging “put down” actions into a single action, since only one object can be held at a time. Due to the varying number of objects in ALFRED, the action space of EB-ALFRED is dynamic, ranging from 171 to 298 actions. Furthermore, we manually corrected simulator errors and refined instruction quality, ensuring more accurate action execution and improved task solvability. These enhancements make EB-ALFRED a highquality benchmark for evaluating embodied agents
+EB-ALFRED is a high-level embodied planning benchmark introduced in EmbodiedBench, built on top of the ALFRED dataset and AI2-THOR simulator. Unlike traditional embodied settings that require pixel-level control, EB-ALFRED abstracts away low-level actions and focuses solely on symbolic high-level planning with language and vision input.
 
+Key features:
+
+8 parameterized skills: pick up, open, close, turn on, turn off, slice, put down, find. These are invoked with specific object arguments, e.g., "find an apple".
+
+Multi-instance object indexing: All interactable objects are suffixed (e.g., cabinet 2) to enable full task coverage from ALFRED, including multi-object tasks.
+
+Dynamic action space: Varies by scene (typically 171–298 actions). All put down variants are unified into one.
+
+Egocentric RGB input + textual feedback: Agents receive visual observations and descriptive text after each action.
+
+Symbolic success evaluation: Based on PDDL-defined subgoals rather than pixel matching.
+
+Robust stopping criteria: Episodes end after 30 environment steps, more than 10 invalid actions, or if the model halts planning.
 ## Benchmark characteristics
+EB-ALFRED is designed to evaluate the high-level reasoning and planning ability of MLLMs in embodied environments. It exhibits several important characteristics that distinguish it from traditional embodied or vision-language tasks:
+
+High-Level Abstraction: Removes all low-level navigation and manipulation, focusing only on symbolic, skill-level planning grounded in vision and language.
+
+Multi-Instance Object Handling: Supports multiple identical object instances (e.g., cup 1, cup 2), which is critical for realistic household tasks.
+
+Dynamic Action Space: The number of available actions varies per scene (171–298), depending on the number of visible and interactable objects.
+
+Language-Vision Feedback Loop: The model observes the world through egocentric RGB images and textual feedback about the last action’s success or failure.
+
+PDDL-based Goal Checking: Task success is determined by symbolic state checks, not image comparison—enabling precise evaluation.
+
+Subset Decomposition: Tasks are categorized into six subsets (Base, Common-Sense, Spatial, Appearance, Long-Horizon, etc.), enabling granular capability analysis.
+
+Realistic and Diverse: Built upon real ALFRED task templates and environments rendered in AI2-THOR, ensuring naturalistic diversity and complexity.
+
 
 ## Benchmark Statistics
+300 tasks sampled from ALFRED's valid_seen scenes.
 
+6 evaluation subsets, each with 50 tasks:
+
+Base
+
+Common-Sense
+
+Complex Instruction
+
+Spatial Awareness
+
+Visual Appearance
+
+Long Horizon
+
+8 high-level skills, grounded to objects per scene.
+
+Action space range: 171–298, depending on the number of valid interactions.
+
+Max steps per episode: 30
+
+Early termination: Triggered by 10+ invalid actions.
 ## Benchmark Evaluation
+EB-ALFRED was used to evaluate 24 MLLMs (8 proprietary and 16 open-source) under the same settings (e.g., temperature = 0, vision resolution = 500×500).
+
+Highlights:
+
+Claude-3.7-Sonnet leads with 67.7% task success.
+
+GPT-4o follows with 56.3%.
+
+InternVL3-78B is the best open-source model with 39.0% success.
+
+Clear scaling trend among open-source models as parameter size increases.
+
+Insights:
+
+Long-Horizon tasks are the most challenging for all models.
+
+Vision ablation has little impact on high-level task success, suggesting models rely more on language and symbolic feedback.
+
+Error analysis (e.g., GPT-4o):
+
+55% planning errors (e.g., skipped or repeated steps)
+
+41% reasoning errors
+
+4% perception errors
 
 ## Citation
 
