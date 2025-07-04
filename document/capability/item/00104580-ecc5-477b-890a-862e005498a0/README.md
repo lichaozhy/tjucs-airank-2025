@@ -8,4 +8,5 @@ order: 0
 |-|-|
 |OpenEQA|Object Recognition|
 |UniEQA|Object Type|
+
 ![alt text](objectType.png)
