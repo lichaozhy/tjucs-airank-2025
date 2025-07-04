@@ -10,38 +10,45 @@
 					vertical
 					stretch
 					inline-label
-					v-model="leaderboard"
+					v-model="group"
 				>
 					<q-tab
 						content-class="q-pr-lg q-py-sm"
-						v-for="leaderboard in INTRODUCTION.LEADERBOARD"
-						:key="leaderboard.NAME"
-						:label="leaderboard.LABEL"
-						:icon="leaderboard.ICOM"
+						v-for="group in groupList"
+						:key="group.id"
+						:label="group.name"
+						:icon="group.icon"
 						style="justify-content: start"
-						:name="leaderboard.NAME"
+						:name="group.id"
 					></q-tab>
 				</q-tabs>
-				<q-separator vertical class="full-height" color="indigo-1" />
+				<q-separator
+					vertical
+					class="full-height"
+					color="indigo-1"
+				/>
 			</div>
 
-			<div class="col-shrink relative-postion text-black">
-				<div class="text-h5 text-right text-weight-medium">Core Tasks</div>
-				<div class="text-body1 q-my-lg">{{ lorem }}</div>
+			<div class="col relative-postion text-black">
+				<div class="text-h5 text-right text-weight-medium">Core Features</div>
+				<div
+					class="app-markdown-html q-my-lg"
+					v-html="groupContent"
+				></div>
 
 				<div class="text-h5 text-right text-weight-medium q-mt-xl">
-					Benchmarks
+					Sub Capabilities
 				</div>
 
 				<q-tabs
-					v-model="benchmark"
+					v-model="item"
 					class="q-mt-md"
 				>
 					<q-tab
-						v-for="name in benchmarkList"
-						:key="name"
-						:label="name"
-						:name="name"
+						v-for="item in itemList"
+						:key="item.id"
+						:label="item.name"
+						:name="item.id"
 						no-caps
 						align="justify"
 						narrow-indicator
@@ -50,92 +57,80 @@
 
 				<q-tab-panels
 					class="bg-transparent"
-					v-model="benchmark"
+					v-model="item"
 					animated
 					swipeable
 					infinite
 					style="height: 200px"
 				>
 					<q-tab-panel
-						class="q-px-none text-body1"
-						v-for="name in benchmarkList"
-						:key="name"
-						:name="name"
+						class="q-px-none"
+						v-for="item in itemList"
+						:key="item.id"
+						:name="item.id"
 					>
-						{{ lorem }}{{ lorem }}{{ lorem }}
+						<div
+							class="app-markdown-html"
+							v-html="itemContent"
+						></div>
 					</q-tab-panel>
 				</q-tab-panels>
 			</div>
 		</div>
 		<q-btn
 			class="q-mt-lg"
-			label="Go to EmbodiedBenchmarks to view all benchmarks →"
+			label="Go to User Guide to View more Details about Capabilities →"
 			flat
 			dense
-			:to="{ name: 'app.benchmark' }"
+			:to="{ name: 'app.guide' }"
 			no-caps
 		></q-btn>
 	</div>
 </template>
 
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue';
+import { computed, onBeforeMount, ref, watch } from 'vue';
+
+import type * as Spec from 'src/spec';
+import * as Backend from 'src/backend';
+
+const groupDataList = ref<Spec.Capability.Group[]>([]);
+const itemDataList = ref<Spec.Capability.Item[]>([]);
 
 const INTRODUCTION = {
-	TITLE: '3 Key Leaderboard · 20+ Core Tasks · 50+ Evaluation Datasets',
-	LEADERBOARD: [
-		{
-			LABEL: 'Question Answering',
-			ICOM: 'question_answer',
-			NAME: 'qa',
-			BENCHMARKS: [
-				'UniEQA',
-				'OpenEQA',
-				'VSI',
-				'ERQA',
-				'SQA3D',
-				'ScanQA',
-				'Scan2Cap',
-				'PointBench',
-				'PhyBlock',
-				'MineAnyBuild',
-				'RoboVQA',
-				'where2place',
-			],
-		},
-		{
-			LABEL: 'Navigation',
-			ICOM: 'near_me',
-			NAME: 'nav',
-			BENCHMARKS: ['EB-Navigation', 'VLN-CE R2R', 'VLN-CE RxR', 'hm3d', 'mp3d'],
-		},
-		{
-			LABEL: 'Task Planning',
-			ICOM: 'view_timeline',
-			NAME: 'task',
-			BENCHMARKS: ['ET-Plan-Bench', 'EB-ALFRED', 'EB-Habitat'],
-		},
-	],
+	TITLE: '7 key Capabilities 21 Sub Capabilities 50K+ QA',
 };
 
-const lorem =
-	'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.';
-const leaderboard = ref<string>('qa');
-const benchmark = ref<string>('');
+const group = ref<string>('');
+const item = ref<string>('');
+const groupContent = ref<string>('');
+const itemContent = ref<string>('');
 
-const benchmarkList = computed(() => {
-	return INTRODUCTION.LEADERBOARD.find(
-		({ NAME }) => NAME === leaderboard.value,
-	)!.BENCHMARKS;
+const groupList = computed(() => {
+	return groupDataList.value.map((data) => data);
 });
 
-watch(
-	leaderboard,
-	() => {
-		benchmark.value = benchmarkList.value[0]!;
-	},
-	{ immediate: true },
-);
+const itemList = computed(() => {
+	const currentGroupId = group.value;
+
+	return itemDataList.value.filter((item) => item.group === currentGroupId);
+});
+
+watch(group, async (groupId) => {
+	groupContent.value =
+		await Backend.API.Document.Capability.Group(groupId).get();
+	item.value = itemList.value[0]!.id;
+});
+
+watch(item, async (itemId) => {
+	itemContent.value = await Backend.API.Document.Capability.Item(itemId).get();
+});
+
+onBeforeMount(async () => {
+	itemDataList.value = await Backend.API.Capability.Item.query();
+	groupDataList.value = await Backend.API.Capability.Group.query();
+	group.value = groupDataList.value[0]!.id;
+});
 
 defineOptions({ name: 'AppPageHomeBenchmarkProfile' });
 </script>
