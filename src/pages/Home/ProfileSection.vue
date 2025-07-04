@@ -11,8 +11,8 @@
 						<div class="text-body1 q-mt-xl">{{ PROFILE.COMMENT }}</div>
 					</div>
 				</div>
-				<div class="col-shrink">
-					<AppHomeBenchmarkProfile />
+				<div class="col">
+					<AppHomeCapabilityProfile />
 					<q-space class="q-my-xl q-py-xl" />
 					<AppHomeRankProfile />
 				</div>
@@ -22,7 +22,7 @@
 </template>
 
 <script setup lang="ts">
-import AppHomeBenchmarkProfile from './BenchmarkProfile.vue';
+import AppHomeCapabilityProfile from './CapabilityProfile.vue';
 import AppHomeRankProfile from './RankProfile.vue';
 
 const PROFILE = {
@@ -36,5 +36,5 @@ const PROFILE = {
 	].join(''),
 };
 
-defineOptions({ name: 'AppPageHomeSectionBenchmarkRank' });
+defineOptions({ name: 'AppPageHomeSectionIntroduction' });
 </script>
