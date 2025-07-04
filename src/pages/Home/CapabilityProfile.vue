@@ -32,11 +32,12 @@
 			<div class="col relative-postion text-black">
 				<div class="text-h5 text-right text-weight-medium">Core Features</div>
 				<div
-					class="app-markdown-html q-my-lg"
+					class="app-markdown-html q-my-md"
+					style="height: 8em;"
 					v-html="groupContent"
 				></div>
 
-				<div class="text-h5 text-right text-weight-medium q-mt-xl">
+				<div class="text-h5 text-right text-weight-medium q-mt-md">
 					Sub Capabilities
 				</div>
 
@@ -61,7 +62,7 @@
 					animated
 					swipeable
 					infinite
-					style="height: 200px"
+					style="height: 16em"
 				>
 					<q-tab-panel
 						class="q-px-none"
@@ -78,7 +79,7 @@
 			</div>
 		</div>
 		<q-btn
-			class="q-mt-lg"
+			class="q-mt-xl"
 			label="Go to User Guide to View more Details about Capabilities →"
 			flat
 			dense
@@ -107,13 +108,15 @@ const groupContent = ref<string>('');
 const itemContent = ref<string>('');
 
 const groupList = computed(() => {
-	return groupDataList.value.map((data) => data);
+	return [...groupDataList.value].sort((a, b) => a.order - b.order);
 });
 
 const itemList = computed(() => {
 	const currentGroupId = group.value;
 
-	return itemDataList.value.filter((item) => item.group === currentGroupId);
+	return itemDataList.value
+		.filter((item) => item.group === currentGroupId)
+		.sort((a, b) => a.order - b.order);
 });
 
 watch(group, async (groupId) => {
