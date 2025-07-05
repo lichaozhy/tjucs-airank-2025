@@ -22,15 +22,15 @@ properties:
     unit: null
 ---
 
-## Benchmark Introduction
+## Introduction
 
 ![alt text](assets/1-1.png)
 
 RxR was ported to continuous environments originally for the RxR-Habitat Challenge. The dataset has train, val_seen, val_unseen, and test_challenge splits with both Guide and Follower trajectories ported.
 
-## Benchmark Statistics
+## Data Statistics
 
-## Benchmark Evaluation
+## Evaluation
 
 ## Citation
 
