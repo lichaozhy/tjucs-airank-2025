@@ -52,7 +52,7 @@ properties:
     unit: null
 ---
 
-## Benchmark Introduction
+## Introduction
 
 ![alt text](assets/1-1.png)
 
@@ -89,7 +89,7 @@ Subset Decomposition: Tasks are categorized into six subsets (Base, Common-Sense
 Realistic and Diverse: Built upon real ALFRED task templates and environments rendered in AI2-THOR, ensuring naturalistic diversity and complexity.
 
 
-## Benchmark Statistics
+## Data Statistics
 300 tasks sampled from ALFRED's valid_seen scenes.
 
 6 evaluation subsets, each with 50 tasks:
@@ -113,7 +113,7 @@ Action space range: 171–298, depending on the number of valid interactions.
 Max steps per episode: 30
 
 Early termination: Triggered by 10+ invalid actions.
-## Benchmark Evaluation
+## Evaluation
 EB-ALFRED was used to evaluate 24 MLLMs (8 proprietary and 16 open-source) under the same settings (e.g., temperature = 0, vision resolution = 500×500).
 
 Highlights:
