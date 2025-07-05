@@ -42,7 +42,7 @@ properties:
     unit: null
 ---
 
-## Benchmark Introduction
+## Introduction
 
 ![alt text](assets/1-1.png)
 
