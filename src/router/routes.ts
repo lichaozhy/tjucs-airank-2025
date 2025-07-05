@@ -79,6 +79,11 @@ const routes: RouteRecordRaw[] = [
 				path: 'contribute',
 				component: () => import('pages/ContributeBenchmark/Page.vue'),
 			},
+			{
+				name: 'app.googleform',
+				path: 'googleform/:id',
+				component: () => import('pages/GoogleForm/Page.vue'),
+			},
 		],
 	},
 

@@ -85,6 +85,11 @@
 					outline
 					rounded
 					label="Online Evaluation"
+					:to="{
+						name: 'app.googleform',
+						params: { id: 'CLAcMUbvU7TsNeKD8' },
+						query: { height: 2157 }
+					}"
 				></q-btn>
 
 				<q-btn
@@ -93,8 +98,11 @@
 					outline
 					rounded
 					label="Contribute Benchmark"
-					:class="{ active: routeMatched('app.contribute') }"
-					:to="{ name: 'app.contribute' }"
+					:to="{
+						name: 'app.googleform',
+						params: { id: '2ncVcX8K6quaEc7TA' },
+						query: { height: 2029 }
+					}"
 				></q-btn>
 			</q-toolbar>
 		</q-header>
