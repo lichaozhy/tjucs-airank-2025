@@ -37,7 +37,7 @@ properties:
     unit: ''
 ---
 
-## Benchmark Introduction
+## Introduction
 
 ![alt text](assets/1-1.png)
 
@@ -45,9 +45,9 @@ The ET-Plan-Bench focuses on various aspects of spatial understanding, including
 
 ## Benchmark characteristics
 
-## Benchmark Statistics
+## Data Statistics
 
-## Benchmark Evaluation
+## Evaluation
 
 ## Citation
 
