@@ -4,7 +4,6 @@
 		<AppHomeProfileSection />
 		<app-home-evaluation />
 		<app-home-feature />
-		<app-home-cooperation />
 		<app-home-contribution />
 	</q-page>
 </template>
@@ -14,7 +13,6 @@ import AppHomeBannerSection from './BannerSection.vue';
 import AppHomeProfileSection from './ProfileSection.vue';
 import AppHomeEvaluation from './EvaluationSection.vue';
 import AppHomeFeature from './FeatureSection.vue';
-import AppHomeCooperation from './CooperationSection.vue';
 import AppHomeContribution from './ContributionSection.vue';
 
 defineOptions({ name: 'AppPageHome' });
