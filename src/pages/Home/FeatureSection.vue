@@ -45,57 +45,33 @@ const SECTION = {
 	ITEMS: [
 		{
 			ICON: 'lock_open',
-			TITLE: 'Open Source and Reproducible',
-			COMMENT: [
-				'A fully open source and reproducible embodied AI model evaluation ',
-				'framework that ensures transparency and enables community-driven ',
-				'development',
-			].join(''),
+			TITLE: 'Comprehensive Embodied Capability Taxonomy',
+			COMMENT: 'Systematic categorization spanning object perception, spatial reasoning, temporal understanding, embodied knowledge, navigation, and task planning across multiple dimensions.',
 		},
 		{
 			ICON: 'smart_toy',
-			TITLE: 'Embodied Model Support',
-			COMMENT: [
-				'Comprehensive evaluation support for diverse embodied AI models ',
-				'including multimodal LLMs, spatial reasoning models, navigation ',
-				'agents, and robotic foundation models',
-			].join(''),
+			TITLE: 'Rich Model Support:',
+			COMMENT: 'Comprehensive evaluation support for diverse AI architectures including general multimodal LLMs, specialized embodied models, and both open-source and close-source models.',
 		},
 		{
 			ICON: 'electric_bolt',
-			TITLE: 'High-Performance Evaluation System',
-			COMMENT: [
-				'Delivers high-performance distributed evaluation across multiple ',
-				'embodied benchmarks, enabling rapid assessment of large-scale embodied ',
-				'AI models',
-			].join(''),
+			TITLE: 'Modular Benchmark Integration',
+			COMMENT: 'Comprehensive integration of diverse evaluation benchmarks including visual QA, navigation tasks, task planning, and both 2D/3D scenarios, with flexible extensibility for new benchmarks.',
 		},
 		{
 			ICON: 'hive',
-			TITLE: 'Embodied Capability Framework',
-			COMMENT: [
-				'Systematic categorization of embodied AI capabilities including ',
-				'object perception, spatial reasoning, temporal understanding, embodied ',
-				'knowledge, navigation, and task planning',
-			].join(''),
+			TITLE: 'Unified Evaluation Infrastructure',
+			COMMENT: 'Clean, standardized evaluation framework with uniform input/output formats enabling seamless and rapid distributed assessment across diverse embodied AI benchmarks.',
 		},
 		{
 			ICON: 'construction',
-			TITLE: 'Modular Benchmark Integration',
-			COMMENT: [
-				'Flexible architecture supporting easy integration of new embodied AI ',
-				'benchmarks, datasets, and evaluation scenarios for continuous platform ',
-				'evolution',
-			].join(''),
+			TITLE: 'Continuously Updated High-quality Evaluation Datasets',
+			COMMENT: 'Curated high-quality evaluation datasets with strong discriminative power, continuously evolved through LLM-driven automated generation pipeline.',
 		},
 		{
 			ICON: 'api',
-			TITLE: 'Multi-Modal Evaluation Methods',
-			COMMENT: [
-				'Supports diverse evaluation methodologies including visual question ',
-				'answering, spatial navigation tasks, embodied reasoning, interactive ',
-				'planning, and real-world scenario simulation',
-			].join(''),
+			TITLE: 'Diverse Evaluation Methodologies',
+			COMMENT: 'Complementary evaluation paradigms including accuracy-based QA assessment (exact and fuzzy matching evaluation) and interactive simulation-based testing (success rate metrics) for comprehensive embodied capability evaluation.',
 		},
 	],
 };
