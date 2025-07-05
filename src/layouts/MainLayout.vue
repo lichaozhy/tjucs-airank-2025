@@ -84,7 +84,7 @@
 					no-caps
 					outline
 					rounded
-					label="Online Evaluation"
+					label="Contribute Model"
 					:to="{
 						name: 'app.googleform',
 						params: { id: 'CLAcMUbvU7TsNeKD8' },
