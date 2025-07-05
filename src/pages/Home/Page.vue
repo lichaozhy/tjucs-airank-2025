@@ -5,6 +5,7 @@
 		<app-home-evaluation />
 		<app-home-feature />
 		<app-home-contribution />
+		<app-home-citation-section />
 	</q-page>
 </template>
 
@@ -14,6 +15,7 @@ import AppHomeProfileSection from './ProfileSection.vue';
 import AppHomeEvaluation from './EvaluationSection.vue';
 import AppHomeFeature from './FeatureSection.vue';
 import AppHomeContribution from './ContributionSection.vue';
+import AppHomeCitationSection from './CitationSection.vue';
 
 defineOptions({ name: 'AppPageHome' });
 </script>

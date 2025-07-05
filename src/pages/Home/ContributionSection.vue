@@ -8,7 +8,7 @@
 				flat
 				square
 				id="app-home-contribution-card"
-				class="q-pa-xl q-my-xl"
+				class="q-pa-xl"
 			>
 				<q-card-section class="q-pt-xl">
 					<div class="text-h2 text-weight-medium">{{ SECTION.TITLE }}</div>
