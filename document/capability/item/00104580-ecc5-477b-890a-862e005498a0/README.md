@@ -8,7 +8,8 @@ order: 0
 |---------------|--------------------------|
 | ERQA          | Pointing                 |
 | OpenEQA       | Object Recognition       |
-| PhyBlock      | Type Counting            |
 | UniEQA        | Object Type              |
+| PhyBlock      | Type Counting            |
 
 ![alt text](objectType.png)
+
