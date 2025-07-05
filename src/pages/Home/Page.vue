@@ -4,7 +4,7 @@
 		<app-home-benchmark-rank-section />
 		<app-home-evaluation />
 		<app-home-feature />
-		<app-home-cooperation />
+		<app-contributor-section />
 		<app-home-contribution />
 	</q-page>
 </template>
@@ -14,7 +14,7 @@ import AppHomeBannerSection from './BannerSection.vue';
 import AppHomeBenchmarkRankSection from './BenchmarkRankSection.vue';
 import AppHomeEvaluation from './EvaluationSection.vue';
 import AppHomeFeature from './FeatureSection.vue';
-import AppHomeCooperation from './CooperationSection.vue';
+import AppContributorSection from './ContributorSection.vue';
 import AppHomeContribution from './ContributionSection.vue';
 
 defineOptions({ name: 'AppPageHome' });
