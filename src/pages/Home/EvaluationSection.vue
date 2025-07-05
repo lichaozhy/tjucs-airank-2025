@@ -21,31 +21,32 @@
 		></q-btn>
 		<q-img
 			class="q-my-xl"
-			style="max-width: 70em;"
-			src="/html/assets/2d0abf33d0abaa64a7cbf222a3cd063d.png"
+			style="max-width: 70em"
+			src="/public/image/462810345-b00096a8-da3e-400a-8186-206e15ad44f0.png"
 		></q-img>
 	</div>
 </template>
 
 <script setup lang="ts">
 const SECTION = {
-	TITLE: 'How do we evaluate?',
-	COMMENT: [
-		'Embodied Arena platform extensively supports over 50+ embodied AI models',
-		' and multimodal models, incorporating a diverse range of 20+ specialized ',
-		'benchmarks with thousands of carefully curated questions to evaluate ',
-		'models across seven fundamental dimensions. Its comprehensive evaluation ',
-		'system enables thorough assessment of embodied intelligence capabilities ',
-		'including object perception, spatial reasoning, temporal understanding, ',
-		'and interactive task planning. The platform accommodates various ',
-		'evaluation methodologies, including visual question answering, spatial ',
-		'navigation tasks, and embodied reasoning assessments, and features a ',
-		'highly flexible modular design for seamless integration of new models, ',
-		'benchmarks, or customized embodied AI scenarios. Additionally, Embodied ',
-		'Arena includes advanced experiment management and real-time leaderboard ',
-		'systems for detailed performance tracking and transparent result ',
-		'presentation across different embodied intelligence tasks.',
-	].join(''),
+	TITLE: 'Embodied Arena Evaluation System',
+	COMMENT: `Embodied Arena extensively supports comprehensive evaluation of
+	models from different sources (i.e., open-source, close-source) by different
+	means (e.g., model parameters, API), offering flexibility and convenience
+	for users to join. Embodied Arena leverages a diverse range of well-curated
+	Embodied AI benchmarks (xxx M QA in total), which ensures a high alignment
+	with canonical evaluation methods and meanwhile the best completeness
+	compared to prior works. More importantly, Embodied Arena is greatly powered
+	by a unique LLM-driven automatic generation approach for Embodied evaluation
+	data, hence has prominent superiorities in providing the diversity of scenrio
+	and task, breaking the scaling bottleneck of mannually constructed data,
+	keeping evaluation data in blackbox thus ensuring a high-level safety.
+	Embodied Arena conducts comprehensive Emboidied evaluation for each model
+	across all benchmarks and generative evaluation data, presenting the rank
+	on three types of leaderboard and the radar plot in terms of seven Embodied
+	capabilities for concise and intuitive comparison. Additionally, Embodied
+	Arena includes professional experiment management and real-time leaderboard
+	systems for detailed performance tracking and transparent result presentation.`,
 };
 
 defineOptions({ name: 'AppPageHomeSectionEvaluation' });
