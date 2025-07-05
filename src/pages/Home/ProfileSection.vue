@@ -1,23 +1,20 @@
 <template>
-	<div class="column content-center q-pa-xl text-indigo-10">
-		<div class="app-content-main full-width">
-			<div class="row q-col-gutter-lg no-wrap">
-				<div
-					class="q-pr-xl col-grow"
-					style="max-width: 30em;"
-				>
-					<div class="q-mb-xl q-pb-xl" style="position: sticky;top: 80px">
-						<div class="text-h4">{{ PROFILE.TITLE }}</div>
-						<div class="text-body1 q-mt-xl">{{ PROFILE.COMMENT }}</div>
-					</div>
-				</div>
-				<div class="col">
-					<AppHomeBenchmark />
-					<q-space class="q-my-xl q-py-xl" />
-					<AppHomeRankProfile />
-					<q-space class="q-my-xl q-py-xl" />
-					<AppHomeCapabilityProfile />
-				</div>
+	<div class="column content-center justify-center items-center q-pa-xl text-indigo-10">
+		<h2 class="text-indigo-10 text-weight-bold">{{ PROFILE.TITLE }}</h2>
+		<p
+			class="text-center text-body1 text-grey-8"
+			style="max-width: 70em"
+		>
+			{{ PROFILE.COMMENT }}
+		</p>
+
+		<div class="app-content-main full-width q-mt-xl">
+			<div>
+				<AppHomeBenchmark />
+				<q-space class="q-my-xl q-py-xl" />
+				<AppHomeRankProfile />
+				<q-space class="q-my-xl q-py-xl" />
+				<AppHomeCapabilityProfile />
 			</div>
 		</div>
 	</div>

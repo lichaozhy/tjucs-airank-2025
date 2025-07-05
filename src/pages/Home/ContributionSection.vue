@@ -1,7 +1,7 @@
 <template>
 	<div
 		id="app-home-contribution"
-		class="text-white column content-center justify-center q-py-xl"
+		class="text-white column content-center justify-center q-pa-xl"
 	>
 		<div class="app-max-width-1680 full-width">
 			<q-card
