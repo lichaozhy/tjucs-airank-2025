@@ -32,7 +32,7 @@ properties:
     unit: null
 ---
 
-## Benchmark Introduction
+## Introduction
 
 ![alt text](assets/1-1.png)
 
@@ -46,7 +46,7 @@ This work introduces a new 3D spatial understanding task for 3D question answeri
 
 ![alt text](assets/1-2.png)
 
-## Benchmark Statistics
+## Data Statistics
 
 - **Total Questions**: 41,363 questions.
 - **Unique Questions**: 32,337 unique questions.
@@ -55,7 +55,7 @@ This work introduces a new 3D spatial understanding task for 3D question answeri
 
 ![alt text](assets/1-3.png)
 
-## Benchmark Evaluation
+## Evaluation
 
 | Evaluation Aspect | Details |
 |---|---|
