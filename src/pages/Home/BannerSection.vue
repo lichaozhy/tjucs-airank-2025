@@ -14,16 +14,20 @@
 		>
 			<h1 class="text-weight-bolder">{{ PROJECT.NAME }}</h1>
 			<h2 class="">{{ PROJECT.SUBTITLE }}</h2>
-			<h5 class="text-weight-light">{{ PROJECT.AUTHOR }}</h5>
 			<h5 class="text-weight-light">{{ PROJECT.ABSTRACT }}</h5>
 
 			<div class="row justify-center q-my-xl">
 				<q-btn
 					class="q-ma-md q-px-xl"
 					size="xl"
-					label="Online Evaluation"
+					label="Join Evaluation"
 					outline
 					square
+					:to="{
+						name: 'app.googleform',
+						params: { id: 'CLAcMUbvU7TsNeKD8' },
+						query: { height: 2157 }
+					}"
 				></q-btn>
 				<q-btn
 					class="q-ma-md q-px-xl"
@@ -50,12 +54,8 @@ import * as Backend from 'src/backend';
 
 const PROJECT = {
 	NAME: 'Embodied Arena',
-	SUBTITLE: 'Embodied AI Model Evaluation Leaderboard',
-	AUTHOR: 'Deep Reinforcement Learning Laboratory at Tianjin University',
-	ABSTRACT: [
-		'An open-source, efficient, comprehensive, ',
-		'and user-friendly evaluation system and platform for embodied AI models',
-	].join(''),
+	SUBTITLE: 'Embodied AI Model Evaluation System & Leaderboards',
+	ABSTRACT: 'An open-source, comprehensive, and user-friendly evaluation system and platform for embodied AI models',
 };
 
 const defaultLeaderboardId = ref<string | null>(null);

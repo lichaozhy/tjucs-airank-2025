@@ -37,7 +37,12 @@
 								square
 								outline
 								color="white"
-								label="Online Evaluation"
+								label="Contribute Model"
+								:to="{
+									name: 'app.googleform',
+									params: { id: 'CLAcMUbvU7TsNeKD8' },
+									query: { height: 2157 },
+								}"
 							></q-btn>
 						</div>
 						<div class="col-6">
@@ -52,6 +57,11 @@
 								outline
 								color="white"
 								label="Contribute Benchmark"
+								:to="{
+									name: 'app.googleform',
+									params: { id: '2ncVcX8K6quaEc7TA' },
+									query: { height: 2029 },
+								}"
 							></q-btn>
 						</div>
 					</div>
@@ -63,7 +73,7 @@
 
 <script setup lang="ts">
 const SECTION = {
-	TITLE: 'COLLABORATION INITIATIVE',
+	TITLE: 'Join us / Call for Participation',
 	COMMENT: [
 		'We have established the Embodied Arena Collaboration Initiative, ',
 		'enthusiastically welcoming outstanding embodied AI models to participate ',
@@ -75,18 +85,15 @@ const SECTION = {
 	BAR: {
 		LEFT: {
 			TITLE: 'Evaluation Leaderboards',
-			COMMENT: [
-				'Only open source or external API service models are supported ',
-				'(internal iterative models currently do not support)',
-			].join(''),
+			COMMENT: `Showcase your model: Join the leaderboard competition,
+			demonstrate your embodied AI capabilities across comprehensive benchmarks,
+			and establish your model's position in the future of embodied intelligence.`,
 		},
 		RIGHT: {
 			TITLE: 'Benchmark Community',
-			COMMENT: [
-				'Make your benchmark shine: co-create and share evaluation benchmarks ',
-				'with the community, establish unique leaderboards, and together shape ',
-				'the new benchmark for large model evaluation',
-			].join(''),
+			COMMENT: `Make your benchmark shine: Co-create and share evaluation
+			benchmarks with the community, establish distinctive leaderboards, and
+			collectively shape the future of large-scale embodied AI evaluation.`,
 		},
 	},
 };
