@@ -23,15 +23,15 @@ properties:
 ---
 
 
-## Benchmark Introduction
+## Introduction
 
 ![alt text](assets/1-1.png)
 
 The R2R_VLNCE dataset is a port of the Room-to-Room (R2R) dataset created by Anderson et al for use with the Matterport3DSimulator (MP3D-Sim).
 
-## Benchmark Statistics
+## Data Statistics
 
-## Benchmark Evaluation
+## Evaluation
 
 ## Citation
 
