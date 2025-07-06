@@ -1,9 +1,21 @@
 <template>
 	<div class="col-shrink">
-		<div class="bg-indigo-10 text-h5 q-pa-md text-white">
+		<div class="column content-center items-center text-center">
+			<h2 class="text-indigo-10 text-weight-bold">{{ PROFILE.TITLE }}</h2>
+			<p
+				class="text-body1 text-grey-8 self-center"
+				style="max-width: 70em"
+			>
+				{{ PROFILE.COMMENT }}
+			</p>
+		</div>
+
+		<div class="bg-indigo-10 text-h5 q-pa-md q-mt-xl text-white">
 			{{ INTRODUCTION.TITLE }}
 		</div>
+
 		<q-space class="q-my-lg" />
+
 		<div class="row q-col-gutter-lg no-wrap">
 			<div class="col-grow row">
 				<q-tabs
@@ -30,9 +42,8 @@
 			</div>
 
 			<div class="col relative-postion text-black">
-				<div class="text-h5 text-right text-weight-medium">Core Features</div>
 				<div
-					class="app-markdown-html q-my-md"
+					class="app-markdown-html q-mb-md"
 					style="height: 8em;"
 					v-html="groupContent"
 				></div>
@@ -78,19 +89,35 @@
 				</q-tab-panels>
 			</div>
 		</div>
-		<q-btn
-			class="q-mt-xl"
-			label="Go to User Guide to View more Details about Capabilities →"
-			flat
-			dense
-			:to="{ name: 'app.guide' }"
-			no-caps
-		></q-btn>
+		<q-toolbar class="q-mt-xl justify-around">
+			<q-btn
+				label="Go to User Guide to View more Details about Capabilities →"
+				flat
+				dense
+				:to="{ name: 'app.guide' }"
+				no-caps
+			></q-btn>
+			<q-btn
+				label="Go to XXXX to view the evaluation regarding capabilities →"
+				flat
+				dense
+				:to="{ name: 'app.benchmark' }"
+				no-caps
+			></q-btn>
+		</q-toolbar>
 	</div>
 </template>
 
 <script setup lang="ts">
 import { computed, onBeforeMount, ref, watch } from 'vue';
+
+const PROFILE = {
+	TITLE: 'Systematic Embodied Capability Taxonomy',
+	COMMENT: `Embodied Arena uses a systematic taxonomy of emboidied capability,
+	carefully sifted and refined from diverse embodied tasks and benchmarks,
+	aiming to provide concentrated metrics for reliable evlauation and essential
+	objectives for research breakthrough`,
+};
 
 import type * as Spec from 'src/spec';
 import * as Backend from 'src/backend';
@@ -99,7 +126,7 @@ const groupDataList = ref<Spec.Capability.Group[]>([]);
 const itemDataList = ref<Spec.Capability.Item[]>([]);
 
 const INTRODUCTION = {
-	TITLE: '7 key Capabilities 21 Sub Capabilities 50K+ QA',
+	TITLE: '7 Core/Embodied Capabilities, 30 Nuanced/Fine-grained/Refined/Detailed Dimensions',
 };
 
 const group = ref<string>('');

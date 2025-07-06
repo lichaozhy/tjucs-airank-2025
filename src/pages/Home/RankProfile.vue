@@ -1,13 +1,26 @@
 <template>
 	<div class="col-shrink">
-		<div class="bg-indigo-10 text-h5 q-pa-md text-white">
+		<div class="column content-center items-center text-center">
+			<h2 class="text-indigo-10 text-weight-bold">{{ PROFILE.TITLE }}</h2>
+			<p
+				class="text-body1 text-grey-8"
+				style="max-width: 70em"
+			>
+				{{ PROFILE.COMMENT }}
+			</p>
+		</div>
+
+		<div class="bg-indigo-10 text-h5 q-pa-md q-mt-xl text-white">
 			{{ INTRODUCTION.TITLE }}
 		</div>
 
-		<p class="text-body1 text-grey-7 q-my-md">{{ INTRODUCTION.COMMENT }}</p>
+		<q-space class="q-my-lg" />
 
 		<div class="row q-col-gutter-lg no-wrap">
-			<div class="col-shrink row" style="min-width: fit-content">
+			<div
+				class="col-shrink row"
+				style="min-width: fit-content"
+			>
 				<q-tabs
 					v-model="category"
 					vertical
@@ -72,14 +85,26 @@
 			</div>
 		</div>
 
-		<q-btn
-			class="q-mt-lg"
-			label="Go to EmbodiedRank view the evaluation leaderboards →"
-			flat
-			dense
-			:to="{ name: 'app.leaderboard' }"
-			no-caps
-		></q-btn>
+		<q-toolbar class="q-mt-lg justify-around">
+			<q-btn
+				label="Go to Embodied Rank to view the model evaluation →"
+				flat
+				dense
+				no-caps
+				:to="{ name: 'app.leaderboard' }"
+			></q-btn>
+			<q-btn
+				label="Join Evaluation →"
+				flat
+				dense
+				no-caps
+				:to="{
+					name: 'app.googleform',
+					params: { id: 'CLAcMUbvU7TsNeKD8' },
+					query: { height: 2157 },
+				}"
+			></q-btn>
+		</q-toolbar>
 	</div>
 </template>
 
@@ -87,19 +112,22 @@
 import { computed, ref } from 'vue';
 import type * as Utils from 'src/spec';
 
+const PROFILE = {
+	TITLE: '50+ Advanced Models Have Joined Embodied Arena',
+	COMMENT: `Embodied Arena evaluates both general large models and Embodied AI
+	models, including both leading commercial models and advanced academic
+	models, while eagerly calling for more open-/close-source models with
+	professional and user-friendly evaluation support`,
+};
+
 const INTRODUCTION = {
-	TITLE: 'Over 50 Major Embodied AI Models have joined Evaluation',
-	COMMENT: [
-		'Includes Leading Commercial Models from Major Companies',
-		'Popular Open-Source Models',
-		'Specialized Embodied AI Models',
-	].join(' | '),
+	TITLE: '20+ Institutes, 30+ Advanced Models',
 };
 
 const MODEL_CATEGORY = [
 	{
 		NAME: 'language',
-		LABEL: 'General Language',
+		LABEL: 'General Large',
 		ICON: 'translate',
 		RECORD: [
 			{
@@ -139,7 +167,7 @@ const MODEL_CATEGORY = [
 	},
 	{
 		NAME: 'embodied',
-		LABEL: 'Embodied',
+		LABEL: 'Embodied AI',
 		ICON: 'smart_toy',
 		RECORD: [
 			{
@@ -211,14 +239,14 @@ const category = ref<string>(MODEL_CATEGORY[0]!.NAME);
 const columns = [
 	{
 		name: 'org',
-		label: 'Organization',
+		label: 'Institute',
 		field: 'organizationList',
 		align: 'left' as Utils.Alignment,
 		headerStyle: 'width: 30em',
 	},
 	{
 		name: 'model',
-		label: 'Model(s)',
+		label: 'Model',
 		field: 'modelList',
 		align: 'left' as Utils.Alignment,
 	},

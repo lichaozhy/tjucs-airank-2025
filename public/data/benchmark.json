@@ -299,8 +299,7 @@
 		"id": "27e481d6-6057-49dc-ad80-529f9127245f",
 		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
 		"name": "PhyBlock",
-		"description": "",
-		"PhyBlock": "A Progressive Benchmark for Physical Understanding and Planning via 3D Block Assembly",
+		"description": "PhyBlock: A Progressive Benchmark for Physical Understanding and Planning via 3D Block Assembly\n",
 		"organization": "Sun Yat-sen University",
 		"released": {
 			"at": {
@@ -309,9 +308,9 @@
 				"date": 26
 			}
 		},
-		"Github": "https://github.com/PhyBlock/PhyBlock",
-		"Hugging face": "https://huggingface.co/datasets/PhyBlock/PhyBlock_Benchmark",
-		"Project": "https://phyblock.github.io/",
+		"repository": "https://github.com/PhyBlock/PhyBlock",
+		"huggingface": "https://huggingface.co/datasets/PhyBlock/PhyBlock_Benchmark",
+		"website": "https://phyblock.github.io/",
 		"default": {
 			"property": "Total"
 		},
@@ -594,8 +593,7 @@
 		"id": "b9a18add-a3fb-4893-89e3-ddeea8053ce2",
 		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
 		"name": "MineAnyBuild",
-		"description": "",
-		"MineAnyBuild": "Benchmarking Spatial Planning for Open-world AI Agents",
+		"description": "MineAnyBuild: Benchmarking Spatial Planning for Open-world AI Agents\n",
 		"organization": "Sun Yat-sen University",
 		"released": {
 			"at": {
@@ -604,9 +602,9 @@
 				"date": 26
 			}
 		},
-		"Github": "https://github.com/MineAnyBuild/MineAnyBuild/tree/main",
-		"Hugging face": "https://huggingface.co/datasets/SaDil/MineAnyBuild",
-		"Project": "https://mineanybuild.github.io/",
+		"repository": "https://github.com/MineAnyBuild/MineAnyBuild/tree/main",
+		"huggingface": "https://huggingface.co/datasets/SaDil/MineAnyBuild",
+		"website": "https://mineanybuild.github.io/",
 		"default": {
 			"property": "Total"
 		},
@@ -843,8 +841,7 @@
 		"id": "ed3fc303-b421-4e73-936a-e93a5aada777",
 		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
 		"name": "RoboVQA",
-		"description": "",
-		"RoboVQA": "Multimodal Long-Horizon Reasoning for Robotics",
+		"description": "RoboVQA: Multimodal Long-Horizon Reasoning for Robotics\n",
 		"organization": "Google DeepMind",
 		"released": {
 			"at": {
@@ -853,9 +850,9 @@
 				"date": 1
 			}
 		},
-		"Github": "https://github.com/google-deepmind/robovqa/tree/main",
-		"Hugging face": null,
-		"Project": "https://robovqa.github.io/",
+		"repository": "https://github.com/google-deepmind/robovqa/tree/main",
+		"huggingface": null,
+		"website": "https://robovqa.github.io/",
 		"default": {
 			"property": "Total"
 		},
