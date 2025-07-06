@@ -24,7 +24,7 @@ properties:
     unit: null
 ---
 
-## Benchmark Introduction
+## Introduction
 
 ![alt text](assets/1-1.png)
 
@@ -36,12 +36,12 @@ Where2Place, a benchmark for spatial free-space reference on challenging real wo
 - Features diverse and cluttered scenes.
 - Includes relation types not present in the synthetic training data (for a subset of 30 examples, WHERE2PLACE (h)).
 
-## Benchmark Statistics:
+## Data Statistics:
 
 - Consists of 100 real-world images from homes and offices.
 
 
-## Benchmark Evaluation
+## Evaluation
 
 To minimize bias, one group labels each image with an instruction describing a vacant region relative to other entities. A different group labels masks according to the instruction. Accuracy is calculated as the percentage of predicted points within the ground truth target mask.
 

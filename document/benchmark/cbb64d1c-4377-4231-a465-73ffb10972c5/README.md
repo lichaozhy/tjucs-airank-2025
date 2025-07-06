@@ -57,7 +57,7 @@ properties:
     unit: null
 ---
 
-## Benchmark Introduction
+## Introduction
 
 ![alt text](assets/1-1.png)
 EB-Habitat is the 3D embodied navigation benchmark in EmbodiedBench, built on the HM3D dataset and executed in the Habitat 2.0 simulator. It evaluates an agent’s ability to perform long-horizon goal-directed navigation using only egocentric vision and natural language instructions, without access to ground-truth maps or GPS.
@@ -85,7 +85,7 @@ Egocentric-only input: No depth, map, or localization signal is provided—only 
 Habitat 2.0 realism: Uses realistic 3D layouts and textures from the HM3D dataset.
 
 Strict success metric: The agent must issue a stop command within a semantic room of the correct type.
-## Benchmark Statistics
+## Data Statistics
 300 tasks, sampled from Habitat scenes in the HM3D dataset.
 
 Goal types include common room categories: kitchen, bathroom, bedroom, living room, etc.
@@ -97,7 +97,7 @@ Action space: move forward, turn left, turn right, stop.
 Success condition: Must end in a region labeled with the correct semantic type.
 
 Step limit: Up to 100 steps per episode.
-## Benchmark Evaluation
+## Evaluation
 The same 24 MLLMs (8 proprietary + 16 open-source) were evaluated in EB-Habitat using a greedy, step-by-step closed-loop execution setup.
 
 Highlights:

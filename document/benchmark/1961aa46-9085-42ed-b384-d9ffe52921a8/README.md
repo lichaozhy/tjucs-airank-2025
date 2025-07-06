@@ -57,7 +57,7 @@ properties:
     unit: null
 ---
 
-## Benchmark Introduction
+## Introduction
 
 ![alt text](assets/1-1.png)
 
@@ -65,17 +65,17 @@ EB-ALFRED is a high-level embodied planning benchmark introduced in EmbodiedBenc
 
 Key features:
 
-8 parameterized skills: pick up, open, close, turn on, turn off, slice, put down, find. These are invoked with specific object arguments, e.g., "find an apple".
+- 8 parameterized skills: pick up, open, close, turn on, turn off, slice, put down, find. These are invoked with specific object arguments, e.g., "find an apple".
 
-Multi-instance object indexing: All interactable objects are suffixed (e.g., cabinet 2) to enable full task coverage from ALFRED, including multi-object tasks.
+- Multi-instance object indexing: All interactable objects are suffixed (e.g., cabinet 2) to enable full task coverage from ALFRED, including multi-object tasks.
 
-Dynamic action space: Varies by scene (typically 171–298 actions). All put down variants are unified into one.
+- Dynamic action space: Varies by scene (typically 171–298 actions). All put down variants are unified into one.
 
-Egocentric RGB input + textual feedback: Agents receive visual observations and descriptive text after each action.
+- Egocentric RGB input + textual feedback: Agents receive visual observations and descriptive text after each action.
 
-Symbolic success evaluation: Based on PDDL-defined subgoals rather than pixel matching.
+- Symbolic success evaluation: Based on PDDL-defined subgoals rather than pixel matching.
 
-Robust stopping criteria: Episodes end after 30 environment steps, more than 10 invalid actions, or if the model halts planning.
+- Robust stopping criteria: Episodes end after 30 environment steps, more than 10 invalid actions, or if the model halts planning.
 ## Benchmark characteristics
 EB-ALFRED is designed to evaluate the high-level reasoning and planning ability of MLLMs in embodied environments. It exhibits several important characteristics that distinguish it from traditional embodied or vision-language tasks:
 
@@ -94,7 +94,7 @@ Subset Decomposition: Tasks are categorized into six subsets (Base, Common-Sense
 Realistic and Diverse: Built upon real ALFRED task templates and environments rendered in AI2-THOR, ensuring naturalistic diversity and complexity.
 
 
-## Benchmark Statistics
+## Data Statistics
 300 tasks sampled from ALFRED's valid_seen scenes.
 
 6 evaluation subsets, each with 50 tasks:
@@ -118,7 +118,7 @@ Action space range: 171–298, depending on the number of valid interactions.
 Max steps per episode: 30
 
 Early termination: Triggered by 10+ invalid actions.
-## Benchmark Evaluation
+## Evaluation
 EB-ALFRED was used to evaluate 24 MLLMs (8 proprietary and 16 open-source) under the same settings (e.g., temperature = 0, vision resolution = 500×500).
 
 Highlights:

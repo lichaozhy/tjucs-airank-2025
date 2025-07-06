@@ -94,7 +94,7 @@ properties:
     unit: null
 ---
 
-## Benchmark Introduction
+## Introduction
 
 ![alt text](assets/2-1.png)
 
@@ -108,13 +108,13 @@ UniEQA, a new unified evaluation benchmark for EAI, is designed to evaluate MFMs
 - **Flexible Extensibility**: It supports flexible and convenient addition of evaluation datasets.
 - **Automated Evaluation**: It constructs corresponding scoring rules and a unified automated evaluation method for different capability dimensions.
 
-## Benchmark Statistics
+## Data Statistics
 
 - Data Collection: simulation (VirtualHome, BEHAVIOR-100, AI2-THOR)
 
   ![real-world (Ego4D, LEMMA, HM3D, and ScanNet)](assets/4-1.png)
 
-## Benchmark Evaluation
+## Evaluation
 
 ![alt text](assets/5-1.png)
 

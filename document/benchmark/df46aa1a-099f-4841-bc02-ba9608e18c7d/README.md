@@ -34,7 +34,7 @@ properties:
     unit: null
 ---
 
-## Benchmark Introduction
+## Introduction
 
 ![alt text](assets/1-1.png)
 
@@ -47,14 +47,14 @@ Scan2Cap introduces the task of dense captioning in 3D scans obtained from commo
 - **Output**: Expected output is bounding boxes for individual object instances along with their natural language descriptions.
 - **Key Innovations**: Focuses on leveraging 3D information (like actual object size and location) for more accurate descriptions and explicitly models object relations via a graph module.
 
-## Benchmark Statistics
+## Data Statistics
 
 - **Dataset**: Uses the ScanRefer dataset.
   - **Number of Descriptions**: 51,583 descriptions.
   - **Number of Objects**: 11,046 objects.
   - **Number of Scenes**: 800 ScanNet scenes.
 
-## Benchmark Evaluation
+## Evaluation
 
 | Evaluation Aspect | Details |
 |---|---|

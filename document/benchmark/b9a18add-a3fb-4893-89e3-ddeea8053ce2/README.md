@@ -35,13 +35,13 @@ properties:
     unit: null
 ---
 
-## Benchmark Introduction
+## Introduction
 
 ![alt text](assets/overview.png)
 
 MineAnyBuild, a comprehensive benchmark to evaluate the spatial planning abilities of open-world AI agents in Minecraft, requires them to generate building plans from multi-modal instructions. It includes 4,000 curated tasks and supports scalable data collection through player-generated content, evaluating spatial understanding, reasoning, creativity, and commonsense. The evaluation reveals significant limitations but also great potential in current MLLM-based agents, highlighting the importance of MineAnyBuild for advancing spatial intelligence in AI.
 
-## Benchmark Evaluation
+## Evaluation
 
 MineAnyBuild involves approximately 4,000 spatial planning tasks with 500+ buildings/indoor decoration assets. These tasks, including Executable Spatial Plan Generation, Spatial Understanding, Creativity, Spatial Reasoning, and Spatial Commonsense, correspond to diverse evaluation dimensions, thereby conducting a comprehensive assessment of AI agents’ spatial planning capabilities. In Executable Spatial Plan Generation, Spatial Understanding, and Creativity tasks, the agent needs to generate executable spatial plans for building an architecture according to the given instructions. While in Spatial Reasoning and Spatial Commonsense tasks, MineAnyBuild introduces ~2,000 VQA pairs, where it asks the agent to answer the given questions, accompanied by the related images.
 

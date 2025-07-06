@@ -69,7 +69,7 @@ properties:
     unit: null
 ---
 
-## Benchmark Introduction
+## Introduction
 
 ![alt text](assets/1-1.png)
 
@@ -81,14 +81,14 @@ To advance embodied reasoning in Vision-Language Models (VLMs), ERQA (Embodied R
 - **Open-Source**: The benchmark is open-source and its details can be found on GitHub.
 - **Manual Labeling**: All questions in ERQA were manually labeled to ensure correctness and quality.
 
-## Benchmark Statistics
+## Data Statistics
 
 - **Total Questions**: 400 multiple-choice VQA-style questions.
 - **Image Sources**: Images in the benchmark are either self-taken or sourced from various datasets including OXE, UMI Data, MECCANO, HoloAssist, and EGTEA Gaze+.
 
 ![alt text](assets/1-2.png)
 
-## Benchmark Evaluation
+## Evaluation
 
 ERQA also provide an example of a lightweight evaluation harness for querying multimodal APIs (Gemini 2.0 and OpenAI) with examples loaded from the ERQA benchmark.
 

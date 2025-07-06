@@ -49,7 +49,7 @@ properties:
     unit: null
 ---
 
-## Benchmark Introduction
+## Introduction
 
 ![alt text](assets/1-1.png)
 EB-Navigation is the navigation-focused benchmark within EmbodiedBench, designed to evaluate the low-level perception, grounding, and action prediction capabilities of Multimodal Large Language Models (MLLMs). It is built on AI2-THOR environments with tasks derived from the VLN-CE (Vision-and-Language Navigation in Continuous Environments) protocol, but restructured to use step-wise high-level commands.
@@ -81,7 +81,7 @@ Hard Negative Sampling: Distractor objects of the same type are intentionally pl
 Limited Step Budget: Agents are allowed a maximum of 10–15 environment steps per episode.
 
 
-## Benchmark Statistics
+## Data Statistics
 300 tasks sampled from VLN-CE room layouts using AI2-THOR.
 
 Instruction types include navigation to furniture, appliances, and containers (e.g., microwave, cabinet, sofa).
@@ -93,7 +93,7 @@ Observation: Egocentric RGB images (no depth or segmentation).
 Success radius: 1.0 meter.
 
 Step limit: 10–15 steps per episode depending on difficulty.
-## Benchmark Evaluation
+## Evaluation
 EB-Navigation was used to evaluate the same set of 24 MLLMs (8 proprietary + 16 open-source) under identical conditions (image resolution = 500×500, temperature = 0, greedy decoding).
 
 Highlights:

@@ -29,7 +29,7 @@ properties:
     unit: null
 ---
 
-## Benchmark Introduction
+## Introduction
 
 ![alt text](assets/1-1.png)
 
@@ -44,7 +44,7 @@ This work introduces a new benchmark for embodied scene understanding, aimed at 
 
 ![alt text](assets/1-2.png)
 
-## Benchmark Statistics
+## Data Statistics
 
 - **Total Questions**: 400 multiple-choice questions.
 - **Multi-Image Questions**: 28% of questions include more than one image, posing a greater challenge.
@@ -52,7 +52,7 @@ This work introduces a new benchmark for embodied scene understanding, aimed at 
 ![alt text](assets/1-3.png)
 
 
-## Benchmark Evaluation
+## Evaluation
 
 SQA3D presents a significant challenge to current multi-modal, especially 3D reasoning models. Various state-of-the-art approaches were evaluated, with the best-performing model achieving only an overall score of 47.20%. In contrast, amateur human participants reached an impressive score of 90.06%.
 
