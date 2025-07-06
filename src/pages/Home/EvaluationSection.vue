@@ -22,7 +22,7 @@
 		<q-img
 			class="q-my-xl"
 			style="max-width: 70em"
-			src="/public/image/462810345-b00096a8-da3e-400a-8186-206e15ad44f0.png"
+			src="/image/462810345-b00096a8-da3e-400a-8186-206e15ad44f0.png"
 		></q-img>
 	</div>
 </template>

@@ -50,7 +50,7 @@ const SECTION = {
 		},
 		{
 			ICON: 'smart_toy',
-			TITLE: 'Rich Model Support:',
+			TITLE: 'Rich Model Support',
 			COMMENT: 'Comprehensive evaluation support for diverse AI architectures including general multimodal LLMs, specialized embodied models, and both open-source and close-source models.',
 		},
 		{
