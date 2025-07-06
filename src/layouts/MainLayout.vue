@@ -114,23 +114,6 @@
 			/>
 		</q-page-container>
 
-		<q-footer
-			bordered
-			reveal
-			class="bg-grey-3 text-grey-10"
-		>
-			<q-toolbar class="flex-center text-overline">
-				<q-space />
-				<div>{{ $t('spec.rights') }}</div>
-				<q-separator
-					vertical
-					inset
-					spaced
-				/>
-				<div>{{ $t('spec.subject') }}</div>
-				<q-space />
-			</q-toolbar>
-		</q-footer>
 	</q-layout>
 </template>
 
