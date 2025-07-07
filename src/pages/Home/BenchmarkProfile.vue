@@ -34,7 +34,12 @@
 						:name="leaderboard.NAME"
 					></q-tab>
 				</q-tabs>
-				<q-separator vertical class="full-height" color="indigo-1" />
+
+				<q-separator
+					vertical
+					class="full-height"
+					color="indigo-1"
+				/>
 			</div>
 
 			<div class="col-shrink relative-postion text-black">
@@ -73,7 +78,7 @@
 						:key="name"
 						:name="name"
 					>
-						{{ lorem }}{{ lorem }}{{ lorem }}
+						{{ BENCHMARK_DESCRIPTION_RECORD[name] }}
 					</q-tab-panel>
 				</q-tab-panels>
 			</div>
@@ -123,7 +128,6 @@ const INTRODUCTION = {
 				'SQA3D',
 				'ScanQA',
 				'Scan2Cap',
-				'PointBench',
 				'PhyBlock',
 				'MineAnyBuild',
 				'RoboVQA',
@@ -147,6 +151,30 @@ const INTRODUCTION = {
 
 const lorem =
 	'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.';
+
+const BENCHMARK_DESCRIPTION_RECORD: Record<string, string> = {
+	'EB-Navigation':
+		'EB-Navigation is the navigation-focused benchmark within EmbodiedBench, designed to evaluate the low-level perception, grounding, and action prediction capabilities of Multimodal Large Language Models (MLLMs). It is built on AI2-THOR environments with tasks derived from the VLN-CE (Vision-and-Language Navigation in Continuous Environments) protocol, but restructured to use step-wise high-level commands.',
+	'VLN-CE R2R':
+		'The R2R_VLNCE dataset is a port of the Room-to-Room (R2R) dataset created by Anderson et al for use with the Matterport3DSimulator (MP3D-Sim).',
+	'VLN-CE RxR':
+		'RxR was ported to continuous environments originally for the RxR-Habitat Challenge. The dataset has train, val_seen, val_unseen, and test_challenge splits with both Guide and Follower trajectories ported.',
+	'ET-Plan-Bench':
+		'The ET-Plan-Bench focuses on various aspects of spatial understanding, including relation constraints, object occlusion, and global layout maps, as well as temporal understanding, covering action dependencies and optimal moving paths for robots. It provides a detailed and thorough diagnostic assessment of existing foundation models.',
+	'EB-ALFRED':
+		'EB-ALFRED is a high-level embodied planning benchmark introduced in EmbodiedBench, built on top of the ALFRED dataset and AI2-THOR simulator. Unlike traditional embodied settings that require pixel-level control, EB-ALFRED abstracts away low-level actions and focuses solely on symbolic high-level planning with language and vision input.',
+	'EB-Habitat':
+		'EB-Habitat is the 3D embodied navigation benchmark in EmbodiedBench, built on the HM3D dataset and executed in the Habitat 2.0 simulator. It evaluates an agent’s ability to perform long-horizon goal-directed navigation using only egocentric vision and natural language instructions, without access to ground-truth maps or GPS.',
+};
+
+for (const benchmarkName of INTRODUCTION.LEADERBOARD.map(
+	({ BENCHMARKS }) => BENCHMARKS,
+).flat()) {
+	if (!Object.hasOwn(BENCHMARK_DESCRIPTION_RECORD, benchmarkName)) {
+		BENCHMARK_DESCRIPTION_RECORD[benchmarkName] = lorem + lorem + lorem;
+	}
+}
+
 const leaderboard = ref<string>('qa');
 const benchmark = ref<string>('');
 
