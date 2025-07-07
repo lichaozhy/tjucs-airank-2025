@@ -128,7 +128,7 @@ const MODEL_CATEGORY = [
 	{
 		NAME: 'language',
 		LABEL: 'General Large',
-		ICON: 'translate',
+		ICON: 'psychology',
 		RECORD: [
 			{
 				organizationList: ['OpenAI'],

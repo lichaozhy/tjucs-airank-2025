@@ -49,7 +49,7 @@
 				></div>
 
 				<div class="text-h5 text-right text-weight-medium q-mt-md">
-					Sub Capabilities
+					Benchmark-Capability Mapping
 				</div>
 
 				<q-tabs
@@ -115,7 +115,7 @@ const PROFILE = {
 	TITLE: 'Systematic Embodied Capability Taxonomy',
 	COMMENT: `Embodied Arena uses a systematic taxonomy of emboidied capability,
 	carefully sifted and refined from diverse embodied tasks and benchmarks,
-	aiming to provide concentrated metrics for reliable evlauation and essential
+	aiming to provide concentrated metrics for reliable evaluation and essential
 	objectives for research breakthrough`,
 };
 

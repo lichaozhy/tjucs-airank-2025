@@ -73,15 +73,12 @@
 
 <script setup lang="ts">
 const SECTION = {
-	TITLE: 'Join us / Call for Participation',
-	COMMENT: [
-		'We have established the Embodied Arena Collaboration Initiative, ',
-		'enthusiastically welcoming outstanding embodied AI models to participate ',
-		'in our comprehensive evaluation platform. Simultaneously, we cordially ',
-		'invite researchers and practitioners to contribute high-quality and ',
-		'innovative benchmarks that advance the field of embodied intelligence ',
-		'evaluation.',
-	].join(''),
+	TITLE: 'Join Us',
+	COMMENT: `Join the Embodied Arena Evaluation Community! We enthusiastically
+	welcome cutting-edge embodied AI models to showcase their capabilities on
+	our comprehensive evaluation platform. We also cordially invite researchers
+	and practitioners to contribute innovative benchmarks that will define the
+	future standards of embodied intelligence assessment.`,
 	BAR: {
 		LEFT: {
 			TITLE: 'Evaluation Leaderboards',

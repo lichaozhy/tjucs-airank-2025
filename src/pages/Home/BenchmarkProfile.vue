@@ -109,7 +109,7 @@ const PROFILE = {
 };
 
 const INTRODUCTION = {
-	TITLE: '3 Types of Leaderboard, 17 Evaluation Benchmarks',
+	TITLE: '3 Types of Leaderboards, 17 Evaluation Benchmarks',
 	LEADERBOARD: [
 		{
 			LABEL: 'Question Answering',
