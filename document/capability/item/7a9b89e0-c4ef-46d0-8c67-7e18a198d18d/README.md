@@ -1,7 +1,12 @@
 ---
 name: Spatial Localization
 group: 0686cd7d-361e-41bd-8c23-6fd6b19c218c
-order: 3
+order: 2
 ---
 
-some text.
+| **Benchmark** | **Capability Dimension**    |
+|---------------|-----------------------------|
+| OpenEQA       | RObject Localization        |
+| ScanQA        | Spatial Scene Understanding |
+
+![alt text](spatialLocalization.png)
