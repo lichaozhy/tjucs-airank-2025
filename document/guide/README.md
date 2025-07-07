@@ -1,277 +1,340 @@
-# Embodied Arena Platform Documentation
+# Embodied Arena User Guide
 
 ## Platform Overview
 
-**Embodied Arena** is a comprehensive evaluation platform specifically designed for Embodied AI, providing a competitive arena-style assessment system for embodied intelligence benchmarks and models. As an authoritative evaluation platform in the embodied AI field, Embodied Arena is committed to advancing the development and standardization of embodied intelligence technologies.
+**Embodied Arena** is an open-source, comprehensive, and user-friendly evaluation system and platform for embodied AI models. It features three types of core embodied tasks, a diverse range of high-quality benchmarks, LLM-driven automatic evaluation data generation, and a systematic embodied capability taxonomy. The platform aims to present an up-to-date overview of embodied capabilities of advanced models and facilitate the identification of critical research areas, thereby accelerating progress in the field of Embodied AI.
 
-## Key Features
+## What Makes Embodied Arena Special?
 
-- **Specialized Focus**: First comprehensive embodied AI evaluation platform in China
-- **Complete Coverage**: Encompasses three core domains: Q&A, navigation, and task planning
-- **Real-time Rankings**: Dynamic model performance leaderboards
-- **Open & Transparent**: Supports online evaluation and benchmark contributions
-- **Academic Authority**: Backed by Tianjin University Deep Reinforcement Learning Laboratory
+### 🎯 **Comprehensive Evaluation System**
 
-## Three Core Leaderboards
+- **3 Types of Leaderboards**: Question Answering, Navigation, and Task Planning
+- **17+ Evaluation Benchmarks**: Covering diverse embodied AI scenarios
+- **50+ Advanced Models**: Including both general large models and specialized embodied AI models
+- **20+ Institutes**: Representing leading research organizations worldwide
 
-### 1. Embodied Question Answering Leaderboard
+### 🔧 **Key Features**
 
-**Purpose**: Evaluate models' ability to understand and answer questions in embodied environments
+#### 🧠 **Comprehensive Embodied Capability Taxonomy**
 
-**Evaluation Dimensions**:
+Systematic categorization spanning object perception, spatial reasoning, temporal understanding, embodied knowledge, navigation, and task planning across multiple dimensions. Embodied Arena uses a systematic taxonomy of embodied capability, carefully sifted and refined from diverse embodied tasks and benchmarks, providing concentrated metrics for reliable evaluation and essential objectives for research breakthrough.
 
-- **Total Score**: Comprehensive evaluation metric
-- **UniEQA**: Unified embodied question answering benchmark
-- **OpenEQA**: Open-domain embodied question answering
+- **7 Core Embodied Capabilities**
+- **30+ Fine-grained Dimensions**
+- **Comprehensive Benchmark-Capability Mapping**
 
-### 2. Embodied Navigation Leaderboard
+#### 🤖 **Rich Model Support**
 
-**Purpose**: Assess models' spatial understanding and path planning capabilities in complex environments
+Comprehensive evaluation support for diverse AI architectures including general multimodal LLMs, specialized embodied models, and both open-source and close-source models. The platform offers flexibility and convenience for users to join with professional integration support.
 
-**Core Capabilities**:
+- **50+ Advanced Models**: From 20+ leading research institutes worldwide
+- **Multiple Model Types**: General LLMs, embodied multimodal models, and 3D vision models
+- **Flexible Integration**: Support for model parameters, API-based evaluation, and various access methods
 
-- Basic instruction navigation
-- Complex instruction navigation
-- Long-horizon instruction navigation
+#### **🔧 Modular Benchmark Integration**
 
-### 3. Embodied Task Planning Leaderboard
+Comprehensive integration of diverse evaluation benchmarks including visual QA, navigation tasks, task planning, and both 2D/3D scenarios, with flexible extensibility for new benchmarks.
 
-**Purpose**: Evaluate models' planning and decision-making abilities for complex task execution
+- **17+ Evaluation Benchmarks**: Covering diverse embodied AI scenarios
+- **Multi-domain Coverage**: 2D visual reasoning, 3D interactive environments, and simulation-based testing
+- **Extensible Architecture**: Easy onboarding for new benchmarks and evaluation tasks
 
-**Core Capabilities**:
+#### ⚡ **Unified Evaluation Infrastructure**
 
-- Basic instruction planning
-- Complex instruction planning
-- Long-horizon instruction planning
+Clean, standardized evaluation framework with uniform input/output formats enabling seamless and rapid distributed assessment across diverse embodied AI benchmarks.
+
+- **Standardized Framework**: Consistent evaluation protocols across all benchmarks
+- **Professional Management**: Detailed experiment tracking and transparent result presentation
+- **Real-time Updates**: Monthly leaderboard updates with dynamic performance tracking
+
+#### 🔄 **Continuously Updated High-quality Evaluation Datasets**
+
+Curated high-quality evaluation datasets with strong discriminative power, continuously evolved through LLM-driven automated generation pipeline.
+
+- **LLM-driven Generation**: Unique approach for embodied evaluation data creation
+- **Quality Assurance**: High discriminative power with rigorous curation standards
+- **Continuous Evolution**: Regular dataset updates ensuring relevance and challenge
+
+#### 📊 **Diverse Evaluation Methodologies**
+
+Complementary evaluation paradigms including accuracy-based QA assessment (exact and fuzzy matching evaluation) and interactive simulation-based testing (success rate metrics) for comprehensive embodied capability evaluation.
+
+- **Multi-metric Assessment**: Exact matching, fuzzy matching (rule-based and LLM-based), and success rate evaluation
+- **Comprehensive Coverage**: Question answering, navigation, and task planning evaluation
+- **Transparent Results**: Open and accessible performance comparisons with detailed capability analysis
+
+## 3 Core Leaderboards
+
+### 1. 🤔 **Embodied Question Answering Leaderboard**
+
+**Purpose**: A dedicated ranking system for evaluating and comparing the performance of embodied AI models in question-answering tasks.
+
+**Key Benchmarks**:
+
+- **UniEQA**: Unified evaluation benchmark for embodied AI with 5 core capabilities across 12 dimensions
+- **OpenEQA**: First open-vocabulary benchmark with LLM-powered evaluation protocol
+- **VSI-Bench**: Visual-spatial intelligence evaluation from egocentric video with 5,000+ question-answer pairs
+- **ERQA**: Embodied reasoning question answering with 400 multiple-choice VQA-style questions
+- **SQA3D**: 3D scene understanding with 33.4k reasoning questions across 650 scenes
+- **ScanQA**: 3D spatial understanding with 41k question-answer pairs from 800 indoor scenes
+- **PhyBlock**: Physical understanding assessment through robotic 3D block assembly tasks
+- **RoboVQA**: Robot visual question answering with 829,502 video-text pairs
+- **Where2Place**: Spatial free-space reference evaluation on real-world images
+
+### 2. 🧭 **Embodied Navigation Leaderboard**
+
+**Purpose**: A dedicated ranking system for evaluating and comparing the performance of embodied AI models in navigation tasks.
+
+**Key Benchmarks**:
+
+- **EB-Navigation**: Navigation-focused benchmark evaluating low-level perception and action prediction
+- **VLN-CE R2R**: Room-to-Room navigation in continuous environments
+- **VLN-CE RxR**: Multilingual navigation with both Guide and Follower trajectories
+
+### 3. 📋 **Embodied Task Planning Leaderboard**
+
+**Purpose**: A dedicated ranking system for evaluating and comparing the performance of embodied AI models in task planning.
+
+**Key Benchmarks**:
+
+- **ET-Plan-Bench**: Comprehensive assessment focusing on spatial understanding, temporal understanding, and robot planning
+- **EB-ALFRED**: High-level embodied planning benchmark built on ALFRED dataset
+- **EB-Habitat**: 3D embodied navigation benchmark for long-horizon goal-directed navigation
+
+## 7 Core Capability Framework
 
 ## Seven Core Capability Framework
 
-### 🔍 Object Perception
+### 🔍 **Object Perception**
 
-- **Object Type**: Object category recognition (e.g., "table", "chair")
-- **Object Property**: Object attribute recognition (e.g., "color", "shape", "material", "size")
-- **Object State**: Object state recognition (e.g., "open", "closed", "stationary")
-- **Object Count**: Object quantity recognition (e.g., "number of chairs")
+Understanding and identifying objects in embodied environments through visual inputs.
 
-**Supported Benchmarks**: PhyBench (USC, UC Berkeley), VSI-Bench, ERQA (Google), RoBoVQA, OpenEQA (Meta), EgoThink (Tsinghua), EB-ALFRED, EB-Habitat
+**Dimensions**:
 
-### 📐 Spatial Perception
+- **Object Type**: Object recognition capability that requires the model to identify specific category of the object based on visual inputs, such as 'table'
+- **Object Property**: Object property recognition capability that requires the model to identify the properties of the object based on visual inputs, such as 'colour', 'shape', 'material', 'size'
+- **Object State**: Object state recognition capability that requires the model to identify the state of the object based on visual inputs, such as 'open', 'closed', 'stationary'
+- **Object Count**: Object count recognition capability that requires the model to identify the number of objects based on visual inputs, such as 'number of chairs'
 
-- **Spatial Relationship**: Relative spatial relationships between objects (e.g., "next to", "above")
-- **Spatial Distance**: Relative distances or measurements between objects (e.g., "closer", "3 meters")
-- **Spatial Direction**: Object direction relative to reference points (e.g., "front-left", "back-right")
-- **Spatial Localization**: Object positions in space (e.g., "location description", "bounding boxes")
-- **Spatial Scale**: Object spatial dimensions (e.g., "drawer space size")
+**Supported Benchmarks**: PhyBlock, VSI-Bench, ERQA, RoboVQA, OpenEQA, EB-ALFRED, EB-Habitat
 
-**Supported Benchmarks**: PhyBench (USC, UC Berkeley), VSI-Bench, ERQA (Google), EgoThink (Tsinghua), ScanQA (Kyoto University), Scan2Cap, ET-Plan Bench
+### 📐 **Spatial Perception**
 
-### ⏰ Temporal Perception
+Understanding spatial relationships and positioning in 3D environments through visual analysis.
 
-- **Temporal Order**: Sequence of action occurrence (e.g., "open fridge, grab apple, close fridge")
-- **Duration Estimation**: Action duration based on visual input prediction
+**Dimensions**:
 
-**Supported Benchmarks**: PhyBench (USC, UC Berkeley), VSI-Bench, ET-Plan Bench
+- **Spatial Relationship**: Spatial relationship perception capability that requires the model to make judgements on spatial relationships based on visual inputs, such as 'next to'
+- **Spatial Distance**: Distance perception capability that requires the model to make judgements on relative or absolute distances based on visual inputs, such as 'closer', '3 metres'
+- **Spatial Localization**: Location perception capability that requires the model to localize based on visual inputs, such as a 'bounding box'
+- **Spatial Size**: Size perception capability that requires the model to make judgements on space size based on visual inputs, such as 'size of this room'
 
-### 🧠 Embodied Knowledge
+**Supported Benchmarks**: PhyBlock, VSI-Bench, ERQA, ScanQA, Scan2Cap, ET-Plan-Bench
 
-- **Common Sense**: Universal knowledge and experience (e.g., "Where to find drinking water in a kitchen?")
-- **Affordance Prediction**: Predicting whether objects can support robot operations (e.g., mop for cleaning, graspable handle positions)
+### ⏰ **Temporal Perception**
 
-**Supported Benchmarks**: OpenEQA (Meta), EB-Navigation, EB-ALFRED, EB-Habitat
+Understanding temporal sequences and timing in embodied scenarios.
 
-### 🎯 Embodied Reasoning
+**Dimensions**:
 
-- **Static Embodied Reasoning**: Reasoning based on static embodied scenes (e.g., inferring observable objects given robot position and orientation)
-- **Dynamic Embodied Reasoning**: Reasoning based on dynamic embodied scene changes (e.g., predicting future states from object trajectories, behavior reasoning, task progress reasoning)
+- **Temporal Description**: Temporal understanding capability that requires the model to describe the visual input contents concerning the temporal dimension, such as action descriptions
+- **Temporal Order**: Temporal order perception capability that requires the model to understand the timestamp and sequential order of events based on visual inputs
 
-**Supported Benchmarks**: PhyBench (USC, UC Berkeley), ERQA (Google), RoBoVQA, EgoThink (Tsinghua), Scan2Cap
+**Supported Benchmarks**: PhyBlock, VSI-Bench, ET-Plan-Bench
 
-### 🧭 Embodied Navigation
+### 🧠 **Embodied Knowledge**
 
-- **Basic Navigation**: Simple, clearly described navigation tasks
-- **Complex Navigation**: Navigation with ambiguous instructions or distracting information
-- **Long-horizon Navigation**: Tasks with steps twice as complex as basic navigation
+Applying general knowledge and affordance understanding in embodied contexts.
 
-**Supported Benchmarks**: EB-Navigation, R2R-CE, RxR-CE, ET-Plan Bench
+**Dimensions**:
 
-### 📋 Embodied Task Planning
+- **General Knowledge**: General knowledge understanding capability that requires the model to make judgements on general knowledge based on visual inputs, such as refrigerators can keep food fresh
+- **Affordance Prediction**: Affordance prediction capability that requires the model to predict the ways in which objects can be manipulated based on visual inputs
 
-- **Basic Planning**: Simple, clearly described embodied task planning
-- **Complex Planning**: Planning with ambiguous instructions or distracting information
-- **Long-horizon Planning**: Tasks with steps twice as complex as basic planning
+**Supported Benchmarks**: OpenEQA, EB-Navigation, EB-ALFRED, EB-Habitat
 
-**Supported Benchmarks**: VSI-Bench, ERQA (Google), RoBoVQA, EgoThink (Tsinghua), EB-ALFRED, EB-Habitat
+### 🎯 **Embodied Reasoning**
+
+Advanced reasoning and inference capabilities in embodied scenarios.
+
+**Dimensions**:
+
+- **Object Reasoning**: Object reasoning capability that requires the model to reason feasible actions on objects, comparative results of object properties, based on object perception results
+- **Spatial Reasoning**: Spatial reasoning capability that requires the model to reason object accessibility, spatial inclusiveness, spatial imagination, based on spatial perception results
+- **Temporal Reasoning**: Temporal reasoning capability that requires the model to reason the causes and consequences based on temporal perception results
+- **Knowledge Reasoning**: Knowledge reasoning capability that requires the model to reason physical dynamics based on prior knowledge and visual inputs
+- **Task Reasoning**: Task reasoning capability that requires the model to reason the type and location of task-related objects, task progress, based on visual inputs and task instruction
+
+**Supported Benchmarks**: PhyBlock, ERQA, RoboVQA, Scan2Cap
+
+### 🧭 **Embodied Navigation**
+
+Navigation capabilities in complex environments with different types of guidance.
+
+**Dimensions**:
+
+- **Object Navigation**: Navigation capability for tasks where the instruction requires navigation to specified objects
+- **Location Navigation**: Navigation capability for tasks where the instruction requires navigation to a specified location
+- **Instruction Navigation**: Navigation capability for tasks where the instruction specifies a navigation path
+
+**Supported Benchmarks**: EB-Navigation, R2R-CE, RxR-CE
+
+### 📋 **Embodied Task Planning**
+
+Strategic planning and execution capabilities for complex embodied tasks.
+
+**Dimensions**:
+
+- **Base Planning**: Planning capability for tasks where the instruction specifies object types
+- **Visual Reference Planning**: Planning capability for tasks where the instruction refers to objects using object properties, states
+- **Spatial Reference Planning**: Planning capability for tasks with spatial constraints
+- **Temporal Reference Planning**: Planning capability for tasks with temporal constraints
+- **Knowledge Reference Planning**: Planning capability for tasks where the instruction refers to objects using object-related knowledge
+
+**Supported Benchmarks**: VSI-Bench, ERQA, RoboVQA, EB-ALFRED, EB-Habitat, ET-Plan-Bench
+
+
 
 ## Supported Model Types
 
-### 🌟 General Large Language Models (LLMs)
+EmbodiedArena evaluates a comprehensive range of AI models, from general-purpose multimodal models to specialized embodied AI systems. Our platform supports both influential commercial models from leading companies and cutting-edge research models that represent the latest advances in embodied intelligence.
 
-**Representative Models**: GPT-4o, Claude-3.5-Sonnet, Gemini series, Qwen series, LLaVA series, MiniCPM-V series, InternVL series
+### 🌟 **General Multimodal Models**
+
+Large-scale multimodal models with strong vision-language understanding capabilities, suitable for embodied question answering and high-level reasoning tasks.
+
+**Leading Commercial Models**:
+
+- **OpenAI**: GPT-4o, GPT-4V, GPT-3.5-Turbo
+- **Google DeepMind**: Gemini-2.0-Flash, Gemini-2.0-Pro, Gemini-2.5-Pro
+- **Anthropic**: Claude-3.5-Sonnet, Claude-3.7-Sonnet
+- **Alibaba Group**: Qwen-VL-Max, Qwen2.5-VL-3B-Ins, Qwen2.5-VL-7B-Ins, Qwen2.5-VL-72B-Ins
+- **ByteDance**: Seed1.5-VL, LLaVA-OneVision
+- **Shanghai AI Lab / Tsinghua**: InternVL3
+- **NVIDIA**: VILA-1.5, Cosmos-reason
+
+**Strengths**:
 
 - Strong language understanding and reasoning capabilities
-- Suitable for Q&A and high-level reasoning tasks
-- Vision-language understanding abilities
-- Image and video content analysis
+- Excellent vision-language integration
+- Suitable for complex question answering and high-level task reasoning
+- Robust performance across diverse embodied scenarios
 
-### 🤖 Embodied Multimodal LLMs
+### 🤖 **Specialized Embodied AI Models**
 
-**Representative Models**: EmbodiedGPT, RoboBrain, SpatialBot
+Models specifically designed and optimized for embodied AI tasks, featuring enhanced spatial understanding, navigation capabilities, and physical interaction reasoning.
 
-- Specifically optimized for embodied tasks
-- Outstanding spatial understanding and navigation capabilities
+#### **2D Embodied Models**
 
-### 🌍 3D Vision Models
+Specialized for 2D visual reasoning benchmarks and embodied question answering tasks.
 
-**Representative Models**: Video-3D LLM, Grounded-3D-LLM, 3D-Mem
+**Research Models**:
 
-- Three-dimensional spatial understanding capabilities
-- Point cloud and 3D scene processing
+- **Tianjin University**: RoboAnnotatorX, Embodied-FSD
+- **Boston University**: SAT
+- **University of Washington**: RoboPoint
+- **Shanghai Jiao Tong University**: SpatialBot
+- **Google DeepMind**: SpatialVLM
+- **Huawei Noah's Ark Lab**: SpatialCoT, Mem2Ego
 
-## Benchmark Specifications
+**Applications**: VSI-Bench, ERQA, Where2Place, RoboVQA, and other 2D QA benchmarks
 
-### 🔬 2D Visual Reasoning Benchmarks
+#### **3D Embodied Models**
 
-#### **PhyBench (USC, UC Berkeley)**
+Advanced models designed for 3D scene understanding and spatial reasoning tasks.
 
-- **Function**: Physical reasoning benchmark
-- **Content**: Object attributes, spatial relationships, physical law understanding
-- **Features**: Covers mass, color, distance, depth, collision concepts
+**Research Models**:
 
-#### **VSI-Bench**
+- **Beijing Jiaotong University / Peking University**: PhysVLM, UniNavid, Navid
+- **The University of Hong Kong**: EmbodiedGPT, Video-3D LLM, LLaVA-3D, GPT4Scene
+- **The Chinese University of Hong Kong**: Video-3D LLM, LLaVA-3D
+- **Shanghai AI Lab & Zhejiang University**: Grounded-3D-LLM
+- **Beijing University of Posts and Telecom**: 3DMIT
+- **UMass Amherst**: 3D-Mem
 
-- **Function**: Visual spatial intelligence benchmark
-- **Content**: Object size, relative/absolute distance, direction, room dimensions
-- **Features**: Focuses on spatial cognition and path planning
+**Applications**: ScanQA, SQA3D, Scan2Cap, and other 3D QA benchmarks
 
-#### **ERQA (Google)**
+## How We Evaluate
 
-- **Function**: Embodied reasoning Q&A
-- **Content**: State estimation, spatial reasoning, trajectory reasoning, task reasoning
-- **Features**: Combines visual understanding with logical reasoning
+Embodied Arena extensively supports comprehensive evaluation of models from different sources (open-source, close-source) by different means (model parameters, API), offering flexibility and convenience for users to join. The platform leverages a diverse range of well-curated embodied AI benchmarks, ensuring high alignment with canonical evaluation methods and the best completeness compared to prior works.
 
-#### **Where2Place**
+### **Evaluation Process**
 
-- **Function**: Affordance prediction benchmark
-- **Content**: Object placement prediction and functional reasoning
-- **Features**: Evaluates robot understanding of object functionality
+1. **Model Integration**: Support for various model types and access methods
+2. **Benchmark Execution**: Comprehensive evaluation across mainstream benchmarks
+3. **Capability Assessment**: Analysis across seven core embodied capabilities
+4. **Result Presentation**: Rankings on three leaderboards and radar plots for intuitive comparison
+5. **Regular Updates**: Monthly leaderboard updates with transparent result presentation
 
-#### **RoBoVQA**
+### **Evaluation Metrics**
 
-- **Function**: Robot visual question answering
-- **Content**: Discriminative/generative affordances, success/future prediction
-- **Features**: Designed specifically for robotic applications
+During the evaluation phase, we select the corresponding evaluation metric based on the characteristics of the benchmark itself, which generally include the following types:
 
-#### **OpenEQA (Meta)**
+#### **Embodied Question Answering**
 
-- **Function**: Open-domain embodied Q&A
-- **Content**: Object/attribute/state recognition, world knowledge, functional reasoning
-- **Features**: Open-domain embodied intelligence evaluation
+- Accuracy Based on Exact Matching
+  - Applied to benchmarks: VSI-Bench, Where2Place, ERQA, etc.
+- Accuracy Based on Fuzzy Matching
+  - **Rule-based Metric** (e.g., CIDEr, BLEU, MRA): RoboVQA, Scan2Cap, ScanQA, etc.
+  - **LLM-based Metric**: OpenEQA, UniEQA, etc.
 
-#### **EgoThink (Tsinghua)**
+#### **Embodied Navigation**
 
-- **Function**: First-person perspective reasoning
-- **Content**: Existence, attributes, spatial relationships, counting, comparison, localization
-- **Features**: Simulates human first-person cognitive processes
+- Success Rate
+  - Applied to benchmarks: EB-Navigation, HSSD, R2R, etc.
 
-#### **ScanQA (Kyoto University)**
+#### **Embodied Task Planning**
 
-- **Function**: 3D scene understanding Q&A
-- **Content**: Spatial scene understanding, dense caption generation
-- **Features**: Real 3D scanned scene-based Q&A tasks
+- Success Rate
+  - Applied to benchmarks: EB-ALFRED, EB-Habitat, ET-Plan-Bench, etc.
 
-#### **SQA3D (BIGAI)**
+### **Update Frequency**
 
-- **Function**: 3D spatial Q&A
-- **Content**: Situational reasoning assessment
-- **Features**: Complex reasoning with 3D spatial information
+- **Monthly Updates**: The leaderboards are updated once a month, with a snapshot of results taken on the first working day of each month as the leaderboards of the previous month
+- **Submission Policy**: Each manufacturer is only allowed to submit an evaluation application once a month
+- **Processing Time**: After receiving an evaluation application, results are generally updated within 7 working days
 
-#### **Scan2Cap**
+### **Evaluation Methodologies**
 
-- **Function**: 3D scene description generation
-- **Content**: Dense caption generation, spatial understanding
-- **Features**: Natural language description from 3D point clouds
+- **Accuracy-based QA Assessment**: Exact and fuzzy matching evaluation with both rule-based and LLM-based metrics
+- **Interactive Simulation-based Testing**: Success rate metrics for comprehensive capability evaluation in navigation and task planning scenarios
+- **LLM-driven Automatic Generation**: Unique approach ensuring diversity of scenarios and tasks while maintaining evaluation safety and high-quality assessment standards
 
-### 🎮 3D Interactive Environment Benchmarks
+## Join Embodied Arena
 
-#### **EB-Navigation**
+### **For Model Developers**
 
-- **Function**: Embodied navigation evaluation
-- **Content**: Basic/complex/long-horizon navigation, common sense reasoning
-- **Features**: Comprehensive navigation capability assessment across complexity levels
+**Showcase Your Model**: Join the leaderboard competition, demonstrate your embodied AI capabilities across comprehensive benchmarks, and establish your model's position in the future of embodied intelligence.
 
-#### **R2R-CE**
+**How to Contribute Your Model**:
 
-- **Function**: Room-to-room navigation (continuous environment)
-- **Content**: Basic instruction navigation
-- **Features**: Natural language navigation in real environments
+1. Review evaluation requirements and supported formats
+2. Submit your model for evaluation through our platform
+3. Monitor performance across all benchmarks and capability dimensions
+4. Gain visibility in the embodied AI research community
 
-#### **RxR-CE**
+### **For Researchers**
 
-- **Function**: Multilingual navigation (continuous environment)
-- **Content**: Long-horizon instruction navigation
-- **Features**: Multilingual complex navigation tasks
+**Contribute Benchmarks**: Co-create and share evaluation benchmarks with the community, establish distinctive leaderboards, and collectively shape the future of large-scale embodied AI evaluation.
 
-#### **EB-ALFRED**
+**How to Contribute Benchmarks**:
 
-- **Function**: Embodied task planning evaluation
-- **Content**: Basic/complex/long-horizon planning, visual appearance, common sense
-- **Features**: Complex task execution in household environments
+1. Design innovative evaluation tasks for embodied AI
+2. Ensure alignment with our capability taxonomy
+3. Submit benchmark proposals with comprehensive documentation
+4. Collaborate with the community to refine and improve evaluation methods
 
-#### **EB-Habitat**
+### **Getting Started**
 
-- **Function**: Habitat environment task planning
-- **Content**: Basic/complex planning, visual appearance, common sense reasoning
-- **Features**: Realistic 3D indoor environment tasks
+1. **Explore Leaderboards**: Browse current model rankings and performance metrics
+2. **Understand Capabilities**: Review our systematic capability taxonomy and benchmark mapping
+3. **Join Evaluation**: Submit your models or benchmarks for community evaluation
+4. **Engage with Community**: Participate in discussions and contribute to platform development
 
-#### **ET-Plan Bench**
+## Contact and Support
 
-- **Function**: Embodied task planning benchmark
-- **Content**: Spatial/temporal understanding, basic navigation/planning
-- **Features**: Comprehensive task planning capability assessment
+**Embodied Arena** is committed to advancing embodied AI evaluation through community collaboration and continuous innovation. For technical support, collaboration opportunities, or general inquiries, please reach out to our team.
 
-## Platform Advantages
+---
 
-### 🎯 Professionalism
-
-- First Chinese platform focused on embodied AI
-- Covers core embodied intelligence capability dimensions
-- Supported by authoritative academic institutions
-
-### 🔄 Real-time Performance
-
-- Dynamic leaderboard updates
-- Real-time model performance comparisons
-- Timely inclusion of latest models
-
-### 🌐 Openness
-
-- Online evaluation submission support
-- Open benchmark contributions
-- Transparent evaluation methods and metrics
-
-### 📊 Comprehensiveness
-
-- Multi-dimensional capability assessment
-- Multi-type model support
-- Diverse benchmark coverage
-
-### 🔧 User-friendliness
-
-- Intuitive web interface
-- Detailed user guides
-- Comprehensive documentation
-
-## Usage Guide
-
-1. **Browse Leaderboards**: View latest model performance rankings
-2. **Online Evaluation**: Submit your models for evaluation
-3. **Contribute Benchmarks**: Contribute new benchmarks to the platform
-4. **View Details**: Learn about specific evaluation rules and metrics
-
-## Contact Us
-
-- **Host Institution**: Tianjin University Deep Reinforcement Learning Laboratory
-- **Copyright**: © 2025 Tianjin University All Rights Reserved
-- **Technical Support**: Tianjin University Deep Reinforcement Learning Laboratory
-
-**Embodied Arena** - The Professional Evaluation Platform Advancing Embodied Intelligence Technology
+**Embodied Arena - The Professional Evaluation Platform Advancing Embodied Intelligence**
