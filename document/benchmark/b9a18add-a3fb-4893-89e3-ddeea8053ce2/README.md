@@ -14,6 +14,9 @@ huggingface: https://huggingface.co/datasets/SaDil/MineAnyBuild
 website: https://mineanybuild.github.io/
 default:
   property: Total
+capabilities:
+  - Spatial Reasoning
+  - Knowledge Reasoning
 properties:
   Spatial Reasoning:
     order: 1

@@ -14,6 +14,17 @@ huggingface: https://huggingface.co/datasets/PhyBlock/PhyBlock_Benchmark
 website: https://phyblock.github.io/
 default:
   property: Total
+capabilities:
+  - Object Type
+  - Object Property
+  - Object Count
+  - Spatial Relationship
+  - Spatial Distance
+  - Temporal Order
+  - Affordance Prediction
+  - Spatial Reasoning
+  - Knowledge Reasoning
+  - Task Reasoning
 properties:
   Object Property:
     order: 1
@@ -54,7 +65,7 @@ PhyBlock, a progressive benchmark designed to assess VLMs on physical understand
 
 ## Benchmark Statistics
 
-The first branch, Hierarchical Assembly Planning, evaluates model’s capacity to plan and reason about spatial arrangements through step-by-step interactions in a physics-aware simulator.  This planning branch features 400 systematically constructed scenes across four ascending difficulty tiers (Basic, Simple Combinations, Complex Structures, and Advanced Spatial Planning), culminating in assemblies that involve up to 22 distinct blocks. 
+The first branch, Hierarchical Assembly Planning, evaluates model’s capacity to plan and reason about spatial arrangements through step-by-step interactions in a physics-aware simulator.  This planning branch features 400 systematically constructed scenes across four ascending difficulty tiers (Basic, Simple Combinations, Complex Structures, and Advanced Spatial Planning), culminating in assemblies that involve up to 22 distinct blocks.
 The second branch, Physical-Understanding VQA, measures model’s explicit understanding of physical concepts.
 The VQA branch comprises 2,200 rigorously curated questions spanning 16 semantic categories including object attributes, relational reasoning, scene dynamics, and counterfactual inference.
 
@@ -75,12 +86,12 @@ In addition, to evaluate the agent’s physical perception and reasoning capabil
 
 ```
 @misc{ma2025phyblockprogressivebenchmarkphysical,
-  title={PhyBlock: A Progressive Benchmark for Physical Understanding and Planning via 3D Block Assembly}, 
+  title={PhyBlock: A Progressive Benchmark for Physical Understanding and Planning via 3D Block Assembly},
   author={Liang Ma and Jiajun Wen and Min Lin and Rongtao Xu and Xiwen Liang and Bingqian Lin and Jun Ma and Yongxin Wang and Ziming Wei and Haokun Lin and Mingfei Han and Meng Cao and Bokui Chen and Ivan Laptev and Xiaodan Liang},
   year={2025},
   eprint={2506.08708},
   archivePrefix={arXiv},
   primaryClass={cs.RO},
-  url={https://arxiv.org/abs/2506.08708}, 
+  url={https://arxiv.org/abs/2506.08708},
 }
 ```

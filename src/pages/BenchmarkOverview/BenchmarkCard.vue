@@ -101,10 +101,6 @@ const tagList = computed(() => {
 		}
 	}
 
-	for (const property of Object.values(benchmark.properties)) {
-		list.push({ label: property.label, color: 'grey' });
-	}
-
 	return list;
 });
 

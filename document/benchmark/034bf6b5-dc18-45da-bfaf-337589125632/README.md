@@ -15,7 +15,17 @@ website: null
 default:
   property: Total
 capabilities:
-  - example
+  - Object Type
+  - Object Property
+  - Object State
+  - Spatial Relationship
+  - Temporal Description
+  - Temporal Order
+  - General Knowledge
+  - Affordance Prediction
+  - Temporal Reasoning
+  - Task Reasoning
+  - Location Navigation
 properties:
   ObjectType:
     order: 1

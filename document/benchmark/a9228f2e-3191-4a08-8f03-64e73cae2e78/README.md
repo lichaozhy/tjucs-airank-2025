@@ -14,6 +14,8 @@ huggingface: null
 website: https://robo-point.github.io/
 default:
   property: Total
+capabilities:
+  - Affordance Prediction
 properties:
   Total:
     order: 0

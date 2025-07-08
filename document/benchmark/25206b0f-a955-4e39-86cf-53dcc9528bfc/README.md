@@ -14,6 +14,14 @@ huggingface: null
 website: https://vision-x-nyu.github.io/thinking-in-space.github.io/
 default:
   property: Total
+capabilities:
+  - Object Property
+  - Object Count
+  - Spatial Relationship
+  - Spatial Distance
+  - Spatial Size
+  - Temporal Order
+  - Basic Planning
 properties:
   ObjectCount:
     order: 1

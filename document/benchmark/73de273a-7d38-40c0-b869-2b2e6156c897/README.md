@@ -14,6 +14,8 @@ huggingface: null
 website: https://embodiedbench.github.io/
 default:
   property: TotalSR
+capabilities:
+  - Object Navigation
 properties:
   Base:
     order: 1

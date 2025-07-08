@@ -14,6 +14,11 @@ huggingface: null
 website: https://robovqa.github.io/
 default:
   property: Total
+capabilities:
+  - Temporal Description
+  - Affordance Prediction
+  - Task Reasoning
+  - Basic Planning
 properties:
   BELU-1:
     order: 1

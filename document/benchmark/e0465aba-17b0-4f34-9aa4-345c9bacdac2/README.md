@@ -14,6 +14,8 @@ huggingface: null
 website: null
 default:
   property: Total
+capabilities:
+  - Spatial Localization
 properties:
   CIDEr:
     order: 1

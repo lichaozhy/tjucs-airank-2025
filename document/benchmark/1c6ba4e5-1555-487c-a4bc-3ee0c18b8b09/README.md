@@ -14,6 +14,8 @@ huggingface: null
 website: https://jacobkrantz.github.io/vlnce/
 default:
   property: TotalSR
+capabilities:
+  - Instruction Navigation
 properties:
   TotalSR:
     order: 0

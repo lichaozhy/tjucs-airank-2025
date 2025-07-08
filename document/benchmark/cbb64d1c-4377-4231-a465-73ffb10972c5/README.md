@@ -14,6 +14,11 @@ huggingface: null
 website: https://embodiedbench.github.io/
 default:
   property: TotalSR
+capabilities:
+  - Basic Planning
+  - Visual Reference Planning
+  - Spatial Reference Planning
+  - Knowledge Reference Planning
 properties:
   Base:
     order: 1

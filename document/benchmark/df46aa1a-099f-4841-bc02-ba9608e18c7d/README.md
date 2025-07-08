@@ -14,6 +14,8 @@ huggingface: null
 website: https://daveredrum.github.io/Scan2Cap/
 default:
   property: Total
+capabilities:
+  - Spatial Relationship
 properties:
   CIDEr:
     order: 1
@@ -43,7 +45,7 @@ Scan2Cap introduces the task of dense captioning in 3D scans obtained from commo
 - **Task**: Introduces the novel task of dense captioning in 3D RGB-D scans. This involves jointly localizing and describing each object in a 3D scene.
 - **Input**: Assumes a point cloud of a 3D scene, which includes geometry coordinates, RGB values, and normal vectors.
 - **Output**: Expected output is bounding boxes for individual object instances along with their natural language descriptions.
-- **Key Innovations**: Focuses on leveraging 3D information (like actual object size and location) for more accurate descriptions and explicitly models object relations via a graph module. 
+- **Key Innovations**: Focuses on leveraging 3D information (like actual object size and location) for more accurate descriptions and explicitly models object relations via a graph module.
 
 ## Benchmark Statistics
 

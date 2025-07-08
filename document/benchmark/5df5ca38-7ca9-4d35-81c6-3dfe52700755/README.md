@@ -14,6 +14,13 @@ huggingface: null
 website: https://deepmind.google/discover/blog/gemini-robotics-brings-ai-into-the-physical-world/
 default:
   property: Total
+capabilities:
+  - Object Type
+  - Object State
+  - Spatial Relationship
+  - Spatial Reasoning
+  - Knowledge Reasoning
+  - Task Reasoning
 properties:
   ActionReasoning:
     order: 10

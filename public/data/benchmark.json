@@ -18,6 +18,9 @@
 		"default": {
 			"property": "TotalSR"
 		},
+		"capabilities": [
+			"Instruction Navigation"
+		],
 		"properties": {
 			"TotalSR": {
 				"order": 0,
@@ -47,7 +50,17 @@
 			"property": "Total"
 		},
 		"capabilities": [
-			"example"
+			"Object Type",
+			"Object Property",
+			"Object State",
+			"Spatial Relationship",
+			"Temporal Description",
+			"Temporal Order",
+			"General Knowledge",
+			"Affordance Prediction",
+			"Temporal Reasoning",
+			"Task Reasoning",
+			"Location Navigation"
 		],
 		"properties": {
 			"ObjectType": {
@@ -149,6 +162,12 @@
 		"default": {
 			"property": "TotalSR"
 		},
+		"capabilities": [
+			"Basic Planning",
+			"Visual Reference Planning",
+			"Spatial Reference Planning",
+			"Knowledge Reference Planning"
+		],
 		"properties": {
 			"Base": {
 				"order": 1,
@@ -213,6 +232,9 @@
 		"default": {
 			"property": "TotalSR"
 		},
+		"capabilities": [
+			"Instruction Navigation"
+		],
 		"properties": {
 			"TotalSR": {
 				"order": 0,
@@ -241,6 +263,15 @@
 		"default": {
 			"property": "Total"
 		},
+		"capabilities": [
+			"Object Property",
+			"Object Count",
+			"Spatial Relationship",
+			"Spatial Distance",
+			"Spatial Size",
+			"Temporal Order",
+			"Basic Planning"
+		],
 		"properties": {
 			"ObjectCount": {
 				"order": 1,
@@ -317,6 +348,18 @@
 		"default": {
 			"property": "Total"
 		},
+		"capabilities": [
+			"Object Type",
+			"Object Property",
+			"Object Count",
+			"Spatial Relationship",
+			"Spatial Distance",
+			"Temporal Order",
+			"Affordance Prediction",
+			"Spatial Reasoning",
+			"Knowledge Reasoning",
+			"Task Reasoning"
+		],
 		"properties": {
 			"Object Property": {
 				"order": 1,
@@ -369,6 +412,14 @@
 		"default": {
 			"property": "Total"
 		},
+		"capabilities": [
+			"Object Type",
+			"Object State",
+			"Spatial Relationship",
+			"Spatial Reasoning",
+			"Knowledge Reasoning",
+			"Task Reasoning"
+		],
 		"properties": {
 			"ActionReasoning": {
 				"order": 10,
@@ -445,6 +496,10 @@
 		"default": {
 			"property": "TotalSR"
 		},
+		"capabilities": [
+			"Spatial Reference Planning",
+			"Temporal Reference Planning"
+		],
 		"properties": {
 			"NaviLayoutMap": {
 				"order": 1,
@@ -491,6 +546,9 @@
 		"default": {
 			"property": "TotalSR"
 		},
+		"capabilities": [
+			"Object Navigation"
+		],
 		"properties": {
 			"Base": {
 				"order": 1,
@@ -549,6 +607,9 @@
 		"default": {
 			"property": "Total"
 		},
+		"capabilities": [
+			"Spatial Reasoning"
+		],
 		"properties": {
 			"EM": {
 				"order": 0,
@@ -583,6 +644,9 @@
 		"default": {
 			"property": "Total"
 		},
+		"capabilities": [
+			"Affordance Prediction"
+		],
 		"properties": {
 			"Total": {
 				"order": 0,
@@ -611,6 +675,10 @@
 		"default": {
 			"property": "Total"
 		},
+		"capabilities": [
+			"Spatial Reasoning",
+			"Knowledge Reasoning"
+		],
 		"properties": {
 			"Spatial Reasoning": {
 				"order": 1,
@@ -651,6 +719,15 @@
 		"default": {
 			"property": "Total"
 		},
+		"capabilities": [
+			"Object Type",
+			"Object Property",
+			"Object State",
+			"Spatial Localization",
+			"General Knowledge",
+			"Spatial Reasoning",
+			"Knowledge Reasoning"
+		],
 		"properties": {
 			"ObjectType": {
 				"order": 1,
@@ -715,6 +792,12 @@
 		"default": {
 			"property": "TotalSR"
 		},
+		"capabilities": [
+			"Basic Planning",
+			"Visual Reference Planning",
+			"Spatial Reference Planning",
+			"Knowledge Reference Planning"
+		],
 		"properties": {
 			"Base": {
 				"order": 1,
@@ -779,6 +862,9 @@
 		"default": {
 			"property": "Total"
 		},
+		"capabilities": [
+			"Spatial Relationship"
+		],
 		"properties": {
 			"CIDEr": {
 				"order": 1,
@@ -819,6 +905,9 @@
 		"default": {
 			"property": "Total"
 		},
+		"capabilities": [
+			"Spatial Localization"
+		],
 		"properties": {
 			"CIDEr": {
 				"order": 1,
@@ -859,6 +948,12 @@
 		"default": {
 			"property": "Total"
 		},
+		"capabilities": [
+			"Temporal Description",
+			"Affordance Prediction",
+			"Task Reasoning",
+			"Basic Planning"
+		],
 		"properties": {
 			"BELU-1": {
 				"order": 1,

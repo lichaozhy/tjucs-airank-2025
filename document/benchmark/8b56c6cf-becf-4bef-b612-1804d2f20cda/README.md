@@ -14,6 +14,8 @@ huggingface: null
 website: https://sqa3d.github.io/
 default:
   property: Total
+capabilities:
+  - Spatial Reasoning
 properties:
   EM:
     order: 0
