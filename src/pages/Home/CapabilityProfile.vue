@@ -44,11 +44,11 @@
 			<div class="col relative-postion text-black">
 				<div
 					class="app-markdown-html q-mb-md"
-					style="height: 8em;"
+					style="height: 14em;"
 					v-html="groupContent"
 				></div>
 
-				<div class="text-h5 text-right text-weight-medium q-mt-md">
+				<div class="text-h5 text-center text-weight-medium q-mt-md">
 					Benchmark-Capability Mapping
 				</div>
 
@@ -73,7 +73,7 @@
 					animated
 					swipeable
 					infinite
-					style="height: 16em"
+					style="height: 20em"
 				>
 					<q-tab-panel
 						class="q-px-none"
@@ -82,7 +82,7 @@
 						:name="item.id"
 					>
 						<div
-							class="app-markdown-html"
+							class="app-markdown-html app-capability-markdown"
 							v-html="itemContent"
 						></div>
 					</q-tab-panel>
@@ -98,10 +98,10 @@
 				no-caps
 			></q-btn>
 			<q-btn
-				label="Go to XXXX to view the evaluation regarding capabilities →"
+				label="Go to Embodied Capbility Leaderboard to view the evaluation regarding capabilities →"
 				flat
 				dense
-				:to="{ name: 'app.benchmark' }"
+				:to="{ name: 'app.leaderboard.capability' }"
 				no-caps
 			></q-btn>
 		</q-toolbar>
@@ -126,7 +126,7 @@ const groupDataList = ref<Spec.Capability.Group[]>([]);
 const itemDataList = ref<Spec.Capability.Item[]>([]);
 
 const INTRODUCTION = {
-	TITLE: '7 Core/Embodied Capabilities, 30 Nuanced/Fine-grained/Refined/Detailed Dimensions',
+	TITLE: '7 Embodied Capabilities, 30 Fine-grained Dimensions',
 };
 
 const group = ref<string>('');
@@ -164,3 +164,18 @@ onBeforeMount(async () => {
 
 defineOptions({ name: 'AppPageHomeBenchmarkProfile' });
 </script>
+
+<style>
+.app-capability-markdown {
+	table {
+		margin:0;
+		td, th {
+			padding: 0.2em 0.5em;
+		}
+	}
+
+	img {
+		width: 90%;
+	}
+}
+</style>

@@ -51,7 +51,7 @@
 					animated
 					swipeable
 					infinite
-					style="height: 800px"
+					style="height: 400px"
 				>
 					<q-tab-panel
 						class="q-pa-none"
@@ -67,6 +67,7 @@
 							hide-pagination
 							:pagination="{ rowsPerPage: 0 }"
 							class="bg-transparent"
+							:dense="category.DENSE"
 						>
 							<template #body-cell-org="props">
 								<q-td :props="props">{{
@@ -87,7 +88,7 @@
 
 		<q-toolbar class="q-mt-lg justify-around">
 			<q-btn
-				label="Go to Embodied Rank to view the model evaluation →"
+				label="Go to Embodied Task Leaderboard to view the model evaluation →"
 				flat
 				dense
 				no-caps
@@ -113,7 +114,7 @@ import { computed, ref } from 'vue';
 import type * as Utils from 'src/spec';
 
 const PROFILE = {
-	TITLE: '50+ Advanced Models Have Joined Embodied Arena',
+	TITLE: 'Embodied Arena has Covered 50+ Advanced Models',
 	COMMENT: `Embodied Arena evaluates both general large models and Embodied AI
 	models, including both leading commercial models and advanced academic
 	models, while eagerly calling for more open-/close-source models with
@@ -129,6 +130,7 @@ const MODEL_CATEGORY = [
 		NAME: 'language',
 		LABEL: 'General Large',
 		ICON: 'psychology',
+		DENSE: false,
 		RECORD: [
 			{
 				organizationList: ['OpenAI'],
@@ -169,18 +171,19 @@ const MODEL_CATEGORY = [
 		NAME: 'embodied',
 		LABEL: 'Embodied AI',
 		ICON: 'smart_toy',
+		DENSE: true,
 		RECORD: [
 			{
 				organizationList: ['Beijing Jiaotong University', 'Peking University'],
-				modelList: ['PhysVLM'],
+				modelList: ['PhysVLM', 'UniNavid', 'Navid'],
 			},
 			{
 				organizationList: ['Tianjin University'],
-				modelList: ['RoboBrain', 'RoboAnnotatorX', 'Embodied-FSD'],
+				modelList: ['RoboAnnotatorX ', 'Embodied-FSD'],
 			},
 			{
 				organizationList: ['The University of Hong Kong'],
-				modelList: ['EmbodiedGPT'],
+				modelList: ['EmbodiedGPT ', 'Video-3D LLM', 'LLaVA-3D', 'GPT4Scene'],
 			},
 			{
 				organizationList: ['Boston University'],
@@ -200,19 +203,11 @@ const MODEL_CATEGORY = [
 			},
 			{
 				organizationList: ['Huawei Noah\'s Ark Lab'],
-				modelList: ['SpatialCoT'],
-			},
-			{
-				organizationList: ['Peking University'],
-				modelList: ['UniNavid', 'Navid'],
+				modelList: ['SpatialCoT', 'Mem2Ego'],
 			},
 			{
 				organizationList: ['The Chinese University of Hong Kong'],
 				modelList: ['Video-3D LLM', 'LLaVA-3D'],
-			},
-			{
-				organizationList: ['The University of Hong Kong', 'Shanghai AI Lab'],
-				modelList: ['GPT4Scene'],
 			},
 			{
 				organizationList: ['Shanghai AI Lab', 'Zhejiang University'],
@@ -225,10 +220,6 @@ const MODEL_CATEGORY = [
 			{
 				organizationList: ['UMass Amherst'],
 				modelList: ['3D-Mem'],
-			},
-			{
-				organizationList: ['Huawei Noah\'s Ark Lab'],
-				modelList: ['Mem2Ego'],
 			},
 		],
 	},

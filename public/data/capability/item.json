@@ -12,6 +12,12 @@
 		"order": 1
 	},
 	{
+		"id": "1b70980e-fa1a-4eaf-b401-665e68b72ad1",
+		"name": "Temporal Reference Planning",
+		"group": "ccb40962-b21d-4e43-b801-32e8052676e0",
+		"order": 3
+	},
+	{
 		"id": "1db62c35-bf87-4c53-8d9b-5b9c7ecb73fe",
 		"name": "Object State",
 		"group": "01684595-db84-46b8-be9a-c9ddc9b71183",
@@ -48,6 +54,18 @@
 		"order": 3
 	},
 	{
+		"id": "8153b32d-c4e2-4b2d-b7e8-18d55e1d655d",
+		"name": "Knowledge Reference Planning",
+		"group": "ccb40962-b21d-4e43-b801-32e8052676e0",
+		"order": 4
+	},
+	{
+		"id": "86c2b150-3c01-448c-b47e-b11fedd8f0f9",
+		"name": "Temporal Reasoning",
+		"group": "9baa89a1-9993-4a56-aadf-645709d17df5",
+		"order": 2
+	},
+	{
 		"id": "97d9a33f-8e9d-4e75-97b0-91a248c45b96",
 		"name": "Temporal Order",
 		"group": "6eb76c3d-8561-470a-bb91-9eb8a6e49390",
@@ -58,6 +76,12 @@
 		"name": "Temporal Description",
 		"group": "6eb76c3d-8561-470a-bb91-9eb8a6e49390",
 		"order": 1
+	},
+	{
+		"id": "9fc3620f-aae4-4fa8-8926-4c5b9a2de46b",
+		"name": "Task Reasoning",
+		"group": "9baa89a1-9993-4a56-aadf-645709d17df5",
+		"order": 4
 	},
 	{
 		"id": "a4e576c4-5d58-432d-8b96-7019997e2510",
@@ -72,50 +96,56 @@
 		"order": 1
 	},
 	{
+		"id": "c04daccf-8467-4afd-bd23-6416e2003229",
+		"name": "Knowledge Reasoning",
+		"group": "9baa89a1-9993-4a56-aadf-645709d17df5",
+		"order": 3
+	},
+	{
 		"id": "c621a709-3ea4-40f9-b173-d49242e4f95c",
-		"name": "Static Embodied Reasoning",
+		"name": "Object Reasoning",
 		"group": "9baa89a1-9993-4a56-aadf-645709d17df5",
 		"order": 0
 	},
 	{
 		"id": "d60d4022-1103-4604-af3f-c56e1be08f9c",
-		"name": "Dynamic Embodied Reasoning",
+		"name": "Spatial Reasoning",
 		"group": "9baa89a1-9993-4a56-aadf-645709d17df5",
 		"order": 1
 	},
 	{
 		"id": "e29b6653-f452-47dc-8f5a-9eae7a751e3a",
-		"name": "Base Instruction Navigation",
+		"name": "Object Navigation",
 		"group": "a88b3a6d-4046-42e9-9f17-3f4826417521",
 		"order": 0
 	},
 	{
 		"id": "e7ee1d23-a082-4c5f-b3f6-ba90d03dbe3f",
-		"name": "Complex Instruction Navigation",
+		"name": "Location Navigation",
 		"group": "a88b3a6d-4046-42e9-9f17-3f4826417521",
 		"order": 1
 	},
 	{
 		"id": "e945016a-f007-4c07-8713-229de5fffadc",
-		"name": "Long Horizon Instruction Navigation",
+		"name": "Instruction Navigation",
 		"group": "a88b3a6d-4046-42e9-9f17-3f4826417521",
 		"order": 2
 	},
 	{
 		"id": "ef1b0233-b238-421e-aa68-568be1599882",
-		"name": "Base Instruction Planning",
+		"name": "Base Planning",
 		"group": "ccb40962-b21d-4e43-b801-32e8052676e0",
 		"order": 0
 	},
 	{
 		"id": "ef769c5b-5865-4918-b99c-d5281c6147a1",
-		"name": "Complex Instruction Planning",
+		"name": "Visual Reference Planning",
 		"group": "ccb40962-b21d-4e43-b801-32e8052676e0",
 		"order": 1
 	},
 	{
 		"id": "f8ad281d-3f92-4f75-aa4a-f4c09b90d112",
-		"name": "Long Horizon Instruetion Planning",
+		"name": "Spatial Reference Planning",
 		"group": "ccb40962-b21d-4e43-b801-32e8052676e0",
 		"order": 2
 	}

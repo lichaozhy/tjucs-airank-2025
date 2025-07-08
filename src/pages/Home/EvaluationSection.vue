@@ -12,7 +12,7 @@
 		</p>
 		<q-btn
 			class="q-my-xl"
-			label="Go to Embodied Leaderboard Rules to learn more →"
+			label="Go to Evaluation Rules to learn more →"
 			flat
 			dense
 			color="indigo-10"
@@ -22,7 +22,7 @@
 		<q-img
 			class="q-my-xl"
 			style="max-width: 70em"
-			src="/image/462810345-b00096a8-da3e-400a-8186-206e15ad44f0.png"
+			src="/image/463129486-5c64fbca-ee9d-450e-8009-93f68d823c83.png"
 		></q-img>
 	</div>
 </template>
@@ -34,7 +34,7 @@ const SECTION = {
 	models from different sources (i.e., open-source, close-source) by different
 	means (e.g., model parameters, API), offering flexibility and convenience
 	for users to join. Embodied Arena leverages a diverse range of well-curated
-	Embodied AI benchmarks (xxx M QA in total), which ensures a high alignment
+	Embodied AI benchmarks, which ensures a high alignment
 	with canonical evaluation methods and meanwhile the best completeness
 	compared to prior works. More importantly, Embodied Arena is greatly powered
 	by a unique LLM-driven automatic generation approach for Embodied evaluation
