@@ -84,7 +84,7 @@ const filterItemList = computed(() => {
 		},
 		...leaderboardList.value.map(({ id, name }) => ({
 			value: id,
-			label: name,
+			label: name.replace('Leaderboard', 'Benchmarks'),
 		})),
 	];
 });

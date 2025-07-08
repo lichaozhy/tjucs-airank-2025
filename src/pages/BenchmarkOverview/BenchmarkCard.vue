@@ -92,8 +92,6 @@ const { benchmark } = defineProps<{
 	benchmark: Spec.Benchmark.Type;
 }>();
 
-console.log(benchmark);
-
 const tagList = computed(() => {
 	const list = [];
 
