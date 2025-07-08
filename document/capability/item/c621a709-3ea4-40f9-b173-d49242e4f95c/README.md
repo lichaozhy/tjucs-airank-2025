@@ -4,8 +4,18 @@ group: 9baa89a1-9993-4a56-aadf-645709d17df5
 order: 0
 ---
 
-|**Benchmark**|**Capability Dimension**|
-|-|-|
+<div class="row">
+<div class="col-8">
+
+| **Benchmark** | **Capability Dimension** |
+| ------------- | ------------------------ |
+
+</div>
+
+<div class="col-4">
 
 ![alt text](objectreasoning.png)
 
+</div>
+
+</div>
