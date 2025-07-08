@@ -69,17 +69,16 @@
 			></q-chip>
 
 			<q-chip
-				v-for="tag in tagList"
-				:key="tag"
+				v-for="(tag, index) in tagList"
+				:key="index"
 				class="q-ml-none text-white"
 				dense
 				square
-				color="grey"
+				:label="tag.label"
+				:color="tag.color"
 				size="sm"
-			>
-				{{ tag }}
-			</q-chip></q-card-section
-		>
+			/>
+		</q-card-section>
 	</q-card>
 </template>
 
@@ -93,8 +92,22 @@ const { benchmark } = defineProps<{
 	benchmark: Spec.Benchmark.Type;
 }>();
 
+console.log(benchmark);
+
 const tagList = computed(() => {
-	return Object.values(benchmark.properties).map((property) => property.label);
+	const list = [];
+
+	if (benchmark.capabilities !== undefined) {
+		for (const capabilityName of benchmark.capabilities) {
+			list.push({ label: capabilityName, color: 'indigo-10' });
+		}
+	}
+
+	for (const property of Object.values(benchmark.properties)) {
+		list.push({ label: property.label, color: 'grey' });
+	}
+
+	return list;
 });
 
 defineOptions({ name: 'BenchmarkCard' });

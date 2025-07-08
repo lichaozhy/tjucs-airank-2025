@@ -14,6 +14,8 @@ huggingface: https://huggingface.co/datasets/TJURL-Lab/UniEQA
 website: null
 default:
   property: Total
+capabilities:
+  - example
 properties:
   ObjectType:
     order: 1

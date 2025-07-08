@@ -46,6 +46,9 @@
 		"default": {
 			"property": "Total"
 		},
+		"capabilities": [
+			"example"
+		],
 		"properties": {
 			"ObjectType": {
 				"order": 1,

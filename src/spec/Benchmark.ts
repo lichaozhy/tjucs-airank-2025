@@ -30,6 +30,7 @@ export const Schema = z.object({
 		property: z.string(),
 	}),
 	...MetadataNamespace,
+	capabilities: z.string().array().optional(),
 	properties: z.record(
 		z.string(),
 		z.object({
