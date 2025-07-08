@@ -70,7 +70,6 @@
 				<q-tab-panels
 					class="bg-transparent"
 					v-model="item"
-					animated
 					swipeable
 					infinite
 					style="height: 20em"

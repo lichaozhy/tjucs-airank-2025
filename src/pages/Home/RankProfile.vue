@@ -51,7 +51,7 @@
 					animated
 					swipeable
 					infinite
-					style="height: 400px"
+					style="height: 480px"
 				>
 					<q-tab-panel
 						class="q-pa-none"
@@ -67,7 +67,6 @@
 							hide-pagination
 							:pagination="{ rowsPerPage: 0 }"
 							class="bg-transparent"
-							:dense="category.DENSE"
 						>
 							<template #body-cell-org="props">
 								<q-td :props="props">{{
@@ -186,10 +185,6 @@ const MODEL_CATEGORY = [
 				modelList: ['EmbodiedGPT ', 'Video-3D LLM', 'LLaVA-3D', 'GPT4Scene'],
 			},
 			{
-				organizationList: ['Boston University'],
-				modelList: ['SAT'],
-			},
-			{
 				organizationList: ['University of Washington'],
 				modelList: ['RoboPoint'],
 			},
@@ -208,14 +203,6 @@ const MODEL_CATEGORY = [
 			{
 				organizationList: ['The Chinese University of Hong Kong'],
 				modelList: ['Video-3D LLM', 'LLaVA-3D'],
-			},
-			{
-				organizationList: ['Shanghai AI Lab', 'Zhejiang University'],
-				modelList: ['Grounded-3D-LLM'],
-			},
-			{
-				organizationList: ['Beijing University of Posts and Telecom'],
-				modelList: ['3DMIT'],
 			},
 			{
 				organizationList: ['UMass Amherst'],
