@@ -124,7 +124,7 @@
 	},
 	{
 		"id": "aef63eca-3dde-495a-a922-c803d956568f",
-		"name": "Qwen2.5-VL-3B-Ins",
+		"name": "Qwen2.5-VL-3B-Instruct",
 		"component": {
 			"vision": [
 				"ViT"
@@ -2771,6 +2771,33 @@
 		"taskPlanning": false,
 		"reason": false,
 		"opensource": true,
+		"release": {
+			"year": 2025
+		},
+		"imageVideo": "image/video"
+	},
+	{
+		"id": "526efef7-9600-4992-9c70-fec8893b1706",
+		"name": "Gemini-2.5-flash",
+		"component": {
+			"language": [
+				"Gemini-2.5-flash"
+			]
+		},
+		"author": [
+			"Google DeepMind"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
+		"website": "https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash",
+		"navigation": true,
+		"taskPlanning": true,
+		"reason": true,
+		"opensource": false,
 		"release": {
 			"year": 2025
 		},
