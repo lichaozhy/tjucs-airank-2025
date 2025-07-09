@@ -144,6 +144,37 @@
 		}
 	},
 	{
+		"id": "089294d0-59db-47f0-a543-19d8e3708448",
+		"leaderboard": "09b4a56a-2e41-4103-a330-129381c24450",
+		"name": "VABench-Point",
+		"description": "From Seeing to Doing: Bridging Reasoning and Decision for Robotic Manipulation\n",
+		"organization": "Tianjin University",
+		"released": {
+			"at": {
+				"year": 2025,
+				"month": 5,
+				"date": 10
+			}
+		},
+		"repository": "https://github.com/pickxiguapi/Embodied-FSD",
+		"huggingface": "https://huggingface.co/collections/IffYuan/fsd-683fa0d552e70f302fd04b34",
+		"website": "https://embodied-fsd.github.io/",
+		"default": {
+			"property": "Total"
+		},
+		"capabilities": [
+			"Spatial Reasoning"
+		],
+		"properties": {
+			"Total": {
+				"order": 0,
+				"index": 0,
+				"label": "Total Score",
+				"unit": null
+			}
+		}
+	},
+	{
 		"id": "1961aa46-9085-42ed-b384-d9ffe52921a8",
 		"leaderboard": "1143b13b-2754-4660-9f79-d0d0dc1f273e",
 		"name": "EB-ALFRED",
