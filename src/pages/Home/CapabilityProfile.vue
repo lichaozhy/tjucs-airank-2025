@@ -125,7 +125,7 @@ const groupDataList = ref<Spec.Capability.Group[]>([]);
 const itemDataList = ref<Spec.Capability.Item[]>([]);
 
 const INTRODUCTION = {
-	TITLE: '7 Embodied Capabilities, 30 Fine-grained Dimensions',
+	TITLE: '7 Embodied Capabilities, 25 Fine-grained Dimensions',
 };
 
 const group = ref<string>('');

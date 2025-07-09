@@ -220,7 +220,7 @@ const columns = [
 		label: 'Institute',
 		field: 'organizationList',
 		align: 'left' as Utils.Alignment,
-		headerStyle: 'width: 30em',
+		headerStyle: 'width: 40em',
 	},
 	{
 		name: 'model',

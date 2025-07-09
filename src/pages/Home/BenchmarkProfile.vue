@@ -109,10 +109,15 @@ import { computed, ref, watch } from 'vue';
 
 const PROFILE = {
 	TITLE: 'What is Embodied Arena?',
-	COMMENT: `An open-source, comprehensive, and user-friendly evaluation system
-	and platform for embodied AI models, with foundational/core embodied tasks,
-	diverse high-quality benchmarks and systematic capability dimesions,
-	supporting both academic and industrial needs`,
+	COMMENT: `Embodied Arena is an open-source, comprehensive, and user-friendly
+	evaluation system and platform for embodied AI models. It features three
+	types of core embodied tasks, a diverse range of high-quality benchmarks,
+	LLM-driven automatic evaluation data generation, and a systematic embodied
+	capability texnomy. Moreover, Embodied Arena offers professional supports for
+	advanced models and new benchmarks to join. The aim of Embodied Arena is to
+	present an up-to-date overview of embodied capabilities of advanced models
+	and facilitate the identification of critical research areas, thereby
+	accelerating progress in the field of Embodied AI.`,
 };
 
 const INTRODUCTION = {
