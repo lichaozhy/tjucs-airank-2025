@@ -146,7 +146,7 @@ const INTRODUCTION = {
 			LABEL: 'Navigation',
 			ICOM: 'near_me',
 			NAME: 'nav',
-			BENCHMARKS: ['EB-Navigation', 'VLN-CE R2R', 'VLN-CE RxR', 'hm3d', 'mp3d'],
+			BENCHMARKS: ['EB-Navigation', 'VLN-CE R2R', 'VLN-CE RxR'],
 		},
 		{
 			LABEL: 'Task Planning',
