@@ -22,7 +22,7 @@
 		<q-img
 			class="q-my-xl"
 			style="max-width: 70em"
-			src="/image/463129486-5c64fbca-ee9d-450e-8009-93f68d823c83.png"
+			src="/image/evaluation-figure.png"
 		></q-img>
 	</div>
 </template>
