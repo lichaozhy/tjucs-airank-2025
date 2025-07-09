@@ -97,7 +97,8 @@
 		"PaLM-E 12B": 1,
 		"LLaVA-1.5-7B": 1,
 		"Llama3.2-11B": 1,
-		"Qwen2.5-VL-7B-Instruct": 1
+		"Qwen2.5-VL-7B-Instruct": 1,
+		"Gemini-2.5-flash": 1
 	},
 	"author": {
 		"OpenAI": 6,
@@ -114,7 +115,7 @@
 		"Chinese University of Hong Kong": 4,
 		"King Abdullah University of Science and Technology": 1,
 		"NVIDIA": 3,
-		"Google DeepMind": 8,
+		"Google DeepMind": 9,
 		"Anthropic": 2,
 		"Meta AI": 4,
 		"Zhejiang University": 1,
@@ -151,6 +152,6 @@
 	"year": {
 		"2023": 13,
 		"2024": 54,
-		"2025": 23
+		"2025": 24
 	}
 }
