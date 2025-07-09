@@ -28,14 +28,13 @@ properties:
 
 ![alt text](assets/1-1.png)
 
-RxR was ported to continuous environments originally for the RxR-Habitat Challenge. The dataset includes train, val_seen, val_unseen, and test_challenge splits, with both Guide and Follower trajectories included.
-
+VLN-CE RxR is a dataset of human-annotated navigation instructions in English, Hindi and Telugu, matched to navigation paths through reconstructed buildings from the Matterport3D dataset.  Compared to similar datasets, VLN-CE RxR is multilingual and an order of magnitude larger, and every instruction is validated by a separate annotator. Furthermore, each word in each instruction is time-aligned to the virtual poses of instruction creators and validators.  VLN-CE RxR dataset contains instructions of fine granularity that describe rich landmarks and longer trajectories, which establishes a large language and visual gap that is suitable for evaluating the generalization potential of the methods.
 ## Evaluation
 Download the repo and set-up the environment: https://github.com/jzhzhang/NaVid-VLN-CE
 
 Succesfully run eval_navid_vlnce.sh
 
-Since package "transformers" in the qwen conda environment is not compatible with the vlnce_navid conda environment. So use "flask run" of the file app.py to start a server and then access this server API in the evaluation pipeline. Please change "app.run(host="x.x.x.x",port=5558)" in the file "app.py" and 'URL_MAPPING = {"Qwen2.5-VL-7B-Instruct": "http://x.x.x.x:x/predict",}' in the file "base_agent.py" 
+Since package "transformers" in the qwen conda environment is not compatible with the vlnce_navid conda environment. So use "flask run" of the file app.py to start a server and then access this server API in the evaluation pipeline. Please change "app.run(host="x.x.x.x",port=5558)" in the file "app.py" and 'URL_MAPPING = {"Qwen2.5-VL-7B-Instruct": "http://x.x.x.x:x/predict",}' in the file "base_agent.py"
 
 Then add files in the current repo into the above repo
 
@@ -55,6 +54,11 @@ run "sh eval_base_vlnce.sh --model gpt-4o --config rxr"
   author={Jacob Krantz and Erik Wijmans and Arjun Majundar and Dhruv Batra and Stefan Lee},
   booktitle={European Conference on Computer Vision (ECCV)},
   year={2020}
- }
-
+}
+@article{zhang2024navid,
+        title={NaVid: Video-based VLM Plans the Next Step for Vision-and-Language Navigation},
+        author={Zhang, Jiazhao and Wang, Kunyu and Xu, Rongtao and Zhou, Gengze and Hong, Yicong and Fang, Xiaomeng and Wu, Qi and Zhang, Zhizheng and Wang, He},
+        journal={Robotics: Science and Systems},
+        year={2024}
+}
 ```

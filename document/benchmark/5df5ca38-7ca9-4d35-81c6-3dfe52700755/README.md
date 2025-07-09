@@ -103,5 +103,4 @@ ERQA also provide an example of a lightweight evaluation harness for querying mu
       primaryClass={cs.RO},
       url={https://arxiv.org/abs/2503.20020},
 }
-}
 ```

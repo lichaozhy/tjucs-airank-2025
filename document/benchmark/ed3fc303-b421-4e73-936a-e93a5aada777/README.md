@@ -51,8 +51,7 @@ properties:
 
 ![alt text](assets/1-1.png)
 
-The RoboVQA dataset, containing 829,502 (video, text) pairs, enables improved performance in long-horizon reasoning tasks, with a video-conditioned model showing 46% lower cognitive intervention rates than zero-shot VLMs and video-based VLMs outperforming single-image models by 19% in VQA tasks. The study highlights the benefits of combining human and robot data within budget constraints and underscores the need for more grounded data for real-world deployment.
-
+RoboVQA  consists of 238h (10 days) of (video, text) pairs coming from recordings of long-horizon instructions being performed by 3 different embodiments (robot, human, human with tool) in a same environment (3 corporate buildings).
 ## Citation
 
 ```

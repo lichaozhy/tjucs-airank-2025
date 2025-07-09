@@ -38,8 +38,7 @@ properties:
 
 ![alt text](assets/1-1.png)
 
-Scan2Cap introduces the task of dense captioning in 3D scans obtained from commodity RGB-D sensors. Given a point cloud of a 3D scene as input, the goal is to predict bounding boxes along with natural language descriptions of the underlying objects. To jointly address 3D object detection and caption generation, a method named Scan2Cap is proposed. Scan2Cap is trained in an end-to-end manner to detect objects in the input scene and generate corresponding descriptions. An attention mechanism is employed to produce descriptive tokens by attending to relevant components in the local context. To incorporate object relations—specifically relative spatial relationships—into the generated captions, a message passing graph module is introduced to facilitate the learning of relational features. The proposed approach effectively localizes and describes 3D objects in scenes from the ScanRefer dataset, achieving a significant improvement over 2D baseline methods, with a 27.61% increase in CiDEr@0.5IoU.
-
+Scan2Cap is a benchmark for dense captioning in 3D scans captured using commodity RGB-D sensors. It focuses on the task of generating natural language descriptions for multiple objects within a 3D scene, given as a point cloud. Each object is annotated with a 3D bounding box and an associated textual description, enabling the joint evaluation of object localization and language generation. The benchmark emphasizes detailed scene understanding by requiring models to capture both the geometric properties of objects and their contextual relationships. Built on the ScanRefer dataset, Scan2Cap provides a challenging testbed for evaluating multimodal models that combine 3D perception with language capabilities.
 ## Benchmark Characteristics
 
 - **Task**: Introduces the novel task of dense captioning in 3D RGB-D scans. This involves jointly localizing and describing each object in a 3D scene.

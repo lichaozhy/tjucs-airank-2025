@@ -63,8 +63,7 @@ properties:
 
 ## Introduction
 
-OpenEQA, the first open-vocabulary benchmark supporting both approaches, along with an LLM-powered evaluation protocol that aligns well with human judgment. Experiments show state-of-the-art models still lag behind humans, making OpenEQA a challenging and practical benchmark for future research in Embodied AI and related fields.
-
+OpenEQA is the first open-vocabulary benchmark dataset for EQA supporting both episodic memory and active exploration use cases. OpenEQA contains over 1600 high-quality human generated questions drawn from over 180 real-world environments. OpenEQA stands out as a straightforward, measurable, and practically relevant benchmark that poses a considerable challenge to current generation of AI models.
 ![alt text](assets/2-1.png)
 
 ## Data Statistics

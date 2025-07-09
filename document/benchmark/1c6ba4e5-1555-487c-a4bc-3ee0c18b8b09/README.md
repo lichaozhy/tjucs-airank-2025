@@ -29,14 +29,13 @@ properties:
 
 ![alt text](assets/1-1.png)
 
-The R2R_VLNCE dataset is a port of the Room-to-Room (R2R) dataset created by Anderson et al for use with the Matterport3DSimulator (MP3D-Sim).
-
+VLN-CE R2R dataset consists of 4475 trajectories. For each trajectory, R2R-CE provides the multiple natural language instructions from R2R and a pre-computed shortest path following the waypoints via low-level actions. The low-level action space of VLN-CE R2R makes trajectories significantly longer horizon tasks – with an average of 55.88 steps compared to the 4-6 in R2R.
 ## Evaluation
 Download the repo and set-up the environment: https://github.com/jzhzhang/NaVid-VLN-CE
 
 Succesfully run eval_navid_vlnce.sh
 
-Since package "transformers" in the qwen conda environment is not compatible with the vlnce_navid conda environment. So use "flask run" of the file app.py to start a server and then access this server API in the evaluation pipeline. Please change "app.run(host="x.x.x.x",port=5558)" in the file "app.py" and 'URL_MAPPING = {"Qwen2.5-VL-7B-Instruct": "http://x.x.x.x:x/predict",}' in the file "base_agent.py" 
+Since package "transformers" in the qwen conda environment is not compatible with the vlnce_navid conda environment. So use "flask run" of the file app.py to start a server and then access this server API in the evaluation pipeline. Please change "app.run(host="x.x.x.x",port=5558)" in the file "app.py" and 'URL_MAPPING = {"Qwen2.5-VL-7B-Instruct": "http://x.x.x.x:x/predict",}' in the file "base_agent.py"
 
 Then add files in the current repo into the above repo
 
@@ -56,6 +55,6 @@ run "sh eval_base_vlnce.sh --model gpt-4o --config rxr"
   author={Jacob Krantz and Erik Wijmans and Arjun Majundar and Dhruv Batra and Stefan Lee},
   booktitle={European Conference on Computer Vision (ECCV)},
   year={2020}
- }
+}
 
 ```
