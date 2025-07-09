@@ -4,6 +4,8 @@
 
 **Embodied Arena** is an open-source, comprehensive, and user-friendly evaluation system and platform for embodied AI models. It features three types of core embodied tasks, a diverse range of high-quality benchmarks, LLM-driven automatic evaluation data generation, and a systematic embodied capability taxonomy. The platform aims to present an up-to-date overview of embodied capabilities of advanced models and facilitate the identification of critical research areas, thereby accelerating progress in the field of Embodied AI.
 
+***
+
 ## What Makes Embodied Arena Special?
 
 ### 🎯 **Comprehensive Evaluation System**
@@ -47,12 +49,12 @@ Clean, standardized evaluation framework with uniform input/output formats enabl
 - **Professional Management**: Detailed experiment tracking and transparent result presentation
 - **Real-time Updates**: Monthly leaderboard updates with dynamic performance tracking
 
-#### 🔄 **Continuously Updated High-quality Evaluation Datasets**
+#### 🔄 **High-quality Evaluation Datasets**
 
-Curated high-quality evaluation datasets with strong discriminative power, continuously evolved through LLM-driven automated generation pipeline.
+Curated evaluation datasets with strong discriminative power across varying difficulty levels, continuously evolved through LLM-driven automated generation pipeline.
 
 - **LLM-driven Generation**: Unique approach for embodied evaluation data creation
-- **Quality Assurance**: High discriminative power with rigorous curation standards
+- **Diverse Difficulty**: Curated evaluation datasets across varying difficulty levels
 - **Continuous Evolution**: Regular dataset updates ensuring relevance and challenge
 
 #### 📊 **Diverse Evaluation Methodologies**
@@ -63,7 +65,9 @@ Complementary evaluation paradigms including accuracy-based QA assessment (exact
 - **Comprehensive Coverage**: Question answering, navigation, and task planning evaluation
 - **Transparent Results**: Open and accessible performance comparisons with detailed capability analysis
 
-## 3 Core Leaderboards
+***
+
+## Three Core Leaderboards
 
 ### 1. 🤔 **Embodied Question Answering Leaderboard**
 
@@ -101,7 +105,7 @@ Complementary evaluation paradigms including accuracy-based QA assessment (exact
 - **EB-ALFRED**: High-level embodied planning benchmark built on ALFRED dataset
 - **EB-Habitat**: 3D embodied navigation benchmark for long-horizon goal-directed navigation
 
-## 7 Core Capability Framework
+***
 
 ## Seven Core Capability Framework
 
@@ -193,7 +197,7 @@ Strategic planning and execution capabilities for complex embodied tasks.
 
 **Supported Benchmarks**: VSI-Bench, ERQA, RoboVQA, EB-ALFRED, EB-Habitat, ET-Plan-Bench
 
-
+***
 
 ## Supported Model Types
 
@@ -202,8 +206,6 @@ EmbodiedArena evaluates a comprehensive range of AI models, from general-purpose
 ### 🌟 **General Multimodal Models**
 
 Large-scale multimodal models with strong vision-language understanding capabilities, suitable for embodied question answering and high-level reasoning tasks.
-
-**Leading Commercial Models**:
 
 - **OpenAI**: GPT-4o, GPT-4V, GPT-3.5-Turbo
 - **Google DeepMind**: Gemini-2.0-Flash, Gemini-2.0-Pro, Gemini-2.5-Pro
@@ -254,6 +256,8 @@ Advanced models designed for 3D scene understanding and spatial reasoning tasks.
 
 **Applications**: ScanQA, SQA3D, Scan2Cap, and other 3D QA benchmarks
 
+***
+
 ## How We Evaluate
 
 Embodied Arena extensively supports comprehensive evaluation of models from different sources (open-source, close-source) by different means (model parameters, API), offering flexibility and convenience for users to join. The platform leverages a diverse range of well-curated embodied AI benchmarks, ensuring high alignment with canonical evaluation methods and the best completeness compared to prior works.
@@ -299,6 +303,8 @@ During the evaluation phase, we select the corresponding evaluation metric based
 - **Accuracy-based QA Assessment**: Exact and fuzzy matching evaluation with both rule-based and LLM-based metrics
 - **Interactive Simulation-based Testing**: Success rate metrics for comprehensive capability evaluation in navigation and task planning scenarios
 - **LLM-driven Automatic Generation**: Unique approach ensuring diversity of scenarios and tasks while maintaining evaluation safety and high-quality assessment standards
+
+***
 
 ## Join Embodied Arena
 
