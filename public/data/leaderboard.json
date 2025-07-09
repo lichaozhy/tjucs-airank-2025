@@ -74,6 +74,14 @@
 							"benchmark": "27e481d6-6057-49dc-ad80-529f9127245f",
 							"key": "Total"
 						}
+					},
+					{
+						"type": "reference",
+						"label": "VABench-Point",
+						"ref": {
+							"benchmark": "089294d0-59db-47f0-a543-19d8e3708448",
+							"key": "Total"
+						}
 					}
 				],
 				"models": {
