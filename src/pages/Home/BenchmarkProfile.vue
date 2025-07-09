@@ -113,7 +113,7 @@ const PROFILE = {
 	evaluation system and platform for embodied AI models. It features three
 	types of core embodied tasks, a diverse range of high-quality benchmarks,
 	LLM-driven automatic evaluation data generation, and a systematic embodied
-	capability texnomy. Moreover, Embodied Arena offers professional supports for
+	capability taxonomy. Moreover, Embodied Arena offers professional supports for
 	advanced models and new benchmarks to join. The aim of Embodied Arena is to
 	present an up-to-date overview of embodied capabilities of advanced models
 	and facilitate the identification of critical research areas, thereby

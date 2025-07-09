@@ -4,7 +4,7 @@
 			<h2 class="text-indigo-10 text-weight-bold">{{ PROFILE.TITLE }}</h2>
 			<p
 				class="text-body1 text-grey-8"
-				style="max-width: 70em"
+				style="max-width: 72em"
 			>
 				{{ PROFILE.COMMENT }}
 			</p>
@@ -116,8 +116,9 @@ const PROFILE = {
 	TITLE: 'Embodied Arena has Covered 50+ Advanced Models',
 	COMMENT: `Embodied Arena evaluates both general large models and Embodied AI
 	models, including both leading commercial models and advanced academic
-	models, while eagerly calling for more open-/close-source models with
-	professional and user-friendly evaluation support`,
+	models. Embodied Arena is eagerly calling for more open-source and
+	close-source models to join with professional and user-friendly evaluation
+	support`,
 };
 
 const INTRODUCTION = {

@@ -46,32 +46,44 @@ const SECTION = {
 		{
 			ICON: 'lock_open',
 			TITLE: 'Comprehensive Embodied Capability Taxonomy',
-			COMMENT: 'Systematic categorization spanning object perception, spatial reasoning, temporal understanding, embodied knowledge, navigation, and task planning across multiple dimensions.',
+			COMMENT: `Systematic categorization spanning object perception, spatial
+			reasoning, temporal understanding, embodied knowledge, navigation, and
+			task planning across multiple dimensions.`,
 		},
 		{
 			ICON: 'smart_toy',
 			TITLE: 'Rich Model Support',
-			COMMENT: 'Comprehensive evaluation support for diverse AI architectures including general multimodal LLMs, specialized embodied models, and both open-source and close-source models.',
+			COMMENT: `Comprehensive evaluation support for diverse AI architectures
+			including general multimodal LLMs, specialized embodied models, and both
+			open-source and close-source models.`,
 		},
 		{
 			ICON: 'electric_bolt',
 			TITLE: 'Modular Benchmark Integration',
-			COMMENT: 'Comprehensive integration of diverse evaluation benchmarks including visual QA, navigation tasks, task planning, and both 2D/3D scenarios, with flexible extensibility for new benchmarks.',
+			COMMENT: `Comprehensive integration of diverse evaluation benchmarks
+			including visual QA, navigation tasks, task planning, and both 2D/3D
+			scenarios, with flexible extensibility for new benchmarks.`,
 		},
 		{
 			ICON: 'hive',
 			TITLE: 'Unified Evaluation Infrastructure',
-			COMMENT: 'Clean, standardized evaluation framework with uniform input/output formats enabling seamless and rapid distributed assessment across diverse embodied AI benchmarks.',
+			COMMENT: `Clean, standardized evaluation framework with uniform
+			input/output formats enabling seamless and rapid distributed assessment
+			across diverse embodied AI benchmarks.`,
 		},
 		{
 			ICON: 'construction',
-			TITLE: 'Continuously Updated High-quality Evaluation Datasets',
-			COMMENT: 'Curated high-quality evaluation datasets with strong discriminative power, continuously evolved through LLM-driven automated generation pipeline.',
+			TITLE: 'High-Quality Evaluation Datasets',
+			COMMENT: `Curated evaluation datasets across varying difficulty levels,
+			continuously evolved through LLM-driven automated generation pipeline.`,
 		},
 		{
 			ICON: 'api',
-			TITLE: 'Diverse Evaluation Methodologies',
-			COMMENT: 'Complementary evaluation paradigms including accuracy-based QA assessment (exact and fuzzy matching evaluation) and interactive simulation-based testing (success rate metrics) for comprehensive embodied capability evaluation.',
+			TITLE: 'Multifaceted Evaluation Methodologies',
+			COMMENT: `Complementary evaluation paradigms including accuracy-based QA
+			assessment (exact and fuzzy matching evaluation) and interactive
+			simulation-based testing (success rate metrics) for comprehensive
+			embodied capability evaluation.`,
 		},
 	],
 };
