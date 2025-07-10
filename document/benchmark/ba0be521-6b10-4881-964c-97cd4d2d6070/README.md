@@ -49,14 +49,19 @@ properties:
     index: 4
     label: World Knowledge
     unit: null
-  SpatialPerception:
+  ObjectLocalization:
     order: 6
     index: 5
-    label: Spatial Perception
+    label: Object Localization
+    unit: null
+  SpatialReasoning:
+    order: 7
+    index: 6
+    label: Spatial Reasoning
     unit: null
   Total:
     order: 0
-    index: 6
+    index: 7
     label: Total Score
     unit: null
 ---
@@ -80,9 +85,9 @@ Illustration of LLM-Match evaluation and workflow. While the open-vocabulary nat
 
 ```
 @inproceedings{OpenEQA2023,
-        title         = {OpenEQA: Embodied Question Answering in the Era of Foundation Models},
-        booktitle     = {Conference on Computer Vision and Pattern Recognition (CVPR)},
-        author        = {Majumdar, Arjun and Ajay, Anurag and Zhang, Xiaohan and Putta, Pranav and Yenamandra, Sriram and Henaff, Mikael and Silwal, Sneha and Mcvay, Paul and Maksymets, Oleksandr and Arnaud, Sergio and Yadav, Karmesh and Li, Qiyang and Newman, Ben and Sharma, Mohit and Berges, Vincent and Zhang, Shiqi and Agrawal, Pulkit and Bisk, Yonatan and Batra, Dhruv and Kalakrishnan, Mrinal and Meier, Franziska and Paxton, Chris and Sax, Sasha and Rajeswaran, Aravind},
-        year          = {2024},
+        title = {OpenEQA: Embodied Question Answering in the Era of Foundation Models},
+        booktitle = {Conference on Computer Vision and Pattern Recognition (CVPR)},
+        author = {Majumdar, Arjun and Ajay, Anurag and Zhang, Xiaohan and Putta, Pranav and Yenamandra, Sriram and Henaff, Mikael and Silwal, Sneha and Mcvay, Paul and Maksymets, Oleksandr and Arnaud, Sergio and Yadav, Karmesh and Li, Qiyang and Newman, Ben and Sharma, Mohit and Berges, Vincent and Zhang, Shiqi and Agrawal, Pulkit and Bisk, Yonatan and Batra, Dhruv and Kalakrishnan, Mrinal and Meier, Franziska and Paxton, Chris and Sax, Sasha and Rajeswaran, Aravind},
+        year = {2024},
     }
 ```

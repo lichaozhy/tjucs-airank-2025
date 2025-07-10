@@ -69,7 +69,7 @@ Scan2Cap is a benchmark for dense captioning in 3D scans captured using commodit
 ```
 @inproceedings{chen2021scan2cap,
   title={Scan2Cap: Context-aware Dense Captioning in RGB-D Scans},
-  author={Chen, Zhenyu and Gholami, Ali and Nie{\ss}ner, Matthias and Chang, Angel X},
+  author={Dave Zhenyu Chen and Ali Gholami and Matthias Nießner and Angel X. Chang},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   pages={3193--3203},
   year={2021}

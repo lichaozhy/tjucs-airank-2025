@@ -22,6 +22,11 @@ properties:
     index: 0
     label: Total SR
     unit: null
+  InstructionNavigation:
+    order: 1
+    index: 1
+    label: Instruction Navigation
+    unit: null
 ---
 
 

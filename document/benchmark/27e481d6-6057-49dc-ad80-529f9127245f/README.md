@@ -92,13 +92,10 @@ In addition, to evaluate the agent’s physical perception and reasoning capabil
 ## Citation
 
 ```
-@misc{ma2025phyblockprogressivebenchmarkphysical,
+@article{ma2025phyblockprogressivebenchmarkphysical,
   title={PhyBlock: A Progressive Benchmark for Physical Understanding and Planning via 3D Block Assembly},
   author={Liang Ma and Jiajun Wen and Min Lin and Rongtao Xu and Xiwen Liang and Bingqian Lin and Jun Ma and Yongxin Wang and Ziming Wei and Haokun Lin and Mingfei Han and Meng Cao and Bokui Chen and Ivan Laptev and Xiaodan Liang},
-  year={2025},
-  eprint={2506.08708},
-  archivePrefix={arXiv},
-  primaryClass={cs.RO},
-  url={https://arxiv.org/abs/2506.08708},
+  journal={arXiv preprint arXiv:2506.08708},
+  year={2025}
 }
 ```

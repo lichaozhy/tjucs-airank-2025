@@ -55,13 +55,10 @@ RoboVQA  consists of 238h (10 days) of (video, text) pairs coming from recording
 ## Citation
 
 ```
-@misc{sermanet2023robovqamultimodallonghorizonreasoning,
-      title={RoboVQA: Multimodal Long-Horizon Reasoning for Robotics},
-      author={Pierre Sermanet and Tianli Ding and Jeffrey Zhao and Fei Xia and Debidatta Dwibedi and Keerthana Gopalakrishnan and Christine Chan and Gabriel Dulac-Arnold and Sharath Maddineni and Nikhil J Joshi and Pete Florence and Wei Han and Robert Baruch and Yao Lu and Suvir Mirchandani and Peng Xu and Pannag Sanketi and Karol Hausman and Izhak Shafran and Brian Ichter and Yuan Cao},
-      year={2023},
-      eprint={2311.00899},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2311.00899},
+@article{sermanet2023robovqamultimodallonghorizonreasoning,
+  title={RoboVQA: Multimodal Long-Horizon Reasoning for Robotics},
+  author={Pierre Sermanet and Tianli Ding and Jeffrey Zhao and Fei Xia and Debidatta Dwibedi and Keerthana Gopalakrishnan and Christine Chan and Gabriel Dulac-Arnold and Sharath Maddineni and Nikhil J Joshi and Pete Florence and Wei Han and Robert Baruch and Yao Lu and Suvir Mirchandani and Peng Xu and Pannag Sanketi and Karol Hausman and Izhak Shafran and Brian Ichter and Yuan Cao},
+  journal={arXiv preprint arXiv:2311.00899},
+  year={2023}
 }
 ```

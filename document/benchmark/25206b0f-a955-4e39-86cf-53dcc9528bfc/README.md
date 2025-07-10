@@ -97,8 +97,8 @@ VSI-Bench evaluates performance using two metrics: for multiple-choice questions
 @article{yang2024think,
     title={{Thinking in Space: How Multimodal Large Language Models See, Remember and Recall Spaces}},
     author={Yang, Jihan and Yang, Shusheng and Gupta, Anjali and Han, Rilyn and Fei-Fei, Li and Xie, Saining},
-    year={2024},
     journal={arXiv preprint arXiv:2412.14171},
+    year={2024}
 }
 
 ```

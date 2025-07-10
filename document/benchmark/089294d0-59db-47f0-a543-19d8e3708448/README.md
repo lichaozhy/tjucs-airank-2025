@@ -56,19 +56,16 @@ Evaluates models' spatial understanding capabilities of target regions by measur
 - **Evaluation Method**: Calculate the proportion of predicted points falling within target regions
 - **Boundary Handling**: For models that only output bounding boxes, uniform sampling within boxes is performed
 
-##### Quantitative Metrics
+##### Quantitative Metrics:
 - **Accuracy**: If the predicted point falls within the target area of the answer, it is considered correct; otherwise, it is considered incorrect.
 
 
 #### 2. Visual Trace Prediction (VABench-VisualTrace)
 Evaluates models' ability to predict complete manipulation trajectories using mathematical metrics to quantify trajectory accuracy.
 
-##### Quantitative Metrics
-- **MAE (Mean Absolute Error)**: $MAE = \frac{1}{T} \sum_{t=1}^{T} \|x_t - \hat{x_t}\|$
-- **RMSE (Root Mean Square Error)**: $RMSE = \sqrt{\frac{1}{T} \sum_{t=1}^{T} \|x_t - \hat{x_t}\|^2}$
-
-where $\tau = \{x_t | t = 1,2,...,T\}$ represents the ground truth trajectory and $\hat{\tau} = \{\hat{x_t} | t = 1,2,...,\hat{T}\}$ represents the predicted trajectory.
-
+##### Quantitative Metrics:
+- **MAE (Mean Absolute Error)**
+- **RMSE (Root Mean Square Error)**
 - **GPT Score**: Uses large language models to provide qualitative assessment of visualized trajectories on a 1-10 scale. The **Evaluation Dimensions** include: 
   - Trajectory reasonableness
   - Consistency with instructions
@@ -78,13 +75,10 @@ where $\tau = \{x_t | t = 1,2,...,T\}$ represents the ground truth trajectory an
 ## Citation
 
 ```
-@misc{yuan2025seeingdoingbridgingreasoning,
+@article{yuan2025seeingdoingbridgingreasoning,
       title={From Seeing to Doing: Bridging Reasoning and Decision for Robotic Manipulation}, 
       author={Yifu Yuan and Haiqin Cui and Yibin Chen and Zibin Dong and Fei Ni and Longxin Kou and Jinyi Liu and Pengyi Li and Yan Zheng and Jianye Hao},
-      year={2025},
-      eprint={2505.08548},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2505.08548}, 
+      journal={arXiv preprint arXiv:2505.08548},
+      year={2025}
 }
 ```

@@ -17,30 +17,30 @@ default:
 capabilities:
   - Object Navigation
 properties:
-  Base:
+  BaseCapability:
     order: 1
     index: 0
-    label: Base
+    label: Base Capability
     unit: null
-  Common:
+  CommonSense:
     order: 2
     index: 1
-    label: Common
+    label: Common Sense
     unit: null
-  Complex:
+  ComplexInstruction:
     order: 3
     index: 2
-    label: Complex
+    label: Complex Instruction
     unit: null
-  Visual:
+  VisualAppearance:
     order: 4
     index: 3
-    label: Visual
+    label: Visual Appearance
     unit: null
-  Long:
+  LongHorizon:
     order: 5
     index: 4
-    label: Long
+    label: Long Horizon
     unit: null
   TotalSR:
     order: 0

@@ -22,6 +22,11 @@ properties:
     index: 0
     label: Total SR
     unit: null
+  InstructionNavigation:
+    order: 1
+    index: 1
+    label: Instruction Navigation
+    unit: null
 ---
 
 ## Introduction
@@ -58,7 +63,7 @@ VLN-CE RxR is a dataset of human-annotated navigation instructions in English, H
 @article{zhang2024navid,
         title={NaVid: Video-based VLM Plans the Next Step for Vision-and-Language Navigation},
         author={Zhang, Jiazhao and Wang, Kunyu and Xu, Rongtao and Zhou, Gengze and Hong, Yicong and Fang, Xiaomeng and Wu, Qi and Zhang, Zhizheng and Wang, He},
-        journal={Robotics: Science and Systems},
+        journal={Robotics: Science and Systems:2402.15852},
         year={2024}
 }
 ```

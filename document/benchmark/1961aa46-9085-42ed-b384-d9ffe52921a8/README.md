@@ -20,35 +20,35 @@ capabilities:
   - Spatial Reference Planning
   - Knowledge Reference Planning
 properties:
-  Base:
+  BaseCapability:
     order: 1
     index: 0
-    label: Base
+    label: Base Capability
     unit: null
-  Common:
+  CommonSense:
     order: 2
     index: 1
-    label: Common
+    label: Common Sense
     unit: null
-  Complex:
+  ComplexInstruction:
     order: 3
     index: 2
-    label: Complex
+    label: Complex Instruction
     unit: null
-  Visual:
+  VisualAppearance:
     order: 4
     index: 3
-    label: Visual
+    label: Visual Appearance
     unit: null
-  Spatial:
+  SpatialAwareness:
     order: 5
     index: 4
-    label: Spatial
+    label: Spatial Awareness
     unit: null
-  Long:
+  LongHorizon:
     order: 6
     index: 5
-    label: Long
+    label: Long Horizon
     unit: null
   TotalSR:
     order: 0
@@ -79,19 +79,19 @@ EB-ALFRED is a high-level embodied planning benchmark introduced in EmbodiedBenc
 ## Benchmark characteristics
 EB-ALFRED is designed to evaluate the high-level reasoning and planning ability of MLLMs in embodied environments. It exhibits several important characteristics that distinguish it from traditional embodied or vision-language tasks:
 
-1. High-Level Abstraction: Removes all low-level navigation and manipulation, focusing only on symbolic, skill-level planning grounded in vision and language.
+- High-Level Abstraction: Removes all low-level navigation and manipulation, focusing only on symbolic, skill-level planning grounded in vision and language.
 
-2. Multi-Instance Object Handling: Supports multiple identical object instances (e.g., cup 1, cup 2), which is critical for realistic household tasks.
+- Multi-Instance Object Handling: Supports multiple identical object instances (e.g., cup 1, cup 2), which is critical for realistic household tasks.
 
-3. Dynamic Action Space: The number of available actions varies per scene (171–298), depending on the number of visible and interactable objects.
+- Dynamic Action Space: The number of available actions varies per scene (171–298), depending on the number of visible and interactable objects.
 
-4. Language-Vision Feedback Loop: The model observes the world through egocentric RGB images and textual feedback about the last action’s success or failure.
+- Language-Vision Feedback Loop: The model observes the world through egocentric RGB images and textual feedback about the last action’s success or failure.
 
-5. PDDL-based Goal Checking: Task success is determined by symbolic state checks, not image comparison—enabling precise evaluation.
+- PDDL-based Goal Checking: Task success is determined by symbolic state checks, not image comparison—enabling precise evaluation.
 
-6. Subset Decomposition: Tasks are categorized into six subsets (Base, Common-Sense, Spatial, Appearance, Long-Horizon, etc.), enabling granular capability analysis.
+- Subset Decomposition: Tasks are categorized into six subsets (Base, Common-Sense, Spatial, Appearance, Long-Horizon, etc.), enabling granular capability analysis.
 
-7. Realistic and Diverse: Built upon real ALFRED task templates and environments rendered in AI2-THOR, ensuring naturalistic diversity and complexity.
+- Realistic and Diverse: Built upon real ALFRED task templates and environments rendered in AI2-THOR, ensuring naturalistic diversity and complexity.
 
 
 ## Data Statistics

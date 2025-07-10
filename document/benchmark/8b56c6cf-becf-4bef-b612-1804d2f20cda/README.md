@@ -18,12 +18,12 @@ capabilities:
   - Spatial Reasoning
 properties:
   EM:
-    order: 0
+    order: 1
     index: 0
     label: EM
     unit: null
   Total:
-    order: 1
+    order: 0
     index: 1
     label: Total Score
     unit: null

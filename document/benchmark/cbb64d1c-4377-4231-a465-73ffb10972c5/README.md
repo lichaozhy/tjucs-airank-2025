@@ -20,35 +20,35 @@ capabilities:
   - Spatial Reference Planning
   - Knowledge Reference Planning
 properties:
-  Base:
+  BaseCapability:
     order: 1
     index: 0
-    label: Base
+    label: Base Capability
     unit: null
-  Common:
+  CommonSense:
     order: 2
     index: 1
-    label: Common
+    label: Common Sense
     unit: null
-  Complex:
+  ComplexInstruction:
     order: 3
     index: 2
-    label: Complex
+    label: Complex Instruction
     unit: null
-  Visual:
+  VisualAppearance:
     order: 4
     index: 3
-    label: Visual
+    label: Visual Appearance
     unit: null
-  Spatial:
+  SpatialAwareness:
     order: 5
     index: 4
-    label: Spatial
+    label: Spatial Awareness
     unit: null
-  Long:
+  LongHorizon:
     order: 6
     index: 5
-    label: Long
+    label: Long Horizon
     unit: null
   TotalSR:
     order: 0
@@ -60,63 +60,52 @@ properties:
 ## Introduction
 
 ![alt text](assets/1-1.png)
+
 EB-Habitat is the 3D embodied navigation benchmark in EmbodiedBench, built on the HM3D dataset and executed in the Habitat 2.0 simulator. It evaluates an agent’s ability to perform long-horizon goal-directed navigation using only egocentric vision and natural language instructions, without access to ground-truth maps or GPS.
 
 Each episode gives the agent:
 
-A goal instruction (e.g., “Go to the kitchen”)
+- A goal instruction (e.g., “Go to the kitchen”)
 
-An egocentric RGB image at each timestep
+- An egocentric RGB image at each timestep
 
-Discrete movement actions (e.g., move forward, turn left, turn right, stop)
+- Discrete movement actions (e.g., move forward, turn left, turn right, stop)
 
-The agent must find its way to the correct semantic region in large, multi-room, real-world-like indoor environments—often requiring 10 to 50+ steps across multiple rooms and hallways.
+The agent must find its way to the correct semantic region in large, multi-room, real-world-like indoor environments, often requiring 10 to 50+ steps across multiple rooms and hallways.
 ## Benchmark characteristics
 EB-Habitat is designed to test long-range visual reasoning and spatial memory. It includes the following features:
 
-Semantic goal navigation: Tasks are defined by room types, not explicit coordinates (e.g., "find the bathroom").
+- Semantic goal navigation: Tasks are defined by room types, not explicit coordinates (e.g., "find the bathroom").
 
-High scene complexity: Environments are large and realistic, with multiple rooms, distractors, and occlusions.
+- High scene complexity: Environments are large and realistic, with multiple rooms, distractors, and occlusions.
 
-Long-horizon planning: Agents often traverse 10–40 meters, which may take 50+ steps and involve multiple turns, backtracking, and disambiguation.
+- Long-horizon planning: Agents often traverse 10–40 meters, which may take 50+ steps and involve multiple turns, backtracking, and disambiguation.
 
-Egocentric-only input: No depth, map, or localization signal is provided—only raw RGB and natural language.
+- Egocentric-only input: No depth, map, or localization signal is provided—only raw RGB and natural language.
 
-Habitat 2.0 realism: Uses realistic 3D layouts and textures from the HM3D dataset.
+- Habitat 2.0 realism: Uses realistic 3D layouts and textures from the HM3D dataset.
 
-Strict success metric: The agent must issue a stop command within a semantic room of the correct type.
-## Data Statistics
-300 tasks, sampled from Habitat scenes in the HM3D dataset.
-
-Goal types include common room categories: kitchen, bathroom, bedroom, living room, etc.
-
-Environments: Large multi-room houses with realistic furniture and lighting.
-
-Action space: move forward, turn left, turn right, stop.
-
-Success condition: Must end in a region labeled with the correct semantic type.
-
-Step limit: Up to 100 steps per episode.
+- Strict success metric: The agent must issue a stop command within a semantic room of the correct type.
 ## Evaluation
 The same 24 MLLMs (8 proprietary + 16 open-source) were evaluated in EB-Habitat using a greedy, step-by-step closed-loop execution setup.
 
 Highlights:
 
-GPT-4o again leads, with ~45% success rate—much lower than in EB-ALFRED or EB-Navigation due to the task's difficulty.
+- GPT-4o again leads, with ~45% success rate—much lower than in EB-ALFRED or EB-Navigation due to the task's difficulty.
 
-Claude-3.7-Sonnet follows at ~41%, also struggling with long-horizon memory and spatial ambiguity.
+- Claude-3.7-Sonnet follows at ~41%, also struggling with long-horizon memory and spatial ambiguity.
 
-Open-source models achieve much lower performance; most top out at 15–25% success.
+- Open-source models achieve much lower performance; most top out at 15–25% success.
 
-Vision is absolutely necessary here—removing it drops performance to near-zero.
+- Vision is absolutely necessary here—removing it drops performance to near-zero.
 
 Insights:
 
-The dominant failure mode is semantic confusion (e.g., stopping in the wrong room) or getting lost (e.g., looping or getting stuck).
+- The dominant failure mode is semantic confusion (e.g., stopping in the wrong room) or getting lost (e.g., looping or getting stuck).
 
-Success correlates with the model’s ability to maintain spatial memory and recognize semantic visual cues across diverse scenes.
+- Success correlates with the model’s ability to maintain spatial memory and recognize semantic visual cues across diverse scenes.
 
-Unlike EB-ALFRED, language alone is insufficient; fine-grained visual understanding and spatial awareness are critical.
+- Unlike EB-ALFRED, language alone is insufficient; fine-grained visual understanding and spatial awareness are critical.
 ## Citation
 
 ```
