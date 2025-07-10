@@ -23,6 +23,7 @@ capabilities:
   - Temporal Order
   - General Knowledge
   - Affordance Prediction
+  - Object Reasoning
   - Temporal Reasoning
   - Task Reasoning
   - Location Navigation
@@ -108,8 +109,6 @@ UniEQA, a new unified evaluation benchmark for embodied artificial intelligence,
 - **Automated Evaluation**: It constructs corresponding scoring rules and a unified automated evaluation method for different capability dimensions.
 
 ## Data Statistics
-
-- Data Collection: simulation (VirtualHome, BEHAVIOR-100, AI2-THOR)
 
   ![real-world (Ego4D, LEMMA, HM3D, and ScanNet)](assets/4-1.png)
 

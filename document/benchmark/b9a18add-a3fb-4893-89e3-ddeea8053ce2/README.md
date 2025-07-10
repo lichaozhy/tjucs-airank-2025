@@ -43,7 +43,9 @@ MineAnyBuild, a comprehensive benchmark to evaluate the spatial planning abiliti
 
 ## Evaluation
 
-MineAnyBuild involves approximately 4,000 spatial planning tasks with 500+ buildings/indoor decoration assets. These tasks, including Executable Spatial Plan Generation, Spatial Understanding, Creativity, Spatial Reasoning, and Spatial Commonsense, correspond to diverse evaluation dimensions, thereby conducting a comprehensive assessment of AI agents’ spatial planning capabilities. In Executable Spatial Plan Generation, Spatial Understanding, and Creativity tasks, the agent needs to generate executable spatial plans for building an architecture according to the given instructions. While in Spatial Reasoning and Spatial Commonsense tasks, MineAnyBuild introduces ~2,000 VQA pairs, where it asks the agent to answer the given questions, accompanied by the related images.
+MineAnyBuild involves approximately 4,000 spatial planning tasks with 500+ buildings/indoor decoration assets. These tasks, including Executable Spatial Plan Generation, Spatial Understanding, Creativity, Spatial Reasoning, and Spatial Commonsense, correspond to diverse evaluation dimensions, thereby conducting a comprehensive assessment of AI agents’ spatial planning capabilities.
+
+In Executable Spatial Plan Generation, Spatial Understanding, and Creativity tasks, the agent needs to generate executable spatial plans for building an architecture according to the given instructions. While in Spatial Reasoning and Spatial Commonsense tasks, MineAnyBuild introduces ~2,000 VQA pairs, where it asks the agent to answer the given questions, accompanied by the related images.
 
 ### Spatial Reasoning VQA Task
 
