@@ -26,7 +26,7 @@
 
 			<div class="q-mt-sm">
 				<q-chip
-					size="11px"
+					size="15px"
 					color="teal-8"
 					v-for="(item, index) in propertyEntityList"
 					:key="index"
@@ -46,7 +46,7 @@
 					>{{ item.label }}</div>
 					<div
 						v-if="item.value"
-						class="bg-indigo-10 q-px-sm glossy text-weight-thin text-white"
+						class="bg-indigo-10 q-px-sm glossy text-white"
 						style="margin-right: -0.4em;"
 					>{{ item.value }}</div>
 				</q-chip>
