@@ -16,8 +16,7 @@
 </template>
 
 <script setup lang="ts">
-const CITATION =
-`@article{UniEQA2025,
+const CITATION = `@article{UniEQA2025,
   title={UniEQA & UniEval: A Unified Benchmark and Evaluation Platform for  Multimodal Foundation Models in Embodied Question Answering},
   year={2025}
 }`;

@@ -29,13 +29,14 @@ properties:
     unit: null
 ---
 
-
 ## Introduction
 
 ![alt text](assets/1-1.png)
 
 VLN-CE R2R dataset consists of 4475 trajectories. For each trajectory, R2R-CE provides the multiple natural language instructions from R2R and a pre-computed shortest path following the waypoints via low-level actions. The low-level action space of VLN-CE R2R makes trajectories significantly longer horizon tasks – with an average of 55.88 steps compared to the 4-6 in R2R.
+
 ## Evaluation
+
 - Download the repo and set-up the environment: https://github.com/jzhzhang/NaVid-VLN-CE
 
 - Succesfully run eval_navid_vlnce.sh

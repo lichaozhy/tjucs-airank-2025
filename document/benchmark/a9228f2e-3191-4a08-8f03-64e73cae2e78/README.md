@@ -44,7 +44,6 @@ Where2Place is a benchmark for spatial free-space reference on challenging real 
 
 - Consists of 100 real-world images from homes and offices.
 
-
 ## Evaluation
 
 The Spatial Reference Accuracy (SRA) metric evaluates the precision of predicted spatial points (from text like JSON coordinates or tuples) against a ground truth mask (binary or bounding box). It parses predictions into pixel coordinates, checks their validity within image dimensions, and computes accuracy as the ratio of points within the mask to total valid points. Returns 0 for empty predictions or processing errors, suitable for object localization and region-based tasks but sensitive to coordinate scaling.

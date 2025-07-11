@@ -1,5 +1,7 @@
 <template>
-	<div class="column content-center justify-center items-center q-pa-xl text-indigo-10">
+	<div
+		class="column content-center justify-center items-center q-pa-xl text-indigo-10"
+	>
 		<div class="app-content-main full-width q-mt-xl">
 			<AppHomeBenchmark />
 			<q-space class="q-my-xl q-py-xl" />

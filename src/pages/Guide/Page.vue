@@ -32,7 +32,9 @@
 								:key="item.id"
 								:to="{ hash: `#${item.id}` }"
 							>
-								<q-item-section :style="{ 'padding-left': `${item.depth * 1}em` }">
+								<q-item-section
+									:style="{ 'padding-left': `${item.depth * 1}em` }"
+								>
 									<div class="text-grey-8">
 										{{ item.label }}
 									</div>
@@ -51,7 +53,7 @@ import { ref, onBeforeMount, watch, nextTick } from 'vue';
 import * as Backend from 'src/backend';
 
 interface TOCItem {
-	id: string,
+	id: string;
 	label: string | null;
 	depth: number;
 }
@@ -70,11 +72,12 @@ watch(documentHTML, async () => {
 	await nextTick(() => {
 		const headingList = document.value!.querySelectorAll('h1, h2, h3');
 
-		toc.value = [...headingList].map(element => {
+		toc.value = [...headingList].map((element) => {
 			return {
 				id: element.id,
 				label: element.textContent,
-				depth: HEADING_DEPTH_MAP[element.tagName as keyof typeof HEADING_DEPTH_MAP],
+				depth:
+					HEADING_DEPTH_MAP[element.tagName as keyof typeof HEADING_DEPTH_MAP],
 			};
 		});
 	});

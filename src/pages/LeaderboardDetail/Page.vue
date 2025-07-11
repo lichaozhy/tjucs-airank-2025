@@ -19,9 +19,7 @@
 			v-for="benchmark in filteredBenchmarkList"
 			:key="benchmark.id"
 		>
-			<AppBenchmarkScoreCard
-				:benchmark="benchmark"
-			/>
+			<AppBenchmarkScoreCard :benchmark="benchmark" />
 		</div>
 	</div>
 </template>

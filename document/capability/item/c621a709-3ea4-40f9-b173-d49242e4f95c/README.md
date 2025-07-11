@@ -10,6 +10,7 @@ order: 0
 | **Benchmark** | **Capability Dimension** |
 | ------------- | ------------------------ |
 | UniEQA        | Situated Reasoning       |
+
 </div>
 
 <div class="col-4">

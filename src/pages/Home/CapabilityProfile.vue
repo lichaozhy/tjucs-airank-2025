@@ -44,7 +44,7 @@
 			<div class="col relative-postion text-black">
 				<div
 					class="app-markdown-html q-mb-md"
-					style="height: 14em;"
+					style="height: 14em"
 					v-html="groupContent"
 				></div>
 
@@ -167,8 +167,9 @@ defineOptions({ name: 'AppPageHomeBenchmarkProfile' });
 <style>
 .app-capability-markdown {
 	table {
-		margin:0;
-		td, th {
+		margin: 0;
+		td,
+		th {
 			padding: 0.2em 0.5em;
 		}
 	}

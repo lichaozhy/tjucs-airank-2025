@@ -37,8 +37,8 @@ export type ModelPropertyRecordGroup = {
 	language: Record<string, number>;
 	author: Record<string, number>;
 	size: Record<string, number>;
-	year: Record<string, number>
-}
+	year: Record<string, number>;
+};
 
 export type ModelPropertyValueGroup = {
 	vision: string[];
@@ -46,7 +46,7 @@ export type ModelPropertyValueGroup = {
 	author: string[];
 	size: number[];
 	year: number[];
-}
+};
 
 export const Data: {
 	ModelProperty: ModelPropertyRecordGroup;
@@ -79,7 +79,9 @@ export async function init() {
 		Model: await fetchAllModel(),
 		Score: await fetchAllScore(),
 		Configuration: await (async () => {
-			const configuration = await fetch('/data/configuration.json').then(readJSON);
+			const configuration = await fetch('/data/configuration.json').then(
+				readJSON,
+			);
 
 			return Spec.Configuration.Schema.parse(configuration);
 		})(),
@@ -197,8 +199,8 @@ export const API = {
 							vision: Object.keys(Data.ModelProperty.vision),
 							language: Object.keys(Data.ModelProperty.language),
 							author: Object.keys(Data.ModelProperty.author),
-							size: Object.keys(Data.ModelProperty.size).map(v => Number(v)),
-							year: Object.keys(Data.ModelProperty.year).map(v => Number(v)),
+							size: Object.keys(Data.ModelProperty.size).map((v) => Number(v)),
+							year: Object.keys(Data.ModelProperty.year).map((v) => Number(v)),
 						};
 					},
 				},
@@ -219,6 +221,14 @@ export const API = {
 		Item: {
 			async query() {
 				return Capability.Item;
+			},
+		},
+		Level: {
+			Core: {
+				async query() {},
+			},
+			Sub: {
+				async query() {},
 			},
 		},
 	},

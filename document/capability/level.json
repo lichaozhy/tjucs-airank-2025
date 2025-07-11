@@ -1,0 +1,166 @@
+{
+	"core": [
+		{
+			"group": "01684595-db84-46b8-be9a-c9ddc9b71183",
+			"index": 0,
+			"order": 0
+		},
+		{
+			"group": "0686cd7d-361e-41bd-8c23-6fd6b19c218c",
+			"index": 1,
+			"order": 1
+		},
+		{
+			"group": "6eb76c3d-8561-470a-bb91-9eb8a6e49390",
+			"index": 2,
+			"order": 2
+		},
+		{
+			"group": "90223202-c877-4466-b828-ed33dd0b4502",
+			"index": 3,
+			"order": 3
+		},
+		{
+			"group": "9baa89a1-9993-4a56-aadf-645709d17df5",
+			"index": 4,
+			"order": 4
+		},
+		{
+			"group": "a88b3a6d-4046-42e9-9f17-3f4826417521",
+			"index": 5,
+			"order": 5
+		},
+		{
+			"group": "ccb40962-b21d-4e43-b801-32e8052676e0",
+			"index": 6,
+			"order": 6
+		}
+	],
+	"item": [
+		{
+			"item": "00104580-ecc5-477b-890a-862e005498a0",
+			"index": 0,
+			"order": 0
+		},
+		{
+			"item": "0f5a0502-96d3-4b0d-a694-b280a336e88f",
+			"index": 1,
+			"order": 1
+		},
+		{
+			"item": "1db62c35-bf87-4c53-8d9b-5b9c7ecb73fe",
+			"index": 2,
+			"order": 2
+		},
+		{
+			"item": "395636d1-9588-47cc-ae43-02df5c81a21a",
+			"index": 3,
+			"order": 3
+		},
+		{
+			"item": "446d6de6-1bbc-4253-a0e2-bbf5c6a31829",
+			"index": 4,
+			"order": 4
+		},
+		{
+			"item": "55c8692a-e648-413c-b0cf-4137330ef459",
+			"index": 5,
+			"order": 5
+		},
+		{
+			"item": "7a9b89e0-c4ef-46d0-8c67-7e18a198d18d",
+			"index": 6,
+			"order": 6
+		},
+		{
+			"item": "814df209-291c-4a33-abc7-500fc00f5a06",
+			"index": 7,
+			"order": 7
+		},
+		{
+			"item": "9bf16ca1-fe43-4f5c-a5c0-62d5f3bc1117",
+			"index": 8,
+			"order": 8
+		},
+		{
+			"item": "97d9a33f-8e9d-4e75-97b0-91a248c45b96",
+			"index": 9,
+			"order": 9
+		},
+		{
+			"item": "a4e576c4-5d58-432d-8b96-7019997e2510",
+			"index": 10,
+			"order": 10
+		},
+		{
+			"item": "b0c02c0e-b6b7-4597-ac0b-00bfefe8b40c",
+			"index": 11,
+			"order": 11
+		},
+		{
+			"item": "c621a709-3ea4-40f9-b173-d49242e4f95c",
+			"index": 12,
+			"order": 12
+		},
+		{
+			"item": "d60d4022-1103-4604-af3f-c56e1be08f9c",
+			"index": 13,
+			"order": 13
+		},
+		{
+			"item": "86c2b150-3c01-448c-b47e-b11fedd8f0f9",
+			"index": 14,
+			"order": 14
+		},
+		{
+			"item": "c04daccf-8467-4afd-bd23-6416e2003229",
+			"index": 15,
+			"order": 15
+		},
+		{
+			"item": "9fc3620f-aae4-4fa8-8926-4c5b9a2de46b",
+			"index": 16,
+			"order": 16
+		},
+		{
+			"item": "ef1b0233-b238-421e-aa68-568be1599882",
+			"index": 17,
+			"order": 17
+		},
+		{
+			"item": "ef769c5b-5865-4918-b99c-d5281c6147a1",
+			"index": 18,
+			"order": 18
+		},
+		{
+			"item": "f8ad281d-3f92-4f75-aa4a-f4c09b90d112",
+			"index": 19,
+			"order": 19
+		},
+		{
+			"item": "1b70980e-fa1a-4eaf-b401-665e68b72ad1",
+			"index": 20,
+			"order": 20
+		},
+		{
+			"item": "8153b32d-c4e2-4b2d-b7e8-18d55e1d655d",
+			"index": 21,
+			"order": 21
+		},
+		{
+			"item": "e29b6653-f452-47dc-8f5a-9eae7a751e3a",
+			"index": 22,
+			"order": 22
+		},
+		{
+			"item": "e7ee1d23-a082-4c5f-b3f6-ba90d03dbe3f",
+			"index": 23,
+			"order": 23
+		},
+		{
+			"item": "e945016a-f007-4c07-8713-229de5fffadc",
+			"index": 24,
+			"order": 24
+		}
+	]
+}

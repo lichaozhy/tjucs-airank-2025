@@ -18,9 +18,7 @@
 		"default": {
 			"property": "TotalSR"
 		},
-		"capabilities": [
-			"Instruction Navigation"
-		],
+		"capabilities": ["Instruction Navigation"],
 		"properties": {
 			"TotalSR": {
 				"order": 0,
@@ -264,9 +262,7 @@
 		"default": {
 			"property": "TotalSR"
 		},
-		"capabilities": [
-			"Instruction Navigation"
-		],
+		"capabilities": ["Instruction Navigation"],
 		"properties": {
 			"TotalSR": {
 				"order": 0,
@@ -578,9 +574,7 @@
 		"default": {
 			"property": "TotalSR"
 		},
-		"capabilities": [
-			"Object Navigation"
-		],
+		"capabilities": ["Object Navigation"],
 		"properties": {
 			"Base": {
 				"order": 1,
@@ -639,9 +633,7 @@
 		"default": {
 			"property": "Total"
 		},
-		"capabilities": [
-			"Spatial Reasoning"
-		],
+		"capabilities": ["Spatial Reasoning"],
 		"properties": {
 			"EM": {
 				"order": 0,
@@ -676,9 +668,7 @@
 		"default": {
 			"property": "Total"
 		},
-		"capabilities": [
-			"Affordance Prediction"
-		],
+		"capabilities": ["Affordance Prediction"],
 		"properties": {
 			"Total": {
 				"order": 0,
@@ -707,10 +697,7 @@
 		"default": {
 			"property": "Total"
 		},
-		"capabilities": [
-			"Spatial Reasoning",
-			"Knowledge Reasoning"
-		],
+		"capabilities": ["Spatial Reasoning", "Knowledge Reasoning"],
 		"properties": {
 			"Spatial Reasoning": {
 				"order": 1,
@@ -894,9 +881,7 @@
 		"default": {
 			"property": "Total"
 		},
-		"capabilities": [
-			"Spatial Relationship"
-		],
+		"capabilities": ["Spatial Relationship"],
 		"properties": {
 			"CIDEr": {
 				"order": 1,
@@ -937,9 +922,7 @@
 		"default": {
 			"property": "Total"
 		},
-		"capabilities": [
-			"Spatial Localization"
-		],
+		"capabilities": ["Spatial Localization"],
 		"properties": {
 			"CIDEr": {
 				"order": 1,

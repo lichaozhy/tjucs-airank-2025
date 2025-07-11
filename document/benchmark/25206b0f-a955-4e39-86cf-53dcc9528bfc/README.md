@@ -86,11 +86,12 @@ VSI-Bench quantitatively evaluates the visual-spatial intelligence of MLLMs from
 - **Data Source**: It comprises over 5,000 question-answer pairs derived from 288 real indoor-scene videos. These videos are sourced from existing public indoor 3D scene reconstruction datasets: ScanNet, ScanNet++, and ARKitScenes. The datasets were chosen for their diverse environments (residential, professional, industrial) and accurate object-level annotations.
 
 | ![](assets/1-2.png) | ![](assets/1-3.png) |
-|---------------------|---------------------|
+| ------------------- | ------------------- |
 
 ## Evaluation
 
 VSI-Bench evaluates performance using two metrics: for multiple-choice questions, Accuracy is used, calculated based on exact matches. For numerical-answer questions, a new metric called MRA (Mean Relative Accuracy) is introduced to assess how closely model predictions align with ground truth values. Out-of-the-box evaluation of VSI-Bench in GitHub repository, including the metrics implementation used in our framework
+
 ## Citation
 
 ```

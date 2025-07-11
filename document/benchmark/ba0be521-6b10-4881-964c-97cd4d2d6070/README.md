@@ -74,9 +74,10 @@ OpenEQA is the first open-vocabulary benchmark dataset for EQA supporting both e
 
 ## Data Statistics
 
-Example questions and dataset statistics of OpenEQA. The episode history H provides a human-like tour of a home. EQA agents must answer diverse, human-generated questions Q from 7 EQA categories, aiming match the ground answers A*. Tours are collected from diverse environments including home and office locations (not shown above). Dataset statistics (right) break down the question distribution by video source (top), question category (middle), and episodic memory vs active setting. Note that, by design, the HM3D questions are shared across the EM-EQA and A-EQA settings.
+Example questions and dataset statistics of OpenEQA. The episode history H provides a human-like tour of a home. EQA agents must answer diverse, human-generated questions Q from 7 EQA categories, aiming match the ground answers A\*. Tours are collected from diverse environments including home and office locations (not shown above). Dataset statistics (right) break down the question distribution by video source (top), question category (middle), and episodic memory vs active setting. Note that, by design, the HM3D questions are shared across the EM-EQA and A-EQA settings.
 
 ## Evaluation
+
 Illustration of LLM-Match evaluation and workflow. While the open-vocabulary nature makes EQA realistic, it poses a challenge for evaluation due to multiplicity of correct answers. One approach to evaluation is human trials, but it can be prohibitively slow and expensive, especially for benchmarks. As an alternative, OpenEQA use an LLM to evaluate the correctness of open-vocabulary answers produced by EQA agents.
 
 ![alt text](assets/4-1.png)

@@ -62,7 +62,10 @@ const PROPERTY_GROUP = ref<ModelPropertyValueGroup | null>(null);
 const propertyNameOption = ref<string | null>(null);
 const propertyValueOption = ref<string | number | null>(null);
 
-type PropertyTester = (data: Spec.Model.Type, target: string | number | boolean) => boolean;
+type PropertyTester = (
+	data: Spec.Model.Type,
+	target: string | number | boolean,
+) => boolean;
 
 const PropertyTester: Record<string, PropertyTester> = {
 	size: (data, target) => {
@@ -113,7 +116,7 @@ const PropertyTester: Record<string, PropertyTester> = {
 			return false;
 		}
 
-		return data.opensource === target as boolean;
+		return data.opensource === (target as boolean);
 	},
 	imageVideo: (data, target) => {
 		if (data.imageVideo === undefined) {
@@ -217,8 +220,7 @@ watch(propertyValueOption, (valueOption) => {
 	emit('filter-update', (data) => {
 		return PropertyTester[Property.name]!(data, Property.value);
 	});
-},
-);
+});
 
 const emit = defineEmits<{
 	'filter-update': [ModelFilter];

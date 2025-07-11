@@ -74,7 +74,7 @@ const columnList = computed(() => {
 		return [];
 	}
 
-	return summary.value!.properties.map(property => property.label);
+	return summary.value!.properties.map((property) => property.label);
 });
 
 const currentFilter = ref<ModelFilter>(() => true);

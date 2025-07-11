@@ -72,7 +72,9 @@ Each episode gives the agent:
 - Discrete movement actions (e.g., move forward, turn left, turn right, stop)
 
 The agent must find its way to the correct semantic region in large, multi-room, real-world-like indoor environments, often requiring 10 to 50+ steps across multiple rooms and hallways.
+
 ## Benchmark characteristics
+
 EB-Habitat is designed to test long-range visual reasoning and spatial memory. It includes the following features:
 
 - Semantic goal navigation: Tasks are defined by room types, not explicit coordinates (e.g., "find the bathroom").
@@ -86,7 +88,9 @@ EB-Habitat is designed to test long-range visual reasoning and spatial memory. I
 - Habitat 2.0 realism: Uses realistic 3D layouts and textures from the HM3D dataset.
 
 - Strict success metric: The agent must issue a stop command within a semantic room of the correct type.
+
 ## Evaluation
+
 The same 24 MLLMs (8 proprietary + 16 open-source) were evaluated in EB-Habitat using a greedy, step-by-step closed-loop execution setup.
 
 Highlights:
@@ -106,6 +110,7 @@ Insights:
 - Success correlates with the model’s ability to maintain spatial memory and recognize semantic visual cues across diverse scenes.
 
 - Unlike EB-ALFRED, language alone is insufficient; fine-grained visual understanding and spatial awareness are critical.
+
 ## Citation
 
 ```

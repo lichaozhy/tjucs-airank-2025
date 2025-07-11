@@ -76,7 +76,9 @@ EB-ALFRED is a high-level embodied planning benchmark introduced in EmbodiedBenc
 - **Symbolic success evaluation**: Based on PDDL-defined subgoals rather than pixel matching.
 
 - **Robust stopping criteria**: Episodes end after 30 environment steps, more than 10 invalid actions, or if the model halts planning.
+
 ## Benchmark characteristics
+
 EB-ALFRED is designed to evaluate the high-level reasoning and planning ability of MLLMs in embodied environments. It exhibits several important characteristics that distinguish it from traditional embodied or vision-language tasks:
 
 - High-Level Abstraction: Removes all low-level navigation and manipulation, focusing only on symbolic, skill-level planning grounded in vision and language.
@@ -93,11 +95,12 @@ EB-ALFRED is designed to evaluate the high-level reasoning and planning ability 
 
 - Realistic and Diverse: Built upon real ALFRED task templates and environments rendered in AI2-THOR, ensuring naturalistic diversity and complexity.
 
-
 ## Data Statistics
+
 300 tasks sampled from ALFRED's valid_seen scenes.
 
 - 6 evaluation subsets, each with 50 tasks:
+
   - Base
   - Common-Sense
   - Complex Instruction
@@ -109,7 +112,9 @@ EB-ALFRED is designed to evaluate the high-level reasoning and planning ability 
   - Action space range: 171–298, depending on the number of valid interactions.
   - Max steps per episode: 30
   - Early termination: Triggered by 10+ invalid actions.
+
 ## Evaluation
+
 EB-ALFRED was used to evaluate 24 MLLMs (8 proprietary and 16 open-source) under the same settings (e.g., temperature = 0, vision resolution = 500×500).
 
 ### Highlights:

@@ -9,7 +9,11 @@
 			v-if="model"
 		>
 			<div class="row items-end">
-				<q-toolbar-title shrink class="text-h4">{{ model.name }}</q-toolbar-title>
+				<q-toolbar-title
+					shrink
+					class="text-h4"
+					>{{ model.name }}</q-toolbar-title
+				>
 				<q-btn
 					v-if="model.website"
 					:href="model.website"
@@ -43,7 +47,9 @@
 					<div
 						v-if="item.label && item.icon"
 						class="text-white q-mx-sm text-weight-medium"
-					>{{ item.label }}</div>
+					>
+						{{ item.label }}
+					</div>
 					<div
 						v-if="item.value"
 						class="bg-indigo-10 q-px-sm glossy text-white"
@@ -120,26 +126,44 @@ const propertyEntityList = computed<PropertyEntity[]>(() => {
 
 	if (model.value !== null) {
 		const {
-			component, size, author, release, opensource, dimension, imageVideo,
+			component,
+			size,
+			author,
+			release,
+			opensource,
+			dimension,
+			imageVideo,
 		} = model.value;
 
 		if (component !== undefined) {
 			if (component.vision !== undefined) {
 				for (const vision of component.vision) {
-					list.push({ label: 'Vision Nodel', value: vision, icon: 'visibility' });
+					list.push({
+						label: 'Vision Nodel',
+						value: vision,
+						icon: 'visibility',
+					});
 				}
 			}
 
 			if (component.language !== undefined) {
 				for (const language of component.language) {
-					list.push({ label: 'Language Model', value: language, icon: 'translate' });
+					list.push({
+						label: 'Language Model',
+						value: language,
+						icon: 'translate',
+					});
 				}
 			}
 		}
 
 		if (size !== undefined) {
 			for (const sizeValue of size) {
-				list.push({ label: 'Size', value: `${sizeValue}B`, icon: 'open_in_full' });
+				list.push({
+					label: 'Size',
+					value: `${sizeValue}B`,
+					icon: 'open_in_full',
+				});
 			}
 		}
 
@@ -161,7 +185,11 @@ const propertyEntityList = computed<PropertyEntity[]>(() => {
 				}
 			}
 
-			list.push({ label: 'Release Time', value: sectionList.join('-'), icon: 'publish' });
+			list.push({
+				label: 'Release Time',
+				value: sectionList.join('-'),
+				icon: 'publish',
+			});
 		}
 
 		if (opensource !== undefined) {

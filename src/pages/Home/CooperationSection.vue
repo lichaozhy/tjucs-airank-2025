@@ -21,7 +21,6 @@
 					class="col-2"
 					v-for="(partner, index) in PARTNERS"
 					:key="index"
-
 				>
 					<q-card
 						class="text-center q-pa-md"
@@ -30,7 +29,10 @@
 						flat
 					>
 						<q-card-section>
-							<q-avatar size="96px" square>
+							<q-avatar
+								size="96px"
+								square
+							>
 								<q-img :src="partner.SRC"></q-img>
 							</q-avatar>
 						</q-card-section>

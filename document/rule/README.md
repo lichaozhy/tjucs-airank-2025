@@ -34,7 +34,7 @@ Embodied Arena currently supports the following evaluation metrics based on the 
 - ✅ Embodied Question Answering
   - Accuracy Based on Exact Matching
     - VSI-Bench, Where2Place, ERQA, etc.
-  - Accuracy Based on Fuzzy Matching 
+  - Accuracy Based on Fuzzy Matching
     - Rule-based Metric (e.g., CIDEr, BELU, MRA)
       - RoboVQA, Scan2Cap, ScanQA, etc.
     - LLM-based Metric

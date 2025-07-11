@@ -43,7 +43,9 @@
 						<q-item-section class="col-shrink">
 							<div class="text-h6 text-weight-600 q-py-sm text-white">
 								<span>Embodied Capability Leaderboard</span
-								><span class="q-ml-lg text-weight-light text-body1">{{ caption }}</span>
+								><span class="q-ml-lg text-weight-light text-body1">{{
+									caption
+								}}</span>
 							</div>
 						</q-item-section>
 						<q-item-section side>

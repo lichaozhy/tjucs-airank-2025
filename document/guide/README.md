@@ -4,7 +4,7 @@
 
 **Embodied Arena** is an open-source, comprehensive, and user-friendly evaluation system and platform for embodied AI models. It features three types of core embodied tasks, a diverse range of high-quality benchmarks, LLM-driven automatic evaluation data generation, and a systematic embodied capability taxonomy. The platform aims to present an up-to-date overview of embodied capabilities of advanced models and facilitate the identification of critical research areas, thereby accelerating progress in the field of Embodied AI.
 
-***
+---
 
 ## What Makes Embodied Arena Special?
 
@@ -65,7 +65,7 @@ Complementary evaluation paradigms including accuracy-based QA assessment (exact
 - **Comprehensive Coverage**: Question answering, navigation, and task planning evaluation
 - **Transparent Results**: Open and accessible performance comparisons with detailed capability analysis
 
-***
+---
 
 ## Three Core Leaderboards
 
@@ -105,7 +105,7 @@ Complementary evaluation paradigms including accuracy-based QA assessment (exact
 - **EB-ALFRED**: High-level embodied planning benchmark built on ALFRED dataset
 - **EB-Habitat**: 3D embodied navigation benchmark for long-horizon goal-directed navigation
 
-***
+---
 
 ## Seven Core Capability Framework
 
@@ -197,7 +197,7 @@ Strategic planning and execution capabilities for complex embodied tasks.
 
 **Supported Benchmarks**: VSI-Bench, ERQA, RoboVQA, EB-ALFRED, EB-Habitat, ET-Plan-Bench
 
-***
+---
 
 ## Supported Model Types
 
@@ -256,7 +256,7 @@ Advanced models designed for 3D scene understanding and spatial reasoning tasks.
 
 **Applications**: ScanQA, SQA3D, Scan2Cap, and other 3D QA benchmarks
 
-***
+---
 
 ## How We Evaluate
 
@@ -304,7 +304,7 @@ During the evaluation phase, we select the corresponding evaluation metric based
 - **Interactive Simulation-based Testing**: Success rate metrics for comprehensive capability evaluation in navigation and task planning scenarios
 - **LLM-driven Automatic Generation**: Unique approach ensuring diversity of scenarios and tasks while maintaining evaluation safety and high-quality assessment standards
 
-***
+---
 
 ## Join Embodied Arena
 

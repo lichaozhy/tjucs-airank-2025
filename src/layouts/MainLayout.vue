@@ -98,7 +98,7 @@
 					:to="{
 						name: 'app.googleform',
 						params: { id: 'CLAcMUbvU7TsNeKD8' },
-						query: { height: 2157 }
+						query: { height: 2157 },
 					}"
 				></q-btn>
 
@@ -111,7 +111,7 @@
 					:to="{
 						name: 'app.googleform',
 						params: { id: '2ncVcX8K6quaEc7TA' },
-						query: { height: 2029 }
+						query: { height: 2029 },
 					}"
 				></q-btn>
 			</q-toolbar>
@@ -123,7 +123,6 @@
 				@vue:mounted="scrollTop"
 			/>
 		</q-page-container>
-
 	</q-layout>
 </template>
 

@@ -56,13 +56,16 @@ properties:
 EB-Navigation is the navigation-focused benchmark within EmbodiedBench, designed to evaluate the low-level perception, grounding, and action prediction capabilities of Multimodal Large Language Models (MLLMs). It is built on AI2-THOR environments with tasks derived from the VLN-CE (Vision-and-Language Navigation in Continuous Environments) protocol, but restructured to use step-wise high-level commands.
 
 Each task gives the agent:
+
 1. An initial location in a 3D room
 2. An instruction in natural language (e.g., "go to the microwave")
 3. Egocentric RGB image observations
 4. A set of possible movement actions (e.g., move forward, turn left, turn right, stop)
 
 The agent must reach the correct goal location within a limited number of steps by interpreting visual scenes and language.
+
 ## Benchmark characteristics
+
 EB-Navigation focuses on short-horizon, visually grounded action prediction. Key characteristics include:
 
 - **Low-Level Control**: The agent directly selects motion actions such as moving and turning, unlike symbolic planning in EB-ALFRED.
@@ -77,8 +80,8 @@ EB-Navigation focuses on short-horizon, visually grounded action prediction. Key
 
 - **Limited Step Budget**: Agents are allowed a maximum of 10–15 environment steps per episode.
 
-
 ## Data Statistics
+
 300 tasks sampled from VLN-CE room layouts using AI2-THOR.
 
 - **Instruction types**: navigation to furniture, appliances, and containers (e.g., sofa, microwave, cabinet).
@@ -90,7 +93,9 @@ EB-Navigation focuses on short-horizon, visually grounded action prediction. Key
 - **Success radius**: 1.0 meter.
 
 - **Step limit**: 10–15 steps per episode depending on difficulty.
+
 ## Evaluation
+
 EB-Navigation was used to evaluate the same set of 24 MLLMs (8 proprietary + 16 open-source) under identical conditions (image resolution = 500×500, temperature = 0, greedy decoding).
 
 ### Highlights:

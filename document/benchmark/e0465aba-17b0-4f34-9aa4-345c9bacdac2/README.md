@@ -58,10 +58,10 @@ ScanQA is a benchmark designed to evaluate 3D spatial understanding through the 
 
 ## Evaluation
 
-| Evaluation Aspect | Details |
-|---|---|
-| **QA Performance Metrics** | **Exact Match (EM@1, EM@10)**: Percentage of predictions where the top K predicted answers exactly match any of the ground-truth answers. <br> **Image Captioning Metrics**: Used for robust answer matching, especially for questions with multiple possible answer expressions: <br> - BLEU <br> - ROUGE-L <br> - METEOR <br> - CIDEr <br> - SPICE |
-| **Object Localization Metrics** | **Accuracy (Acc@K)**: Measures if positive predictions have an IoU with ground truths higher than a threshold K (e.g., 0.25 and 0.5). <br> **Top10-Acc@0.25**: Accuracy where the top 10 object boxes (with highest localization scores) are compared with ground truth boxes. |
+| Evaluation Aspect               | Details                                                                                                                                                                                                                                                                                                                                              |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **QA Performance Metrics**      | **Exact Match (EM@1, EM@10)**: Percentage of predictions where the top K predicted answers exactly match any of the ground-truth answers. <br> **Image Captioning Metrics**: Used for robust answer matching, especially for questions with multiple possible answer expressions: <br> - BLEU <br> - ROUGE-L <br> - METEOR <br> - CIDEr <br> - SPICE |
+| **Object Localization Metrics** | **Accuracy (Acc@K)**: Measures if positive predictions have an IoU with ground truths higher than a threshold K (e.g., 0.25 and 0.5). <br> **Top10-Acc@0.25**: Accuracy where the top 10 object boxes (with highest localization scores) are compared with ground truth boxes.                                                                       |
 
 ## Citation
 

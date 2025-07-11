@@ -26,7 +26,7 @@
 					:to="{
 						name: 'app.googleform',
 						params: { id: 'CLAcMUbvU7TsNeKD8' },
-						query: { height: 2157 }
+						query: { height: 2157 },
 					}"
 				></q-btn>
 				<q-btn
@@ -55,7 +55,8 @@ import * as Backend from 'src/backend';
 const PROJECT = {
 	NAME: 'Embodied Arena',
 	SUBTITLE: 'Embodied AI Model Evaluation System & Leaderboards',
-	ABSTRACT: 'An open-source, comprehensive, and user-friendly evaluation system and platform for embodied AI models',
+	ABSTRACT:
+		'An open-source, comprehensive, and user-friendly evaluation system and platform for embodied AI models',
 };
 
 const defaultLeaderboardId = ref<string | null>(null);

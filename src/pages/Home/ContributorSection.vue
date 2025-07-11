@@ -29,12 +29,17 @@
 				>,</span
 			>...
 		</div>
-		<div class="text-grey-7 text-center row justify-center q-mt-md" style="max-width: 42em">
+		<div
+			class="text-grey-7 text-center row justify-center q-mt-md"
+			style="max-width: 42em"
+		>
 			<div
 				v-for="(name, index) in SECTION.organizationList"
 				:key="index"
 				class="q-ml-md text-no-wrap col-shrink"
-			>{{ index + 1 }}. {{ name }}</div>
+			>
+				{{ index + 1 }}. {{ name }}
+			</div>
 			<div class="col-grow full-width">*: Core contributors</div>
 		</div>
 	</div>

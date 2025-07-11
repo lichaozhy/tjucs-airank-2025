@@ -114,7 +114,7 @@ const columnList = computed(() => {
 	for (const [index, name] of props.columns.entries()) {
 		propertyColumnList.push({
 			name: `item(${index})`,
-			field: data => data.scores[index],
+			field: (data) => data.scores[index],
 			label: name,
 			align: 'right',
 			sortable: true,

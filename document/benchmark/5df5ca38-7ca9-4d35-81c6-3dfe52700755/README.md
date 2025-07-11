@@ -93,6 +93,7 @@ To advance embodied reasoning in Vision-Language Models (VLMs), ERQA (Embodied R
 ERQA also provide an example of a lightweight evaluation harness for querying multimodal APIs (Gemini 2.0 and OpenAI) with examples loaded from the ERQA benchmark.
 
 ## Citation
+
 ```
 @article{geminiroboticsteam2025geminiroboticsbringingai,
   title={Gemini Robotics: Bringing AI into the Physical World},

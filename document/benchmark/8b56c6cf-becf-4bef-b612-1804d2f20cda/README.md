@@ -51,12 +51,12 @@ SQA3D is a benchmark designed for embodied scene understanding, aiming to bridge
 
 ![alt text](assets/1-3.png)
 
-
 ## Evaluation
 
 SQA3D presents a significant challenge to current multi-modal, especially 3D reasoning models. Various state-of-the-art approaches were evaluated, with the best-performing model achieving only an overall score of 47.20%. In contrast, amateur human participants reached an impressive score of 90.06%.
 
 ## Citation
+
 ```
 @inproceedings{ma2022sqa3d,
     title={SQA3D: Situated Question Answering in 3D Scenes},

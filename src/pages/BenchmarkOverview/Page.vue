@@ -19,7 +19,10 @@
 		<div class="full-width app-max-width-1680">
 			<q-space class="q-mt-md" />
 
-			<q-toolbar class="q-px-none" style="min-height: 0;">
+			<q-toolbar
+				class="q-px-none"
+				style="min-height: 0"
+			>
 				<q-btn-toggle
 					no-caps
 					square
@@ -94,7 +97,9 @@ const filteredBenchmarkList = computed(() => {
 	);
 
 	if (leaderboardId.value !== null) {
-		list = list.filter(({ leaderboard }) => leaderboard === leaderboardId.value);
+		list = list.filter(
+			({ leaderboard }) => leaderboard === leaderboardId.value,
+		);
 	}
 
 	const keywordValue = keyword.value;
