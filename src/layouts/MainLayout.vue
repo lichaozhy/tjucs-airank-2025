@@ -39,11 +39,21 @@
 					flat
 					stretch
 					:to="{
-						name: 'app.leaderboard.detail',
+						name: 'app.leaderboard.task',
 						params: { leaderboardId: defaultLeaderboardId },
 					}"
-					label="Embodied Leaderboards"
-					:class="{ active: routeMatched('app.leaderboard') }"
+					label="Embodied Tasks Leaderboards"
+					:class="{ active: routeMatched('app.leaderboard.task') }"
+				></q-btn>
+
+				<q-btn
+					class="app-navbar-feature-item text-weight-regular"
+					no-caps
+					flat
+					stretch
+					:to="{ name: 'app.leaderboard.capability' }"
+					label="Embodied Capabilities Leaderboards"
+					:class="{ active: routeMatched('app.leaderboard.capability') }"
 				></q-btn>
 
 				<q-btn

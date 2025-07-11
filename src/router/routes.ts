@@ -21,15 +21,20 @@ const routes: RouteRecordRaw[] = [
 			},
 			{
 				name: 'app.leaderboard',
-				path: 'leaderboard',
+				path: 'leaderboard/task',
 				component: () => import('pages/LeaderboardLayout/Page.vue'),
 				children: [
 					{
-						name: 'app.leaderboard.detail',
+						name: 'app.leaderboard.task',
 						path: ':leaderboardId',
 						component: () => import('pages/LeaderboardDetail/Page.vue'),
 					},
 				],
+			},
+			{
+				name: 'app.leaderboard.capability',
+				path: 'leaderboard/capability',
+				component: () => import('pages/LeaderboardCapability/Page.vue'),
 			},
 			{
 				name: 'app.rank.leaderboard',

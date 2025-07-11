@@ -82,5 +82,5 @@ onBeforeMount(async () => {
 	benchmarkList.value = await LeaderboardAPI.Benchmark.query();
 });
 
-defineOptions({ name: 'AppLeaderboardDetailPage' });
+defineOptions({ name: 'AppLeaderboardTaskPage' });
 </script>
