@@ -343,4 +343,4 @@ During the evaluation phase, we select the corresponding evaluation metric based
 
 ---
 
-**Embodied Arena - The Professional Evaluation Platform Advancing Embodied Intelligence**
+🏆 **Embodied Arena** - An open-source, comprehensive, and user-friendly evaluation system and platform for embodied AI models
