@@ -57,7 +57,7 @@
 				</template>
 				<AppScoreTable
 					:columns="columnList"
-					:rows="[]"
+					:rows="rowList"
 				></AppScoreTable>
 			</AppScoreCard>
 		</div>
@@ -66,15 +66,16 @@
 
 <script setup lang="ts">
 import type * as Spec from 'src/spec';
-import type { ModelData } from 'components/ScoreTable.vue';
+import type { ModelData } from './ScoreTable.vue';
 import type { ModelFilter } from 'components/ModelFilter.vue';
 import { computed, onBeforeMount, reactive, ref } from 'vue';
 
 import AppScoreCard from 'components/ScoreCard.vue';
-import AppScoreTable from 'components/ScoreTable.vue';
 import AppModelFilter from 'components/ModelFilter.vue';
+import AppScoreTable from './ScoreTable.vue';
 
 import * as Backend from 'src/backend';
+import { toNumberOrNull } from 'src/components/utils';
 
 const selectedBenchmarkId = ref<string | null>(null);
 const benchmarkList = ref<Spec.Benchmark.Type[]>([]);
@@ -160,9 +161,36 @@ const columnList = computed(() => {
 	const level = capabilityLevel.value;
 	const nameRecord = NameRecord[level];
 
-	return [...Level[capabilityLevel.value]]
-		.sort((a, b) => a.order - b.order)
-		.map((data) => nameRecord[data.id]!);
+	return [...Level[capabilityLevel.value]].map((data) => nameRecord[data.id]!);
+});
+
+const rowList = computed(() => {
+	const list: ModelData[] = [];
+
+	if (!isReady.value) {
+		return list;
+	}
+
+	const level = capabilityLevel.value;
+	const itemList = Level[level];
+
+	for (const model of modelList.value) {
+		const data: ModelData = {
+			id: model.id,
+			name: model.name,
+			scores: [],
+		};
+
+		const scoreItemList = model.score.capability![level];
+
+		for (const [index, item] of itemList.entries()) {
+			data.scores[index] = toNumberOrNull(scoreItemList[item.index]!);
+		}
+
+		list.push(data);
+	}
+
+	return list;
 });
 
 onBeforeMount(async () => {
@@ -175,9 +203,16 @@ onBeforeMount(async () => {
 	}
 
 	benchmarkList.value = await Backend.API.Benchmark.query();
-	modelList.value = await Backend.API.Model.query();
-	Level.core = await Backend.API.Capability.Level.Core.query();
-	Level.sub = await Backend.API.Capability.Level.Sub.query();
+	modelList.value = await Backend.API.Model.queryHasCapability();
+
+	const coreLevelItemList = await Backend.API.Capability.Level.Core.query();
+	const subLevelItemList = await Backend.API.Capability.Level.Sub.query();
+
+	coreLevelItemList.sort((a, b) => a.order - b.order);
+	subLevelItemList.sort((a, b) => a.order - b.order);
+
+	Level.core = coreLevelItemList;
+	Level.sub = subLevelItemList;
 });
 
 defineOptions({ name: 'AppLeaderboardCapabilityPage' });

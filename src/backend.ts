@@ -199,11 +199,42 @@ export const API = {
 						return Data.Score.filter((score) => score.model === modelId);
 					},
 				},
+				Capability: {
+					Core: {
+						async query() {
+							const model = Data.Model.find((model) => model.id === modelId)!;
+							const capability = model.score.capability;
+
+							if (capability !== undefined) {
+								return [...capability.core];
+							}
+
+							throw new Error('No core-capability score list.');
+						},
+					},
+					Sub: {
+						async query() {
+							const model = Data.Model.find((model) => model.id === modelId)!;
+							const capability = model.score.capability;
+
+							if (capability !== undefined) {
+								return [...capability.sub];
+							}
+
+							throw new Error('No core-capability score list.');
+						},
+					},
+				},
 			};
 		},
 		{
 			async query() {
-				return Data.Model;
+				return [...Data.Model];
+			},
+			async queryHasCapability() {
+				return Data.Model.filter((model) =>
+					Object.hasOwn(model.score, 'capability'),
+				);
 			},
 			Property: {
 				ValueGroup: {
