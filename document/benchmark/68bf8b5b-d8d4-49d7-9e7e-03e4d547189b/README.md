@@ -41,13 +41,17 @@ properties:
 ---
 
 ## Introduction
+
 ![alt text](assets/1-2.png)
 
 The ET-Plan-Bench focuses on various aspects of spatial understanding, including relation constraints, object occlusion, and global layout maps, as well as temporal understanding, covering action dependencies and optimal moving paths for robots. It provides a detailed and thorough diagnostic assessment of existing foundation models.
 
 ## Data Statistics
+
 ![alt text](assets/1-1.png)
+
 ## Evaluation
+
 - ET-Plan-Bench uses an LLM agent baseline for automatic quantitative evaluation. The LLM agent pipeline for evaluation comprises an automatic prompt selection module, a navigation module, and a manipulation module.
 - ET-Plan-Bench uses five evaluation metrics to evaluate the performance on proposed embodied tasks, including success rate, action sequence length, longest common subsequence (LCS) length, LCS ratio with the ground truth action sequence, and moving distance for executing the tasks.
 

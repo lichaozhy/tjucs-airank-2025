@@ -178,8 +178,9 @@ const rowList = computed(() => {
 	let filteredModelList = [...modelList.value];
 
 	if (benchmark !== null) {
-		filteredModelList = filteredModelList
-			.filter(model => Object.hasOwn(model.score, benchmark));
+		filteredModelList = filteredModelList.filter((model) =>
+			Object.hasOwn(model.score, benchmark),
+		);
 	}
 
 	for (const model of filteredModelList) {
@@ -189,7 +190,8 @@ const rowList = computed(() => {
 			scores: [],
 		};
 
-		const scoreItemList = model.score[benchmark === null ? '*' : benchmark]![level];
+		const scoreItemList =
+			model.score[benchmark === null ? '*' : benchmark]![level];
 
 		for (const [index, item] of itemList.entries()) {
 			data.scores[index] = toNumberOrNull(scoreItemList[item.index]!);

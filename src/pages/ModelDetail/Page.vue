@@ -53,8 +53,10 @@
 					<div
 						v-if="item.value"
 						class="bg-indigo-10 q-px-sm glossy text-white"
-						style="margin-right: -0.4em;"
-					>{{ item.value }}</div>
+						style="margin-right: -0.4em"
+					>
+						{{ item.value }}
+					</div>
 				</q-chip>
 			</div>
 
