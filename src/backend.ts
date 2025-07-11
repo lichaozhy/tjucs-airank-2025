@@ -231,10 +231,8 @@ export const API = {
 			async query() {
 				return [...Data.Model];
 			},
-			async queryHasCapability() {
-				return Data.Model.filter((model) =>
-					Object.hasOwn(model.score, 'capability'),
-				);
+			async queryHasScore() {
+				return Data.Model.filter(({ score }) => Object.keys(score).length > 0);
 			},
 			Property: {
 				ValueGroup: {

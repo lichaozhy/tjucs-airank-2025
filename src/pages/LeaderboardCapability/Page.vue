@@ -171,17 +171,25 @@ const rowList = computed(() => {
 		return list;
 	}
 
+	const benchmark = selectedBenchmarkId.value;
 	const level = capabilityLevel.value;
 	const itemList = Level[level];
 
-	for (const model of modelList.value) {
+	let filteredModelList = [...modelList.value];
+
+	if (benchmark !== null) {
+		filteredModelList = filteredModelList
+			.filter(model => Object.hasOwn(model.score, benchmark));
+	}
+
+	for (const model of filteredModelList) {
 		const data: ModelData = {
 			id: model.id,
 			name: model.name,
 			scores: [],
 		};
 
-		const scoreItemList = model.score.capability![level];
+		const scoreItemList = model.score[benchmark === null ? '*' : benchmark]![level];
 
 		for (const [index, item] of itemList.entries()) {
 			data.scores[index] = toNumberOrNull(scoreItemList[item.index]!);
@@ -203,7 +211,7 @@ onBeforeMount(async () => {
 	}
 
 	benchmarkList.value = await Backend.API.Benchmark.query();
-	modelList.value = await Backend.API.Model.queryHasCapability();
+	modelList.value = await Backend.API.Model.queryHasScore();
 
 	const coreLevelItemList = await Backend.API.Capability.Level.Core.query();
 	const subLevelItemList = await Backend.API.Capability.Level.Sub.query();

@@ -6,7 +6,7 @@
 		hide-pagination
 		square
 		flat
-		:pagination="{ rowsPerPage: 30 }"
+		:pagination="{ rowsPerPage: 100 }"
 		bordered
 		binary-state-sort
 		ref="table"
