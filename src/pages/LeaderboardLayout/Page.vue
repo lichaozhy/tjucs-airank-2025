@@ -90,7 +90,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onBeforeMount, reactive, ref, provide } from 'vue';
+import { computed, onBeforeMount, reactive, ref, provide, watch, nextTick } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
 import * as Backend from 'src/backend';
@@ -113,6 +113,32 @@ const summaryList = computed(() => {
 	}
 
 	return leaderboard.value.summaries;
+});
+
+watch(() => [{ ...selectedBenchmark }, { ...selectedSummary }], async ([
+	newSelectedBenchmark, newSelectedSummary,
+], [
+	oldSelectedBenchmark, oldSelectedSummary,
+]) => {
+	if (!Object.values({
+		...newSelectedBenchmark,
+		...newSelectedSummary,
+	}).includes(true)) {
+		Object.assign(selectedBenchmark, oldSelectedBenchmark);
+		Object.assign(selectedSummary, oldSelectedSummary);
+	}
+
+	for (const id in newSelectedBenchmark) {
+		if (newSelectedBenchmark[id] && oldSelectedBenchmark![id]) {
+			selectedBenchmark[id] = false;
+		}
+	}
+
+	for (const id in newSelectedSummary) {
+		if (newSelectedSummary[id] && oldSelectedSummary![id]) {
+			selectedSummary[id] = false;
+		}
+	}
 });
 
 onBeforeMount(async () => {
