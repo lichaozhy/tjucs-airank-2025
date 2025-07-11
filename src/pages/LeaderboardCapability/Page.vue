@@ -11,8 +11,8 @@
 			>
 				<q-select
 					square
-					clearable
 					outlined
+					bg-color="white"
 					dense
 					style="width: 16em"
 					stack-label
@@ -56,7 +56,7 @@
 					</q-item>
 				</template>
 				<AppScoreTable
-					:columns="[]"
+					:columns="columnList"
 					:rows="[]"
 				></AppScoreTable>
 			</AppScoreCard>
@@ -68,7 +68,7 @@
 import type * as Spec from 'src/spec';
 import type { ModelData } from 'components/ScoreTable.vue';
 import type { ModelFilter } from 'components/ModelFilter.vue';
-import { computed, onBeforeMount, ref } from 'vue';
+import { computed, onBeforeMount, reactive, ref } from 'vue';
 
 import AppScoreCard from 'components/ScoreCard.vue';
 import AppScoreTable from 'components/ScoreTable.vue';
@@ -80,6 +80,14 @@ const selectedBenchmarkId = ref<string | null>(null);
 const benchmarkList = ref<Spec.Benchmark.Type[]>([]);
 const capabilityLevel = ref<'core' | 'sub'>('core');
 const currentFilter = ref<ModelFilter>(() => true);
+const modelList = ref<Spec.Model.Type[]>([]);
+const groupNameRecord: Record<string, string> = {};
+const itemNameRecord: Record<string, string> = {};
+
+const NameRecord = {
+	core: groupNameRecord,
+	sub: itemNameRecord,
+};
 
 const CAPABILITY_LEVEL_RECORD = {
 	core: 'Core Capabilities',
@@ -123,8 +131,53 @@ const benchmarkOptionList = computed(() => {
 	];
 });
 
+const Level = reactive<Record<'core' | 'sub', Spec.Capability.ScoreMap[]>>({
+	core: [],
+	sub: [],
+});
+
+const isReady = computed(() => {
+	if (benchmarkList.value.length === 0) {
+		return false;
+	}
+
+	if (modelList.value.length === 0) {
+		return false;
+	}
+
+	if (Level.core.length === 0 || Level.sub.length === 0) {
+		return false;
+	}
+
+	return true;
+});
+
+const columnList = computed(() => {
+	if (!isReady.value) {
+		return [];
+	}
+
+	const level = capabilityLevel.value;
+	const nameRecord = NameRecord[level];
+
+	return [...Level[capabilityLevel.value]]
+		.sort((a, b) => a.order - b.order)
+		.map((data) => nameRecord[data.id]!);
+});
+
 onBeforeMount(async () => {
+	for (const groupData of await Backend.API.Capability.Group.query()) {
+		groupNameRecord[groupData.id] = groupData.name;
+	}
+
+	for (const itemData of await Backend.API.Capability.Item.query()) {
+		itemNameRecord[itemData.id] = itemData.name;
+	}
+
 	benchmarkList.value = await Backend.API.Benchmark.query();
+	modelList.value = await Backend.API.Model.query();
+	Level.core = await Backend.API.Capability.Level.Core.query();
+	Level.sub = await Backend.API.Capability.Level.Sub.query();
 });
 
 defineOptions({ name: 'AppLeaderboardCapabilityPage' });

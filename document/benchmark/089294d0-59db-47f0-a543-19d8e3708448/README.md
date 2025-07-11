@@ -34,11 +34,11 @@ VABench, a challenging benchmark with 300 manually annotated problems from real-
 
 VABench contains **300 manually annotated problems** sourced from multiple renowned robotic manipulation datasets:
 
-| Dataset | Type | Characteristics |
-|---------|-------------------|------|
-| **OXE** | Real-world | Diverse real robotic manipulation scenarios |
-| **BridgeData** | Real-world | Dataset bridging language and robotic actions |
-| **Droid** | Real-world | High-quality simulated robotic manipulation data |
+| Dataset        | Type       | Characteristics                                  |
+| -------------- | ---------- | ------------------------------------------------ |
+| **OXE**        | Real-world | Diverse real robotic manipulation scenarios      |
+| **BridgeData** | Real-world | Dataset bridging language and robotic actions    |
+| **Droid**      | Real-world | High-quality simulated robotic manipulation data |
 
 - **Task Diversity**: Covers various robotic manipulation tasks including grasping, placing, pushing, pulling, and assembly
 - **Instruction Complexity**: Ranges from simple direct commands to complex multi-step operation instructions
@@ -51,22 +51,25 @@ VABench contains **300 manually annotated problems** sourced from multiple renow
 VABench is designed with two core evaluation tasks:
 
 #### 1. Spatial Affordance Assessment (VABench-Point)
+
 Evaluates models' spatial understanding capabilities of target regions by measuring the overlap between predicted points and target areas.
 
 - **Evaluation Method**: Calculate the proportion of predicted points falling within target regions
 - **Boundary Handling**: For models that only output bounding boxes, uniform sampling within boxes is performed
 
 ##### Quantitative Metrics:
+
 - **Accuracy**: If the predicted point falls within the target area of the answer, it is considered correct; otherwise, it is considered incorrect.
 
-
 #### 2. Visual Trace Prediction (VABench-VisualTrace)
+
 Evaluates models' ability to predict complete manipulation trajectories using mathematical metrics to quantify trajectory accuracy.
 
 ##### Quantitative Metrics:
+
 - **MAE (Mean Absolute Error)**
 - **RMSE (Root Mean Square Error)**
-- **GPT Score**: Uses large language models to provide qualitative assessment of visualized trajectories on a 1-10 scale. The **Evaluation Dimensions** include: 
+- **GPT Score**: Uses large language models to provide qualitative assessment of visualized trajectories on a 1-10 scale. The **Evaluation Dimensions** include:
   - Trajectory reasonableness
   - Consistency with instructions
   - Operation feasibility
@@ -76,7 +79,7 @@ Evaluates models' ability to predict complete manipulation trajectories using ma
 
 ```
 @article{yuan2025seeingdoingbridgingreasoning,
-      title={From Seeing to Doing: Bridging Reasoning and Decision for Robotic Manipulation}, 
+      title={From Seeing to Doing: Bridging Reasoning and Decision for Robotic Manipulation},
       author={Yifu Yuan and Haiqin Cui and Yibin Chen and Zibin Dong and Fei Ni and Longxin Kou and Jinyi Liu and Pengyi Li and Yan Zheng and Jianye Hao},
       journal={arXiv preprint arXiv:2505.08548},
       year={2025}

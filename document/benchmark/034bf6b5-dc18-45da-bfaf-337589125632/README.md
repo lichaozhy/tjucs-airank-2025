@@ -100,6 +100,7 @@ properties:
 ![alt text](assets/2-1.png)
 
 UniEQA, a new unified evaluation benchmark for embodied artificial intelligence, is designed to evaluate MLLMs in terms of 5 core capabilities with 12 detailed dimensions. The benchmark is established based on seven heterogeneous data sources, covering simulated and real-world scenarios. The benchmark contains a total of 5378 question-answer pairs, of which 4445 are completely different question formats. By integrating multiple existing EQA benchmarks with newly annotated datasets and performing manual review, UniEQA effectively ensures its reliability, comprehensiveness, and diversity.
+
 ## Benchmark characteristics
 
 - **Broad Coverage of Capabilities**: It encompasses 5 core capabilities – object understanding, spatiotemporal perception, embodied knowledge, embodied reasoning, and task planning – and achieves a hierarchical and detailed evaluation from basic cognition to advanced cognitive abilities.
@@ -110,7 +111,7 @@ UniEQA, a new unified evaluation benchmark for embodied artificial intelligence,
 
 ## Data Statistics
 
-  ![real-world (Ego4D, LEMMA, HM3D, and ScanNet)](assets/4-1.png)
+![real-world (Ego4D, LEMMA, HM3D, and ScanNet)](assets/4-1.png)
 
 ## Evaluation
 

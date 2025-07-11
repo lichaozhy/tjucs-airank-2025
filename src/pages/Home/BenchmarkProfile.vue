@@ -181,7 +181,7 @@ const LEADERBOARD_DESCRIPTION_RECORD: Record<string, string> = {
 };
 
 const BENCHMARK_DESCRIPTION_RECORD: Record<string, string> = {
-	'UniEQA': `UniEQA, a new unified evaluation benchmark for embodied artificial
+	UniEQA: `UniEQA, a new unified evaluation benchmark for embodied artificial
 	intelligence, is designed to evaluate MLLMs in terms of 5 core capabilities
 	with 12 detailed dimensions. The benchmark is established based on seven
 	heterogeneous data sources, covering simulated and real-world scenarios. The
@@ -190,14 +190,14 @@ const BENCHMARK_DESCRIPTION_RECORD: Record<string, string> = {
 	benchmarks with newly annotated datasets and performing manual review, UniEQA
 	effectively ensures its reliability, comprehensiveness and diversity.`,
 
-	'OpenEQA': `OpenEQA is the first open-vocabulary benchmark dataset for EQA
+	OpenEQA: `OpenEQA is the first open-vocabulary benchmark dataset for EQA
 	supporting both episodic memory and active exploration use cases. OpenEQA
 	contains over 1600 high-quality human generated questions drawn from over 180
 	real-world environments. OpenEQA stands out as a straightforward, measurable,
 	and practically relevant benchmark that poses a considerable challenge to
 	current generation of AI models.`,
 
-	'VSI': `VSI-Bench quantitatively evaluates the visual-spatial intelligence of
+	VSI: `VSI-Bench quantitatively evaluates the visual-spatial intelligence of
 	MLLMs from egocentric video. VSI-Bench comprises over 5,000 question-answer
 	pairs derived from 288 real videos. These videos are sourced from the
 	validation sets of the public indoor 3D scene reconstruction datasets
@@ -209,7 +209,7 @@ const BENCHMARK_DESCRIPTION_RECORD: Record<string, string> = {
 	question generation and could support future studies exploring the connection
 	between MLLMs and 3D reconstruction.`,
 
-	'ERQA': `To advance embodied reasoning in Vision-Language Models (VLMs), ERQA
+	ERQA: `To advance embodied reasoning in Vision-Language Models (VLMs), ERQA
 	(Embodied Reasoning Question Answering) is introduced as a benchmark
 	specifically targeting capabilities essential for agents interacting with the
 	physical world. ERQA includes 400 multiple-choice Visual Question Answering
@@ -221,7 +221,7 @@ const BENCHMARK_DESCRIPTION_RECORD: Record<string, string> = {
 	critical for physical interaction, making it a complementary addition to
 	current evaluation suites.`,
 
-	'SQA3D': `SQA3D is a benchmark designed for embodied scene understanding,
+	SQA3D: `SQA3D is a benchmark designed for embodied scene understanding,
 	aiming to bridge the gap between 3D scene comprehension and embodied AI. In
 	the SQA3D task, the tested agent must first comprehend its situation within
 	a 3D environment—such as position and orientation—based on a textual
@@ -233,7 +233,7 @@ const BENCHMARK_DESCRIPTION_RECORD: Record<string, string> = {
 	reasoning capabilities in intelligent agents, including spatial
 	understanding, commonsense reasoning, navigation, and multi-hop inference.`,
 
-	'ScanQA': `ScanQA is a benchmark designed to evaluate 3D spatial
+	ScanQA: `ScanQA is a benchmark designed to evaluate 3D spatial
 	understanding through the task of 3D question answering (3D-QA). In this
 	task, models are given full 3D representations of indoor scenes—captured as
 	rich RGB-D scans—and are required to answer free-form textual questions
@@ -246,7 +246,7 @@ const BENCHMARK_DESCRIPTION_RECORD: Record<string, string> = {
 	information, offering a comprehensive benchmark for evaluating multimodal
 	reasoning in 3D environments.`,
 
-	'Scan2Cap': `Scan2Cap is a benchmark for dense captioning in 3D scans captured
+	Scan2Cap: `Scan2Cap is a benchmark for dense captioning in 3D scans captured
 	using commodity RGB-D sensors. It focuses on the task of generating natural
 	language descriptions for multiple objects within a 3D scene, given as a
 	point cloud. Each object is annotated with a 3D bounding box and an
@@ -257,7 +257,7 @@ const BENCHMARK_DESCRIPTION_RECORD: Record<string, string> = {
 	Scan2Cap provides a challenging testbed for evaluating multimodal models that
 	combine 3D perception with language capabilities.`,
 
-	'PhyBlock': `PhyBlock, a progressive benchmark designed to assess VLMs on
+	PhyBlock: `PhyBlock, a progressive benchmark designed to assess VLMs on
 	physical understanding and planning through robotic 3D block assembly tasks.
 	PhyBlock integrates a novel four-level cognitive hierarchy assembly task
 	alongside targeted Visual Question Answering (VQA) samples, collectively
@@ -267,7 +267,7 @@ const BENCHMARK_DESCRIPTION_RECORD: Record<string, string> = {
 	assembly tasks, 2200 VQA tasks) and evaluates models across three key
 	dimensions: partial completion, failure diagnosis, and planning robustness.`,
 
-	'MineAnyBuild': `MineAnyBuild, a comprehensive benchmark to evaluate the
+	MineAnyBuild: `MineAnyBuild, a comprehensive benchmark to evaluate the
 	spatial planning abilities of open-world AI agents in Minecraft, requires
 	them to generate building plans from multi-modal instructions. It includes
 	4,000 curated tasks and supports scalable data collection through
@@ -276,12 +276,12 @@ const BENCHMARK_DESCRIPTION_RECORD: Record<string, string> = {
 	but also great potential in current MLLM-based agents, highlighting the
 	importance of MineAnyBuild for advancing spatial intelligence in AI.`,
 
-	'RoboVQA': `RoboVQA consists of 238h (10 days) of (video, text) pairs coming
+	RoboVQA: `RoboVQA consists of 238h (10 days) of (video, text) pairs coming
 	from recordings of long-horizon instructions being performed by 3 different
 	embodiments (robot, human, human with tool) in a same environment (3
 	corporate buildings).`,
 
-	'where2place': `Where2Place is a benchmark for spatial free-space reference
+	where2place: `Where2Place is a benchmark for spatial free-space reference
 	on challenging real world images This dataset contains 100 real-world images
 	to evaluate free space reference using spatial relations. The images are
 	collected from various cluttered environments. Each image is labeled with a

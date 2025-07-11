@@ -91,3 +91,8 @@ if (missingPathname.length > 0) {
 	console.error(JSON.stringify(missingPathname, null, '  '));
 	throw new Error('Files missing.');
 }
+
+const LEVEL_SOURCE_PATHNAME = path.join(PATH.SOURCE.DIRECTORY, 'level.json');
+const LEVEL_TARGET_PATHNAME = path.join(PATH.TARGET.METADATA, 'level.json');
+
+await fs.promises.copyFile(LEVEL_SOURCE_PATHNAME, LEVEL_TARGET_PATHNAME);

@@ -161,9 +161,7 @@
 		"default": {
 			"property": "Total"
 		},
-		"capabilities": [
-			"Spatial Reasoning"
-		],
+		"capabilities": ["Spatial Reasoning"],
 		"properties": {
 			"Total": {
 				"order": 0,

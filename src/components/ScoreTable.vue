@@ -112,13 +112,19 @@ const columnList = computed(() => {
 	const propertyColumnList: ColumnOptions[] = [];
 
 	for (const [index, name] of props.columns.entries()) {
+		const styleList = [
+			`width:${getColumnEMWidth(name.length)}em`,
+			// 'writing-mode: vertical-rl',
+			// 'text-orientation: mixed',
+		];
+
 		propertyColumnList.push({
 			name: `item(${index})`,
 			field: (data) => data.scores[index],
 			label: name,
 			align: 'right',
 			sortable: true,
-			headerStyle: `width:${getColumnEMWidth(name.length)}em`,
+			headerStyle: styleList.join(';'),
 		});
 	}
 

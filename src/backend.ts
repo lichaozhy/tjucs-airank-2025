@@ -67,9 +67,17 @@ export const Data: {
 export const Capability: {
 	Item: Spec.Capability.Item[];
 	Group: Spec.Capability.Group[];
+	Level: {
+		core: Spec.Capability.ScoreMap[];
+		sub: Spec.Capability.ScoreMap[];
+	};
 } = {
 	Item: [],
 	Group: [],
+	Level: {
+		core: [],
+		sub: [],
+	},
 };
 
 export async function init() {
@@ -92,6 +100,11 @@ export async function init() {
 
 	Capability.Group = await fetch('/data/capability/group.json').then(readJSON);
 	Capability.Item = await fetch('/data/capability/item.json').then(readJSON);
+
+	const Level = await fetch('/data/capability/level.json').then(readJSON);
+
+	Capability.Level.core = Level.core;
+	Capability.Level.sub = Level.sub;
 }
 
 export const API = {
@@ -215,20 +228,24 @@ export const API = {
 	Capability: {
 		Group: {
 			async query() {
-				return Capability.Group;
+				return Capability.Group.map((data) => ({ ...data }));
 			},
 		},
 		Item: {
 			async query() {
-				return Capability.Item;
+				return Capability.Item.map((data) => ({ ...data }));
 			},
 		},
 		Level: {
 			Core: {
-				async query() {},
+				async query() {
+					return Capability.Level.core.map((data) => ({ ...data }));
+				},
 			},
 			Sub: {
-				async query() {},
+				async query() {
+					return Capability.Level.sub.map((data) => ({ ...data }));
+				},
 			},
 		},
 	},

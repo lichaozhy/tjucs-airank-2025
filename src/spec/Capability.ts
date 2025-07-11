@@ -14,11 +14,12 @@ export const ItemSchema = z.object({
 	order: z.int32(),
 });
 
-export const LevelSchema = z.object({
+export const ScoreMapSchema = z.object({
+	id: z.uuid(),
 	index: z.uint32(),
 	order: z.int32(),
 });
 
 export type Group = z.infer<typeof GroupSchema>;
 export type Item = z.infer<typeof ItemSchema>;
-export type Level = z.infer<typeof LevelSchema>;
+export type ScoreMap = z.infer<typeof ScoreMapSchema>;
