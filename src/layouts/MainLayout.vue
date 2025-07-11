@@ -42,7 +42,7 @@
 						name: 'app.leaderboard.task',
 						params: { leaderboardId: defaultLeaderboardId },
 					}"
-					label="Embodied Tasks Leaderboards"
+					label="Embodied Task Leaderboards"
 					:class="{ active: routeMatched('app.leaderboard.task') }"
 				></q-btn>
 
@@ -52,7 +52,7 @@
 					flat
 					stretch
 					:to="{ name: 'app.leaderboard.capability' }"
-					label="Embodied Capabilities Leaderboards"
+					label="Embodied Capability Leaderboards"
 					:class="{ active: routeMatched('app.leaderboard.capability') }"
 				></q-btn>
 
