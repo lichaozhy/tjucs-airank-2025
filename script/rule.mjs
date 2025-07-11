@@ -1,11 +1,9 @@
 import * as fs from 'node:fs';
 import * as path from 'node:path';
-import MarkdownIt from 'markdown-it';
-import MarkdownItAnchor from 'markdown-it-anchor';
-import slugify from '@sindresorhus/slugify';
 import { JSDOM } from 'jsdom';
 
 import { Hash } from './utils.mjs';
+import * as MD from './markdown.mjs';
 
 const { dirname } = import.meta;
 
@@ -17,13 +15,10 @@ const PATH = {
 	},
 };
 
-const MDParser = MarkdownIt({ html: true, linkify: true });
-
-MDParser.use(MarkdownItAnchor, { slugify: s => slugify(s) });
 
 const PUBLIC_PATH = '/html/assets/';
 const documentData = await fs.promises.readFile(PATH.SOURCE, 'utf-8');
-const htmlString = MDParser.render(documentData);
+const htmlString = MD.parser.render(documentData);
 const DOM = new JSDOM(htmlString);
 const bodyElement = DOM.window.document.body;
 const missingPathname = [];

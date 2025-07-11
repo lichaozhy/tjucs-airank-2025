@@ -1,13 +1,12 @@
 import * as fs from 'node:fs';
 import * as path from 'node:path';
 import matter from 'gray-matter';
-import MarkdownIt from 'markdown-it';
 import { JSDOM } from 'jsdom';
 
 import { ensureDirectory, Hash } from './utils.mjs';
+import * as MD from './markdown.mjs';
 
 const { dirname } = import.meta;
-const MDParser = MarkdownIt({ html: true, linkify: true });
 
 const PATH = {
 	SOURCE: {
@@ -59,7 +58,7 @@ for (const groupId of await fs.promises.readdir(CAPABILITY_GROUP_DIRECTORY)) {
 	const pathname = path.join(dirname, 'README.md');
 	const { data, content } = matter(await fs.promises.readFile(pathname, 'utf-8'));
 	const htmlPathname = path.join(CAPABILITY_GROUP_HTML, `${groupId}.html`);
-	const bodyElement = new JSDOM(MDParser.render(content)).window.document.body;
+	const bodyElement = new JSDOM(MD.parser.render(content)).window.document.body;
 
 	await extractImage(bodyElement, dirname);
 	groupList.push({ id: groupId, ...data });
@@ -75,7 +74,7 @@ for (const itemId of await fs.promises.readdir(CAPABILITY_ITEM_DIRECTORY)) {
 	const pathname = path.join(dirname, 'README.md');
 	const { data, content } = matter(await fs.promises.readFile(pathname, 'utf-8'));
 	const htmlPathname = path.join(CAPABILITY_ITEM_HTML, `${itemId}.html`);
-	const bodyElement = new JSDOM(MDParser.render(content)).window.document.body;
+	const bodyElement = new JSDOM(MD.parser.render(content)).window.document.body;
 
 	await extractImage(bodyElement, dirname);
 	itemList.push({ id: itemId, ...data });

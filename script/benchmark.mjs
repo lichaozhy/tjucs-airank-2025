@@ -1,13 +1,12 @@
 import * as fs from 'node:fs';
 import * as path from 'node:path';
 import matter from 'gray-matter';
-import MarkdownIt from 'markdown-it';
 import { JSDOM } from 'jsdom';
 
+import * as MD from './markdown.mjs';
 import { ensureDirectory, Hash } from './utils.mjs';
 
 const { dirname } = import.meta;
-
 
 const PATH = {
 	SOURCE: {
@@ -25,8 +24,6 @@ const PUBLIC_PATH = '/html/assets/';
 await ensureDirectory(PATH.TARGET.ASSETS);
 await ensureDirectory(PATH.TARGET.HTML);
 
-const MDParser = MarkdownIt({ html: true, linkify: true });
-
 const benchmarkDataList = [];
 const missingPathname = [];
 
@@ -36,7 +33,7 @@ for (const dirent of await fs.promises.readdir(PATH.SOURCE.DIRECTORY, {
 	const dirname = path.join(PATH.SOURCE.DIRECTORY, dirent.name);
 	const pathname = path.join(dirname, 'README.md');
 	const { data, content } = matter(await fs.promises.readFile(pathname, 'utf-8'));
-	const DOM = new JSDOM(MDParser.render(content));
+	const DOM = new JSDOM(MD.parser.render(content));
 	const htmlPathname = path.join(PATH.TARGET.HTML, `${dirent.name}.html`);
 	const bodyElement = DOM.window.document.body;
 
