@@ -20,17 +20,17 @@
 </template>
 
 <script setup lang="ts">
-import type { ModelData } from './ScoreTable.vue';
-import type { ModelFilter } from './ModelFilter.vue';
+import type { ModelData } from 'components/ScoreTable.vue';
+import type { ModelFilter } from 'components/ModelFilter.vue';
 import { computed, onBeforeMount, ref } from 'vue';
 
-import AppScoreCard from './ScoreCard.vue';
-import AppScoreTable from './ScoreTable.vue';
-import AppModelFilter from './ModelFilter.vue';
+import AppScoreCard from 'components/ScoreCard.vue';
+import AppScoreTable from 'components/ScoreTable.vue';
+import AppModelFilter from 'components/ModelFilter.vue';
 
 import type * as Spec from 'src/spec';
 import * as Backend from 'src/backend';
-import { toNumberOrNull } from './utils';
+import { toNumberOrNull } from 'components/utils';
 
 const props = defineProps<{
 	summaryId: string;

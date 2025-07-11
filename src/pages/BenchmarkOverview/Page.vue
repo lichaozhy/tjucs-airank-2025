@@ -67,7 +67,6 @@
 import type * as Spec from 'src/spec';
 import { computed, onBeforeMount, ref } from 'vue';
 
-import { API } from 'src/backend';
 import * as Backend from 'src/backend';
 import AppBenchmarkCard from './BenchmarkCard.vue';
 
@@ -109,7 +108,7 @@ const filteredBenchmarkList = computed(() => {
 
 onBeforeMount(async () => {
 	leaderboardList.value = await Backend.API.Leaderboard.query();
-	benchmarkList.value = await API.Benchmark.query();
+	benchmarkList.value = await Backend.API.Benchmark.query();
 });
 
 defineOptions({ name: 'BenchmarkIndexPage' });

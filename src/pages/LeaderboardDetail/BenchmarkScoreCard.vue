@@ -20,17 +20,17 @@
 </template>
 
 <script setup lang="ts">
-import type { ModelData } from './ScoreTable.vue';
-import type { ModelFilter } from './ModelFilter.vue';
+import type { ModelData } from 'components/ScoreTable.vue';
+import type { ModelFilter } from 'components/ModelFilter.vue';
 import { computed, onBeforeMount, ref } from 'vue';
 
-import AppScoreCard from './ScoreCard.vue';
-import AppScoreTable from './ScoreTable.vue';
-import AppModelFilter from './ModelFilter.vue';
+import AppScoreCard from 'components/ScoreCard.vue';
+import AppScoreTable from 'components/ScoreTable.vue';
+import AppModelFilter from 'components/ModelFilter.vue';
 
 import type * as Spec from 'src/spec';
 import * as Backend from 'src/backend';
-import { toNumberOrNull } from './utils';
+import { toNumberOrNull } from 'components/utils';
 
 const { benchmark } = defineProps<{
 	benchmark: Spec.Benchmark.Type;
@@ -77,8 +77,9 @@ const rowList = computed<ModelData[]>(() => {
 
 	const scoreRecord = Object.groupBy(scoreList.value, (score) => score.model);
 
-	const propertyList = Object.values(benchmark.properties)
-		.sort((a, b) => a.order - b.order);
+	const propertyList = Object.values(benchmark.properties).sort(
+		(a, b) => a.order - b.order,
+	);
 
 	for (const model of modelList.value.filter(currentFilter.value)) {
 		const data: ModelData = {
