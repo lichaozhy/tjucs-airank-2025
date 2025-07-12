@@ -60,7 +60,7 @@
 					class="app-navbar-feature-item text-weight-regular"
 					no-caps
 					flat
-					label="Embodied Benchmarks"
+					label="Benchmark Wiki"
 					:to="{ name: 'app.benchmark' }"
 					stretch
 					:class="{ active: routeMatched('app.benchmark') }"
