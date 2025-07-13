@@ -1,8 +1,8 @@
 import { z } from 'zod/v4';
 
 export const ScoreSchema = z.object({
-	core: z.number().array(),
-	sub: z.number().array(),
+	core: z.number().nullable().array(),
+	sub: z.number().nullable().array(),
 });
 
 export const Schema = z.object({
