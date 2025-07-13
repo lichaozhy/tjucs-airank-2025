@@ -9,7 +9,6 @@ order: 3
 
 | **Benchmark** | **Capability Dimension** |
 | ------------- | ------------------------ |
-| ERQA          | Trajectory Reasoning     |
 | OpenEQA       | Functional Reasoning     |
 | PhyBlock      | Counterfactual           |
 | MineAnyBuild  | Spatial Commonsense      |

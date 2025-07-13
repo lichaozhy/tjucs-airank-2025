@@ -9,7 +9,7 @@ order: 2
 
 | **Benchmark** | **Capability Dimension** |
 | ------------- | ------------------------ |
-| UniEQA        | Situated Reasoning       |
+| ERQA        | Trajectory Reasoning       |
 
 </div>
 

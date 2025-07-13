@@ -24,7 +24,6 @@ capabilities:
   - General Knowledge
   - Affordance Prediction
   - Object Reasoning
-  - Temporal Reasoning
   - Task Reasoning
   - Location Navigation
 properties:

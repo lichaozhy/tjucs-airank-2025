@@ -19,7 +19,7 @@ capabilities:
   - Object State
   - Spatial Relationship
   - Spatial Reasoning
-  - Knowledge Reasoning
+  - Temporal Reasoning
   - Task Reasoning
 properties:
   ActionReasoning:
