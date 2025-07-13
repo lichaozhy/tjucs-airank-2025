@@ -17,9 +17,14 @@ default:
 capabilities:
   - Spatial Reasoning
 properties:
+  Spatial Reasoning:
+    order: 1
+    index: 0
+    label: Spatial Reasoning
+    unit: null
   Total:
     order: 0
-    index: 0
+    index: 1
     label: Total Score
     unit: null
 ---

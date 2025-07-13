@@ -26,29 +26,14 @@ capabilities:
   - Knowledge Reasoning
   - Task Reasoning
 properties:
-  Object Property:
+  Spatial Reference Planning:
     order: 1
     index: 0
-    label: Object Property
-    unit: null
-  Object Relationship:
-    order: 2
-    index: 1
-    label: Object Relationship
-    unit: null
-  Scene Understanding:
-    order: 3
-    index: 2
-    label: Scene Understanding
-    unit: null
-  Dynamic Reasoning:
-    order: 4
-    index: 3
-    label: Dynamic Reasoning
+    label: Spatial Reference Planning
     unit: null
   Total:
     order: 0
-    index: 4
+    index: 1
     label: Total Score
     unit: null
 ---
