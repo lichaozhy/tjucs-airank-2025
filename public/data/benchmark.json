@@ -18,7 +18,9 @@
 		"default": {
 			"property": "TotalSR"
 		},
-		"capabilities": ["Instruction Navigation"],
+		"capabilities": [
+			"Instruction Navigation"
+		],
 		"properties": {
 			"TotalSR": {
 				"order": 0,
@@ -63,7 +65,6 @@
 			"General Knowledge",
 			"Affordance Prediction",
 			"Object Reasoning",
-			"Temporal Reasoning",
 			"Task Reasoning",
 			"Location Navigation"
 		],
@@ -167,11 +168,19 @@
 		"default": {
 			"property": "Total"
 		},
-		"capabilities": ["Spatial Reasoning"],
+		"capabilities": [
+			"Spatial Reasoning"
+		],
 		"properties": {
+			"Spatial Reasoning": {
+				"order": 1,
+				"index": 0,
+				"label": "Spatial Reasoning",
+				"unit": null
+			},
 			"Total": {
 				"order": 0,
-				"index": 0,
+				"index": 1,
 				"label": "Total Score",
 				"unit": null
 			}
@@ -266,7 +275,9 @@
 		"default": {
 			"property": "TotalSR"
 		},
-		"capabilities": ["Instruction Navigation"],
+		"capabilities": [
+			"Instruction Navigation"
+		],
 		"properties": {
 			"TotalSR": {
 				"order": 0,
@@ -399,33 +410,15 @@
 			"Task Reasoning"
 		],
 		"properties": {
-			"Object Property": {
+			"Spatial Reference Planning": {
 				"order": 1,
 				"index": 0,
-				"label": "Object Property",
-				"unit": null
-			},
-			"Object Relationship": {
-				"order": 2,
-				"index": 1,
-				"label": "Object Relationship",
-				"unit": null
-			},
-			"Scene Understanding": {
-				"order": 3,
-				"index": 2,
-				"label": "Scene Understanding",
-				"unit": null
-			},
-			"Dynamic Reasoning": {
-				"order": 4,
-				"index": 3,
-				"label": "Dynamic Reasoning",
+				"label": "Spatial Reference Planning",
 				"unit": null
 			},
 			"Total": {
 				"order": 0,
-				"index": 4,
+				"index": 1,
 				"label": "Total Score",
 				"unit": null
 			}
@@ -455,7 +448,7 @@
 			"Object State",
 			"Spatial Relationship",
 			"Spatial Reasoning",
-			"Knowledge Reasoning",
+			"Temporal Reasoning",
 			"Task Reasoning"
 		],
 		"properties": {
@@ -584,7 +577,9 @@
 		"default": {
 			"property": "TotalSR"
 		},
-		"capabilities": ["Object Navigation"],
+		"capabilities": [
+			"Object Navigation"
+		],
 		"properties": {
 			"BaseCapability": {
 				"order": 1,
@@ -643,7 +638,9 @@
 		"default": {
 			"property": "Total"
 		},
-		"capabilities": ["Spatial Reasoning"],
+		"capabilities": [
+			"Spatial Reasoning"
+		],
 		"properties": {
 			"EM": {
 				"order": 1,
@@ -678,7 +675,9 @@
 		"default": {
 			"property": "Total"
 		},
-		"capabilities": ["Affordance Prediction"],
+		"capabilities": [
+			"Affordance Prediction"
+		],
 		"properties": {
 			"Total": {
 				"order": 0,
@@ -713,7 +712,10 @@
 		"default": {
 			"property": "Total"
 		},
-		"capabilities": ["Spatial Reasoning", "Knowledge Reasoning"],
+		"capabilities": [
+			"Spatial Reasoning",
+			"Knowledge Reasoning"
+		],
 		"properties": {
 			"Spatial Reasoning": {
 				"order": 1,
@@ -903,7 +905,9 @@
 		"default": {
 			"property": "Total"
 		},
-		"capabilities": ["Spatial Relationship"],
+		"capabilities": [
+			"Spatial Relationship"
+		],
 		"properties": {
 			"CIDEr": {
 				"order": 1,
@@ -944,7 +948,9 @@
 		"default": {
 			"property": "Total"
 		},
-		"capabilities": ["Spatial Localization"],
+		"capabilities": [
+			"Spatial Localization"
+		],
 		"properties": {
 			"CIDEr": {
 				"order": 1,

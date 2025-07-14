@@ -27,7 +27,7 @@
 					:key="item.id"
 					:name="item.id"
 					:to="{
-						name: 'app.leaderboard.detail',
+						name: 'app.leaderboard.task',
 						params: { leaderboardId: item.id },
 					}"
 					class="text-h6 text-black text-weight-medieum"
