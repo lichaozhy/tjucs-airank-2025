@@ -115,10 +115,9 @@ import type * as Utils from 'src/spec';
 const PROFILE = {
 	TITLE: 'Embodied Arena has Covered 50+ Advanced Models',
 	COMMENT: `Embodied Arena evaluates both general large models and Embodied AI
-	models, including both leading commercial models and advanced academic
-	models. Embodied Arena is eagerly calling for more open-source and
-	close-source models to join with professional and user-friendly evaluation
-	support`,
+	models, including leading commercial models and advanced academic models.
+	Embodied Arena is eagerly calling for more open-source, closed-source models
+	to join with professional and user-friendly evaluation support.`,
 };
 
 const INTRODUCTION = {

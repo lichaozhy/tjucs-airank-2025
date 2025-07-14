@@ -115,7 +115,7 @@ const PROFILE = {
 	COMMENT: `Embodied Arena uses a systematic taxonomy of emboidied capability,
 	carefully sifted and refined from diverse embodied tasks and benchmarks,
 	aiming to provide concentrated metrics for reliable evaluation and essential
-	objectives for research breakthrough`,
+	objectives for research breakthrough.`,
 };
 
 import type * as Spec from 'src/spec';

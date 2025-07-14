@@ -94,6 +94,17 @@
 				no-caps
 			></q-btn>
 			<q-btn
+				label="Contribute Benchmark →"
+				flat
+				dense
+				no-caps
+				:to="{
+					name: 'app.googleform',
+					params: { id: '2ncVcX8K6quaEc7TA' },
+					query: { height: 2029 },
+				}"
+			></q-btn>
+			<q-btn
 				label="Go to Embodied Benchmarks to view all benchmarks →"
 				flat
 				dense
@@ -111,13 +122,13 @@ const PROFILE = {
 	TITLE: 'What is Embodied Arena?',
 	COMMENT: `Embodied Arena is an open-source, comprehensive, and user-friendly
 	evaluation system and platform for embodied AI models. It features three
-	types of core embodied tasks, a diverse range of high-quality benchmarks,
-	LLM-driven automatic evaluation data generation, and a systematic embodied
-	capability taxonomy. Moreover, Embodied Arena offers professional supports for
-	advanced models and new benchmarks to join. The aim of Embodied Arena is to
-	present an up-to-date overview of embodied capabilities of advanced models
-	and facilitate the identification of critical research areas, thereby
-	accelerating progress in the field of Embodied AI.`,
+	types of core embodied tasks, a diverse range of high-quality benchmarks, an
+	LLM-driven automatic evaluation data generation framework, and a systematic
+	embodied capability taxonomy. Moreover, Embodied Arena offers professional
+	supports for advanced models and new benchmarks to join. The aim of Embodied
+	Arena is to present an up-to-date overview of embodied capabilities of
+	advanced models and facilitate the identification of critical research areas,
+	thereby accelerating progress in the field of Embodied AI.`,
 };
 
 const INTRODUCTION = {
