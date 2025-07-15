@@ -21,9 +21,9 @@ export default {
 		},
 		benchmark: {
 			banner: {
-				title: 'Benchmark Hub',
-				description:
-					'Comprehensive Benchmarking Foundation Models for Embodied Intelligence',
+				title: 'Benchmark Wiki',
+				description: `Comprehensive Wiki documentation for all embodied AI
+				benchmarks integrated in EmbodiedArena platform.`,
 			},
 		},
 	},

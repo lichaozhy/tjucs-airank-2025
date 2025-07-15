@@ -58,6 +58,7 @@
 		</q-card-section>
 
 		<q-card-section>
+			<div class="text-caption text-grey">Capability Dimension</div>
 			<q-chip
 				v-if="tagList.length === 0"
 				class="q-ml-none text-white"

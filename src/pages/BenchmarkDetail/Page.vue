@@ -57,7 +57,7 @@
 						flat
 					>
 						<q-card-section class="q-py-none bg-indigo-10 text-white">
-							<div class="text-h6 text-weight-regular">Property List</div>
+							<div class="text-h6 text-weight-regular">Public Access</div>
 						</q-card-section>
 						<q-separator />
 
