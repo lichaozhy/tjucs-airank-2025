@@ -113,7 +113,7 @@ import { computed, ref } from 'vue';
 import type * as Utils from 'src/spec';
 
 const PROFILE = {
-	TITLE: 'Embodied Arena has Covered 50+ Advanced Models',
+	TITLE: 'Embodied Arena has Covered 30+ Advanced Models',
 	COMMENT: `Embodied Arena evaluates both general large models and Embodied AI
 	models, including leading commercial models and advanced academic models.
 	Embodied Arena is eagerly calling for more open-source, closed-source models

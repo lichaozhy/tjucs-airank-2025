@@ -46,23 +46,26 @@ const SECTION = {
 		{
 			ICON: 'lock_open',
 			TITLE: 'Comprehensive Embodied Capability Taxonomy',
-			COMMENT: `Systematic categorization spanning object perception, spatial
-			reasoning, temporal understanding, embodied knowledge, navigation, and
-			task planning across multiple dimensions.`,
+			COMMENT: `Systematic categorization spanning 7 core embodied capabilities
+			decomposed into 25+ fine-grained dimensions, carefully refined from
+			diverse embodied tasks and benchmarks to enable researchers to identify
+			specific capability gaps and track progress across different aspects of
+			Embodied AI`,
 		},
 		{
 			ICON: 'smart_toy',
 			TITLE: 'Rich Model Support',
-			COMMENT: `Comprehensive evaluation support for diverse AI architectures
-			including general multimodal LLMs, specialized embodied models, and both
-			open-source and close-source models.`,
+			COMMENT: `Rich evaluation support for diverse AI models including general
+			multimodal LLMs, specialized embodied models, and both open-source and
+			closed-source models.`,
 		},
 		{
 			ICON: 'electric_bolt',
-			TITLE: 'Modular Benchmark Integration',
-			COMMENT: `Comprehensive integration of diverse evaluation benchmarks
-			including visual QA, navigation tasks, task planning, and both 2D/3D
-			scenarios, with flexible extensibility for new benchmarks.`,
+			TITLE: 'Flexible Benchmark Integration',
+			COMMENT: `Flexible integration of 18 + evaluation benchmarks across three
+			core leaderboards with extensible design that enables easy onboarding
+			while maintaining consistent evaluation protocols as the platform evolves
+			with field advancement.`,
 		},
 		{
 			ICON: 'hive',
@@ -73,14 +76,14 @@ const SECTION = {
 		},
 		{
 			ICON: 'construction',
-			TITLE: 'High-Quality Evaluation Datasets',
+			TITLE: 'High-quality Evaluation Datasets',
 			COMMENT: `Curated evaluation datasets across varying difficulty levels,
 			continuously evolved through LLM-driven automated generation pipeline.`,
 		},
 		{
 			ICON: 'api',
 			TITLE: 'Multifaceted Evaluation Methodologies',
-			COMMENT: `Complementary evaluation paradigms including accuracy-based QA
+			COMMENT: `Multifaceted evaluation paradigms including accuracy-based QA
 			assessment (exact and fuzzy matching evaluation) and interactive
 			simulation-based testing (success rate metrics) for comprehensive
 			embodied capability evaluation.`,

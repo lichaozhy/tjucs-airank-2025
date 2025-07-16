@@ -59,7 +59,7 @@ const SECTION = {
 	],
 	personList: [
 		{
-			at: [0],
+			at: [],
 			core: false,
 			name: 'EmbodiedArena Team',
 		},

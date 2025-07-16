@@ -49,12 +49,15 @@
 				></div>
 
 				<div class="text-h5 text-center text-weight-medium q-mt-md">
-					Benchmark-Capability Mapping
+					{{ PROFILE.MAPPING.TITLE }}
+				</div>
+				<div class="text-caption text-center q-mt-sm">
+					{{ PROFILE.MAPPING.CAPTION }}
 				</div>
 
 				<q-tabs
 					v-model="item"
-					class="q-mt-md"
+					class="q-mt-sm"
 				>
 					<q-tab
 						v-for="item in itemList"
@@ -116,6 +119,12 @@ const PROFILE = {
 	carefully sifted and refined from diverse embodied tasks and benchmarks,
 	aiming to provide concentrated metrics for reliable evaluation and essential
 	objectives for research breakthrough.`,
+	MAPPING: {
+		TITLE: 'Benchmark-Capability Mapping',
+		CAPTION: `The following mapping table shows how the original capability
+		dimensions (second column) of each benchmark (first column) can be mapped
+		to the fine-grained capabilities (tab names) in our taxonomy.`,
+	},
 };
 
 import type * as Spec from 'src/spec';

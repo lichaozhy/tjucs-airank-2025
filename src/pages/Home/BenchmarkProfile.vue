@@ -120,19 +120,19 @@ import { computed, ref, watch } from 'vue';
 
 const PROFILE = {
 	TITLE: 'What is Embodied Arena?',
-	COMMENT: `Embodied Arena is an open-source, comprehensive, and user-friendly
-	evaluation system and platform for embodied AI models. It features three
-	types of core embodied tasks, a diverse range of high-quality benchmarks, an
-	LLM-driven automatic evaluation data generation framework, and a systematic
-	embodied capability taxonomy. Moreover, Embodied Arena offers professional
-	supports for advanced models and new benchmarks to join. The aim of Embodied
-	Arena is to present an up-to-date overview of embodied capabilities of
-	advanced models and facilitate the identification of critical research areas,
-	thereby accelerating progress in the field of Embodied AI.`,
+	COMMENT: `Embodied Arena is a comprehensive, unified and evolving evaluation
+	system and platform for embodied AI models. It features three types of core
+	embodied tasks, a diverse range of high-quality benchmarks, an LLM-driven
+	automatic evaluation data generation framework, and a systematic embodied
+	capability taxonomy. Moreover, Embodied Arena offers professional supports
+	for advanced models and new benchmarks to join. The aim of Embodied Arena is
+	to present an up-to-date overview of embodied capabilities of advanced models
+	and facilitate the identification of critical research areas, thereby
+	accelerating progress in the field of Embodied AI`,
 };
 
 const INTRODUCTION = {
-	TITLE: '3 Types of Leaderboards, 17 Evaluation Benchmarks',
+	TITLE: '3 Types of Leaderboards, 18 Evaluation Benchmarks',
 	LEADERBOARD: [
 		{
 			LABEL: 'Question Answering',

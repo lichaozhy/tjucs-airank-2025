@@ -35,10 +35,7 @@
 					label="View Leaderboards →"
 					outline
 					square
-					:to="{
-						name: 'app.leaderboard.detail',
-						params: { leaderboardId: defaultLeaderboardId },
-					}"
+					:to="{ name: 'app.leaderboard.capability' }"
 				></q-btn>
 			</div>
 		</div>
@@ -55,8 +52,8 @@ import * as Backend from 'src/backend';
 const PROJECT = {
 	NAME: 'Embodied Arena',
 	SUBTITLE: 'Embodied AI Model Evaluation System & Leaderboards',
-	ABSTRACT:
-		'An open-source, comprehensive, and user-friendly evaluation system and platform for embodied AI models',
+	ABSTRACT: `A comprehensive, unified, evolving evaluation system and platform
+	for embodied AI models`,
 };
 
 const defaultLeaderboardId = ref<string | null>(null);

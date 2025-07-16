@@ -38,12 +38,9 @@
 					no-caps
 					flat
 					stretch
-					:to="{
-						name: 'app.leaderboard.task',
-						params: { leaderboardId: defaultLeaderboardId },
-					}"
-					label="Embodied Task Leaderboards"
-					:class="{ active: routeMatched('app.leaderboard.task') }"
+					:to="{ name: 'app.leaderboard.capability' }"
+					label="Embodied Capability Leaderboards"
+					:class="{ active: routeMatched('app.leaderboard.capability') }"
 				></q-btn>
 
 				<q-btn
@@ -51,9 +48,12 @@
 					no-caps
 					flat
 					stretch
-					:to="{ name: 'app.leaderboard.capability' }"
-					label="Embodied Capability Leaderboards"
-					:class="{ active: routeMatched('app.leaderboard.capability') }"
+					:to="{
+						name: 'app.leaderboard.task',
+						params: { leaderboardId: defaultLeaderboardId },
+					}"
+					label="Embodied Task Leaderboards"
+					:class="{ active: routeMatched('app.leaderboard.task') }"
 				></q-btn>
 
 				<q-btn
