@@ -14,7 +14,10 @@
 					<div class="text-h2 text-weight-medium">{{ SECTION.TITLE }}</div>
 				</q-card-section>
 				<q-card-section style="max-width: 80em">
-					<div class="text-body1 text-indigo-2">{{ SECTION.COMMENT }}</div>
+					<div
+						class="text-body1 text-indigo-2"
+						v-html="SECTION.COMMENT"
+					></div>
 				</q-card-section>
 
 				<q-separator
@@ -74,23 +77,24 @@
 <script setup lang="ts">
 const SECTION = {
 	TITLE: 'Join Us',
-	COMMENT: `Join the Embodied Arena Evaluation Community! We enthusiastically
-	welcome cutting-edge embodied AI models to showcase their capabilities on
-	our comprehensive evaluation platform. We also cordially invite researchers
-	and practitioners to contribute innovative benchmarks that will define the
-	future standards of embodied intelligence assessment.`,
+	COMMENT: `<span class="text-weight-bold">Join us in advancing Embodied AI
+	evaluation!</span> We invite outstanding Embodied AI models to participate in
+	our comprehensive evaluation platform. We also cordially welcome researchers
+	and practitioners to contribute high-quality and innovative benchmarks that
+	advance the field of Embodied AI evaluation.`,
 	BAR: {
 		LEFT: {
 			TITLE: 'Evaluation Leaderboards',
 			COMMENT: `Showcase your model: Join the leaderboard competition,
-			demonstrate your embodied AI capabilities across comprehensive benchmarks,
-			and establish your model's position in the future of embodied intelligence.`,
+			demonstrate your Embodied AI capabilities across comprehensive
+			benchmarks, and establish your model's position in the future of
+			Embodied AI. `,
 		},
 		RIGHT: {
 			TITLE: 'Benchmark Community',
 			COMMENT: `Make your benchmark shine: Co-create and share evaluation
 			benchmarks with the community, establish distinctive leaderboards, and
-			collectively shape the future of large-scale embodied AI evaluation.`,
+			collectively shape the future of large-scale Embodied AI evaluation.`,
 		},
 	},
 };

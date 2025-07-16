@@ -47,43 +47,45 @@ const SECTION = {
 			ICON: 'lock_open',
 			TITLE: 'Comprehensive Embodied Capability Taxonomy',
 			COMMENT: `Systematic categorization spanning 7 core embodied capabilities
-			decomposed into 25+ fine-grained dimensions, carefully refined from
-			diverse embodied tasks and benchmarks to enable researchers to identify
+			decomposed into 25 fine-grained dimensions, carefully refined from
+			diverse embodied tasks and benchmarks, enabling researchers to identify
 			specific capability gaps and track progress across different aspects of
-			Embodied AI`,
-		},
-		{
-			ICON: 'smart_toy',
-			TITLE: 'Rich Model Support',
-			COMMENT: `Rich evaluation support for diverse AI models including general
-			multimodal LLMs, specialized embodied models, and both open-source and
-			closed-source models.`,
+			Embodied AI.`,
 		},
 		{
 			ICON: 'electric_bolt',
 			TITLE: 'Flexible Benchmark Integration',
-			COMMENT: `Flexible integration of 18 + evaluation benchmarks across three
-			core leaderboards with extensible design that enables easy onboarding
-			while maintaining consistent evaluation protocols as the platform evolves
-			with field advancement.`,
+			COMMENT: `Flexible integration of 18+ evaluation benchmarks across three
+			core types of leaderboards with easy extensibility under consistent
+			evaluation protocols, enabling the platform to evolve with advancement
+			in the field.`,
+		},
+		{
+			ICON: 'construction',
+			TITLE: 'High-quality Evolving Evaluation Data',
+			COMMENT: `Curated evaluation datasets across varying levels of
+			difficulty, continuously evolved through LLM-driven automated generation
+			pipeline.`,
+		},
+		{
+			ICON: 'smart_toy',
+			TITLE: 'Rich Model Support',
+			COMMENT: `Rich evaluation support for diverse AI models including both
+			general multimodal large models and specialized Embodied AI models in
+			multiple pathways (e.g., open-source weights, API of closed-source
+			models).`,
 		},
 		{
 			ICON: 'hive',
 			TITLE: 'Unified Evaluation Infrastructure',
 			COMMENT: `Clean, standardized evaluation framework with uniform
-			input/output formats enabling seamless and rapid distributed assessment
-			across diverse embodied AI benchmarks.`,
-		},
-		{
-			ICON: 'construction',
-			TITLE: 'High-quality Evaluation Datasets',
-			COMMENT: `Curated evaluation datasets across varying difficulty levels,
-			continuously evolved through LLM-driven automated generation pipeline.`,
+			input/output formats, enabling seamless and swift distributed assessment
+			across diverse Embodied AI benchmarks.`,
 		},
 		{
 			ICON: 'api',
 			TITLE: 'Multifaceted Evaluation Methodologies',
-			COMMENT: `Multifaceted evaluation paradigms including accuracy-based QA
+			COMMENT: `Multifaceted evaluation methods including accuracy-based QA
 			assessment (exact and fuzzy matching evaluation) and interactive
 			simulation-based testing (success rate metrics) for comprehensive
 			embodied capability evaluation.`,

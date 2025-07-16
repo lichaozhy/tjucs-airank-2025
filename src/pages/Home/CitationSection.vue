@@ -16,9 +16,11 @@
 </template>
 
 <script setup lang="ts">
-const CITATION = `@article{UniEQA2025,
-  title={UniEQA & UniEval: A Unified Benchmark and Evaluation Platform for  Multimodal Foundation Models in Embodied Question Answering},
-  year={2025}
+const CITATION =
+`@article{EmbodiedArena2025,
+	title={EmbodiedArena: A Comprehensive Evaluation Platform and Leaderboards for Embodied AI},
+	author={Embodied Arena Team},
+	year={2025}
 }`;
 
 defineOptions({ name: 'AppHomeSectionCitation' });
