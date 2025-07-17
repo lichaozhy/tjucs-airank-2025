@@ -11,8 +11,8 @@
 ### 🎯 **Comprehensive Evaluation System**
 
 - **3 Types of Leaderboards**: Question Answering, Navigation, and Task Planning
-- **17+ Evaluation Benchmarks**: Covering diverse embodied AI scenarios
-- **50+ Advanced Models**: Including both general large models and specialized embodied AI models
+- **18+ Evaluation Benchmarks**: Covering diverse embodied AI scenarios
+- **30+ Advanced Models**: Including both general large models and specialized embodied AI models
 - **20+ Institutes**: Representing leading research organizations worldwide
 
 ### 🔧 **Key Features**
@@ -22,14 +22,14 @@
 Systematic categorization spanning object perception, spatial reasoning, temporal understanding, embodied knowledge, navigation, and task planning across multiple dimensions. Embodied Arena uses a systematic taxonomy of embodied capability, carefully sifted and refined from diverse embodied tasks and benchmarks, providing concentrated metrics for reliable evaluation and essential objectives for research breakthrough.
 
 - **7 Core Embodied Capabilities**
-- **30+ Fine-grained Dimensions**
+- **25+ Fine-grained Dimensions**
 - **Comprehensive Benchmark-Capability Mapping**
 
 #### 🤖 **Rich Model Support**
 
 Comprehensive evaluation support for diverse AI architectures including general multimodal LLMs, specialized embodied models, and both open-source and close-source models. The platform offers flexibility and convenience for users to join with professional integration support.
 
-- **50+ Advanced Models**: From 20+ leading research institutes worldwide
+- **30+ Advanced Models**: From 20+ leading research institutes worldwide
 - **Multiple Model Types**: General LLMs, embodied multimodal models, and 3D vision models
 - **Flexible Integration**: Support for model parameters, API-based evaluation, and various access methods
 
@@ -37,7 +37,7 @@ Comprehensive evaluation support for diverse AI architectures including general 
 
 Comprehensive integration of diverse evaluation benchmarks including visual QA, navigation tasks, task planning, and both 2D/3D scenarios, with flexible extensibility for new benchmarks.
 
-- **17+ Evaluation Benchmarks**: Covering diverse embodied AI scenarios
+- **18+ Evaluation Benchmarks**: Covering diverse embodied AI scenarios
 - **Multi-domain Coverage**: 2D visual reasoning, 3D interactive environments, and simulation-based testing
 - **Extensible Architecture**: Easy onboarding for new benchmarks and evaluation tasks
 
@@ -81,9 +81,12 @@ Complementary evaluation paradigms including accuracy-based QA assessment (exact
 - **ERQA**: Embodied reasoning question answering with 400 multiple-choice VQA-style questions
 - **SQA3D**: 3D scene understanding with 33.4k reasoning questions across 650 scenes
 - **ScanQA**: 3D spatial understanding with 41k question-answer pairs from 800 indoor scenes
-- **PhyBlock**: Physical understanding assessment through robotic 3D block assembly tasks
-- **RoboVQA**: Robot visual question answering with 829,502 video-text pairs
-- **Where2Place**: Spatial free-space reference evaluation on real-world images
+- **Scan2Cap**: Dense captioning in 3D scans with natural language descriptions and bounding boxes
+- **PhyBlock**: Physical understanding assessment through robotic 3D block assembly tasks (2600 block tasks including 400 assembly tasks and 2200 VQA tasks)
+- **MineAnyBuild**: Spatial planning abilities evaluation in Minecraft with 4,000 curated tasks from multi-modal instructions
+- **RoboVQA**: Robot visual question answering with 829,502 video-text pairs for long-horizon reasoning
+- **Where2Place**: Spatial free-space reference evaluation on 100 real-world images from cluttered environments
+- **VABench-Point**: Spatial reasoning benchmark (mentioned in the benchmark mapping table)
 
 ### 2. 🧭 **Embodied Navigation Leaderboard**
 
@@ -230,8 +233,6 @@ Models specifically designed and optimized for embodied AI tasks, featuring enha
 
 Specialized for 2D visual reasoning benchmarks and embodied question answering tasks.
 
-**Research Models**:
-
 - **Tianjin University**: RoboAnnotatorX, Embodied-FSD
 - **Boston University**: SAT
 - **University of Washington**: RoboPoint
@@ -245,8 +246,6 @@ Specialized for 2D visual reasoning benchmarks and embodied question answering t
 
 Advanced models designed for 3D scene understanding and spatial reasoning tasks.
 
-**Research Models**:
-
 - **Beijing Jiaotong University / Peking University**: PhysVLM, UniNavid, Navid
 - **The University of Hong Kong**: EmbodiedGPT, Video-3D LLM, LLaVA-3D, GPT4Scene
 - **The Chinese University of Hong Kong**: Video-3D LLM, LLaVA-3D
@@ -258,17 +257,9 @@ Advanced models designed for 3D scene understanding and spatial reasoning tasks.
 
 ---
 
-## How We Evaluate
+## How to Evaluate
 
 Embodied Arena extensively supports comprehensive evaluation of models from different sources (open-source, close-source) by different means (model parameters, API), offering flexibility and convenience for users to join. The platform leverages a diverse range of well-curated embodied AI benchmarks, ensuring high alignment with canonical evaluation methods and the best completeness compared to prior works.
-
-### **Evaluation Process**
-
-1. **Model Integration**: Support for various model types and access methods
-2. **Benchmark Execution**: Comprehensive evaluation across mainstream benchmarks
-3. **Capability Assessment**: Analysis across seven core embodied capabilities
-4. **Result Presentation**: Rankings on three leaderboards and radar plots for intuitive comparison
-5. **Regular Updates**: Monthly leaderboard updates with transparent result presentation
 
 ### **Evaluation Metrics**
 
