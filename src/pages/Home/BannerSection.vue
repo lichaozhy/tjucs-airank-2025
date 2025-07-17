@@ -52,7 +52,7 @@ import * as Backend from 'src/backend';
 const PROJECT = {
 	NAME: 'Embodied Arena',
 	SUBTITLE: 'Embodied AI Model Evaluation System & Leaderboards',
-	ABSTRACT: `A comprehensive, unfied, and evolving evaluation system and
+	ABSTRACT: `A comprehensive, unified, and evolving evaluation system and
 	platform for embodied AI models`,
 };
 
