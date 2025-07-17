@@ -3,11 +3,19 @@
 		"id": "6d2b9e8a-97ff-400f-8ea1-f403c7452408",
 		"name": "GPT-4o",
 		"component": {
-			"language": ["GPT-4o"]
+			"language": [
+				"GPT-4o"
+			]
 		},
-		"author": ["OpenAI"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"author": [
+			"OpenAI"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://openai.com/index/hello-gpt-4o/",
 		"navigation": true,
 		"taskPlanning": true,
@@ -20,11 +28,11 @@
 		"score": {
 			"034bf6b5-dc18-45da-bfaf-337589125632": {
 				"core": [
-					43.81666666666667,
+					43.638548,
 					70.05,
-					57.755,
-					42.730000000000004,
-					35.0275,
+					55.50993289,
+					43.02058419,
+					38.055,
 					71.0,
 					null
 				],
@@ -57,7 +65,15 @@
 				]
 			},
 			"ba0be521-6b10-4881-964c-97cd4d2d6070": {
-				"core": [56.9, 36.23, null, 52.58, 48.989999999999995, null, null],
+				"core": [
+					56.84759336,
+					36.23,
+					null,
+					52.58,
+					48.90240275,
+					null,
+					null
+				],
 				"sub": [
 					54.55,
 					64.17,
@@ -87,14 +103,22 @@
 				]
 			},
 			"25206b0f-a955-4e39-86cf-53dcc9528bfc": {
-				"core": [45.0, 33.550000000000004, null, null, 28.5, 31.5, null],
+				"core": [
+					44.69328063,
+					29.16792857,
+					null,
+					null,
+					28.5,
+					31.5,
+					null
+				],
 				"sub": [
 					null,
 					43.8,
 					null,
 					46.2,
 					41.3,
-					21.15,
+					19.87707254,
 					null,
 					38.2,
 					null,
@@ -117,7 +141,15 @@
 				]
 			},
 			"5df5ca38-7ca9-4d35-81c6-3dfe52700755": {
-				"core": [36.870000000000005, 21.62, null, null, 38.845, null, null],
+				"core": [
+					36.87,
+					21.62,
+					null,
+					null,
+					38.845,
+					null,
+					null
+				],
 				"sub": [
 					26.47,
 					null,
@@ -135,7 +167,7 @@
 					39.28,
 					39.39,
 					null,
-					37.865,
+					38.18181818,
 					null,
 					null,
 					null,
@@ -147,7 +179,15 @@
 				]
 			},
 			"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-				"core": [null, null, null, 22.35, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					22.35,
+					null,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -177,7 +217,15 @@
 				]
 			},
 			"1961aa46-9085-42ed-b384-d9ffe52921a8": {
-				"core": [null, null, null, null, null, null, 53.5],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					53.5
+				],
 				"sub": [
 					null,
 					null,
@@ -207,7 +255,15 @@
 				]
 			},
 			"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-				"core": [null, null, null, null, null, null, 54.166666667499996],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					54.16667
+				],
 				"sub": [
 					null,
 					null,
@@ -237,7 +293,15 @@
 				]
 			},
 			"73de273a-7d38-40c0-b869-2b2e6156c897": {
-				"core": [null, null, null, null, null, 57.7, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					57.7,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -267,7 +331,15 @@
 				]
 			},
 			"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-				"core": [null, null, null, null, null, 4.0, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					4.0,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -297,7 +369,15 @@
 				]
 			},
 			"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-				"core": [null, null, null, null, null, 3.3000000000000003, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					3.3,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -323,11 +403,19 @@
 					null,
 					null,
 					null,
-					3.3000000000000003
+					3.3
 				]
 			},
 			"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-				"core": [null, null, null, null, 15.86, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					15.86,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -357,7 +445,15 @@
 				]
 			},
 			"27e481d6-6057-49dc-ad80-529f9127245f": {
-				"core": [null, null, null, null, null, null, 38.8],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					38.8
+				],
 				"sub": [
 					null,
 					null,
@@ -387,7 +483,15 @@
 				]
 			},
 			"089294d0-59db-47f0-a543-19d8e3708448": {
-				"core": [null, null, null, null, 15.0, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					15.0,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -418,35 +522,40 @@
 			},
 			"*": {
 				"core": [
-					46.52416666666666, 34.97583333333333, 57.755, 40.0975,
-					33.433499999999995, 37.53333333333334, 53.40000000041667
+					46.29167253612173,
+					39.62053975103331,
+					30.34108584229641,
+					40.35123781538012,
+					27.61045878541719,
+					56.79319094946077,
+					51.99340075027503
 				],
 				"sub": [
-					39.95333333333333,
-					53.44666666666666,
-					46.49666666666667,
+					42.3198590021692,
+					49.28606358381502,
+					44.64728590250329,
 					46.2,
-					44.32333333333333,
-					21.15,
+					55.37115460852328,
+					19.87707254,
 					36.23,
 					38.2,
 					69.29,
-					46.22,
-					46.144999999999996,
-					34.05,
+					19.3489181561618,
+					45.46905462184873,
+					35.922,
 					32.0,
-					28.7275,
-					33.945,
-					34.535,
-					37.96,
-					65.33333333499999,
-					57.0,
-					42.266666666666666,
-					null,
-					49,
+					24.84276157804459,
+					39.39,
+					51.55711610486891,
+					38.06965336113446,
+					62.1952158793868,
+					55.09175019275251,
+					43.53740053050398,
+					0,
+					48.97512437810946,
 					57.7,
-					51.25,
-					3.6500000000000004
+					71.0,
+					3.837209302325582
 				]
 			}
 		}
@@ -455,12 +564,22 @@
 		"id": "3b7f3638-9364-41c0-bbfe-5288176f3072",
 		"name": "LLaVA-NeXT-Video-7B",
 		"component": {
-			"language": ["lmsys/vicuna-7B-v1.5"]
+			"language": [
+				"lmsys/vicuna-7B-v1.5"
+			]
 		},
-		"size": [7],
-		"author": ["ByteDance"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			7
+		],
+		"author": [
+			"ByteDance"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/lmms-lab/LLaVA-NeXT-Video-7B",
 		"navigation": false,
 		"taskPlanning": false,
@@ -476,13 +595,25 @@
 		"id": "86657687-00d9-4968-90d3-5f4e3d8b6132",
 		"name": "MiniCPM-V 2.6",
 		"component": {
-			"vision": ["SigLip-So400M"],
-			"language": ["Qwen2-7B"]
+			"vision": [
+				"SigLip-So400M"
+			],
+			"language": [
+				"Qwen2-7B"
+			]
 		},
-		"size": [7],
-		"author": ["MiniCPM"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			7
+		],
+		"author": [
+			"MiniCPM"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/openbmb/MiniCPM-V-2_6",
 		"navigation": false,
 		"taskPlanning": false,
@@ -498,13 +629,25 @@
 		"id": "e9672027-30d6-4501-b17f-75152789cbc4",
 		"name": "mPLUG-Owl3",
 		"component": {
-			"vision": ["SigLIP-So400M"],
-			"language": ["Qwen2-7B"]
+			"vision": [
+				"SigLIP-So400M"
+			],
+			"language": [
+				"Qwen2-7B"
+			]
 		},
-		"size": [7],
-		"author": ["Alibaba"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			7
+		],
+		"author": [
+			"Alibaba"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/mPLUG/mPLUG-Owl3-7B-240728",
 		"navigation": false,
 		"taskPlanning": false,
@@ -520,13 +663,25 @@
 		"id": "aef63eca-3dde-495a-a922-c803d956568f",
 		"name": "Qwen2.5-VL-3B-Instruct",
 		"component": {
-			"vision": ["ViT"],
-			"language": ["Qwen2.5-3B"]
+			"vision": [
+				"ViT"
+			],
+			"language": [
+				"Qwen2.5-3B"
+			]
 		},
-		"size": [3],
-		"author": ["Alibaba"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			3
+		],
+		"author": [
+			"Alibaba"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/collections/Qwen/qwen25-vl-6795ffac22b334a837c0f9a5",
 		"navigation": true,
 		"taskPlanning": true,
@@ -539,11 +694,11 @@
 		"score": {
 			"034bf6b5-dc18-45da-bfaf-337589125632": {
 				"core": [
-					29.483333333333334,
+					29.09398542,
 					55.5,
-					38.43,
-					29.395,
-					27.244999999999997,
+					36.96832215,
+					29.69376289,
+					16.77,
 					52.53,
 					null
 				],
@@ -576,7 +731,15 @@
 				]
 			},
 			"ba0be521-6b10-4881-964c-97cd4d2d6070": {
-				"core": [29.429999999999996, 16.75, null, 27.88, 29.21, null, null],
+				"core": [
+					29.67912863,
+					16.75,
+					null,
+					27.88,
+					29.12446224,
+					null,
+					null
+				],
 				"sub": [
 					15.15,
 					39.41,
@@ -607,8 +770,8 @@
 			},
 			"25206b0f-a955-4e39-86cf-53dcc9528bfc": {
 				"core": [
-					15.045000000000002,
-					32.718333333333334,
+					15.58814888,
+					32.82039286,
 					null,
 					null,
 					22.33,
@@ -621,7 +784,7 @@
 					null,
 					12.92,
 					45.16,
-					27.095,
+					26.37501295,
 					null,
 					25.9,
 					null,
@@ -645,11 +808,11 @@
 			},
 			"5df5ca38-7ca9-4d35-81c6-3dfe52700755": {
 				"core": [
-					35.400000000000006,
+					35.4,
 					35.14,
 					null,
 					null,
-					33.425000000000004,
+					33.425,
 					null,
 					null
 				],
@@ -670,7 +833,7 @@
 					25.0,
 					34.85,
 					null,
-					40.425,
+					39.09127273,
 					null,
 					null,
 					null,
@@ -682,7 +845,15 @@
 				]
 			},
 			"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-				"core": [null, null, null, 6.74, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					6.74,
+					null,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -712,7 +883,15 @@
 				]
 			},
 			"1961aa46-9085-42ed-b384-d9ffe52921a8": {
-				"core": [null, null, null, null, null, null, 2.83333333325],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					2.833333333
+				],
 				"sub": [
 					null,
 					null,
@@ -742,7 +921,15 @@
 				]
 			},
 			"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-				"core": [null, null, null, null, null, null, 11.25],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					11.25
+				],
 				"sub": [
 					null,
 					null,
@@ -772,7 +959,15 @@
 				]
 			},
 			"73de273a-7d38-40c0-b869-2b2e6156c897": {
-				"core": [null, null, null, null, null, 16.6, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					16.6,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -802,7 +997,15 @@
 				]
 			},
 			"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-				"core": [null, null, null, null, null, 2.0, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					2.0,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -832,7 +1035,15 @@
 				]
 			},
 			"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-				"core": [null, null, null, null, null, 6.7, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					6.7,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -862,7 +1073,15 @@
 				]
 			},
 			"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-				"core": [null, null, null, null, 11.23, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					11.23,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -892,7 +1111,15 @@
 				]
 			},
 			"27e481d6-6057-49dc-ad80-529f9127245f": {
-				"core": [null, null, null, null, null, null, 19.7],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					19.7
+				],
 				"sub": [
 					null,
 					null,
@@ -922,7 +1149,15 @@
 				]
 			},
 			"089294d0-59db-47f0-a543-19d8e3708448": {
-				"core": [null, null, null, null, 8.0, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					8.0,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -953,35 +1188,40 @@
 			},
 			"*": {
 				"core": [
-					25.289166666666667, 28.75291666666667, 38.43, 23.3525, 27.032, 20.635,
-					8.016666666625
+					24.18514084523391,
+					37.39947240651592,
+					20.20645634757887,
+					24.14926900777778,
+					16.07629694955382,
+					17.75111017128357,
+					7.076182618091309
 				],
 				"sub": [
-					20.56,
-					31.386666666666667,
-					36.29,
+					21.0527874186551,
+					26.59067630057804,
+					31.22140974967061,
 					12.92,
-					45.26666666666667,
-					27.095,
+					50.16677898909811,
+					26.37501295,
 					16.75,
 					25.9,
 					45.94,
-					30.92,
-					27.085,
-					19.62,
+					12.94393226716839,
+					27.00149159663865,
+					21.6808,
 					37.72,
-					16.6875,
-					28.59,
-					23.565,
-					28.597499999999997,
-					13.1666666665,
-					5.0,
-					11.9,
-					null,
-					2,
+					16.10677530017153,
+					34.85,
+					34.88910112359551,
+					19.34913865577731,
+					11.64881878083604,
+					4.479568234387047,
+					10.00212201591512,
+					0,
+					1.990049751243781,
 					16.6,
-					40.955,
-					4.35
+					52.53,
+					3.093023255813954
 				]
 			}
 		}
@@ -990,12 +1230,22 @@
 		"id": "82dd6b52-ee0e-487e-ae7f-c982050f8506",
 		"name": "MiniCPM-V",
 		"component": {
-			"language": ["MiniCPM-2.4B"]
+			"language": [
+				"MiniCPM-2.4B"
+			]
 		},
-		"size": [3],
-		"author": ["MiniCPM"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			3
+		],
+		"author": [
+			"MiniCPM"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/openbmb/MiniCPM-V",
 		"navigation": false,
 		"taskPlanning": false,
@@ -1011,13 +1261,25 @@
 		"id": "03383a4f-37a0-4046-80f1-52b61dc452a7",
 		"name": "EmbodiedGPT",
 		"component": {
-			"vision": ["ViT-G/14"],
-			"language": ["LLaMA-7B"]
+			"vision": [
+				"ViT-G/14"
+			],
+			"language": [
+				"LLaMA-7B"
+			]
 		},
-		"size": [7],
-		"author": ["University of Hong Kong"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			7
+		],
+		"author": [
+			"University of Hong Kong"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://embodiedgpt.github.io/",
 		"navigation": true,
 		"taskPlanning": true,
@@ -1030,11 +1292,11 @@
 		"score": {
 			"034bf6b5-dc18-45da-bfaf-337589125632": {
 				"core": [
-					26.486666666666668,
+					25.13321385,
 					52.28,
-					37.95,
-					30.125,
-					27.072499999999998,
+					35.55214765,
+					29.91572165,
+					16.615,
 					48.48,
 					null
 				],
@@ -1067,7 +1329,15 @@
 				]
 			},
 			"ba0be521-6b10-4881-964c-97cd4d2d6070": {
-				"core": [28.25333333333333, 18.79, null, 32.55, 28.52, null, null],
+				"core": [
+					28.78452282,
+					18.79,
+					null,
+					32.55,
+					28.45320366,
+					null,
+					null
+				],
 				"sub": [
 					10.87,
 					26.67,
@@ -1097,14 +1367,22 @@
 				]
 			},
 			"25206b0f-a955-4e39-86cf-53dcc9528bfc": {
-				"core": [0.0, 0.5216666666666666, null, null, 1.13, 1.03, null],
+				"core": [
+					0.0,
+					0.55315,
+					null,
+					null,
+					1.13,
+					1.03,
+					null
+				],
 				"sub": [
 					null,
 					0.0,
 					null,
 					0.0,
 					1.49,
-					0.075,
+					0.068976684,
 					null,
 					0.0,
 					null,
@@ -1127,7 +1405,15 @@
 				]
 			},
 			"5df5ca38-7ca9-4d35-81c6-3dfe52700755": {
-				"core": [1.785, 0.0, null, null, 0.8766666666666666, null, null],
+				"core": [
+					1.785,
+					0.0,
+					null,
+					null,
+					0.876667,
+					null,
+					null
+				],
 				"sub": [
 					0.0,
 					null,
@@ -1145,7 +1431,7 @@
 					0.0,
 					2.63,
 					null,
-					0.0,
+					null,
 					null,
 					null,
 					null,
@@ -1157,7 +1443,15 @@
 				]
 			},
 			"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-				"core": [null, null, null, 2.54, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					2.54,
+					null,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -1187,7 +1481,15 @@
 				]
 			},
 			"1961aa46-9085-42ed-b384-d9ffe52921a8": {
-				"core": [null, null, null, null, null, null, 0.0],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					0.0
+				],
 				"sub": [
 					null,
 					null,
@@ -1217,7 +1519,15 @@
 				]
 			},
 			"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-				"core": [null, null, null, null, null, null, 0.0],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					0.0
+				],
 				"sub": [
 					null,
 					null,
@@ -1247,7 +1557,15 @@
 				]
 			},
 			"73de273a-7d38-40c0-b869-2b2e6156c897": {
-				"core": [null, null, null, null, null, 0.0, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					0.0,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -1277,7 +1595,15 @@
 				]
 			},
 			"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-				"core": [null, null, null, null, 13.07, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					13.07,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -1307,7 +1633,15 @@
 				]
 			},
 			"27e481d6-6057-49dc-ad80-529f9127245f": {
-				"core": [null, null, null, null, null, null, 12.3],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					12.3
+				],
 				"sub": [
 					null,
 					null,
@@ -1337,7 +1671,15 @@
 				]
 			},
 			"089294d0-59db-47f0-a543-19d8e3708448": {
-				"core": [null, null, null, null, 1.33, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					1.33,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -1368,44 +1710,52 @@
 			},
 			"*": {
 				"core": [
-					13.982499999999998,
-					9.197083333333333,
-					37.95,
-					23.834999999999997,
-					15.9235,
-					null,
-					1.0250000000000001
+					15.6789097072334,
+					14.4542256260637,
+					19.43239178228173,
+					24.29906432777778,
+					14.14280902934711,
+					2.050327764855149,
+					0.5412541254125413
 				],
 				"sub": [
-					8.299999999999999,
-					18.996666666666666,
-					28.63333333333333,
+					12.72091106290672,
+					13.11135260115607,
+					36.84520421607378,
 					0.0,
-					17.923333333333336,
-					0.075,
+					26.95835480673934,
+					0.068976684,
 					18.79,
 					0.0,
 					50.27,
-					25.63,
-					32.425,
-					15.245,
+					10.7293979303857,
+					32.41186974789916,
+					17.2778,
 					37.53,
-					10.355,
-					1.88,
-					21.545,
-					8.3075,
+					17.72692967409949,
+					2.63,
+					31.9934456928839,
+					14.69519957983193,
 					0.0,
 					0.0,
-					4.1000000000000005,
-					null,
+					2.610079575596817,
 					0,
 					0.0,
-					24.755,
-					null
+					0.0,
+					48.48,
+					0.0
 				]
 			},
 			"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-				"core": [null, null, null, null, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -1435,7 +1785,15 @@
 				]
 			},
 			"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-				"core": [null, null, null, null, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -1470,12 +1828,22 @@
 		"id": "8a656dd4-3104-4471-b8d8-0d6368975f74",
 		"name": "Phi-3-vision-128k-instruct",
 		"component": {
-			"language": ["Phi-3 Mini"]
+			"language": [
+				"Phi-3 Mini"
+			]
 		},
-		"size": [4],
-		"author": ["Microsoft"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			4
+		],
+		"author": [
+			"Microsoft"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/microsoft/Phi-3-vision-128k-instruct",
 		"navigation": false,
 		"taskPlanning": false,
@@ -1491,13 +1859,25 @@
 		"id": "0963c6fe-8edb-4165-98c7-6070bb745abf",
 		"name": "LLava-v1.5-7B",
 		"component": {
-			"vision": ["CLIP ViT-L/14"],
-			"language": ["Vicuna‑7B"]
+			"vision": [
+				"CLIP ViT-L/14"
+			],
+			"language": [
+				"Vicuna‑7B"
+			]
 		},
-		"size": [7],
-		"author": ["University of Wisconsin-Madison"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			7
+		],
+		"author": [
+			"University of Wisconsin-Madison"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/llava-hf/llava-1.5-7b-hf",
 		"navigation": false,
 		"taskPlanning": false,
@@ -1513,13 +1893,25 @@
 		"id": "65b0728a-15d2-4d76-909d-86a505c25405",
 		"name": "Instructblip-flant5xl",
 		"component": {
-			"vision": ["BLIP-2"],
-			"language": ["Flan-T5-xl"]
+			"vision": [
+				"BLIP-2"
+			],
+			"language": [
+				"Flan-T5-xl"
+			]
 		},
-		"size": [3],
-		"author": ["Salesforce Research"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			3
+		],
+		"author": [
+			"Salesforce Research"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/Salesforce/instructblip-flan-t5-xl",
 		"navigation": false,
 		"taskPlanning": false,
@@ -1535,12 +1927,22 @@
 		"id": "80939e8a-be9d-4652-95e0-ff3c73a1ddda",
 		"name": "Video-LLaVA-7B",
 		"component": {
-			"language": ["Vicuna-7B-v1.5"]
+			"language": [
+				"Vicuna-7B-v1.5"
+			]
 		},
-		"size": [7],
-		"author": ["Peking University"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			7
+		],
+		"author": [
+			"Peking University"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/LanguageBind/Video-LLaVA-7B",
 		"navigation": false,
 		"taskPlanning": false,
@@ -1556,13 +1958,25 @@
 		"id": "dfcea64f-ee5e-4ea6-a448-e09f2fb64271",
 		"name": "pllava-7b",
 		"component": {
-			"vision": ["CLIP ViT-L/14"],
-			"language": ["Vicuna-7B-v1.5"]
+			"vision": [
+				"CLIP ViT-L/14"
+			],
+			"language": [
+				"Vicuna-7B-v1.5"
+			]
 		},
-		"size": [7],
-		"author": ["Bytedance"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			7
+		],
+		"author": [
+			"Bytedance"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/ermu2001/pllava-7b",
 		"navigation": false,
 		"taskPlanning": false,
@@ -1578,13 +1992,25 @@
 		"id": "587b8069-98e6-46a8-985b-4c607dff6b33",
 		"name": "navillm",
 		"component": {
-			"vision": ["EVA-CLIP"],
-			"language": ["Vicuna-7B-v1.5"]
+			"vision": [
+				"EVA-CLIP"
+			],
+			"language": [
+				"Vicuna-7B-v1.5"
+			]
 		},
-		"size": [7],
-		"author": ["Shanghai AI Lab"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			7
+		],
+		"author": [
+			"Shanghai AI Lab"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://github.com/zd11024/NaviLLM",
 		"navigation": false,
 		"taskPlanning": false,
@@ -1600,12 +2026,22 @@
 		"id": "26d4f948-64f7-4cbb-a413-e7fec49dc45f",
 		"name": "BLIP-2-flant5xl",
 		"component": {
-			"vision": ["Blip-2"],
-			"language": ["Flan-T5-xl"]
+			"vision": [
+				"Blip-2"
+			],
+			"language": [
+				"Flan-T5-xl"
+			]
 		},
-		"author": ["Salesforce Research"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"author": [
+			"Salesforce Research"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/Salesforce/blip2-flan-t5-xl",
 		"navigation": false,
 		"taskPlanning": false,
@@ -1621,12 +2057,23 @@
 		"id": "8596e3d7-c65d-46e1-9063-16e83f0647cc",
 		"name": "llama-vid-7b-full-224",
 		"component": {
-			"language": ["LLaMA", "Vicuna‑7B"]
+			"language": [
+				"LLaMA",
+				"Vicuna‑7B"
+			]
 		},
-		"size": [7],
-		"author": ["Chinese University of Hong Kong"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			7
+		],
+		"author": [
+			"Chinese University of Hong Kong"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/YanweiLi/llama-vid-7b-full-224",
 		"navigation": false,
 		"taskPlanning": false,
@@ -1642,12 +2089,22 @@
 		"id": "ba940652-9040-4510-b232-52da5cbce5a8",
 		"name": "MiniGPT4-Vicuna7B",
 		"component": {
-			"vision": ["Blip-2"],
-			"language": ["Vicuna-7B"]
+			"vision": [
+				"Blip-2"
+			],
+			"language": [
+				"Vicuna-7B"
+			]
 		},
-		"author": ["King Abdullah University of Science and Technology"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"author": [
+			"King Abdullah University of Science and Technology"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://minigpt-4.github.io/",
 		"navigation": false,
 		"taskPlanning": false,
@@ -1663,11 +2120,19 @@
 		"id": "f0fc7970-1e20-4ea2-a5fd-65ed7dd6802a",
 		"name": "o3",
 		"component": {
-			"language": ["o3"]
+			"language": [
+				"o3"
+			]
 		},
-		"author": ["OpenAI"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"author": [
+			"OpenAI"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://openai.com/index/introducing-o3-and-o4-mini/",
 		"navigation": true,
 		"taskPlanning": true,
@@ -1679,7 +2144,15 @@
 		"imageVideo": "Image",
 		"score": {
 			"034bf6b5-dc18-45da-bfaf-337589125632": {
-				"core": [54.28666666666667, 54.29, 58.445, 72.97, 48.59, 46.11, null],
+				"core": [
+					52.8696051,
+					54.29,
+					58.23966443,
+					73.42127148,
+					41.96,
+					46.11,
+					null
+				],
 				"sub": [
 					40.49,
 					60.12,
@@ -1709,7 +2182,15 @@
 				]
 			},
 			"ba0be521-6b10-4881-964c-97cd4d2d6070": {
-				"core": [70.13666666666667, 49.77, null, 57.12, 56.235, null, null],
+				"core": [
+					70.51639004,
+					49.77,
+					null,
+					57.12,
+					56.19061785,
+					null,
+					null
+				],
 				"sub": [
 					55.45,
 					72.96,
@@ -1739,14 +2220,22 @@
 				]
 			},
 			"25206b0f-a955-4e39-86cf-53dcc9528bfc": {
-				"core": [61.5, 52.961666666666666, null, null, 71.03, 56.71, null],
+				"core": [
+					64.14801054,
+					50.92967857,
+					null,
+					null,
+					71.03,
+					56.71,
+					null
+				],
 				"sub": [
 					null,
 					71.86,
 					null,
 					51.14,
 					52.4,
-					49.925,
+					48.95765544,
 					null,
 					56.56,
 					null,
@@ -1769,7 +2258,15 @@
 				]
 			},
 			"5df5ca38-7ca9-4d35-81c6-3dfe52700755": {
-				"core": [53.82, 24.32, null, null, 41.078333333333326, null, null],
+				"core": [
+					53.82,
+					24.32,
+					null,
+					null,
+					41.07833,
+					null,
+					null
+				],
 				"sub": [
 					67.64,
 					null,
@@ -1787,7 +2284,7 @@
 					38.1,
 					43.94,
 					null,
-					41.195,
+					40.91218182,
 					null,
 					null,
 					null,
@@ -1799,7 +2296,15 @@
 				]
 			},
 			"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-				"core": [null, null, null, 33.46, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					33.46,
+					null,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -1829,7 +2334,15 @@
 				]
 			},
 			"1961aa46-9085-42ed-b384-d9ffe52921a8": {
-				"core": [null, null, null, null, null, null, 73.3333333325],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					73.33333333
+				],
 				"sub": [
 					null,
 					null,
@@ -1859,7 +2372,15 @@
 				]
 			},
 			"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-				"core": [null, null, null, null, null, null, 66.1666666675],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					66.16667
+				],
 				"sub": [
 					null,
 					null,
@@ -1889,7 +2410,15 @@
 				]
 			},
 			"73de273a-7d38-40c0-b869-2b2e6156c897": {
-				"core": [null, null, null, null, null, 64.8, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					64.8,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -1919,7 +2448,15 @@
 				]
 			},
 			"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-				"core": [null, null, null, null, null, 26.3, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					26.3,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -1949,7 +2486,15 @@
 				]
 			},
 			"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-				"core": [null, null, null, null, null, 13.3, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					13.3,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -1979,7 +2524,15 @@
 				]
 			},
 			"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-				"core": [null, null, null, null, 14.965, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					14.965,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -2009,7 +2562,15 @@
 				]
 			},
 			"27e481d6-6057-49dc-ad80-529f9127245f": {
-				"core": [null, null, null, null, null, null, 40.6],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					40.6
+				],
 				"sub": [
 					null,
 					null,
@@ -2039,7 +2600,15 @@
 				]
 			},
 			"089294d0-59db-47f0-a543-19d8e3708448": {
-				"core": [null, null, null, null, 19.67, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					19.67,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -2070,35 +2639,40 @@
 			},
 			"*": {
 				"core": [
-					58.84916666666666, 49.98125, 58.445, 59.13, 44.41700000000001,
-					45.336666666666666, 68.55
+					60.40577967636822,
+					51.44376853780695,
+					31.83312545880411,
+					61.03996101497076,
+					29.68509095045374,
+					62.87686614506239,
+					67.29560096859186
 				],
 				"sub": [
-					54.526666666666664,
-					68.31333333333333,
-					61.416666666666664,
+					45.23930585683298,
+					68.36845086705202,
+					67.19499341238472,
 					51.14,
-					43.669999999999995,
-					49.925,
+					52.83389990089197,
+					48.95765544,
 					49.77,
 					56.56,
 					59.5,
-					57.39,
-					62.7,
-					55.56,
+					24.02497648165569,
+					63.28613445378151,
+					59.09599999999999,
 					55.22,
-					32.2825,
-					57.485,
-					35.52,
-					41.5775,
-					76.0,
-					74.0,
-					50.199999999999996,
-					null,
-					74,
+					24.59619210977701,
+					43.94,
+					52.52022471910113,
+					41.83892857163865,
+					73.04643412542768,
+					72.26522744795682,
+					53.14588859416445,
+					0,
+					73.97014925373135,
 					64.8,
-					51.41,
-					19.8
+					46.11,
+					23.27674418604651
 				]
 			}
 		}
@@ -2116,13 +2690,25 @@
 		"id": "989f3769-fe45-4472-85aa-a4f071577271",
 		"name": "LLaVA-NeXT-Video-72B",
 		"component": {
-			"vision": ["SigLip-So400M"],
-			"language": ["Qwen2-72B"]
+			"vision": [
+				"SigLip-So400M"
+			],
+			"language": [
+				"Qwen2-72B"
+			]
 		},
-		"size": [72],
-		"author": ["ByteDance"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			72
+		],
+		"author": [
+			"ByteDance"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/lmms-lab/LLaVA-Video-72B-Qwen2",
 		"navigation": false,
 		"taskPlanning": false,
@@ -2138,12 +2724,22 @@
 		"id": "38e71976-4a59-41bf-9367-95f2fc5bf6f5",
 		"name": "LLaVA-OneVision-72B",
 		"component": {
-			"language": ["Qwen2-72B"]
+			"language": [
+				"Qwen2-72B"
+			]
 		},
-		"size": [72],
-		"author": ["ByteDance"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			72
+		],
+		"author": [
+			"ByteDance"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/collections/lmms-lab/llava-onevision-66a259c3526e15166d6bba37",
 		"navigation": true,
 		"taskPlanning": true,
@@ -2158,13 +2754,25 @@
 		"id": "6e39d9f5-4b6a-471d-92d6-07a37b559070",
 		"name": "InternVL2-40B",
 		"component": {
-			"vision": ["InternViT-6B-448px-V1-5"],
-			"language": ["Nous-Hermes-2-Yi-34B"]
+			"vision": [
+				"InternViT-6B-448px-V1-5"
+			],
+			"language": [
+				"Nous-Hermes-2-Yi-34B"
+			]
 		},
-		"size": [40],
-		"author": ["Shanghai AI Lab"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			40
+		],
+		"author": [
+			"Shanghai AI Lab"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/OpenGVLab/InternVL2-40B",
 		"navigation": false,
 		"taskPlanning": false,
@@ -2180,13 +2788,25 @@
 		"id": "5db29ede-6e63-432c-96c1-f65700028165",
 		"name": "InternVL2-8B",
 		"component": {
-			"vision": ["InternViT-300M-448px"],
-			"language": ["internlm2_5-7b-chat"]
+			"vision": [
+				"InternViT-300M-448px"
+			],
+			"language": [
+				"internlm2_5-7b-chat"
+			]
 		},
-		"size": [8],
-		"author": ["Shanghai AI Lab"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			8
+		],
+		"author": [
+			"Shanghai AI Lab"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/OpenGVLab/InternVL2-8B",
 		"navigation": false,
 		"taskPlanning": false,
@@ -2201,10 +2821,18 @@
 	{
 		"id": "4e387c03-f76e-43e0-9d9c-d80f05e40ed4",
 		"name": "LLaVA-OneVision-7B",
-		"size": [7],
-		"author": ["ByteDance"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			7
+		],
+		"author": [
+			"ByteDance"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/collections/lmms-lab/llava-onevision-66a259c3526e15166d6bba37",
 		"navigation": true,
 		"taskPlanning": true,
@@ -2215,7 +2843,15 @@
 		},
 		"score": {
 			"034bf6b5-dc18-45da-bfaf-337589125632": {
-				"core": [34.26, 59.49, 42.260000000000005, 39.74, 34.46, 42.5, null],
+				"core": [
+					33.53724787,
+					59.49,
+					39.42033557,
+					40.07292096,
+					33.68,
+					42.5,
+					null
+				],
 				"sub": [
 					27.13,
 					37.46,
@@ -2245,7 +2881,15 @@
 				]
 			},
 			"ba0be521-6b10-4881-964c-97cd4d2d6070": {
-				"core": [33.75, 16.45, null, 43.69, 23.505, null, null],
+				"core": [
+					34.03556017,
+					16.45,
+					null,
+					43.69,
+					23.45656751,
+					null,
+					null
+				],
 				"sub": [
 					21.37,
 					38.21,
@@ -2275,14 +2919,22 @@
 				]
 			},
 			"25206b0f-a955-4e39-86cf-53dcc9528bfc": {
-				"core": [47.675, 26.461666666666662, null, null, 24.43, 31.44, null],
+				"core": [
+					47.57148221,
+					30.19512143,
+					null,
+					null,
+					24.43,
+					31.44,
+					null
+				],
 				"sub": [
 					null,
 					47.27,
 					null,
 					48.08,
 					34.92,
-					31.275,
+					30.40483161,
 					null,
 					13.19,
 					null,
@@ -2305,7 +2957,15 @@
 				]
 			},
 			"5df5ca38-7ca9-4d35-81c6-3dfe52700755": {
-				"core": [36.735, 27.03, null, null, 40.095, null, null],
+				"core": [
+					36.735,
+					27.03,
+					null,
+					null,
+					40.095,
+					null,
+					null
+				],
 				"sub": [
 					35.29,
 					null,
@@ -2323,7 +2983,7 @@
 					44.05,
 					36.36,
 					null,
-					39.875,
+					40.00018182,
 					null,
 					null,
 					null,
@@ -2335,7 +2995,15 @@
 				]
 			},
 			"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-				"core": [null, null, null, 9.13, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					9.13,
+					null,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -2365,7 +3033,15 @@
 				]
 			},
 			"1961aa46-9085-42ed-b384-d9ffe52921a8": {
-				"core": [null, null, null, null, null, null, 2.0],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					2.0
+				],
 				"sub": [
 					null,
 					null,
@@ -2395,7 +3071,15 @@
 				]
 			},
 			"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-				"core": [null, null, null, null, null, null, 7.9166666675],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					7.916667
+				],
 				"sub": [
 					null,
 					null,
@@ -2425,7 +3109,15 @@
 				]
 			},
 			"73de273a-7d38-40c0-b869-2b2e6156c897": {
-				"core": [null, null, null, null, null, 11.6, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					11.6,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -2455,7 +3147,15 @@
 				]
 			},
 			"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-				"core": [null, null, null, null, null, 10.0, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					10.0,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -2485,7 +3185,15 @@
 				]
 			},
 			"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-				"core": [null, null, null, null, null, 3.3, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					3.3,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -2515,7 +3223,15 @@
 				]
 			},
 			"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-				"core": [null, null, null, null, 12.57, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					12.57,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -2545,7 +3261,15 @@
 				]
 			},
 			"27e481d6-6057-49dc-ad80-529f9127245f": {
-				"core": [null, null, null, null, null, null, 14.7],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					14.7
+				],
 				"sub": [
 					null,
 					null,
@@ -2575,7 +3299,15 @@
 				]
 			},
 			"089294d0-59db-47f0-a543-19d8e3708448": {
-				"core": [null, null, null, null, 4.02, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					4.02,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -2606,35 +3338,40 @@
 			},
 			"*": {
 				"core": [
-					39.08416666666666, 25.34875, 42.260000000000005, 33.075, 28.2985,
-					18.406666666666666, 5.850000000416667
+					39.05758173835765,
+					36.50283734597617,
+					21.54669845902421,
+					33.8571539948538,
+					21.26978573276279,
+					12.82068090505392,
+					5.019527093729373
 				],
 				"sub": [
-					27.929999999999996,
-					40.98,
-					39.346666666666664,
+					25.9877874186551,
+					42.96805202312139,
+					39.34469038208169,
 					48.08,
-					40.48,
-					31.275,
+					47.10903865213083,
+					30.40483161,
 					16.45,
 					13.19,
 					56.85,
-					27.67,
-					39.985,
-					26.165000000000003,
+					11.58339604891816,
+					39.59581932773109,
+					28.8906,
 					35.24,
-					21.029999999999998,
-					30.395,
-					18.05,
-					36.7775,
-					9.333333335,
-					3.5,
-					7.566666666666666,
-					null,
-					3,
+					18.17924528301887,
+					36.36,
+					25.87460674157303,
+					34.41027310945378,
+					8.222320967145079,
+					3.239784117193524,
+					5.950132625994695,
+					0,
+					2.99502487562189,
 					11.6,
-					36.97,
-					6.65
+					42.5,
+					8.44186046511628
 				]
 			}
 		}
@@ -2643,12 +3380,22 @@
 		"id": "7a21af4c-f57d-4311-8fae-b7b8dafd03bd",
 		"name": "VILA-1.5-40B",
 		"component": {
-			"language": ["VILA"]
+			"language": [
+				"VILA"
+			]
 		},
-		"size": [40],
-		"author": ["NVIDIA"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			40
+		],
+		"author": [
+			"NVIDIA"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/Efficient-Large-Model/VILA1.5-40b",
 		"navigation": true,
 		"taskPlanning": true,
@@ -2664,12 +3411,22 @@
 		"id": "51f2b003-5aa9-462a-a5b4-538ec3f28c17",
 		"name": "LongVA-7B",
 		"component": {
-			"language": ["Qwen2-7B"]
+			"language": [
+				"Qwen2-7B"
+			]
 		},
-		"size": [7],
-		"author": ["ByteDance"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			7
+		],
+		"author": [
+			"ByteDance"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/lmms-lab/LongVA-7B",
 		"navigation": false,
 		"taskPlanning": false,
@@ -2685,11 +3442,19 @@
 		"id": "af35bb7c-f716-47a0-bcce-2f045a108735",
 		"name": "Gemini-2.0-flash",
 		"component": {
-			"language": ["Gemini-2.0-flash"]
+			"language": [
+				"Gemini-2.0-flash"
+			]
 		},
-		"author": ["Google DeepMind"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"author": [
+			"Google DeepMind"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-0-flash",
 		"navigation": true,
 		"taskPlanning": true,
@@ -2701,7 +3466,15 @@
 		"imageVideo": "image/video",
 		"score": {
 			"034bf6b5-dc18-45da-bfaf-337589125632": {
-				"core": [54.23, 42.4, 62.515, 62.63, 39.474999999999994, 50.62, null],
+				"core": [
+					53.65618469,
+					42.4,
+					63.52610738,
+					61.89584192,
+					32.65,
+					50.62,
+					null
+				],
 				"sub": [
 					47.62,
 					59.06,
@@ -2731,7 +3504,15 @@
 				]
 			},
 			"ba0be521-6b10-4881-964c-97cd4d2d6070": {
-				"core": [61.553333333333335, 31.39, null, 60.22, 29.03, null, null],
+				"core": [
+					61.79116183,
+					31.39,
+					null,
+					60.22,
+					29.04620137,
+					null,
+					null
+				],
 				"sub": [
 					46.79,
 					73.06,
@@ -2761,14 +3542,22 @@
 				]
 			},
 			"25206b0f-a955-4e39-86cf-53dcc9528bfc": {
-				"core": [59.55, 40.46666666666666, null, null, 55.1, 24.5, null],
+				"core": [
+					61.37753623,
+					42.59185714,
+					null,
+					null,
+					55.1,
+					24.5,
+					null
+				],
 				"sub": [
 					null,
 					66.7,
 					null,
 					52.4,
 					46.3,
-					43.3,
+					42.28005181,
 					null,
 					31.8,
 					null,
@@ -2791,7 +3580,15 @@
 				]
 			},
 			"5df5ca38-7ca9-4d35-81c6-3dfe52700755": {
-				"core": [52.275, 37.84, null, null, 40.666666666666664, null, null],
+				"core": [
+					52.275,
+					37.84,
+					null,
+					null,
+					40.66667,
+					null,
+					null
+				],
 				"sub": [
 					50.0,
 					null,
@@ -2809,7 +3606,7 @@
 					50.0,
 					36.36,
 					null,
-					35.64,
+					33.64018182,
 					null,
 					null,
 					null,
@@ -2821,7 +3618,15 @@
 				]
 			},
 			"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-				"core": [null, null, null, 33.8, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					33.8,
+					null,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -2851,7 +3656,15 @@
 				]
 			},
 			"1961aa46-9085-42ed-b384-d9ffe52921a8": {
-				"core": [null, null, null, null, null, null, 49.5],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					49.5
+				],
 				"sub": [
 					null,
 					null,
@@ -2881,7 +3694,15 @@
 				]
 			},
 			"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-				"core": [null, null, null, null, null, null, 39.166666667499996],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					39.16667
+				],
 				"sub": [
 					null,
 					null,
@@ -2911,7 +3732,15 @@
 				]
 			},
 			"73de273a-7d38-40c0-b869-2b2e6156c897": {
-				"core": [null, null, null, null, null, 48.7, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					48.7,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -2941,7 +3770,15 @@
 				]
 			},
 			"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-				"core": [null, null, null, null, null, 6.1, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					6.1,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -2971,7 +3808,15 @@
 				]
 			},
 			"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-				"core": [null, null, null, null, null, 10.0, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					10.0,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -3001,7 +3846,15 @@
 				]
 			},
 			"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-				"core": [null, null, null, null, 11.41, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					11.41,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -3031,7 +3884,15 @@
 				]
 			},
 			"27e481d6-6057-49dc-ad80-529f9127245f": {
-				"core": [null, null, null, null, null, null, 39.3],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					39.3
+				],
 				"sub": [
 					null,
 					null,
@@ -3061,7 +3922,15 @@
 				]
 			},
 			"089294d0-59db-47f0-a543-19d8e3708448": {
-				"core": [null, null, null, null, 9.33, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					9.33,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -3092,35 +3961,40 @@
 			},
 			"*": {
 				"core": [
-					56.31666666666667, 37.1675, 62.515, 54.82000000000001,
-					33.919999999999995, 31.436666666666667, 44.27500000041667
+					58.05248113681338,
+					41.78557014150255,
+					34.72263389442406,
+					55.22226120608187,
+					21.49516112898664,
+					47.6438781983506,
+					43.62266367656765
 				],
 				"sub": [
-					48.13666666666666,
-					66.27333333333333,
-					58.45666666666667,
+					47.49981561822126,
+					65.21082080924856,
+					58.82594202898551,
 					52.4,
-					42.18,
-					43.3,
+					44.18715559960356,
+					42.28005181,
 					31.39,
 					31.8,
 					57.32,
-					67.71,
-					65.24000000000001,
-					44.4,
+					28.34520225776105,
+					65.76731092436975,
+					46.096,
 					46.3,
-					26.68,
-					45.730000000000004,
-					16.745,
-					34.144999999999996,
-					53.333333335,
-					41.0,
-					39.766666666666666,
-					null,
-					43,
+					17.81852487135506,
+					36.36,
+					22.95277153558052,
+					32.76441176491596,
+					51.48559579496112,
+					41.86738627602159,
+					40.33209549071618,
+					0,
+					42.97512437810946,
 					48.7,
-					37.56,
-					8.05
+					50.62,
+					7.006976744186046
 				]
 			}
 		}
@@ -3129,13 +4003,25 @@
 		"id": "50b75743-251c-40f8-ad52-0773e9865e88",
 		"name": "InternVL2_5-38B-MPO",
 		"component": {
-			"vision": ["InternViT-6B-448px-V2_5"],
-			"language": ["Qwen2.5-32B-Instruct"]
+			"vision": [
+				"InternViT-6B-448px-V2_5"
+			],
+			"language": [
+				"Qwen2.5-32B-Instruct"
+			]
 		},
-		"size": [38],
-		"author": ["Shanghai AI Lab"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			38
+		],
+		"author": [
+			"Shanghai AI Lab"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/OpenGVLab/InternVL2_5-38B-MPO",
 		"navigation": false,
 		"taskPlanning": false,
@@ -3151,13 +4037,25 @@
 		"id": "638048e4-d5ad-4e67-abfd-c326697048aa",
 		"name": "InternVL2.5-78B-MPO",
 		"component": {
-			"vision": ["InternViT-6B-448px-V2_5"],
-			"language": ["Qwen2.5-72B-Instruct"]
+			"vision": [
+				"InternViT-6B-448px-V2_5"
+			],
+			"language": [
+				"Qwen2.5-72B-Instruct"
+			]
 		},
-		"size": [78],
-		"author": ["Shanghai AI Lab"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			78
+		],
+		"author": [
+			"Shanghai AI Lab"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/OpenGVLab/InternVL2_5-78B-MPO",
 		"navigation": false,
 		"taskPlanning": false,
@@ -3173,13 +4071,25 @@
 		"id": "e8dafa04-5593-47ac-977b-73a5911edc74",
 		"name": "Qwen2.5-VL-72B-Instruct",
 		"component": {
-			"vision": ["ViT"],
-			"language": ["Qwen2.5-72B"]
+			"vision": [
+				"ViT"
+			],
+			"language": [
+				"Qwen2.5-72B"
+			]
 		},
-		"size": [72],
-		"author": ["Alibaba"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			72
+		],
+		"author": [
+			"Alibaba"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/collections/Qwen/qwen25-vl-6795ffac22b334a837c0f9a5",
 		"navigation": true,
 		"taskPlanning": true,
@@ -3195,11 +4105,19 @@
 		"id": "85034696-05d3-44c9-8fc6-1786f0d86aab",
 		"name": "Claude-3.5-Sonnet",
 		"component": {
-			"language": ["Claude-3.5-Sonnet"]
+			"language": [
+				"Claude-3.5-Sonnet"
+			]
 		},
-		"author": ["Anthropic"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"author": [
+			"Anthropic"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://www.anthropic.com/news/claude-3-5-sonnet",
 		"navigation": true,
 		"taskPlanning": true,
@@ -3215,11 +4133,19 @@
 		"id": "9a722f4d-1622-4ed4-9482-5024b95e06fb",
 		"name": "Gemini-1.5-flash",
 		"component": {
-			"language": ["gemini-1.5-flash"]
+			"language": [
+				"gemini-1.5-flash"
+			]
 		},
-		"author": ["Google DeepMind"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"author": [
+			"Google DeepMind"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/1-5-flash",
 		"navigation": false,
 		"taskPlanning": false,
@@ -3235,11 +4161,19 @@
 		"id": "3cfdaff3-8301-4951-9f3b-cf8134b4ed10",
 		"name": "Qwen-VL-Max",
 		"component": {
-			"language": ["Qwen-VL-Max"]
+			"language": [
+				"Qwen-VL-Max"
+			]
 		},
-		"author": ["Alibaba"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"author": [
+			"Alibaba"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/spaces/Qwen/Qwen-VL-Max",
 		"navigation": true,
 		"taskPlanning": true,
@@ -3252,11 +4186,11 @@
 		"score": {
 			"034bf6b5-dc18-45da-bfaf-337589125632": {
 				"core": [
-					50.14000000000001,
+					48.92259417,
 					42.34,
-					55.575,
-					69.11500000000001,
-					42.805,
+					54.21550336,
+					69.03946735,
+					28.73,
 					53.18,
 					null
 				],
@@ -3277,7 +4211,7 @@
 					null,
 					null,
 					null,
-					28.729999999999997,
+					28.73,
 					null,
 					null,
 					null,
@@ -3289,7 +4223,15 @@
 				]
 			},
 			"ba0be521-6b10-4881-964c-97cd4d2d6070": {
-				"core": [61.85333333333333, 31.08, null, 56.47, 46.375, null, null],
+				"core": [
+					62.05564315,
+					31.08,
+					null,
+					56.47,
+					46.27,
+					null,
+					null
+				],
 				"sub": [
 					53.33,
 					64.58,
@@ -3319,14 +4261,22 @@
 				]
 			},
 			"25206b0f-a955-4e39-86cf-53dcc9528bfc": {
-				"core": [39.93, 33.14000000000001, null, null, 33.01, 26.81, null],
+				"core": [
+					42.97930171,
+					31.6973,
+					null,
+					null,
+					33.01,
+					26.81,
+					null
+				],
 				"sub": [
 					null,
 					51.86,
 					null,
 					28.0,
 					30.37,
-					32.7,
+					31.66158031,
 					null,
 					36.35,
 					null,
@@ -3349,7 +4299,15 @@
 				]
 			},
 			"5df5ca38-7ca9-4d35-81c6-3dfe52700755": {
-				"core": [45.56, 35.14, null, null, 42.74333333333333, null, null],
+				"core": [
+					45.56,
+					35.14,
+					null,
+					null,
+					42.74333,
+					null,
+					null
+				],
 				"sub": [
 					52.94,
 					null,
@@ -3367,7 +4325,7 @@
 					47.62,
 					34.85,
 					null,
-					45.76,
+					43.63654545,
 					null,
 					null,
 					null,
@@ -3379,7 +4337,15 @@
 				]
 			},
 			"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-				"core": [null, null, null, 26.84, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					26.84,
+					null,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -3409,7 +4375,15 @@
 				]
 			},
 			"1961aa46-9085-42ed-b384-d9ffe52921a8": {
-				"core": [null, null, null, null, null, null, 42.0],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					42.0
+				],
 				"sub": [
 					null,
 					null,
@@ -3439,7 +4413,15 @@
 				]
 			},
 			"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-				"core": [null, null, null, null, null, null, 41.333333332500004],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					41.33333
+				],
 				"sub": [
 					null,
 					null,
@@ -3469,7 +4451,15 @@
 				]
 			},
 			"73de273a-7d38-40c0-b869-2b2e6156c897": {
-				"core": [null, null, null, null, null, 39.7, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					39.7,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -3499,7 +4489,15 @@
 				]
 			},
 			"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-				"core": [null, null, null, null, 12.809999999999999, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					12.81,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -3529,7 +4527,15 @@
 				]
 			},
 			"27e481d6-6057-49dc-ad80-529f9127245f": {
-				"core": [null, null, null, null, null, null, 28.9],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					28.9
+				],
 				"sub": [
 					null,
 					null,
@@ -3559,7 +4565,15 @@
 				]
 			},
 			"089294d0-59db-47f0-a543-19d8e3708448": {
-				"core": [null, null, null, null, 42.0, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					42.0,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -3590,39 +4604,52 @@
 			},
 			"*": {
 				"core": [
-					46.913333333333334, 34.02, 55.575, 55.385000000000005, 39.423, 27.115,
-					41.241666666250005
+					48.96635814815141,
+					34.31001215657671,
+					29.63356566632428,
+					56.92896685935673,
+					25.44885197882531,
+					39.20807781772045,
+					40.24510310011001
 				],
 				"sub": [
-					48.49,
-					56.46333333333333,
-					54.70000000000001,
+					43.24684381778742,
+					53.96296531791907,
+					59.92851119894599,
 					28.0,
-					35.95,
-					32.7,
+					36.46618434093161,
+					31.66158031,
 					31.08,
 					36.35,
 					62.56,
-					48.59,
-					63.185,
-					47.585,
+					20.34106302916275,
+					63.89035714285715,
+					50.9042,
 					56.88,
-					34.934999999999995,
-					33.93,
-					34.125,
-					37.245,
-					46.666666665,
+					24.1590051457976,
+					34.85,
+					51.35352059925094,
+					30.45239495745798,
+					44.01096052585648,
 					42.0,
-					32.300000000000004,
-					null,
-					44,
+					33.23819628647215,
+					0,
+					43.98009950248756,
 					39.7,
-					39.995,
-					1.65
+					53.18,
+					0.7674418604651163
 				]
 			},
 			"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-				"core": [null, null, null, null, null, 3.3, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					3.3,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -3652,7 +4679,15 @@
 				]
 			},
 			"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-				"core": [null, null, null, null, null, 0.0, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					0.0,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -3687,11 +4722,19 @@
 		"id": "a0515273-7168-4717-a07a-b143b0208074",
 		"name": "GPT-4o mini",
 		"component": {
-			"language": ["GPT-4o mini"]
+			"language": [
+				"GPT-4o mini"
+			]
 		},
-		"author": ["OpenAI"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"author": [
+			"OpenAI"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/",
 		"navigation": false,
 		"taskPlanning": false,
@@ -3703,7 +4746,15 @@
 		"imageVideo": "Image",
 		"score": {
 			"034bf6b5-dc18-45da-bfaf-337589125632": {
-				"core": [50.96666666666667, 47.86, 47.985, 66.17, 42.265, 48.67, null],
+				"core": [
+					49.62181045,
+					47.86,
+					47.87892617,
+					66.62415808,
+					34.25,
+					48.67,
+					null
+				],
 				"sub": [
 					37.53,
 					57.33,
@@ -3733,7 +4784,15 @@
 				]
 			},
 			"ba0be521-6b10-4881-964c-97cd4d2d6070": {
-				"core": [61.54666666666666, 47.34, null, 52.9, 47.505, null, null],
+				"core": [
+					61.68394191,
+					47.34,
+					null,
+					52.9,
+					47.50386728,
+					null,
+					null
+				],
 				"sub": [
 					51.67,
 					70.56,
@@ -3764,8 +4823,8 @@
 			},
 			"25206b0f-a955-4e39-86cf-53dcc9528bfc": {
 				"core": [
-					19.794999999999998,
-					22.334999999999997,
+					null,
+					null,
 					null,
 					null,
 					44.98,
@@ -3778,7 +4837,7 @@
 					null,
 					0.23,
 					41.24,
-					23.265,
+					null,
 					null,
 					2.5,
 					null,
@@ -3801,7 +4860,15 @@
 				]
 			},
 			"5df5ca38-7ca9-4d35-81c6-3dfe52700755": {
-				"core": [40.94, 21.62, null, null, 30.05666666666666, null, null],
+				"core": [
+					40.94,
+					21.62,
+					null,
+					null,
+					30.05667,
+					null,
+					null
+				],
 				"sub": [
 					38.24,
 					null,
@@ -3819,7 +4886,7 @@
 					19.05,
 					33.33,
 					null,
-					37.79,
+					null,
 					null,
 					null,
 					null,
@@ -3831,7 +4898,15 @@
 				]
 			},
 			"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-				"core": [null, null, null, 25.06, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					25.06,
+					null,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -3861,7 +4936,15 @@
 				]
 			},
 			"1961aa46-9085-42ed-b384-d9ffe52921a8": {
-				"core": [null, null, null, null, null, null, 24.3333333325],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					24.33333333
+				],
 				"sub": [
 					null,
 					null,
@@ -3891,7 +4974,15 @@
 				]
 			},
 			"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-				"core": [null, null, null, null, null, null, 29.0],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					29.0
+				],
 				"sub": [
 					null,
 					null,
@@ -3921,7 +5012,15 @@
 				]
 			},
 			"73de273a-7d38-40c0-b869-2b2e6156c897": {
-				"core": [null, null, null, null, null, 33.3, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					33.3,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -3951,7 +5050,15 @@
 				]
 			},
 			"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-				"core": [null, null, null, null, null, 1.0, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					1.0,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -3981,7 +5088,15 @@
 				]
 			},
 			"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-				"core": [null, null, null, null, null, 3.3, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					3.3,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -4011,7 +5126,15 @@
 				]
 			},
 			"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-				"core": [null, null, null, null, 16.919999999999998, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					16.92,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -4041,7 +5164,15 @@
 				]
 			},
 			"27e481d6-6057-49dc-ad80-529f9127245f": {
-				"core": [null, null, null, null, null, null, 23.3],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					23.3
+				],
 				"sub": [
 					null,
 					null,
@@ -4071,7 +5202,15 @@
 				]
 			},
 			"089294d0-59db-47f0-a543-19d8e3708448": {
-				"core": [null, null, null, null, 9.03, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					9.03,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -4102,35 +5241,40 @@
 			},
 			"*": {
 				"core": [
-					38.28916666666666, 27.502916666666668, 47.985, 52.575, 35.678,
-					26.028333333333336, 26.358333332916665
+					32.67571680121479,
+					15.00912715779237,
+					26.17006602835657,
+					54.41697856,
+					25.76069679893119,
+					33.08352717276379,
+					25.74301429972497
 				],
 				"sub": [
-					42.48,
-					55.75,
-					54.69666666666666,
+					41.09885032537961,
+					49.26629479768786,
+					58.44743083003952,
 					0.23,
-					36.906666666666666,
-					23.265,
+					44.20338949454906,
+					0.0,
 					47.34,
 					2.5,
 					48.53,
-					47.44,
-					57.175,
-					47.975,
+					19.85964252116651,
+					57.62405462184874,
+					51.6414,
 					50.28,
-					25.53,
-					39.155,
-					27.405,
-					36.019999999999996,
-					31.666666665,
-					23.0,
-					25.766666666666666,
-					null,
-					25,
+					26.09845626072041,
+					33.33,
+					40.08011235955057,
+					30.29254201680672,
+					29.49640820382804,
+					23.17347725520432,
+					25.81432360742706,
+					0,
+					24.98507462686567,
 					33.3,
-					42.635000000000005,
-					2.15
+					48.67,
+					1.534883720930233
 				]
 			}
 		}
@@ -4139,13 +5283,25 @@
 		"id": "80bcf574-1d7c-4798-a1c0-37ac1c32a724",
 		"name": "InternVL2_5-78B",
 		"component": {
-			"vision": ["InternViT-6B-448px-V2_5"],
-			"language": ["Qwen2.5-72B-Instruct"]
+			"vision": [
+				"InternViT-6B-448px-V2_5"
+			],
+			"language": [
+				"Qwen2.5-72B-Instruct"
+			]
 		},
-		"size": [78],
-		"author": ["Shanghai AI Lab"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			78
+		],
+		"author": [
+			"Shanghai AI Lab"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/OpenGVLab/InternVL2_5-78B",
 		"navigation": false,
 		"taskPlanning": false,
@@ -4161,13 +5317,25 @@
 		"id": "63263829-1e9c-4ac5-bf29-965f540518a6",
 		"name": "InternVL2_5-38B",
 		"component": {
-			"vision": ["InternViT-6B-448px-V2_5"],
-			"language": ["Qwen2.5-32B-Instruct"]
+			"vision": [
+				"InternViT-6B-448px-V2_5"
+			],
+			"language": [
+				"Qwen2.5-32B-Instruct"
+			]
 		},
-		"size": [38],
-		"author": ["Shanghai AI Lab"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			38
+		],
+		"author": [
+			"Shanghai AI Lab"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/OpenGVLab/InternVL2_5-38B",
 		"navigation": false,
 		"taskPlanning": false,
@@ -4183,12 +5351,22 @@
 		"id": "87f1ac67-6ac8-4f58-9644-f877741326cb",
 		"name": "Llama-3.2-90B-Vision-Instruct",
 		"component": {
-			"language": ["Llama 3.1"]
+			"language": [
+				"Llama 3.1"
+			]
 		},
-		"size": [90],
-		"author": ["Meta AI"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			90
+		],
+		"author": [
+			"Meta AI"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct",
 		"navigation": false,
 		"taskPlanning": false,
@@ -4204,13 +5382,25 @@
 		"id": "cb6e23ea-bc8a-4bef-91d6-ba174280faaf",
 		"name": "Qwen2.5-VL-7B-Instruct",
 		"component": {
-			"vision": ["Retrained NaViT"],
-			"language": ["Qwen2.5-7B"]
+			"vision": [
+				"Retrained NaViT"
+			],
+			"language": [
+				"Qwen2.5-7B"
+			]
 		},
-		"size": [7],
-		"author": ["Alibaba"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			7
+		],
+		"author": [
+			"Alibaba"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/collections/Qwen/qwen25-vl-6795ffac22b334a837c0f9a5",
 		"navigation": true,
 		"taskPlanning": true,
@@ -4223,11 +5413,11 @@
 		"score": {
 			"034bf6b5-dc18-45da-bfaf-337589125632": {
 				"core": [
-					36.67333333333334,
+					36.93365128,
 					43.71,
-					46.42,
-					36.504999999999995,
-					28.259999999999998,
+					44.08053691,
+					37.75249141,
+					26.39,
 					47.41,
 					null
 				],
@@ -4260,7 +5450,15 @@
 				]
 			},
 			"ba0be521-6b10-4881-964c-97cd4d2d6070": {
-				"core": [31.48, 3.18, null, 26.04, 8.525, null, null],
+				"core": [
+					32.00153527,
+					3.18,
+					null,
+					26.04,
+					8.488306636,
+					null,
+					null
+				],
 				"sub": [
 					9.29,
 					38.89,
@@ -4290,14 +5488,22 @@
 				]
 			},
 			"25206b0f-a955-4e39-86cf-53dcc9528bfc": {
-				"core": [47.66, 36.44833333333333, null, null, 35.44, 30.41, null],
+				"core": [
+					48.3373386,
+					34.47463571,
+					null,
+					null,
+					35.44,
+					30.41,
+					null
+				],
 				"sub": [
 					null,
 					50.31,
 					null,
 					45.01,
 					38.55,
-					31.765,
+					31.06990933,
 					null,
 					39.03,
 					null,
@@ -4320,7 +5526,15 @@
 				]
 			},
 			"5df5ca38-7ca9-4d35-81c6-3dfe52700755": {
-				"core": [41.28, 24.32, null, null, 36.88666666666666, null, null],
+				"core": [
+					41.28,
+					24.32,
+					null,
+					null,
+					36.88667,
+					null,
+					null
+				],
 				"sub": [
 					35.29,
 					null,
@@ -4338,7 +5552,7 @@
 					35.71,
 					31.82,
 					null,
-					43.13,
+					41.81945455,
 					null,
 					null,
 					null,
@@ -4350,7 +5564,15 @@
 				]
 			},
 			"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-				"core": [null, null, null, 10.99, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					10.99,
+					null,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -4380,7 +5602,15 @@
 				]
 			},
 			"1961aa46-9085-42ed-b384-d9ffe52921a8": {
-				"core": [null, null, null, null, null, null, 0.83333333325],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					0.833333333
+				],
 				"sub": [
 					null,
 					null,
@@ -4410,7 +5640,15 @@
 				]
 			},
 			"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-				"core": [null, null, null, null, null, null, 11.5],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					11.5
+				],
 				"sub": [
 					null,
 					null,
@@ -4440,7 +5678,15 @@
 				]
 			},
 			"73de273a-7d38-40c0-b869-2b2e6156c897": {
-				"core": [null, null, null, null, null, 14.0, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					14.0,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -4470,7 +5716,15 @@
 				]
 			},
 			"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-				"core": [null, null, null, null, null, 5.1, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					5.1,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -4500,7 +5754,15 @@
 				]
 			},
 			"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-				"core": [null, null, null, null, null, 3.3, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					3.3,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -4530,7 +5792,15 @@
 				]
 			},
 			"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-				"core": [null, null, null, null, 11.15, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					11.15,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -4560,7 +5830,15 @@
 				]
 			},
 			"27e481d6-6057-49dc-ad80-529f9127245f": {
-				"core": [null, null, null, null, null, null, 20.4],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					20.4
+				],
 				"sub": [
 					null,
 					null,
@@ -4590,7 +5868,15 @@
 				]
 			},
 			"089294d0-59db-47f0-a543-19d8e3708448": {
-				"core": [null, null, null, null, 23.51, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					23.51,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -4621,35 +5907,40 @@
 			},
 			"*": {
 				"core": [
-					39.36333333333333, 27.375416666666666, 46.42, 27.509999999999998,
-					25.641, 19.036666666666665, 7.283333333291667
+					40.48790241496228,
+					34.65679309214686,
+					24.09391049005869,
+					29.29547758345029,
+					18.05760126038115,
+					15.15878621272996,
+					6.189658965726073
 				],
 				"sub": [
-					26.583333333333332,
-					44.84666666666667,
-					41.01333333333333,
+					28.69039045553145,
+					47.18301156069364,
+					36.35822134387352,
 					45.01,
-					35.526666666666664,
-					31.765,
+					40.87932111000991,
+					31.06990933,
 					3.18,
 					39.03,
 					58.44,
-					34.4,
-					24.79,
-					30.23,
+					14.40075258701787,
+					24.65869747899159,
+					33.3084,
 					30.13,
-					19.6,
-					33.629999999999995,
-					10.084999999999999,
-					34.760000000000005,
-					11.6666666665,
-					5.0,
-					11.466666666666667,
-					null,
-					1,
+					16.46665523156089,
+					31.82,
+					12.45239700374532,
+					28.17281512657563,
+					10.35843886526172,
+					4.132613723978412,
+					9.282758620689656,
+					0,
+					1.00497512437811,
 					14.0,
-					38.91,
-					4.199999999999999
+					47.41,
+					4.681395348837209
 				]
 			}
 		}
@@ -4658,11 +5949,19 @@
 		"id": "ce19cba4-e888-4c92-9700-d25bc4dbbad3",
 		"name": "Gemini-1.5-Pro",
 		"component": {
-			"language": ["gemini-1.5-Pro"]
+			"language": [
+				"gemini-1.5-Pro"
+			]
 		},
-		"author": ["Google DeepMind"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"author": [
+			"Google DeepMind"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/1-5-pro",
 		"navigation": false,
 		"taskPlanning": false,
@@ -4678,12 +5977,22 @@
 		"id": "e6010b47-eb88-403c-8aee-858d1c913af2",
 		"name": "Llama-3.2-11B-Vision-Instruct",
 		"component": {
-			"language": ["Llama 3.1"]
+			"language": [
+				"Llama 3.1"
+			]
 		},
-		"size": [11],
-		"author": ["Google DeepMind"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			11
+		],
+		"author": [
+			"Google DeepMind"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct",
 		"navigation": false,
 		"taskPlanning": false,
@@ -4699,13 +6008,25 @@
 		"id": "525c4c5c-e4ef-42ef-9a80-0b7d059f1c95",
 		"name": "InternVL2_5-8B",
 		"component": {
-			"vision": ["InternViT-300M-448px-V2_5"],
-			"language": ["internlm2_5-7b-chat"]
+			"vision": [
+				"InternViT-300M-448px-V2_5"
+			],
+			"language": [
+				"internlm2_5-7b-chat"
+			]
 		},
-		"size": [8],
-		"author": ["Shanghai AI Lab"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			8
+		],
+		"author": [
+			"Shanghai AI Lab"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/OpenGVLab/InternVL2_5-8B",
 		"navigation": false,
 		"taskPlanning": false,
@@ -4721,13 +6042,25 @@
 		"id": "2bd83c3e-58ed-4898-a1a1-a445513e31c1",
 		"name": "Qwen2-VL-72B-Instruct",
 		"component": {
-			"vision": ["NaViT"],
-			"language": ["Qwen2.5-72B"]
+			"vision": [
+				"NaViT"
+			],
+			"language": [
+				"Qwen2.5-72B"
+			]
 		},
-		"size": [72],
-		"author": ["Alibaba"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			72
+		],
+		"author": [
+			"Alibaba"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct",
 		"navigation": false,
 		"taskPlanning": false,
@@ -4743,13 +6076,25 @@
 		"id": "69a2667c-2439-4c0a-b4dd-7fa2c134217c",
 		"name": "Qwen2-VL-7B-Instruct",
 		"component": {
-			"vision": ["NaViT"],
-			"language": ["Qwen2.5-7B"]
+			"vision": [
+				"NaViT"
+			],
+			"language": [
+				"Qwen2.5-7B"
+			]
 		},
-		"size": [7],
-		"author": ["Alibaba"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			7
+		],
+		"author": [
+			"Alibaba"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct",
 		"navigation": false,
 		"taskPlanning": false,
@@ -4765,13 +6110,25 @@
 		"id": "e40d9b56-19c8-4387-8f71-4a3b39d7d1ef",
 		"name": "InternVL2_5-8B-MPO",
 		"component": {
-			"vision": ["InternViT-300M-448px-V2_5"],
-			"language": ["internlm2_5-7b-chat"]
+			"vision": [
+				"InternViT-300M-448px-V2_5"
+			],
+			"language": [
+				"internlm2_5-7b-chat"
+			]
 		},
-		"size": [8],
-		"author": ["Shanghai AI Lab"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			8
+		],
+		"author": [
+			"Shanghai AI Lab"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/OpenGVLab/InternVL2_5-8B-MPO",
 		"navigation": false,
 		"taskPlanning": false,
@@ -4786,9 +6143,15 @@
 	{
 		"id": "47130974-a85a-4090-ab93-04542244c04e",
 		"name": "Gemini-2.0-Pro w CoT",
-		"author": ["Google DeepMind"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"author": [
+			"Google DeepMind"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"navigation": false,
 		"taskPlanning": false,
 		"reason": false,
@@ -4801,9 +6164,15 @@
 	{
 		"id": "b98ae0e6-2bcf-487d-8ada-6423bcce8f9c",
 		"name": "GPT-4o w CoT",
-		"author": ["OpenAI"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"author": [
+			"OpenAI"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"navigation": false,
 		"taskPlanning": false,
 		"reason": false,
@@ -4817,11 +6186,19 @@
 		"id": "4a42979f-36cb-4c3e-8ebf-a198a68b90e6",
 		"name": "Gemini-2.0-Pro",
 		"component": {
-			"language": ["Gemini-2.0-Pro"]
+			"language": [
+				"Gemini-2.0-Pro"
+			]
 		},
-		"author": ["Google DeepMind"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"author": [
+			"Google DeepMind"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"navigation": true,
 		"taskPlanning": true,
 		"reason": true,
@@ -4844,12 +6221,22 @@
 		"id": "87e7bee8-251c-44e8-8e67-500bfdd1f348",
 		"name": "Video-3D LLM (32 frames)",
 		"component": {
-			"vision": ["3D Visual Geometry Encoder combined with 2D Visual Encoder"],
-			"language": ["Qwen2.5-VL"]
+			"vision": [
+				"3D Visual Geometry Encoder combined with 2D Visual Encoder"
+			],
+			"language": [
+				"Qwen2.5-VL"
+			]
 		},
-		"author": ["Chinese University of Hong Kong"],
-		"qa": ["3D"],
-		"dimension": ["3D"],
+		"author": [
+			"Chinese University of Hong Kong"
+		],
+		"qa": [
+			"3D"
+		],
+		"dimension": [
+			"3D"
+		],
 		"website": "https://github.com/LaVi-Lab/Video-3D-LLM",
 		"navigation": false,
 		"taskPlanning": false,
@@ -4865,12 +6252,22 @@
 		"id": "70634caf-f6d3-47e8-9e9c-2754a40b53a2",
 		"name": "Video-3D LLM (16 frames)",
 		"component": {
-			"vision": ["3D Visual Geometry Encoder combined with 2D Visual Encoder"],
-			"language": ["Qwen2.5-VL"]
+			"vision": [
+				"3D Visual Geometry Encoder combined with 2D Visual Encoder"
+			],
+			"language": [
+				"Qwen2.5-VL"
+			]
 		},
-		"author": ["Chinese University of Hong Kong"],
-		"qa": ["3D"],
-		"dimension": ["3D"],
+		"author": [
+			"Chinese University of Hong Kong"
+		],
+		"qa": [
+			"3D"
+		],
+		"dimension": [
+			"3D"
+		],
 		"website": "https://github.com/LaVi-Lab/Video-3D-LLM",
 		"navigation": false,
 		"taskPlanning": false,
@@ -4886,12 +6283,22 @@
 		"id": "3efd880e-f132-4d0f-ba66-67142efb9470",
 		"name": "LLaVA-3D",
 		"component": {
-			"language": ["LLaVA-Video-7B"]
+			"language": [
+				"LLaVA-Video-7B"
+			]
 		},
-		"size": [7],
-		"author": ["Shanghai AI Lab"],
-		"qa": ["3D"],
-		"dimension": ["3D"],
+		"size": [
+			7
+		],
+		"author": [
+			"Shanghai AI Lab"
+		],
+		"qa": [
+			"3D"
+		],
+		"dimension": [
+			"3D"
+		],
 		"website": "https://github.com/ZCMax/LLaVA-3D",
 		"navigation": false,
 		"taskPlanning": false,
@@ -4907,12 +6314,22 @@
 		"id": "8472d27d-9c33-4ea2-854c-2ec882f303b6",
 		"name": "Chat-3D v2",
 		"component": {
-			"vision": ["PointGroup"],
-			"language": ["Vicuna-7B-v0"]
+			"vision": [
+				"PointGroup"
+			],
+			"language": [
+				"Vicuna-7B-v0"
+			]
 		},
-		"author": ["Zhejiang University"],
-		"qa": ["3D"],
-		"dimension": ["3D"],
+		"author": [
+			"Zhejiang University"
+		],
+		"qa": [
+			"3D"
+		],
+		"dimension": [
+			"3D"
+		],
 		"website": "https://chat-3d.github.io/",
 		"navigation": false,
 		"taskPlanning": false,
@@ -4928,12 +6345,23 @@
 		"id": "b0e697a1-bef6-488c-b3df-1680c3694f48",
 		"name": "ChatScene",
 		"component": {
-			"vision": ["Mask3D"],
-			"language": ["Vicuna-7B-v1.5", "LoRA"]
+			"vision": [
+				"Mask3D"
+			],
+			"language": [
+				"Vicuna-7B-v1.5",
+				"LoRA"
+			]
 		},
-		"author": ["Shanghai AI Lab"],
-		"qa": ["3D"],
-		"dimension": ["3D"],
+		"author": [
+			"Shanghai AI Lab"
+		],
+		"qa": [
+			"3D"
+		],
+		"dimension": [
+			"3D"
+		],
 		"website": "https://github.com/ZzZZCHS/Chat-Scene",
 		"navigation": false,
 		"taskPlanning": false,
@@ -4949,11 +6377,19 @@
 		"id": "dfb3cf12-beee-48f1-87f5-66d40176d517",
 		"name": "SceneLLM",
 		"component": {
-			"language": ["Llama-2-7B"]
+			"language": [
+				"Llama-2-7B"
+			]
 		},
-		"author": ["Meta AI"],
-		"qa": ["3D"],
-		"dimension": ["3D"],
+		"author": [
+			"Meta AI"
+		],
+		"qa": [
+			"3D"
+		],
+		"dimension": [
+			"3D"
+		],
 		"website": "https://arxiv.org/abs/2403.11401",
 		"navigation": false,
 		"taskPlanning": false,
@@ -4969,13 +6405,26 @@
 		"id": "d7a24483-5295-4afb-9ecd-8538b5d92e53",
 		"name": "LEO",
 		"component": {
-			"vision": ["PointNet++", "PointBERT"],
-			"language": ["Vicuna-7B-v1.1"]
+			"vision": [
+				"PointNet++",
+				"PointBERT"
+			],
+			"language": [
+				"Vicuna-7B-v1.1"
+			]
 		},
-		"size": [7],
-		"author": ["Bejing Institute for General Artificial Intelligence"],
-		"qa": ["3D"],
-		"dimension": ["3D"],
+		"size": [
+			7
+		],
+		"author": [
+			"Bejing Institute for General Artificial Intelligence"
+		],
+		"qa": [
+			"3D"
+		],
+		"dimension": [
+			"3D"
+		],
 		"website": "https://embodied-generalist.github.io/",
 		"navigation": false,
 		"taskPlanning": false,
@@ -5000,11 +6449,19 @@
 		"id": "7b3f0bae-5319-4d34-b7ad-62ba67a43da4",
 		"name": "PQ3D",
 		"component": {
-			"vision": ["pretrained CLIP"]
+			"vision": [
+				"pretrained CLIP"
+			]
 		},
-		"author": ["Bejing Institute for General Artificial Intelligence"],
-		"qa": ["3D"],
-		"dimension": ["3D"],
+		"author": [
+			"Bejing Institute for General Artificial Intelligence"
+		],
+		"qa": [
+			"3D"
+		],
+		"dimension": [
+			"3D"
+		],
 		"website": "https://pq3d.github.io/",
 		"navigation": false,
 		"taskPlanning": false,
@@ -5020,13 +6477,25 @@
 		"id": "529c2206-513e-45fa-a762-1d8a6adf548f",
 		"name": "Qwen2-VL-7B",
 		"component": {
-			"vision": ["NaViT"],
-			"language": ["Qwen2-VL-7B"]
+			"vision": [
+				"NaViT"
+			],
+			"language": [
+				"Qwen2-VL-7B"
+			]
 		},
-		"size": [8],
-		"author": ["Alibaba"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			8
+		],
+		"author": [
+			"Alibaba"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/Qwen/Qwen2-VL-7B",
 		"navigation": false,
 		"taskPlanning": false,
@@ -5042,12 +6511,22 @@
 		"id": "0cb4cf61-fe9a-4974-9c89-96c023957e9f",
 		"name": "3D-LLM(BLIP2-flant5)",
 		"component": {
-			"vision": ["BLIP-2"],
-			"language": ["Flan-T5"]
+			"vision": [
+				"BLIP-2"
+			],
+			"language": [
+				"Flan-T5"
+			]
 		},
-		"author": ["UMass Embodied AGI Group"],
-		"qa": ["3D"],
-		"dimension": ["3D"],
+		"author": [
+			"UMass Embodied AGI Group"
+		],
+		"qa": [
+			"3D"
+		],
+		"dimension": [
+			"3D"
+		],
 		"website": "https://github.com/UMass-Embodied-AGI/3D-LLM",
 		"navigation": false,
 		"taskPlanning": false,
@@ -5063,12 +6542,22 @@
 		"id": "323ef65f-630b-49df-bff8-e7bc32815387",
 		"name": "3D-LLM(Flamingo)",
 		"component": {
-			"vision": ["CLIP"],
-			"language": ["Open-Flamingo"]
+			"vision": [
+				"CLIP"
+			],
+			"language": [
+				"Open-Flamingo"
+			]
 		},
-		"author": ["UMass Embodied AGI Group"],
-		"qa": ["3D"],
-		"dimension": ["3D"],
+		"author": [
+			"UMass Embodied AGI Group"
+		],
+		"qa": [
+			"3D"
+		],
+		"dimension": [
+			"3D"
+		],
 		"website": "https://github.com/UMass-Embodied-AGI/3D-LLM",
 		"navigation": false,
 		"taskPlanning": false,
@@ -5084,13 +6573,25 @@
 		"id": "af3acd4e-d0b0-4aec-b45a-2ad7088a54f8",
 		"name": "Grounded 3D-LLM",
 		"component": {
-			"vision": ["Submanifold Sparse Convolutional Networks"],
-			"language": ["Tiny-Vicuna-1B"]
+			"vision": [
+				"Submanifold Sparse Convolutional Networks"
+			],
+			"language": [
+				"Tiny-Vicuna-1B"
+			]
 		},
-		"size": [1],
-		"author": ["Shanghai AI Lab"],
-		"qa": ["3D"],
-		"dimension": ["3D"],
+		"size": [
+			1
+		],
+		"author": [
+			"Shanghai AI Lab"
+		],
+		"qa": [
+			"3D"
+		],
+		"dimension": [
+			"3D"
+		],
 		"website": "https://github.com/OpenRobotLab/Grounded_3D-LLM",
 		"navigation": false,
 		"taskPlanning": false,
@@ -5105,9 +6606,15 @@
 	{
 		"id": "09929601-b5f9-439b-94d3-fe8dedb11b13",
 		"name": "LL3DA",
-		"author": ["Tencent PCG"],
-		"qa": ["3D"],
-		"dimension": ["3D"],
+		"author": [
+			"Tencent PCG"
+		],
+		"qa": [
+			"3D"
+		],
+		"dimension": [
+			"3D"
+		],
 		"website": "https://ll3da.github.io/",
 		"navigation": false,
 		"taskPlanning": false,
@@ -5123,11 +6630,19 @@
 		"id": "314244f5-7c42-4279-957b-6fbc2c4b9aee",
 		"name": "GPT-4",
 		"component": {
-			"language": ["GPT-4"]
+			"language": [
+				"GPT-4"
+			]
 		},
-		"author": ["OpenAI"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"author": [
+			"OpenAI"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://openai.com/index/gpt-4-research/",
 		"navigation": false,
 		"taskPlanning": false,
@@ -5143,12 +6658,22 @@
 		"id": "12e98a0d-5bd3-4af8-a45d-4ebaa59cf45c",
 		"name": "Llama3-70B",
 		"component": {
-			"language": ["Llama3.0-70B"]
+			"language": [
+				"Llama3.0-70B"
+			]
 		},
-		"size": [70],
-		"author": ["Meta AI"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			70
+		],
+		"author": [
+			"Meta AI"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/meta-llama/Meta-Llama-3-70B",
 		"navigation": false,
 		"taskPlanning": false,
@@ -5163,12 +6688,22 @@
 		"id": "df53089f-9407-49d7-b93e-199fffe7db94",
 		"name": "Llama3-8B",
 		"component": {
-			"language": ["Llama3.0-8B"]
+			"language": [
+				"Llama3.0-8B"
+			]
 		},
-		"size": [8],
-		"author": ["Meta AI"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			8
+		],
+		"author": [
+			"Meta AI"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
 		"navigation": false,
 		"taskPlanning": false,
@@ -5210,13 +6745,25 @@
 		"id": "d43c7af4-55f6-4054-bcd4-88d27efd0d10",
 		"name": "Navid",
 		"component": {
-			"vision": ["EVA-CLIP"],
-			"language": ["Vicuna-7B-v1.5"]
+			"vision": [
+				"EVA-CLIP"
+			],
+			"language": [
+				"Vicuna-7B-v1.5"
+			]
 		},
-		"size": [7],
-		"author": ["Peking University"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			7
+		],
+		"author": [
+			"Peking University"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://pku-epic.github.io/NaVid/",
 		"navigation": true,
 		"taskPlanning": true,
@@ -5232,13 +6779,25 @@
 		"id": "8d42636e-05c2-4179-a0d1-625f474f1622",
 		"name": "UniNavid",
 		"component": {
-			"vision": ["EVA-CLIP"],
-			"language": ["Vicuna-7B-v1.5"]
+			"vision": [
+				"EVA-CLIP"
+			],
+			"language": [
+				"Vicuna-7B-v1.5"
+			]
 		},
-		"size": [7],
-		"author": ["Peking University"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			7
+		],
+		"author": [
+			"Peking University"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://pku-epic.github.io/Uni-NaVid/",
 		"navigation": true,
 		"taskPlanning": true,
@@ -5253,9 +6812,15 @@
 	{
 		"id": "bfee5170-8314-49ea-96e6-762fc8e2bba4",
 		"name": "MapNav",
-		"author": ["Beijing Academy of Artificial Intelligence"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"author": [
+			"Beijing Academy of Artificial Intelligence"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://arxiv.org/pdf/2502.13451",
 		"navigation": false,
 		"taskPlanning": false,
@@ -5270,13 +6835,25 @@
 		"id": "a7bde639-b09a-4cbf-a647-cbde9a634e6c",
 		"name": "RoboPoint",
 		"component": {
-			"vision": ["ViT-L/14 336px"],
-			"language": ["Vicuna-v1.5-13B"]
+			"vision": [
+				"ViT-L/14 336px"
+			],
+			"language": [
+				"Vicuna-v1.5-13B"
+			]
 		},
-		"size": [13],
-		"author": ["University of Washington"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			13
+		],
+		"author": [
+			"University of Washington"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://github.com/wentaoyuan/RoboPoint",
 		"navigation": true,
 		"taskPlanning": true,
@@ -5292,11 +6869,19 @@
 		"id": "24608772-82fc-4750-94ba-a0f87e2c1198",
 		"name": "o4-mini",
 		"component": {
-			"language": ["o4-mini"]
+			"language": [
+				"o4-mini"
+			]
 		},
-		"author": ["OpenAI"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"author": [
+			"OpenAI"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://openai.com/index/introducing-o3-and-o4-mini/",
 		"navigation": true,
 		"taskPlanning": true,
@@ -5312,11 +6897,19 @@
 		"id": "b585f486-bac8-40d9-bcdb-3b7642bd7be9",
 		"name": "Gemini-2.5-Pro",
 		"component": {
-			"language": ["Gemini-2.5-Pro"]
+			"language": [
+				"Gemini-2.5-Pro"
+			]
 		},
-		"author": ["Google DeepMind"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"author": [
+			"Google DeepMind"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://ai.google.dev/gemini-api/docs/models",
 		"navigation": true,
 		"taskPlanning": true,
@@ -5328,7 +6921,15 @@
 		"imageVideo": "image/video",
 		"score": {
 			"034bf6b5-dc18-45da-bfaf-337589125632": {
-				"core": [41.919999999999995, 58.35, 61.1, 76.725, 56.4975, 56.67, null],
+				"core": [
+					41.92,
+					58.35,
+					60.04704698,
+					76.50994845,
+					49.295,
+					56.67,
+					null
+				],
 				"sub": [
 					0.0,
 					59.35,
@@ -5358,7 +6959,15 @@
 				]
 			},
 			"ba0be521-6b10-4881-964c-97cd4d2d6070": {
-				"core": [72.72000000000001, 50.97, null, 70.58, 60.2, null, null],
+				"core": [
+					72.86721992,
+					50.97,
+					null,
+					70.58,
+					60.13663616,
+					null,
+					null
+				],
 				"sub": [
 					65.08,
 					77.22,
@@ -5389,8 +6998,8 @@
 			},
 			"25206b0f-a955-4e39-86cf-53dcc9528bfc": {
 				"core": [
-					14.995000000000001,
-					19.346666666666668,
+					18.7280303,
+					24.5645,
 					null,
 					null,
 					33.51,
@@ -5403,7 +7012,7 @@
 					null,
 					0.39,
 					30.98,
-					26.5,
+					25.01987047,
 					null,
 					0.56,
 					null,
@@ -5426,7 +7035,15 @@
 				]
 			},
 			"5df5ca38-7ca9-4d35-81c6-3dfe52700755": {
-				"core": [58.93, 32.43, null, null, 62.04666666666666, null, null],
+				"core": [
+					58.93,
+					32.43,
+					null,
+					null,
+					62.04667,
+					null,
+					null
+				],
 				"sub": [
 					57.14,
 					null,
@@ -5444,7 +7061,7 @@
 					70.59,
 					55.26,
 					null,
-					60.29,
+					59.25454545,
 					null,
 					null,
 					null,
@@ -5456,7 +7073,15 @@
 				]
 			},
 			"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-				"core": [null, null, null, 49.58, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					49.58,
+					null,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -5486,7 +7111,15 @@
 				]
 			},
 			"1961aa46-9085-42ed-b384-d9ffe52921a8": {
-				"core": [null, null, null, null, null, null, 67.8333333325],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					67.83333333
+				],
 				"sub": [
 					null,
 					null,
@@ -5516,7 +7149,15 @@
 				]
 			},
 			"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-				"core": [null, null, null, null, null, null, 60.666666667499996],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					60.66667
+				],
 				"sub": [
 					null,
 					null,
@@ -5546,7 +7187,15 @@
 				]
 			},
 			"73de273a-7d38-40c0-b869-2b2e6156c897": {
-				"core": [null, null, null, null, null, 58.8, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					58.8,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -5576,7 +7225,15 @@
 				]
 			},
 			"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-				"core": [null, null, null, null, 16.13, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					16.13,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -5606,7 +7263,15 @@
 				]
 			},
 			"27e481d6-6057-49dc-ad80-529f9127245f": {
-				"core": [null, null, null, null, null, null, 43.6],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					43.6
+				],
 				"sub": [
 					null,
 					null,
@@ -5636,7 +7301,15 @@
 				]
 			},
 			"089294d0-59db-47f0-a543-19d8e3708448": {
-				"core": [null, null, null, null, 21.7, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					21.7,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -5667,39 +7340,52 @@
 			},
 			"*": {
 				"core": [
-					41.04583333333333, 29.65416666666667, 61.1, 68.4025,
-					48.706500000000005, 36.15833333333333, 63.71666666666667
+					39.07375251447686,
+					34.64482616095308,
+					32.82101980931768,
+					69.21570175233917,
+					34.37373940053441,
+					57.54556988792557,
+					62.28702011050606
 				],
 				"sub": [
-					40.74,
-					55.38999999999999,
-					67.66333333333333,
+					18.41240780911063,
+					45.44078034682081,
+					69.13523056653491,
 					0.39,
-					40.586666666666666,
-					26.5,
+					44.74583746283449,
+					25.01987047,
 					50.97,
 					0.56,
 					66.51,
-					55.69,
-					74.77,
-					62.035,
+					23.31331138287864,
+					75.21012605042016,
+					64.02779999999998,
 					63.7,
-					41.82,
-					44.385,
-					38.835,
-					54.792500000000004,
-					59.0,
+					27.94147512864494,
+					55.26,
+					57.97119850187266,
+					50.44578781460083,
+					56.10264385659853,
 					74.0,
-					47.86666666666667,
-					null,
-					74,
+					49.44297082228117,
+					0,
+					73.96019900497512,
 					58.8,
-					46.375,
-					3.3
+					56.67,
+					16.11627906976744
 				]
 			},
 			"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-				"core": [null, null, null, null, null, 3.3, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					3.3,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -5729,7 +7415,15 @@
 				]
 			},
 			"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-				"core": [null, null, null, null, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					20.0,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -5755,7 +7449,7 @@
 					null,
 					null,
 					null,
-					null
+					20.0
 				]
 			}
 		}
@@ -5764,11 +7458,19 @@
 		"id": "74443d95-8883-40ab-b4bd-8e7b184ebe54",
 		"name": "Claude-3.7-Sonnet",
 		"component": {
-			"language": ["Claude-3.7-Sonnet"]
+			"language": [
+				"Claude-3.7-Sonnet"
+			]
 		},
-		"author": ["Anthropic"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"author": [
+			"Anthropic"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://www.anthropic.com/news/claude-3-7-sonnet",
 		"navigation": true,
 		"taskPlanning": true,
@@ -5781,11 +7483,11 @@
 		"score": {
 			"034bf6b5-dc18-45da-bfaf-337589125632": {
 				"core": [
-					32.266666666666666,
+					32.26666667,
 					29.45,
-					42.370000000000005,
-					52.49,
-					41.754999999999995,
+					40.85966443,
+					52.33219931,
+					35.43,
 					44.44,
 					null
 				],
@@ -5818,7 +7520,15 @@
 				]
 			},
 			"ba0be521-6b10-4881-964c-97cd4d2d6070": {
-				"core": [37.666666666666664, 25.0, null, 44.93, 30.86, null, null],
+				"core": [
+					37.98045643,
+					25.0,
+					null,
+					44.93,
+					30.81977117,
+					null,
+					null
+				],
 				"sub": [
 					24.21,
 					42.31,
@@ -5848,14 +7558,22 @@
 				]
 			},
 			"25206b0f-a955-4e39-86cf-53dcc9528bfc": {
-				"core": [3.485, 6.69, null, null, 16.67, 14.95, null],
+				"core": [
+					2.594235837,
+					7.984542857,
+					null,
+					null,
+					16.67,
+					14.95,
+					null
+				],
 				"sub": [
 					null,
 					0.0,
 					null,
 					6.97,
 					13.59,
-					6.48,
+					5.959585492,
 					null,
 					0.0,
 					null,
@@ -5878,7 +7596,15 @@
 				]
 			},
 			"5df5ca38-7ca9-4d35-81c6-3dfe52700755": {
-				"core": [19.945, 2.7, null, null, 17.2, null, null],
+				"core": [
+					19.945,
+					2.7,
+					null,
+					null,
+					17.2,
+					null,
+					null
+				],
 				"sub": [
 					23.53,
 					null,
@@ -5896,7 +7622,7 @@
 					13.1,
 					18.18,
 					null,
-					20.32,
+					20.90727273,
 					null,
 					null,
 					null,
@@ -5908,7 +7634,15 @@
 				]
 			},
 			"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-				"core": [null, null, null, 10.82, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					10.82,
+					null,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -5938,7 +7672,15 @@
 				]
 			},
 			"1961aa46-9085-42ed-b384-d9ffe52921a8": {
-				"core": [null, null, null, null, null, null, 66.8333333325],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					66.83333333
+				],
 				"sub": [
 					null,
 					null,
@@ -5968,7 +7710,15 @@
 				]
 			},
 			"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-				"core": [null, null, null, null, null, null, 63.333333332500004],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					63.33333
+				],
 				"sub": [
 					null,
 					null,
@@ -5998,7 +7748,15 @@
 				]
 			},
 			"73de273a-7d38-40c0-b869-2b2e6156c897": {
-				"core": [null, null, null, null, null, 48.7, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					48.7,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -6028,7 +7786,15 @@
 				]
 			},
 			"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-				"core": [null, null, null, null, null, 5.1, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					5.1,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -6058,7 +7824,15 @@
 				]
 			},
 			"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-				"core": [null, null, null, null, null, 6.7, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					6.7,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -6088,7 +7862,15 @@
 				]
 			},
 			"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-				"core": [null, null, null, null, 12.270000000000001, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					12.27,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -6118,7 +7900,15 @@
 				]
 			},
 			"27e481d6-6057-49dc-ad80-529f9127245f": {
-				"core": [null, null, null, null, null, null, 47.4],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					47.4
+				],
 				"sub": [
 					null,
 					null,
@@ -6148,7 +7938,15 @@
 				]
 			},
 			"089294d0-59db-47f0-a543-19d8e3708448": {
-				"core": [null, null, null, null, 9.67, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					9.67,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -6179,35 +7977,40 @@
 			},
 			"*": {
 				"core": [
-					22.550000000000004, 11.681666666666667, 42.370000000000005,
-					40.182500000000005, 26.3105, 28.09833333333334, 64.86666666583334
+					21.70119676515996,
+					14.3118088985169,
+					22.33341892909024,
+					41.44917153842106,
+					21.39900680647593,
+					47.34064284203848,
+					63.07095568366336
 				],
 				"sub": [
-					23.406666666666666,
-					26.19333333333334,
-					33.63,
+					22.95215835140998,
+					17.1279710982659,
+					39.27715415019762,
 					6.97,
-					15.246666666666668,
-					6.48,
+					21.35176907829534,
+					5.959585492,
 					25.0,
 					0.0,
 					50.13,
-					34.61,
-					49.53,
-					30.835,
+					14.48866415804327,
+					50.01319327731092,
+					34.0374,
 					48.08,
-					16.3425,
-					17.425,
-					21.83,
-					27.875,
-					73.33333333,
-					69.0,
-					49.13333333333333,
-					null,
-					68,
+					17.11586620926244,
+					18.18,
+					31.14322097378277,
+					33.75195378182774,
+					69.78597348418351,
+					68.82652274479568,
+					50.40954907161804,
+					0,
+					68.0,
 					48.7,
-					29.695,
-					5.9
+					44.44,
+					5.472093023255813
 				]
 			}
 		}
@@ -6216,11 +8019,19 @@
 		"id": "a08eae18-626d-4e08-be33-ce74d006ed30",
 		"name": "Seed1.5-VL",
 		"component": {
-			"language": ["Seed1.5-VL"]
+			"language": [
+				"Seed1.5-VL"
+			]
 		},
-		"author": ["ByteDance"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"author": [
+			"ByteDance"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://github.com/ByteDance-Seed/Seed1.5-VL",
 		"navigation": true,
 		"taskPlanning": true,
@@ -6236,13 +8047,25 @@
 		"id": "b30fbf25-94f2-4c76-9780-7c65e4cd5afc",
 		"name": "InternVL3-8B",
 		"component": {
-			"vision": ["InternViT-300M-448px-V2.5"],
-			"language": ["Qwen2.5-7B"]
+			"vision": [
+				"InternViT-300M-448px-V2.5"
+			],
+			"language": [
+				"Qwen2.5-7B"
+			]
 		},
-		"size": [8],
-		"author": ["Shanghai AI Lab"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			8
+		],
+		"author": [
+			"Shanghai AI Lab"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/OpenGVLab/InternVL3-8B",
 		"navigation": true,
 		"taskPlanning": true,
@@ -6255,11 +8078,11 @@
 		"score": {
 			"034bf6b5-dc18-45da-bfaf-337589125632": {
 				"core": [
-					41.96333333333334,
+					41.96333333,
 					66.68,
-					48.035,
-					42.355000000000004,
-					44.9325,
+					45.32087248,
+					42.3593299,
+					32.605,
 					39.69,
 					null
 				],
@@ -6292,7 +8115,15 @@
 				]
 			},
 			"ba0be521-6b10-4881-964c-97cd4d2d6070": {
-				"core": [50.78, 21.93, null, 50.63, 34.325, null, null],
+				"core": [
+					50.97630705,
+					21.93,
+					null,
+					50.63,
+					34.23990847,
+					null,
+					null
+				],
 				"sub": [
 					44.05,
 					50.73,
@@ -6322,14 +8153,22 @@
 				]
 			},
 			"25206b0f-a955-4e39-86cf-53dcc9528bfc": {
-				"core": [56.795, 36.96, null, null, 29.29, 29.9, null],
+				"core": [
+					53.8364361,
+					35.66128571,
+					null,
+					null,
+					29.29,
+					29.9,
+					null
+				],
 				"sub": [
 					null,
 					45.22,
 					null,
 					68.37,
 					31.76,
-					37.35,
+					36.96772021,
 					null,
 					41.77,
 					null,
@@ -6352,7 +8191,15 @@
 				]
 			},
 			"5df5ca38-7ca9-4d35-81c6-3dfe52700755": {
-				"core": [47.515, 24.32, null, null, 40.70166666666667, null, null],
+				"core": [
+					47.515,
+					24.32,
+					null,
+					null,
+					40.70167,
+					null,
+					null
+				],
 				"sub": [
 					44.12,
 					null,
@@ -6370,7 +8217,7 @@
 					41.67,
 					39.39,
 					null,
-					41.045,
+					39.09,
 					null,
 					null,
 					null,
@@ -6382,7 +8229,15 @@
 				]
 			},
 			"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-				"core": [null, null, null, 12.68, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					12.68,
+					null,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -6412,7 +8267,15 @@
 				]
 			},
 			"1961aa46-9085-42ed-b384-d9ffe52921a8": {
-				"core": [null, null, null, null, null, null, 2.0],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					2.0
+				],
 				"sub": [
 					null,
 					null,
@@ -6442,7 +8305,15 @@
 				]
 			},
 			"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-				"core": [null, null, null, null, null, null, 20.8333333325],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					20.83333
+				],
 				"sub": [
 					null,
 					null,
@@ -6472,7 +8343,15 @@
 				]
 			},
 			"73de273a-7d38-40c0-b869-2b2e6156c897": {
-				"core": [null, null, null, null, null, 29.3, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					29.3,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -6502,7 +8381,15 @@
 				]
 			},
 			"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-				"core": [null, null, null, null, 22.41, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					22.41,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -6532,7 +8419,15 @@
 				]
 			},
 			"27e481d6-6057-49dc-ad80-529f9127245f": {
-				"core": [null, null, null, null, null, null, 19.6],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					19.6
+				],
 				"sub": [
 					null,
 					null,
@@ -6562,7 +8457,15 @@
 				]
 			},
 			"089294d0-59db-47f0-a543-19d8e3708448": {
-				"core": [null, null, null, null, 11.33, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					11.33,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -6593,39 +8496,52 @@
 			},
 			"*": {
 				"core": [
-					51.965833333333336, 35.49250000000001, 48.035, 37.004999999999995,
-					37.464999999999996, 22.581666666666667, 12.216666666250001
+					48.25957285164235,
+					42.32090201507415,
+					24.77186353455613,
+					37.39415204853801,
+					27.13748782490295,
+					29.04482977373652,
+					10.70021861166117
 				],
 				"sub": [
-					39.5,
-					46.089999999999996,
-					53.903333333333336,
+					34.27596529284164,
+					45.08421965317919,
+					54.50546772068511,
 					68.37,
-					40.92000000000001,
-					37.35,
+					49.15280475718534,
+					36.96772021,
 					21.93,
 					41.77,
 					61.98,
-					34.09,
-					46.47,
-					27.54,
+					14.27097836312324,
+					46.03302521008403,
+					29.9176,
 					57.26,
-					24.335,
-					34.34,
-					34.565,
-					36.825,
-					16.666666665,
-					9.0,
-					13.200000000000001,
-					null,
-					10,
+					21.63308747855918,
+					39.39,
+					42.16756554307116,
+					33.35431722689076,
+					14.53084499597423,
+					7.438704703161141,
+					11.23607427055703,
+					0,
+					10.01990049751244,
 					29.3,
-					34.795,
-					3.65
+					39.69,
+					3.837209302325582
 				]
 			},
 			"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-				"core": [null, null, null, null, null, 3.3, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					3.3,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -6655,7 +8571,15 @@
 				]
 			},
 			"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-				"core": [null, null, null, null, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					4.0,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -6690,13 +8614,25 @@
 		"id": "75789724-6a39-462a-8974-e2d43d51cfc9",
 		"name": "InternVL3-14B",
 		"component": {
-			"vision": ["InternViT-300M-448px-V2.5"],
-			"language": ["Qwen2.5-14B"]
+			"vision": [
+				"InternViT-300M-448px-V2.5"
+			],
+			"language": [
+				"Qwen2.5-14B"
+			]
 		},
-		"size": [14],
-		"author": ["Shanghai AI Lab"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			14
+		],
+		"author": [
+			"Shanghai AI Lab"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/OpenGVLab/InternVL3-14B",
 		"navigation": true,
 		"taskPlanning": true,
@@ -6709,11 +8645,11 @@
 		"score": {
 			"034bf6b5-dc18-45da-bfaf-337589125632": {
 				"core": [
-					44.93666666666667,
+					44.93666667,
 					43.12,
-					43.644999999999996,
-					66.405,
-					42.4075,
+					44.11892617,
+					66.64699313,
+					29.435,
 					44.24,
 					null
 				],
@@ -6734,7 +8670,7 @@
 					null,
 					null,
 					null,
-					29.435000000000002,
+					29.435,
 					null,
 					null,
 					null,
@@ -6746,7 +8682,15 @@
 				]
 			},
 			"ba0be521-6b10-4881-964c-97cd4d2d6070": {
-				"core": [47.14333333333334, 27.67, null, 51.11, 43.05, null, null],
+				"core": [
+					47.56037344,
+					27.67,
+					null,
+					51.11,
+					42.94441648,
+					null,
+					null
+				],
 				"sub": [
 					31.97,
 					48.57,
@@ -6776,14 +8720,22 @@
 				]
 			},
 			"25206b0f-a955-4e39-86cf-53dcc9528bfc": {
-				"core": [61.225, 41.99166666666667, null, null, 41.26, 25.77, null],
+				"core": [
+					59.20704216,
+					40.16723571,
+					null,
+					null,
+					41.26,
+					25.77,
+					null
+				],
 				"sub": [
 					null,
 					53.33,
 					null,
 					69.12,
 					42.3,
-					38.225,
+					37.84472798,
 					null,
 					45.45,
 					null,
@@ -6806,7 +8758,15 @@
 				]
 			},
 			"5df5ca38-7ca9-4d35-81c6-3dfe52700755": {
-				"core": [51.015, 32.43, null, null, 40.833333333333336, null, null],
+				"core": [
+					51.015,
+					32.43,
+					null,
+					null,
+					40.83333,
+					null,
+					null
+				],
 				"sub": [
 					52.94,
 					null,
@@ -6824,7 +8784,7 @@
 					45.24,
 					39.47,
 					null,
-					37.79,
+					37.27072727,
 					null,
 					null,
 					null,
@@ -6836,7 +8796,15 @@
 				]
 			},
 			"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-				"core": [null, null, null, 16.56, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					16.56,
+					null,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -6866,7 +8834,15 @@
 				]
 			},
 			"1961aa46-9085-42ed-b384-d9ffe52921a8": {
-				"core": [null, null, null, null, null, null, 12.8333333325],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					12.83333333
+				],
 				"sub": [
 					null,
 					null,
@@ -6896,7 +8872,15 @@
 				]
 			},
 			"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-				"core": [null, null, null, null, null, null, 24.9166666675],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					24.91667
+				],
 				"sub": [
 					null,
 					null,
@@ -6926,7 +8910,15 @@
 				]
 			},
 			"73de273a-7d38-40c0-b869-2b2e6156c897": {
-				"core": [null, null, null, null, null, 33.8, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					33.8,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -6956,7 +8948,15 @@
 				]
 			},
 			"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-				"core": [null, null, null, null, 22.3, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					22.3,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -6986,7 +8986,15 @@
 				]
 			},
 			"27e481d6-6057-49dc-ad80-529f9127245f": {
-				"core": [null, null, null, null, null, null, 22.5],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					22.5
+				],
 				"sub": [
 					null,
 					null,
@@ -7016,7 +9024,15 @@
 				]
 			},
 			"089294d0-59db-47f0-a543-19d8e3708448": {
-				"core": [null, null, null, null, 10.0, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					10.0,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -7047,39 +9063,52 @@
 			},
 			"*": {
 				"core": [
-					53.24666666666667, 37.65708333333333, 43.644999999999996,
-					50.120000000000005, 39.205, 24.90166666666667, 19.083333333333332
+					50.99812080855634,
+					40.02575735181133,
+					24.11489361456346,
+					52.14458089830409,
+					27.00259536217797,
+					33.46878832734193,
+					18.09730613910891
 				],
 				"sub": [
-					39.02,
-					48.919999999999995,
-					55.92666666666667,
+					32.87156182212581,
+					50.04052601156069,
+					58.19476943346508,
 					69.12,
-					39.28333333333333,
-					38.225,
+					42.53065906838454,
+					37.84472798,
 					27.67,
 					45.45,
 					41.21,
-					46.08,
-					57.5,
-					42.74,
+					19.29031044214487,
+					58.17121848739496,
+					46.9288,
 					55.38,
-					26.3025,
-					40.364999999999995,
-					40.365,
-					33.6125,
-					23.5,
-					14.0,
-					20.833333333333332,
-					null,
-					18,
+					22.05058319039451,
+					39.47,
+					51.66408239700375,
+					30.34038865514706,
+					21.31126416319707,
+					12.95913646877409,
+					20.21007957559682,
+					0,
+					18.00995024875622,
 					33.8,
-					35.005,
-					5.9
+					44.24,
+					5.472093023255813
 				]
 			},
 			"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-				"core": [null, null, null, null, null, 6.7, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					6.7,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -7109,7 +9138,15 @@
 				]
 			},
 			"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-				"core": [null, null, null, null, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					5.1,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -7144,13 +9181,25 @@
 		"id": "dea72f07-4d45-49bf-bfa6-09c7d328246d",
 		"name": "InternVL3-38B",
 		"component": {
-			"vision": ["InternViT-6B-448px-V2.5"],
-			"language": ["Qwen2.5-32B"]
+			"vision": [
+				"InternViT-6B-448px-V2.5"
+			],
+			"language": [
+				"Qwen2.5-32B"
+			]
 		},
-		"size": [38],
-		"author": ["Shanghai AI Lab"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			38
+		],
+		"author": [
+			"Shanghai AI Lab"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/OpenGVLab/InternVL3-38B",
 		"navigation": true,
 		"taskPlanning": true,
@@ -7162,7 +9211,15 @@
 		"imageVideo": "image/video",
 		"score": {
 			"034bf6b5-dc18-45da-bfaf-337589125632": {
-				"core": [47.26, 44.36, 48.53, 68.955, 45.93, 48.33, null],
+				"core": [
+					47.26,
+					44.36,
+					48.70516779,
+					68.87080756,
+					33.6,
+					48.33,
+					null
+				],
 				"sub": [
 					36.25,
 					46.51,
@@ -7192,7 +9249,15 @@
 				]
 			},
 			"ba0be521-6b10-4881-964c-97cd4d2d6070": {
-				"core": [52.04, 27.92, null, 51.33, 42.41, null, null],
+				"core": [
+					52.51904564,
+					27.92,
+					null,
+					51.33,
+					42.31052632,
+					null,
+					null
+				],
 				"sub": [
 					34.33,
 					54.17,
@@ -7222,14 +9287,22 @@
 				]
 			},
 			"25206b0f-a955-4e39-86cf-53dcc9528bfc": {
-				"core": [61.27, 41.35833333333333, null, null, 43.85, 31.44, null],
+				"core": [
+					59.04372859,
+					40.62827857,
+					null,
+					null,
+					43.85,
+					31.44,
+					null
+				],
 				"sub": [
 					null,
 					52.56,
 					null,
 					69.98,
 					41.26,
-					40.525,
+					39.92226684,
 					null,
 					42.29,
 					null,
@@ -7253,11 +9326,11 @@
 			},
 			"5df5ca38-7ca9-4d35-81c6-3dfe52700755": {
 				"core": [
-					53.394999999999996,
+					53.395,
 					29.73,
 					null,
 					null,
-					46.04333333333333,
+					46.04333,
 					null,
 					null
 				],
@@ -7278,7 +9351,7 @@
 					51.19,
 					42.42,
 					null,
-					44.52,
+					43.63909091,
 					null,
 					null,
 					null,
@@ -7290,7 +9363,15 @@
 				]
 			},
 			"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-				"core": [null, null, null, 20.14, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					20.14,
+					null,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -7320,7 +9401,15 @@
 				]
 			},
 			"1961aa46-9085-42ed-b384-d9ffe52921a8": {
-				"core": [null, null, null, null, null, null, 34.666666667499996],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					34.66666667
+				],
 				"sub": [
 					null,
 					null,
@@ -7350,7 +9439,15 @@
 				]
 			},
 			"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-				"core": [null, null, null, null, null, null, 37.666666667499996],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					37.66667
+				],
 				"sub": [
 					null,
 					null,
@@ -7380,7 +9477,15 @@
 				]
 			},
 			"73de273a-7d38-40c0-b869-2b2e6156c897": {
-				"core": [null, null, null, null, null, 50.7, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					50.7,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -7410,7 +9515,15 @@
 				]
 			},
 			"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-				"core": [null, null, null, null, 14.53, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					14.53,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -7440,7 +9553,15 @@
 				]
 			},
 			"27e481d6-6057-49dc-ad80-529f9127245f": {
-				"core": [null, null, null, null, null, null, 26.1],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					26.1
+				],
 				"sub": [
 					null,
 					null,
@@ -7470,7 +9591,15 @@
 				]
 			},
 			"089294d0-59db-47f0-a543-19d8e3708448": {
-				"core": [null, null, null, null, 19.33, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					19.33,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -7501,44 +9630,52 @@
 			},
 			"*": {
 				"core": [
-					55.599166666666676,
-					37.29625,
-					48.53,
-					52.345,
-					40.8825,
-					null,
-					35.8416666675
+					52.8525565888682,
+					40.63672015463165,
+					26.62168011999266,
+					54.25773879134503,
+					25.74880408415427,
+					49.32142101924297,
+					34.81914332623762
 				],
 				"sub": [
-					42.153333333333336,
-					51.080000000000005,
-					59.18333333333334,
+					36.49284164859002,
+					50.90540462427746,
+					61.28765480895916,
 					69.98,
-					38.45,
-					40.525,
+					42.60474231912784,
+					39.92226684,
 					27.92,
 					42.29,
 					47.63,
-					49.43,
-					60.58,
-					44.11,
+					20.69270931326434,
+					61.55163865546219,
+					47.9452,
 					58.26,
-					28.2425,
-					43.135000000000005,
-					35.714999999999996,
-					39.06,
-					49.66666667,
-					35.0,
-					28.7,
-					null,
-					30,
+					17.73121783876501,
+					42.42,
+					48.96554307116104,
+					34.75997899170168,
+					47.0427312480982,
+					34.13261372397841,
+					29.17241379310345,
+					0,
+					29.98009950248756,
 					50.7,
-					39.885,
-					null
+					48.33,
+					3.837209302325582
 				]
 			},
 			"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-				"core": [null, null, null, null, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					3.3,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -7564,11 +9701,19 @@
 					null,
 					null,
 					null,
-					null
+					3.3
 				]
 			},
 			"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-				"core": [null, null, null, null, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					4.0,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -7594,7 +9739,7 @@
 					null,
 					null,
 					null,
-					null
+					4.0
 				]
 			}
 		}
@@ -7603,13 +9748,25 @@
 		"id": "eec95564-4fec-4a35-804d-884bad73d16f",
 		"name": "InternVL3-78B",
 		"component": {
-			"vision": ["InternViT-6B-448px-V2.5"],
-			"language": ["Qwen2.5-72B"]
+			"vision": [
+				"InternViT-6B-448px-V2.5"
+			],
+			"language": [
+				"Qwen2.5-72B"
+			]
 		},
-		"size": [78],
-		"author": ["Shanghai AI Lab"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			78
+		],
+		"author": [
+			"Shanghai AI Lab"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/OpenGVLab/InternVL3-78B",
 		"navigation": true,
 		"taskPlanning": true,
@@ -7625,13 +9782,25 @@
 		"id": "ec713a22-e012-4acb-8567-c7bbff7c70a2",
 		"name": "VILA-1.5-13B",
 		"component": {
-			"vision": ["SigLIP"],
-			"language": ["Qwen2"]
+			"vision": [
+				"SigLIP"
+			],
+			"language": [
+				"Qwen2"
+			]
 		},
-		"size": [13],
-		"author": ["NVIDIA"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			13
+		],
+		"author": [
+			"NVIDIA"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/Efficient-Large-Model/VILA1.5-13b",
 		"navigation": true,
 		"taskPlanning": true,
@@ -7643,7 +9812,15 @@
 		"imageVideo": "image/video",
 		"score": {
 			"034bf6b5-dc18-45da-bfaf-337589125632": {
-				"core": [31.593333333333334, 22.19, 42.34, 44.555, 32.995, 36.67, null],
+				"core": [
+					31.59333333,
+					22.19,
+					42.08503356,
+					45.27809278,
+					21.59,
+					36.67,
+					null
+				],
 				"sub": [
 					21.46,
 					32.94,
@@ -7673,7 +9850,15 @@
 				]
 			},
 			"ba0be521-6b10-4881-964c-97cd4d2d6070": {
-				"core": [31.983333333333334, 12.88, null, 37.04, 25.94, null, null],
+				"core": [
+					32.59112033,
+					12.88,
+					null,
+					37.04,
+					25.85034325,
+					null,
+					null
+				],
 				"sub": [
 					9.74,
 					34.29,
@@ -7703,14 +9888,22 @@
 				]
 			},
 			"25206b0f-a955-4e39-86cf-53dcc9528bfc": {
-				"core": [30.39, 22.57166666666667, null, null, 4.85, 27.32, null],
+				"core": [
+					33.32683794,
+					23.43599286,
+					null,
+					null,
+					4.85,
+					27.32,
+					null
+				],
 				"sub": [
 					null,
 					41.88,
 					null,
 					18.9,
 					31.1,
-					21.335,
+					20.15242228,
 					null,
 					15.28,
 					null,
@@ -7733,7 +9926,15 @@
 				]
 			},
 			"5df5ca38-7ca9-4d35-81c6-3dfe52700755": {
-				"core": [37.995000000000005, 40.54, null, null, 31.825, null, null],
+				"core": [
+					37.995,
+					40.54,
+					null,
+					null,
+					31.825,
+					null,
+					null
+				],
 				"sub": [
 					32.35,
 					null,
@@ -7751,7 +9952,7 @@
 					28.57,
 					31.82,
 					null,
-					35.085,
+					34.54254545,
 					null,
 					null,
 					null,
@@ -7763,7 +9964,15 @@
 				]
 			},
 			"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-				"core": [null, null, null, 13.36, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					13.36,
+					null,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -7793,7 +10002,15 @@
 				]
 			},
 			"1961aa46-9085-42ed-b384-d9ffe52921a8": {
-				"core": [null, null, null, null, null, null, 1.1666666667499999],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					1.166666667
+				],
 				"sub": [
 					null,
 					null,
@@ -7823,7 +10040,15 @@
 				]
 			},
 			"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-				"core": [null, null, null, null, null, null, 9.75],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					9.75
+				],
 				"sub": [
 					null,
 					null,
@@ -7853,7 +10078,15 @@
 				]
 			},
 			"73de273a-7d38-40c0-b869-2b2e6156c897": {
-				"core": [null, null, null, null, null, 11.4, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					11.4,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -7883,7 +10116,15 @@
 				]
 			},
 			"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-				"core": [null, null, null, null, 16.314999999999998, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					16.315,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -7913,7 +10154,15 @@
 				]
 			},
 			"27e481d6-6057-49dc-ad80-529f9127245f": {
-				"core": [null, null, null, null, null, null, 21.7],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					21.7
+				],
 				"sub": [
 					null,
 					null,
@@ -7943,7 +10192,15 @@
 				]
 			},
 			"089294d0-59db-47f0-a543-19d8e3708448": {
-				"core": [null, null, null, null, 8.66, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					8.66,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -7974,39 +10231,52 @@
 			},
 			"*": {
 				"core": [
-					30.441666666666663, 20.19291666666667, 42.34, 34.8775,
-					26.534499999999998, 14.465000000000002, 6.683333333375
+					32.57990484222586,
+					22.60799173547289,
+					23.00319149097579,
+					36.38160818514619,
+					19.38806402829594,
+					12.17868471135547,
+					5.676952695440043
 				],
 				"sub": [
-					21.183333333333334,
-					36.37,
-					45.31333333333333,
+					18.92522776572668,
+					38.05203468208092,
+					44.44769433465086,
 					18.9,
-					31.27666666666667,
-					21.335,
+					26.80042120911794,
+					20.15242228,
 					12.88,
 					15.28,
 					43.65,
-					41.03,
+					17.17624647224835,
 					37.04,
-					32.715,
+					35.81180000000001,
 					44.4,
-					19.27,
-					18.335,
-					22.33,
-					28.3375,
-					7.8333333335,
-					5.0,
-					11.9,
-					null,
-					2,
+					23.34289879931389,
+					31.82,
+					32.7565543071161,
+					23.08661764653361,
+					6.996371176951122,
+					4.132613723978412,
+					9.558620689655172,
+					0,
+					2.0,
 					11.4,
-					31.995,
-					0.0
+					36.67,
+					0.7674418604651163
 				]
 			},
 			"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-				"core": [null, null, null, null, null, 0.0, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					0.0,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -8036,7 +10306,15 @@
 				]
 			},
 			"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-				"core": [null, null, null, null, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					1.0,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -8062,7 +10340,7 @@
 					null,
 					null,
 					null,
-					null
+					1.0
 				]
 			}
 		}
@@ -8071,13 +10349,25 @@
 		"id": "66e0e288-d20d-4c78-890e-3bd68aa931dc",
 		"name": "Video-3D LLM",
 		"component": {
-			"vision": ["ViT"],
-			"language": ["LLaVA-Video-7B"]
+			"vision": [
+				"ViT"
+			],
+			"language": [
+				"LLaVA-Video-7B"
+			]
 		},
-		"size": [8],
-		"author": ["Chinese University of Hong Kong"],
-		"qa": ["3D"],
-		"dimension": ["3D"],
+		"size": [
+			8
+		],
+		"author": [
+			"Chinese University of Hong Kong"
+		],
+		"qa": [
+			"3D"
+		],
+		"dimension": [
+			"3D"
+		],
 		"website": "https://huggingface.co/ChaimZhu/LLaVA-3D-7B",
 		"navigation": false,
 		"taskPlanning": false,
@@ -8093,13 +10383,25 @@
 		"id": "4c367bb5-77bf-48b5-9ada-2fcde4729c81",
 		"name": "GPT4Scene",
 		"component": {
-			"vision": ["Qwen2-VL-7B"],
-			"language": ["Qwen2-VL-7B"]
+			"vision": [
+				"Qwen2-VL-7B"
+			],
+			"language": [
+				"Qwen2-VL-7B"
+			]
 		},
-		"size": [8],
-		"author": ["Shanghai AI Lab"],
-		"qa": ["3D"],
-		"dimension": ["3D"],
+		"size": [
+			8
+		],
+		"author": [
+			"Shanghai AI Lab"
+		],
+		"qa": [
+			"3D"
+		],
+		"dimension": [
+			"3D"
+		],
 		"website": "https://github.com/Qi-Zhangyang/gpt4scene",
 		"navigation": false,
 		"taskPlanning": false,
@@ -8115,13 +10417,28 @@
 		"id": "f33d8c23-d728-477e-9088-5f3a02175043",
 		"name": "3DMIT",
 		"component": {
-			"vision": ["EPCL", "Ulip2", "Uni3D"],
-			"language": ["Vicuna-7B", "LLaVA1.5-7B"]
+			"vision": [
+				"EPCL",
+				"Ulip2",
+				"Uni3D"
+			],
+			"language": [
+				"Vicuna-7B",
+				"LLaVA1.5-7B"
+			]
 		},
-		"size": [7],
-		"author": ["Beijing University of Posts and Telecommunications"],
-		"qa": ["3D"],
-		"dimension": ["3D"],
+		"size": [
+			7
+		],
+		"author": [
+			"Beijing University of Posts and Telecommunications"
+		],
+		"qa": [
+			"3D"
+		],
+		"dimension": [
+			"3D"
+		],
 		"website": "https://github.com/staymylove/3DMIT",
 		"navigation": false,
 		"taskPlanning": false,
@@ -8136,7 +10453,9 @@
 	{
 		"id": "00568adc-d3fc-49ec-ab1c-b5a560c6149d",
 		"name": "3D-LLM",
-		"qa": ["3D"],
+		"qa": [
+			"3D"
+		],
 		"website": "https://github.com/UMass-Embodied-AGI/3D-LLM",
 		"navigation": false,
 		"taskPlanning": false,
@@ -8152,13 +10471,26 @@
 		"id": "85d29904-6b52-4091-97a4-8b1dba40f55f",
 		"name": "PhysVLM",
 		"component": {
-			"vision": ["SigLip-400M model"],
-			"language": ["Qwen-2.5-Instruct-3B"]
+			"vision": [
+				"SigLip-400M model"
+			],
+			"language": [
+				"Qwen-2.5-Instruct-3B"
+			]
 		},
-		"size": [3],
-		"author": ["Beijing Jiaotong University"],
-		"qa": ["2D", "3D"],
-		"dimension": ["3D"],
+		"size": [
+			3
+		],
+		"author": [
+			"Beijing Jiaotong University"
+		],
+		"qa": [
+			"2D",
+			"3D"
+		],
+		"dimension": [
+			"3D"
+		],
 		"website": "https://github.com/unira-zwj/PhysVLM",
 		"navigation": true,
 		"taskPlanning": true,
@@ -8174,13 +10506,25 @@
 		"id": "a72406cc-1374-4992-ad62-b052f23908f8",
 		"name": "RoboBrain",
 		"component": {
-			"vision": ["SigLIP"],
-			"language": ["Qwen2.5-7B-Instruct"]
+			"vision": [
+				"SigLIP"
+			],
+			"language": [
+				"Qwen2.5-7B-Instruct"
+			]
 		},
-		"size": [7],
-		"author": ["Peking University"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			7
+		],
+		"author": [
+			"Peking University"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://github.com/FlagOpen/RoboBrain",
 		"navigation": true,
 		"taskPlanning": true,
@@ -8193,11 +10537,11 @@
 		"score": {
 			"034bf6b5-dc18-45da-bfaf-337589125632": {
 				"core": [
-					31.423333333333332,
+					31.42333333,
 					47.78,
-					45.019999999999996,
-					43.125,
-					28.799999999999997,
+					42.42946309,
+					43.21207904,
+					11.37,
 					51.11,
 					null
 				],
@@ -8218,7 +10562,7 @@
 					null,
 					null,
 					null,
-					11.370000000000001,
+					11.37,
 					null,
 					null,
 					null,
@@ -8230,7 +10574,15 @@
 				]
 			},
 			"ba0be521-6b10-4881-964c-97cd4d2d6070": {
-				"core": [35.00333333333333, 17.42, null, 40.0, 25.375, null, null],
+				"core": [
+					35.53726141,
+					17.42,
+					null,
+					40.0,
+					25.32038902,
+					null,
+					null
+				],
 				"sub": [
 					15.16,
 					37.56,
@@ -8260,14 +10612,22 @@
 				]
 			},
 			"25206b0f-a955-4e39-86cf-53dcc9528bfc": {
-				"core": [37.79, 30.333333333333332, null, null, 15.53, 27.31, null],
+				"core": [
+					38.23474308,
+					29.81794286,
+					null,
+					null,
+					15.53,
+					27.31,
+					null
+				],
 				"sub": [
 					null,
 					39.53,
 					null,
 					36.05,
 					37.47,
-					26.45,
+					25.53124352,
 					null,
 					27.08,
 					null,
@@ -8291,11 +10651,11 @@
 			},
 			"5df5ca38-7ca9-4d35-81c6-3dfe52700755": {
 				"core": [
-					46.605000000000004,
+					46.605,
 					24.32,
 					null,
 					null,
-					38.31666666666666,
+					38.31667,
 					null,
 					null
 				],
@@ -8316,7 +10676,7 @@
 					44.05,
 					36.36,
 					null,
-					34.54,
+					35.45490909,
 					null,
 					null,
 					null,
@@ -8328,7 +10688,15 @@
 				]
 			},
 			"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-				"core": [null, null, null, 9.19, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					9.19,
+					null,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -8358,7 +10726,15 @@
 				]
 			},
 			"1961aa46-9085-42ed-b384-d9ffe52921a8": {
-				"core": [null, null, null, null, null, null, 8.66666666675],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					8.666666667
+				],
 				"sub": [
 					null,
 					null,
@@ -8388,7 +10764,15 @@
 				]
 			},
 			"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-				"core": [null, null, null, null, null, null, 3.3333333332499997],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					3.333333
+				],
 				"sub": [
 					null,
 					null,
@@ -8418,7 +10802,15 @@
 				]
 			},
 			"73de273a-7d38-40c0-b869-2b2e6156c897": {
-				"core": [null, null, null, null, null, 19.9, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					19.9,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -8448,7 +10840,15 @@
 				]
 			},
 			"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-				"core": [null, null, null, null, 13.39, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					13.39,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -8478,7 +10878,15 @@
 				]
 			},
 			"27e481d6-6057-49dc-ad80-529f9127245f": {
-				"core": [null, null, null, null, null, null, 13.6],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					13.6
+				],
 				"sub": [
 					null,
 					null,
@@ -8508,7 +10916,15 @@
 				]
 			},
 			"089294d0-59db-47f0-a543-19d8e3708448": {
-				"core": [null, null, null, null, 7.0, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					7.0,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -8539,39 +10955,52 @@
 			},
 			"*": {
 				"core": [
-					36.680833333333325, 26.868333333333332, 45.019999999999996, 33.86,
-					27.378499999999995, 21.67, 6.675000000000001
+					35.11177858552566,
+					33.39963044201313,
+					23.19145267942039,
+					34.88530214549707,
+					15.24774494624149,
+					20.82636921124973,
+					6.442244083558855
 				],
 				"sub": [
-					28.093333333333334,
-					35.913333333333334,
-					46.666666666666664,
+					23.23973969631237,
+					36.50031213872833,
+					43.91735177865612,
 					36.05,
-					36.52333333333333,
-					26.45,
+					42.40433102081268,
+					25.53124352,
 					17.42,
 					27.08,
 					58.33,
-					31.71,
-					41.11,
-					26.61,
+					13.27464722483537,
+					41.22659663865547,
+					29.3972,
 					46.23,
-					22.5275,
-					25.945,
-					19.235,
-					22.955,
-					7.0,
-					4.5,
-					8.200000000000001,
-					null,
-					7,
+					20.1657461406518,
+					36.36,
+					28.05097378277154,
+					14.15292016796218,
+					6.956009775637635,
+					4.586738627602159,
+					7.419098143236075,
+					0,
+					6.975124378109452,
 					19.9,
-					39.21,
-					5.9
+					51.11,
+					5.472093023255813
 				]
 			},
 			"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-				"core": [null, null, null, null, null, 6.7, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					6.7,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -8601,7 +11030,15 @@
 				]
 			},
 			"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-				"core": [null, null, null, null, null, 5.1, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					5.1,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -8636,13 +11073,25 @@
 		"id": "868f66b5-8949-4086-8d64-c955abaddab6",
 		"name": "RoboAnnotatorX",
 		"component": {
-			"vision": ["ViT"],
-			"language": ["Vicuna-7B"]
+			"vision": [
+				"ViT"
+			],
+			"language": [
+				"Vicuna-7B"
+			]
 		},
-		"size": [7],
-		"author": ["Tianjin University"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			7
+		],
+		"author": [
+			"Tianjin University"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://github.com/LongXinKou/RoboannotatorX",
 		"navigation": true,
 		"taskPlanning": true,
@@ -8658,13 +11107,25 @@
 		"id": "07b32a32-fe35-4b8d-9c65-57f4a12ad256",
 		"name": "Embodied-FSD",
 		"component": {
-			"vision": ["CLIP-ViT-L-336px"],
-			"language": ["Vicuna-13B"]
+			"vision": [
+				"CLIP-ViT-L-336px"
+			],
+			"language": [
+				"Vicuna-13B"
+			]
 		},
-		"size": [13],
-		"author": ["Tianjin University"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			13
+		],
+		"author": [
+			"Tianjin University"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://github.com/pickxiguapi/Embodied-FSD",
 		"navigation": true,
 		"taskPlanning": true,
@@ -8680,13 +11141,26 @@
 		"id": "c1bc8f89-1907-4d8c-9271-628125b335c5",
 		"name": "SAT",
 		"component": {
-			"vision": ["ViT"],
-			"language": ["LLaVA-1.5-7B/13B"]
+			"vision": [
+				"ViT"
+			],
+			"language": [
+				"LLaVA-1.5-7B/13B"
+			]
 		},
-		"size": [7, 13],
-		"author": ["Boston University"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			7,
+			13
+		],
+		"author": [
+			"Boston University"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://github.com/arijitray1993/SAT",
 		"navigation": true,
 		"taskPlanning": true,
@@ -8702,13 +11176,31 @@
 		"id": "bd0aff87-62c1-494b-a1e1-fb3ef55f0150",
 		"name": "SpatialBot",
 		"component": {
-			"vision": ["SigLIP"],
-			"language": ["Phi-2-3B", "Phi-3-4B", "QWen-1.5-4B", "Llama-3-8B"]
+			"vision": [
+				"SigLIP"
+			],
+			"language": [
+				"Phi-2-3B",
+				"Phi-3-4B",
+				"QWen-1.5-4B",
+				"Llama-3-8B"
+			]
 		},
-		"size": [3, 4, 8],
-		"author": ["Shanghai Jiao Tong University"],
-		"qa": ["2D", "3D"],
-		"dimension": ["3D"],
+		"size": [
+			3,
+			4,
+			8
+		],
+		"author": [
+			"Shanghai Jiao Tong University"
+		],
+		"qa": [
+			"2D",
+			"3D"
+		],
+		"dimension": [
+			"3D"
+		],
 		"website": "https://github.com/BAAI-DCAI/SpatialBot",
 		"navigation": true,
 		"taskPlanning": true,
@@ -8724,13 +11216,25 @@
 		"id": "8cb6f6bb-9534-4da7-bff7-b25f4359faec",
 		"name": "SpatialVLM",
 		"component": {
-			"vision": ["ViT"],
-			"language": ["PaLM-E 12B"]
+			"vision": [
+				"ViT"
+			],
+			"language": [
+				"PaLM-E 12B"
+			]
 		},
-		"size": [12],
-		"author": ["Google DeepMind"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			12
+		],
+		"author": [
+			"Google DeepMind"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://spatial-vlm.github.io/",
 		"navigation": true,
 		"taskPlanning": true,
@@ -8743,11 +11247,11 @@
 		"score": {
 			"034bf6b5-dc18-45da-bfaf-337589125632": {
 				"core": [
-					31.653333333333336,
+					31.65333333,
 					23.09,
-					36.36,
-					48.5,
-					28.884999999999998,
+					35.04818792,
+					48.34123711,
+					15.61,
 					27.78,
 					null
 				],
@@ -8768,7 +11272,7 @@
 					null,
 					null,
 					null,
-					15.610000000000001,
+					15.61,
 					null,
 					null,
 					null,
@@ -8780,7 +11284,15 @@
 				]
 			},
 			"ba0be521-6b10-4881-964c-97cd4d2d6070": {
-				"core": [37.74, 17.52, null, 38.21, 27.924999999999997, null, null],
+				"core": [
+					35.16442284,
+					17.52,
+					null,
+					38.21,
+					27.85356979,
+					null,
+					null
+				],
 				"sub": [
 					16.21,
 					39.79,
@@ -8810,7 +11322,15 @@
 				]
 			},
 			"25206b0f-a955-4e39-86cf-53dcc9528bfc": {
-				"core": [0.09, 0.13333333333333333, null, null, 0.0, 0.0, null],
+				"core": [
+					0.066996047,
+					0.138285714,
+					null,
+					null,
+					0.0,
+					0.0,
+					null
+				],
 				"sub": [
 					null,
 					0.0,
@@ -8841,11 +11361,11 @@
 			},
 			"5df5ca38-7ca9-4d35-81c6-3dfe52700755": {
 				"core": [
-					31.979999999999997,
+					31.98,
 					24.32,
 					null,
 					null,
-					28.19333333333334,
+					28.19333,
 					null,
 					null
 				],
@@ -8866,7 +11386,7 @@
 					26.19,
 					31.82,
 					null,
-					26.57,
+					29.08909091,
 					null,
 					null,
 					null,
@@ -8878,7 +11398,15 @@
 				]
 			},
 			"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-				"core": [null, null, null, 6.73, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					6.73,
+					null,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -8908,7 +11436,15 @@
 				]
 			},
 			"1961aa46-9085-42ed-b384-d9ffe52921a8": {
-				"core": [null, null, null, null, null, null, 0.0],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					0.0
+				],
 				"sub": [
 					null,
 					null,
@@ -8938,7 +11474,15 @@
 				]
 			},
 			"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-				"core": [null, null, null, null, null, null, 0.0],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					0.0
+				],
 				"sub": [
 					null,
 					null,
@@ -8968,7 +11512,15 @@
 				]
 			},
 			"73de273a-7d38-40c0-b869-2b2e6156c897": {
-				"core": [null, null, null, null, null, 0.0, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					0.0,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -8998,7 +11550,15 @@
 				]
 			},
 			"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-				"core": [null, null, null, null, 16.25, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					16.25,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -9028,7 +11588,15 @@
 				]
 			},
 			"27e481d6-6057-49dc-ad80-529f9127245f": {
-				"core": [null, null, null, null, null, null, 10.5],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					10.5
+				],
 				"sub": [
 					null,
 					null,
@@ -9058,7 +11626,15 @@
 				]
 			},
 			"089294d0-59db-47f0-a543-19d8e3708448": {
-				"core": [null, null, null, null, 1.66, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					1.66,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -9089,44 +11665,52 @@
 			},
 			"*": {
 				"core": [
-					22.723333333333336,
-					8.364166666666666,
-					36.36,
-					35.485,
-					23.8035,
-					null,
-					0.875
+					20.23973450046429,
+					7.1200996837345,
+					19.15693323580337,
+					36.86935672321638,
+					17.01535059194101,
+					1.174878409811799,
+					0.462046204620462
 				],
 				"sub": [
-					21.36,
-					23.560000000000002,
-					45.79333333333333,
+					18.3000759219089,
+					15.10839884393063,
+					48.66325428194994,
 					0.18,
-					15.936666666666667,
+					12.22854806739346,
 					0.0,
 					17.52,
 					0.0,
 					43.1,
-					29.62,
-					44.18,
-					26.79,
+					12.3997177798683,
+					44.80710084033613,
+					29.9996,
 					42.16,
-					18.2425,
-					15.91,
-					21.615,
-					21.09,
+					23.26121783876501,
+					31.82,
+					32.06970037453183,
+					17.16745798329832,
 					0.0,
 					0.0,
-					3.5,
-					null,
+					2.228116710875331,
 					0,
 					0.0,
-					13.89,
-					null
+					0.0,
+					27.78,
+					0.0
 				]
 			},
 			"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-				"core": [null, null, null, null, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -9156,7 +11740,15 @@
 				]
 			},
 			"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-				"core": [null, null, null, null, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -9191,13 +11783,25 @@
 		"id": "123ad294-191e-484a-9f84-115c057a6a8c",
 		"name": "SpatialCoT",
 		"component": {
-			"vision": ["Vit"],
-			"language": ["Vicuna-v1.5-13B"]
+			"vision": [
+				"Vit"
+			],
+			"language": [
+				"Vicuna-v1.5-13B"
+			]
 		},
-		"size": [13],
-		"author": ["Huawei Noah’s Ark Lab"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			13
+		],
+		"author": [
+			"Huawei Noah’s Ark Lab"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://spatialcot.github.io/",
 		"navigation": true,
 		"taskPlanning": true,
@@ -9213,13 +11817,25 @@
 		"id": "8b4d7b49-c349-45a5-b2db-2f602f44ae29",
 		"name": "3D-Mem",
 		"component": {
-			"vision": ["CLIP"],
-			"language": ["LLaVA-1.5-7B"]
+			"vision": [
+				"CLIP"
+			],
+			"language": [
+				"LLaVA-1.5-7B"
+			]
 		},
-		"size": [7],
-		"author": ["UMass Amherst"],
-		"qa": ["3D"],
-		"dimension": ["3D"],
+		"size": [
+			7
+		],
+		"author": [
+			"UMass Amherst"
+		],
+		"qa": [
+			"3D"
+		],
+		"dimension": [
+			"3D"
+		],
 		"website": "https://github.com/UMass-Embodied-AGI/3D-Mem",
 		"navigation": true,
 		"taskPlanning": false,
@@ -9235,12 +11851,22 @@
 		"id": "e72d733b-7926-4bb3-bf29-204c042d52c5",
 		"name": "Mem2Ego",
 		"component": {
-			"language": ["Llama3.2-11B"]
+			"language": [
+				"Llama3.2-11B"
+			]
 		},
-		"size": [11],
-		"author": ["Huawei Noah’s Ark Lab"],
-		"qa": ["3D"],
-		"dimension": ["3D"],
+		"size": [
+			11
+		],
+		"author": [
+			"Huawei Noah’s Ark Lab"
+		],
+		"qa": [
+			"3D"
+		],
+		"dimension": [
+			"3D"
+		],
 		"website": "https://arxiv.org/pdf/2502.14254",
 		"navigation": true,
 		"taskPlanning": false,
@@ -9255,9 +11881,15 @@
 	{
 		"id": "051465b8-2624-4b45-a884-bdfcfde0609f",
 		"name": "LLaVA-OneVision-0.5B",
-		"author": ["ByteDance"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"author": [
+			"ByteDance"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"navigation": false,
 		"taskPlanning": false,
 		"reason": false,
@@ -9271,13 +11903,25 @@
 		"id": "0254b277-0f68-496d-b01b-fe0528e67b4b",
 		"name": "Cosmos-Reason-1-7B",
 		"component": {
-			"vision": ["ViT"],
-			"language": ["Qwen2.5-VL-7B-Instruct"]
+			"vision": [
+				"ViT"
+			],
+			"language": [
+				"Qwen2.5-VL-7B-Instruct"
+			]
 		},
-		"size": [7],
-		"author": ["NVIDIA"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"size": [
+			7
+		],
+		"author": [
+			"NVIDIA"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://huggingface.co/nvidia/Cosmos-Reason1-7B",
 		"navigation": false,
 		"taskPlanning": false,
@@ -9290,11 +11934,11 @@
 		"score": {
 			"034bf6b5-dc18-45da-bfaf-337589125632": {
 				"core": [
-					38.03333333333333,
+					38.03333333,
 					53.06,
-					42.519999999999996,
-					40.985,
-					28.3825,
+					40.29731544,
+					41.83414089,
+					17.395,
 					52.25,
 					null
 				],
@@ -9327,7 +11971,15 @@
 				]
 			},
 			"ba0be521-6b10-4881-964c-97cd4d2d6070": {
-				"core": [39.516666666666666, 19.78, null, 36.76, 31.0, null, null],
+				"core": [
+					38.11664642,
+					19.78,
+					null,
+					36.76,
+					30.92297483,
+					null,
+					null
+				],
 				"sub": [
 					25.38,
 					46.5,
@@ -9357,14 +12009,22 @@
 				]
 			},
 			"25206b0f-a955-4e39-86cf-53dcc9528bfc": {
-				"core": [20.37, 31.231666666666666, null, null, 33.67, 24.74, null],
+				"core": [
+					19.89458498,
+					29.22173571,
+					null,
+					null,
+					33.67,
+					24.74,
+					null
+				],
 				"sub": [
 					null,
 					18.51,
 					null,
 					22.23,
 					33.38,
-					26.465,
+					25.75143782,
 					null,
 					33.85,
 					null,
@@ -9387,7 +12047,15 @@
 				]
 			},
 			"5df5ca38-7ca9-4d35-81c6-3dfe52700755": {
-				"core": [45.485, 29.73, null, null, 42.68666666666667, null, null],
+				"core": [
+					45.485,
+					29.73,
+					null,
+					null,
+					42.68667,
+					null,
+					null
+				],
 				"sub": [
 					38.24,
 					null,
@@ -9405,7 +12073,7 @@
 					44.05,
 					34.85,
 					null,
-					49.16,
+					47.27454545,
 					null,
 					null,
 					null,
@@ -9417,7 +12085,15 @@
 				]
 			},
 			"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-				"core": [null, null, null, 5.21, null, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					5.21,
+					null,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -9447,7 +12123,15 @@
 				]
 			},
 			"1961aa46-9085-42ed-b384-d9ffe52921a8": {
-				"core": [null, null, null, null, null, null, 1.6666666667499999],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					1.666666667
+				],
 				"sub": [
 					null,
 					null,
@@ -9477,7 +12161,15 @@
 				]
 			},
 			"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-				"core": [null, null, null, null, null, null, 13.1666666675],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					13.16667
+				],
 				"sub": [
 					null,
 					null,
@@ -9507,7 +12199,15 @@
 				]
 			},
 			"73de273a-7d38-40c0-b869-2b2e6156c897": {
-				"core": [null, null, null, null, null, 5.9, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					5.9,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -9537,7 +12237,15 @@
 				]
 			},
 			"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-				"core": [null, null, null, null, 12.365, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					12.365,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -9567,7 +12275,15 @@
 				]
 			},
 			"27e481d6-6057-49dc-ad80-529f9127245f": {
-				"core": [null, null, null, null, null, null, 24.2],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null,
+					24.2
+				],
 				"sub": [
 					null,
 					null,
@@ -9597,7 +12313,15 @@
 				]
 			},
 			"089294d0-59db-47f0-a543-19d8e3708448": {
-				"core": [null, null, null, null, 4.33, null, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					4.33,
+					null,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -9628,39 +12352,52 @@
 			},
 			"*": {
 				"core": [
-					34.06833333333333, 29.704583333333332, 42.519999999999996, 30.985,
-					30.514999999999997, 16.415, 9.016666667125
+					31.2900772189336,
+					34.49374908533917,
+					22.02604548994864,
+					32.53495126508772,
+					17.30039934477187,
+					7.804609854091774,
+					7.48834024439494
 				],
 				"sub": [
-					31.87,
-					35.220000000000006,
-					46.953333333333326,
+					30.56439262472885,
+					29.26536416184971,
+					44.00646903820817,
 					22.23,
-					38.723333333333336,
-					26.465,
+					43.19208622398414,
+					25.75143782,
 					19.78,
 					33.85,
 					53.94,
-					31.1,
-					34.459999999999994,
-					27.51,
+					13.01928504233302,
+					34.21840336134454,
+					31.078,
 					39.37,
-					21.8875,
-					34.260000000000005,
-					23.78,
-					33.277499999999996,
-					13.666666668500001,
-					5.0,
-					11.4,
-					null,
-					6,
+					18.37766723842196,
+					34.85,
+					35.3136329588015,
+					20.84746848686975,
+					12.01451529450722,
+					4.132613723978412,
+					8.83395225464191,
+					0,
+					6.019900497512438,
 					5.9,
-					38.495,
-					4.85
+					52.25,
+					3.86046511627907
 				]
 			},
 			"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-				"core": [null, null, null, null, null, 6.7, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					6.7,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -9690,7 +12427,15 @@
 				]
 			},
 			"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-				"core": [null, null, null, null, null, 3.0, null],
+				"core": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					3.0,
+					null
+				],
 				"sub": [
 					null,
 					null,
@@ -9725,11 +12470,19 @@
 		"id": "526efef7-9600-4992-9c70-fec8893b1706",
 		"name": "Gemini-2.5-flash",
 		"component": {
-			"language": ["Gemini-2.5-flash"]
+			"language": [
+				"Gemini-2.5-flash"
+			]
 		},
-		"author": ["Google DeepMind"],
-		"qa": ["2D"],
-		"dimension": ["2D"],
+		"author": [
+			"Google DeepMind"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
 		"website": "https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash",
 		"navigation": true,
 		"taskPlanning": true,
