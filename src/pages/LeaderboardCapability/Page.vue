@@ -80,7 +80,7 @@ import { toNumberOrNull } from 'src/components/utils';
 
 const selectedBenchmarkId = ref<string | null>(null);
 const benchmarkList = ref<Spec.Benchmark.Type[]>([]);
-const capabilitySubItemList = ref<Spec.Capability.Item[]>([]);
+const capabilityItemList = ref<Spec.Capability.Item[]>([]);
 const capabilityLevel = ref<'core' | 'sub'>('core');
 const currentFilter = ref<ModelFilter>(() => true);
 const modelList = ref<Spec.Model.Type[]>([]);
@@ -165,7 +165,7 @@ const groups = computed<null | GroupOptions[]>(() => {
 	for (const coreData of Level.core) {
 		list.push({
 			label: NameRecord.core[coreData.id]!,
-			colspan: capabilitySubItemList.value.filter(item => item.group === coreData.id).length,
+			colspan: capabilityItemList.value.filter(item => item.group === coreData.id).length,
 		});
 	}
 
@@ -233,13 +233,27 @@ onBeforeMount(async () => {
 
 	benchmarkList.value = await Backend.API.Benchmark.query();
 	modelList.value = await Backend.API.Model.queryHasScore();
-	capabilitySubItemList.value = await Backend.API.Capability.Item.query();
+	capabilityItemList.value = await Backend.API.Capability.Item.query();
 
 	const coreLevelItemList = await Backend.API.Capability.Level.Core.query();
 	const subLevelItemList = await Backend.API.Capability.Level.Sub.query();
 
 	coreLevelItemList.sort((a, b) => a.order - b.order);
-	subLevelItemList.sort((a, b) => a.order - b.order);
+
+	const coreOrderRecord: Record<string, number> = {};
+	const subCoreOrderRecord: Record<string, number> = {};
+
+	for (const [index, coreLevelItem] of coreLevelItemList.entries()) {
+		coreOrderRecord[coreLevelItem.id] = index;
+	}
+
+	for (const item of capabilityItemList.value) {
+		subCoreOrderRecord[item.id] = coreOrderRecord[item.group]!;
+	}
+
+	subLevelItemList.sort((a, b) => {
+		return (subCoreOrderRecord[a.id]! - subCoreOrderRecord[b.id]!) || (a.order - b.order);
+	});
 
 	Level.core = coreLevelItemList;
 	Level.sub = subLevelItemList;
