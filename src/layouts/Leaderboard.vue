@@ -22,8 +22,8 @@
 					style="opacity: 0.6"
 					active-class="app-solid-tab"
 				>
-					<div class="row">
-						<div class="">{{ item.name }}</div>
+					<div class="row no-wrap">
+						<div class="col">{{ item.name }}</div>
 						<q-btn-dropdown
 							:class="{ invisible: $route.params.leaderboardId !== item.id }"
 							flat

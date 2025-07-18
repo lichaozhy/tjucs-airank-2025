@@ -15,6 +15,7 @@ body {
 .app-content-main,
 .app-max-width-1680 {
 	max-width: 1680px;
+	width: calc(100vw - 40px) !important;
 }
 
 .app-rank-table {
