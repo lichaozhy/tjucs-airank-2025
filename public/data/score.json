@@ -1028,26 +1028,6 @@
 		"items": [62.9, 36, 49.45]
 	},
 	{
-		"benchmark": "68bf8b5b-d8d4-49d7-9e7e-03e4d547189b",
-		"model": "314244f5-7c42-4279-957b-6fbc2c4b9aee",
-		"items": [90.77, 79.26, 62.61, 77.55]
-	},
-	{
-		"benchmark": "68bf8b5b-d8d4-49d7-9e7e-03e4d547189b",
-		"model": "12e98a0d-5bd3-4af8-a45d-4ebaa59cf45c",
-		"items": [89.04, 77.39, 66.06, 77.5]
-	},
-	{
-		"benchmark": "68bf8b5b-d8d4-49d7-9e7e-03e4d547189b",
-		"model": "12e98a0d-5bd3-4af8-a45d-4ebaa59cf45c",
-		"items": [89.04, 75.84, 62.41, 75.76]
-	},
-	{
-		"benchmark": "68bf8b5b-d8d4-49d7-9e7e-03e4d547189b",
-		"model": "df53089f-9407-49d7-b93e-199fffe7db94",
-		"items": [83.99, 69.66, 27.74, 60.46]
-	},
-	{
 		"benchmark": "1961aa46-9085-42ed-b384-d9ffe52921a8",
 		"model": "6d2b9e8a-97ff-400f-8ea1-f403c7452408",
 		"items": [64, 54, 68, 46, 52, 54, 56.3]
@@ -2021,5 +2001,45 @@
 		"benchmark": "089294d0-59db-47f0-a543-19d8e3708448",
 		"model": "0254b277-0f68-496d-b01b-fe0528e67b4b",
 		"items": [4.33, 4.33]
+	},
+	{
+		"benchmark": "68bf8b5b-d8d4-49d7-9e7e-03e4d547189b",
+		"model": "f0fc7970-1e20-4ea2-a5fd-65ed7dd6802a",
+		"items": [89.47, 77.81, 65.33, null, 77.54]
+	},
+	{
+		"benchmark": "68bf8b5b-d8d4-49d7-9e7e-03e4d547189b",
+		"model": "24608772-82fc-4750-94ba-a0f87e2c1198",
+		"items": [89.89, 77.25, 63.14, null, 76.76]
+	},
+	{
+		"benchmark": "68bf8b5b-d8d4-49d7-9e7e-03e4d547189b",
+		"model": "a0515273-7168-4717-a07a-b143b0208074",
+		"items": [90.31, 78.65, 62.86, null, 77.27]
+	},
+	{
+		"benchmark": "68bf8b5b-d8d4-49d7-9e7e-03e4d547189b",
+		"model": "6d2b9e8a-97ff-400f-8ea1-f403c7452408",
+		"items": [90.31, 79.07, 63.32, null, 77.57]
+	},
+	{
+		"benchmark": "68bf8b5b-d8d4-49d7-9e7e-03e4d547189b",
+		"model": "85034696-05d3-44c9-8fc6-1786f0d86aab",
+		"items": [89.89, 78.65, 63.32, null, 77.29]
+	},
+	{
+		"benchmark": "68bf8b5b-d8d4-49d7-9e7e-03e4d547189b",
+		"model": "74443d95-8883-40ab-b4bd-8e7b184ebe54",
+		"items": [90.03, 77.95, 64.42, null, 77.47]
+	},
+	{
+		"benchmark": "68bf8b5b-d8d4-49d7-9e7e-03e4d547189b",
+		"model": "314244f5-7c42-4279-957b-6fbc2c4b9aee",
+		"items": [null, null, null, 58.6, 58.6]
+	},
+	{
+		"benchmark": "68bf8b5b-d8d4-49d7-9e7e-03e4d547189b",
+		"model": "0963c6fe-8edb-4165-98c7-6070bb745abf",
+		"items": [null, null, null, 60.35, 60.35]
 	}
 ]

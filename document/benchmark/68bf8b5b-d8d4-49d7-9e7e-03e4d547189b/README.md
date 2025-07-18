@@ -21,7 +21,7 @@ properties:
   NaviLayoutMap:
     order: 1
     index: 0
-    label: Navi +Layout Map
+    label: Navi + Layout Map
     unit: ''
   Navi:
     order: 2
@@ -31,11 +31,16 @@ properties:
   NaviRelation:
     order: 3
     index: 2
-    label: Navi+ Relation
+    label: Navi + Relation
+    unit: ''
+  NaviManiMultiObjectsTemporalConstraints:
+    order: 4
+    index: 3
+    label: Navi & Mani + Multi Objects + Temporal Constraints
     unit: ''
   TotalSR:
     order: 0
-    index: 3
+    index: 4
     label: Total SR
     unit: ''
 ---
