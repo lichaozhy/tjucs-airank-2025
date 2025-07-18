@@ -43,11 +43,7 @@
 						</q-card-section>
 						<q-separator />
 						<q-card-section>
-							<div
-								class="app-markdown-html"
-								style="font-size: 16px"
-								v-html="documentHTML"
-							></div>
+							<app-markdown-html :content="documentHTML" />
 						</q-card-section>
 					</q-card>
 				</div>
@@ -174,6 +170,7 @@ import { useRoute } from 'vue-router';
 
 import type * as Spec from 'src/spec';
 import * as Backend from 'src/backend';
+import AppMarkdownHtml from 'components/MarkdownHTML.vue';
 
 const route = useRoute();
 const benchmarkId = route.params.id as string;

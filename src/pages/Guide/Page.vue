@@ -14,12 +14,10 @@
 						flat
 					>
 						<q-card-section>
-							<div
+							<app-markdown-html
 								ref="document"
-								class="app-markdown-html"
-								style="font-size: 16px"
-								v-html="documentHTML"
-							></div>
+								:content="documentHTML"
+							/>
 						</q-card-section>
 					</q-card>
 				</div>
@@ -50,7 +48,9 @@
 
 <script setup lang="ts">
 import { ref, onBeforeMount, watch, nextTick } from 'vue';
+
 import * as Backend from 'src/backend';
+import AppMarkdownHtml from 'components/MarkdownHTML.vue';
 
 interface TOCItem {
 	id: string;
@@ -60,7 +60,7 @@ interface TOCItem {
 
 const documentHTML = ref<string>('');
 const toc = ref<TOCItem[]>([]);
-const document = ref<HTMLDivElement | null>(null);
+const document = ref<InstanceType<typeof AppMarkdownHtml> | null>(null);
 
 const HEADING_DEPTH_MAP = {
 	H1: 0,
@@ -70,7 +70,7 @@ const HEADING_DEPTH_MAP = {
 
 watch(documentHTML, async () => {
 	await nextTick(() => {
-		const headingList = document.value!.querySelectorAll('h1, h2, h3');
+		const headingList = document.value!.$el.querySelectorAll('h1, h2, h3');
 
 		toc.value = [...headingList].map((element) => {
 			return {

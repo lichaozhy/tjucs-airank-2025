@@ -42,11 +42,11 @@
 			</div>
 
 			<div class="col relative-postion text-black">
-				<div
-					class="app-markdown-html q-mb-md"
+				<app-markdown-html
+					class="q-mb-md"
 					style="height: 14em"
-					v-html="groupContent"
-				></div>
+					:content="groupContent"
+				/>
 
 				<div class="text-h5 text-center text-weight-medium q-mt-md">
 					{{ PROFILE.MAPPING.TITLE }}
@@ -83,10 +83,10 @@
 						:key="item.id"
 						:name="item.id"
 					>
-						<div
-							class="app-markdown-html app-capability-markdown"
-							v-html="itemContent"
-						></div>
+						<app-markdown-html
+							class="app-capability-markdown"
+							:content="itemContent"
+						/>
 					</q-tab-panel>
 				</q-tab-panels>
 			</div>
@@ -129,6 +129,7 @@ const PROFILE = {
 
 import type * as Spec from 'src/spec';
 import * as Backend from 'src/backend';
+import AppMarkdownHtml from 'components/MarkdownHTML.vue';
 
 const groupDataList = ref<Spec.Capability.Group[]>([]);
 const itemDataList = ref<Spec.Capability.Item[]>([]);

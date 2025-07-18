@@ -15,14 +15,12 @@ $link-hover: #e74c3c;
 .app-markdown-html {
 	line-height: 1.755;
 
-	// 重置样式
 	* {
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0;
 	}
 
-	// 标题样式
 	h1,
 	h2,
 	h3,
@@ -34,26 +32,14 @@ $link-hover: #e74c3c;
 		font-weight: 700;
 		color: $dark-bg;
 		position: relative;
-
-		// &[id]::before {
-		// content: '';
-		// display: block;
-		// height: 6em;
-		// margin-top: -em;
-		// visibility: hidden;
-		// }
 	}
 
 	h1 {
 		font-size: 2em;
-		// border-bottom: 2px solid $border-color;
-		// padding-bottom: 0.8em;
 	}
 
 	h2 {
 		font-size: 1.5em;
-		// border-bottom: 1px solid $border-color;
-		// padding-bottom: 0.6em;
 	}
 
 	h3 {

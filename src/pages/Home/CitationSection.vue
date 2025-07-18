@@ -8,14 +8,16 @@
 			<div>
 				If you find this work useful in your research, please consider citing:
 			</div>
-			<div class="app-markdown-html">
+			<app-markdown-html>
 				<pre><code>{{ CITATION }}</code></pre>
-			</div>
+			</app-markdown-html>
 		</div>
 	</div>
 </template>
 
 <script setup lang="ts">
+import AppMarkdownHtml from 'components/MarkdownHTML.vue';
+
 const CITATION =
 `@article{EmbodiedArena2025,
 	title={EmbodiedArena: A Comprehensive Evaluation Platform and Leaderboards for Embodied AI},
