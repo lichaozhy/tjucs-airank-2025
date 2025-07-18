@@ -22,7 +22,8 @@
 			</q-toolbar>
 		</div>
 
-		<div class="col-12"
+		<div
+			class="col-12"
 			v-for="source in selectedSourceList"
 			:key="source.id"
 		>

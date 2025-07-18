@@ -9,7 +9,7 @@ order: 2
 
 | **Benchmark** | **Capability Dimension** |
 | ------------- | ------------------------ |
-| ERQA        | Trajectory Reasoning       |
+| ERQA          | Trajectory Reasoning     |
 
 </div>
 

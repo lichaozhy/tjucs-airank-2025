@@ -3,19 +3,11 @@
 		"id": "6d2b9e8a-97ff-400f-8ea1-f403c7452408",
 		"name": "GPT-4o",
 		"component": {
-			"language": [
-				"GPT-4o"
-			]
+			"language": ["GPT-4o"]
 		},
-		"author": [
-			"OpenAI"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"author": ["OpenAI"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://openai.com/index/hello-gpt-4o/",
 		"navigation": true,
 		"taskPlanning": true,
@@ -145,16 +137,7 @@
 					]
 				},
 				"5df5ca38-7ca9-4d35-81c6-3dfe52700755": {
-					"core": [
-						36.87,
-						21.62,
-						null,
-						null,
-						38.845,
-						null,
-						null,
-						32.445
-					],
+					"core": [36.87, 21.62, null, null, 38.845, null, null, 32.445],
 					"sub": [
 						26.47,
 						null,
@@ -184,16 +167,7 @@
 					]
 				},
 				"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-					"core": [
-						null,
-						null,
-						null,
-						22.35,
-						null,
-						null,
-						null,
-						22.35
-					],
+					"core": [null, null, null, 22.35, null, null, null, 22.35],
 					"sub": [
 						null,
 						null,
@@ -223,16 +197,7 @@
 					]
 				},
 				"1961aa46-9085-42ed-b384-d9ffe52921a8": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						53.5,
-						53.5
-					],
+					"core": [null, null, null, null, null, null, 53.5, 53.5],
 					"sub": [
 						null,
 						null,
@@ -262,16 +227,7 @@
 					]
 				},
 				"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						54.16667,
-						54.16667
-					],
+					"core": [null, null, null, null, null, null, 54.16667, 54.16667],
 					"sub": [
 						null,
 						null,
@@ -301,16 +257,7 @@
 					]
 				},
 				"73de273a-7d38-40c0-b869-2b2e6156c897": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						57.7,
-						null,
-						57.7
-					],
+					"core": [null, null, null, null, null, 57.7, null, 57.7],
 					"sub": [
 						null,
 						null,
@@ -340,16 +287,7 @@
 					]
 				},
 				"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						4,
-						null,
-						4
-					],
+					"core": [null, null, null, null, null, 4, null, 4],
 					"sub": [
 						null,
 						null,
@@ -379,16 +317,7 @@
 					]
 				},
 				"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						3.3,
-						null,
-						3.3
-					],
+					"core": [null, null, null, null, null, 3.3, null, 3.3],
 					"sub": [
 						null,
 						null,
@@ -418,16 +347,7 @@
 					]
 				},
 				"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						15.86,
-						null,
-						null,
-						15.86
-					],
+					"core": [null, null, null, null, 15.86, null, null, 15.86],
 					"sub": [
 						null,
 						null,
@@ -457,16 +377,7 @@
 					]
 				},
 				"27e481d6-6057-49dc-ad80-529f9127245f": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						38.8,
-						38.8
-					],
+					"core": [null, null, null, null, null, null, 38.8, 38.8],
 					"sub": [
 						null,
 						null,
@@ -496,16 +407,7 @@
 					]
 				},
 				"089294d0-59db-47f0-a543-19d8e3708448": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						15,
-						null,
-						null,
-						15
-					],
+					"core": [null, null, null, null, 15, null, null, 15],
 					"sub": [
 						null,
 						null,
@@ -538,157 +440,45 @@
 			"summary": {
 				"d6ba913a-6e26-4dcc-b192-04b9bee6fd8e": {
 					"core": [
-						102.01,
-						103.01,
-						104.01,
-						105.01,
-						106.01,
-						107.01,
-						108.01,
-						105.01
+						102.01, 103.01, 104.01, 105.01, 106.01, 107.01, 108.01, 105.01
 					],
 					"sub": [
-						102.01,
-						103.01,
-						104.01,
-						105.01,
-						106.01,
-						107.01,
-						108.01,
-						109.01,
-						110.01,
-						111.01,
-						112.01,
-						113.01,
-						114.01,
-						115.01,
-						116.01,
-						117.01,
-						118.01,
-						119.01,
-						120.01,
-						121.01,
-						122.01,
-						123.01,
-						124.01,
-						125.01,
+						102.01, 103.01, 104.01, 105.01, 106.01, 107.01, 108.01, 109.01,
+						110.01, 111.01, 112.01, 113.01, 114.01, 115.01, 116.01, 117.01,
+						118.01, 119.01, 120.01, 121.01, 122.01, 123.01, 124.01, 125.01,
 						126.01
 					]
 				},
 				"22d6526a-6707-4a1e-ae3d-9c337feba2e8": {
 					"core": [
-						103.01,
-						104.01,
-						105.01,
-						106.01,
-						107.01,
-						108.01,
-						109.01,
-						106.01
+						103.01, 104.01, 105.01, 106.01, 107.01, 108.01, 109.01, 106.01
 					],
 					"sub": [
-						103.01,
-						104.01,
-						105.01,
-						106.01,
-						107.01,
-						108.01,
-						109.01,
-						110.01,
-						111.01,
-						112.01,
-						113.01,
-						114.01,
-						115.01,
-						116.01,
-						117.01,
-						118.01,
-						119.01,
-						120.01,
-						121.01,
-						122.01,
-						123.01,
-						124.01,
-						125.01,
-						126.01,
+						103.01, 104.01, 105.01, 106.01, 107.01, 108.01, 109.01, 110.01,
+						111.01, 112.01, 113.01, 114.01, 115.01, 116.01, 117.01, 118.01,
+						119.01, 120.01, 121.01, 122.01, 123.01, 124.01, 125.01, 126.01,
 						127.01
 					]
 				},
 				"2e5899bb-60bb-43d0-8ce0-fd186d66b3fb": {
 					"core": [
-						104.01,
-						105.01,
-						106.01,
-						107.01,
-						108.01,
-						109.01,
-						110.01,
-						107.01
+						104.01, 105.01, 106.01, 107.01, 108.01, 109.01, 110.01, 107.01
 					],
 					"sub": [
-						104.01,
-						105.01,
-						106.01,
-						107.01,
-						108.01,
-						109.01,
-						110.01,
-						111.01,
-						112.01,
-						113.01,
-						114.01,
-						115.01,
-						116.01,
-						117.01,
-						118.01,
-						119.01,
-						120.01,
-						121.01,
-						122.01,
-						123.01,
-						124.01,
-						125.01,
-						126.01,
-						127.01,
+						104.01, 105.01, 106.01, 107.01, 108.01, 109.01, 110.01, 111.01,
+						112.01, 113.01, 114.01, 115.01, 116.01, 117.01, 118.01, 119.01,
+						120.01, 121.01, 122.01, 123.01, 124.01, 125.01, 126.01, 127.01,
 						128.01
 					]
 				},
 				"3a43d3d8-f078-43fd-b45c-ab2af7a0c283": {
 					"core": [
-						105.01,
-						106.01,
-						107.01,
-						108.01,
-						109.01,
-						110.01,
-						111.01,
-						108.01
+						105.01, 106.01, 107.01, 108.01, 109.01, 110.01, 111.01, 108.01
 					],
 					"sub": [
-						105.01,
-						106.01,
-						107.01,
-						108.01,
-						109.01,
-						110.01,
-						111.01,
-						112.01,
-						113.01,
-						114.01,
-						115.01,
-						116.01,
-						117.01,
-						118.01,
-						119.01,
-						120.01,
-						121.01,
-						122.01,
-						123.01,
-						124.01,
-						125.01,
-						126.01,
-						127.01,
-						128.01,
+						105.01, 106.01, 107.01, 108.01, 109.01, 110.01, 111.01, 112.01,
+						113.01, 114.01, 115.01, 116.01, 117.01, 118.01, 119.01, 120.01,
+						121.01, 122.01, 123.01, 124.01, 125.01, 126.01, 127.01, 128.01,
 						129.01
 					]
 				}
@@ -699,22 +489,12 @@
 		"id": "3b7f3638-9364-41c0-bbfe-5288176f3072",
 		"name": "LLaVA-NeXT-Video-7B",
 		"component": {
-			"language": [
-				"lmsys/vicuna-7B-v1.5"
-			]
+			"language": ["lmsys/vicuna-7B-v1.5"]
 		},
-		"size": [
-			7
-		],
-		"author": [
-			"ByteDance"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [7],
+		"author": ["ByteDance"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/lmms-lab/LLaVA-NeXT-Video-7B",
 		"navigation": false,
 		"taskPlanning": false,
@@ -733,25 +513,13 @@
 		"id": "86657687-00d9-4968-90d3-5f4e3d8b6132",
 		"name": "MiniCPM-V 2.6",
 		"component": {
-			"vision": [
-				"SigLip-So400M"
-			],
-			"language": [
-				"Qwen2-7B"
-			]
+			"vision": ["SigLip-So400M"],
+			"language": ["Qwen2-7B"]
 		},
-		"size": [
-			7
-		],
-		"author": [
-			"MiniCPM"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [7],
+		"author": ["MiniCPM"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/openbmb/MiniCPM-V-2_6",
 		"navigation": false,
 		"taskPlanning": false,
@@ -770,25 +538,13 @@
 		"id": "e9672027-30d6-4501-b17f-75152789cbc4",
 		"name": "mPLUG-Owl3",
 		"component": {
-			"vision": [
-				"SigLIP-So400M"
-			],
-			"language": [
-				"Qwen2-7B"
-			]
+			"vision": ["SigLIP-So400M"],
+			"language": ["Qwen2-7B"]
 		},
-		"size": [
-			7
-		],
-		"author": [
-			"Alibaba"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [7],
+		"author": ["Alibaba"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/mPLUG/mPLUG-Owl3-7B-240728",
 		"navigation": false,
 		"taskPlanning": false,
@@ -807,25 +563,13 @@
 		"id": "aef63eca-3dde-495a-a922-c803d956568f",
 		"name": "Qwen2.5-VL-3B-Instruct",
 		"component": {
-			"vision": [
-				"ViT"
-			],
-			"language": [
-				"Qwen2.5-3B"
-			]
+			"vision": ["ViT"],
+			"language": ["Qwen2.5-3B"]
 		},
-		"size": [
-			3
-		],
-		"author": [
-			"Alibaba"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [3],
+		"author": ["Alibaba"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/collections/Qwen/qwen25-vl-6795ffac22b334a837c0f9a5",
 		"navigation": true,
 		"taskPlanning": true,
@@ -994,16 +738,7 @@
 					]
 				},
 				"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-					"core": [
-						null,
-						null,
-						null,
-						6.74,
-						null,
-						null,
-						null,
-						6.74
-					],
+					"core": [null, null, null, 6.74, null, null, null, 6.74],
 					"sub": [
 						null,
 						null,
@@ -1072,16 +807,7 @@
 					]
 				},
 				"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						11.25,
-						11.25
-					],
+					"core": [null, null, null, null, null, null, 11.25, 11.25],
 					"sub": [
 						null,
 						null,
@@ -1111,16 +837,7 @@
 					]
 				},
 				"73de273a-7d38-40c0-b869-2b2e6156c897": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						16.6,
-						null,
-						16.6
-					],
+					"core": [null, null, null, null, null, 16.6, null, 16.6],
 					"sub": [
 						null,
 						null,
@@ -1150,16 +867,7 @@
 					]
 				},
 				"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						2,
-						null,
-						2
-					],
+					"core": [null, null, null, null, null, 2, null, 2],
 					"sub": [
 						null,
 						null,
@@ -1189,16 +897,7 @@
 					]
 				},
 				"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						6.7,
-						null,
-						6.7
-					],
+					"core": [null, null, null, null, null, 6.7, null, 6.7],
 					"sub": [
 						null,
 						null,
@@ -1228,16 +927,7 @@
 					]
 				},
 				"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						11.23,
-						null,
-						null,
-						11.23
-					],
+					"core": [null, null, null, null, 11.23, null, null, 11.23],
 					"sub": [
 						null,
 						null,
@@ -1267,16 +957,7 @@
 					]
 				},
 				"27e481d6-6057-49dc-ad80-529f9127245f": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						19.7,
-						19.7
-					],
+					"core": [null, null, null, null, null, null, 19.7, 19.7],
 					"sub": [
 						null,
 						null,
@@ -1306,16 +987,7 @@
 					]
 				},
 				"089294d0-59db-47f0-a543-19d8e3708448": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						8,
-						null,
-						null,
-						8
-					],
+					"core": [null, null, null, null, 8, null, null, 8],
 					"sub": [
 						null,
 						null,
@@ -1348,157 +1020,49 @@
 			"summary": {
 				"d6ba913a-6e26-4dcc-b192-04b9bee6fd8e": {
 					"core": [
-						502.01,
-						503.01,
-						504.01,
-						505.01,
-						506.01,
-						507.01,
-						508.01,
+						502.01, 503.01, 504.01, 505.01, 506.01, 507.01, 508.01,
 						505.0100000000001
 					],
 					"sub": [
-						502.01,
-						503.01,
-						504.01,
-						505.01,
-						506.01,
-						507.01,
-						508.01,
-						509.01,
-						510.01,
-						511.01,
-						512.01,
-						513.01,
-						514.01,
-						515.01,
-						516.01,
-						517.01,
-						518.01,
-						519.01,
-						520.01,
-						521.01,
-						522.01,
-						523.01,
-						524.01,
-						525.01,
+						502.01, 503.01, 504.01, 505.01, 506.01, 507.01, 508.01, 509.01,
+						510.01, 511.01, 512.01, 513.01, 514.01, 515.01, 516.01, 517.01,
+						518.01, 519.01, 520.01, 521.01, 522.01, 523.01, 524.01, 525.01,
 						526.01
 					]
 				},
 				"22d6526a-6707-4a1e-ae3d-9c337feba2e8": {
 					"core": [
-						503.01,
-						504.01,
-						505.01,
-						506.01,
-						507.01,
-						508.01,
-						509.01,
+						503.01, 504.01, 505.01, 506.01, 507.01, 508.01, 509.01,
 						506.0100000000001
 					],
 					"sub": [
-						503.01,
-						504.01,
-						505.01,
-						506.01,
-						507.01,
-						508.01,
-						509.01,
-						510.01,
-						511.01,
-						512.01,
-						513.01,
-						514.01,
-						515.01,
-						516.01,
-						517.01,
-						518.01,
-						519.01,
-						520.01,
-						521.01,
-						522.01,
-						523.01,
-						524.01,
-						525.01,
-						526.01,
+						503.01, 504.01, 505.01, 506.01, 507.01, 508.01, 509.01, 510.01,
+						511.01, 512.01, 513.01, 514.01, 515.01, 516.01, 517.01, 518.01,
+						519.01, 520.01, 521.01, 522.01, 523.01, 524.01, 525.01, 526.01,
 						527.01
 					]
 				},
 				"2e5899bb-60bb-43d0-8ce0-fd186d66b3fb": {
 					"core": [
-						504.01,
-						505.01,
-						506.01,
-						507.01,
-						508.01,
-						509.01,
-						510.01,
+						504.01, 505.01, 506.01, 507.01, 508.01, 509.01, 510.01,
 						507.0100000000001
 					],
 					"sub": [
-						504.01,
-						505.01,
-						506.01,
-						507.01,
-						508.01,
-						509.01,
-						510.01,
-						511.01,
-						512.01,
-						513.01,
-						514.01,
-						515.01,
-						516.01,
-						517.01,
-						518.01,
-						519.01,
-						520.01,
-						521.01,
-						522.01,
-						523.01,
-						524.01,
-						525.01,
-						526.01,
-						527.01,
+						504.01, 505.01, 506.01, 507.01, 508.01, 509.01, 510.01, 511.01,
+						512.01, 513.01, 514.01, 515.01, 516.01, 517.01, 518.01, 519.01,
+						520.01, 521.01, 522.01, 523.01, 524.01, 525.01, 526.01, 527.01,
 						528.01
 					]
 				},
 				"3a43d3d8-f078-43fd-b45c-ab2af7a0c283": {
 					"core": [
-						505.01,
-						506.01,
-						507.01,
-						508.01,
-						509.01,
-						510.01,
-						511.01,
+						505.01, 506.01, 507.01, 508.01, 509.01, 510.01, 511.01,
 						508.0100000000001
 					],
 					"sub": [
-						505.01,
-						506.01,
-						507.01,
-						508.01,
-						509.01,
-						510.01,
-						511.01,
-						512.01,
-						513.01,
-						514.01,
-						515.01,
-						516.01,
-						517.01,
-						518.01,
-						519.01,
-						520.01,
-						521.01,
-						522.01,
-						523.01,
-						524.01,
-						525.01,
-						526.01,
-						527.01,
-						528.01,
+						505.01, 506.01, 507.01, 508.01, 509.01, 510.01, 511.01, 512.01,
+						513.01, 514.01, 515.01, 516.01, 517.01, 518.01, 519.01, 520.01,
+						521.01, 522.01, 523.01, 524.01, 525.01, 526.01, 527.01, 528.01,
 						529.01
 					]
 				}
@@ -1509,22 +1073,12 @@
 		"id": "82dd6b52-ee0e-487e-ae7f-c982050f8506",
 		"name": "MiniCPM-V",
 		"component": {
-			"language": [
-				"MiniCPM-2.4B"
-			]
+			"language": ["MiniCPM-2.4B"]
 		},
-		"size": [
-			3
-		],
-		"author": [
-			"MiniCPM"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [3],
+		"author": ["MiniCPM"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/openbmb/MiniCPM-V",
 		"navigation": false,
 		"taskPlanning": false,
@@ -1543,25 +1097,13 @@
 		"id": "03383a4f-37a0-4046-80f1-52b61dc452a7",
 		"name": "EmbodiedGPT",
 		"component": {
-			"vision": [
-				"ViT-G/14"
-			],
-			"language": [
-				"LLaMA-7B"
-			]
+			"vision": ["ViT-G/14"],
+			"language": ["LLaMA-7B"]
 		},
-		"size": [
-			7
-		],
-		"author": [
-			"University of Hong Kong"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [7],
+		"author": ["University of Hong Kong"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://embodiedgpt.github.io/",
 		"navigation": true,
 		"taskPlanning": true,
@@ -1730,16 +1272,7 @@
 					]
 				},
 				"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-					"core": [
-						null,
-						null,
-						null,
-						2.54,
-						null,
-						null,
-						null,
-						2.54
-					],
+					"core": [null, null, null, 2.54, null, null, null, 2.54],
 					"sub": [
 						null,
 						null,
@@ -1769,16 +1302,7 @@
 					]
 				},
 				"1961aa46-9085-42ed-b384-d9ffe52921a8": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						0,
-						0
-					],
+					"core": [null, null, null, null, null, null, 0, 0],
 					"sub": [
 						null,
 						null,
@@ -1808,16 +1332,7 @@
 					]
 				},
 				"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						0,
-						0
-					],
+					"core": [null, null, null, null, null, null, 0, 0],
 					"sub": [
 						null,
 						null,
@@ -1847,16 +1362,7 @@
 					]
 				},
 				"73de273a-7d38-40c0-b869-2b2e6156c897": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						0,
-						null,
-						0
-					],
+					"core": [null, null, null, null, null, 0, null, 0],
 					"sub": [
 						null,
 						null,
@@ -1886,16 +1392,7 @@
 					]
 				},
 				"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						13.07,
-						null,
-						null,
-						13.07
-					],
+					"core": [null, null, null, null, 13.07, null, null, 13.07],
 					"sub": [
 						null,
 						null,
@@ -1925,16 +1422,7 @@
 					]
 				},
 				"27e481d6-6057-49dc-ad80-529f9127245f": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						12.3,
-						12.3
-					],
+					"core": [null, null, null, null, null, null, 12.3, 12.3],
 					"sub": [
 						null,
 						null,
@@ -1964,16 +1452,7 @@
 					]
 				},
 				"089294d0-59db-47f0-a543-19d8e3708448": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						1.33,
-						null,
-						null,
-						1.33
-					],
+					"core": [null, null, null, null, 1.33, null, null, 1.33],
 					"sub": [
 						null,
 						null,
@@ -2003,16 +1482,7 @@
 					]
 				},
 				"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						null
-					],
+					"core": [null, null, null, null, null, null, null, null],
 					"sub": [
 						null,
 						null,
@@ -2042,16 +1512,7 @@
 					]
 				},
 				"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						null
-					],
+					"core": [null, null, null, null, null, null, null, null],
 					"sub": [
 						null,
 						null,
@@ -2084,157 +1545,49 @@
 			"summary": {
 				"d6ba913a-6e26-4dcc-b192-04b9bee6fd8e": {
 					"core": [
-						702.01,
-						703.01,
-						704.01,
-						705.01,
-						706.01,
-						707.01,
-						708.01,
+						702.01, 703.01, 704.01, 705.01, 706.01, 707.01, 708.01,
 						705.0100000000001
 					],
 					"sub": [
-						702.01,
-						703.01,
-						704.01,
-						705.01,
-						706.01,
-						707.01,
-						708.01,
-						709.01,
-						710.01,
-						711.01,
-						712.01,
-						713.01,
-						714.01,
-						715.01,
-						716.01,
-						717.01,
-						718.01,
-						719.01,
-						720.01,
-						721.01,
-						722.01,
-						723.01,
-						724.01,
-						725.01,
+						702.01, 703.01, 704.01, 705.01, 706.01, 707.01, 708.01, 709.01,
+						710.01, 711.01, 712.01, 713.01, 714.01, 715.01, 716.01, 717.01,
+						718.01, 719.01, 720.01, 721.01, 722.01, 723.01, 724.01, 725.01,
 						726.01
 					]
 				},
 				"22d6526a-6707-4a1e-ae3d-9c337feba2e8": {
 					"core": [
-						703.01,
-						704.01,
-						705.01,
-						706.01,
-						707.01,
-						708.01,
-						709.01,
+						703.01, 704.01, 705.01, 706.01, 707.01, 708.01, 709.01,
 						706.0100000000001
 					],
 					"sub": [
-						703.01,
-						704.01,
-						705.01,
-						706.01,
-						707.01,
-						708.01,
-						709.01,
-						710.01,
-						711.01,
-						712.01,
-						713.01,
-						714.01,
-						715.01,
-						716.01,
-						717.01,
-						718.01,
-						719.01,
-						720.01,
-						721.01,
-						722.01,
-						723.01,
-						724.01,
-						725.01,
-						726.01,
+						703.01, 704.01, 705.01, 706.01, 707.01, 708.01, 709.01, 710.01,
+						711.01, 712.01, 713.01, 714.01, 715.01, 716.01, 717.01, 718.01,
+						719.01, 720.01, 721.01, 722.01, 723.01, 724.01, 725.01, 726.01,
 						727.01
 					]
 				},
 				"2e5899bb-60bb-43d0-8ce0-fd186d66b3fb": {
 					"core": [
-						704.01,
-						705.01,
-						706.01,
-						707.01,
-						708.01,
-						709.01,
-						710.01,
+						704.01, 705.01, 706.01, 707.01, 708.01, 709.01, 710.01,
 						707.0100000000001
 					],
 					"sub": [
-						704.01,
-						705.01,
-						706.01,
-						707.01,
-						708.01,
-						709.01,
-						710.01,
-						711.01,
-						712.01,
-						713.01,
-						714.01,
-						715.01,
-						716.01,
-						717.01,
-						718.01,
-						719.01,
-						720.01,
-						721.01,
-						722.01,
-						723.01,
-						724.01,
-						725.01,
-						726.01,
-						727.01,
+						704.01, 705.01, 706.01, 707.01, 708.01, 709.01, 710.01, 711.01,
+						712.01, 713.01, 714.01, 715.01, 716.01, 717.01, 718.01, 719.01,
+						720.01, 721.01, 722.01, 723.01, 724.01, 725.01, 726.01, 727.01,
 						728.01
 					]
 				},
 				"3a43d3d8-f078-43fd-b45c-ab2af7a0c283": {
 					"core": [
-						705.01,
-						706.01,
-						707.01,
-						708.01,
-						709.01,
-						710.01,
-						711.01,
+						705.01, 706.01, 707.01, 708.01, 709.01, 710.01, 711.01,
 						708.0100000000001
 					],
 					"sub": [
-						705.01,
-						706.01,
-						707.01,
-						708.01,
-						709.01,
-						710.01,
-						711.01,
-						712.01,
-						713.01,
-						714.01,
-						715.01,
-						716.01,
-						717.01,
-						718.01,
-						719.01,
-						720.01,
-						721.01,
-						722.01,
-						723.01,
-						724.01,
-						725.01,
-						726.01,
-						727.01,
-						728.01,
+						705.01, 706.01, 707.01, 708.01, 709.01, 710.01, 711.01, 712.01,
+						713.01, 714.01, 715.01, 716.01, 717.01, 718.01, 719.01, 720.01,
+						721.01, 722.01, 723.01, 724.01, 725.01, 726.01, 727.01, 728.01,
 						729.01
 					]
 				}
@@ -2245,22 +1598,12 @@
 		"id": "8a656dd4-3104-4471-b8d8-0d6368975f74",
 		"name": "Phi-3-vision-128k-instruct",
 		"component": {
-			"language": [
-				"Phi-3 Mini"
-			]
+			"language": ["Phi-3 Mini"]
 		},
-		"size": [
-			4
-		],
-		"author": [
-			"Microsoft"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [4],
+		"author": ["Microsoft"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/microsoft/Phi-3-vision-128k-instruct",
 		"navigation": false,
 		"taskPlanning": false,
@@ -2279,25 +1622,13 @@
 		"id": "0963c6fe-8edb-4165-98c7-6070bb745abf",
 		"name": "LLava-v1.5-7B",
 		"component": {
-			"vision": [
-				"CLIP ViT-L/14"
-			],
-			"language": [
-				"Vicuna‑7B"
-			]
+			"vision": ["CLIP ViT-L/14"],
+			"language": ["Vicuna‑7B"]
 		},
-		"size": [
-			7
-		],
-		"author": [
-			"University of Wisconsin-Madison"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [7],
+		"author": ["University of Wisconsin-Madison"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/llava-hf/llava-1.5-7b-hf",
 		"navigation": false,
 		"taskPlanning": false,
@@ -2316,25 +1647,13 @@
 		"id": "65b0728a-15d2-4d76-909d-86a505c25405",
 		"name": "Instructblip-flant5xl",
 		"component": {
-			"vision": [
-				"BLIP-2"
-			],
-			"language": [
-				"Flan-T5-xl"
-			]
+			"vision": ["BLIP-2"],
+			"language": ["Flan-T5-xl"]
 		},
-		"size": [
-			3
-		],
-		"author": [
-			"Salesforce Research"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [3],
+		"author": ["Salesforce Research"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/Salesforce/instructblip-flan-t5-xl",
 		"navigation": false,
 		"taskPlanning": false,
@@ -2353,22 +1672,12 @@
 		"id": "80939e8a-be9d-4652-95e0-ff3c73a1ddda",
 		"name": "Video-LLaVA-7B",
 		"component": {
-			"language": [
-				"Vicuna-7B-v1.5"
-			]
+			"language": ["Vicuna-7B-v1.5"]
 		},
-		"size": [
-			7
-		],
-		"author": [
-			"Peking University"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [7],
+		"author": ["Peking University"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/LanguageBind/Video-LLaVA-7B",
 		"navigation": false,
 		"taskPlanning": false,
@@ -2387,25 +1696,13 @@
 		"id": "dfcea64f-ee5e-4ea6-a448-e09f2fb64271",
 		"name": "pllava-7b",
 		"component": {
-			"vision": [
-				"CLIP ViT-L/14"
-			],
-			"language": [
-				"Vicuna-7B-v1.5"
-			]
+			"vision": ["CLIP ViT-L/14"],
+			"language": ["Vicuna-7B-v1.5"]
 		},
-		"size": [
-			7
-		],
-		"author": [
-			"Bytedance"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [7],
+		"author": ["Bytedance"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/ermu2001/pllava-7b",
 		"navigation": false,
 		"taskPlanning": false,
@@ -2424,25 +1721,13 @@
 		"id": "587b8069-98e6-46a8-985b-4c607dff6b33",
 		"name": "navillm",
 		"component": {
-			"vision": [
-				"EVA-CLIP"
-			],
-			"language": [
-				"Vicuna-7B-v1.5"
-			]
+			"vision": ["EVA-CLIP"],
+			"language": ["Vicuna-7B-v1.5"]
 		},
-		"size": [
-			7
-		],
-		"author": [
-			"Shanghai AI Lab"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [7],
+		"author": ["Shanghai AI Lab"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://github.com/zd11024/NaviLLM",
 		"navigation": false,
 		"taskPlanning": false,
@@ -2461,22 +1746,12 @@
 		"id": "26d4f948-64f7-4cbb-a413-e7fec49dc45f",
 		"name": "BLIP-2-flant5xl",
 		"component": {
-			"vision": [
-				"Blip-2"
-			],
-			"language": [
-				"Flan-T5-xl"
-			]
+			"vision": ["Blip-2"],
+			"language": ["Flan-T5-xl"]
 		},
-		"author": [
-			"Salesforce Research"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"author": ["Salesforce Research"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/Salesforce/blip2-flan-t5-xl",
 		"navigation": false,
 		"taskPlanning": false,
@@ -2495,23 +1770,12 @@
 		"id": "8596e3d7-c65d-46e1-9063-16e83f0647cc",
 		"name": "llama-vid-7b-full-224",
 		"component": {
-			"language": [
-				"LLaMA",
-				"Vicuna‑7B"
-			]
+			"language": ["LLaMA", "Vicuna‑7B"]
 		},
-		"size": [
-			7
-		],
-		"author": [
-			"Chinese University of Hong Kong"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [7],
+		"author": ["Chinese University of Hong Kong"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/YanweiLi/llama-vid-7b-full-224",
 		"navigation": false,
 		"taskPlanning": false,
@@ -2530,22 +1794,12 @@
 		"id": "ba940652-9040-4510-b232-52da5cbce5a8",
 		"name": "MiniGPT4-Vicuna7B",
 		"component": {
-			"vision": [
-				"Blip-2"
-			],
-			"language": [
-				"Vicuna-7B"
-			]
+			"vision": ["Blip-2"],
+			"language": ["Vicuna-7B"]
 		},
-		"author": [
-			"King Abdullah University of Science and Technology"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"author": ["King Abdullah University of Science and Technology"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://minigpt-4.github.io/",
 		"navigation": false,
 		"taskPlanning": false,
@@ -2564,19 +1818,11 @@
 		"id": "f0fc7970-1e20-4ea2-a5fd-65ed7dd6802a",
 		"name": "o3",
 		"component": {
-			"language": [
-				"o3"
-			]
+			"language": ["o3"]
 		},
-		"author": [
-			"OpenAI"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"author": ["OpenAI"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://openai.com/index/introducing-o3-and-o4-mini/",
 		"navigation": true,
 		"taskPlanning": true,
@@ -2745,16 +1991,7 @@
 					]
 				},
 				"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-					"core": [
-						null,
-						null,
-						null,
-						33.46,
-						null,
-						null,
-						null,
-						33.46
-					],
+					"core": [null, null, null, 33.46, null, null, null, 33.46],
 					"sub": [
 						null,
 						null,
@@ -2823,16 +2060,7 @@
 					]
 				},
 				"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						66.16667,
-						66.16667
-					],
+					"core": [null, null, null, null, null, null, 66.16667, 66.16667],
 					"sub": [
 						null,
 						null,
@@ -2862,16 +2090,7 @@
 					]
 				},
 				"73de273a-7d38-40c0-b869-2b2e6156c897": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						64.8,
-						null,
-						64.8
-					],
+					"core": [null, null, null, null, null, 64.8, null, 64.8],
 					"sub": [
 						null,
 						null,
@@ -2901,16 +2120,7 @@
 					]
 				},
 				"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						26.3,
-						null,
-						26.3
-					],
+					"core": [null, null, null, null, null, 26.3, null, 26.3],
 					"sub": [
 						null,
 						null,
@@ -2940,16 +2150,7 @@
 					]
 				},
 				"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						13.3,
-						null,
-						13.3
-					],
+					"core": [null, null, null, null, null, 13.3, null, 13.3],
 					"sub": [
 						null,
 						null,
@@ -2979,16 +2180,7 @@
 					]
 				},
 				"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						14.965,
-						null,
-						null,
-						14.965
-					],
+					"core": [null, null, null, null, 14.965, null, null, 14.965],
 					"sub": [
 						null,
 						null,
@@ -3018,16 +2210,7 @@
 					]
 				},
 				"27e481d6-6057-49dc-ad80-529f9127245f": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						40.6,
-						40.6
-					],
+					"core": [null, null, null, null, null, null, 40.6, 40.6],
 					"sub": [
 						null,
 						null,
@@ -3057,16 +2240,7 @@
 					]
 				},
 				"089294d0-59db-47f0-a543-19d8e3708448": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						19.67,
-						null,
-						null,
-						19.67
-					],
+					"core": [null, null, null, null, 19.67, null, null, 19.67],
 					"sub": [
 						null,
 						null,
@@ -3099,158 +2273,50 @@
 			"summary": {
 				"d6ba913a-6e26-4dcc-b192-04b9bee6fd8e": {
 					"core": [
-						1702.01,
-						1703.01,
-						1704.01,
-						1705.01,
-						1706.01,
-						1707.01,
-						1708.01,
+						1702.01, 1703.01, 1704.01, 1705.01, 1706.01, 1707.01, 1708.01,
 						1705.01
 					],
 					"sub": [
-						1702.01,
-						1703.01,
-						1704.01,
-						1705.01,
-						1706.01,
-						1707.01,
-						1708.01,
-						1709.01,
-						1710.01,
-						1711.01,
-						1712.01,
-						1713.01,
-						1714.01,
-						1715.01,
-						1716.01,
-						1717.01,
-						1718.01,
-						1719.01,
-						1720.01,
-						1721.01,
-						1722.01,
-						1723.01,
-						1724.01,
-						1725.01,
-						1726.01
+						1702.01, 1703.01, 1704.01, 1705.01, 1706.01, 1707.01, 1708.01,
+						1709.01, 1710.01, 1711.01, 1712.01, 1713.01, 1714.01, 1715.01,
+						1716.01, 1717.01, 1718.01, 1719.01, 1720.01, 1721.01, 1722.01,
+						1723.01, 1724.01, 1725.01, 1726.01
 					]
 				},
 				"22d6526a-6707-4a1e-ae3d-9c337feba2e8": {
 					"core": [
-						1703.01,
-						1704.01,
-						1705.01,
-						1706.01,
-						1707.01,
-						1708.01,
-						1709.01,
+						1703.01, 1704.01, 1705.01, 1706.01, 1707.01, 1708.01, 1709.01,
 						1706.01
 					],
 					"sub": [
-						1703.01,
-						1704.01,
-						1705.01,
-						1706.01,
-						1707.01,
-						1708.01,
-						1709.01,
-						1710.01,
-						1711.01,
-						1712.01,
-						1713.01,
-						1714.01,
-						1715.01,
-						1716.01,
-						1717.01,
-						1718.01,
-						1719.01,
-						1720.01,
-						1721.01,
-						1722.01,
-						1723.01,
-						1724.01,
-						1725.01,
-						1726.01,
-						1727.01
+						1703.01, 1704.01, 1705.01, 1706.01, 1707.01, 1708.01, 1709.01,
+						1710.01, 1711.01, 1712.01, 1713.01, 1714.01, 1715.01, 1716.01,
+						1717.01, 1718.01, 1719.01, 1720.01, 1721.01, 1722.01, 1723.01,
+						1724.01, 1725.01, 1726.01, 1727.01
 					]
 				},
 				"2e5899bb-60bb-43d0-8ce0-fd186d66b3fb": {
 					"core": [
-						1704.01,
-						1705.01,
-						1706.01,
-						1707.01,
-						1708.01,
-						1709.01,
-						1710.01,
+						1704.01, 1705.01, 1706.01, 1707.01, 1708.01, 1709.01, 1710.01,
 						1707.01
 					],
 					"sub": [
-						1704.01,
-						1705.01,
-						1706.01,
-						1707.01,
-						1708.01,
-						1709.01,
-						1710.01,
-						1711.01,
-						1712.01,
-						1713.01,
-						1714.01,
-						1715.01,
-						1716.01,
-						1717.01,
-						1718.01,
-						1719.01,
-						1720.01,
-						1721.01,
-						1722.01,
-						1723.01,
-						1724.01,
-						1725.01,
-						1726.01,
-						1727.01,
-						1728.01
+						1704.01, 1705.01, 1706.01, 1707.01, 1708.01, 1709.01, 1710.01,
+						1711.01, 1712.01, 1713.01, 1714.01, 1715.01, 1716.01, 1717.01,
+						1718.01, 1719.01, 1720.01, 1721.01, 1722.01, 1723.01, 1724.01,
+						1725.01, 1726.01, 1727.01, 1728.01
 					]
 				},
 				"3a43d3d8-f078-43fd-b45c-ab2af7a0c283": {
 					"core": [
-						1705.01,
-						1706.01,
-						1707.01,
-						1708.01,
-						1709.01,
-						1710.01,
-						1711.01,
+						1705.01, 1706.01, 1707.01, 1708.01, 1709.01, 1710.01, 1711.01,
 						1708.01
 					],
 					"sub": [
-						1705.01,
-						1706.01,
-						1707.01,
-						1708.01,
-						1709.01,
-						1710.01,
-						1711.01,
-						1712.01,
-						1713.01,
-						1714.01,
-						1715.01,
-						1716.01,
-						1717.01,
-						1718.01,
-						1719.01,
-						1720.01,
-						1721.01,
-						1722.01,
-						1723.01,
-						1724.01,
-						1725.01,
-						1726.01,
-						1727.01,
-						1728.01,
-						1729.01
+						1705.01, 1706.01, 1707.01, 1708.01, 1709.01, 1710.01, 1711.01,
+						1712.01, 1713.01, 1714.01, 1715.01, 1716.01, 1717.01, 1718.01,
+						1719.01, 1720.01, 1721.01, 1722.01, 1723.01, 1724.01, 1725.01,
+						1726.01, 1727.01, 1728.01, 1729.01
 					]
 				}
 			}
@@ -3272,25 +2338,13 @@
 		"id": "989f3769-fe45-4472-85aa-a4f071577271",
 		"name": "LLaVA-NeXT-Video-72B",
 		"component": {
-			"vision": [
-				"SigLip-So400M"
-			],
-			"language": [
-				"Qwen2-72B"
-			]
+			"vision": ["SigLip-So400M"],
+			"language": ["Qwen2-72B"]
 		},
-		"size": [
-			72
-		],
-		"author": [
-			"ByteDance"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [72],
+		"author": ["ByteDance"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/lmms-lab/LLaVA-Video-72B-Qwen2",
 		"navigation": false,
 		"taskPlanning": false,
@@ -3309,22 +2363,12 @@
 		"id": "38e71976-4a59-41bf-9367-95f2fc5bf6f5",
 		"name": "LLaVA-OneVision-72B",
 		"component": {
-			"language": [
-				"Qwen2-72B"
-			]
+			"language": ["Qwen2-72B"]
 		},
-		"size": [
-			72
-		],
-		"author": [
-			"ByteDance"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [72],
+		"author": ["ByteDance"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/collections/lmms-lab/llava-onevision-66a259c3526e15166d6bba37",
 		"navigation": true,
 		"taskPlanning": true,
@@ -3342,25 +2386,13 @@
 		"id": "6e39d9f5-4b6a-471d-92d6-07a37b559070",
 		"name": "InternVL2-40B",
 		"component": {
-			"vision": [
-				"InternViT-6B-448px-V1-5"
-			],
-			"language": [
-				"Nous-Hermes-2-Yi-34B"
-			]
+			"vision": ["InternViT-6B-448px-V1-5"],
+			"language": ["Nous-Hermes-2-Yi-34B"]
 		},
-		"size": [
-			40
-		],
-		"author": [
-			"Shanghai AI Lab"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [40],
+		"author": ["Shanghai AI Lab"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/OpenGVLab/InternVL2-40B",
 		"navigation": false,
 		"taskPlanning": false,
@@ -3379,25 +2411,13 @@
 		"id": "5db29ede-6e63-432c-96c1-f65700028165",
 		"name": "InternVL2-8B",
 		"component": {
-			"vision": [
-				"InternViT-300M-448px"
-			],
-			"language": [
-				"internlm2_5-7b-chat"
-			]
+			"vision": ["InternViT-300M-448px"],
+			"language": ["internlm2_5-7b-chat"]
 		},
-		"size": [
-			8
-		],
-		"author": [
-			"Shanghai AI Lab"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [8],
+		"author": ["Shanghai AI Lab"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/OpenGVLab/InternVL2-8B",
 		"navigation": false,
 		"taskPlanning": false,
@@ -3415,18 +2435,10 @@
 	{
 		"id": "4e387c03-f76e-43e0-9d9c-d80f05e40ed4",
 		"name": "LLaVA-OneVision-7B",
-		"size": [
-			7
-		],
-		"author": [
-			"ByteDance"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [7],
+		"author": ["ByteDance"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/collections/lmms-lab/llava-onevision-66a259c3526e15166d6bba37",
 		"navigation": true,
 		"taskPlanning": true,
@@ -3555,16 +2567,7 @@
 					]
 				},
 				"5df5ca38-7ca9-4d35-81c6-3dfe52700755": {
-					"core": [
-						36.735,
-						27.03,
-						null,
-						null,
-						40.095,
-						null,
-						null,
-						34.62
-					],
+					"core": [36.735, 27.03, null, null, 40.095, null, null, 34.62],
 					"sub": [
 						35.29,
 						null,
@@ -3594,16 +2597,7 @@
 					]
 				},
 				"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-					"core": [
-						null,
-						null,
-						null,
-						9.13,
-						null,
-						null,
-						null,
-						9.13
-					],
+					"core": [null, null, null, 9.13, null, null, null, 9.13],
 					"sub": [
 						null,
 						null,
@@ -3633,16 +2627,7 @@
 					]
 				},
 				"1961aa46-9085-42ed-b384-d9ffe52921a8": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						2,
-						2
-					],
+					"core": [null, null, null, null, null, null, 2, 2],
 					"sub": [
 						null,
 						null,
@@ -3672,16 +2657,7 @@
 					]
 				},
 				"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						7.916667,
-						7.916667
-					],
+					"core": [null, null, null, null, null, null, 7.916667, 7.916667],
 					"sub": [
 						null,
 						null,
@@ -3711,16 +2687,7 @@
 					]
 				},
 				"73de273a-7d38-40c0-b869-2b2e6156c897": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						11.6,
-						null,
-						11.6
-					],
+					"core": [null, null, null, null, null, 11.6, null, 11.6],
 					"sub": [
 						null,
 						null,
@@ -3750,16 +2717,7 @@
 					]
 				},
 				"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						10,
-						null,
-						10
-					],
+					"core": [null, null, null, null, null, 10, null, 10],
 					"sub": [
 						null,
 						null,
@@ -3789,16 +2747,7 @@
 					]
 				},
 				"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						3.3,
-						null,
-						3.3
-					],
+					"core": [null, null, null, null, null, 3.3, null, 3.3],
 					"sub": [
 						null,
 						null,
@@ -3828,16 +2777,7 @@
 					]
 				},
 				"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						12.57,
-						null,
-						null,
-						12.57
-					],
+					"core": [null, null, null, null, 12.57, null, null, 12.57],
 					"sub": [
 						null,
 						null,
@@ -3867,16 +2807,7 @@
 					]
 				},
 				"27e481d6-6057-49dc-ad80-529f9127245f": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						14.7,
-						14.7
-					],
+					"core": [null, null, null, null, null, null, 14.7, 14.7],
 					"sub": [
 						null,
 						null,
@@ -3906,16 +2837,7 @@
 					]
 				},
 				"089294d0-59db-47f0-a543-19d8e3708448": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						4.02,
-						null,
-						null,
-						4.02
-					],
+					"core": [null, null, null, null, 4.02, null, null, 4.02],
 					"sub": [
 						null,
 						null,
@@ -3948,158 +2870,50 @@
 			"summary": {
 				"d6ba913a-6e26-4dcc-b192-04b9bee6fd8e": {
 					"core": [
-						2302.01,
-						2303.01,
-						2304.01,
-						2305.01,
-						2306.01,
-						2307.01,
-						2308.01,
+						2302.01, 2303.01, 2304.01, 2305.01, 2306.01, 2307.01, 2308.01,
 						2305.01
 					],
 					"sub": [
-						2302.01,
-						2303.01,
-						2304.01,
-						2305.01,
-						2306.01,
-						2307.01,
-						2308.01,
-						2309.01,
-						2310.01,
-						2311.01,
-						2312.01,
-						2313.01,
-						2314.01,
-						2315.01,
-						2316.01,
-						2317.01,
-						2318.01,
-						2319.01,
-						2320.01,
-						2321.01,
-						2322.01,
-						2323.01,
-						2324.01,
-						2325.01,
-						2326.01
+						2302.01, 2303.01, 2304.01, 2305.01, 2306.01, 2307.01, 2308.01,
+						2309.01, 2310.01, 2311.01, 2312.01, 2313.01, 2314.01, 2315.01,
+						2316.01, 2317.01, 2318.01, 2319.01, 2320.01, 2321.01, 2322.01,
+						2323.01, 2324.01, 2325.01, 2326.01
 					]
 				},
 				"22d6526a-6707-4a1e-ae3d-9c337feba2e8": {
 					"core": [
-						2303.01,
-						2304.01,
-						2305.01,
-						2306.01,
-						2307.01,
-						2308.01,
-						2309.01,
+						2303.01, 2304.01, 2305.01, 2306.01, 2307.01, 2308.01, 2309.01,
 						2306.01
 					],
 					"sub": [
-						2303.01,
-						2304.01,
-						2305.01,
-						2306.01,
-						2307.01,
-						2308.01,
-						2309.01,
-						2310.01,
-						2311.01,
-						2312.01,
-						2313.01,
-						2314.01,
-						2315.01,
-						2316.01,
-						2317.01,
-						2318.01,
-						2319.01,
-						2320.01,
-						2321.01,
-						2322.01,
-						2323.01,
-						2324.01,
-						2325.01,
-						2326.01,
-						2327.01
+						2303.01, 2304.01, 2305.01, 2306.01, 2307.01, 2308.01, 2309.01,
+						2310.01, 2311.01, 2312.01, 2313.01, 2314.01, 2315.01, 2316.01,
+						2317.01, 2318.01, 2319.01, 2320.01, 2321.01, 2322.01, 2323.01,
+						2324.01, 2325.01, 2326.01, 2327.01
 					]
 				},
 				"2e5899bb-60bb-43d0-8ce0-fd186d66b3fb": {
 					"core": [
-						2304.01,
-						2305.01,
-						2306.01,
-						2307.01,
-						2308.01,
-						2309.01,
-						2310.01,
+						2304.01, 2305.01, 2306.01, 2307.01, 2308.01, 2309.01, 2310.01,
 						2307.01
 					],
 					"sub": [
-						2304.01,
-						2305.01,
-						2306.01,
-						2307.01,
-						2308.01,
-						2309.01,
-						2310.01,
-						2311.01,
-						2312.01,
-						2313.01,
-						2314.01,
-						2315.01,
-						2316.01,
-						2317.01,
-						2318.01,
-						2319.01,
-						2320.01,
-						2321.01,
-						2322.01,
-						2323.01,
-						2324.01,
-						2325.01,
-						2326.01,
-						2327.01,
-						2328.01
+						2304.01, 2305.01, 2306.01, 2307.01, 2308.01, 2309.01, 2310.01,
+						2311.01, 2312.01, 2313.01, 2314.01, 2315.01, 2316.01, 2317.01,
+						2318.01, 2319.01, 2320.01, 2321.01, 2322.01, 2323.01, 2324.01,
+						2325.01, 2326.01, 2327.01, 2328.01
 					]
 				},
 				"3a43d3d8-f078-43fd-b45c-ab2af7a0c283": {
 					"core": [
-						2305.01,
-						2306.01,
-						2307.01,
-						2308.01,
-						2309.01,
-						2310.01,
-						2311.01,
+						2305.01, 2306.01, 2307.01, 2308.01, 2309.01, 2310.01, 2311.01,
 						2308.01
 					],
 					"sub": [
-						2305.01,
-						2306.01,
-						2307.01,
-						2308.01,
-						2309.01,
-						2310.01,
-						2311.01,
-						2312.01,
-						2313.01,
-						2314.01,
-						2315.01,
-						2316.01,
-						2317.01,
-						2318.01,
-						2319.01,
-						2320.01,
-						2321.01,
-						2322.01,
-						2323.01,
-						2324.01,
-						2325.01,
-						2326.01,
-						2327.01,
-						2328.01,
-						2329.01
+						2305.01, 2306.01, 2307.01, 2308.01, 2309.01, 2310.01, 2311.01,
+						2312.01, 2313.01, 2314.01, 2315.01, 2316.01, 2317.01, 2318.01,
+						2319.01, 2320.01, 2321.01, 2322.01, 2323.01, 2324.01, 2325.01,
+						2326.01, 2327.01, 2328.01, 2329.01
 					]
 				}
 			}
@@ -4109,22 +2923,12 @@
 		"id": "7a21af4c-f57d-4311-8fae-b7b8dafd03bd",
 		"name": "VILA-1.5-40B",
 		"component": {
-			"language": [
-				"VILA"
-			]
+			"language": ["VILA"]
 		},
-		"size": [
-			40
-		],
-		"author": [
-			"NVIDIA"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [40],
+		"author": ["NVIDIA"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/Efficient-Large-Model/VILA1.5-40b",
 		"navigation": true,
 		"taskPlanning": true,
@@ -4143,22 +2947,12 @@
 		"id": "51f2b003-5aa9-462a-a5b4-538ec3f28c17",
 		"name": "LongVA-7B",
 		"component": {
-			"language": [
-				"Qwen2-7B"
-			]
+			"language": ["Qwen2-7B"]
 		},
-		"size": [
-			7
-		],
-		"author": [
-			"ByteDance"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [7],
+		"author": ["ByteDance"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/lmms-lab/LongVA-7B",
 		"navigation": false,
 		"taskPlanning": false,
@@ -4177,19 +2971,11 @@
 		"id": "af35bb7c-f716-47a0-bcce-2f045a108735",
 		"name": "Gemini-2.0-flash",
 		"component": {
-			"language": [
-				"Gemini-2.0-flash"
-			]
+			"language": ["Gemini-2.0-flash"]
 		},
-		"author": [
-			"Google DeepMind"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"author": ["Google DeepMind"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-0-flash",
 		"navigation": true,
 		"taskPlanning": true,
@@ -4358,16 +3144,7 @@
 					]
 				},
 				"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-					"core": [
-						null,
-						null,
-						null,
-						33.8,
-						null,
-						null,
-						null,
-						33.8
-					],
+					"core": [null, null, null, 33.8, null, null, null, 33.8],
 					"sub": [
 						null,
 						null,
@@ -4397,16 +3174,7 @@
 					]
 				},
 				"1961aa46-9085-42ed-b384-d9ffe52921a8": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						49.5,
-						49.5
-					],
+					"core": [null, null, null, null, null, null, 49.5, 49.5],
 					"sub": [
 						null,
 						null,
@@ -4436,16 +3204,7 @@
 					]
 				},
 				"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						39.16667,
-						39.16667
-					],
+					"core": [null, null, null, null, null, null, 39.16667, 39.16667],
 					"sub": [
 						null,
 						null,
@@ -4475,16 +3234,7 @@
 					]
 				},
 				"73de273a-7d38-40c0-b869-2b2e6156c897": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						48.7,
-						null,
-						48.7
-					],
+					"core": [null, null, null, null, null, 48.7, null, 48.7],
 					"sub": [
 						null,
 						null,
@@ -4514,16 +3264,7 @@
 					]
 				},
 				"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						6.1,
-						null,
-						6.1
-					],
+					"core": [null, null, null, null, null, 6.1, null, 6.1],
 					"sub": [
 						null,
 						null,
@@ -4553,16 +3294,7 @@
 					]
 				},
 				"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						10,
-						null,
-						10
-					],
+					"core": [null, null, null, null, null, 10, null, 10],
 					"sub": [
 						null,
 						null,
@@ -4592,16 +3324,7 @@
 					]
 				},
 				"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						11.41,
-						null,
-						null,
-						11.41
-					],
+					"core": [null, null, null, null, 11.41, null, null, 11.41],
 					"sub": [
 						null,
 						null,
@@ -4631,16 +3354,7 @@
 					]
 				},
 				"27e481d6-6057-49dc-ad80-529f9127245f": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						39.3,
-						39.3
-					],
+					"core": [null, null, null, null, null, null, 39.3, 39.3],
 					"sub": [
 						null,
 						null,
@@ -4670,16 +3384,7 @@
 					]
 				},
 				"089294d0-59db-47f0-a543-19d8e3708448": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						9.33,
-						null,
-						null,
-						9.33
-					],
+					"core": [null, null, null, null, 9.33, null, null, 9.33],
 					"sub": [
 						null,
 						null,
@@ -4712,158 +3417,50 @@
 			"summary": {
 				"d6ba913a-6e26-4dcc-b192-04b9bee6fd8e": {
 					"core": [
-						2602.01,
-						2603.01,
-						2604.01,
-						2605.01,
-						2606.01,
-						2607.01,
-						2608.01,
+						2602.01, 2603.01, 2604.01, 2605.01, 2606.01, 2607.01, 2608.01,
 						2605.0099999999998
 					],
 					"sub": [
-						2602.01,
-						2603.01,
-						2604.01,
-						2605.01,
-						2606.01,
-						2607.01,
-						2608.01,
-						2609.01,
-						2610.01,
-						2611.01,
-						2612.01,
-						2613.01,
-						2614.01,
-						2615.01,
-						2616.01,
-						2617.01,
-						2618.01,
-						2619.01,
-						2620.01,
-						2621.01,
-						2622.01,
-						2623.01,
-						2624.01,
-						2625.01,
-						2626.01
+						2602.01, 2603.01, 2604.01, 2605.01, 2606.01, 2607.01, 2608.01,
+						2609.01, 2610.01, 2611.01, 2612.01, 2613.01, 2614.01, 2615.01,
+						2616.01, 2617.01, 2618.01, 2619.01, 2620.01, 2621.01, 2622.01,
+						2623.01, 2624.01, 2625.01, 2626.01
 					]
 				},
 				"22d6526a-6707-4a1e-ae3d-9c337feba2e8": {
 					"core": [
-						2603.01,
-						2604.01,
-						2605.01,
-						2606.01,
-						2607.01,
-						2608.01,
-						2609.01,
+						2603.01, 2604.01, 2605.01, 2606.01, 2607.01, 2608.01, 2609.01,
 						2606.0099999999998
 					],
 					"sub": [
-						2603.01,
-						2604.01,
-						2605.01,
-						2606.01,
-						2607.01,
-						2608.01,
-						2609.01,
-						2610.01,
-						2611.01,
-						2612.01,
-						2613.01,
-						2614.01,
-						2615.01,
-						2616.01,
-						2617.01,
-						2618.01,
-						2619.01,
-						2620.01,
-						2621.01,
-						2622.01,
-						2623.01,
-						2624.01,
-						2625.01,
-						2626.01,
-						2627.01
+						2603.01, 2604.01, 2605.01, 2606.01, 2607.01, 2608.01, 2609.01,
+						2610.01, 2611.01, 2612.01, 2613.01, 2614.01, 2615.01, 2616.01,
+						2617.01, 2618.01, 2619.01, 2620.01, 2621.01, 2622.01, 2623.01,
+						2624.01, 2625.01, 2626.01, 2627.01
 					]
 				},
 				"2e5899bb-60bb-43d0-8ce0-fd186d66b3fb": {
 					"core": [
-						2604.01,
-						2605.01,
-						2606.01,
-						2607.01,
-						2608.01,
-						2609.01,
-						2610.01,
+						2604.01, 2605.01, 2606.01, 2607.01, 2608.01, 2609.01, 2610.01,
 						2607.0099999999998
 					],
 					"sub": [
-						2604.01,
-						2605.01,
-						2606.01,
-						2607.01,
-						2608.01,
-						2609.01,
-						2610.01,
-						2611.01,
-						2612.01,
-						2613.01,
-						2614.01,
-						2615.01,
-						2616.01,
-						2617.01,
-						2618.01,
-						2619.01,
-						2620.01,
-						2621.01,
-						2622.01,
-						2623.01,
-						2624.01,
-						2625.01,
-						2626.01,
-						2627.01,
-						2628.01
+						2604.01, 2605.01, 2606.01, 2607.01, 2608.01, 2609.01, 2610.01,
+						2611.01, 2612.01, 2613.01, 2614.01, 2615.01, 2616.01, 2617.01,
+						2618.01, 2619.01, 2620.01, 2621.01, 2622.01, 2623.01, 2624.01,
+						2625.01, 2626.01, 2627.01, 2628.01
 					]
 				},
 				"3a43d3d8-f078-43fd-b45c-ab2af7a0c283": {
 					"core": [
-						2605.01,
-						2606.01,
-						2607.01,
-						2608.01,
-						2609.01,
-						2610.01,
-						2611.01,
+						2605.01, 2606.01, 2607.01, 2608.01, 2609.01, 2610.01, 2611.01,
 						2608.0099999999998
 					],
 					"sub": [
-						2605.01,
-						2606.01,
-						2607.01,
-						2608.01,
-						2609.01,
-						2610.01,
-						2611.01,
-						2612.01,
-						2613.01,
-						2614.01,
-						2615.01,
-						2616.01,
-						2617.01,
-						2618.01,
-						2619.01,
-						2620.01,
-						2621.01,
-						2622.01,
-						2623.01,
-						2624.01,
-						2625.01,
-						2626.01,
-						2627.01,
-						2628.01,
-						2629.01
+						2605.01, 2606.01, 2607.01, 2608.01, 2609.01, 2610.01, 2611.01,
+						2612.01, 2613.01, 2614.01, 2615.01, 2616.01, 2617.01, 2618.01,
+						2619.01, 2620.01, 2621.01, 2622.01, 2623.01, 2624.01, 2625.01,
+						2626.01, 2627.01, 2628.01, 2629.01
 					]
 				}
 			}
@@ -4873,25 +3470,13 @@
 		"id": "50b75743-251c-40f8-ad52-0773e9865e88",
 		"name": "InternVL2_5-38B-MPO",
 		"component": {
-			"vision": [
-				"InternViT-6B-448px-V2_5"
-			],
-			"language": [
-				"Qwen2.5-32B-Instruct"
-			]
+			"vision": ["InternViT-6B-448px-V2_5"],
+			"language": ["Qwen2.5-32B-Instruct"]
 		},
-		"size": [
-			38
-		],
-		"author": [
-			"Shanghai AI Lab"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [38],
+		"author": ["Shanghai AI Lab"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/OpenGVLab/InternVL2_5-38B-MPO",
 		"navigation": false,
 		"taskPlanning": false,
@@ -4910,25 +3495,13 @@
 		"id": "638048e4-d5ad-4e67-abfd-c326697048aa",
 		"name": "InternVL2.5-78B-MPO",
 		"component": {
-			"vision": [
-				"InternViT-6B-448px-V2_5"
-			],
-			"language": [
-				"Qwen2.5-72B-Instruct"
-			]
+			"vision": ["InternViT-6B-448px-V2_5"],
+			"language": ["Qwen2.5-72B-Instruct"]
 		},
-		"size": [
-			78
-		],
-		"author": [
-			"Shanghai AI Lab"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [78],
+		"author": ["Shanghai AI Lab"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/OpenGVLab/InternVL2_5-78B-MPO",
 		"navigation": false,
 		"taskPlanning": false,
@@ -4947,25 +3520,13 @@
 		"id": "e8dafa04-5593-47ac-977b-73a5911edc74",
 		"name": "Qwen2.5-VL-72B-Instruct",
 		"component": {
-			"vision": [
-				"ViT"
-			],
-			"language": [
-				"Qwen2.5-72B"
-			]
+			"vision": ["ViT"],
+			"language": ["Qwen2.5-72B"]
 		},
-		"size": [
-			72
-		],
-		"author": [
-			"Alibaba"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [72],
+		"author": ["Alibaba"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/collections/Qwen/qwen25-vl-6795ffac22b334a837c0f9a5",
 		"navigation": true,
 		"taskPlanning": true,
@@ -4984,19 +3545,11 @@
 		"id": "85034696-05d3-44c9-8fc6-1786f0d86aab",
 		"name": "Claude-3.5-Sonnet",
 		"component": {
-			"language": [
-				"Claude-3.5-Sonnet"
-			]
+			"language": ["Claude-3.5-Sonnet"]
 		},
-		"author": [
-			"Anthropic"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"author": ["Anthropic"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://www.anthropic.com/news/claude-3-5-sonnet",
 		"navigation": true,
 		"taskPlanning": true,
@@ -5015,19 +3568,11 @@
 		"id": "9a722f4d-1622-4ed4-9482-5024b95e06fb",
 		"name": "Gemini-1.5-flash",
 		"component": {
-			"language": [
-				"gemini-1.5-flash"
-			]
+			"language": ["gemini-1.5-flash"]
 		},
-		"author": [
-			"Google DeepMind"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"author": ["Google DeepMind"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/1-5-flash",
 		"navigation": false,
 		"taskPlanning": false,
@@ -5046,19 +3591,11 @@
 		"id": "3cfdaff3-8301-4951-9f3b-cf8134b4ed10",
 		"name": "Qwen-VL-Max",
 		"component": {
-			"language": [
-				"Qwen-VL-Max"
-			]
+			"language": ["Qwen-VL-Max"]
 		},
-		"author": [
-			"Alibaba"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"author": ["Alibaba"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/spaces/Qwen/Qwen-VL-Max",
 		"navigation": true,
 		"taskPlanning": true,
@@ -5227,16 +3764,7 @@
 					]
 				},
 				"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-					"core": [
-						null,
-						null,
-						null,
-						26.84,
-						null,
-						null,
-						null,
-						26.84
-					],
+					"core": [null, null, null, 26.84, null, null, null, 26.84],
 					"sub": [
 						null,
 						null,
@@ -5266,16 +3794,7 @@
 					]
 				},
 				"1961aa46-9085-42ed-b384-d9ffe52921a8": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						42,
-						42
-					],
+					"core": [null, null, null, null, null, null, 42, 42],
 					"sub": [
 						null,
 						null,
@@ -5305,16 +3824,7 @@
 					]
 				},
 				"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						41.33333,
-						41.33333
-					],
+					"core": [null, null, null, null, null, null, 41.33333, 41.33333],
 					"sub": [
 						null,
 						null,
@@ -5344,16 +3854,7 @@
 					]
 				},
 				"73de273a-7d38-40c0-b869-2b2e6156c897": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						39.7,
-						null,
-						39.7
-					],
+					"core": [null, null, null, null, null, 39.7, null, 39.7],
 					"sub": [
 						null,
 						null,
@@ -5383,16 +3884,7 @@
 					]
 				},
 				"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						12.81,
-						null,
-						null,
-						12.81
-					],
+					"core": [null, null, null, null, 12.81, null, null, 12.81],
 					"sub": [
 						null,
 						null,
@@ -5422,16 +3914,7 @@
 					]
 				},
 				"27e481d6-6057-49dc-ad80-529f9127245f": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						28.9,
-						28.9
-					],
+					"core": [null, null, null, null, null, null, 28.9, 28.9],
 					"sub": [
 						null,
 						null,
@@ -5461,16 +3944,7 @@
 					]
 				},
 				"089294d0-59db-47f0-a543-19d8e3708448": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						42,
-						null,
-						null,
-						42
-					],
+					"core": [null, null, null, null, 42, null, null, 42],
 					"sub": [
 						null,
 						null,
@@ -5500,16 +3974,7 @@
 					]
 				},
 				"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						3.3,
-						null,
-						3.3
-					],
+					"core": [null, null, null, null, null, 3.3, null, 3.3],
 					"sub": [
 						null,
 						null,
@@ -5539,16 +4004,7 @@
 					]
 				},
 				"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						0,
-						null,
-						0
-					],
+					"core": [null, null, null, null, null, 0, null, 0],
 					"sub": [
 						null,
 						null,
@@ -5581,158 +4037,50 @@
 			"summary": {
 				"d6ba913a-6e26-4dcc-b192-04b9bee6fd8e": {
 					"core": [
-						3202.01,
-						3203.01,
-						3204.01,
-						3205.01,
-						3206.01,
-						3207.01,
-						3208.01,
+						3202.01, 3203.01, 3204.01, 3205.01, 3206.01, 3207.01, 3208.01,
 						3205.0099999999998
 					],
 					"sub": [
-						3202.01,
-						3203.01,
-						3204.01,
-						3205.01,
-						3206.01,
-						3207.01,
-						3208.01,
-						3209.01,
-						3210.01,
-						3211.01,
-						3212.01,
-						3213.01,
-						3214.01,
-						3215.01,
-						3216.01,
-						3217.01,
-						3218.01,
-						3219.01,
-						3220.01,
-						3221.01,
-						3222.01,
-						3223.01,
-						3224.01,
-						3225.01,
-						3226.01
+						3202.01, 3203.01, 3204.01, 3205.01, 3206.01, 3207.01, 3208.01,
+						3209.01, 3210.01, 3211.01, 3212.01, 3213.01, 3214.01, 3215.01,
+						3216.01, 3217.01, 3218.01, 3219.01, 3220.01, 3221.01, 3222.01,
+						3223.01, 3224.01, 3225.01, 3226.01
 					]
 				},
 				"22d6526a-6707-4a1e-ae3d-9c337feba2e8": {
 					"core": [
-						3203.01,
-						3204.01,
-						3205.01,
-						3206.01,
-						3207.01,
-						3208.01,
-						3209.01,
+						3203.01, 3204.01, 3205.01, 3206.01, 3207.01, 3208.01, 3209.01,
 						3206.0099999999998
 					],
 					"sub": [
-						3203.01,
-						3204.01,
-						3205.01,
-						3206.01,
-						3207.01,
-						3208.01,
-						3209.01,
-						3210.01,
-						3211.01,
-						3212.01,
-						3213.01,
-						3214.01,
-						3215.01,
-						3216.01,
-						3217.01,
-						3218.01,
-						3219.01,
-						3220.01,
-						3221.01,
-						3222.01,
-						3223.01,
-						3224.01,
-						3225.01,
-						3226.01,
-						3227.01
+						3203.01, 3204.01, 3205.01, 3206.01, 3207.01, 3208.01, 3209.01,
+						3210.01, 3211.01, 3212.01, 3213.01, 3214.01, 3215.01, 3216.01,
+						3217.01, 3218.01, 3219.01, 3220.01, 3221.01, 3222.01, 3223.01,
+						3224.01, 3225.01, 3226.01, 3227.01
 					]
 				},
 				"2e5899bb-60bb-43d0-8ce0-fd186d66b3fb": {
 					"core": [
-						3204.01,
-						3205.01,
-						3206.01,
-						3207.01,
-						3208.01,
-						3209.01,
-						3210.01,
+						3204.01, 3205.01, 3206.01, 3207.01, 3208.01, 3209.01, 3210.01,
 						3207.0099999999998
 					],
 					"sub": [
-						3204.01,
-						3205.01,
-						3206.01,
-						3207.01,
-						3208.01,
-						3209.01,
-						3210.01,
-						3211.01,
-						3212.01,
-						3213.01,
-						3214.01,
-						3215.01,
-						3216.01,
-						3217.01,
-						3218.01,
-						3219.01,
-						3220.01,
-						3221.01,
-						3222.01,
-						3223.01,
-						3224.01,
-						3225.01,
-						3226.01,
-						3227.01,
-						3228.01
+						3204.01, 3205.01, 3206.01, 3207.01, 3208.01, 3209.01, 3210.01,
+						3211.01, 3212.01, 3213.01, 3214.01, 3215.01, 3216.01, 3217.01,
+						3218.01, 3219.01, 3220.01, 3221.01, 3222.01, 3223.01, 3224.01,
+						3225.01, 3226.01, 3227.01, 3228.01
 					]
 				},
 				"3a43d3d8-f078-43fd-b45c-ab2af7a0c283": {
 					"core": [
-						3205.01,
-						3206.01,
-						3207.01,
-						3208.01,
-						3209.01,
-						3210.01,
-						3211.01,
+						3205.01, 3206.01, 3207.01, 3208.01, 3209.01, 3210.01, 3211.01,
 						3208.0099999999998
 					],
 					"sub": [
-						3205.01,
-						3206.01,
-						3207.01,
-						3208.01,
-						3209.01,
-						3210.01,
-						3211.01,
-						3212.01,
-						3213.01,
-						3214.01,
-						3215.01,
-						3216.01,
-						3217.01,
-						3218.01,
-						3219.01,
-						3220.01,
-						3221.01,
-						3222.01,
-						3223.01,
-						3224.01,
-						3225.01,
-						3226.01,
-						3227.01,
-						3228.01,
-						3229.01
+						3205.01, 3206.01, 3207.01, 3208.01, 3209.01, 3210.01, 3211.01,
+						3212.01, 3213.01, 3214.01, 3215.01, 3216.01, 3217.01, 3218.01,
+						3219.01, 3220.01, 3221.01, 3222.01, 3223.01, 3224.01, 3225.01,
+						3226.01, 3227.01, 3228.01, 3229.01
 					]
 				}
 			}
@@ -5742,19 +4090,11 @@
 		"id": "a0515273-7168-4717-a07a-b143b0208074",
 		"name": "GPT-4o mini",
 		"component": {
-			"language": [
-				"GPT-4o mini"
-			]
+			"language": ["GPT-4o mini"]
 		},
-		"author": [
-			"OpenAI"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"author": ["OpenAI"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/",
 		"navigation": false,
 		"taskPlanning": false,
@@ -5845,16 +4185,7 @@
 					]
 				},
 				"25206b0f-a955-4e39-86cf-53dcc9528bfc": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						44.98,
-						36.6,
-						null,
-						40.79
-					],
+					"core": [null, null, null, null, 44.98, 36.6, null, 40.79],
 					"sub": [
 						null,
 						39.36,
@@ -5923,16 +4254,7 @@
 					]
 				},
 				"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-					"core": [
-						null,
-						null,
-						null,
-						25.06,
-						null,
-						null,
-						null,
-						25.06
-					],
+					"core": [null, null, null, 25.06, null, null, null, 25.06],
 					"sub": [
 						null,
 						null,
@@ -6001,16 +4323,7 @@
 					]
 				},
 				"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						29,
-						29
-					],
+					"core": [null, null, null, null, null, null, 29, 29],
 					"sub": [
 						null,
 						null,
@@ -6040,16 +4353,7 @@
 					]
 				},
 				"73de273a-7d38-40c0-b869-2b2e6156c897": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						33.3,
-						null,
-						33.3
-					],
+					"core": [null, null, null, null, null, 33.3, null, 33.3],
 					"sub": [
 						null,
 						null,
@@ -6079,16 +4383,7 @@
 					]
 				},
 				"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						1,
-						null,
-						1
-					],
+					"core": [null, null, null, null, null, 1, null, 1],
 					"sub": [
 						null,
 						null,
@@ -6118,16 +4413,7 @@
 					]
 				},
 				"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						3.3,
-						null,
-						3.3
-					],
+					"core": [null, null, null, null, null, 3.3, null, 3.3],
 					"sub": [
 						null,
 						null,
@@ -6157,16 +4443,7 @@
 					]
 				},
 				"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						16.92,
-						null,
-						null,
-						16.92
-					],
+					"core": [null, null, null, null, 16.92, null, null, 16.92],
 					"sub": [
 						null,
 						null,
@@ -6196,16 +4473,7 @@
 					]
 				},
 				"27e481d6-6057-49dc-ad80-529f9127245f": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						23.3,
-						23.3
-					],
+					"core": [null, null, null, null, null, null, 23.3, 23.3],
 					"sub": [
 						null,
 						null,
@@ -6235,16 +4503,7 @@
 					]
 				},
 				"089294d0-59db-47f0-a543-19d8e3708448": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						9.03,
-						null,
-						null,
-						9.03
-					],
+					"core": [null, null, null, null, 9.03, null, null, 9.03],
 					"sub": [
 						null,
 						null,
@@ -6277,158 +4536,50 @@
 			"summary": {
 				"d6ba913a-6e26-4dcc-b192-04b9bee6fd8e": {
 					"core": [
-						3302.01,
-						3303.01,
-						3304.01,
-						3305.01,
-						3306.01,
-						3307.01,
-						3308.01,
+						3302.01, 3303.01, 3304.01, 3305.01, 3306.01, 3307.01, 3308.01,
 						3305.010000000001
 					],
 					"sub": [
-						3302.01,
-						3303.01,
-						3304.01,
-						3305.01,
-						3306.01,
-						3307.01,
-						3308.01,
-						3309.01,
-						3310.01,
-						3311.01,
-						3312.01,
-						3313.01,
-						3314.01,
-						3315.01,
-						3316.01,
-						3317.01,
-						3318.01,
-						3319.01,
-						3320.01,
-						3321.01,
-						3322.01,
-						3323.01,
-						3324.01,
-						3325.01,
-						3326.01
+						3302.01, 3303.01, 3304.01, 3305.01, 3306.01, 3307.01, 3308.01,
+						3309.01, 3310.01, 3311.01, 3312.01, 3313.01, 3314.01, 3315.01,
+						3316.01, 3317.01, 3318.01, 3319.01, 3320.01, 3321.01, 3322.01,
+						3323.01, 3324.01, 3325.01, 3326.01
 					]
 				},
 				"22d6526a-6707-4a1e-ae3d-9c337feba2e8": {
 					"core": [
-						3303.01,
-						3304.01,
-						3305.01,
-						3306.01,
-						3307.01,
-						3308.01,
-						3309.01,
+						3303.01, 3304.01, 3305.01, 3306.01, 3307.01, 3308.01, 3309.01,
 						3306.010000000001
 					],
 					"sub": [
-						3303.01,
-						3304.01,
-						3305.01,
-						3306.01,
-						3307.01,
-						3308.01,
-						3309.01,
-						3310.01,
-						3311.01,
-						3312.01,
-						3313.01,
-						3314.01,
-						3315.01,
-						3316.01,
-						3317.01,
-						3318.01,
-						3319.01,
-						3320.01,
-						3321.01,
-						3322.01,
-						3323.01,
-						3324.01,
-						3325.01,
-						3326.01,
-						3327.01
+						3303.01, 3304.01, 3305.01, 3306.01, 3307.01, 3308.01, 3309.01,
+						3310.01, 3311.01, 3312.01, 3313.01, 3314.01, 3315.01, 3316.01,
+						3317.01, 3318.01, 3319.01, 3320.01, 3321.01, 3322.01, 3323.01,
+						3324.01, 3325.01, 3326.01, 3327.01
 					]
 				},
 				"2e5899bb-60bb-43d0-8ce0-fd186d66b3fb": {
 					"core": [
-						3304.01,
-						3305.01,
-						3306.01,
-						3307.01,
-						3308.01,
-						3309.01,
-						3310.01,
+						3304.01, 3305.01, 3306.01, 3307.01, 3308.01, 3309.01, 3310.01,
 						3307.010000000001
 					],
 					"sub": [
-						3304.01,
-						3305.01,
-						3306.01,
-						3307.01,
-						3308.01,
-						3309.01,
-						3310.01,
-						3311.01,
-						3312.01,
-						3313.01,
-						3314.01,
-						3315.01,
-						3316.01,
-						3317.01,
-						3318.01,
-						3319.01,
-						3320.01,
-						3321.01,
-						3322.01,
-						3323.01,
-						3324.01,
-						3325.01,
-						3326.01,
-						3327.01,
-						3328.01
+						3304.01, 3305.01, 3306.01, 3307.01, 3308.01, 3309.01, 3310.01,
+						3311.01, 3312.01, 3313.01, 3314.01, 3315.01, 3316.01, 3317.01,
+						3318.01, 3319.01, 3320.01, 3321.01, 3322.01, 3323.01, 3324.01,
+						3325.01, 3326.01, 3327.01, 3328.01
 					]
 				},
 				"3a43d3d8-f078-43fd-b45c-ab2af7a0c283": {
 					"core": [
-						3305.01,
-						3306.01,
-						3307.01,
-						3308.01,
-						3309.01,
-						3310.01,
-						3311.01,
+						3305.01, 3306.01, 3307.01, 3308.01, 3309.01, 3310.01, 3311.01,
 						3308.010000000001
 					],
 					"sub": [
-						3305.01,
-						3306.01,
-						3307.01,
-						3308.01,
-						3309.01,
-						3310.01,
-						3311.01,
-						3312.01,
-						3313.01,
-						3314.01,
-						3315.01,
-						3316.01,
-						3317.01,
-						3318.01,
-						3319.01,
-						3320.01,
-						3321.01,
-						3322.01,
-						3323.01,
-						3324.01,
-						3325.01,
-						3326.01,
-						3327.01,
-						3328.01,
-						3329.01
+						3305.01, 3306.01, 3307.01, 3308.01, 3309.01, 3310.01, 3311.01,
+						3312.01, 3313.01, 3314.01, 3315.01, 3316.01, 3317.01, 3318.01,
+						3319.01, 3320.01, 3321.01, 3322.01, 3323.01, 3324.01, 3325.01,
+						3326.01, 3327.01, 3328.01, 3329.01
 					]
 				}
 			}
@@ -6438,25 +4589,13 @@
 		"id": "80bcf574-1d7c-4798-a1c0-37ac1c32a724",
 		"name": "InternVL2_5-78B",
 		"component": {
-			"vision": [
-				"InternViT-6B-448px-V2_5"
-			],
-			"language": [
-				"Qwen2.5-72B-Instruct"
-			]
+			"vision": ["InternViT-6B-448px-V2_5"],
+			"language": ["Qwen2.5-72B-Instruct"]
 		},
-		"size": [
-			78
-		],
-		"author": [
-			"Shanghai AI Lab"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [78],
+		"author": ["Shanghai AI Lab"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/OpenGVLab/InternVL2_5-78B",
 		"navigation": false,
 		"taskPlanning": false,
@@ -6475,25 +4614,13 @@
 		"id": "63263829-1e9c-4ac5-bf29-965f540518a6",
 		"name": "InternVL2_5-38B",
 		"component": {
-			"vision": [
-				"InternViT-6B-448px-V2_5"
-			],
-			"language": [
-				"Qwen2.5-32B-Instruct"
-			]
+			"vision": ["InternViT-6B-448px-V2_5"],
+			"language": ["Qwen2.5-32B-Instruct"]
 		},
-		"size": [
-			38
-		],
-		"author": [
-			"Shanghai AI Lab"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [38],
+		"author": ["Shanghai AI Lab"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/OpenGVLab/InternVL2_5-38B",
 		"navigation": false,
 		"taskPlanning": false,
@@ -6512,22 +4639,12 @@
 		"id": "87f1ac67-6ac8-4f58-9644-f877741326cb",
 		"name": "Llama-3.2-90B-Vision-Instruct",
 		"component": {
-			"language": [
-				"Llama 3.1"
-			]
+			"language": ["Llama 3.1"]
 		},
-		"size": [
-			90
-		],
-		"author": [
-			"Meta AI"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [90],
+		"author": ["Meta AI"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct",
 		"navigation": false,
 		"taskPlanning": false,
@@ -6546,25 +4663,13 @@
 		"id": "cb6e23ea-bc8a-4bef-91d6-ba174280faaf",
 		"name": "Qwen2.5-VL-7B-Instruct",
 		"component": {
-			"vision": [
-				"Retrained NaViT"
-			],
-			"language": [
-				"Qwen2.5-7B"
-			]
+			"vision": ["Retrained NaViT"],
+			"language": ["Qwen2.5-7B"]
 		},
-		"size": [
-			7
-		],
-		"author": [
-			"Alibaba"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [7],
+		"author": ["Alibaba"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/collections/Qwen/qwen25-vl-6795ffac22b334a837c0f9a5",
 		"navigation": true,
 		"taskPlanning": true,
@@ -6733,16 +4838,7 @@
 					]
 				},
 				"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-					"core": [
-						null,
-						null,
-						null,
-						10.99,
-						null,
-						null,
-						null,
-						10.99
-					],
+					"core": [null, null, null, 10.99, null, null, null, 10.99],
 					"sub": [
 						null,
 						null,
@@ -6811,16 +4907,7 @@
 					]
 				},
 				"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						11.5,
-						11.5
-					],
+					"core": [null, null, null, null, null, null, 11.5, 11.5],
 					"sub": [
 						null,
 						null,
@@ -6850,16 +4937,7 @@
 					]
 				},
 				"73de273a-7d38-40c0-b869-2b2e6156c897": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						14,
-						null,
-						14
-					],
+					"core": [null, null, null, null, null, 14, null, 14],
 					"sub": [
 						null,
 						null,
@@ -6889,16 +4967,7 @@
 					]
 				},
 				"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						5.1,
-						null,
-						5.1
-					],
+					"core": [null, null, null, null, null, 5.1, null, 5.1],
 					"sub": [
 						null,
 						null,
@@ -6928,16 +4997,7 @@
 					]
 				},
 				"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						3.3,
-						null,
-						3.3
-					],
+					"core": [null, null, null, null, null, 3.3, null, 3.3],
 					"sub": [
 						null,
 						null,
@@ -6967,16 +5027,7 @@
 					]
 				},
 				"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						11.15,
-						null,
-						null,
-						11.15
-					],
+					"core": [null, null, null, null, 11.15, null, null, 11.15],
 					"sub": [
 						null,
 						null,
@@ -7006,16 +5057,7 @@
 					]
 				},
 				"27e481d6-6057-49dc-ad80-529f9127245f": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						20.4,
-						20.4
-					],
+					"core": [null, null, null, null, null, null, 20.4, 20.4],
 					"sub": [
 						null,
 						null,
@@ -7045,16 +5087,7 @@
 					]
 				},
 				"089294d0-59db-47f0-a543-19d8e3708448": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						23.51,
-						null,
-						null,
-						23.51
-					],
+					"core": [null, null, null, null, 23.51, null, null, 23.51],
 					"sub": [
 						null,
 						null,
@@ -7087,158 +5120,50 @@
 			"summary": {
 				"d6ba913a-6e26-4dcc-b192-04b9bee6fd8e": {
 					"core": [
-						3702.01,
-						3703.01,
-						3704.01,
-						3705.01,
-						3706.01,
-						3707.01,
-						3708.01,
+						3702.01, 3703.01, 3704.01, 3705.01, 3706.01, 3707.01, 3708.01,
 						3705.010000000001
 					],
 					"sub": [
-						3702.01,
-						3703.01,
-						3704.01,
-						3705.01,
-						3706.01,
-						3707.01,
-						3708.01,
-						3709.01,
-						3710.01,
-						3711.01,
-						3712.01,
-						3713.01,
-						3714.01,
-						3715.01,
-						3716.01,
-						3717.01,
-						3718.01,
-						3719.01,
-						3720.01,
-						3721.01,
-						3722.01,
-						3723.01,
-						3724.01,
-						3725.01,
-						3726.01
+						3702.01, 3703.01, 3704.01, 3705.01, 3706.01, 3707.01, 3708.01,
+						3709.01, 3710.01, 3711.01, 3712.01, 3713.01, 3714.01, 3715.01,
+						3716.01, 3717.01, 3718.01, 3719.01, 3720.01, 3721.01, 3722.01,
+						3723.01, 3724.01, 3725.01, 3726.01
 					]
 				},
 				"22d6526a-6707-4a1e-ae3d-9c337feba2e8": {
 					"core": [
-						3703.01,
-						3704.01,
-						3705.01,
-						3706.01,
-						3707.01,
-						3708.01,
-						3709.01,
+						3703.01, 3704.01, 3705.01, 3706.01, 3707.01, 3708.01, 3709.01,
 						3706.010000000001
 					],
 					"sub": [
-						3703.01,
-						3704.01,
-						3705.01,
-						3706.01,
-						3707.01,
-						3708.01,
-						3709.01,
-						3710.01,
-						3711.01,
-						3712.01,
-						3713.01,
-						3714.01,
-						3715.01,
-						3716.01,
-						3717.01,
-						3718.01,
-						3719.01,
-						3720.01,
-						3721.01,
-						3722.01,
-						3723.01,
-						3724.01,
-						3725.01,
-						3726.01,
-						3727.01
+						3703.01, 3704.01, 3705.01, 3706.01, 3707.01, 3708.01, 3709.01,
+						3710.01, 3711.01, 3712.01, 3713.01, 3714.01, 3715.01, 3716.01,
+						3717.01, 3718.01, 3719.01, 3720.01, 3721.01, 3722.01, 3723.01,
+						3724.01, 3725.01, 3726.01, 3727.01
 					]
 				},
 				"2e5899bb-60bb-43d0-8ce0-fd186d66b3fb": {
 					"core": [
-						3704.01,
-						3705.01,
-						3706.01,
-						3707.01,
-						3708.01,
-						3709.01,
-						3710.01,
+						3704.01, 3705.01, 3706.01, 3707.01, 3708.01, 3709.01, 3710.01,
 						3707.010000000001
 					],
 					"sub": [
-						3704.01,
-						3705.01,
-						3706.01,
-						3707.01,
-						3708.01,
-						3709.01,
-						3710.01,
-						3711.01,
-						3712.01,
-						3713.01,
-						3714.01,
-						3715.01,
-						3716.01,
-						3717.01,
-						3718.01,
-						3719.01,
-						3720.01,
-						3721.01,
-						3722.01,
-						3723.01,
-						3724.01,
-						3725.01,
-						3726.01,
-						3727.01,
-						3728.01
+						3704.01, 3705.01, 3706.01, 3707.01, 3708.01, 3709.01, 3710.01,
+						3711.01, 3712.01, 3713.01, 3714.01, 3715.01, 3716.01, 3717.01,
+						3718.01, 3719.01, 3720.01, 3721.01, 3722.01, 3723.01, 3724.01,
+						3725.01, 3726.01, 3727.01, 3728.01
 					]
 				},
 				"3a43d3d8-f078-43fd-b45c-ab2af7a0c283": {
 					"core": [
-						3705.01,
-						3706.01,
-						3707.01,
-						3708.01,
-						3709.01,
-						3710.01,
-						3711.01,
+						3705.01, 3706.01, 3707.01, 3708.01, 3709.01, 3710.01, 3711.01,
 						3708.010000000001
 					],
 					"sub": [
-						3705.01,
-						3706.01,
-						3707.01,
-						3708.01,
-						3709.01,
-						3710.01,
-						3711.01,
-						3712.01,
-						3713.01,
-						3714.01,
-						3715.01,
-						3716.01,
-						3717.01,
-						3718.01,
-						3719.01,
-						3720.01,
-						3721.01,
-						3722.01,
-						3723.01,
-						3724.01,
-						3725.01,
-						3726.01,
-						3727.01,
-						3728.01,
-						3729.01
+						3705.01, 3706.01, 3707.01, 3708.01, 3709.01, 3710.01, 3711.01,
+						3712.01, 3713.01, 3714.01, 3715.01, 3716.01, 3717.01, 3718.01,
+						3719.01, 3720.01, 3721.01, 3722.01, 3723.01, 3724.01, 3725.01,
+						3726.01, 3727.01, 3728.01, 3729.01
 					]
 				}
 			}
@@ -7248,19 +5173,11 @@
 		"id": "ce19cba4-e888-4c92-9700-d25bc4dbbad3",
 		"name": "Gemini-1.5-Pro",
 		"component": {
-			"language": [
-				"gemini-1.5-Pro"
-			]
+			"language": ["gemini-1.5-Pro"]
 		},
-		"author": [
-			"Google DeepMind"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"author": ["Google DeepMind"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/1-5-pro",
 		"navigation": false,
 		"taskPlanning": false,
@@ -7279,22 +5196,12 @@
 		"id": "e6010b47-eb88-403c-8aee-858d1c913af2",
 		"name": "Llama-3.2-11B-Vision-Instruct",
 		"component": {
-			"language": [
-				"Llama 3.1"
-			]
+			"language": ["Llama 3.1"]
 		},
-		"size": [
-			11
-		],
-		"author": [
-			"Google DeepMind"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [11],
+		"author": ["Google DeepMind"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct",
 		"navigation": false,
 		"taskPlanning": false,
@@ -7313,25 +5220,13 @@
 		"id": "525c4c5c-e4ef-42ef-9a80-0b7d059f1c95",
 		"name": "InternVL2_5-8B",
 		"component": {
-			"vision": [
-				"InternViT-300M-448px-V2_5"
-			],
-			"language": [
-				"internlm2_5-7b-chat"
-			]
+			"vision": ["InternViT-300M-448px-V2_5"],
+			"language": ["internlm2_5-7b-chat"]
 		},
-		"size": [
-			8
-		],
-		"author": [
-			"Shanghai AI Lab"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [8],
+		"author": ["Shanghai AI Lab"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/OpenGVLab/InternVL2_5-8B",
 		"navigation": false,
 		"taskPlanning": false,
@@ -7350,25 +5245,13 @@
 		"id": "2bd83c3e-58ed-4898-a1a1-a445513e31c1",
 		"name": "Qwen2-VL-72B-Instruct",
 		"component": {
-			"vision": [
-				"NaViT"
-			],
-			"language": [
-				"Qwen2.5-72B"
-			]
+			"vision": ["NaViT"],
+			"language": ["Qwen2.5-72B"]
 		},
-		"size": [
-			72
-		],
-		"author": [
-			"Alibaba"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [72],
+		"author": ["Alibaba"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct",
 		"navigation": false,
 		"taskPlanning": false,
@@ -7387,25 +5270,13 @@
 		"id": "69a2667c-2439-4c0a-b4dd-7fa2c134217c",
 		"name": "Qwen2-VL-7B-Instruct",
 		"component": {
-			"vision": [
-				"NaViT"
-			],
-			"language": [
-				"Qwen2.5-7B"
-			]
+			"vision": ["NaViT"],
+			"language": ["Qwen2.5-7B"]
 		},
-		"size": [
-			7
-		],
-		"author": [
-			"Alibaba"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [7],
+		"author": ["Alibaba"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct",
 		"navigation": false,
 		"taskPlanning": false,
@@ -7424,25 +5295,13 @@
 		"id": "e40d9b56-19c8-4387-8f71-4a3b39d7d1ef",
 		"name": "InternVL2_5-8B-MPO",
 		"component": {
-			"vision": [
-				"InternViT-300M-448px-V2_5"
-			],
-			"language": [
-				"internlm2_5-7b-chat"
-			]
+			"vision": ["InternViT-300M-448px-V2_5"],
+			"language": ["internlm2_5-7b-chat"]
 		},
-		"size": [
-			8
-		],
-		"author": [
-			"Shanghai AI Lab"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [8],
+		"author": ["Shanghai AI Lab"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/OpenGVLab/InternVL2_5-8B-MPO",
 		"navigation": false,
 		"taskPlanning": false,
@@ -7460,15 +5319,9 @@
 	{
 		"id": "47130974-a85a-4090-ab93-04542244c04e",
 		"name": "Gemini-2.0-Pro w CoT",
-		"author": [
-			"Google DeepMind"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"author": ["Google DeepMind"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"navigation": false,
 		"taskPlanning": false,
 		"reason": false,
@@ -7484,15 +5337,9 @@
 	{
 		"id": "b98ae0e6-2bcf-487d-8ada-6423bcce8f9c",
 		"name": "GPT-4o w CoT",
-		"author": [
-			"OpenAI"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"author": ["OpenAI"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"navigation": false,
 		"taskPlanning": false,
 		"reason": false,
@@ -7509,19 +5356,11 @@
 		"id": "4a42979f-36cb-4c3e-8ebf-a198a68b90e6",
 		"name": "Gemini-2.0-Pro",
 		"component": {
-			"language": [
-				"Gemini-2.0-Pro"
-			]
+			"language": ["Gemini-2.0-Pro"]
 		},
-		"author": [
-			"Google DeepMind"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"author": ["Google DeepMind"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"navigation": true,
 		"taskPlanning": true,
 		"reason": true,
@@ -7550,22 +5389,12 @@
 		"id": "87e7bee8-251c-44e8-8e67-500bfdd1f348",
 		"name": "Video-3D LLM (32 frames)",
 		"component": {
-			"vision": [
-				"3D Visual Geometry Encoder combined with 2D Visual Encoder"
-			],
-			"language": [
-				"Qwen2.5-VL"
-			]
+			"vision": ["3D Visual Geometry Encoder combined with 2D Visual Encoder"],
+			"language": ["Qwen2.5-VL"]
 		},
-		"author": [
-			"Chinese University of Hong Kong"
-		],
-		"qa": [
-			"3D"
-		],
-		"dimension": [
-			"3D"
-		],
+		"author": ["Chinese University of Hong Kong"],
+		"qa": ["3D"],
+		"dimension": ["3D"],
 		"website": "https://github.com/LaVi-Lab/Video-3D-LLM",
 		"navigation": false,
 		"taskPlanning": false,
@@ -7584,22 +5413,12 @@
 		"id": "70634caf-f6d3-47e8-9e9c-2754a40b53a2",
 		"name": "Video-3D LLM (16 frames)",
 		"component": {
-			"vision": [
-				"3D Visual Geometry Encoder combined with 2D Visual Encoder"
-			],
-			"language": [
-				"Qwen2.5-VL"
-			]
+			"vision": ["3D Visual Geometry Encoder combined with 2D Visual Encoder"],
+			"language": ["Qwen2.5-VL"]
 		},
-		"author": [
-			"Chinese University of Hong Kong"
-		],
-		"qa": [
-			"3D"
-		],
-		"dimension": [
-			"3D"
-		],
+		"author": ["Chinese University of Hong Kong"],
+		"qa": ["3D"],
+		"dimension": ["3D"],
 		"website": "https://github.com/LaVi-Lab/Video-3D-LLM",
 		"navigation": false,
 		"taskPlanning": false,
@@ -7618,22 +5437,12 @@
 		"id": "3efd880e-f132-4d0f-ba66-67142efb9470",
 		"name": "LLaVA-3D",
 		"component": {
-			"language": [
-				"LLaVA-Video-7B"
-			]
+			"language": ["LLaVA-Video-7B"]
 		},
-		"size": [
-			7
-		],
-		"author": [
-			"Shanghai AI Lab"
-		],
-		"qa": [
-			"3D"
-		],
-		"dimension": [
-			"3D"
-		],
+		"size": [7],
+		"author": ["Shanghai AI Lab"],
+		"qa": ["3D"],
+		"dimension": ["3D"],
 		"website": "https://github.com/ZCMax/LLaVA-3D",
 		"navigation": false,
 		"taskPlanning": false,
@@ -7652,22 +5461,12 @@
 		"id": "8472d27d-9c33-4ea2-854c-2ec882f303b6",
 		"name": "Chat-3D v2",
 		"component": {
-			"vision": [
-				"PointGroup"
-			],
-			"language": [
-				"Vicuna-7B-v0"
-			]
+			"vision": ["PointGroup"],
+			"language": ["Vicuna-7B-v0"]
 		},
-		"author": [
-			"Zhejiang University"
-		],
-		"qa": [
-			"3D"
-		],
-		"dimension": [
-			"3D"
-		],
+		"author": ["Zhejiang University"],
+		"qa": ["3D"],
+		"dimension": ["3D"],
 		"website": "https://chat-3d.github.io/",
 		"navigation": false,
 		"taskPlanning": false,
@@ -7686,23 +5485,12 @@
 		"id": "b0e697a1-bef6-488c-b3df-1680c3694f48",
 		"name": "ChatScene",
 		"component": {
-			"vision": [
-				"Mask3D"
-			],
-			"language": [
-				"Vicuna-7B-v1.5",
-				"LoRA"
-			]
+			"vision": ["Mask3D"],
+			"language": ["Vicuna-7B-v1.5", "LoRA"]
 		},
-		"author": [
-			"Shanghai AI Lab"
-		],
-		"qa": [
-			"3D"
-		],
-		"dimension": [
-			"3D"
-		],
+		"author": ["Shanghai AI Lab"],
+		"qa": ["3D"],
+		"dimension": ["3D"],
 		"website": "https://github.com/ZzZZCHS/Chat-Scene",
 		"navigation": false,
 		"taskPlanning": false,
@@ -7721,19 +5509,11 @@
 		"id": "dfb3cf12-beee-48f1-87f5-66d40176d517",
 		"name": "SceneLLM",
 		"component": {
-			"language": [
-				"Llama-2-7B"
-			]
+			"language": ["Llama-2-7B"]
 		},
-		"author": [
-			"Meta AI"
-		],
-		"qa": [
-			"3D"
-		],
-		"dimension": [
-			"3D"
-		],
+		"author": ["Meta AI"],
+		"qa": ["3D"],
+		"dimension": ["3D"],
 		"website": "https://arxiv.org/abs/2403.11401",
 		"navigation": false,
 		"taskPlanning": false,
@@ -7752,26 +5532,13 @@
 		"id": "d7a24483-5295-4afb-9ecd-8538b5d92e53",
 		"name": "LEO",
 		"component": {
-			"vision": [
-				"PointNet++",
-				"PointBERT"
-			],
-			"language": [
-				"Vicuna-7B-v1.1"
-			]
+			"vision": ["PointNet++", "PointBERT"],
+			"language": ["Vicuna-7B-v1.1"]
 		},
-		"size": [
-			7
-		],
-		"author": [
-			"Bejing Institute for General Artificial Intelligence"
-		],
-		"qa": [
-			"3D"
-		],
-		"dimension": [
-			"3D"
-		],
+		"size": [7],
+		"author": ["Bejing Institute for General Artificial Intelligence"],
+		"qa": ["3D"],
+		"dimension": ["3D"],
 		"website": "https://embodied-generalist.github.io/",
 		"navigation": false,
 		"taskPlanning": false,
@@ -7802,19 +5569,11 @@
 		"id": "7b3f0bae-5319-4d34-b7ad-62ba67a43da4",
 		"name": "PQ3D",
 		"component": {
-			"vision": [
-				"pretrained CLIP"
-			]
+			"vision": ["pretrained CLIP"]
 		},
-		"author": [
-			"Bejing Institute for General Artificial Intelligence"
-		],
-		"qa": [
-			"3D"
-		],
-		"dimension": [
-			"3D"
-		],
+		"author": ["Bejing Institute for General Artificial Intelligence"],
+		"qa": ["3D"],
+		"dimension": ["3D"],
 		"website": "https://pq3d.github.io/",
 		"navigation": false,
 		"taskPlanning": false,
@@ -7833,25 +5592,13 @@
 		"id": "529c2206-513e-45fa-a762-1d8a6adf548f",
 		"name": "Qwen2-VL-7B",
 		"component": {
-			"vision": [
-				"NaViT"
-			],
-			"language": [
-				"Qwen2-VL-7B"
-			]
+			"vision": ["NaViT"],
+			"language": ["Qwen2-VL-7B"]
 		},
-		"size": [
-			8
-		],
-		"author": [
-			"Alibaba"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [8],
+		"author": ["Alibaba"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/Qwen/Qwen2-VL-7B",
 		"navigation": false,
 		"taskPlanning": false,
@@ -7870,22 +5617,12 @@
 		"id": "0cb4cf61-fe9a-4974-9c89-96c023957e9f",
 		"name": "3D-LLM(BLIP2-flant5)",
 		"component": {
-			"vision": [
-				"BLIP-2"
-			],
-			"language": [
-				"Flan-T5"
-			]
+			"vision": ["BLIP-2"],
+			"language": ["Flan-T5"]
 		},
-		"author": [
-			"UMass Embodied AGI Group"
-		],
-		"qa": [
-			"3D"
-		],
-		"dimension": [
-			"3D"
-		],
+		"author": ["UMass Embodied AGI Group"],
+		"qa": ["3D"],
+		"dimension": ["3D"],
 		"website": "https://github.com/UMass-Embodied-AGI/3D-LLM",
 		"navigation": false,
 		"taskPlanning": false,
@@ -7904,22 +5641,12 @@
 		"id": "323ef65f-630b-49df-bff8-e7bc32815387",
 		"name": "3D-LLM(Flamingo)",
 		"component": {
-			"vision": [
-				"CLIP"
-			],
-			"language": [
-				"Open-Flamingo"
-			]
+			"vision": ["CLIP"],
+			"language": ["Open-Flamingo"]
 		},
-		"author": [
-			"UMass Embodied AGI Group"
-		],
-		"qa": [
-			"3D"
-		],
-		"dimension": [
-			"3D"
-		],
+		"author": ["UMass Embodied AGI Group"],
+		"qa": ["3D"],
+		"dimension": ["3D"],
 		"website": "https://github.com/UMass-Embodied-AGI/3D-LLM",
 		"navigation": false,
 		"taskPlanning": false,
@@ -7938,25 +5665,13 @@
 		"id": "af3acd4e-d0b0-4aec-b45a-2ad7088a54f8",
 		"name": "Grounded 3D-LLM",
 		"component": {
-			"vision": [
-				"Submanifold Sparse Convolutional Networks"
-			],
-			"language": [
-				"Tiny-Vicuna-1B"
-			]
+			"vision": ["Submanifold Sparse Convolutional Networks"],
+			"language": ["Tiny-Vicuna-1B"]
 		},
-		"size": [
-			1
-		],
-		"author": [
-			"Shanghai AI Lab"
-		],
-		"qa": [
-			"3D"
-		],
-		"dimension": [
-			"3D"
-		],
+		"size": [1],
+		"author": ["Shanghai AI Lab"],
+		"qa": ["3D"],
+		"dimension": ["3D"],
 		"website": "https://github.com/OpenRobotLab/Grounded_3D-LLM",
 		"navigation": false,
 		"taskPlanning": false,
@@ -7974,15 +5689,9 @@
 	{
 		"id": "09929601-b5f9-439b-94d3-fe8dedb11b13",
 		"name": "LL3DA",
-		"author": [
-			"Tencent PCG"
-		],
-		"qa": [
-			"3D"
-		],
-		"dimension": [
-			"3D"
-		],
+		"author": ["Tencent PCG"],
+		"qa": ["3D"],
+		"dimension": ["3D"],
 		"website": "https://ll3da.github.io/",
 		"navigation": false,
 		"taskPlanning": false,
@@ -8001,19 +5710,11 @@
 		"id": "314244f5-7c42-4279-957b-6fbc2c4b9aee",
 		"name": "GPT-4",
 		"component": {
-			"language": [
-				"GPT-4"
-			]
+			"language": ["GPT-4"]
 		},
-		"author": [
-			"OpenAI"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"author": ["OpenAI"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://openai.com/index/gpt-4-research/",
 		"navigation": false,
 		"taskPlanning": false,
@@ -8032,22 +5733,12 @@
 		"id": "12e98a0d-5bd3-4af8-a45d-4ebaa59cf45c",
 		"name": "Llama3-70B",
 		"component": {
-			"language": [
-				"Llama3.0-70B"
-			]
+			"language": ["Llama3.0-70B"]
 		},
-		"size": [
-			70
-		],
-		"author": [
-			"Meta AI"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [70],
+		"author": ["Meta AI"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/meta-llama/Meta-Llama-3-70B",
 		"navigation": false,
 		"taskPlanning": false,
@@ -8065,22 +5756,12 @@
 		"id": "df53089f-9407-49d7-b93e-199fffe7db94",
 		"name": "Llama3-8B",
 		"component": {
-			"language": [
-				"Llama3.0-8B"
-			]
+			"language": ["Llama3.0-8B"]
 		},
-		"size": [
-			8
-		],
-		"author": [
-			"Meta AI"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [8],
+		"author": ["Meta AI"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
 		"navigation": false,
 		"taskPlanning": false,
@@ -8134,25 +5815,13 @@
 		"id": "d43c7af4-55f6-4054-bcd4-88d27efd0d10",
 		"name": "Navid",
 		"component": {
-			"vision": [
-				"EVA-CLIP"
-			],
-			"language": [
-				"Vicuna-7B-v1.5"
-			]
+			"vision": ["EVA-CLIP"],
+			"language": ["Vicuna-7B-v1.5"]
 		},
-		"size": [
-			7
-		],
-		"author": [
-			"Peking University"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [7],
+		"author": ["Peking University"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://pku-epic.github.io/NaVid/",
 		"navigation": true,
 		"taskPlanning": true,
@@ -8171,25 +5840,13 @@
 		"id": "8d42636e-05c2-4179-a0d1-625f474f1622",
 		"name": "UniNavid",
 		"component": {
-			"vision": [
-				"EVA-CLIP"
-			],
-			"language": [
-				"Vicuna-7B-v1.5"
-			]
+			"vision": ["EVA-CLIP"],
+			"language": ["Vicuna-7B-v1.5"]
 		},
-		"size": [
-			7
-		],
-		"author": [
-			"Peking University"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [7],
+		"author": ["Peking University"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://pku-epic.github.io/Uni-NaVid/",
 		"navigation": true,
 		"taskPlanning": true,
@@ -8207,15 +5864,9 @@
 	{
 		"id": "bfee5170-8314-49ea-96e6-762fc8e2bba4",
 		"name": "MapNav",
-		"author": [
-			"Beijing Academy of Artificial Intelligence"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"author": ["Beijing Academy of Artificial Intelligence"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://arxiv.org/pdf/2502.13451",
 		"navigation": false,
 		"taskPlanning": false,
@@ -8233,25 +5884,13 @@
 		"id": "a7bde639-b09a-4cbf-a647-cbde9a634e6c",
 		"name": "RoboPoint",
 		"component": {
-			"vision": [
-				"ViT-L/14 336px"
-			],
-			"language": [
-				"Vicuna-v1.5-13B"
-			]
+			"vision": ["ViT-L/14 336px"],
+			"language": ["Vicuna-v1.5-13B"]
 		},
-		"size": [
-			13
-		],
-		"author": [
-			"University of Washington"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [13],
+		"author": ["University of Washington"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://github.com/wentaoyuan/RoboPoint",
 		"navigation": true,
 		"taskPlanning": true,
@@ -8270,19 +5909,11 @@
 		"id": "24608772-82fc-4750-94ba-a0f87e2c1198",
 		"name": "o4-mini",
 		"component": {
-			"language": [
-				"o4-mini"
-			]
+			"language": ["o4-mini"]
 		},
-		"author": [
-			"OpenAI"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"author": ["OpenAI"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://openai.com/index/introducing-o3-and-o4-mini/",
 		"navigation": true,
 		"taskPlanning": true,
@@ -8301,19 +5932,11 @@
 		"id": "b585f486-bac8-40d9-bcdb-3b7642bd7be9",
 		"name": "Gemini-2.5-Pro",
 		"component": {
-			"language": [
-				"Gemini-2.5-Pro"
-			]
+			"language": ["Gemini-2.5-Pro"]
 		},
-		"author": [
-			"Google DeepMind"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"author": ["Google DeepMind"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://ai.google.dev/gemini-api/docs/models",
 		"navigation": true,
 		"taskPlanning": true,
@@ -8482,16 +6105,7 @@
 					]
 				},
 				"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-					"core": [
-						null,
-						null,
-						null,
-						49.58,
-						null,
-						null,
-						null,
-						49.58
-					],
+					"core": [null, null, null, 49.58, null, null, null, 49.58],
 					"sub": [
 						null,
 						null,
@@ -8560,16 +6174,7 @@
 					]
 				},
 				"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						60.66667,
-						60.66667
-					],
+					"core": [null, null, null, null, null, null, 60.66667, 60.66667],
 					"sub": [
 						null,
 						null,
@@ -8599,16 +6204,7 @@
 					]
 				},
 				"73de273a-7d38-40c0-b869-2b2e6156c897": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						58.8,
-						null,
-						58.8
-					],
+					"core": [null, null, null, null, null, 58.8, null, 58.8],
 					"sub": [
 						null,
 						null,
@@ -8638,16 +6234,7 @@
 					]
 				},
 				"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						16.13,
-						null,
-						null,
-						16.13
-					],
+					"core": [null, null, null, null, 16.13, null, null, 16.13],
 					"sub": [
 						null,
 						null,
@@ -8677,16 +6264,7 @@
 					]
 				},
 				"27e481d6-6057-49dc-ad80-529f9127245f": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						43.6,
-						43.6
-					],
+					"core": [null, null, null, null, null, null, 43.6, 43.6],
 					"sub": [
 						null,
 						null,
@@ -8716,16 +6294,7 @@
 					]
 				},
 				"089294d0-59db-47f0-a543-19d8e3708448": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						21.7,
-						null,
-						null,
-						21.7
-					],
+					"core": [null, null, null, null, 21.7, null, null, 21.7],
 					"sub": [
 						null,
 						null,
@@ -8755,16 +6324,7 @@
 					]
 				},
 				"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						3.3,
-						null,
-						3.3
-					],
+					"core": [null, null, null, null, null, 3.3, null, 3.3],
 					"sub": [
 						null,
 						null,
@@ -8794,16 +6354,7 @@
 					]
 				},
 				"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						20,
-						null,
-						20
-					],
+					"core": [null, null, null, null, null, 20, null, 20],
 					"sub": [
 						null,
 						null,
@@ -8836,158 +6387,50 @@
 			"summary": {
 				"d6ba913a-6e26-4dcc-b192-04b9bee6fd8e": {
 					"core": [
-						7302.01,
-						7303.01,
-						7304.01,
-						7305.01,
-						7306.01,
-						7307.01,
-						7308.01,
+						7302.01, 7303.01, 7304.01, 7305.01, 7306.01, 7307.01, 7308.01,
 						7305.010000000001
 					],
 					"sub": [
-						7302.01,
-						7303.01,
-						7304.01,
-						7305.01,
-						7306.01,
-						7307.01,
-						7308.01,
-						7309.01,
-						7310.01,
-						7311.01,
-						7312.01,
-						7313.01,
-						7314.01,
-						7315.01,
-						7316.01,
-						7317.01,
-						7318.01,
-						7319.01,
-						7320.01,
-						7321.01,
-						7322.01,
-						7323.01,
-						7324.01,
-						7325.01,
-						7326.01
+						7302.01, 7303.01, 7304.01, 7305.01, 7306.01, 7307.01, 7308.01,
+						7309.01, 7310.01, 7311.01, 7312.01, 7313.01, 7314.01, 7315.01,
+						7316.01, 7317.01, 7318.01, 7319.01, 7320.01, 7321.01, 7322.01,
+						7323.01, 7324.01, 7325.01, 7326.01
 					]
 				},
 				"22d6526a-6707-4a1e-ae3d-9c337feba2e8": {
 					"core": [
-						7303.01,
-						7304.01,
-						7305.01,
-						7306.01,
-						7307.01,
-						7308.01,
-						7309.01,
+						7303.01, 7304.01, 7305.01, 7306.01, 7307.01, 7308.01, 7309.01,
 						7306.010000000001
 					],
 					"sub": [
-						7303.01,
-						7304.01,
-						7305.01,
-						7306.01,
-						7307.01,
-						7308.01,
-						7309.01,
-						7310.01,
-						7311.01,
-						7312.01,
-						7313.01,
-						7314.01,
-						7315.01,
-						7316.01,
-						7317.01,
-						7318.01,
-						7319.01,
-						7320.01,
-						7321.01,
-						7322.01,
-						7323.01,
-						7324.01,
-						7325.01,
-						7326.01,
-						7327.01
+						7303.01, 7304.01, 7305.01, 7306.01, 7307.01, 7308.01, 7309.01,
+						7310.01, 7311.01, 7312.01, 7313.01, 7314.01, 7315.01, 7316.01,
+						7317.01, 7318.01, 7319.01, 7320.01, 7321.01, 7322.01, 7323.01,
+						7324.01, 7325.01, 7326.01, 7327.01
 					]
 				},
 				"2e5899bb-60bb-43d0-8ce0-fd186d66b3fb": {
 					"core": [
-						7304.01,
-						7305.01,
-						7306.01,
-						7307.01,
-						7308.01,
-						7309.01,
-						7310.01,
+						7304.01, 7305.01, 7306.01, 7307.01, 7308.01, 7309.01, 7310.01,
 						7307.010000000001
 					],
 					"sub": [
-						7304.01,
-						7305.01,
-						7306.01,
-						7307.01,
-						7308.01,
-						7309.01,
-						7310.01,
-						7311.01,
-						7312.01,
-						7313.01,
-						7314.01,
-						7315.01,
-						7316.01,
-						7317.01,
-						7318.01,
-						7319.01,
-						7320.01,
-						7321.01,
-						7322.01,
-						7323.01,
-						7324.01,
-						7325.01,
-						7326.01,
-						7327.01,
-						7328.01
+						7304.01, 7305.01, 7306.01, 7307.01, 7308.01, 7309.01, 7310.01,
+						7311.01, 7312.01, 7313.01, 7314.01, 7315.01, 7316.01, 7317.01,
+						7318.01, 7319.01, 7320.01, 7321.01, 7322.01, 7323.01, 7324.01,
+						7325.01, 7326.01, 7327.01, 7328.01
 					]
 				},
 				"3a43d3d8-f078-43fd-b45c-ab2af7a0c283": {
 					"core": [
-						7305.01,
-						7306.01,
-						7307.01,
-						7308.01,
-						7309.01,
-						7310.01,
-						7311.01,
+						7305.01, 7306.01, 7307.01, 7308.01, 7309.01, 7310.01, 7311.01,
 						7308.010000000001
 					],
 					"sub": [
-						7305.01,
-						7306.01,
-						7307.01,
-						7308.01,
-						7309.01,
-						7310.01,
-						7311.01,
-						7312.01,
-						7313.01,
-						7314.01,
-						7315.01,
-						7316.01,
-						7317.01,
-						7318.01,
-						7319.01,
-						7320.01,
-						7321.01,
-						7322.01,
-						7323.01,
-						7324.01,
-						7325.01,
-						7326.01,
-						7327.01,
-						7328.01,
-						7329.01
+						7305.01, 7306.01, 7307.01, 7308.01, 7309.01, 7310.01, 7311.01,
+						7312.01, 7313.01, 7314.01, 7315.01, 7316.01, 7317.01, 7318.01,
+						7319.01, 7320.01, 7321.01, 7322.01, 7323.01, 7324.01, 7325.01,
+						7326.01, 7327.01, 7328.01, 7329.01
 					]
 				}
 			}
@@ -8997,19 +6440,11 @@
 		"id": "74443d95-8883-40ab-b4bd-8e7b184ebe54",
 		"name": "Claude-3.7-Sonnet",
 		"component": {
-			"language": [
-				"Claude-3.7-Sonnet"
-			]
+			"language": ["Claude-3.7-Sonnet"]
 		},
-		"author": [
-			"Anthropic"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"author": ["Anthropic"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://www.anthropic.com/news/claude-3-7-sonnet",
 		"navigation": true,
 		"taskPlanning": true,
@@ -9178,16 +6613,7 @@
 					]
 				},
 				"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-					"core": [
-						null,
-						null,
-						null,
-						10.82,
-						null,
-						null,
-						null,
-						10.82
-					],
+					"core": [null, null, null, 10.82, null, null, null, 10.82],
 					"sub": [
 						null,
 						null,
@@ -9256,16 +6682,7 @@
 					]
 				},
 				"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						63.33333,
-						63.33333
-					],
+					"core": [null, null, null, null, null, null, 63.33333, 63.33333],
 					"sub": [
 						null,
 						null,
@@ -9295,16 +6712,7 @@
 					]
 				},
 				"73de273a-7d38-40c0-b869-2b2e6156c897": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						48.7,
-						null,
-						48.7
-					],
+					"core": [null, null, null, null, null, 48.7, null, 48.7],
 					"sub": [
 						null,
 						null,
@@ -9334,16 +6742,7 @@
 					]
 				},
 				"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						5.1,
-						null,
-						5.1
-					],
+					"core": [null, null, null, null, null, 5.1, null, 5.1],
 					"sub": [
 						null,
 						null,
@@ -9373,16 +6772,7 @@
 					]
 				},
 				"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						6.7,
-						null,
-						6.7
-					],
+					"core": [null, null, null, null, null, 6.7, null, 6.7],
 					"sub": [
 						null,
 						null,
@@ -9412,16 +6802,7 @@
 					]
 				},
 				"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						12.27,
-						null,
-						null,
-						12.27
-					],
+					"core": [null, null, null, null, 12.27, null, null, 12.27],
 					"sub": [
 						null,
 						null,
@@ -9451,16 +6832,7 @@
 					]
 				},
 				"27e481d6-6057-49dc-ad80-529f9127245f": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						47.4,
-						47.4
-					],
+					"core": [null, null, null, null, null, null, 47.4, 47.4],
 					"sub": [
 						null,
 						null,
@@ -9490,16 +6862,7 @@
 					]
 				},
 				"089294d0-59db-47f0-a543-19d8e3708448": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						9.67,
-						null,
-						null,
-						9.67
-					],
+					"core": [null, null, null, null, 9.67, null, null, 9.67],
 					"sub": [
 						null,
 						null,
@@ -9532,158 +6895,50 @@
 			"summary": {
 				"d6ba913a-6e26-4dcc-b192-04b9bee6fd8e": {
 					"core": [
-						7402.01,
-						7403.01,
-						7404.01,
-						7405.01,
-						7406.01,
-						7407.01,
-						7408.01,
+						7402.01, 7403.01, 7404.01, 7405.01, 7406.01, 7407.01, 7408.01,
 						7405.010000000001
 					],
 					"sub": [
-						7402.01,
-						7403.01,
-						7404.01,
-						7405.01,
-						7406.01,
-						7407.01,
-						7408.01,
-						7409.01,
-						7410.01,
-						7411.01,
-						7412.01,
-						7413.01,
-						7414.01,
-						7415.01,
-						7416.01,
-						7417.01,
-						7418.01,
-						7419.01,
-						7420.01,
-						7421.01,
-						7422.01,
-						7423.01,
-						7424.01,
-						7425.01,
-						7426.01
+						7402.01, 7403.01, 7404.01, 7405.01, 7406.01, 7407.01, 7408.01,
+						7409.01, 7410.01, 7411.01, 7412.01, 7413.01, 7414.01, 7415.01,
+						7416.01, 7417.01, 7418.01, 7419.01, 7420.01, 7421.01, 7422.01,
+						7423.01, 7424.01, 7425.01, 7426.01
 					]
 				},
 				"22d6526a-6707-4a1e-ae3d-9c337feba2e8": {
 					"core": [
-						7403.01,
-						7404.01,
-						7405.01,
-						7406.01,
-						7407.01,
-						7408.01,
-						7409.01,
+						7403.01, 7404.01, 7405.01, 7406.01, 7407.01, 7408.01, 7409.01,
 						7406.010000000001
 					],
 					"sub": [
-						7403.01,
-						7404.01,
-						7405.01,
-						7406.01,
-						7407.01,
-						7408.01,
-						7409.01,
-						7410.01,
-						7411.01,
-						7412.01,
-						7413.01,
-						7414.01,
-						7415.01,
-						7416.01,
-						7417.01,
-						7418.01,
-						7419.01,
-						7420.01,
-						7421.01,
-						7422.01,
-						7423.01,
-						7424.01,
-						7425.01,
-						7426.01,
-						7427.01
+						7403.01, 7404.01, 7405.01, 7406.01, 7407.01, 7408.01, 7409.01,
+						7410.01, 7411.01, 7412.01, 7413.01, 7414.01, 7415.01, 7416.01,
+						7417.01, 7418.01, 7419.01, 7420.01, 7421.01, 7422.01, 7423.01,
+						7424.01, 7425.01, 7426.01, 7427.01
 					]
 				},
 				"2e5899bb-60bb-43d0-8ce0-fd186d66b3fb": {
 					"core": [
-						7404.01,
-						7405.01,
-						7406.01,
-						7407.01,
-						7408.01,
-						7409.01,
-						7410.01,
+						7404.01, 7405.01, 7406.01, 7407.01, 7408.01, 7409.01, 7410.01,
 						7407.010000000001
 					],
 					"sub": [
-						7404.01,
-						7405.01,
-						7406.01,
-						7407.01,
-						7408.01,
-						7409.01,
-						7410.01,
-						7411.01,
-						7412.01,
-						7413.01,
-						7414.01,
-						7415.01,
-						7416.01,
-						7417.01,
-						7418.01,
-						7419.01,
-						7420.01,
-						7421.01,
-						7422.01,
-						7423.01,
-						7424.01,
-						7425.01,
-						7426.01,
-						7427.01,
-						7428.01
+						7404.01, 7405.01, 7406.01, 7407.01, 7408.01, 7409.01, 7410.01,
+						7411.01, 7412.01, 7413.01, 7414.01, 7415.01, 7416.01, 7417.01,
+						7418.01, 7419.01, 7420.01, 7421.01, 7422.01, 7423.01, 7424.01,
+						7425.01, 7426.01, 7427.01, 7428.01
 					]
 				},
 				"3a43d3d8-f078-43fd-b45c-ab2af7a0c283": {
 					"core": [
-						7405.01,
-						7406.01,
-						7407.01,
-						7408.01,
-						7409.01,
-						7410.01,
-						7411.01,
+						7405.01, 7406.01, 7407.01, 7408.01, 7409.01, 7410.01, 7411.01,
 						7408.010000000001
 					],
 					"sub": [
-						7405.01,
-						7406.01,
-						7407.01,
-						7408.01,
-						7409.01,
-						7410.01,
-						7411.01,
-						7412.01,
-						7413.01,
-						7414.01,
-						7415.01,
-						7416.01,
-						7417.01,
-						7418.01,
-						7419.01,
-						7420.01,
-						7421.01,
-						7422.01,
-						7423.01,
-						7424.01,
-						7425.01,
-						7426.01,
-						7427.01,
-						7428.01,
-						7429.01
+						7405.01, 7406.01, 7407.01, 7408.01, 7409.01, 7410.01, 7411.01,
+						7412.01, 7413.01, 7414.01, 7415.01, 7416.01, 7417.01, 7418.01,
+						7419.01, 7420.01, 7421.01, 7422.01, 7423.01, 7424.01, 7425.01,
+						7426.01, 7427.01, 7428.01, 7429.01
 					]
 				}
 			}
@@ -9693,19 +6948,11 @@
 		"id": "a08eae18-626d-4e08-be33-ce74d006ed30",
 		"name": "Seed1.5-VL",
 		"component": {
-			"language": [
-				"Seed1.5-VL"
-			]
+			"language": ["Seed1.5-VL"]
 		},
-		"author": [
-			"ByteDance"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"author": ["ByteDance"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://github.com/ByteDance-Seed/Seed1.5-VL",
 		"navigation": true,
 		"taskPlanning": true,
@@ -9724,25 +6971,13 @@
 		"id": "b30fbf25-94f2-4c76-9780-7c65e4cd5afc",
 		"name": "InternVL3-8B",
 		"component": {
-			"vision": [
-				"InternViT-300M-448px-V2.5"
-			],
-			"language": [
-				"Qwen2.5-7B"
-			]
+			"vision": ["InternViT-300M-448px-V2.5"],
+			"language": ["Qwen2.5-7B"]
 		},
-		"size": [
-			8
-		],
-		"author": [
-			"Shanghai AI Lab"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [8],
+		"author": ["Shanghai AI Lab"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/OpenGVLab/InternVL3-8B",
 		"navigation": true,
 		"taskPlanning": true,
@@ -9911,16 +7146,7 @@
 					]
 				},
 				"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-					"core": [
-						null,
-						null,
-						null,
-						12.68,
-						null,
-						null,
-						null,
-						12.68
-					],
+					"core": [null, null, null, 12.68, null, null, null, 12.68],
 					"sub": [
 						null,
 						null,
@@ -9950,16 +7176,7 @@
 					]
 				},
 				"1961aa46-9085-42ed-b384-d9ffe52921a8": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						2,
-						2
-					],
+					"core": [null, null, null, null, null, null, 2, 2],
 					"sub": [
 						null,
 						null,
@@ -9989,16 +7206,7 @@
 					]
 				},
 				"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						20.83333,
-						20.83333
-					],
+					"core": [null, null, null, null, null, null, 20.83333, 20.83333],
 					"sub": [
 						null,
 						null,
@@ -10028,16 +7236,7 @@
 					]
 				},
 				"73de273a-7d38-40c0-b869-2b2e6156c897": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						29.3,
-						null,
-						29.3
-					],
+					"core": [null, null, null, null, null, 29.3, null, 29.3],
 					"sub": [
 						null,
 						null,
@@ -10067,16 +7266,7 @@
 					]
 				},
 				"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						22.41,
-						null,
-						null,
-						22.41
-					],
+					"core": [null, null, null, null, 22.41, null, null, 22.41],
 					"sub": [
 						null,
 						null,
@@ -10106,16 +7296,7 @@
 					]
 				},
 				"27e481d6-6057-49dc-ad80-529f9127245f": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						19.6,
-						19.6
-					],
+					"core": [null, null, null, null, null, null, 19.6, 19.6],
 					"sub": [
 						null,
 						null,
@@ -10145,16 +7326,7 @@
 					]
 				},
 				"089294d0-59db-47f0-a543-19d8e3708448": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						11.33,
-						null,
-						null,
-						11.33
-					],
+					"core": [null, null, null, null, 11.33, null, null, 11.33],
 					"sub": [
 						null,
 						null,
@@ -10184,16 +7356,7 @@
 					]
 				},
 				"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						3.3,
-						null,
-						3.3
-					],
+					"core": [null, null, null, null, null, 3.3, null, 3.3],
 					"sub": [
 						null,
 						null,
@@ -10223,16 +7386,7 @@
 					]
 				},
 				"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						4,
-						null,
-						4
-					],
+					"core": [null, null, null, null, null, 4, null, 4],
 					"sub": [
 						null,
 						null,
@@ -10265,158 +7419,50 @@
 			"summary": {
 				"d6ba913a-6e26-4dcc-b192-04b9bee6fd8e": {
 					"core": [
-						7602.01,
-						7603.01,
-						7604.01,
-						7605.01,
-						7606.01,
-						7607.01,
-						7608.01,
+						7602.01, 7603.01, 7604.01, 7605.01, 7606.01, 7607.01, 7608.01,
 						7605.010000000001
 					],
 					"sub": [
-						7602.01,
-						7603.01,
-						7604.01,
-						7605.01,
-						7606.01,
-						7607.01,
-						7608.01,
-						7609.01,
-						7610.01,
-						7611.01,
-						7612.01,
-						7613.01,
-						7614.01,
-						7615.01,
-						7616.01,
-						7617.01,
-						7618.01,
-						7619.01,
-						7620.01,
-						7621.01,
-						7622.01,
-						7623.01,
-						7624.01,
-						7625.01,
-						7626.01
+						7602.01, 7603.01, 7604.01, 7605.01, 7606.01, 7607.01, 7608.01,
+						7609.01, 7610.01, 7611.01, 7612.01, 7613.01, 7614.01, 7615.01,
+						7616.01, 7617.01, 7618.01, 7619.01, 7620.01, 7621.01, 7622.01,
+						7623.01, 7624.01, 7625.01, 7626.01
 					]
 				},
 				"22d6526a-6707-4a1e-ae3d-9c337feba2e8": {
 					"core": [
-						7603.01,
-						7604.01,
-						7605.01,
-						7606.01,
-						7607.01,
-						7608.01,
-						7609.01,
+						7603.01, 7604.01, 7605.01, 7606.01, 7607.01, 7608.01, 7609.01,
 						7606.010000000001
 					],
 					"sub": [
-						7603.01,
-						7604.01,
-						7605.01,
-						7606.01,
-						7607.01,
-						7608.01,
-						7609.01,
-						7610.01,
-						7611.01,
-						7612.01,
-						7613.01,
-						7614.01,
-						7615.01,
-						7616.01,
-						7617.01,
-						7618.01,
-						7619.01,
-						7620.01,
-						7621.01,
-						7622.01,
-						7623.01,
-						7624.01,
-						7625.01,
-						7626.01,
-						7627.01
+						7603.01, 7604.01, 7605.01, 7606.01, 7607.01, 7608.01, 7609.01,
+						7610.01, 7611.01, 7612.01, 7613.01, 7614.01, 7615.01, 7616.01,
+						7617.01, 7618.01, 7619.01, 7620.01, 7621.01, 7622.01, 7623.01,
+						7624.01, 7625.01, 7626.01, 7627.01
 					]
 				},
 				"2e5899bb-60bb-43d0-8ce0-fd186d66b3fb": {
 					"core": [
-						7604.01,
-						7605.01,
-						7606.01,
-						7607.01,
-						7608.01,
-						7609.01,
-						7610.01,
+						7604.01, 7605.01, 7606.01, 7607.01, 7608.01, 7609.01, 7610.01,
 						7607.010000000001
 					],
 					"sub": [
-						7604.01,
-						7605.01,
-						7606.01,
-						7607.01,
-						7608.01,
-						7609.01,
-						7610.01,
-						7611.01,
-						7612.01,
-						7613.01,
-						7614.01,
-						7615.01,
-						7616.01,
-						7617.01,
-						7618.01,
-						7619.01,
-						7620.01,
-						7621.01,
-						7622.01,
-						7623.01,
-						7624.01,
-						7625.01,
-						7626.01,
-						7627.01,
-						7628.01
+						7604.01, 7605.01, 7606.01, 7607.01, 7608.01, 7609.01, 7610.01,
+						7611.01, 7612.01, 7613.01, 7614.01, 7615.01, 7616.01, 7617.01,
+						7618.01, 7619.01, 7620.01, 7621.01, 7622.01, 7623.01, 7624.01,
+						7625.01, 7626.01, 7627.01, 7628.01
 					]
 				},
 				"3a43d3d8-f078-43fd-b45c-ab2af7a0c283": {
 					"core": [
-						7605.01,
-						7606.01,
-						7607.01,
-						7608.01,
-						7609.01,
-						7610.01,
-						7611.01,
+						7605.01, 7606.01, 7607.01, 7608.01, 7609.01, 7610.01, 7611.01,
 						7608.010000000001
 					],
 					"sub": [
-						7605.01,
-						7606.01,
-						7607.01,
-						7608.01,
-						7609.01,
-						7610.01,
-						7611.01,
-						7612.01,
-						7613.01,
-						7614.01,
-						7615.01,
-						7616.01,
-						7617.01,
-						7618.01,
-						7619.01,
-						7620.01,
-						7621.01,
-						7622.01,
-						7623.01,
-						7624.01,
-						7625.01,
-						7626.01,
-						7627.01,
-						7628.01,
-						7629.01
+						7605.01, 7606.01, 7607.01, 7608.01, 7609.01, 7610.01, 7611.01,
+						7612.01, 7613.01, 7614.01, 7615.01, 7616.01, 7617.01, 7618.01,
+						7619.01, 7620.01, 7621.01, 7622.01, 7623.01, 7624.01, 7625.01,
+						7626.01, 7627.01, 7628.01, 7629.01
 					]
 				}
 			}
@@ -10426,25 +7472,13 @@
 		"id": "75789724-6a39-462a-8974-e2d43d51cfc9",
 		"name": "InternVL3-14B",
 		"component": {
-			"vision": [
-				"InternViT-300M-448px-V2.5"
-			],
-			"language": [
-				"Qwen2.5-14B"
-			]
+			"vision": ["InternViT-300M-448px-V2.5"],
+			"language": ["Qwen2.5-14B"]
 		},
-		"size": [
-			14
-		],
-		"author": [
-			"Shanghai AI Lab"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [14],
+		"author": ["Shanghai AI Lab"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/OpenGVLab/InternVL3-14B",
 		"navigation": true,
 		"taskPlanning": true,
@@ -10613,16 +7647,7 @@
 					]
 				},
 				"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-					"core": [
-						null,
-						null,
-						null,
-						16.56,
-						null,
-						null,
-						null,
-						16.56
-					],
+					"core": [null, null, null, 16.56, null, null, null, 16.56],
 					"sub": [
 						null,
 						null,
@@ -10691,16 +7716,7 @@
 					]
 				},
 				"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						24.91667,
-						24.91667
-					],
+					"core": [null, null, null, null, null, null, 24.91667, 24.91667],
 					"sub": [
 						null,
 						null,
@@ -10730,16 +7746,7 @@
 					]
 				},
 				"73de273a-7d38-40c0-b869-2b2e6156c897": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						33.8,
-						null,
-						33.8
-					],
+					"core": [null, null, null, null, null, 33.8, null, 33.8],
 					"sub": [
 						null,
 						null,
@@ -10769,16 +7776,7 @@
 					]
 				},
 				"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						22.3,
-						null,
-						null,
-						22.3
-					],
+					"core": [null, null, null, null, 22.3, null, null, 22.3],
 					"sub": [
 						null,
 						null,
@@ -10808,16 +7806,7 @@
 					]
 				},
 				"27e481d6-6057-49dc-ad80-529f9127245f": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						22.5,
-						22.5
-					],
+					"core": [null, null, null, null, null, null, 22.5, 22.5],
 					"sub": [
 						null,
 						null,
@@ -10847,16 +7836,7 @@
 					]
 				},
 				"089294d0-59db-47f0-a543-19d8e3708448": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						10,
-						null,
-						null,
-						10
-					],
+					"core": [null, null, null, null, 10, null, null, 10],
 					"sub": [
 						null,
 						null,
@@ -10886,16 +7866,7 @@
 					]
 				},
 				"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						6.7,
-						null,
-						6.7
-					],
+					"core": [null, null, null, null, null, 6.7, null, 6.7],
 					"sub": [
 						null,
 						null,
@@ -10925,16 +7896,7 @@
 					]
 				},
 				"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						5.1,
-						null,
-						5.1
-					],
+					"core": [null, null, null, null, null, 5.1, null, 5.1],
 					"sub": [
 						null,
 						null,
@@ -10967,158 +7929,50 @@
 			"summary": {
 				"d6ba913a-6e26-4dcc-b192-04b9bee6fd8e": {
 					"core": [
-						7702.01,
-						7703.01,
-						7704.01,
-						7705.01,
-						7706.01,
-						7707.01,
-						7708.01,
+						7702.01, 7703.01, 7704.01, 7705.01, 7706.01, 7707.01, 7708.01,
 						7705.010000000001
 					],
 					"sub": [
-						7702.01,
-						7703.01,
-						7704.01,
-						7705.01,
-						7706.01,
-						7707.01,
-						7708.01,
-						7709.01,
-						7710.01,
-						7711.01,
-						7712.01,
-						7713.01,
-						7714.01,
-						7715.01,
-						7716.01,
-						7717.01,
-						7718.01,
-						7719.01,
-						7720.01,
-						7721.01,
-						7722.01,
-						7723.01,
-						7724.01,
-						7725.01,
-						7726.01
+						7702.01, 7703.01, 7704.01, 7705.01, 7706.01, 7707.01, 7708.01,
+						7709.01, 7710.01, 7711.01, 7712.01, 7713.01, 7714.01, 7715.01,
+						7716.01, 7717.01, 7718.01, 7719.01, 7720.01, 7721.01, 7722.01,
+						7723.01, 7724.01, 7725.01, 7726.01
 					]
 				},
 				"22d6526a-6707-4a1e-ae3d-9c337feba2e8": {
 					"core": [
-						7703.01,
-						7704.01,
-						7705.01,
-						7706.01,
-						7707.01,
-						7708.01,
-						7709.01,
+						7703.01, 7704.01, 7705.01, 7706.01, 7707.01, 7708.01, 7709.01,
 						7706.010000000001
 					],
 					"sub": [
-						7703.01,
-						7704.01,
-						7705.01,
-						7706.01,
-						7707.01,
-						7708.01,
-						7709.01,
-						7710.01,
-						7711.01,
-						7712.01,
-						7713.01,
-						7714.01,
-						7715.01,
-						7716.01,
-						7717.01,
-						7718.01,
-						7719.01,
-						7720.01,
-						7721.01,
-						7722.01,
-						7723.01,
-						7724.01,
-						7725.01,
-						7726.01,
-						7727.01
+						7703.01, 7704.01, 7705.01, 7706.01, 7707.01, 7708.01, 7709.01,
+						7710.01, 7711.01, 7712.01, 7713.01, 7714.01, 7715.01, 7716.01,
+						7717.01, 7718.01, 7719.01, 7720.01, 7721.01, 7722.01, 7723.01,
+						7724.01, 7725.01, 7726.01, 7727.01
 					]
 				},
 				"2e5899bb-60bb-43d0-8ce0-fd186d66b3fb": {
 					"core": [
-						7704.01,
-						7705.01,
-						7706.01,
-						7707.01,
-						7708.01,
-						7709.01,
-						7710.01,
+						7704.01, 7705.01, 7706.01, 7707.01, 7708.01, 7709.01, 7710.01,
 						7707.010000000001
 					],
 					"sub": [
-						7704.01,
-						7705.01,
-						7706.01,
-						7707.01,
-						7708.01,
-						7709.01,
-						7710.01,
-						7711.01,
-						7712.01,
-						7713.01,
-						7714.01,
-						7715.01,
-						7716.01,
-						7717.01,
-						7718.01,
-						7719.01,
-						7720.01,
-						7721.01,
-						7722.01,
-						7723.01,
-						7724.01,
-						7725.01,
-						7726.01,
-						7727.01,
-						7728.01
+						7704.01, 7705.01, 7706.01, 7707.01, 7708.01, 7709.01, 7710.01,
+						7711.01, 7712.01, 7713.01, 7714.01, 7715.01, 7716.01, 7717.01,
+						7718.01, 7719.01, 7720.01, 7721.01, 7722.01, 7723.01, 7724.01,
+						7725.01, 7726.01, 7727.01, 7728.01
 					]
 				},
 				"3a43d3d8-f078-43fd-b45c-ab2af7a0c283": {
 					"core": [
-						7705.01,
-						7706.01,
-						7707.01,
-						7708.01,
-						7709.01,
-						7710.01,
-						7711.01,
+						7705.01, 7706.01, 7707.01, 7708.01, 7709.01, 7710.01, 7711.01,
 						7708.010000000001
 					],
 					"sub": [
-						7705.01,
-						7706.01,
-						7707.01,
-						7708.01,
-						7709.01,
-						7710.01,
-						7711.01,
-						7712.01,
-						7713.01,
-						7714.01,
-						7715.01,
-						7716.01,
-						7717.01,
-						7718.01,
-						7719.01,
-						7720.01,
-						7721.01,
-						7722.01,
-						7723.01,
-						7724.01,
-						7725.01,
-						7726.01,
-						7727.01,
-						7728.01,
-						7729.01
+						7705.01, 7706.01, 7707.01, 7708.01, 7709.01, 7710.01, 7711.01,
+						7712.01, 7713.01, 7714.01, 7715.01, 7716.01, 7717.01, 7718.01,
+						7719.01, 7720.01, 7721.01, 7722.01, 7723.01, 7724.01, 7725.01,
+						7726.01, 7727.01, 7728.01, 7729.01
 					]
 				}
 			}
@@ -11128,25 +7982,13 @@
 		"id": "dea72f07-4d45-49bf-bfa6-09c7d328246d",
 		"name": "InternVL3-38B",
 		"component": {
-			"vision": [
-				"InternViT-6B-448px-V2.5"
-			],
-			"language": [
-				"Qwen2.5-32B"
-			]
+			"vision": ["InternViT-6B-448px-V2.5"],
+			"language": ["Qwen2.5-32B"]
 		},
-		"size": [
-			38
-		],
-		"author": [
-			"Shanghai AI Lab"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [38],
+		"author": ["Shanghai AI Lab"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/OpenGVLab/InternVL3-38B",
 		"navigation": true,
 		"taskPlanning": true,
@@ -11276,16 +8118,7 @@
 					]
 				},
 				"5df5ca38-7ca9-4d35-81c6-3dfe52700755": {
-					"core": [
-						53.395,
-						29.73,
-						null,
-						null,
-						46.04333,
-						null,
-						null,
-						43.05611
-					],
+					"core": [53.395, 29.73, null, null, 46.04333, null, null, 43.05611],
 					"sub": [
 						55.88,
 						null,
@@ -11315,16 +8148,7 @@
 					]
 				},
 				"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-					"core": [
-						null,
-						null,
-						null,
-						20.14,
-						null,
-						null,
-						null,
-						20.14
-					],
+					"core": [null, null, null, 20.14, null, null, null, 20.14],
 					"sub": [
 						null,
 						null,
@@ -11393,16 +8217,7 @@
 					]
 				},
 				"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						37.66667,
-						37.66667
-					],
+					"core": [null, null, null, null, null, null, 37.66667, 37.66667],
 					"sub": [
 						null,
 						null,
@@ -11432,16 +8247,7 @@
 					]
 				},
 				"73de273a-7d38-40c0-b869-2b2e6156c897": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						50.7,
-						null,
-						50.7
-					],
+					"core": [null, null, null, null, null, 50.7, null, 50.7],
 					"sub": [
 						null,
 						null,
@@ -11471,16 +8277,7 @@
 					]
 				},
 				"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						14.53,
-						null,
-						null,
-						14.53
-					],
+					"core": [null, null, null, null, 14.53, null, null, 14.53],
 					"sub": [
 						null,
 						null,
@@ -11510,16 +8307,7 @@
 					]
 				},
 				"27e481d6-6057-49dc-ad80-529f9127245f": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						26.1,
-						26.1
-					],
+					"core": [null, null, null, null, null, null, 26.1, 26.1],
 					"sub": [
 						null,
 						null,
@@ -11549,16 +8337,7 @@
 					]
 				},
 				"089294d0-59db-47f0-a543-19d8e3708448": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						19.33,
-						null,
-						null,
-						19.33
-					],
+					"core": [null, null, null, null, 19.33, null, null, 19.33],
 					"sub": [
 						null,
 						null,
@@ -11588,16 +8367,7 @@
 					]
 				},
 				"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						3.3,
-						null,
-						3.3
-					],
+					"core": [null, null, null, null, null, 3.3, null, 3.3],
 					"sub": [
 						null,
 						null,
@@ -11627,16 +8397,7 @@
 					]
 				},
 				"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						4,
-						null,
-						4
-					],
+					"core": [null, null, null, null, null, 4, null, 4],
 					"sub": [
 						null,
 						null,
@@ -11669,158 +8430,50 @@
 			"summary": {
 				"d6ba913a-6e26-4dcc-b192-04b9bee6fd8e": {
 					"core": [
-						7802.01,
-						7803.01,
-						7804.01,
-						7805.01,
-						7806.01,
-						7807.01,
-						7808.01,
+						7802.01, 7803.01, 7804.01, 7805.01, 7806.01, 7807.01, 7808.01,
 						7805.010000000001
 					],
 					"sub": [
-						7802.01,
-						7803.01,
-						7804.01,
-						7805.01,
-						7806.01,
-						7807.01,
-						7808.01,
-						7809.01,
-						7810.01,
-						7811.01,
-						7812.01,
-						7813.01,
-						7814.01,
-						7815.01,
-						7816.01,
-						7817.01,
-						7818.01,
-						7819.01,
-						7820.01,
-						7821.01,
-						7822.01,
-						7823.01,
-						7824.01,
-						7825.01,
-						7826.01
+						7802.01, 7803.01, 7804.01, 7805.01, 7806.01, 7807.01, 7808.01,
+						7809.01, 7810.01, 7811.01, 7812.01, 7813.01, 7814.01, 7815.01,
+						7816.01, 7817.01, 7818.01, 7819.01, 7820.01, 7821.01, 7822.01,
+						7823.01, 7824.01, 7825.01, 7826.01
 					]
 				},
 				"22d6526a-6707-4a1e-ae3d-9c337feba2e8": {
 					"core": [
-						7803.01,
-						7804.01,
-						7805.01,
-						7806.01,
-						7807.01,
-						7808.01,
-						7809.01,
+						7803.01, 7804.01, 7805.01, 7806.01, 7807.01, 7808.01, 7809.01,
 						7806.010000000001
 					],
 					"sub": [
-						7803.01,
-						7804.01,
-						7805.01,
-						7806.01,
-						7807.01,
-						7808.01,
-						7809.01,
-						7810.01,
-						7811.01,
-						7812.01,
-						7813.01,
-						7814.01,
-						7815.01,
-						7816.01,
-						7817.01,
-						7818.01,
-						7819.01,
-						7820.01,
-						7821.01,
-						7822.01,
-						7823.01,
-						7824.01,
-						7825.01,
-						7826.01,
-						7827.01
+						7803.01, 7804.01, 7805.01, 7806.01, 7807.01, 7808.01, 7809.01,
+						7810.01, 7811.01, 7812.01, 7813.01, 7814.01, 7815.01, 7816.01,
+						7817.01, 7818.01, 7819.01, 7820.01, 7821.01, 7822.01, 7823.01,
+						7824.01, 7825.01, 7826.01, 7827.01
 					]
 				},
 				"2e5899bb-60bb-43d0-8ce0-fd186d66b3fb": {
 					"core": [
-						7804.01,
-						7805.01,
-						7806.01,
-						7807.01,
-						7808.01,
-						7809.01,
-						7810.01,
+						7804.01, 7805.01, 7806.01, 7807.01, 7808.01, 7809.01, 7810.01,
 						7807.010000000001
 					],
 					"sub": [
-						7804.01,
-						7805.01,
-						7806.01,
-						7807.01,
-						7808.01,
-						7809.01,
-						7810.01,
-						7811.01,
-						7812.01,
-						7813.01,
-						7814.01,
-						7815.01,
-						7816.01,
-						7817.01,
-						7818.01,
-						7819.01,
-						7820.01,
-						7821.01,
-						7822.01,
-						7823.01,
-						7824.01,
-						7825.01,
-						7826.01,
-						7827.01,
-						7828.01
+						7804.01, 7805.01, 7806.01, 7807.01, 7808.01, 7809.01, 7810.01,
+						7811.01, 7812.01, 7813.01, 7814.01, 7815.01, 7816.01, 7817.01,
+						7818.01, 7819.01, 7820.01, 7821.01, 7822.01, 7823.01, 7824.01,
+						7825.01, 7826.01, 7827.01, 7828.01
 					]
 				},
 				"3a43d3d8-f078-43fd-b45c-ab2af7a0c283": {
 					"core": [
-						7805.01,
-						7806.01,
-						7807.01,
-						7808.01,
-						7809.01,
-						7810.01,
-						7811.01,
+						7805.01, 7806.01, 7807.01, 7808.01, 7809.01, 7810.01, 7811.01,
 						7808.010000000001
 					],
 					"sub": [
-						7805.01,
-						7806.01,
-						7807.01,
-						7808.01,
-						7809.01,
-						7810.01,
-						7811.01,
-						7812.01,
-						7813.01,
-						7814.01,
-						7815.01,
-						7816.01,
-						7817.01,
-						7818.01,
-						7819.01,
-						7820.01,
-						7821.01,
-						7822.01,
-						7823.01,
-						7824.01,
-						7825.01,
-						7826.01,
-						7827.01,
-						7828.01,
-						7829.01
+						7805.01, 7806.01, 7807.01, 7808.01, 7809.01, 7810.01, 7811.01,
+						7812.01, 7813.01, 7814.01, 7815.01, 7816.01, 7817.01, 7818.01,
+						7819.01, 7820.01, 7821.01, 7822.01, 7823.01, 7824.01, 7825.01,
+						7826.01, 7827.01, 7828.01, 7829.01
 					]
 				}
 			}
@@ -11830,25 +8483,13 @@
 		"id": "eec95564-4fec-4a35-804d-884bad73d16f",
 		"name": "InternVL3-78B",
 		"component": {
-			"vision": [
-				"InternViT-6B-448px-V2.5"
-			],
-			"language": [
-				"Qwen2.5-72B"
-			]
+			"vision": ["InternViT-6B-448px-V2.5"],
+			"language": ["Qwen2.5-72B"]
 		},
-		"size": [
-			78
-		],
-		"author": [
-			"Shanghai AI Lab"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [78],
+		"author": ["Shanghai AI Lab"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/OpenGVLab/InternVL3-78B",
 		"navigation": true,
 		"taskPlanning": true,
@@ -11867,25 +8508,13 @@
 		"id": "ec713a22-e012-4acb-8567-c7bbff7c70a2",
 		"name": "VILA-1.5-13B",
 		"component": {
-			"vision": [
-				"SigLIP"
-			],
-			"language": [
-				"Qwen2"
-			]
+			"vision": ["SigLIP"],
+			"language": ["Qwen2"]
 		},
-		"size": [
-			13
-		],
-		"author": [
-			"NVIDIA"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [13],
+		"author": ["NVIDIA"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/Efficient-Large-Model/VILA1.5-13b",
 		"navigation": true,
 		"taskPlanning": true,
@@ -12054,16 +8683,7 @@
 					]
 				},
 				"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-					"core": [
-						null,
-						null,
-						null,
-						13.36,
-						null,
-						null,
-						null,
-						13.36
-					],
+					"core": [null, null, null, 13.36, null, null, null, 13.36],
 					"sub": [
 						null,
 						null,
@@ -12132,16 +8752,7 @@
 					]
 				},
 				"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						9.75,
-						9.75
-					],
+					"core": [null, null, null, null, null, null, 9.75, 9.75],
 					"sub": [
 						null,
 						null,
@@ -12171,16 +8782,7 @@
 					]
 				},
 				"73de273a-7d38-40c0-b869-2b2e6156c897": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						11.4,
-						null,
-						11.4
-					],
+					"core": [null, null, null, null, null, 11.4, null, 11.4],
 					"sub": [
 						null,
 						null,
@@ -12210,16 +8812,7 @@
 					]
 				},
 				"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						16.315,
-						null,
-						null,
-						16.315
-					],
+					"core": [null, null, null, null, 16.315, null, null, 16.315],
 					"sub": [
 						null,
 						null,
@@ -12249,16 +8842,7 @@
 					]
 				},
 				"27e481d6-6057-49dc-ad80-529f9127245f": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						21.7,
-						21.7
-					],
+					"core": [null, null, null, null, null, null, 21.7, 21.7],
 					"sub": [
 						null,
 						null,
@@ -12288,16 +8872,7 @@
 					]
 				},
 				"089294d0-59db-47f0-a543-19d8e3708448": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						8.66,
-						null,
-						null,
-						8.66
-					],
+					"core": [null, null, null, null, 8.66, null, null, 8.66],
 					"sub": [
 						null,
 						null,
@@ -12327,16 +8902,7 @@
 					]
 				},
 				"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						0,
-						null,
-						0
-					],
+					"core": [null, null, null, null, null, 0, null, 0],
 					"sub": [
 						null,
 						null,
@@ -12366,16 +8932,7 @@
 					]
 				},
 				"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						1,
-						null,
-						1
-					],
+					"core": [null, null, null, null, null, 1, null, 1],
 					"sub": [
 						null,
 						null,
@@ -12408,158 +8965,50 @@
 			"summary": {
 				"d6ba913a-6e26-4dcc-b192-04b9bee6fd8e": {
 					"core": [
-						8002.01,
-						8003.01,
-						8004.01,
-						8005.01,
-						8006.01,
-						8007.01,
-						8008.01,
+						8002.01, 8003.01, 8004.01, 8005.01, 8006.01, 8007.01, 8008.01,
 						8005.010000000001
 					],
 					"sub": [
-						8002.01,
-						8003.01,
-						8004.01,
-						8005.01,
-						8006.01,
-						8007.01,
-						8008.01,
-						8009.01,
-						8010.01,
-						8011.01,
-						8012.01,
-						8013.01,
-						8014.01,
-						8015.01,
-						8016.01,
-						8017.01,
-						8018.01,
-						8019.01,
-						8020.01,
-						8021.01,
-						8022.01,
-						8023.01,
-						8024.01,
-						8025.01,
-						8026.01
+						8002.01, 8003.01, 8004.01, 8005.01, 8006.01, 8007.01, 8008.01,
+						8009.01, 8010.01, 8011.01, 8012.01, 8013.01, 8014.01, 8015.01,
+						8016.01, 8017.01, 8018.01, 8019.01, 8020.01, 8021.01, 8022.01,
+						8023.01, 8024.01, 8025.01, 8026.01
 					]
 				},
 				"22d6526a-6707-4a1e-ae3d-9c337feba2e8": {
 					"core": [
-						8003.01,
-						8004.01,
-						8005.01,
-						8006.01,
-						8007.01,
-						8008.01,
-						8009.01,
+						8003.01, 8004.01, 8005.01, 8006.01, 8007.01, 8008.01, 8009.01,
 						8006.010000000001
 					],
 					"sub": [
-						8003.01,
-						8004.01,
-						8005.01,
-						8006.01,
-						8007.01,
-						8008.01,
-						8009.01,
-						8010.01,
-						8011.01,
-						8012.01,
-						8013.01,
-						8014.01,
-						8015.01,
-						8016.01,
-						8017.01,
-						8018.01,
-						8019.01,
-						8020.01,
-						8021.01,
-						8022.01,
-						8023.01,
-						8024.01,
-						8025.01,
-						8026.01,
-						8027.01
+						8003.01, 8004.01, 8005.01, 8006.01, 8007.01, 8008.01, 8009.01,
+						8010.01, 8011.01, 8012.01, 8013.01, 8014.01, 8015.01, 8016.01,
+						8017.01, 8018.01, 8019.01, 8020.01, 8021.01, 8022.01, 8023.01,
+						8024.01, 8025.01, 8026.01, 8027.01
 					]
 				},
 				"2e5899bb-60bb-43d0-8ce0-fd186d66b3fb": {
 					"core": [
-						8004.01,
-						8005.01,
-						8006.01,
-						8007.01,
-						8008.01,
-						8009.01,
-						8010.01,
+						8004.01, 8005.01, 8006.01, 8007.01, 8008.01, 8009.01, 8010.01,
 						8007.010000000001
 					],
 					"sub": [
-						8004.01,
-						8005.01,
-						8006.01,
-						8007.01,
-						8008.01,
-						8009.01,
-						8010.01,
-						8011.01,
-						8012.01,
-						8013.01,
-						8014.01,
-						8015.01,
-						8016.01,
-						8017.01,
-						8018.01,
-						8019.01,
-						8020.01,
-						8021.01,
-						8022.01,
-						8023.01,
-						8024.01,
-						8025.01,
-						8026.01,
-						8027.01,
-						8028.01
+						8004.01, 8005.01, 8006.01, 8007.01, 8008.01, 8009.01, 8010.01,
+						8011.01, 8012.01, 8013.01, 8014.01, 8015.01, 8016.01, 8017.01,
+						8018.01, 8019.01, 8020.01, 8021.01, 8022.01, 8023.01, 8024.01,
+						8025.01, 8026.01, 8027.01, 8028.01
 					]
 				},
 				"3a43d3d8-f078-43fd-b45c-ab2af7a0c283": {
 					"core": [
-						8005.01,
-						8006.01,
-						8007.01,
-						8008.01,
-						8009.01,
-						8010.01,
-						8011.01,
+						8005.01, 8006.01, 8007.01, 8008.01, 8009.01, 8010.01, 8011.01,
 						8008.010000000001
 					],
 					"sub": [
-						8005.01,
-						8006.01,
-						8007.01,
-						8008.01,
-						8009.01,
-						8010.01,
-						8011.01,
-						8012.01,
-						8013.01,
-						8014.01,
-						8015.01,
-						8016.01,
-						8017.01,
-						8018.01,
-						8019.01,
-						8020.01,
-						8021.01,
-						8022.01,
-						8023.01,
-						8024.01,
-						8025.01,
-						8026.01,
-						8027.01,
-						8028.01,
-						8029.01
+						8005.01, 8006.01, 8007.01, 8008.01, 8009.01, 8010.01, 8011.01,
+						8012.01, 8013.01, 8014.01, 8015.01, 8016.01, 8017.01, 8018.01,
+						8019.01, 8020.01, 8021.01, 8022.01, 8023.01, 8024.01, 8025.01,
+						8026.01, 8027.01, 8028.01, 8029.01
 					]
 				}
 			}
@@ -12569,25 +9018,13 @@
 		"id": "66e0e288-d20d-4c78-890e-3bd68aa931dc",
 		"name": "Video-3D LLM",
 		"component": {
-			"vision": [
-				"ViT"
-			],
-			"language": [
-				"LLaVA-Video-7B"
-			]
+			"vision": ["ViT"],
+			"language": ["LLaVA-Video-7B"]
 		},
-		"size": [
-			8
-		],
-		"author": [
-			"Chinese University of Hong Kong"
-		],
-		"qa": [
-			"3D"
-		],
-		"dimension": [
-			"3D"
-		],
+		"size": [8],
+		"author": ["Chinese University of Hong Kong"],
+		"qa": ["3D"],
+		"dimension": ["3D"],
 		"website": "https://huggingface.co/ChaimZhu/LLaVA-3D-7B",
 		"navigation": false,
 		"taskPlanning": false,
@@ -12606,25 +9043,13 @@
 		"id": "4c367bb5-77bf-48b5-9ada-2fcde4729c81",
 		"name": "GPT4Scene",
 		"component": {
-			"vision": [
-				"Qwen2-VL-7B"
-			],
-			"language": [
-				"Qwen2-VL-7B"
-			]
+			"vision": ["Qwen2-VL-7B"],
+			"language": ["Qwen2-VL-7B"]
 		},
-		"size": [
-			8
-		],
-		"author": [
-			"Shanghai AI Lab"
-		],
-		"qa": [
-			"3D"
-		],
-		"dimension": [
-			"3D"
-		],
+		"size": [8],
+		"author": ["Shanghai AI Lab"],
+		"qa": ["3D"],
+		"dimension": ["3D"],
 		"website": "https://github.com/Qi-Zhangyang/gpt4scene",
 		"navigation": false,
 		"taskPlanning": false,
@@ -12643,28 +9068,13 @@
 		"id": "f33d8c23-d728-477e-9088-5f3a02175043",
 		"name": "3DMIT",
 		"component": {
-			"vision": [
-				"EPCL",
-				"Ulip2",
-				"Uni3D"
-			],
-			"language": [
-				"Vicuna-7B",
-				"LLaVA1.5-7B"
-			]
+			"vision": ["EPCL", "Ulip2", "Uni3D"],
+			"language": ["Vicuna-7B", "LLaVA1.5-7B"]
 		},
-		"size": [
-			7
-		],
-		"author": [
-			"Beijing University of Posts and Telecommunications"
-		],
-		"qa": [
-			"3D"
-		],
-		"dimension": [
-			"3D"
-		],
+		"size": [7],
+		"author": ["Beijing University of Posts and Telecommunications"],
+		"qa": ["3D"],
+		"dimension": ["3D"],
 		"website": "https://github.com/staymylove/3DMIT",
 		"navigation": false,
 		"taskPlanning": false,
@@ -12682,9 +9092,7 @@
 	{
 		"id": "00568adc-d3fc-49ec-ab1c-b5a560c6149d",
 		"name": "3D-LLM",
-		"qa": [
-			"3D"
-		],
+		"qa": ["3D"],
 		"website": "https://github.com/UMass-Embodied-AGI/3D-LLM",
 		"navigation": false,
 		"taskPlanning": false,
@@ -12703,26 +9111,13 @@
 		"id": "85d29904-6b52-4091-97a4-8b1dba40f55f",
 		"name": "PhysVLM",
 		"component": {
-			"vision": [
-				"SigLip-400M model"
-			],
-			"language": [
-				"Qwen-2.5-Instruct-3B"
-			]
+			"vision": ["SigLip-400M model"],
+			"language": ["Qwen-2.5-Instruct-3B"]
 		},
-		"size": [
-			3
-		],
-		"author": [
-			"Beijing Jiaotong University"
-		],
-		"qa": [
-			"2D",
-			"3D"
-		],
-		"dimension": [
-			"3D"
-		],
+		"size": [3],
+		"author": ["Beijing Jiaotong University"],
+		"qa": ["2D", "3D"],
+		"dimension": ["3D"],
 		"website": "https://github.com/unira-zwj/PhysVLM",
 		"navigation": true,
 		"taskPlanning": true,
@@ -12741,25 +9136,13 @@
 		"id": "a72406cc-1374-4992-ad62-b052f23908f8",
 		"name": "RoboBrain",
 		"component": {
-			"vision": [
-				"SigLIP"
-			],
-			"language": [
-				"Qwen2.5-7B-Instruct"
-			]
+			"vision": ["SigLIP"],
+			"language": ["Qwen2.5-7B-Instruct"]
 		},
-		"size": [
-			7
-		],
-		"author": [
-			"Peking University"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [7],
+		"author": ["Peking University"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://github.com/FlagOpen/RoboBrain",
 		"navigation": true,
 		"taskPlanning": true,
@@ -12889,16 +9272,7 @@
 					]
 				},
 				"5df5ca38-7ca9-4d35-81c6-3dfe52700755": {
-					"core": [
-						46.605,
-						24.32,
-						null,
-						null,
-						38.31667,
-						null,
-						null,
-						36.41389
-					],
+					"core": [46.605, 24.32, null, null, 38.31667, null, null, 36.41389],
 					"sub": [
 						44.12,
 						null,
@@ -12928,16 +9302,7 @@
 					]
 				},
 				"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-					"core": [
-						null,
-						null,
-						null,
-						9.19,
-						null,
-						null,
-						null,
-						9.19
-					],
+					"core": [null, null, null, 9.19, null, null, null, 9.19],
 					"sub": [
 						null,
 						null,
@@ -13006,16 +9371,7 @@
 					]
 				},
 				"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						3.333333,
-						3.333333
-					],
+					"core": [null, null, null, null, null, null, 3.333333, 3.333333],
 					"sub": [
 						null,
 						null,
@@ -13045,16 +9401,7 @@
 					]
 				},
 				"73de273a-7d38-40c0-b869-2b2e6156c897": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						19.9,
-						null,
-						19.9
-					],
+					"core": [null, null, null, null, null, 19.9, null, 19.9],
 					"sub": [
 						null,
 						null,
@@ -13084,16 +9431,7 @@
 					]
 				},
 				"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						13.39,
-						null,
-						null,
-						13.39
-					],
+					"core": [null, null, null, null, 13.39, null, null, 13.39],
 					"sub": [
 						null,
 						null,
@@ -13123,16 +9461,7 @@
 					]
 				},
 				"27e481d6-6057-49dc-ad80-529f9127245f": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						13.6,
-						13.6
-					],
+					"core": [null, null, null, null, null, null, 13.6, 13.6],
 					"sub": [
 						null,
 						null,
@@ -13162,16 +9491,7 @@
 					]
 				},
 				"089294d0-59db-47f0-a543-19d8e3708448": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						7,
-						null,
-						null,
-						7
-					],
+					"core": [null, null, null, null, 7, null, null, 7],
 					"sub": [
 						null,
 						null,
@@ -13201,16 +9521,7 @@
 					]
 				},
 				"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						6.7,
-						null,
-						6.7
-					],
+					"core": [null, null, null, null, null, 6.7, null, 6.7],
 					"sub": [
 						null,
 						null,
@@ -13240,16 +9551,7 @@
 					]
 				},
 				"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						5.1,
-						null,
-						5.1
-					],
+					"core": [null, null, null, null, null, 5.1, null, 5.1],
 					"sub": [
 						null,
 						null,
@@ -13282,158 +9584,50 @@
 			"summary": {
 				"d6ba913a-6e26-4dcc-b192-04b9bee6fd8e": {
 					"core": [
-						8602.01,
-						8603.01,
-						8604.01,
-						8605.01,
-						8606.01,
-						8607.01,
-						8608.01,
+						8602.01, 8603.01, 8604.01, 8605.01, 8606.01, 8607.01, 8608.01,
 						8605.01
 					],
 					"sub": [
-						8602.01,
-						8603.01,
-						8604.01,
-						8605.01,
-						8606.01,
-						8607.01,
-						8608.01,
-						8609.01,
-						8610.01,
-						8611.01,
-						8612.01,
-						8613.01,
-						8614.01,
-						8615.01,
-						8616.01,
-						8617.01,
-						8618.01,
-						8619.01,
-						8620.01,
-						8621.01,
-						8622.01,
-						8623.01,
-						8624.01,
-						8625.01,
-						8626.01
+						8602.01, 8603.01, 8604.01, 8605.01, 8606.01, 8607.01, 8608.01,
+						8609.01, 8610.01, 8611.01, 8612.01, 8613.01, 8614.01, 8615.01,
+						8616.01, 8617.01, 8618.01, 8619.01, 8620.01, 8621.01, 8622.01,
+						8623.01, 8624.01, 8625.01, 8626.01
 					]
 				},
 				"22d6526a-6707-4a1e-ae3d-9c337feba2e8": {
 					"core": [
-						8603.01,
-						8604.01,
-						8605.01,
-						8606.01,
-						8607.01,
-						8608.01,
-						8609.01,
+						8603.01, 8604.01, 8605.01, 8606.01, 8607.01, 8608.01, 8609.01,
 						8606.01
 					],
 					"sub": [
-						8603.01,
-						8604.01,
-						8605.01,
-						8606.01,
-						8607.01,
-						8608.01,
-						8609.01,
-						8610.01,
-						8611.01,
-						8612.01,
-						8613.01,
-						8614.01,
-						8615.01,
-						8616.01,
-						8617.01,
-						8618.01,
-						8619.01,
-						8620.01,
-						8621.01,
-						8622.01,
-						8623.01,
-						8624.01,
-						8625.01,
-						8626.01,
-						8627.01
+						8603.01, 8604.01, 8605.01, 8606.01, 8607.01, 8608.01, 8609.01,
+						8610.01, 8611.01, 8612.01, 8613.01, 8614.01, 8615.01, 8616.01,
+						8617.01, 8618.01, 8619.01, 8620.01, 8621.01, 8622.01, 8623.01,
+						8624.01, 8625.01, 8626.01, 8627.01
 					]
 				},
 				"2e5899bb-60bb-43d0-8ce0-fd186d66b3fb": {
 					"core": [
-						8604.01,
-						8605.01,
-						8606.01,
-						8607.01,
-						8608.01,
-						8609.01,
-						8610.01,
+						8604.01, 8605.01, 8606.01, 8607.01, 8608.01, 8609.01, 8610.01,
 						8607.01
 					],
 					"sub": [
-						8604.01,
-						8605.01,
-						8606.01,
-						8607.01,
-						8608.01,
-						8609.01,
-						8610.01,
-						8611.01,
-						8612.01,
-						8613.01,
-						8614.01,
-						8615.01,
-						8616.01,
-						8617.01,
-						8618.01,
-						8619.01,
-						8620.01,
-						8621.01,
-						8622.01,
-						8623.01,
-						8624.01,
-						8625.01,
-						8626.01,
-						8627.01,
-						8628.01
+						8604.01, 8605.01, 8606.01, 8607.01, 8608.01, 8609.01, 8610.01,
+						8611.01, 8612.01, 8613.01, 8614.01, 8615.01, 8616.01, 8617.01,
+						8618.01, 8619.01, 8620.01, 8621.01, 8622.01, 8623.01, 8624.01,
+						8625.01, 8626.01, 8627.01, 8628.01
 					]
 				},
 				"3a43d3d8-f078-43fd-b45c-ab2af7a0c283": {
 					"core": [
-						8605.01,
-						8606.01,
-						8607.01,
-						8608.01,
-						8609.01,
-						8610.01,
-						8611.01,
+						8605.01, 8606.01, 8607.01, 8608.01, 8609.01, 8610.01, 8611.01,
 						8608.01
 					],
 					"sub": [
-						8605.01,
-						8606.01,
-						8607.01,
-						8608.01,
-						8609.01,
-						8610.01,
-						8611.01,
-						8612.01,
-						8613.01,
-						8614.01,
-						8615.01,
-						8616.01,
-						8617.01,
-						8618.01,
-						8619.01,
-						8620.01,
-						8621.01,
-						8622.01,
-						8623.01,
-						8624.01,
-						8625.01,
-						8626.01,
-						8627.01,
-						8628.01,
-						8629.01
+						8605.01, 8606.01, 8607.01, 8608.01, 8609.01, 8610.01, 8611.01,
+						8612.01, 8613.01, 8614.01, 8615.01, 8616.01, 8617.01, 8618.01,
+						8619.01, 8620.01, 8621.01, 8622.01, 8623.01, 8624.01, 8625.01,
+						8626.01, 8627.01, 8628.01, 8629.01
 					]
 				}
 			}
@@ -13443,25 +9637,13 @@
 		"id": "868f66b5-8949-4086-8d64-c955abaddab6",
 		"name": "RoboAnnotatorX",
 		"component": {
-			"vision": [
-				"ViT"
-			],
-			"language": [
-				"Vicuna-7B"
-			]
+			"vision": ["ViT"],
+			"language": ["Vicuna-7B"]
 		},
-		"size": [
-			7
-		],
-		"author": [
-			"Tianjin University"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [7],
+		"author": ["Tianjin University"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://github.com/LongXinKou/RoboannotatorX",
 		"navigation": true,
 		"taskPlanning": true,
@@ -13480,25 +9662,13 @@
 		"id": "07b32a32-fe35-4b8d-9c65-57f4a12ad256",
 		"name": "Embodied-FSD",
 		"component": {
-			"vision": [
-				"CLIP-ViT-L-336px"
-			],
-			"language": [
-				"Vicuna-13B"
-			]
+			"vision": ["CLIP-ViT-L-336px"],
+			"language": ["Vicuna-13B"]
 		},
-		"size": [
-			13
-		],
-		"author": [
-			"Tianjin University"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [13],
+		"author": ["Tianjin University"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://github.com/pickxiguapi/Embodied-FSD",
 		"navigation": true,
 		"taskPlanning": true,
@@ -13517,26 +9687,13 @@
 		"id": "c1bc8f89-1907-4d8c-9271-628125b335c5",
 		"name": "SAT",
 		"component": {
-			"vision": [
-				"ViT"
-			],
-			"language": [
-				"LLaVA-1.5-7B/13B"
-			]
+			"vision": ["ViT"],
+			"language": ["LLaVA-1.5-7B/13B"]
 		},
-		"size": [
-			7,
-			13
-		],
-		"author": [
-			"Boston University"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [7, 13],
+		"author": ["Boston University"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://github.com/arijitray1993/SAT",
 		"navigation": true,
 		"taskPlanning": true,
@@ -13555,31 +9712,13 @@
 		"id": "bd0aff87-62c1-494b-a1e1-fb3ef55f0150",
 		"name": "SpatialBot",
 		"component": {
-			"vision": [
-				"SigLIP"
-			],
-			"language": [
-				"Phi-2-3B",
-				"Phi-3-4B",
-				"QWen-1.5-4B",
-				"Llama-3-8B"
-			]
+			"vision": ["SigLIP"],
+			"language": ["Phi-2-3B", "Phi-3-4B", "QWen-1.5-4B", "Llama-3-8B"]
 		},
-		"size": [
-			3,
-			4,
-			8
-		],
-		"author": [
-			"Shanghai Jiao Tong University"
-		],
-		"qa": [
-			"2D",
-			"3D"
-		],
-		"dimension": [
-			"3D"
-		],
+		"size": [3, 4, 8],
+		"author": ["Shanghai Jiao Tong University"],
+		"qa": ["2D", "3D"],
+		"dimension": ["3D"],
 		"website": "https://github.com/BAAI-DCAI/SpatialBot",
 		"navigation": true,
 		"taskPlanning": true,
@@ -13598,25 +9737,13 @@
 		"id": "8cb6f6bb-9534-4da7-bff7-b25f4359faec",
 		"name": "SpatialVLM",
 		"component": {
-			"vision": [
-				"ViT"
-			],
-			"language": [
-				"PaLM-E 12B"
-			]
+			"vision": ["ViT"],
+			"language": ["PaLM-E 12B"]
 		},
-		"size": [
-			12
-		],
-		"author": [
-			"Google DeepMind"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [12],
+		"author": ["Google DeepMind"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://spatial-vlm.github.io/",
 		"navigation": true,
 		"taskPlanning": true,
@@ -13785,16 +9912,7 @@
 					]
 				},
 				"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-					"core": [
-						null,
-						null,
-						null,
-						6.73,
-						null,
-						null,
-						null,
-						6.73
-					],
+					"core": [null, null, null, 6.73, null, null, null, 6.73],
 					"sub": [
 						null,
 						null,
@@ -13824,16 +9942,7 @@
 					]
 				},
 				"1961aa46-9085-42ed-b384-d9ffe52921a8": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						0,
-						0
-					],
+					"core": [null, null, null, null, null, null, 0, 0],
 					"sub": [
 						null,
 						null,
@@ -13863,16 +9972,7 @@
 					]
 				},
 				"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						0,
-						0
-					],
+					"core": [null, null, null, null, null, null, 0, 0],
 					"sub": [
 						null,
 						null,
@@ -13902,16 +10002,7 @@
 					]
 				},
 				"73de273a-7d38-40c0-b869-2b2e6156c897": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						0,
-						null,
-						0
-					],
+					"core": [null, null, null, null, null, 0, null, 0],
 					"sub": [
 						null,
 						null,
@@ -13941,16 +10032,7 @@
 					]
 				},
 				"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						16.25,
-						null,
-						null,
-						16.25
-					],
+					"core": [null, null, null, null, 16.25, null, null, 16.25],
 					"sub": [
 						null,
 						null,
@@ -13980,16 +10062,7 @@
 					]
 				},
 				"27e481d6-6057-49dc-ad80-529f9127245f": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						10.5,
-						10.5
-					],
+					"core": [null, null, null, null, null, null, 10.5, 10.5],
 					"sub": [
 						null,
 						null,
@@ -14019,16 +10092,7 @@
 					]
 				},
 				"089294d0-59db-47f0-a543-19d8e3708448": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						1.66,
-						null,
-						null,
-						1.66
-					],
+					"core": [null, null, null, null, 1.66, null, null, 1.66],
 					"sub": [
 						null,
 						null,
@@ -14058,16 +10122,7 @@
 					]
 				},
 				"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						null
-					],
+					"core": [null, null, null, null, null, null, null, null],
 					"sub": [
 						null,
 						null,
@@ -14097,16 +10152,7 @@
 					]
 				},
 				"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						null
-					],
+					"core": [null, null, null, null, null, null, null, null],
 					"sub": [
 						null,
 						null,
@@ -14139,158 +10185,50 @@
 			"summary": {
 				"d6ba913a-6e26-4dcc-b192-04b9bee6fd8e": {
 					"core": [
-						9102.01,
-						9103.01,
-						9104.01,
-						9105.01,
-						9106.01,
-						9107.01,
-						9108.01,
+						9102.01, 9103.01, 9104.01, 9105.01, 9106.01, 9107.01, 9108.01,
 						9105.01
 					],
 					"sub": [
-						9102.01,
-						9103.01,
-						9104.01,
-						9105.01,
-						9106.01,
-						9107.01,
-						9108.01,
-						9109.01,
-						9110.01,
-						9111.01,
-						9112.01,
-						9113.01,
-						9114.01,
-						9115.01,
-						9116.01,
-						9117.01,
-						9118.01,
-						9119.01,
-						9120.01,
-						9121.01,
-						9122.01,
-						9123.01,
-						9124.01,
-						9125.01,
-						9126.01
+						9102.01, 9103.01, 9104.01, 9105.01, 9106.01, 9107.01, 9108.01,
+						9109.01, 9110.01, 9111.01, 9112.01, 9113.01, 9114.01, 9115.01,
+						9116.01, 9117.01, 9118.01, 9119.01, 9120.01, 9121.01, 9122.01,
+						9123.01, 9124.01, 9125.01, 9126.01
 					]
 				},
 				"22d6526a-6707-4a1e-ae3d-9c337feba2e8": {
 					"core": [
-						9103.01,
-						9104.01,
-						9105.01,
-						9106.01,
-						9107.01,
-						9108.01,
-						9109.01,
+						9103.01, 9104.01, 9105.01, 9106.01, 9107.01, 9108.01, 9109.01,
 						9106.01
 					],
 					"sub": [
-						9103.01,
-						9104.01,
-						9105.01,
-						9106.01,
-						9107.01,
-						9108.01,
-						9109.01,
-						9110.01,
-						9111.01,
-						9112.01,
-						9113.01,
-						9114.01,
-						9115.01,
-						9116.01,
-						9117.01,
-						9118.01,
-						9119.01,
-						9120.01,
-						9121.01,
-						9122.01,
-						9123.01,
-						9124.01,
-						9125.01,
-						9126.01,
-						9127.01
+						9103.01, 9104.01, 9105.01, 9106.01, 9107.01, 9108.01, 9109.01,
+						9110.01, 9111.01, 9112.01, 9113.01, 9114.01, 9115.01, 9116.01,
+						9117.01, 9118.01, 9119.01, 9120.01, 9121.01, 9122.01, 9123.01,
+						9124.01, 9125.01, 9126.01, 9127.01
 					]
 				},
 				"2e5899bb-60bb-43d0-8ce0-fd186d66b3fb": {
 					"core": [
-						9104.01,
-						9105.01,
-						9106.01,
-						9107.01,
-						9108.01,
-						9109.01,
-						9110.01,
+						9104.01, 9105.01, 9106.01, 9107.01, 9108.01, 9109.01, 9110.01,
 						9107.01
 					],
 					"sub": [
-						9104.01,
-						9105.01,
-						9106.01,
-						9107.01,
-						9108.01,
-						9109.01,
-						9110.01,
-						9111.01,
-						9112.01,
-						9113.01,
-						9114.01,
-						9115.01,
-						9116.01,
-						9117.01,
-						9118.01,
-						9119.01,
-						9120.01,
-						9121.01,
-						9122.01,
-						9123.01,
-						9124.01,
-						9125.01,
-						9126.01,
-						9127.01,
-						9128.01
+						9104.01, 9105.01, 9106.01, 9107.01, 9108.01, 9109.01, 9110.01,
+						9111.01, 9112.01, 9113.01, 9114.01, 9115.01, 9116.01, 9117.01,
+						9118.01, 9119.01, 9120.01, 9121.01, 9122.01, 9123.01, 9124.01,
+						9125.01, 9126.01, 9127.01, 9128.01
 					]
 				},
 				"3a43d3d8-f078-43fd-b45c-ab2af7a0c283": {
 					"core": [
-						9105.01,
-						9106.01,
-						9107.01,
-						9108.01,
-						9109.01,
-						9110.01,
-						9111.01,
+						9105.01, 9106.01, 9107.01, 9108.01, 9109.01, 9110.01, 9111.01,
 						9108.01
 					],
 					"sub": [
-						9105.01,
-						9106.01,
-						9107.01,
-						9108.01,
-						9109.01,
-						9110.01,
-						9111.01,
-						9112.01,
-						9113.01,
-						9114.01,
-						9115.01,
-						9116.01,
-						9117.01,
-						9118.01,
-						9119.01,
-						9120.01,
-						9121.01,
-						9122.01,
-						9123.01,
-						9124.01,
-						9125.01,
-						9126.01,
-						9127.01,
-						9128.01,
-						9129.01
+						9105.01, 9106.01, 9107.01, 9108.01, 9109.01, 9110.01, 9111.01,
+						9112.01, 9113.01, 9114.01, 9115.01, 9116.01, 9117.01, 9118.01,
+						9119.01, 9120.01, 9121.01, 9122.01, 9123.01, 9124.01, 9125.01,
+						9126.01, 9127.01, 9128.01, 9129.01
 					]
 				}
 			}
@@ -14300,25 +10238,13 @@
 		"id": "123ad294-191e-484a-9f84-115c057a6a8c",
 		"name": "SpatialCoT",
 		"component": {
-			"vision": [
-				"Vit"
-			],
-			"language": [
-				"Vicuna-v1.5-13B"
-			]
+			"vision": ["Vit"],
+			"language": ["Vicuna-v1.5-13B"]
 		},
-		"size": [
-			13
-		],
-		"author": [
-			"Huawei Noah’s Ark Lab"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [13],
+		"author": ["Huawei Noah’s Ark Lab"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://spatialcot.github.io/",
 		"navigation": true,
 		"taskPlanning": true,
@@ -14337,25 +10263,13 @@
 		"id": "8b4d7b49-c349-45a5-b2db-2f602f44ae29",
 		"name": "3D-Mem",
 		"component": {
-			"vision": [
-				"CLIP"
-			],
-			"language": [
-				"LLaVA-1.5-7B"
-			]
+			"vision": ["CLIP"],
+			"language": ["LLaVA-1.5-7B"]
 		},
-		"size": [
-			7
-		],
-		"author": [
-			"UMass Amherst"
-		],
-		"qa": [
-			"3D"
-		],
-		"dimension": [
-			"3D"
-		],
+		"size": [7],
+		"author": ["UMass Amherst"],
+		"qa": ["3D"],
+		"dimension": ["3D"],
 		"website": "https://github.com/UMass-Embodied-AGI/3D-Mem",
 		"navigation": true,
 		"taskPlanning": false,
@@ -14374,22 +10288,12 @@
 		"id": "e72d733b-7926-4bb3-bf29-204c042d52c5",
 		"name": "Mem2Ego",
 		"component": {
-			"language": [
-				"Llama3.2-11B"
-			]
+			"language": ["Llama3.2-11B"]
 		},
-		"size": [
-			11
-		],
-		"author": [
-			"Huawei Noah’s Ark Lab"
-		],
-		"qa": [
-			"3D"
-		],
-		"dimension": [
-			"3D"
-		],
+		"size": [11],
+		"author": ["Huawei Noah’s Ark Lab"],
+		"qa": ["3D"],
+		"dimension": ["3D"],
 		"website": "https://arxiv.org/pdf/2502.14254",
 		"navigation": true,
 		"taskPlanning": false,
@@ -14407,15 +10311,9 @@
 	{
 		"id": "051465b8-2624-4b45-a884-bdfcfde0609f",
 		"name": "LLaVA-OneVision-0.5B",
-		"author": [
-			"ByteDance"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"author": ["ByteDance"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"navigation": false,
 		"taskPlanning": false,
 		"reason": false,
@@ -14432,25 +10330,13 @@
 		"id": "0254b277-0f68-496d-b01b-fe0528e67b4b",
 		"name": "Cosmos-Reason-1-7B",
 		"component": {
-			"vision": [
-				"ViT"
-			],
-			"language": [
-				"Qwen2.5-VL-7B-Instruct"
-			]
+			"vision": ["ViT"],
+			"language": ["Qwen2.5-VL-7B-Instruct"]
 		},
-		"size": [
-			7
-		],
-		"author": [
-			"NVIDIA"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"size": [7],
+		"author": ["NVIDIA"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://huggingface.co/nvidia/Cosmos-Reason1-7B",
 		"navigation": false,
 		"taskPlanning": false,
@@ -14619,16 +10505,7 @@
 					]
 				},
 				"a9228f2e-3191-4a08-8f03-64e73cae2e78": {
-					"core": [
-						null,
-						null,
-						null,
-						5.21,
-						null,
-						null,
-						null,
-						5.21
-					],
+					"core": [null, null, null, 5.21, null, null, null, 5.21],
 					"sub": [
 						null,
 						null,
@@ -14697,16 +10574,7 @@
 					]
 				},
 				"cbb64d1c-4377-4231-a465-73ffb10972c5": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						13.16667,
-						13.16667
-					],
+					"core": [null, null, null, null, null, null, 13.16667, 13.16667],
 					"sub": [
 						null,
 						null,
@@ -14736,16 +10604,7 @@
 					]
 				},
 				"73de273a-7d38-40c0-b869-2b2e6156c897": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						5.9,
-						null,
-						5.9
-					],
+					"core": [null, null, null, null, null, 5.9, null, 5.9],
 					"sub": [
 						null,
 						null,
@@ -14775,16 +10634,7 @@
 					]
 				},
 				"b9a18add-a3fb-4893-89e3-ddeea8053ce2": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						12.365,
-						null,
-						null,
-						12.365
-					],
+					"core": [null, null, null, null, 12.365, null, null, 12.365],
 					"sub": [
 						null,
 						null,
@@ -14814,16 +10664,7 @@
 					]
 				},
 				"27e481d6-6057-49dc-ad80-529f9127245f": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						null,
-						24.2,
-						24.2
-					],
+					"core": [null, null, null, null, null, null, 24.2, 24.2],
 					"sub": [
 						null,
 						null,
@@ -14853,16 +10694,7 @@
 					]
 				},
 				"089294d0-59db-47f0-a543-19d8e3708448": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						4.33,
-						null,
-						null,
-						4.33
-					],
+					"core": [null, null, null, null, 4.33, null, null, 4.33],
 					"sub": [
 						null,
 						null,
@@ -14892,16 +10724,7 @@
 					]
 				},
 				"025ca0fe-f04c-4d17-9f4c-9d1aca6666bd": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						6.7,
-						null,
-						6.7
-					],
+					"core": [null, null, null, null, null, 6.7, null, 6.7],
 					"sub": [
 						null,
 						null,
@@ -14931,16 +10754,7 @@
 					]
 				},
 				"1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09": {
-					"core": [
-						null,
-						null,
-						null,
-						null,
-						null,
-						3,
-						null,
-						3
-					],
+					"core": [null, null, null, null, null, 3, null, 3],
 					"sub": [
 						null,
 						null,
@@ -14973,158 +10787,50 @@
 			"summary": {
 				"d6ba913a-6e26-4dcc-b192-04b9bee6fd8e": {
 					"core": [
-						9602.01,
-						9603.01,
-						9604.01,
-						9605.01,
-						9606.01,
-						9607.01,
-						9608.01,
+						9602.01, 9603.01, 9604.01, 9605.01, 9606.01, 9607.01, 9608.01,
 						9605.01
 					],
 					"sub": [
-						9602.01,
-						9603.01,
-						9604.01,
-						9605.01,
-						9606.01,
-						9607.01,
-						9608.01,
-						9609.01,
-						9610.01,
-						9611.01,
-						9612.01,
-						9613.01,
-						9614.01,
-						9615.01,
-						9616.01,
-						9617.01,
-						9618.01,
-						9619.01,
-						9620.01,
-						9621.01,
-						9622.01,
-						9623.01,
-						9624.01,
-						9625.01,
-						9626.01
+						9602.01, 9603.01, 9604.01, 9605.01, 9606.01, 9607.01, 9608.01,
+						9609.01, 9610.01, 9611.01, 9612.01, 9613.01, 9614.01, 9615.01,
+						9616.01, 9617.01, 9618.01, 9619.01, 9620.01, 9621.01, 9622.01,
+						9623.01, 9624.01, 9625.01, 9626.01
 					]
 				},
 				"22d6526a-6707-4a1e-ae3d-9c337feba2e8": {
 					"core": [
-						9603.01,
-						9604.01,
-						9605.01,
-						9606.01,
-						9607.01,
-						9608.01,
-						9609.01,
+						9603.01, 9604.01, 9605.01, 9606.01, 9607.01, 9608.01, 9609.01,
 						9606.01
 					],
 					"sub": [
-						9603.01,
-						9604.01,
-						9605.01,
-						9606.01,
-						9607.01,
-						9608.01,
-						9609.01,
-						9610.01,
-						9611.01,
-						9612.01,
-						9613.01,
-						9614.01,
-						9615.01,
-						9616.01,
-						9617.01,
-						9618.01,
-						9619.01,
-						9620.01,
-						9621.01,
-						9622.01,
-						9623.01,
-						9624.01,
-						9625.01,
-						9626.01,
-						9627.01
+						9603.01, 9604.01, 9605.01, 9606.01, 9607.01, 9608.01, 9609.01,
+						9610.01, 9611.01, 9612.01, 9613.01, 9614.01, 9615.01, 9616.01,
+						9617.01, 9618.01, 9619.01, 9620.01, 9621.01, 9622.01, 9623.01,
+						9624.01, 9625.01, 9626.01, 9627.01
 					]
 				},
 				"2e5899bb-60bb-43d0-8ce0-fd186d66b3fb": {
 					"core": [
-						9604.01,
-						9605.01,
-						9606.01,
-						9607.01,
-						9608.01,
-						9609.01,
-						9610.01,
+						9604.01, 9605.01, 9606.01, 9607.01, 9608.01, 9609.01, 9610.01,
 						9607.01
 					],
 					"sub": [
-						9604.01,
-						9605.01,
-						9606.01,
-						9607.01,
-						9608.01,
-						9609.01,
-						9610.01,
-						9611.01,
-						9612.01,
-						9613.01,
-						9614.01,
-						9615.01,
-						9616.01,
-						9617.01,
-						9618.01,
-						9619.01,
-						9620.01,
-						9621.01,
-						9622.01,
-						9623.01,
-						9624.01,
-						9625.01,
-						9626.01,
-						9627.01,
-						9628.01
+						9604.01, 9605.01, 9606.01, 9607.01, 9608.01, 9609.01, 9610.01,
+						9611.01, 9612.01, 9613.01, 9614.01, 9615.01, 9616.01, 9617.01,
+						9618.01, 9619.01, 9620.01, 9621.01, 9622.01, 9623.01, 9624.01,
+						9625.01, 9626.01, 9627.01, 9628.01
 					]
 				},
 				"3a43d3d8-f078-43fd-b45c-ab2af7a0c283": {
 					"core": [
-						9605.01,
-						9606.01,
-						9607.01,
-						9608.01,
-						9609.01,
-						9610.01,
-						9611.01,
+						9605.01, 9606.01, 9607.01, 9608.01, 9609.01, 9610.01, 9611.01,
 						9608.01
 					],
 					"sub": [
-						9605.01,
-						9606.01,
-						9607.01,
-						9608.01,
-						9609.01,
-						9610.01,
-						9611.01,
-						9612.01,
-						9613.01,
-						9614.01,
-						9615.01,
-						9616.01,
-						9617.01,
-						9618.01,
-						9619.01,
-						9620.01,
-						9621.01,
-						9622.01,
-						9623.01,
-						9624.01,
-						9625.01,
-						9626.01,
-						9627.01,
-						9628.01,
-						9629.01
+						9605.01, 9606.01, 9607.01, 9608.01, 9609.01, 9610.01, 9611.01,
+						9612.01, 9613.01, 9614.01, 9615.01, 9616.01, 9617.01, 9618.01,
+						9619.01, 9620.01, 9621.01, 9622.01, 9623.01, 9624.01, 9625.01,
+						9626.01, 9627.01, 9628.01, 9629.01
 					]
 				}
 			}
@@ -15134,19 +10840,11 @@
 		"id": "526efef7-9600-4992-9c70-fec8893b1706",
 		"name": "Gemini-2.5-flash",
 		"component": {
-			"language": [
-				"Gemini-2.5-flash"
-			]
+			"language": ["Gemini-2.5-flash"]
 		},
-		"author": [
-			"Google DeepMind"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
+		"author": ["Google DeepMind"],
+		"qa": ["2D"],
+		"dimension": ["2D"],
 		"website": "https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash",
 		"navigation": true,
 		"taskPlanning": true,

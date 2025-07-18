@@ -14,13 +14,16 @@ import { ref } from 'vue';
 
 const document = ref<HTMLDivElement | null>(null);
 
-const prop = withDefaults(defineProps<{
-	fontsize?: string;
-	content?: string;
-}>(), {
-	fontsize: '16px',
-	content: '',
-});
+const prop = withDefaults(
+	defineProps<{
+		fontsize?: string;
+		content?: string;
+	}>(),
+	{
+		fontsize: '16px',
+		content: '',
+	},
+);
 
 defineOptions({ name: 'AppMarkdownHTML' });
 </script>

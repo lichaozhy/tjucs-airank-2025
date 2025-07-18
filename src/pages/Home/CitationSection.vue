@@ -18,8 +18,7 @@
 <script setup lang="ts">
 import AppMarkdownHtml from 'components/MarkdownHTML.vue';
 
-const CITATION =
-`@article{EmbodiedArena2025,
+const CITATION = `@article{EmbodiedArena2025,
 	title={EmbodiedArena: A Comprehensive Evaluation Platform and Leaderboards for Embodied AI},
 	author={Embodied Arena Team},
 	year={2025}

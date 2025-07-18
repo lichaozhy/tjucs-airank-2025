@@ -13,7 +13,10 @@
 		ref="table"
 	>
 		<template #header="scopeProps">
-			<q-tr :props="scopeProps" style="visibility: collapse;">
+			<q-tr
+				:props="scopeProps"
+				style="visibility: collapse"
+			>
 				<q-th
 					v-for="col in scopeProps.cols"
 					:key="col.name"
@@ -21,12 +24,17 @@
 				></q-th>
 			</q-tr>
 			<q-tr v-if="props.groups !== null">
-				<q-th colspan="2" class="app-cell-sticky"></q-th>
-				<q-th style="z-index: 1;"
+				<q-th
+					colspan="2"
+					class="app-cell-sticky"
+				></q-th>
+				<q-th
+					style="z-index: 1"
 					v-for="(column, index) in props.groups"
 					:key="index"
 					:colspan="column.colspan"
-				>{{ column.label }}</q-th>
+					>{{ column.label }}</q-th
+				>
 			</q-tr>
 			<q-tr :props="scopeProps">
 				<q-th
@@ -40,7 +48,10 @@
 		</template>
 
 		<template #body-cell-rank="props">
-			<q-td :props="props" style="padding: 0 !important;">
+			<q-td
+				:props="props"
+				style="padding: 0 !important"
+			>
 				<AppRankBadge :order="props.rowIndex + 1"></AppRankBadge>
 			</q-td>
 		</template>

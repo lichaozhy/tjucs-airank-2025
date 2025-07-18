@@ -170,9 +170,7 @@ export const API = {
 				}
 			},
 		};
-	}, {
-
-	}),
+	}, {}),
 	Benchmark: Object.assign(
 		(benchmarkId: string) => {
 			return {
@@ -219,10 +217,14 @@ export const API = {
 				return [...Data.Model];
 			},
 			async queryHasBenchmark(benchmarkId: string) {
-				return Data.Model.filter(model => Object.hasOwn(model.score.benchmark, benchmarkId));
+				return Data.Model.filter((model) =>
+					Object.hasOwn(model.score.benchmark, benchmarkId),
+				);
 			},
 			async queryHasSummary(summaryId: string) {
-				return Data.Model.filter(model => Object.hasOwn(model.score.summary, summaryId));
+				return Data.Model.filter((model) =>
+					Object.hasOwn(model.score.summary, summaryId),
+				);
 			},
 			Property: {
 				ValueGroup: {

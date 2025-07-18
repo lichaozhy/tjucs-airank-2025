@@ -5,7 +5,7 @@
 		</div>
 		<div
 			class="text-body1 q-mt-md text-weight-light text-center"
-			style="width: 72em;height: 10em;"
+			style="width: 72em; height: 10em"
 		>
 			{{ BannerData.caption }}
 		</div>

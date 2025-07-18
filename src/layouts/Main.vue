@@ -8,7 +8,7 @@
 			class="justify-center bg-indigo-10"
 		>
 			<q-toolbar>
-				<q-toolbar-title style="min-width: 10em;">
+				<q-toolbar-title style="min-width: 10em">
 					<router-link
 						:to="{ name: 'app.home' }"
 						custom

@@ -12,7 +12,6 @@
 				<div class="text-subtitle1 q-mt-md text-weight-light">
 					{{ $t('p.benchmark.banner.description') }}
 				</div>
-
 			</template>
 
 			<q-toolbar
