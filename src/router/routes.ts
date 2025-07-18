@@ -12,7 +12,7 @@ const routes: RouteRecordRaw[] = [
 		name: 'app.layout',
 		path: '/',
 		redirect: { name: 'app.home' },
-		component: () => import('layouts/MainLayout.vue'),
+		component: () => import('layouts/Main.vue'),
 		children: [
 			{
 				name: 'app.home',
@@ -21,25 +21,26 @@ const routes: RouteRecordRaw[] = [
 			},
 			{
 				name: 'app.leaderboard',
-				path: 'leaderboard/task',
-				component: () => import('pages/LeaderboardLayout/Page.vue'),
+				path: 'leaderboard/:leaderboardId',
+				component: () => import('layouts/Leaderboard.vue'),
 				children: [
 					{
 						name: 'app.leaderboard.task',
-						path: ':leaderboardId',
-						component: () => import('pages/LeaderboardDetail/Page.vue'),
+						path: 'task',
+						components: {
+							default: () => import('pages/Leaderboard/Task/Default.vue'),
+							banner: () => import('pages/Leaderboard/Task/Banner.vue'),
+						},
+					},
+					{
+						name: 'app.leaderboard.capability',
+						path: 'capability',
+						components: {
+							default: () => import('pages/Leaderboard/Capability/Default.vue'),
+							banner: () => import('pages/Leaderboard/Capability/Banner.vue'),
+						},
 					},
 				],
-			},
-			{
-				name: 'app.leaderboard.capability',
-				path: 'leaderboard/capability',
-				component: () => import('pages/LeaderboardCapability/Page.vue'),
-			},
-			{
-				name: 'app.rank.leaderboard',
-				path: 'rank/leaderboard/:leaderboardId/benchmark/:benchmarkId',
-				component: () => import('pages/Rank/Page.vue'),
 			},
 			{
 				name: 'app.benchmark',

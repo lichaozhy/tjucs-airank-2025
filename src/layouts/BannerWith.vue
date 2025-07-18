@@ -1,30 +1,37 @@
 <template>
-	<div class="app-common-page-layout">
+	<div class="app-banner-with-layout">
 		<div
 			class="app-page-banner column justify-center items-center absolute-full text-white"
+			:style="{ height: `${props.height}px` }"
 		>
 			<slot name="banner"></slot>
 		</div>
 
-		<div class="full-width app-max-width-1680 q-mt-md">
+		<div
+			class="full-width app-max-width-1680"
+			:style="{ 'padding-top': `${props.height}px` }"
+		>
 			<slot></slot>
 		</div>
 	</div>
 </template>
 
 <script setup lang="ts">
-defineOptions({ name: 'AppCommonPageLayout' });
+const props = withDefaults(
+	defineProps<{
+		height?: number;
+	}>(),
+	{
+		height: 240,
+	},
+);
+
+defineOptions({ name: 'AppBannerWithLayout' });
 </script>
 
 <style lang="scss">
-$app-page-banner-height: 240px;
-
-main.q-page:has(> .app-common-page-layout) {
-	padding-top: $app-page-banner-height;
-}
-
 .app-page-banner {
-	height: $app-page-banner-height;
+	height: var(--app-layout-banner-with-height);
 	background:
 		linear-gradient(
 			to bottom,

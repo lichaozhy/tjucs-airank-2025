@@ -4,29 +4,20 @@
 		class="column content-center"
 		padding
 	>
-		<AppCommonPageLayout>
+		<AppBannerWithLayout :height="360">
 			<template #banner>
-				<div class="text-h2 text-weight-light">
-					{{ $t('p.leaderboard.banner.title') }}
-				</div>
-				<div class="text-subtitle1 q-mt-md text-weight-light">
-					{{ $t('p.leaderboard.banner.description') }}
-				</div>
+				<router-view name="banner"></router-view>
 			</template>
 
 			<q-tabs
 				no-caps
 				dense
-				class="q-my-lg"
 			>
 				<q-route-tab
 					v-for="item in leaderboardList"
 					:key="item.id"
 					:name="item.id"
-					:to="{
-						name: 'app.leaderboard.task',
-						params: { leaderboardId: item.id },
-					}"
+					:to="{ params: { leaderboardId: item.id } }"
 					class="text-h6 text-black text-weight-medieum"
 					style="opacity: 0.6"
 					active-class="app-solid-tab"
@@ -40,7 +31,9 @@
 							rounded
 						>
 							<q-list dense>
-								<q-item-label header>Summary</q-item-label>
+								<q-item-label header>{{
+									$t('l.leaderboard.summary')
+								}}</q-item-label>
 								<q-item
 									tag="label"
 									v-for="summary in summaryList"
@@ -58,7 +51,9 @@
 									</q-item-section>
 								</q-item>
 								<q-separator />
-								<q-item-label header>Benchmark</q-item-label>
+								<q-item-label header>{{
+									$t('l.leaderboard.benchmark')
+								}}</q-item-label>
 								<q-item
 									tag="label"
 									v-for="benchmark in benchmarkList"
@@ -81,8 +76,10 @@
 				</q-route-tab>
 			</q-tabs>
 
+			<q-space class="q-mt-lg" />
+
 			<router-view></router-view>
-		</AppCommonPageLayout>
+		</AppBannerWithLayout>
 	</q-page>
 </template>
 
@@ -91,7 +88,7 @@ import { computed, onBeforeMount, reactive, ref, provide, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
 import * as Backend from 'src/backend';
-import AppCommonPageLayout from 'components/CommonPageLayout.vue';
+import AppBannerWithLayout from './BannerWith.vue';
 import * as Spec from 'src/spec';
 
 const route = useRoute();

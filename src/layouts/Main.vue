@@ -38,7 +38,10 @@
 					no-caps
 					flat
 					stretch
-					:to="{ name: 'app.leaderboard.capability' }"
+					:to="{
+						name: 'app.leaderboard.capability',
+						params: { leaderboardId: defaultLeaderboardId },
+					}"
 					label="Embodied Capability Leaderboards"
 					:class="{ active: routeMatched('app.leaderboard.capability') }"
 				></q-btn>

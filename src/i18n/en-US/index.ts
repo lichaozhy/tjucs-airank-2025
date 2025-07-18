@@ -27,6 +27,12 @@ export default {
 			},
 		},
 	},
+	l: {
+		leaderboard: {
+			summary: 'Summary',
+			benchmark: 'Benchmark',
+		},
+	},
 	nav: {
 		app: {
 			benchmark: {

@@ -1,5 +1,6 @@
 <template>
 	<div
+		id="app-leaderboard-task"
 		class="row q-col-gutter-lg"
 		v-if="isReady"
 	>
@@ -80,5 +81,5 @@ onBeforeMount(async () => {
 	benchmarkList.value = await LeaderboardAPI.Benchmark.query();
 });
 
-defineOptions({ name: 'AppLeaderboardTaskPage' });
+defineOptions({ name: 'AppLeaderboardPageTask' });
 </script>

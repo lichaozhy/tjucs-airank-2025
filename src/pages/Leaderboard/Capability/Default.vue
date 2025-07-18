@@ -1,8 +1,7 @@
 <template>
-	<q-page
+	<div
 		id="app-leaderboard-capability"
 		class="column content-center"
-		padding
 	>
 		<div class="full-width app-max-width-1680">
 			<q-toolbar
@@ -62,7 +61,7 @@
 				></AppScoreTable>
 			</AppScoreCard>
 		</div>
-	</q-page>
+	</div>
 </template>
 
 <script setup lang="ts">
@@ -295,5 +294,5 @@ onBeforeMount(async () => {
 	Level.sub = subLevelItemList;
 });
 
-defineOptions({ name: 'AppLeaderboardCapabilityPage' });
+defineOptions({ name: 'AppLeaderboardPageCapability' });
 </script>
