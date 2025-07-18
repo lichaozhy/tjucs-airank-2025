@@ -157,7 +157,12 @@ const itemList = computed(() => {
 watch(group, async (groupId) => {
 	groupContent.value =
 		await Backend.API.Document.Capability.Group(groupId).get();
-	item.value = itemList.value[0]!.id;
+
+	const list = itemList.value;
+
+	if (list.length > 0) {
+		item.value = list[0]!.id;
+	}
 });
 
 watch(item, async (itemId) => {

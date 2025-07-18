@@ -65,5 +65,5 @@ const iconName = computed<string>(() => {
 	return 'fas fa-star';
 });
 
-defineOptions({ name: 'AppLeaderboardDetailRankBadge' });
+defineOptions({ name: 'AppScoreTableRankBadge' });
 </script>

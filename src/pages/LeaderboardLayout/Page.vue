@@ -4,19 +4,16 @@
 		class="column content-center"
 		padding
 	>
-		<div
-			id="app-leaderboard-banner"
-			class="app-page-banner column justify-center items-center absolute-full text-white"
-		>
-			<div class="text-h2 text-weight-light">
-				{{ $t('p.leaderboard.banner.title') }}
-			</div>
-			<div class="text-subtitle1 q-mt-md text-weight-light">
-				{{ $t('p.leaderboard.banner.description') }}
-			</div>
-		</div>
+		<AppCommonPageLayout>
+			<template #banner>
+				<div class="text-h2 text-weight-light">
+					{{ $t('p.leaderboard.banner.title') }}
+				</div>
+				<div class="text-subtitle1 q-mt-md text-weight-light">
+					{{ $t('p.leaderboard.banner.description') }}
+				</div>
+			</template>
 
-		<div class="full-width app-max-width-1680">
 			<q-tabs
 				no-caps
 				dense
@@ -85,7 +82,7 @@
 			</q-tabs>
 
 			<router-view></router-view>
-		</div>
+		</AppCommonPageLayout>
 	</q-page>
 </template>
 
@@ -94,6 +91,7 @@ import { computed, onBeforeMount, reactive, ref, provide, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
 import * as Backend from 'src/backend';
+import AppCommonPageLayout from 'components/CommonPageLayout.vue';
 import * as Spec from 'src/spec';
 
 const route = useRoute();

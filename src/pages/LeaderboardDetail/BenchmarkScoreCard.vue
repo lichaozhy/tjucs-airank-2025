@@ -109,5 +109,5 @@ onBeforeMount(async () => {
 	modelList.value = await Promise.all(scoreList.value.map(fetchModelFromScore));
 });
 
-defineOptions({ name: 'AppPageLeaderboardDetailBenchmarkScoreCard' });
+defineOptions({ name: 'AppPageScoreCard' });
 </script>

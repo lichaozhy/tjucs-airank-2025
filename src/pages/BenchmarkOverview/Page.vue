@@ -4,20 +4,16 @@
 		class="column content-center"
 		padding
 	>
-		<div
-			id="app-benchmark-banner"
-			class="app-page-banner column justify-center items-center absolute-full text-white"
-		>
-			<div class="text-h2 text-weight-light">
-				{{ $t('p.benchmark.banner.title') }}
-			</div>
-			<div class="text-subtitle1 q-mt-md text-weight-light">
-				{{ $t('p.benchmark.banner.description') }}
-			</div>
-		</div>
+		<AppCommonPageLayout>
+			<template #banner>
+				<div class="text-h2 text-weight-light">
+					{{ $t('p.benchmark.banner.title') }}
+				</div>
+				<div class="text-subtitle1 q-mt-md text-weight-light">
+					{{ $t('p.benchmark.banner.description') }}
+				</div>
 
-		<div class="full-width app-max-width-1680">
-			<q-space class="q-mt-md" />
+			</template>
 
 			<q-toolbar
 				class="q-px-none"
@@ -62,7 +58,7 @@
 					<AppBenchmarkCard :benchmark="benchmark" />
 				</div>
 			</div>
-		</div>
+		</AppCommonPageLayout>
 	</q-page>
 </template>
 
@@ -71,6 +67,7 @@ import type * as Spec from 'src/spec';
 import { computed, onBeforeMount, ref } from 'vue';
 
 import * as Backend from 'src/backend';
+import AppCommonPageLayout from 'components/CommonPageLayout.vue';
 import AppBenchmarkCard from './BenchmarkCard.vue';
 
 const benchmarkList = ref<Array<Spec.Benchmark.Type>>([]);
