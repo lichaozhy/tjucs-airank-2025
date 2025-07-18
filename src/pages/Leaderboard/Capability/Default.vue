@@ -67,7 +67,7 @@ const selectedSourceList = computed<SourceScoreModel[]>(() => {
 
 const CAPABILITY_LEVEL_RECORD = {
 	core: 'Core Capabilities',
-	sub: 'Sub Capabilities',
+	sub: 'Fine-grained Capabilities',
 };
 
 const capabilityLevelList = Object.entries(CAPABILITY_LEVEL_RECORD).map(

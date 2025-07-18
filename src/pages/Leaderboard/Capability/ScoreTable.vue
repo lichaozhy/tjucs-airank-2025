@@ -11,7 +11,6 @@
 		separator="cell"
 		binary-state-sort
 		ref="table"
-		dense
 	>
 		<template #header="scopeProps">
 			<q-tr :props="scopeProps" style="visibility: collapse;">

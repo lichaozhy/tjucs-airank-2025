@@ -65,7 +65,7 @@ const capabilityItemList = ref<Spec.Capability.Item[]>([]);
 
 const CAPABILITY_LEVEL_RECORD = {
 	core: 'Core Capabilities',
-	sub: 'Sub Capabilities',
+	sub: 'Fine-grained Capabilities',
 };
 
 const NameRecord = {
