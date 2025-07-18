@@ -18,24 +18,11 @@ body {
 }
 
 .app-rank-table {
-	min-width: 600px;
-	max-width: 1680px;
-	width: 100%;
-
-	thead tr:first-child th:nth-child(2) {
-		/* bg color is important for th; just specify one */
-		background-color: white;
-	}
-
-	td:nth-child(2) {
-		background-color: white;
-	}
-
-	th:nth-child(2),
-	td:nth-child(2) {
-		position: sticky;
+	.app-cell-sticky {
+		position: sticky !important;
+		z-index: 10 !important;
 		left: 0;
-		z-index: 10;
+		background-color: white;
 	}
 
 	th,

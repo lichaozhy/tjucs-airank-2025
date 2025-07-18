@@ -58,6 +58,7 @@
 				<AppScoreTable
 					:columns="columnList"
 					:rows="rowList"
+					:groups="groups"
 				></AppScoreTable>
 			</AppScoreCard>
 		</div>
@@ -66,7 +67,7 @@
 
 <script setup lang="ts">
 import type * as Spec from 'src/spec';
-import type { ModelData } from './ScoreTable.vue';
+import type { ModelData, GroupOptions } from './ScoreTable.vue';
 import type { ModelFilter } from 'components/ModelFilter.vue';
 import { computed, onBeforeMount, reactive, ref } from 'vue';
 
@@ -79,6 +80,7 @@ import { toNumberOrNull } from 'src/components/utils';
 
 const selectedBenchmarkId = ref<string | null>(null);
 const benchmarkList = ref<Spec.Benchmark.Type[]>([]);
+const capabilitySubItemList = ref<Spec.Capability.Item[]>([]);
 const capabilityLevel = ref<'core' | 'sub'>('core');
 const currentFilter = ref<ModelFilter>(() => true);
 const modelList = ref<Spec.Model.Type[]>([]);
@@ -153,6 +155,23 @@ const isReady = computed(() => {
 	return true;
 });
 
+const groups = computed<null | GroupOptions[]>(() => {
+	if (capabilityLevel.value === 'core') {
+		return null;
+	}
+
+	const list: GroupOptions[] = [];
+
+	for (const coreData of Level.core) {
+		list.push({
+			label: NameRecord.core[coreData.id]!,
+			colspan: capabilitySubItemList.value.filter(item => item.group === coreData.id).length,
+		});
+	}
+
+	return list;
+});
+
 const columnList = computed(() => {
 	if (!isReady.value) {
 		return [];
@@ -214,6 +233,7 @@ onBeforeMount(async () => {
 
 	benchmarkList.value = await Backend.API.Benchmark.query();
 	modelList.value = await Backend.API.Model.queryHasScore();
+	capabilitySubItemList.value = await Backend.API.Capability.Item.query();
 
 	const coreLevelItemList = await Backend.API.Capability.Level.Core.query();
 	const subLevelItemList = await Backend.API.Capability.Level.Sub.query();

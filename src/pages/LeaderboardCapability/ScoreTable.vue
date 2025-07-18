@@ -8,12 +8,40 @@
 		flat
 		:pagination="{ rowsPerPage: 100 }"
 		bordered
+		separator="cell"
 		binary-state-sort
 		ref="table"
 		dense
 	>
+		<template #header="scopeProps">
+			<q-tr :props="scopeProps" style="visibility: collapse;">
+				<q-th
+					v-for="col in scopeProps.cols"
+					:key="col.name"
+					:props="scopeProps"
+				></q-th>
+			</q-tr>
+			<q-tr v-if="props.groups !== null">
+				<q-th colspan="2" class="app-cell-sticky"></q-th>
+				<q-th style="z-index: 1;"
+					v-for="(column, index) in props.groups"
+					:key="index"
+					:colspan="column.colspan"
+				>{{ column.label }}</q-th>
+			</q-tr>
+			<q-tr :props="scopeProps">
+				<q-th
+					v-for="col in scopeProps.cols"
+					:key="col.name"
+					:props="scopeProps"
+				>
+					{{ col.label }}
+				</q-th>
+			</q-tr>
+		</template>
+
 		<template #body-cell-rank="props">
-			<q-td :props="props">
+			<q-td :props="props" style="padding: 0 !important;">
 				<AppRankBadge :order="props.rowIndex + 1"></AppRankBadge>
 			</q-td>
 		</template>
@@ -71,20 +99,30 @@ export interface ColumnOptions {
 	[key: string]: unknown;
 }
 
+export interface GroupOptions {
+	label: string;
+	colspan: number;
+}
+
 const PREFIX_COLUMN_LIST = [
 	{
 		name: 'rank',
 		label: '#',
 		field: '',
 		align: 'center',
-		headerStyle: 'width: 6em',
+		classes: 'app-cell-sticky',
+		headerClasses: 'app-cell-sticky',
+		headerStyle: 'width: 4em;padding: 0 !important;',
 	},
 	{
 		name: 'model',
 		label: 'Model',
 		field: 'model',
 		align: 'left',
-		headerStyle: 'width: 260px;',
+		classes: 'app-cell-sticky',
+		headerClasses: 'app-cell-sticky',
+		style: 'left:4em',
+		headerStyle: 'width: 260px;left:4em',
 	},
 ];
 
@@ -100,10 +138,12 @@ const props = withDefaults(
 	defineProps<{
 		rows?: ModelData[];
 		columns?: string[];
+		groups?: null | GroupOptions[];
 	}>(),
 	{
 		rows: () => [],
 		columns: () => [],
+		groups: null,
 	},
 );
 

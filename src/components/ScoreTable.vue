@@ -76,14 +76,19 @@ const PREFIX_COLUMN_LIST = [
 		label: '#',
 		field: '',
 		align: 'center',
-		headerStyle: 'width: 6em',
+		classes: 'app-cell-sticky',
+		headerClasses: 'app-cell-sticky',
+		headerStyle: 'width: 4em;padding: 0 !important;',
 	},
 	{
 		name: 'model',
 		label: 'Model',
 		field: 'model',
 		align: 'left',
-		headerStyle: 'width: 260px;',
+		classes: 'app-cell-sticky',
+		headerClasses: 'app-cell-sticky',
+		style: 'left:4em',
+		headerStyle: 'width: 260px;left:4em',
 	},
 ];
 
