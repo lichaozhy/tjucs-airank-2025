@@ -18,11 +18,10 @@
 				size="lg"
 				flat
 				dense
-				class="q-px-none"
+				class="q-px-none full-width"
 				:to="{ name: 'app.benchmark.detail', params: { id: benchmark.id } }"
-				:label="benchmark.name"
 				no-caps
-			/>
+			><div class="full-width text-left">{{ benchmark.name }}</div></q-btn>
 
 			<div class="text-caption text-grey-9 ellipsis">
 				<span>
