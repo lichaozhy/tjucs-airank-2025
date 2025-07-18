@@ -223,7 +223,15 @@ const rowList = computed(() => {
 });
 
 onBeforeMount(async () => {
-	for (const groupData of await Backend.API.Capability.Group.query()) {
+	const groupDataList = await Backend.API.Capability.Group.query();
+
+	groupDataList.push({
+		id: '0d0b8076-de64-441c-9fd4-fd1678cfbaf3',
+		name: 'Total Score',
+		order: -1,
+	});
+
+	for (const groupData of groupDataList) {
 		groupNameRecord[groupData.id] = groupData.name;
 	}
 
@@ -231,12 +239,38 @@ onBeforeMount(async () => {
 		itemNameRecord[itemData.id] = itemData.name;
 	}
 
+	const modelDataList = await Backend.API.Model.queryHasScore();
+
+	console.log(modelDataList);
+
+	for (const modelData of modelDataList) {
+		for (const key in modelData.score) {
+			const coreScoreList = modelData.score[key]!.core;
+			let sum = 0, count = 0;
+
+			for (const value of coreScoreList) {
+				if (value !== null) {
+					sum += value;
+					count++;
+				}
+			}
+
+			coreScoreList.push(count === 0 ? null : sum / count);
+		}
+	}
+
 	benchmarkList.value = await Backend.API.Benchmark.query();
-	modelList.value = await Backend.API.Model.queryHasScore();
+	modelList.value = modelDataList;
 	capabilityItemList.value = await Backend.API.Capability.Item.query();
 
 	const coreLevelItemList = await Backend.API.Capability.Level.Core.query();
 	const subLevelItemList = await Backend.API.Capability.Level.Sub.query();
+
+	coreLevelItemList.push({
+		id: '0d0b8076-de64-441c-9fd4-fd1678cfbaf3',
+		index: coreLevelItemList.length,
+		order: -1,
+	});
 
 	coreLevelItemList.sort((a, b) => a.order - b.order);
 
