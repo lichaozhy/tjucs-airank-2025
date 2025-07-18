@@ -4,6 +4,7 @@
 		class="row q-col-gutter-lg"
 		v-if="isReady"
 	>
+		<div class="text-body text-grey-9 col-12">{{ BannerData.caption }}</div>
 		<div
 			class="col-12"
 			v-for="summary in filterdSummaryList"
@@ -29,10 +30,13 @@
 import { computed, onBeforeMount, ref, inject } from 'vue';
 import { useRoute } from 'vue-router';
 
-import AppSummaryScoreCard from './SummaryScoreCard.vue';
-import AppBenchmarkScoreCard from './BenchmarkScoreCard.vue';
 import * as Spec from 'src/spec';
 import * as Backend from 'src/backend';
+
+import AppSummaryScoreCard from './SummaryScoreCard.vue';
+import AppBenchmarkScoreCard from './BenchmarkScoreCard.vue';
+
+import BannerData from './banner.json';
 
 const { params } = useRoute();
 const leaderboardId = String(params.leaderboardId);

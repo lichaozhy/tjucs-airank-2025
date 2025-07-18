@@ -3,9 +3,10 @@
 		id="app-leaderboard-capability"
 		class="row q-col-gutter-lg"
 	>
+		<div class="text-body text-grey-9 col-12">{{ BannerData.caption }}</div>
 		<div class="col-12">
 			<q-toolbar
-				class="col-12 q-px-none"
+				class="col-12 q-px-none justify-evenly"
 				style="min-height: 0"
 			>
 				<q-btn-toggle
@@ -39,8 +40,11 @@
 import type { SourceScoreModel } from './ScoreCard.vue';
 import { computed, ref, inject } from 'vue';
 
-import AppScoreCard from './ScoreCard.vue';
 import * as Spec from 'src/spec';
+
+import AppScoreCard from './ScoreCard.vue';
+
+import BannerData from './banner.json';
 
 const { INJECTION_KEY: INJECTION } = Spec;
 

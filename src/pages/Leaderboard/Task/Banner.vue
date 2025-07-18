@@ -3,12 +3,6 @@
 		<div class="text-h3 text-weight-light">
 			{{ BannerData.title }}
 		</div>
-		<div
-			class="text-body1 q-mt-md text-weight-light text-center"
-			style="max-width: 72em; height: 12em"
-		>
-			{{ BannerData.caption }}
-		</div>
 		<q-space class="q-my-lg"></q-space>
 		<q-btn
 			flat
