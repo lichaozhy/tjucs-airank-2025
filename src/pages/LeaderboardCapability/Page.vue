@@ -163,6 +163,10 @@ const groups = computed<null | GroupOptions[]>(() => {
 	const list: GroupOptions[] = [];
 
 	for (const coreData of Level.core) {
+		if (coreData.id === '0d0b8076-de64-441c-9fd4-fd1678cfbaf3') {
+			continue;
+		}
+
 		list.push({
 			label: NameRecord.core[coreData.id]!,
 			colspan: capabilityItemList.value.filter(item => item.group === coreData.id).length,
