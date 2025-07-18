@@ -12,6 +12,12 @@
 		"icon": "3d_rotation"
 	},
 	{
+		"id": "0d0b8076-de64-441c-9fd4-fd1678cfbaf3",
+		"name": "Total Score",
+		"order": 0,
+		"icon": "lock"
+	},
+	{
 		"id": "6eb76c3d-8561-470a-bb91-9eb8a6e49390",
 		"name": "Temporal Perception",
 		"order": 2,

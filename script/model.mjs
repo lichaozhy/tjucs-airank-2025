@@ -4,12 +4,11 @@ import * as path from 'node:path';
 const { dirname } = import.meta;
 
 const PATH = {
-	SOURCE: path.join(dirname, '../public/data/model.json'),
-	TARGET: path.join(dirname, '../public/data/model-property.json'),
+	MODEL: path.join(dirname, '../public/data/model.json'),
+	PROPERTY: path.join(dirname, '../public/data/model-property.json'),
 };
 
-const sourceData = await fs.promises.readFile(PATH.SOURCE, 'utf-8');
-const modelList = JSON.parse(sourceData);
+const modelList = JSON.parse(await fs.promises.readFile(PATH.MODEL, 'utf-8'));
 
 const record = {
 	vision: {},
@@ -19,8 +18,8 @@ const record = {
 	year: {},
 };
 
-for (const model of modelList) {
-	const { author, component, size, release } = model;
+for (const modelData of modelList) {
+	const { author, component, size, release } = modelData;
 
 	if (Array.isArray(author)) {
 		for (const value of author) {
@@ -77,8 +76,25 @@ for (const model of modelList) {
 			record.year[year] += 1;
 		}
 	}
+
+	for (const categoryName in modelData.score) {
+		const recordOfId2ScoreListGroup = modelData.score[categoryName];
+
+		for (const id in recordOfId2ScoreListGroup) {
+			let sum = 0, count = 0;
+			const coreScoreList = recordOfId2ScoreListGroup[id].core;
+
+			for (const value of coreScoreList.slice(0, 7)) {
+				if (value !== null) {
+					sum += value;
+					count++;
+				}
+			}
+
+			coreScoreList[7] = count === 0 ? null : sum / count;
+		}
+	}
 }
 
-const targetData = JSON.stringify(record, null, '\t');
-
-await fs.promises.writeFile(PATH.TARGET, targetData);
+await fs.promises.writeFile(PATH.MODEL, JSON.stringify(modelList, null, '\t'));
+await fs.promises.writeFile(PATH.PROPERTY, JSON.stringify(record, null, '\t'));

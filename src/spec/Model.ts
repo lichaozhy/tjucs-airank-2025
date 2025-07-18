@@ -1,8 +1,10 @@
 import { z } from 'zod/v4';
 
+const ScoreListSchema = z.number().nullable().array();
+
 export const ScoreSchema = z.object({
-	core: z.number().nullable().array(),
-	sub: z.number().nullable().array(),
+	core: ScoreListSchema,
+	sub: ScoreListSchema,
 });
 
 export const Schema = z.object({
@@ -33,7 +35,10 @@ export const Schema = z.object({
 	imageVideo: z
 		.enum(['image/video', 'Image', 'Video', 'Point Clouds'])
 		.optional(),
-	score: z.record(z.string(), ScoreSchema),
+	score: z.object({
+		benchmark: z.record(z.string(), ScoreSchema),
+		summary: z.record(z.string(), ScoreSchema),
+	}),
 });
 
 export type Type = z.infer<typeof Schema>;

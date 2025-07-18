@@ -20,7 +20,7 @@
 					map-options
 					emit-value
 					:options="benchmarkOptionList"
-					v-model="selectedBenchmarkId"
+					v-model="selectedSource"
 					options-dense
 				></q-select>
 
@@ -78,7 +78,11 @@ import AppScoreTable from './ScoreTable.vue';
 import * as Backend from 'src/backend';
 import { toNumberOrNull } from 'src/components/utils';
 
-const selectedBenchmarkId = ref<string | null>(null);
+const selectedSource = ref<{
+	type: 'benchmark' | 'summary';
+	id: string;
+} | null>(null);
+
 const benchmarkList = ref<Spec.Benchmark.Type[]>([]);
 const capabilityItemList = ref<Spec.Capability.Item[]>([]);
 const capabilityLevel = ref<'core' | 'sub'>('core');
@@ -112,13 +116,13 @@ const capabilityLevelList = Object.entries(CAPABILITY_LEVEL_RECORD).map(
 );
 
 const selectedBenchmarkName = computed(() => {
-	if (selectedBenchmarkId.value === null) {
+	const currentSource = selectedSource.value;
+
+	if (currentSource === null) {
 		return 'All benchmarks';
 	}
 
-	return benchmarkList.value.find(
-		(data) => data.id === selectedBenchmarkId.value,
-	)!.name;
+	return benchmarkList.value.find((data) => data.id === currentSource.id)!.name;
 });
 
 const benchmarkOptionList = computed(() => {
@@ -129,7 +133,10 @@ const benchmarkOptionList = computed(() => {
 		},
 		...benchmarkList.value.map((data) => ({
 			label: data.name,
-			value: data.id,
+			value: {
+				type: 'benchmark',
+				id: data.id,
+			},
 		})),
 	];
 });
@@ -140,6 +147,10 @@ const Level = reactive<Record<'core' | 'sub', Spec.Capability.ScoreMap[]>>({
 });
 
 const isReady = computed(() => {
+	if (selectedSource.value === null) {
+		return false;
+	}
+
 	if (benchmarkList.value.length === 0) {
 		return false;
 	}
@@ -163,17 +174,15 @@ const groups = computed<null | GroupOptions[]>(() => {
 	const list: GroupOptions[] = [];
 
 	for (const coreData of Level.core) {
-		if (coreData.id === '0d0b8076-de64-441c-9fd4-fd1678cfbaf3') {
-			continue;
-		}
-
 		list.push({
 			label: NameRecord.core[coreData.id]!,
-			colspan: capabilityItemList.value.filter(item => item.group === coreData.id).length,
+			colspan: capabilityItemList.value.filter(
+				(item) => item.group === coreData.id,
+			).length,
 		});
 	}
 
-	return list;
+	return list.filter(item => item.colspan > 0);
 });
 
 const columnList = computed(() => {
@@ -194,7 +203,7 @@ const rowList = computed(() => {
 		return list;
 	}
 
-	const benchmark = selectedBenchmarkId.value;
+	const benchmark = selectedSource.value!.id;
 	const level = capabilityLevel.value;
 	const itemList = Level[level];
 
@@ -202,7 +211,7 @@ const rowList = computed(() => {
 
 	if (benchmark !== null) {
 		filteredModelList = filteredModelList.filter((model) =>
-			Object.hasOwn(model.score, benchmark),
+			Object.hasOwn(model.score.benchmark, benchmark),
 		);
 	}
 
@@ -213,11 +222,16 @@ const rowList = computed(() => {
 			scores: [],
 		};
 
-		const scoreItemList =
-			model.score[benchmark === null ? '*' : benchmark]![level];
+		const scoreItemList = model.score.benchmark[benchmark]![level];
 
 		for (const [index, item] of itemList.entries()) {
-			data.scores[index] = toNumberOrNull(scoreItemList[item.index]!);
+			const value = scoreItemList[item.index];
+
+			if (value === undefined) {
+				throw new Error('Bad value type.');
+			}
+
+			data.scores[index] = toNumberOrNull(value);
 		}
 
 		list.push(data);
@@ -244,24 +258,6 @@ onBeforeMount(async () => {
 	}
 
 	const modelDataList = await Backend.API.Model.queryHasScore();
-
-	console.log(modelDataList);
-
-	for (const modelData of modelDataList) {
-		for (const key in modelData.score) {
-			const coreScoreList = modelData.score[key]!.core;
-			let sum = 0, count = 0;
-
-			for (const value of coreScoreList) {
-				if (value !== null) {
-					sum += value;
-					count++;
-				}
-			}
-
-			coreScoreList.push(count === 0 ? null : sum / count);
-		}
-	}
 
 	benchmarkList.value = await Backend.API.Benchmark.query();
 	modelList.value = modelDataList;
@@ -290,7 +286,9 @@ onBeforeMount(async () => {
 	}
 
 	subLevelItemList.sort((a, b) => {
-		return (subCoreOrderRecord[a.id]! - subCoreOrderRecord[b.id]!) || (a.order - b.order);
+		return (
+			subCoreOrderRecord[a.id]! - subCoreOrderRecord[b.id]! || a.order - b.order
+		);
 	});
 
 	Level.core = coreLevelItemList;

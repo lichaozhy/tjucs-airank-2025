@@ -589,7 +589,10 @@
 			"year": 2024
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "86657687-00d9-4968-90d3-5f4e3d8b6132",
@@ -623,7 +626,10 @@
 			"year": 2024
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "e9672027-30d6-4501-b17f-75152789cbc4",
@@ -657,7 +663,10 @@
 			"year": 2024
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "aef63eca-3dde-495a-a922-c803d956568f",
@@ -1255,7 +1264,10 @@
 			"year": 2024
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "03383a4f-37a0-4046-80f1-52b61dc452a7",
@@ -1853,7 +1865,10 @@
 			"year": 2024
 		},
 		"imageVideo": "Image",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "0963c6fe-8edb-4165-98c7-6070bb745abf",
@@ -1887,7 +1902,10 @@
 			"year": 2023
 		},
 		"imageVideo": "Image",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "65b0728a-15d2-4d76-909d-86a505c25405",
@@ -1921,7 +1939,10 @@
 			"year": 2023
 		},
 		"imageVideo": "Image",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "80939e8a-be9d-4652-95e0-ff3c73a1ddda",
@@ -1952,7 +1973,10 @@
 			"year": 2023
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "dfcea64f-ee5e-4ea6-a448-e09f2fb64271",
@@ -1986,7 +2010,10 @@
 			"year": 2024
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "587b8069-98e6-46a8-985b-4c607dff6b33",
@@ -2020,7 +2047,10 @@
 			"year": 2023
 		},
 		"imageVideo": "Image",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "26d4f948-64f7-4cbb-a413-e7fec49dc45f",
@@ -2051,7 +2081,10 @@
 			"year": 2023
 		},
 		"imageVideo": "Image",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "8596e3d7-c65d-46e1-9063-16e83f0647cc",
@@ -2083,7 +2116,10 @@
 			"year": 2023
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "ba940652-9040-4510-b232-52da5cbce5a8",
@@ -2114,7 +2150,10 @@
 			"year": 2023
 		},
 		"imageVideo": "Image",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "f0fc7970-1e20-4ea2-a5fd-65ed7dd6802a",
@@ -2684,7 +2723,10 @@
 		"taskPlanning": false,
 		"reason": false,
 		"opensource": false,
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "989f3769-fe45-4472-85aa-a4f071577271",
@@ -2718,7 +2760,10 @@
 			"year": 2024
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "38e71976-4a59-41bf-9367-95f2fc5bf6f5",
@@ -3405,7 +3450,10 @@
 			"year": 2024
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "51f2b003-5aa9-462a-a5b4-538ec3f28c17",
@@ -3436,7 +3484,10 @@
 			"year": 2024
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "af35bb7c-f716-47a0-bcce-2f045a108735",
@@ -4031,7 +4082,10 @@
 			"year": 2024
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "638048e4-d5ad-4e67-abfd-c326697048aa",
@@ -4065,7 +4119,10 @@
 			"year": 2024
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "e8dafa04-5593-47ac-977b-73a5911edc74",
@@ -4099,7 +4156,10 @@
 			"year": 2025
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "85034696-05d3-44c9-8fc6-1786f0d86aab",
@@ -4127,7 +4187,10 @@
 			"year": 2024
 		},
 		"imageVideo": "Image",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "9a722f4d-1622-4ed4-9482-5024b95e06fb",
@@ -4155,7 +4218,10 @@
 			"year": 2024
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "3cfdaff3-8301-4951-9f3b-cf8134b4ed10",
@@ -5311,7 +5377,10 @@
 			"year": 2024
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "63263829-1e9c-4ac5-bf29-965f540518a6",
@@ -5345,7 +5414,10 @@
 			"year": 2024
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "87f1ac67-6ac8-4f58-9644-f877741326cb",
@@ -5376,7 +5448,10 @@
 			"year": 2024
 		},
 		"imageVideo": "Image",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "cb6e23ea-bc8a-4bef-91d6-ba174280faaf",
@@ -5971,7 +6046,10 @@
 			"year": 2024
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "e6010b47-eb88-403c-8aee-858d1c913af2",
@@ -6002,7 +6080,10 @@
 			"year": 2024
 		},
 		"imageVideo": "Image",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "525c4c5c-e4ef-42ef-9a80-0b7d059f1c95",
@@ -6036,7 +6117,10 @@
 			"year": 2024
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "2bd83c3e-58ed-4898-a1a1-a445513e31c1",
@@ -6070,7 +6154,10 @@
 			"year": 2024
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "69a2667c-2439-4c0a-b4dd-7fa2c134217c",
@@ -6104,7 +6191,10 @@
 			"year": 2024
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "e40d9b56-19c8-4387-8f71-4a3b39d7d1ef",
@@ -6138,7 +6228,10 @@
 			"year": 2024
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "47130974-a85a-4090-ab93-04542244c04e",
@@ -6159,7 +6252,10 @@
 		"release": {
 			"year": 2025
 		},
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "b98ae0e6-2bcf-487d-8ada-6423bcce8f9c",
@@ -6180,7 +6276,10 @@
 		"release": {
 			"year": 2024
 		},
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "4a42979f-36cb-4c3e-8ebf-a198a68b90e6",
@@ -6206,7 +6305,10 @@
 		"release": {
 			"year": 2025
 		},
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "2b8ad6b5-fd3b-4eef-a852-0648bc312bba",
@@ -6215,7 +6317,10 @@
 		"taskPlanning": false,
 		"reason": false,
 		"opensource": false,
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "87e7bee8-251c-44e8-8e67-500bfdd1f348",
@@ -6246,7 +6351,10 @@
 			"year": 2024
 		},
 		"imageVideo": "Point Clouds",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "70634caf-f6d3-47e8-9e9c-2754a40b53a2",
@@ -6277,7 +6385,10 @@
 			"year": 2024
 		},
 		"imageVideo": "Point Clouds",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "3efd880e-f132-4d0f-ba66-67142efb9470",
@@ -6308,7 +6419,10 @@
 			"year": 2024
 		},
 		"imageVideo": "Point Clouds",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "8472d27d-9c33-4ea2-854c-2ec882f303b6",
@@ -6339,7 +6453,10 @@
 			"year": 2023
 		},
 		"imageVideo": "Point Clouds",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "b0e697a1-bef6-488c-b3df-1680c3694f48",
@@ -6371,7 +6488,10 @@
 			"year": 2024
 		},
 		"imageVideo": "Point Clouds",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "dfb3cf12-beee-48f1-87f5-66d40176d517",
@@ -6399,7 +6519,10 @@
 			"year": 2024
 		},
 		"imageVideo": "Point Clouds",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "d7a24483-5295-4afb-9ecd-8538b5d92e53",
@@ -6434,7 +6557,10 @@
 			"year": 2024
 		},
 		"imageVideo": "Point Clouds",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "dfb947dc-4326-489d-8a69-eb9ecbd3725e",
@@ -6443,7 +6569,10 @@
 		"taskPlanning": false,
 		"reason": false,
 		"opensource": false,
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "7b3f0bae-5319-4d34-b7ad-62ba67a43da4",
@@ -6471,7 +6600,10 @@
 			"year": 2024
 		},
 		"imageVideo": "Point Clouds",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "529c2206-513e-45fa-a762-1d8a6adf548f",
@@ -6505,7 +6637,10 @@
 			"year": 2024
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "0cb4cf61-fe9a-4974-9c89-96c023957e9f",
@@ -6536,7 +6671,10 @@
 			"year": 2023
 		},
 		"imageVideo": "Point Clouds",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "323ef65f-630b-49df-bff8-e7bc32815387",
@@ -6567,7 +6705,10 @@
 			"year": 2023
 		},
 		"imageVideo": "Point Clouds",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "af3acd4e-d0b0-4aec-b45a-2ad7088a54f8",
@@ -6601,7 +6742,10 @@
 			"year": 2024
 		},
 		"imageVideo": "Point Clouds",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "09929601-b5f9-439b-94d3-fe8dedb11b13",
@@ -6624,7 +6768,10 @@
 			"year": 2024
 		},
 		"imageVideo": "Point Clouds",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "314244f5-7c42-4279-957b-6fbc2c4b9aee",
@@ -6652,7 +6799,10 @@
 			"year": 2023
 		},
 		"imageVideo": "Image",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "12e98a0d-5bd3-4af8-a45d-4ebaa59cf45c",
@@ -6682,7 +6832,10 @@
 		"release": {
 			"year": 2024
 		},
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "df53089f-9407-49d7-b93e-199fffe7db94",
@@ -6712,7 +6865,10 @@
 		"release": {
 			"year": 2024
 		},
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "3b0d50a0-37ec-4234-ada0-4a727f9972ab",
@@ -6721,7 +6877,10 @@
 		"taskPlanning": false,
 		"reason": false,
 		"opensource": false,
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "3fb0da53-f2cc-4854-9d26-3d16943be090",
@@ -6730,7 +6889,10 @@
 		"taskPlanning": false,
 		"reason": false,
 		"opensource": false,
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "1ff580e8-1775-4dc3-b7f6-191f98b432e8",
@@ -6739,7 +6901,10 @@
 		"taskPlanning": false,
 		"reason": false,
 		"opensource": false,
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "d43c7af4-55f6-4054-bcd4-88d27efd0d10",
@@ -6773,7 +6938,10 @@
 			"year": 2024
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "8d42636e-05c2-4179-a0d1-625f474f1622",
@@ -6807,7 +6975,10 @@
 			"year": 2024
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "bfee5170-8314-49ea-96e6-762fc8e2bba4",
@@ -6829,7 +7000,10 @@
 		"release": {
 			"year": 2025
 		},
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "a7bde639-b09a-4cbf-a647-cbde9a634e6c",
@@ -6863,7 +7037,10 @@
 			"year": 2024
 		},
 		"imageVideo": "Image",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "24608772-82fc-4750-94ba-a0f87e2c1198",
@@ -6891,7 +7068,10 @@
 			"year": 2025
 		},
 		"imageVideo": "Image",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "b585f486-bac8-40d9-bcdb-3b7642bd7be9",
@@ -8041,7 +8221,10 @@
 			"year": 2025
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "b30fbf25-94f2-4c76-9780-7c65e4cd5afc",
@@ -9776,7 +9959,10 @@
 			"year": 2025
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "ec713a22-e012-4acb-8567-c7bbff7c70a2",
@@ -10377,7 +10563,10 @@
 			"year": 2024
 		},
 		"imageVideo": "Video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "4c367bb5-77bf-48b5-9ada-2fcde4729c81",
@@ -10411,7 +10600,10 @@
 			"year": 2024
 		},
 		"imageVideo": "Video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "f33d8c23-d728-477e-9088-5f3a02175043",
@@ -10448,7 +10640,10 @@
 			"year": 2024
 		},
 		"imageVideo": "Point Clouds",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "00568adc-d3fc-49ec-ab1c-b5a560c6149d",
@@ -10465,7 +10660,10 @@
 			"year": 2023
 		},
 		"imageVideo": "Point Clouds",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "85d29904-6b52-4091-97a4-8b1dba40f55f",
@@ -10500,7 +10698,10 @@
 			"year": 2025
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "a72406cc-1374-4992-ad62-b052f23908f8",
@@ -11101,7 +11302,10 @@
 			"year": 2024
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "07b32a32-fe35-4b8d-9c65-57f4a12ad256",
@@ -11135,7 +11339,10 @@
 			"year": 2025
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "c1bc8f89-1907-4d8c-9271-628125b335c5",
@@ -11170,7 +11377,10 @@
 			"year": 2024
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "bd0aff87-62c1-494b-a1e1-fb3ef55f0150",
@@ -11210,7 +11420,10 @@
 			"year": 2024
 		},
 		"imageVideo": "Image",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "8cb6f6bb-9534-4da7-bff7-b25f4359faec",
@@ -11811,7 +12024,10 @@
 			"year": 2025
 		},
 		"imageVideo": "Image",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "8b4d7b49-c349-45a5-b2db-2f602f44ae29",
@@ -11845,7 +12061,10 @@
 			"year": 2025
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "e72d733b-7926-4bb3-bf29-204c042d52c5",
@@ -11876,7 +12095,10 @@
 			"year": 2025
 		},
 		"imageVideo": "Image",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "051465b8-2624-4b45-a884-bdfcfde0609f",
@@ -11897,7 +12119,10 @@
 		"release": {
 			"year": 2024
 		},
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	},
 	{
 		"id": "0254b277-0f68-496d-b01b-fe0528e67b4b",
@@ -12492,6 +12717,9 @@
 			"year": 2025
 		},
 		"imageVideo": "image/video",
-		"score": {}
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
 	}
 ]
