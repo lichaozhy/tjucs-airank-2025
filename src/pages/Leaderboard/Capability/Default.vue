@@ -1,28 +1,13 @@
 <template>
 	<div
 		id="app-leaderboard-capability"
-		class="column content-center"
+		class="row q-col-gutter-lg"
 	>
-		<div class="full-width app-max-width-1680">
+		<div class="col-12">
 			<q-toolbar
-				class="q-px-none justify-between"
+				class="col-12 q-px-none"
 				style="min-height: 0"
 			>
-				<q-select
-					square
-					outlined
-					bg-color="white"
-					dense
-					style="width: 16em"
-					stack-label
-					label="Benchmark"
-					map-options
-					emit-value
-					:options="benchmarkOptionList"
-					v-model="selectedSource"
-					options-dense
-				></q-select>
-
 				<q-btn-toggle
 					no-caps
 					square
@@ -30,269 +15,64 @@
 					color="white"
 					text-color="black"
 					toggle-color="indigo-10"
-					v-model="capabilityLevel"
+					v-model="level"
 					:options="capabilityLevelList"
 					stretch
 				/>
 			</q-toolbar>
+		</div>
 
-			<AppScoreCard class="q-mt-md">
-				<template #header>
-					<q-item class="card-header justify-between">
-						<q-item-section class="col-shrink">
-							<div class="text-h6 text-weight-600 q-py-sm text-white">
-								<span>Embodied Capability Leaderboard</span
-								><span class="q-ml-lg text-weight-light text-body1">{{
-									caption
-								}}</span>
-							</div>
-						</q-item-section>
-						<q-item-section side>
-							<AppModelFilter
-								@filter-update="(filter) => (currentFilter = filter)"
-							></AppModelFilter>
-						</q-item-section>
-					</q-item>
-				</template>
-				<AppScoreTable
-					:columns="columnList"
-					:rows="rowList"
-					:groups="groups"
-				></AppScoreTable>
-			</AppScoreCard>
+		<div class="col-12"
+			v-for="source in selectedSourceList"
+			:key="source.id"
+		>
+			<AppScoreCard
+				:source="source"
+				:level="level"
+			/>
 		</div>
 	</div>
 </template>
 
 <script setup lang="ts">
-import type * as Spec from 'src/spec';
-import type { ModelData, GroupOptions } from './ScoreTable.vue';
-import type { ModelFilter } from 'components/ModelFilter.vue';
-import { computed, onBeforeMount, reactive, ref } from 'vue';
+import type { SourceScoreModel } from './ScoreCard.vue';
+import { computed, ref, inject } from 'vue';
 
-import AppScoreCard from 'components/ScoreCard.vue';
-import AppModelFilter from 'components/ModelFilter.vue';
-import AppScoreTable from './ScoreTable.vue';
+import AppScoreCard from './ScoreCard.vue';
+import * as Spec from 'src/spec';
 
-import * as Backend from 'src/backend';
-import { toNumberOrNull } from 'src/components/utils';
+const { INJECTION_KEY: INJECTION } = Spec;
 
-const selectedSource = ref<{
-	type: 'benchmark' | 'summary';
-	id: string;
-} | null>(null);
+const level = ref<'core' | 'sub'>('core');
+const selectedBenchmark = inject(INJECTION.LEADERBOARD_BENCHMARK_SELECTED);
+const selectedSummary = inject(INJECTION.LEADERBOARD_SUMMARY_SELECTED);
 
-const benchmarkList = ref<Spec.Benchmark.Type[]>([]);
-const capabilityItemList = ref<Spec.Capability.Item[]>([]);
-const capabilityLevel = ref<'core' | 'sub'>('core');
-const currentFilter = ref<ModelFilter>(() => true);
-const modelList = ref<Spec.Model.Type[]>([]);
-const groupNameRecord: Record<string, string> = {};
-const itemNameRecord: Record<string, string> = {};
+const selectedSourceList = computed<SourceScoreModel[]>(() => {
+	const list: SourceScoreModel[] = [];
 
-const NameRecord = {
-	core: groupNameRecord,
-	sub: itemNameRecord,
-};
+	for (const id in selectedSummary) {
+		if (selectedSummary[id]) {
+			list.push({ type: 'summary', id });
+		}
+	}
+
+	for (const id in selectedBenchmark) {
+		if (selectedBenchmark[id]) {
+			list.push({ type: 'benchmark', id });
+		}
+	}
+
+	return list;
+});
 
 const CAPABILITY_LEVEL_RECORD = {
 	core: 'Core Capabilities',
 	sub: 'Sub Capabilities',
 };
 
-const caption = computed(() => {
-	const spanList = [
-		`${selectedBenchmarkName.value}`,
-		' - ',
-		`${CAPABILITY_LEVEL_RECORD[capabilityLevel.value]}`,
-	];
-
-	return spanList.join('');
-});
-
 const capabilityLevelList = Object.entries(CAPABILITY_LEVEL_RECORD).map(
 	([value, label]) => ({ value, label }),
 );
-
-const selectedBenchmarkName = computed(() => {
-	const currentSource = selectedSource.value;
-
-	if (currentSource === null) {
-		return 'All benchmarks';
-	}
-
-	return benchmarkList.value.find((data) => data.id === currentSource.id)!.name;
-});
-
-const benchmarkOptionList = computed(() => {
-	return [
-		{
-			label: 'All',
-			value: null,
-		},
-		...benchmarkList.value.map((data) => ({
-			label: data.name,
-			value: {
-				type: 'benchmark',
-				id: data.id,
-			},
-		})),
-	];
-});
-
-const Level = reactive<Record<'core' | 'sub', Spec.Capability.ScoreMap[]>>({
-	core: [],
-	sub: [],
-});
-
-const isReady = computed(() => {
-	if (selectedSource.value === null) {
-		return false;
-	}
-
-	if (benchmarkList.value.length === 0) {
-		return false;
-	}
-
-	if (modelList.value.length === 0) {
-		return false;
-	}
-
-	if (Level.core.length === 0 || Level.sub.length === 0) {
-		return false;
-	}
-
-	return true;
-});
-
-const groups = computed<null | GroupOptions[]>(() => {
-	if (capabilityLevel.value === 'core') {
-		return null;
-	}
-
-	const list: GroupOptions[] = [];
-
-	for (const coreData of Level.core) {
-		list.push({
-			label: NameRecord.core[coreData.id]!,
-			colspan: capabilityItemList.value.filter(
-				(item) => item.group === coreData.id,
-			).length,
-		});
-	}
-
-	return list.filter(item => item.colspan > 0);
-});
-
-const columnList = computed(() => {
-	if (!isReady.value) {
-		return [];
-	}
-
-	const level = capabilityLevel.value;
-	const nameRecord = NameRecord[level];
-
-	return [...Level[capabilityLevel.value]].map((data) => nameRecord[data.id]!);
-});
-
-const rowList = computed(() => {
-	const list: ModelData[] = [];
-
-	if (!isReady.value) {
-		return list;
-	}
-
-	const benchmark = selectedSource.value!.id;
-	const level = capabilityLevel.value;
-	const itemList = Level[level];
-
-	let filteredModelList = [...modelList.value];
-
-	if (benchmark !== null) {
-		filteredModelList = filteredModelList.filter((model) =>
-			Object.hasOwn(model.score.benchmark, benchmark),
-		);
-	}
-
-	for (const model of filteredModelList) {
-		const data: ModelData = {
-			id: model.id,
-			name: model.name,
-			scores: [],
-		};
-
-		const scoreItemList = model.score.benchmark[benchmark]![level];
-
-		for (const [index, item] of itemList.entries()) {
-			const value = scoreItemList[item.index];
-
-			if (value === undefined) {
-				throw new Error('Bad value type.');
-			}
-
-			data.scores[index] = toNumberOrNull(value);
-		}
-
-		list.push(data);
-	}
-
-	return list;
-});
-
-onBeforeMount(async () => {
-	const groupDataList = await Backend.API.Capability.Group.query();
-
-	groupDataList.push({
-		id: '0d0b8076-de64-441c-9fd4-fd1678cfbaf3',
-		name: 'Total Score',
-		order: -1,
-	});
-
-	for (const groupData of groupDataList) {
-		groupNameRecord[groupData.id] = groupData.name;
-	}
-
-	for (const itemData of await Backend.API.Capability.Item.query()) {
-		itemNameRecord[itemData.id] = itemData.name;
-	}
-
-	const modelDataList = await Backend.API.Model.queryHasScore();
-
-	benchmarkList.value = await Backend.API.Benchmark.query();
-	modelList.value = modelDataList;
-	capabilityItemList.value = await Backend.API.Capability.Item.query();
-
-	const coreLevelItemList = await Backend.API.Capability.Level.Core.query();
-	const subLevelItemList = await Backend.API.Capability.Level.Sub.query();
-
-	coreLevelItemList.push({
-		id: '0d0b8076-de64-441c-9fd4-fd1678cfbaf3',
-		index: coreLevelItemList.length,
-		order: -1,
-	});
-
-	coreLevelItemList.sort((a, b) => a.order - b.order);
-
-	const coreOrderRecord: Record<string, number> = {};
-	const subCoreOrderRecord: Record<string, number> = {};
-
-	for (const [index, coreLevelItem] of coreLevelItemList.entries()) {
-		coreOrderRecord[coreLevelItem.id] = index;
-	}
-
-	for (const item of capabilityItemList.value) {
-		subCoreOrderRecord[item.id] = coreOrderRecord[item.group]!;
-	}
-
-	subLevelItemList.sort((a, b) => {
-		return (
-			subCoreOrderRecord[a.id]! - subCoreOrderRecord[b.id]! || a.order - b.order
-		);
-	});
-
-	Level.core = coreLevelItemList;
-	Level.sub = subLevelItemList;
-});
 
 defineOptions({ name: 'AppLeaderboardPageCapability' });
 </script>

@@ -41,10 +41,9 @@ const LeaderboardAPI = Backend.API.Leaderboard(leaderboardId);
 const leaderboard = ref<Spec.Leaderboard.Type | null>(null);
 const benchmarkList = ref<Array<Spec.Benchmark.Type>>([]);
 
-const selectedBenchmark = inject(
-	Spec.INJECTION_KEY.LEADERBOARD_BENCHMARK_SELECTED,
-);
-const selectedSummary = inject(Spec.INJECTION_KEY.LEADERBOARD_SUMMARY_SELECTED);
+const { INJECTION_KEY: INJECTION } = Spec;
+const selectedBenchmark = inject(INJECTION.LEADERBOARD_BENCHMARK_SELECTED);
+const selectedSummary = inject(INJECTION.LEADERBOARD_SUMMARY_SELECTED);
 
 if (selectedBenchmark === undefined || selectedSummary === undefined) {
 	throw new Error(

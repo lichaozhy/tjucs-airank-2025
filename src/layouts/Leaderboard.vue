@@ -4,7 +4,7 @@
 		class="column content-center"
 		padding
 	>
-		<AppBannerWithLayout :height="360">
+		<AppBannerWithLayout :height="480">
 			<template #banner>
 				<router-view name="banner"></router-view>
 			</template>
@@ -29,6 +29,8 @@
 							flat
 							dense
 							rounded
+							@pointerdown.stop
+							@mousedown.stop
 						>
 							<q-list dense>
 								<q-item-label header>{{
@@ -126,17 +128,32 @@ watch(
 			Object.assign(selectedSummary, oldSelectedSummary);
 		}
 
+		const query: Record<'benchmark' | 'summary', string[]> = {
+			benchmark: [],
+			summary: [],
+		};
+
 		for (const id in newSelectedBenchmark) {
-			if (newSelectedBenchmark[id] && oldSelectedBenchmark![id]) {
-				selectedBenchmark[id] = false;
+			if (newSelectedBenchmark[id]) {
+				query.benchmark.push(id);
+
+				if (oldSelectedBenchmark![id]) {
+					selectedBenchmark[id] = false;
+				}
 			}
 		}
 
 		for (const id in newSelectedSummary) {
-			if (newSelectedSummary[id] && oldSelectedSummary![id]) {
-				selectedSummary[id] = false;
+			if (newSelectedSummary[id]) {
+				query.summary.push(id);
+
+				if (oldSelectedSummary![id]) {
+					selectedSummary[id] = false;
+				}
 			}
 		}
+
+		// await router.push({ query });
 	},
 );
 

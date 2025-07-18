@@ -158,6 +158,21 @@ export const API = {
 			},
 		},
 	),
+	Summary: Object.assign((summaryId: string) => {
+		return {
+			async get() {
+				for (const leaderboardData of Data.Leaderboard) {
+					for (const summaryData of leaderboardData.summaries) {
+						if (summaryData.id === summaryId) {
+							return summaryData;
+						}
+					}
+				}
+			},
+		};
+	}, {
+
+	}),
 	Benchmark: Object.assign(
 		(benchmarkId: string) => {
 			return {
@@ -168,9 +183,7 @@ export const API = {
 				},
 				Document: {
 					async get() {
-						const response = await fetch(`/html/benchmark/${benchmarkId}.html`);
-
-						return response.text();
+						return fetch(`/html/benchmark/${benchmarkId}.html`).then(readText);
 					},
 				},
 				Score: {
@@ -205,8 +218,11 @@ export const API = {
 			async query() {
 				return [...Data.Model];
 			},
-			async queryHasScore() {
-				return Data.Model.filter(({ score }) => Object.keys(score).length > 0);
+			async queryHasBenchmark(benchmarkId: string) {
+				return Data.Model.filter(model => Object.hasOwn(model.score.benchmark, benchmarkId));
+			},
+			async queryHasSummary(summaryId: string) {
+				return Data.Model.filter(model => Object.hasOwn(model.score.summary, summaryId));
 			},
 			Property: {
 				ValueGroup: {

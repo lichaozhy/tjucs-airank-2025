@@ -1,6 +1,11 @@
 {
 	"core": [
 		{
+			"id": "0d0b8076-de64-441c-9fd4-fd1678cfbaf3",
+			"index": 7,
+			"order": -1
+		},
+		{
 			"id": "01684595-db84-46b8-be9a-c9ddc9b71183",
 			"index": 0,
 			"order": 0
