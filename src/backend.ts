@@ -54,14 +54,14 @@ export const Data: {
 	Benchmark: Spec.Benchmark.Type[];
 	Model: Spec.Model.Type[];
 	Score: Spec.Score.Type[];
-	Configuration: Spec.Configuration.Type | null;
+	Configuration: Spec.Configuration.Type;
 } = {
 	ModelProperty: { vision: {}, language: {}, author: {}, size: {}, year: {} },
 	Leaderboard: [],
 	Benchmark: [],
 	Model: [],
 	Score: [],
-	Configuration: null,
+	Configuration: { DEFAULT_LEADERBOARD: '' },
 };
 
 export const Capability: {

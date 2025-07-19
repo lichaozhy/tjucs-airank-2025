@@ -87,14 +87,13 @@
 
 <script setup lang="ts">
 import { computed, onBeforeMount, reactive, ref, provide, watch } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
+import { useRoute } from 'vue-router';
 
 import * as Backend from 'src/backend';
 import AppBannerWithLayout from './BannerWith.vue';
 import * as Spec from 'src/spec';
 
 const route = useRoute();
-const router = useRouter();
 const leaderboard = ref<Spec.Leaderboard.Type | null>(null);
 const leaderboardList = ref<Spec.Leaderboard.Type[]>([]);
 const benchmarkList = ref<Spec.Benchmark.Type[]>([]);
@@ -159,14 +158,6 @@ watch(
 
 onBeforeMount(async () => {
 	const leaderboardListData = await Backend.API.Leaderboard.query();
-
-	if (!Object.hasOwn(route.params, 'leaderboardId')) {
-		return await router.replace({
-			name: 'app.leaderboard.detail',
-			params: { leaderboardId: leaderboardListData[0]?.id },
-		});
-	}
-
 	const { leaderboardId } = route.params;
 	const LeaderboardAPI = Backend.API.Leaderboard(leaderboardId as string);
 	const leaderboardData = await LeaderboardAPI.get();

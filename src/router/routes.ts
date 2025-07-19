@@ -2,6 +2,8 @@ import type { RouteRecordRaw } from 'vue-router';
 import { h } from 'vue';
 import { RouterView } from 'vue-router';
 
+import * as Backend from 'src/backend';
+
 const MIDDLE_ROUTER_VIEW = {
 	name: 'MiddleRouterView',
 	render: () => h(RouterView),
@@ -21,8 +23,22 @@ const routes: RouteRecordRaw[] = [
 			},
 			{
 				name: 'app.leaderboard',
-				path: 'leaderboard/:leaderboardId',
+				path: 'leaderboard/:leaderboardId?',
 				component: () => import('layouts/Leaderboard.vue'),
+				async beforeEnter(to, from, next) {
+					if (!Object.hasOwn(to.params, 'leaderboardId')) {
+						const Configuration = await Backend.API.Configuration.get();
+
+						return next({
+							name: to.name,
+							params: {
+								leaderboardId: Configuration.DEFAULT_LEADERBOARD,
+							},
+						});
+					}
+
+					return next();
+				},
 				children: [
 					{
 						name: 'app.leaderboard.task',

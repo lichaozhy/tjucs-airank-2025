@@ -8,10 +8,7 @@
 			flat
 			no-caps
 			size="lg"
-			:to="{
-				name: 'app.leaderboard.capability',
-				params: { leaderboardId: defaultLeaderboardId },
-			}"
+			:to="{ name: 'app.leaderboard.capability', params: $route.params }"
 		>
 			<div>
 				<div>{{ BannerData.navigation.label }}</div>
@@ -22,20 +19,7 @@
 </template>
 
 <script setup lang="ts">
-import { onBeforeMount, ref } from 'vue';
-
-import * as Backend from 'src/backend';
 import BannerData from './banner.json';
-
-const defaultLeaderboardId = ref<string | null>(null);
-
-onBeforeMount(async () => {
-	const Configuration = await Backend.API.Configuration.get();
-
-	if (Configuration !== null) {
-		defaultLeaderboardId.value = Configuration.DEFAULT_LEADERBOARD;
-	}
-});
 
 defineOptions({ name: 'AppLeaderboardTaskBanner' });
 </script>

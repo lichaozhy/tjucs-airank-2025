@@ -38,10 +38,7 @@
 					no-caps
 					flat
 					stretch
-					:to="{
-						name: 'app.leaderboard.capability',
-						params: { leaderboardId: defaultLeaderboardId },
-					}"
+					:to="{ name: 'app.leaderboard.capability' }"
 					label="Embodied Capability Leaderboards"
 					:class="{ active: routeMatched('app.leaderboard.capability') }"
 				></q-btn>
@@ -51,10 +48,7 @@
 					no-caps
 					flat
 					stretch
-					:to="{
-						name: 'app.leaderboard.task',
-						params: { leaderboardId: defaultLeaderboardId },
-					}"
+					:to="{ name: 'app.leaderboard.task' }"
 					label="Embodied Task Leaderboards"
 					:class="{ active: routeMatched('app.leaderboard.task') }"
 				></q-btn>
@@ -131,26 +125,15 @@
 
 <script setup lang="ts">
 import type * as Quasar from 'quasar';
-import { onBeforeMount, ref } from 'vue';
+import { ref } from 'vue';
 import { useRoute } from 'vue-router';
 
-import * as Backend from 'src/backend';
-
 const route = useRoute();
-const defaultLeaderboardId = ref<string | null>(null);
 const scrollArea = ref<Quasar.QScrollArea | null>(null);
 
 function routeMatched(name: string) {
 	return route.matched.some((route) => route.name?.toString().includes(name));
 }
-
-onBeforeMount(async () => {
-	const Configuration = await Backend.API.Configuration.get();
-
-	if (Configuration !== null) {
-		defaultLeaderboardId.value = Configuration.DEFAULT_LEADERBOARD;
-	}
-});
 
 function scrollTop() {
 	if (scrollArea.value !== null) {
