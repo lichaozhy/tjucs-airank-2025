@@ -39,7 +39,7 @@ export async function toHTML(dirname, emitData = () => {}) {
 	const sourceURLElement = DOM.window.document.createElement('a');
 	const posixPathname = path.relative(PATH.WORKSPACE, pathname).replaceAll('\\', '/');
 
-	sourceURLElement.setAttribute('href', path.posix.join(REPO_BASE_URL, posixPathname));
+	sourceURLElement.setAttribute('href', `${REPO_BASE_URL}${posixPathname}`);
 	sourceURLElement.setAttribute('target', '_blank');
 	sourceURLElement.id = 'app-markdown-source-url';
 	sourceURLElement.innerHTML = posixPathname;

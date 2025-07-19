@@ -2,6 +2,7 @@ import * as fs from 'node:fs';
 import * as path from 'node:path';
 
 import * as MD from './markdown.mjs';
+import { ensureDirectory } from './utils.mjs';
 const { dirname } = import.meta;
 
 const PATH = {
@@ -9,9 +10,12 @@ const PATH = {
 		DIRECTORY: path.join(dirname, '../document/benchmark'),
 	},
 	TARGET: {
+		HTML: path.join(dirname, '../public/html/benchmark'),
 		METADATA: path.join(dirname, '../public/data/benchmark.json'),
 	},
 };
+
+await ensureDirectory(PATH.TARGET.HTML);
 
 const benchmarkDataList = [];
 
