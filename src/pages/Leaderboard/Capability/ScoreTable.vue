@@ -6,7 +6,7 @@
 		hide-pagination
 		square
 		flat
-		:pagination="{ rowsPerPage: 100 }"
+		v-model:pagination="pagination"
 		bordered
 		separator="cell"
 		binary-state-sort
@@ -52,7 +52,11 @@
 				:props="props"
 				style="padding: 0 !important"
 			>
-				<AppRankBadge :order="props.rowIndex + 1"></AppRankBadge>
+				<AppRankBadge
+					:order="props.rowIndex + 1"
+					v-if="props.rowIndex < 3"
+				></AppRankBadge>
+				<span v-else>{{ props.rowIndex + 1 }}</span>
 			</q-td>
 		</template>
 
@@ -84,8 +88,8 @@
 </template>
 
 <script setup lang="ts">
-import type { QTable } from 'quasar';
-import { computed, onMounted, ref } from 'vue';
+import type { QTable, QTableProps } from 'quasar';
+import { computed, onMounted, ref, watch } from 'vue';
 
 import AppRankBadge from 'components/RankBadge.vue';
 import { toNoneOrFixed, getColumnEMWidth } from 'components/utils';
@@ -158,6 +162,17 @@ const props = withDefaults(
 );
 
 const table = ref<QTable | null>(null);
+
+const pagination = ref<QTableProps['pagination']>({
+	sortBy: 'item(0)',
+	descending: false,
+	rowsPerPage: 30,
+});
+
+watch(pagination, () => {
+	pagination.value!.descending = true;
+});
+
 
 const columnList = computed(() => {
 	const propertyColumnList: ColumnOptions[] = [];

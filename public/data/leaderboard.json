@@ -5,7 +5,7 @@
 		"summaries": [
 			{
 				"id": "d6ba913a-6e26-4dcc-b192-04b9bee6fd8e",
-				"name": "2D-All Benchmarks",
+				"name": "2D-Embodied QA Benchmarks ",
 				"properties": [
 					{
 						"type": "computed",
@@ -107,7 +107,7 @@
 			},
 			{
 				"id": "22d6526a-6707-4a1e-ae3d-9c337feba2e8",
-				"name": "3D-All Benchmarks",
+				"name": "3D-Embodied QA Benchmarks",
 				"properties": [
 					{
 						"type": "computed",
@@ -159,7 +159,7 @@
 		"summaries": [
 			{
 				"id": "2e5899bb-60bb-43d0-8ce0-fd186d66b3fb",
-				"name": "Nav-All Benchmarks",
+				"name": "Vision Language Navigation Benchmarks",
 				"properties": [
 					{
 						"type": "computed",
@@ -219,7 +219,7 @@
 		"summaries": [
 			{
 				"id": "3a43d3d8-f078-43fd-b45c-ab2af7a0c283",
-				"name": "TP-All Benchmarks",
+				"name": "Task Planning Benchmarks",
 				"properties": [
 					{
 						"type": "computed",
