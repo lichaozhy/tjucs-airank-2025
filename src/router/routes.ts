@@ -24,6 +24,7 @@ const routes: RouteRecordRaw[] = [
 			{
 				name: 'app.leaderboard',
 				path: 'leaderboard/:leaderboardId?',
+				redirect: { name: 'app.leaderboard.task' },
 				component: () => import('layouts/Leaderboard.vue'),
 				async beforeEnter(to, from, next) {
 					if (!Object.hasOwn(to.params, 'leaderboardId')) {
