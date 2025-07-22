@@ -2283,7 +2283,7 @@
 				"CLIP ViT-L/14"
 			],
 			"language": [
-				"Vicuna‑7B"
+				"Vicuna-7B"
 			]
 		},
 		"size": [
@@ -2497,7 +2497,7 @@
 		"component": {
 			"language": [
 				"LLaMA",
-				"Vicuna‑7B"
+				"Vicuna-7B"
 			]
 		},
 		"size": [
@@ -3343,7 +3343,7 @@
 		"name": "InternVL2-40B",
 		"component": {
 			"vision": [
-				"InternViT-6B-448px-V1-5"
+				"InternViT-6B-448px-V1_5"
 			],
 			"language": [
 				"Nous-Hermes-2-Yi-34B"
@@ -7905,7 +7905,7 @@
 		"name": "3D-LLM(Flamingo)",
 		"component": {
 			"vision": [
-				"CLIP"
+				"CLIP ViT-L/14"
 			],
 			"language": [
 				"Open-Flamingo"
@@ -9725,7 +9725,7 @@
 		"name": "InternVL3-8B",
 		"component": {
 			"vision": [
-				"InternViT-300M-448px-V2.5"
+				"InternViT-300M-448px-V2_5"
 			],
 			"language": [
 				"Qwen2.5-7B"
@@ -10427,7 +10427,7 @@
 		"name": "InternVL3-14B",
 		"component": {
 			"vision": [
-				"InternViT-300M-448px-V2.5"
+				"InternViT-300M-448px-V2_5"
 			],
 			"language": [
 				"Qwen2.5-14B"
@@ -11129,7 +11129,7 @@
 		"name": "InternVL3-38B",
 		"component": {
 			"vision": [
-				"InternViT-6B-448px-V2.5"
+				"InternViT-6B-448px-V2_5"
 			],
 			"language": [
 				"Qwen2.5-32B"
@@ -11831,7 +11831,7 @@
 		"name": "InternVL3-78B",
 		"component": {
 			"vision": [
-				"InternViT-6B-448px-V2.5"
+				"InternViT-6B-448px-V2_5"
 			],
 			"language": [
 				"Qwen2.5-72B"
@@ -12707,7 +12707,7 @@
 				"SigLIP-400M"
 			],
 			"language": [
-				"Qwen-2.5-Instruct-3B"
+				"Qwen2.5-3B-Instruct"
 			]
 		},
 		"size": [
@@ -15234,7 +15234,7 @@
 		"name": "MapNav",
 		"component": {
 			"vision": [
-				"SigLIP-so400M"
+				"SigLIP-So400M"
 			],
 			"language": [
 				"Qwen2-7B-Instruct"
@@ -15313,6 +15313,279 @@
 		"opensource": false,
 		"release": {
 			"year": 2025
+		},
+		"imageVideo": "image/video",
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
+	},
+	{
+		"id": "6844071e-8bf1-479e-9bea-994e165f257f",
+		"name": "VeBrain",
+		"component": {
+			"language": [
+				"Qwen2.5-VL"
+			]
+		},
+		"author": [
+			"Shanghai AI Lab & Tsinghua"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
+		"website": "https://internvl.github.io/blog/2025-05-26-VeBrain/",
+		"navigation": true,
+		"taskPlanning": true,
+		"reason": true,
+		"opensource": true,
+		"release": {
+			"year": 2025
+		},
+		"imageVideo": "image/video",
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
+	},
+	{
+		"id": "5b258389-c623-4baf-95fb-ddf0a131bca2",
+		"name": "Space-R",
+		"component": {
+			"language": [
+				"Qwen2.5-VL-7B-Instruct"
+			]
+		},
+		"author": [
+			"Peking University"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
+		"website": "https://github.com/OuyangKun10/SpaceR",
+		"navigation": true,
+		"taskPlanning": true,
+		"reason": true,
+		"opensource": true,
+		"release": {
+			"year": 2025
+		},
+		"imageVideo": "image/video",
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
+	},
+	{
+		"id": "7908681f-848e-46ff-beca-d75d837e9d54",
+		"name": "Magma",
+		"component": {
+			"vision": [
+				"CLIP-ConvNeXt-XXLarge"
+			],
+			"language": [
+				"Meta LLaMA-3"
+			]
+		},
+		"author": [
+			"Microsoft Research"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
+		"website": "https://microsoft.github.io/Magma/",
+		"navigation": true,
+		"taskPlanning": true,
+		"reason": true,
+		"opensource": true,
+		"release": {
+			"year": 2025
+		},
+		"imageVideo": "image/video",
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
+	},
+	{
+		"id": "f04eac5c-b134-4caf-bc3e-00b9020e9925",
+		"name": "RoboBrain2.0-32B",
+		"author": [
+			"Beijing Academy of Artificial Intelligence"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
+		"website": "https://huggingface.co/BAAI/RoboBrain2.0-32B",
+		"navigation": true,
+		"taskPlanning": true,
+		"reason": true,
+		"opensource": true,
+		"release": {
+			"year": 2025
+		},
+		"imageVideo": "image/video",
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
+	},
+	{
+		"id": "b9ca147e-9348-4ba4-83c3-0bd72314829f",
+		"name": "RoboBrain2.0-7B",
+		"author": [
+			"Beijing Academy of Artificial Intelligence"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
+		"website": "https://huggingface.co/BAAI/RoboBrain2.0-7B",
+		"navigation": true,
+		"taskPlanning": true,
+		"reason": true,
+		"opensource": true,
+		"release": {
+			"year": 2025
+		},
+		"imageVideo": "image/video",
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
+	},
+	{
+		"id": "310fd4bf-e228-4347-9e8f-e1d14d63b2ed",
+		"name": "Embodied-R1-3B",
+		"author": [
+			"Tsinghua University"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
+		"website": "https://embodiedcity.github.io/Embodied-R/",
+		"navigation": true,
+		"taskPlanning": true,
+		"reason": true,
+		"opensource": true,
+		"release": {
+			"year": 2025
+		},
+		"imageVideo": "image/video",
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
+	},
+	{
+		"id": "3c9327f1-fd21-4adc-af48-fd3e60404cb2",
+		"name": "SAT",
+		"component": {
+			"vision": [
+				"ViT"
+			],
+			"language": [
+				"LLaVA-1.5-7B/13B"
+			]
+		},
+		"author": [
+			"Boston University"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
+		"website": "https://github.com/arijitray1993/SAT",
+		"navigation": true,
+		"taskPlanning": true,
+		"reason": true,
+		"opensource": true,
+		"release": {
+			"year": 2024
+		},
+		"imageVideo": "image/video",
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
+	},
+	{
+		"id": "ecde821e-40e3-4a5d-87d5-cfa95773f1f8",
+		"name": "robo-refer",
+		"component": {
+			"language": [
+				"RoboRefer-8B"
+			]
+		},
+		"author": [
+			"Beihang University"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
+		"website": "https://zhoues.github.io/RoboRefer/",
+		"navigation": true,
+		"taskPlanning": true,
+		"reason": true,
+		"opensource": true,
+		"release": {
+			"year": 2025
+		},
+		"imageVideo": "image/video",
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
+	},
+	{
+		"id": "10710d64-db8f-4958-8a19-842ce1f692c7",
+		"name": "robo-point",
+		"component": {
+			"vision": [
+				"ViT-L/14 336px"
+			],
+			"language": [
+				"Vicuna-v1.5-13B"
+			]
+		},
+		"author": [
+			"University of Washington"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
+		"website": "https://github.com/wentaoyuan/RoboPoint",
+		"navigation": true,
+		"taskPlanning": true,
+		"reason": true,
+		"opensource": true,
+		"release": {
+			"year": 2024
 		},
 		"imageVideo": "image/video",
 		"score": {
