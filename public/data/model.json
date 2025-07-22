@@ -734,7 +734,7 @@
 		"name": "MiniCPM-V 2.6",
 		"component": {
 			"vision": [
-				"SigLip-So400M"
+				"SigLIP-So400M"
 			],
 			"language": [
 				"Qwen2-7B"
@@ -2462,7 +2462,7 @@
 		"name": "BLIP-2-flant5xl",
 		"component": {
 			"vision": [
-				"Blip-2"
+				"BLIP-2"
 			],
 			"language": [
 				"Flan-T5-xl"
@@ -2531,7 +2531,7 @@
 		"name": "MiniGPT4-Vicuna7B",
 		"component": {
 			"vision": [
-				"Blip-2"
+				"BLIP-2"
 			],
 			"language": [
 				"Vicuna-7B"
@@ -3273,7 +3273,7 @@
 		"name": "LLaVA-NeXT-Video-72B",
 		"component": {
 			"vision": [
-				"SigLip-So400M"
+				"SigLIP-So400M"
 			],
 			"language": [
 				"Qwen2-72B"
@@ -5016,7 +5016,7 @@
 		"name": "Gemini-1.5-flash",
 		"component": {
 			"language": [
-				"gemini-1.5-flash"
+				"Gemini-1.5-flash"
 			]
 		},
 		"author": [
@@ -7249,7 +7249,7 @@
 		"name": "Gemini-1.5-Pro",
 		"component": {
 			"language": [
-				"gemini-1.5-Pro"
+				"Gemini-1.5-Pro"
 			]
 		},
 		"author": [
@@ -12704,7 +12704,7 @@
 		"name": "PhysVLM",
 		"component": {
 			"vision": [
-				"SigLip-400M model"
+				"SigLIP-400M"
 			],
 			"language": [
 				"Qwen-2.5-Instruct-3B"
@@ -14301,7 +14301,7 @@
 		"name": "SpatialCoT",
 		"component": {
 			"vision": [
-				"Vit"
+				"ViT"
 			],
 			"language": [
 				"Vicuna-v1.5-13B"
@@ -15148,6 +15148,165 @@
 			"2D"
 		],
 		"website": "https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash",
+		"navigation": true,
+		"taskPlanning": true,
+		"reason": true,
+		"opensource": false,
+		"release": {
+			"year": 2025
+		},
+		"imageVideo": "image/video",
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
+	},
+	{
+		"id": "d1b8e0bc-90ee-45a6-bafe-0430007bd6d4",
+		"name": "NaVid-7B",
+		"component": {
+			"vision": [
+				"EVA-CLIP"
+			],
+			"language": [
+				"Vicuna-7B-v1.5"
+			]
+		},
+		"author": [
+			"Peking University"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
+		"website": "https://pku-epic.github.io/Uni-NaVid",
+		"navigation": true,
+		"taskPlanning": true,
+		"reason": true,
+		"opensource": true,
+		"release": {
+			"year": 2024
+		},
+		"imageVideo": "image/video",
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
+	},
+	{
+		"id": "3456f0c2-c764-4e1a-93b7-f121b3cc628d",
+		"name": "UniNaVid-7B",
+		"component": {
+			"vision": [
+				"EVA-CLIP"
+			],
+			"language": [
+				"Vicuna-7B-v1.5"
+			]
+		},
+		"author": [
+			"Peking University"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
+		"website": "https://pku-epic.github.io/Uni-NaVid",
+		"navigation": true,
+		"taskPlanning": true,
+		"reason": true,
+		"opensource": false,
+		"release": {
+			"year": 2024
+		},
+		"imageVideo": "image/video",
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
+	},
+	{
+		"id": "05a2873a-3f35-4d8e-b1bb-55945178c3f9",
+		"name": "MapNav",
+		"component": {
+			"vision": [
+				"SigLIP-so400M"
+			],
+			"language": [
+				"Qwen2-7B-Instruct"
+			]
+		},
+		"author": [
+			"BAAI"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
+		"website": "https://arxiv.org/pdf/2502.13451",
+		"navigation": true,
+		"taskPlanning": true,
+		"reason": true,
+		"opensource": false,
+		"release": {
+			"year": 2025
+		},
+		"imageVideo": "image/video",
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
+	},
+	{
+		"id": "4d9cd244-566d-4a89-884f-fdae0f48fc6c",
+		"name": "NaVILA",
+		"author": [
+			"UC San Diego, USC, NVIDIA"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
+		"website": "https://github.com/AnjieCheng/NaVILA",
+		"navigation": true,
+		"taskPlanning": true,
+		"reason": true,
+		"opensource": false,
+		"release": {
+			"year": 2025
+		},
+		"imageVideo": "image/video",
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
+	},
+	{
+		"id": "b1f7bdc9-dc1c-4c02-9495-2886b7a59c97",
+		"name": "VLN-R1",
+		"component": {
+			"language": [
+				"Qwen2-VL-7B-Instruct"
+			]
+		},
+		"author": [
+			"The University of Hong Kong, Shanghai AI Laboratory"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
+		"website": "https://vlnr1.github.io",
 		"navigation": true,
 		"taskPlanning": true,
 		"reason": true,

@@ -1618,6 +1618,31 @@
 		"items": [5.1, 5.1]
 	},
 	{
+		"benchmark": "1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09",
+		"model": "d1b8e0bc-90ee-45a6-bafe-0430007bd6d4",
+		"items": [37.4, 37.4]
+	},
+	{
+		"benchmark": "1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09",
+		"model": "3456f0c2-c764-4e1a-93b7-f121b3cc628d",
+		"items": [47, 47]
+	},
+	{
+		"benchmark": "1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09",
+		"model": "05a2873a-3f35-4d8e-b1bb-55945178c3f9",
+		"items": [39.7, 39.7]
+	},
+	{
+		"benchmark": "1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09",
+		"model": "4d9cd244-566d-4a89-884f-fdae0f48fc6c",
+		"items": [54, 54]
+	},
+	{
+		"benchmark": "1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09",
+		"model": "b1f7bdc9-dc1c-4c02-9495-2886b7a59c97",
+		"items": [30.2, 30.2]
+	},
+	{
 		"benchmark": "025ca0fe-f04c-4d17-9f4c-9d1aca6666bd",
 		"model": "6d2b9e8a-97ff-400f-8ea1-f403c7452408",
 		"items": [3.3, 3.3]
@@ -1711,6 +1736,31 @@
 		"benchmark": "025ca0fe-f04c-4d17-9f4c-9d1aca6666bd",
 		"model": "a72406cc-1374-4992-ad62-b052f23908f8",
 		"items": [6.7, 6.7]
+	},
+	{
+		"benchmark": "025ca0fe-f04c-4d17-9f4c-9d1aca6666bd",
+		"model": "d1b8e0bc-90ee-45a6-bafe-0430007bd6d4",
+		"items": [23.8, 23.8]
+	},
+	{
+		"benchmark": "025ca0fe-f04c-4d17-9f4c-9d1aca6666bd",
+		"model": "3456f0c2-c764-4e1a-93b7-f121b3cc628d",
+		"items": [48.7, 48.7]
+	},
+	{
+		"benchmark": "025ca0fe-f04c-4d17-9f4c-9d1aca6666bd",
+		"model": "05a2873a-3f35-4d8e-b1bb-55945178c3f9",
+		"items": [32.6, 32.6]
+	},
+	{
+		"benchmark": "025ca0fe-f04c-4d17-9f4c-9d1aca6666bd",
+		"model": "4d9cd244-566d-4a89-884f-fdae0f48fc6c",
+		"items": [49.3, 49.3]
+	},
+	{
+		"benchmark": "025ca0fe-f04c-4d17-9f4c-9d1aca6666bd",
+		"model": "b1f7bdc9-dc1c-4c02-9495-2886b7a59c97",
+		"items": [22.3, 22.3]
 	},
 	{
 		"benchmark": "b9a18add-a3fb-4893-89e3-ddeea8053ce2",
