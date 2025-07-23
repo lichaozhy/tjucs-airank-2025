@@ -1,5 +1,5 @@
 <template>
-	<AppScoreCard>
+	<AppScoreCard v-if="benchmark !== null">
 		<template #header>
 			<q-item class="card-header justify-between">
 				<q-item-section class="col-shrink">
@@ -7,7 +7,7 @@
 						{{ benchmark.name }}
 					</div>
 				</q-item-section>
-				<q-item-section side>
+				<q-item-section side v-if="false">
 					<AppModelFilter @filter-update="setFilter"></AppModelFilter>
 				</q-item-section>
 			</q-item>
@@ -20,6 +20,8 @@
 </template>
 
 <script setup lang="ts">
+import type * as Data from 'src/data';
+import type { BenchmarkAbstract } from './type';
 import type { ModelData } from 'components/ScoreTable.vue';
 import type { ModelFilter } from 'components/ModelFilter.vue';
 import { computed, onBeforeMount, ref } from 'vue';
@@ -28,41 +30,26 @@ import AppScoreCard from 'components/ScoreCard.vue';
 import AppScoreTable from 'components/ScoreTable.vue';
 import AppModelFilter from 'components/ModelFilter.vue';
 
-import type * as Spec from 'src/spec';
 import * as Backend from 'src/backend';
 import { toNumberOrNull } from 'components/utils';
 
-const { benchmark } = defineProps<{
-	benchmark: Spec.Benchmark.Type;
+const props = defineProps<{
+	benchmarkId: string;
 }>();
 
-const BenchmarkAPI = Backend.API.Benchmark(benchmark.id);
-const scoreList = ref<Spec.Score.Type[]>([]);
-const modelList = ref<Spec.Model.Type[]>([]);
+const benchmark = ref<BenchmarkAbstract & {
+	properties: Record<string, Data.BenchmarkProperty>;
+} | null>(null);
 
-const isReady = computed(() => {
-	if (scoreList.value.length === 0) {
-		return false;
-	}
-
-	if (modelList.value.length === 0) {
-		return false;
-	}
-
-	return true;
-});
+const modelList = ref<(Data.Model & { id: string })[]>([]);
+const modelScoreRecord = ref<Record<string, Data.ScoreValueList>>({});
+const currentFilter = ref<ModelFilter>(() => true);
 
 const columnList = computed(() => {
-	if (!isReady.value) {
-		return [];
-	}
-
-	return Object.values(benchmark.properties)
+	return Object.values(benchmark.value!.properties)
 		.sort((a, b) => a.order - b.order)
 		.map((property) => property.label);
 });
-
-const currentFilter = ref<ModelFilter>(() => true);
 
 function setFilter(filter: ModelFilter) {
 	currentFilter.value = filter;
@@ -71,15 +58,10 @@ function setFilter(filter: ModelFilter) {
 const rowList = computed<ModelData[]>(() => {
 	const list: ModelData[] = [];
 
-	if (!isReady.value) {
-		return [];
-	}
+	const propertyList = Object.values(benchmark.value!.properties)
+		.sort((a, b) => a.order - b.order);
 
-	const scoreRecord = Object.groupBy(scoreList.value, (score) => score.model);
-
-	const propertyList = Object.values(benchmark.properties).sort(
-		(a, b) => a.order - b.order,
-	);
+	const scores = modelScoreRecord.value;
 
 	for (const model of modelList.value.filter(currentFilter.value)) {
 		const data: ModelData = {
@@ -88,10 +70,10 @@ const rowList = computed<ModelData[]>(() => {
 			scores: [],
 		};
 
-		const { items } = scoreRecord[model.id]![0]!;
+		const items = scores[model.id]!;
 
 		for (const [index, property] of propertyList.entries()) {
-			data.scores[index] = toNumberOrNull(items[property.index]!);
+			data.scores[index] = toNumberOrNull(items[property.index]);
 		}
 
 		list.push(data);
@@ -100,13 +82,21 @@ const rowList = computed<ModelData[]>(() => {
 	return list;
 });
 
-async function fetchModelFromScore(score: Spec.Score.Type) {
-	return await Backend.API.Model(score.model).get();
-}
-
 onBeforeMount(async () => {
-	scoreList.value = await BenchmarkAPI.Score.query();
-	modelList.value = await Promise.all(scoreList.value.map(fetchModelFromScore));
+	const BenchmarkAPI = Backend.API.Benchmark(props.benchmarkId);
+	const benchmarkData = await BenchmarkAPI.get();
+
+	benchmark.value = {
+		id: benchmarkData.id,
+		name: benchmarkData.name,
+		properties: benchmarkData.properties,
+	};
+
+	modelList.value = await Backend.API.Model.queryHasBenchmark(props.benchmarkId);
+
+	for (const { id, score } of modelList.value) {
+		modelScoreRecord.value[id] = score.benchmark[benchmarkData.id]!.legacy!;
+	}
 });
 
 defineOptions({ name: 'AppPageScoreCard' });

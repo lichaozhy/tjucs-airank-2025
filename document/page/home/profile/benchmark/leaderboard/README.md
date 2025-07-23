@@ -1,0 +1,10 @@
+---
+title: 3 Types of Leaderboards, 18 Evaluation Benchmarks
+list:
+  - id: 09b4a56a-2e41-4103-a330-129381c24450
+    icon: question_answer
+  - id: 263e7d41-65a5-4b7b-8f48-5c7b94ca916b
+    icon: near_me
+  - id: 1143b13b-2754-4660-9f79-d0d0dc1f273e
+    icon: view_timeline
+---

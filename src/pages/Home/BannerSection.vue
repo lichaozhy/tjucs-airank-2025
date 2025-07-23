@@ -12,9 +12,9 @@
 			class="text-white text-center q-pa-xl relative-position"
 			style="z-index: 1"
 		>
-			<h1 class="text-weight-bolder">{{ PROJECT.NAME }}</h1>
-			<h2 class="">{{ PROJECT.SUBTITLE }}</h2>
-			<h5 class="text-weight-light">{{ PROJECT.ABSTRACT }}</h5>
+			<h1 class="text-weight-bolder">{{ data.title }}</h1>
+			<h2 class="">{{ data.subtitle }}</h2>
+			<h5 class="text-weight-light">{{ data.slogan }}</h5>
 
 			<div class="row justify-center q-my-xl">
 				<q-btn
@@ -49,21 +49,18 @@ import { onBeforeMount, onBeforeUnmount, onMounted, ref } from 'vue';
 import options from './particlesjs-config.json';
 import * as Backend from 'src/backend';
 
-const PROJECT = {
-	NAME: 'Embodied Arena',
-	SUBTITLE: 'Embodied AI Model Evaluation System & Leaderboards',
-	ABSTRACT: `A comprehensive, unified, and evolving evaluation system and
-	platform for embodied AI models`,
-};
-
-const defaultLeaderboardId = ref<string | null>(null);
+const data = ref<{
+	title: string;
+	subtitle: string;
+	slogan: string;
+}>({
+	title: '',
+	subtitle: '',
+	slogan: '',
+});
 
 onBeforeMount(async () => {
-	const Configuration = await Backend.API.Configuration.get();
-
-	if (Configuration !== null) {
-		defaultLeaderboardId.value = Configuration.DEFAULT_LEADERBOARD;
-	}
+	data.value = await Backend.API.Page.Home.Banner.get();
 });
 
 onMounted(() => {

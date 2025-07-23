@@ -1,10 +1,11 @@
 import { z } from 'zod/v4';
 
-const ScoreListSchema = z.number().nullable().array();
+const ScoreListSchema = z.number().nullable().array().optional();
 
 export const ScoreSchema = z.object({
-	core: ScoreListSchema,
-	sub: ScoreListSchema,
+	legacy: ScoreListSchema,
+	0: ScoreListSchema,
+	1: ScoreListSchema,
 });
 
 export const Schema = z.object({

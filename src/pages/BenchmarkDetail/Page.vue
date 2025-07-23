@@ -43,7 +43,7 @@
 						</q-card-section>
 						<q-separator />
 						<q-card-section>
-							<app-markdown-html :content="documentHTML" />
+							<app-markdown-html :src="`benchmark/${benchmark?.id}`" />
 						</q-card-section>
 					</q-card>
 				</div>
@@ -176,7 +176,6 @@ const route = useRoute();
 const benchmarkId = route.params.id as string;
 const BenchmarkAPI = Backend.API.Benchmark(benchmarkId);
 const benchmark = ref<Spec.Benchmark.Type | null>(null);
-const documentHTML = ref<string>('');
 
 interface InformationData {
 	releasedAt: string | null;
@@ -242,8 +241,6 @@ onBeforeMount(async () => {
 	if (!benchmark.value) {
 		throw new Error(`Benchmark with ID ${benchmarkId} not found`);
 	}
-
-	documentHTML.value = await BenchmarkAPI.Document.get();
 });
 
 defineOptions({ name: 'BenchmarkDetailPage' });

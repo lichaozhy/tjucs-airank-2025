@@ -37,14 +37,14 @@
 </template>
 
 <script setup lang="ts">
-import type { ModelPropertyValueGroup } from 'src/backend';
 import { computed, onBeforeMount, onMounted, ref, watch } from 'vue';
 
 import * as Backend from 'src/backend';
 import * as Spec from 'src/spec';
+import type * as Data from 'src/data';
 import type { ModelData } from './ScoreTable.vue';
 
-export type ModelFilter = (data: Spec.Model.Type) => boolean;
+export type ModelFilter = (data: Data.Model) => boolean;
 
 const DEFAULT_FILTER = () => true;
 
@@ -58,7 +58,7 @@ type OptionObject = {
 	value: null | number | string | boolean;
 };
 
-const PROPERTY_GROUP = ref<ModelPropertyValueGroup | null>(null);
+const PROPERTY_GROUP = ref<null>(null);
 const propertyNameOption = ref<string | null>(null);
 const propertyValueOption = ref<string | number | null>(null);
 

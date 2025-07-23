@@ -1,37 +1,37 @@
 <template>
 	<div class="col-shrink">
 		<div class="column content-center items-center text-center">
-			<h2 class="text-indigo-10 text-weight-bold">{{ PROFILE.TITLE }}</h2>
-			<p
+			<h2 class="text-indigo-10 text-weight-bold">{{ data.title }}</h2>
+			<app-markdown-html
 				class="text-body1 text-grey-8 self-center"
 				style="max-width: 70em"
-			>
-				{{ PROFILE.COMMENT }}
-			</p>
+				src="page/home/profile/capability"
+			></app-markdown-html>
 		</div>
 
 		<div class="bg-indigo-10 text-h5 q-pa-md q-mt-xl text-white">
-			{{ INTRODUCTION.TITLE }}
+			{{ detail.title }}
 		</div>
 
 		<q-space class="q-my-lg" />
 
-		<div class="row q-col-gutter-lg no-wrap">
+		<div class="row q-col-gutter-lg no-wrap"
+					v-if="level0Id !== null">
 			<div class="col-grow row">
 				<q-tabs
 					vertical
 					stretch
 					inline-label
-					v-model="group"
+					v-model="level0Id"
 				>
 					<q-tab
 						content-class="q-pr-lg q-py-sm"
-						v-for="group in groupList"
-						:key="group.id"
-						:label="group.name"
-						:icon="group.icon"
+						v-for="item in data.itemList"
+						:key="item.id"
+						:label="levelORecord[item.id]!.name"
+						:icon="item.icon"
 						style="justify-content: start"
-						:name="group.id"
+						:name="item.id"
 					></q-tab>
 				</q-tabs>
 				<q-separator
@@ -45,22 +45,25 @@
 				<app-markdown-html
 					class="q-mb-md"
 					style="height: 14em"
-					:content="groupContent"
+					:src="`capability/children/${level0Id}`"
 				/>
 
 				<div class="text-h5 text-center text-weight-medium q-mt-md">
-					{{ PROFILE.MAPPING.TITLE }}
+					{{ mapping.title }}
 				</div>
-				<div class="text-caption text-center q-mt-sm">
-					{{ PROFILE.MAPPING.CAPTION }}
-				</div>
+				<app-markdown-html
+					class="text-caption text-center q-mt-sm"
+					src="page/home/profile/capability/mapping"
+					style="font-size: 12px"
+				></app-markdown-html>
 
 				<q-tabs
-					v-model="item"
+					v-model="level1Id"
 					class="q-mt-sm"
+					v-if="level1Id !== null"
 				>
 					<q-tab
-						v-for="item in itemList"
+						v-for="item in levelORecord[level0Id!]!.children!"
 						:key="item.id"
 						:label="item.name"
 						:name="item.id"
@@ -72,20 +75,19 @@
 
 				<q-tab-panels
 					class="bg-transparent"
-					v-model="item"
-					swipeable
+					v-model="level1Id"
 					infinite
 					style="height: 20em"
 				>
 					<q-tab-panel
 						class="q-px-none"
-						v-for="item in itemList"
+						v-for="item in levelORecord[level0Id!]!.children!"
 						:key="item.id"
 						:name="item.id"
 					>
 						<app-markdown-html
 							class="app-capability-markdown"
-							:content="itemContent"
+							:src="`capability/children/${level0Id}/children/${level1Id}`"
 						/>
 					</q-tab-panel>
 				</q-tab-panels>
@@ -111,72 +113,58 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onBeforeMount, ref, watch } from 'vue';
+import { onBeforeMount, ref, watch } from 'vue';
 
-const PROFILE = {
-	TITLE: 'Systematic Embodied Capability Taxonomy',
-	COMMENT: `Embodied Arena uses a systematic taxonomy of emboidied capability,
-	carefully sifted and refined from diverse embodied tasks and benchmarks,
-	aiming to provide concentrated metrics for reliable evaluation and essential
-	objectives for research breakthrough.`,
-	MAPPING: {
-		TITLE: 'Benchmark-Capability Mapping',
-		CAPTION: `The following mapping table shows how the original capability
-		dimensions (second column) of each benchmark (first column) can be mapped
-		to the fine-grained capabilities (tab names) in our taxonomy.`,
-	},
-};
-
-import type * as Spec from 'src/spec';
 import * as Backend from 'src/backend';
 import AppMarkdownHtml from 'components/MarkdownHTML.vue';
 
-const groupDataList = ref<Spec.Capability.Group[]>([]);
-const itemDataList = ref<Spec.Capability.Item[]>([]);
+interface CapabilityItemAbastract {
+	id: string;
+	name: string;
+	children?: CapabilityItemAbastract[];
+	[key: string]: unknown;
+}
 
-const INTRODUCTION = {
-	TITLE: '7 Embodied Capabilities, 25 Fine-grained Dimensions',
-};
+const data = ref<{
+	title: string;
+	itemList: {
+		id: string;
+		icon: string;
+	}[];
+}>({ title: '', itemList: [] });
 
-const group = ref<string>('');
-const item = ref<string>('');
-const groupContent = ref<string>('');
-const itemContent = ref<string>('');
+const detail = ref<{ title: string }>({ title: '' });
+const mapping = ref<{ title: string }>({ title: '' });
+const levelORecord = ref<Record<string, CapabilityItemAbastract>>({});
+const level0Id = ref<string | null>(null);
+const level1Id = ref<string | null>(null);
 
-const groupList = computed(() => {
-	return [...groupDataList.value].sort((a, b) => a.order - b.order);
-});
-
-const itemList = computed(() => {
-	const currentGroupId = group.value;
-
-	return itemDataList.value
-		.filter((item) => item.group === currentGroupId)
-		.sort((a, b) => a.order - b.order);
-});
-
-watch(group, async (groupId) => {
-	groupContent.value =
-		await Backend.API.Document.Capability.Group(groupId).get();
-
-	const list = itemList.value;
-
-	if (list.length > 0) {
-		item.value = list[0]!.id;
+watch(level0Id, (level0Id) => {
+	if (level0Id === null) {
+		return;
 	}
-});
 
-watch(item, async (itemId) => {
-	itemContent.value = await Backend.API.Document.Capability.Item(itemId).get();
+	level1Id.value = levelORecord.value[level0Id]!.children![0]!.id;
 });
 
 onBeforeMount(async () => {
-	itemDataList.value = await Backend.API.Capability.Item.query();
-	groupDataList.value = await Backend.API.Capability.Group.query();
-	group.value = groupDataList.value[0]!.id;
+	data.value = await Backend.API.Page.Home.Profile.Capability.get();
+
+	for (const itemData of await Backend.API.Capability.query()) {
+		const childItemList = await Backend.API.Capability(itemData.id).query();
+
+		levelORecord.value[itemData.id] = {
+			...itemData,
+			children: childItemList.map(({ id, name }) => ({ id, name })),
+		};
+	}
+
+	level0Id.value = data.value.itemList[0]!.id;
+	detail.value = await Backend.API.Page.Home.Profile.Capability.Detail.get();
+	mapping.value = await Backend.API.Page.Home.Profile.Capability.Mapping.get();
 });
 
-defineOptions({ name: 'AppPageHomeBenchmarkProfile' });
+defineOptions({ name: 'AppPageHomeCapabilityProfile' });
 </script>
 
 <style>

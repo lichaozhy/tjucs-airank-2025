@@ -1,0 +1,734 @@
+---
+name: o3
+component:
+  language:
+    - o3
+author:
+  - OpenAI
+qa:
+  - 2D
+dimension:
+  - 2D
+website: https://openai.com/index/introducing-o3-and-o4-mini/
+navigation: true
+taskPlanning: true
+reason: true
+opensource: false
+release:
+  year: 2025
+imageVideo: Image
+score:
+  benchmark:
+    034bf6b5-dc18-45da-bfaf-337589125632:
+      0:
+        - 52.8696051
+        - 54.29
+        - 58.23966443
+        - 73.42127148
+        - 41.96
+        - 46.11
+        - null
+        - 54.481756835
+      1:
+        - 40.49
+        - 60.12
+        - 62.25
+        - null
+        - 54.29
+        - null
+        - null
+        - null
+        - 59.5
+        - 57.39
+        - 68.28
+        - 77.66
+        - 55.22
+        - null
+        - null
+        - null
+        - 41.96
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 46.11
+        - null
+      legacy:
+        - 40.49
+        - 60.12
+        - 62.25
+        - 54.29
+        - 59.5
+        - 57.39
+        - 77.66
+        - 68.28
+        - 48.33
+        - 55.22
+        - 35.59
+        - 46.11
+        - 55.44
+    ba0be521-6b10-4881-964c-97cd4d2d6070:
+      0:
+        - 70.51639004
+        - 49.77
+        - null
+        - 57.12
+        - 56.19061785
+        - null
+        - null
+        - 58.399251972500004
+      1:
+        - 55.45
+        - 72.96
+        - 82
+        - null
+        - null
+        - null
+        - 49.77
+        - null
+        - null
+        - null
+        - 57.12
+        - null
+        - null
+        - 49.77
+        - null
+        - 62.7
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      legacy:
+        - 55.45
+        - 72.96
+        - 82
+        - 62.7
+        - 57.12
+        - 49.77
+        - 49.77
+        - 61.4
+    25206b0f-a955-4e39-86cf-53dcc9528bfc:
+      0:
+        - 64.14801054
+        - 50.92967857
+        - null
+        - null
+        - 71.03
+        - 56.71
+        - null
+        - 60.7044222775
+      1:
+        - null
+        - 71.86
+        - null
+        - 51.14
+        - 52.4
+        - 48.95765544
+        - null
+        - 56.56
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 71.03
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 56.71
+        - null
+      legacy:
+        - 51.14
+        - 37.88
+        - 71.86
+        - 56.56
+        - 61.97
+        - 52.4
+        - 56.71
+        - 71.03
+        - 57.8
+    5df5ca38-7ca9-4d35-81c6-3dfe52700755:
+      0:
+        - 53.82
+        - 24.32
+        - null
+        - null
+        - 41.07833
+        - null
+        - null
+        - 39.739443333333334
+      1:
+        - 67.64
+        - null
+        - 40
+        - null
+        - 24.32
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 38.1
+        - 43.94
+        - null
+        - 40.91218182
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      legacy:
+        - 40.28
+        - 24.32
+        - 67.64
+        - 38.1
+        - 40
+        - 42.11
+        - 43.94
+        - 35.71
+        - 41.51
+    a9228f2e-3191-4a08-8f03-64e73cae2e78:
+      0:
+        - null
+        - null
+        - null
+        - 33.46
+        - null
+        - null
+        - null
+        - 33.46
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 33.46
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      legacy:
+        - 33.46
+        - 33.46
+    1961aa46-9085-42ed-b384-d9ffe52921a8:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 73.33333333
+        - 73.33333333
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 79.33333333
+        - 64
+        - 70
+        - null
+        - 80
+        - null
+        - null
+        - null
+      legacy:
+        - 82
+        - 80
+        - 80
+        - 64
+        - 70
+        - 76
+        - 75.3
+    cbb64d1c-4377-4231-a465-73ffb10972c5:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 66.16667
+        - 66.16667
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 72.66666667
+        - 84
+        - 40
+        - null
+        - 68
+        - null
+        - null
+        - null
+      legacy:
+        - 98
+        - 68
+        - 64
+        - 84
+        - 40
+        - 56
+        - 68.3
+    73de273a-7d38-40c0-b869-2b2e6156c897:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 64.8
+        - null
+        - 64.8
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 64.8
+        - null
+        - null
+      legacy:
+        - 77
+        - 75
+        - 66
+        - 63
+        - 43
+        - 64.8
+    1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 26.3
+        - null
+        - 26.3
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 26.3
+      legacy:
+        - 26.3
+        - 26.3
+    025ca0fe-f04c-4d17-9f4c-9d1aca6666bd:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 13.3
+        - null
+        - 13.3
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 13.3
+      legacy:
+        - 13.3
+        - 13.3
+    b9a18add-a3fb-4893-89e3-ddeea8053ce2:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - 14.965
+        - null
+        - null
+        - 14.965
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 21.59
+        - null
+        - 8.34
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      legacy:
+        - 21.59
+        - 8.34
+        - 52.5
+    27e481d6-6057-49dc-ad80-529f9127245f:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 40.6
+        - 40.6
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 40.6
+        - null
+        - null
+        - null
+        - null
+        - null
+      legacy:
+        - 40.6
+        - 40.6
+    089294d0-59db-47f0-a543-19d8e3708448:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - 19.67
+        - null
+        - null
+        - 19.67
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 19.67
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      legacy:
+        - 19.67
+        - 19.67
+    ed3fc303-b421-4e73-936a-e93a5aada777:
+      legacy:
+        - 7.1
+        - 3.97
+        - 2.06
+        - 1.16
+        - 3.57
+    68bf8b5b-d8d4-49d7-9e7e-03e4d547189b:
+      legacy:
+        - 89.47
+        - 77.81
+        - 65.33
+        - null
+        - 77.54
+  summary:
+    d6ba913a-6e26-4dcc-b192-04b9bee6fd8e:
+      0:
+        - 1702.01
+        - 1703.01
+        - 1704.01
+        - 1705.01
+        - 1706.01
+        - 1707.01
+        - 1708.01
+        - 1705.01
+      1:
+        - 1702.01
+        - 1703.01
+        - 1704.01
+        - 1705.01
+        - 1706.01
+        - 1707.01
+        - 1708.01
+        - 1709.01
+        - 1710.01
+        - 1711.01
+        - 1712.01
+        - 1713.01
+        - 1714.01
+        - 1715.01
+        - 1716.01
+        - 1717.01
+        - 1718.01
+        - 1719.01
+        - 1720.01
+        - 1721.01
+        - 1722.01
+        - 1723.01
+        - 1724.01
+        - 1725.01
+        - 1726.01
+    22d6526a-6707-4a1e-ae3d-9c337feba2e8:
+      0:
+        - 1703.01
+        - 1704.01
+        - 1705.01
+        - 1706.01
+        - 1707.01
+        - 1708.01
+        - 1709.01
+        - 1706.01
+      1:
+        - 1703.01
+        - 1704.01
+        - 1705.01
+        - 1706.01
+        - 1707.01
+        - 1708.01
+        - 1709.01
+        - 1710.01
+        - 1711.01
+        - 1712.01
+        - 1713.01
+        - 1714.01
+        - 1715.01
+        - 1716.01
+        - 1717.01
+        - 1718.01
+        - 1719.01
+        - 1720.01
+        - 1721.01
+        - 1722.01
+        - 1723.01
+        - 1724.01
+        - 1725.01
+        - 1726.01
+        - 1727.01
+    2e5899bb-60bb-43d0-8ce0-fd186d66b3fb:
+      0:
+        - 1704.01
+        - 1705.01
+        - 1706.01
+        - 1707.01
+        - 1708.01
+        - 1709.01
+        - 1710.01
+        - 1707.01
+      1:
+        - 1704.01
+        - 1705.01
+        - 1706.01
+        - 1707.01
+        - 1708.01
+        - 1709.01
+        - 1710.01
+        - 1711.01
+        - 1712.01
+        - 1713.01
+        - 1714.01
+        - 1715.01
+        - 1716.01
+        - 1717.01
+        - 1718.01
+        - 1719.01
+        - 1720.01
+        - 1721.01
+        - 1722.01
+        - 1723.01
+        - 1724.01
+        - 1725.01
+        - 1726.01
+        - 1727.01
+        - 1728.01
+    3a43d3d8-f078-43fd-b45c-ab2af7a0c283:
+      0:
+        - 1705.01
+        - 1706.01
+        - 1707.01
+        - 1708.01
+        - 1709.01
+        - 1710.01
+        - 1711.01
+        - 1708.01
+      1:
+        - 1705.01
+        - 1706.01
+        - 1707.01
+        - 1708.01
+        - 1709.01
+        - 1710.01
+        - 1711.01
+        - 1712.01
+        - 1713.01
+        - 1714.01
+        - 1715.01
+        - 1716.01
+        - 1717.01
+        - 1718.01
+        - 1719.01
+        - 1720.01
+        - 1721.01
+        - 1722.01
+        - 1723.01
+        - 1724.01
+        - 1725.01
+        - 1726.01
+        - 1727.01
+        - 1728.01
+        - 1729.01
+---

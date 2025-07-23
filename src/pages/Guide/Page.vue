@@ -16,7 +16,8 @@
 						<q-card-section>
 							<app-markdown-html
 								ref="document"
-								:content="documentHTML"
+								src="guide"
+								@rendered="buildTOC"
 							/>
 						</q-card-section>
 					</q-card>
@@ -47,9 +48,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onBeforeMount, watch, nextTick } from 'vue';
+import { ref } from 'vue';
 
-import * as Backend from 'src/backend';
 import AppMarkdownHtml from 'components/MarkdownHTML.vue';
 
 interface TOCItem {
@@ -58,7 +58,6 @@ interface TOCItem {
 	depth: number;
 }
 
-const documentHTML = ref<string>('');
 const toc = ref<TOCItem[]>([]);
 const document = ref<InstanceType<typeof AppMarkdownHtml> | null>(null);
 
@@ -68,24 +67,18 @@ const HEADING_DEPTH_MAP = {
 	H3: 2,
 };
 
-watch(documentHTML, async () => {
-	await nextTick(() => {
-		const headingList = document.value!.$el.querySelectorAll('h1, h2, h3');
+function buildTOC() {
+	const headingList = document.value!.$el.querySelectorAll('h1, h2, h3');
 
-		toc.value = [...headingList].map((element) => {
-			return {
-				id: element.id,
-				label: element.textContent,
-				depth:
-					HEADING_DEPTH_MAP[element.tagName as keyof typeof HEADING_DEPTH_MAP],
-			};
-		});
+	toc.value = [...headingList].map((element) => {
+		return {
+			id: element.id,
+			label: element.textContent,
+			depth:
+				HEADING_DEPTH_MAP[element.tagName as keyof typeof HEADING_DEPTH_MAP],
+		};
 	});
-});
-
-onBeforeMount(async () => {
-	documentHTML.value = await Backend.API.Document.Guide.get();
-});
+}
 
 defineOptions({ name: 'AppGuidePage' });
 </script>

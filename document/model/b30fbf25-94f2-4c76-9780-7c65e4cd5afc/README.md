@@ -1,0 +1,731 @@
+---
+name: InternVL3-8B
+component:
+  vision:
+    - InternViT-300M-448px-V2_5
+  language:
+    - Qwen2.5-7B
+size:
+  - 8
+author:
+  - Shanghai AI Lab
+qa:
+  - 2D
+dimension:
+  - 2D
+website: https://huggingface.co/OpenGVLab/InternVL3-8B
+navigation: true
+taskPlanning: true
+reason: true
+opensource: true
+release:
+  year: 2025
+imageVideo: image/video
+score:
+  benchmark:
+    034bf6b5-dc18-45da-bfaf-337589125632:
+      0:
+        - 41.96333333
+        - 66.68
+        - 45.32087248
+        - 42.3593299
+        - 32.605
+        - 39.69
+        - null
+        - 44.76975595166667
+      1:
+        - 30.33
+        - 42.32
+        - 53.24
+        - null
+        - 66.68
+        - null
+        - null
+        - null
+        - 61.98
+        - 34.09
+        - 42.31
+        - 42.4
+        - 57.26
+        - null
+        - null
+        - null
+        - 32.605
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 39.69
+        - null
+      legacy:
+        - 30.33
+        - 42.32
+        - 53.24
+        - 66.68
+        - 61.98
+        - 34.09
+        - 42.4
+        - 42.31
+        - 43.33
+        - 57.26
+        - 21.88
+        - 39.69
+        - 44.63
+    ba0be521-6b10-4881-964c-97cd4d2d6070:
+      0:
+        - 50.97630705
+        - 21.93
+        - null
+        - 50.63
+        - 34.23990847
+        - null
+        - null
+        - 39.44405388
+      1:
+        - 44.05
+        - 50.73
+        - 57.56
+        - null
+        - null
+        - null
+        - 21.93
+        - null
+        - null
+        - null
+        - 50.63
+        - null
+        - null
+        - 21.93
+        - null
+        - 46.72
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      legacy:
+        - 44.05
+        - 50.73
+        - 57.56
+        - 46.72
+        - 50.63
+        - 21.93
+        - 21.93
+        - 41.94
+    25206b0f-a955-4e39-86cf-53dcc9528bfc:
+      0:
+        - 53.8364361
+        - 35.66128571
+        - null
+        - null
+        - 29.29
+        - 29.9
+        - null
+        - 37.1719304525
+      1:
+        - null
+        - 45.22
+        - null
+        - 68.37
+        - 31.76
+        - 36.96772021
+        - null
+        - 41.77
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 29.29
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 29.9
+        - null
+      legacy:
+        - 68.37
+        - 32.59
+        - 45.22
+        - 41.77
+        - 42.11
+        - 31.76
+        - 29.9
+        - 29.29
+        - 40.13
+    5df5ca38-7ca9-4d35-81c6-3dfe52700755:
+      0:
+        - 47.515
+        - 24.32
+        - null
+        - null
+        - 40.70167
+        - null
+        - null
+        - 37.51222333333334
+      1:
+        - 44.12
+        - null
+        - 50.91
+        - null
+        - 24.32
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 41.67
+        - 39.39
+        - null
+        - 39.09
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      legacy:
+        - 34.72
+        - 24.32
+        - 44.12
+        - 41.67
+        - 50.91
+        - 47.37
+        - 39.39
+        - 14.29
+        - 37.1
+    a9228f2e-3191-4a08-8f03-64e73cae2e78:
+      0:
+        - null
+        - null
+        - null
+        - 12.68
+        - null
+        - null
+        - null
+        - 12.68
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 12.68
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      legacy:
+        - 12.68
+        - 12.68
+    1961aa46-9085-42ed-b384-d9ffe52921a8:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 2
+        - 2
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 2
+        - 0
+        - 0
+        - null
+        - 6
+        - null
+        - null
+        - null
+      legacy:
+        - 4
+        - 6
+        - 2
+        - 0
+        - 0
+        - 0
+        - 2
+    cbb64d1c-4377-4231-a465-73ffb10972c5:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 20.83333
+        - 20.83333
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 31.33333333
+        - 18
+        - 20
+        - null
+        - 14
+        - null
+        - null
+        - null
+      legacy:
+        - 60
+        - 14
+        - 24
+        - 18
+        - 20
+        - 10
+        - 24.3
+    73de273a-7d38-40c0-b869-2b2e6156c897:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 29.3
+        - null
+        - 29.3
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 29.3
+        - null
+        - null
+      legacy:
+        - 38.3
+        - 30
+        - 40
+        - 33.3
+        - 5
+        - 29.3
+    b9a18add-a3fb-4893-89e3-ddeea8053ce2:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - 22.41
+        - null
+        - null
+        - 22.41
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 22.41
+        - null
+        - 22.41
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      legacy:
+        - 22.41
+        - 5.84
+        - 40.41
+    27e481d6-6057-49dc-ad80-529f9127245f:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 19.6
+        - 19.6
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 19.6
+        - null
+        - null
+        - null
+        - null
+        - null
+      legacy:
+        - 19.6
+        - 19.6
+    089294d0-59db-47f0-a543-19d8e3708448:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - 11.33
+        - null
+        - null
+        - 11.33
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 11.33
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      legacy:
+        - 11.33
+        - 11.33
+    025ca0fe-f04c-4d17-9f4c-9d1aca6666bd:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 3.3
+        - null
+        - 3.3
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 3.3
+      legacy:
+        - 3.3
+        - 3.3
+    1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 4
+        - null
+        - 4
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 4
+      legacy:
+        - 4
+        - 4
+    ed3fc303-b421-4e73-936a-e93a5aada777:
+      legacy:
+        - 32.17
+        - 17.86
+        - 13.04
+        - 8.57
+        - 17.91
+  summary:
+    d6ba913a-6e26-4dcc-b192-04b9bee6fd8e:
+      0:
+        - 7602.01
+        - 7603.01
+        - 7604.01
+        - 7605.01
+        - 7606.01
+        - 7607.01
+        - 7608.01
+        - 7605.010000000001
+      1:
+        - 7602.01
+        - 7603.01
+        - 7604.01
+        - 7605.01
+        - 7606.01
+        - 7607.01
+        - 7608.01
+        - 7609.01
+        - 7610.01
+        - 7611.01
+        - 7612.01
+        - 7613.01
+        - 7614.01
+        - 7615.01
+        - 7616.01
+        - 7617.01
+        - 7618.01
+        - 7619.01
+        - 7620.01
+        - 7621.01
+        - 7622.01
+        - 7623.01
+        - 7624.01
+        - 7625.01
+        - 7626.01
+    22d6526a-6707-4a1e-ae3d-9c337feba2e8:
+      0:
+        - 7603.01
+        - 7604.01
+        - 7605.01
+        - 7606.01
+        - 7607.01
+        - 7608.01
+        - 7609.01
+        - 7606.010000000001
+      1:
+        - 7603.01
+        - 7604.01
+        - 7605.01
+        - 7606.01
+        - 7607.01
+        - 7608.01
+        - 7609.01
+        - 7610.01
+        - 7611.01
+        - 7612.01
+        - 7613.01
+        - 7614.01
+        - 7615.01
+        - 7616.01
+        - 7617.01
+        - 7618.01
+        - 7619.01
+        - 7620.01
+        - 7621.01
+        - 7622.01
+        - 7623.01
+        - 7624.01
+        - 7625.01
+        - 7626.01
+        - 7627.01
+    2e5899bb-60bb-43d0-8ce0-fd186d66b3fb:
+      0:
+        - 7604.01
+        - 7605.01
+        - 7606.01
+        - 7607.01
+        - 7608.01
+        - 7609.01
+        - 7610.01
+        - 7607.010000000001
+      1:
+        - 7604.01
+        - 7605.01
+        - 7606.01
+        - 7607.01
+        - 7608.01
+        - 7609.01
+        - 7610.01
+        - 7611.01
+        - 7612.01
+        - 7613.01
+        - 7614.01
+        - 7615.01
+        - 7616.01
+        - 7617.01
+        - 7618.01
+        - 7619.01
+        - 7620.01
+        - 7621.01
+        - 7622.01
+        - 7623.01
+        - 7624.01
+        - 7625.01
+        - 7626.01
+        - 7627.01
+        - 7628.01
+    3a43d3d8-f078-43fd-b45c-ab2af7a0c283:
+      0:
+        - 7605.01
+        - 7606.01
+        - 7607.01
+        - 7608.01
+        - 7609.01
+        - 7610.01
+        - 7611.01
+        - 7608.010000000001
+      1:
+        - 7605.01
+        - 7606.01
+        - 7607.01
+        - 7608.01
+        - 7609.01
+        - 7610.01
+        - 7611.01
+        - 7612.01
+        - 7613.01
+        - 7614.01
+        - 7615.01
+        - 7616.01
+        - 7617.01
+        - 7618.01
+        - 7619.01
+        - 7620.01
+        - 7621.01
+        - 7622.01
+        - 7623.01
+        - 7624.01
+        - 7625.01
+        - 7626.01
+        - 7627.01
+        - 7628.01
+        - 7629.01
+---

@@ -1,152 +1,46 @@
-import * as Spec from 'src/spec';
-
-function readJSON(response: Response) {
-	return response.json();
-}
+import type { DataType } from './data';
+const root: DataType = await import('./data.json');
 
 function readText(response: Response) {
 	return response.text();
 }
 
-const fetchAllLeaderboard = async () => {
-	const leaderboardList = await fetch('/data/leaderboard.json').then(readJSON);
-
-	return Spec.Leaderboard.Schema.array().parse(leaderboardList);
-};
-
-const fetchAllBenchmark = async () => {
-	const benchmarkList = await fetch('/data/benchmark.json').then(readJSON);
-
-	return Spec.Benchmark.Schema.array().parse(benchmarkList);
-};
-
-const fetchAllModel = async () => {
-	const modelList = await fetch('/data/model.json').then(readJSON);
-
-	return Spec.Model.Schema.array().parse(modelList);
-};
-
-const fetchAllScore = async () => {
-	const scoreList = await fetch('/data/score.json').then(readJSON);
-
-	return Spec.Score.Schema.array().parse(scoreList);
-};
-
-export type ModelPropertyRecordGroup = {
-	vision: Record<string, number>;
-	language: Record<string, number>;
-	author: Record<string, number>;
-	size: Record<string, number>;
-	year: Record<string, number>;
-};
-
-export type ModelPropertyValueGroup = {
-	vision: string[];
-	language: string[];
-	author: string[];
-	size: number[];
-	year: number[];
-};
-
-export const Data: {
-	ModelProperty: ModelPropertyRecordGroup;
-	Leaderboard: Spec.Leaderboard.Type[];
-	Benchmark: Spec.Benchmark.Type[];
-	Model: Spec.Model.Type[];
-	Score: Spec.Score.Type[];
-	Configuration: Spec.Configuration.Type;
-} = {
-	ModelProperty: { vision: {}, language: {}, author: {}, size: {}, year: {} },
-	Leaderboard: [],
-	Benchmark: [],
-	Model: [],
-	Score: [],
-	Configuration: { DEFAULT_LEADERBOARD: '' },
-};
-
-export const Capability: {
-	Item: Spec.Capability.Item[];
-	Group: Spec.Capability.Group[];
-	Level: {
-		core: Spec.Capability.ScoreMap[];
-		sub: Spec.Capability.ScoreMap[];
-	};
-} = {
-	Item: [],
-	Group: [],
-	Level: {
-		core: [],
-		sub: [],
-	},
-};
-
-export async function init() {
-	Object.assign(Data, {
-		Leaderboard: await fetchAllLeaderboard(),
-		Benchmark: await fetchAllBenchmark(),
-		Model: await fetchAllModel(),
-		Score: await fetchAllScore(),
-		Configuration: await (async () => {
-			const configuration = await fetch('/data/configuration.json').then(
-				readJSON,
-			);
-
-			return Spec.Configuration.Schema.parse(configuration);
-		})(),
-		ModelProperty: await (async (): Promise<ModelPropertyRecordGroup> => {
-			return fetch('/data/model-property.json').then(readJSON);
-		})(),
-	});
-
-	Capability.Group = await fetch('/data/capability/group.json').then(readJSON);
-	Capability.Item = await fetch('/data/capability/item.json').then(readJSON);
-
-	const Level = await fetch('/data/capability/level.json').then(readJSON);
-
-	Capability.Level.core = Level.core;
-	Capability.Level.sub = Level.sub;
-}
-
 export const API = {
 	Configuration: {
 		async get() {
-			return Data.Configuration;
+			return root.configuration.$data;
 		},
 	},
 	Leaderboard: Object.assign(
 		(leaderboardId: string) => {
-			const leaderboard = Data.Leaderboard.find(
-				function idMatched(leaderboard) {
-					return leaderboard.id === leaderboardId;
-				},
-			)!;
+			const leaderboardData = root.leaderboard[leaderboardId]!;
 
 			return {
 				async get() {
-					return leaderboard;
+					return { id: leaderboardId, ...leaderboardData.$data };
 				},
 				Benchmark: {
 					async query() {
-						return Data.Benchmark.filter(
-							(benchmark) => benchmark.leaderboard === leaderboardId,
-						);
+						return Object.entries(root.benchmark)
+							.filter(([, { $data }]) => $data.leaderboard === leaderboardId)
+							.map(([id, { $data }]) => ({ id, ...$data }));
 					},
 				},
 				Summary: Object.assign(
 					(summaryId: string) => {
-						const summary = leaderboard.summaries.find(
-							({ id }) => id === summaryId,
-						);
-
 						return {
 							async get() {
-								return summary;
+								return {
+									id: summaryId,
+									...leaderboardData.summaries[summaryId]!.$data,
+								};
 							},
 						};
 					},
 					{
 						async query() {
-							return leaderboard.summaries;
+							return Object.entries(leaderboardData.summaries)
+								.map(([id, { $data }]) => ({ id, ...$data }));
 						},
 					},
 				),
@@ -154,20 +48,23 @@ export const API = {
 		},
 		{
 			async query() {
-				return Promise.resolve(Data.Leaderboard);
+				return Object.entries(root.leaderboard)
+					.map(([id, { $data }]) => ({ id, ...$data }));
 			},
 		},
 	),
 	Summary: Object.assign((summaryId: string) => {
 		return {
 			async get() {
-				for (const leaderboardData of Data.Leaderboard) {
-					for (const summaryData of leaderboardData.summaries) {
-						if (summaryData.id === summaryId) {
-							return summaryData;
+				for (const { summaries } of Object.values(root.leaderboard)) {
+					for (const [id, { $data } ] of Object.entries(summaries)) {
+						if (id === summaryId) {
+							return { id, ...$data };
 						}
 					}
 				}
+
+				throw new Error('Not Found');
 			},
 		};
 	}, {}),
@@ -175,27 +72,14 @@ export const API = {
 		(benchmarkId: string) => {
 			return {
 				async get() {
-					return Data.Benchmark.find(
-						(benchmark) => benchmark.id === benchmarkId,
-					)!;
-				},
-				Document: {
-					async get() {
-						return fetch(`/html/benchmark/${benchmarkId}.html`).then(readText);
-					},
-				},
-				Score: {
-					async query() {
-						return Data.Score.filter(
-							(score) => score.benchmark === benchmarkId,
-						);
-					},
+					return { id: benchmarkId, ...root.benchmark[benchmarkId]!.$data };
 				},
 			};
 		},
 		{
 			async query() {
-				return Data.Benchmark;
+				return Object.entries(root.benchmark)
+					.map(([id, { $data }]) => ({ id, ...$data }));
 			},
 		},
 	),
@@ -203,98 +87,135 @@ export const API = {
 		(modelId: string) => {
 			return {
 				async get() {
-					return Data.Model.find((model) => model.id === modelId)!;
+					return { id: modelId, ...root.model[modelId]!.$data };
 				},
 				Score: {
 					async query() {
-						return Data.Score.filter((score) => score.model === modelId);
+						return root.model[modelId]!.$data.score;
 					},
 				},
 			};
 		},
 		{
 			async query() {
-				return [...Data.Model];
+				return Object.entries(root.model)
+					.map(([id, { $data }]) => ({ id, ...$data }));
 			},
 			async queryHasBenchmark(benchmarkId: string) {
-				return Data.Model.filter((model) =>
-					Object.hasOwn(model.score.benchmark, benchmarkId),
-				);
+				return Object.entries(root.model)
+					.filter(([, { $data }]) => benchmarkId in $data.score.benchmark)
+					.map(([id, { $data }]) => ({ id, ...$data }));
 			},
 			async queryHasSummary(summaryId: string) {
-				return Data.Model.filter((model) =>
-					Object.hasOwn(model.score.summary, summaryId),
-				);
-			},
-			Property: {
-				ValueGroup: {
-					async query(): Promise<ModelPropertyValueGroup> {
-						return {
-							vision: Object.keys(Data.ModelProperty.vision),
-							language: Object.keys(Data.ModelProperty.language),
-							author: Object.keys(Data.ModelProperty.author),
-							size: Object.keys(Data.ModelProperty.size).map((v) => Number(v)),
-							year: Object.keys(Data.ModelProperty.year).map((v) => Number(v)),
-						};
-					},
-				},
+				return Object.entries(root.model)
+					.filter(([, { $data }]) => summaryId in $data.score)
+					.map(([id, { $data }]) => ({ id, ...$data }));
 			},
 		},
 	),
-	Score: Object.assign({
+	Capability: Object.assign((capabilityId: string) => {
+		const parentCapabilityData = root.capability.children[capabilityId]!;
+
+		return Object.assign((capabilityId: string) => {
+			return parentCapabilityData.children![capabilityId];
+		}, {
+			async query() {
+				if (!Object.hasOwn(parentCapabilityData, 'children')) {
+					return [];
+				}
+
+				return Object.entries(parentCapabilityData.children!)
+					.map(([id, { $data }]) => ({ id, ...$data }));
+			},
+		});
+	}, {
 		async query() {
-			return Data.Score;
+			return Object.entries(root.capability.children)
+				.map(([id, { $data }]) => ({ id, ...$data }));
 		},
 	}),
-	Capability: {
-		Group: {
-			async query() {
-				return Capability.Group.map((data) => ({ ...data }));
-			},
-		},
-		Item: {
-			async query() {
-				return Capability.Item.map((data) => ({ ...data }));
-			},
-		},
-		Level: {
-			Core: {
-				async query() {
-					return Capability.Level.core.map((data) => ({ ...data }));
-				},
-			},
-			Sub: {
-				async query() {
-					return Capability.Level.sub.map((data) => ({ ...data }));
-				},
-			},
+	Document: {
+		async read(pathname: string) {
+			return fetch(`/html/${pathname}.html`).then(readText);
 		},
 	},
-	Document: {
-		Rule: {
-			async get() {
-				return fetch('/html/rule.html').then(readText);
+	Page: {
+		Home: {
+			Banner: {
+				async get() {
+					return { ...root.page.home.banner.$data };
+				},
+			},
+			Feature: {
+				async get() {
+					return { ...root.page.home.feature.$data };
+				},
+			},
+			Evaluation: {
+				async get() {
+					return { ...root.page.home.evaluation.$data };
+				},
+			},
+			Contributor: {
+				async get() {
+					return { ...root.page.home.contributor.$data };
+				},
+			},
+			Profile: {
+				Benchmark: {
+					async get() {
+						return { ...root.page.home.profile.benchmark.$data };
+					},
+					Leaderboard: {
+						async get() {
+							return { ...root.page.home.profile.benchmark.leaderboard.$data };
+						},
+					},
+				},
+				Model: {
+					async get() {
+						return { ...root.page.home.profile.model.$data };
+					},
+					Detail: {
+						async get() {
+							return { ...root.page.home.profile.model.detail.$data };
+						},
+					},
+					Category: {
+						General: {
+							async get() {
+								return { ...root.page.home.profile.model.category.general.$data };
+							},
+						},
+						Embodied: {
+							async get() {
+								return { ...root.page.home.profile.model.category.embodied.$data };
+							},
+						},
+					},
+				},
+				Capability: {
+					Detail: {
+						async get() {
+							return { ...root.page.home.profile.capability.detail.$data };
+						},
+					},
+					Mapping: {
+						async get() {
+							return { ...root.page.home.profile.capability.mapping.$data };
+						},
+					},
+					async get() {
+						return { ...root.page.home.profile.capability.$data };
+					},
+				},
 			},
 		},
-		Guide: {
-			async get() {
-				return fetch('/html/guide.html').then(readText);
-			},
-		},
-		Capability: {
-			Item(id: string) {
-				return {
-					async get() {
-						return fetch(`/html/capability/item/${id}.html`).then(readText);
-					},
-				};
-			},
-			Group(id: string) {
-				return {
-					async get() {
-						return fetch(`/html/capability/group/${id}.html`).then(readText);
-					},
-				};
+		Leaderboard: {
+			Task: {
+				async get() {
+					return { ...root.page.leaderboard.task.$data };
+				},
 			},
 		},
 	},

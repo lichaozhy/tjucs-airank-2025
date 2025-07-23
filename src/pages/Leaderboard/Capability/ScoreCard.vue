@@ -64,18 +64,18 @@ const currentFilter = ref<ModelFilter>(() => true);
 const capabilityItemList = ref<Spec.Capability.Item[]>([]);
 
 const CAPABILITY_LEVEL_RECORD = {
-	core: 'Core Capabilities',
-	sub: 'Fine-grained Capabilities',
+	0: 'Core Capabilities',
+	1: 'Fine-grained Capabilities',
 };
 
 const NameRecord = {
-	core: groupNameRecord,
-	sub: itemNameRecord,
+	0: groupNameRecord,
+	1: itemNameRecord,
 };
 
 const Level = reactive<Record<LevelName, Spec.Capability.ScoreMap[]>>({
-	core: [],
-	sub: [],
+	0: [],
+	1: [],
 });
 
 const caption = computed(() => {
@@ -181,7 +181,7 @@ const SourceModelFetcher: Record<
 		const { id: summaryId } = props.source;
 		const summary = await Backend.API.Summary(summaryId).get();
 
-		return { name: summary!.name };
+		return { name: summary.name };
 	},
 };
 

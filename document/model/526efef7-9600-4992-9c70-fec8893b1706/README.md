@@ -1,0 +1,31 @@
+---
+name: Gemini-2.5-flash
+component:
+  language:
+    - Gemini-2.5-flash
+author:
+  - Google DeepMind
+qa:
+  - 2D
+dimension:
+  - 2D
+website: https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash
+navigation: true
+taskPlanning: true
+reason: true
+opensource: false
+release:
+  year: 2025
+imageVideo: image/video
+score:
+  benchmark:
+    1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09:
+      legacy:
+        - 6.1
+        - 6.1
+    025ca0fe-f04c-4d17-9f4c-9d1aca6666bd:
+      legacy:
+        - 3.3
+        - 3.3
+  summary: {}
+---

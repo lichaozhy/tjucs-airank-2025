@@ -10,14 +10,12 @@
 				id="app-home-contribution-card"
 				class="q-pa-xl"
 			>
-				<q-card-section class="q-pt-xl">
-					<div class="text-h2 text-weight-medium">{{ SECTION.TITLE }}</div>
-				</q-card-section>
-				<q-card-section style="max-width: 80em">
-					<div
-						class="text-body1 text-indigo-2"
-						v-html="SECTION.COMMENT"
-					></div>
+
+				<q-card-section>
+					<app-markdown-html
+						style="max-width: 80em;"
+						src="page/home/contribute"
+					></app-markdown-html>
 				</q-card-section>
 
 				<q-separator
@@ -30,12 +28,9 @@
 				<q-card-section class="q-pb-xl">
 					<div class="row q-col-gutter-xl">
 						<div class="col-6">
-							<div class="text-h5 text-weight-medium q-mb-lg">
-								{{ SECTION.BAR.LEFT.TITLE }}
-							</div>
-							<div class="text-body1 text-indigo-2 q-pb-lg">
-								{{ SECTION.BAR.LEFT.COMMENT }}
-							</div>
+							<app-markdown-html
+								src="page/home/contribute/model"
+							></app-markdown-html>
 							<q-btn
 								square
 								outline
@@ -49,12 +44,9 @@
 							></q-btn>
 						</div>
 						<div class="col-6">
-							<div class="text-h5 text-weight-medium q-mb-lg">
-								{{ SECTION.BAR.RIGHT.TITLE }}
-							</div>
-							<div class="text-body1 text-indigo-2 q-pb-lg">
-								{{ SECTION.BAR.RIGHT.COMMENT }}
-							</div>
+							<app-markdown-html
+								src="page/home/contribute/benchmark"
+							></app-markdown-html>
 							<q-btn
 								square
 								outline
@@ -75,29 +67,7 @@
 </template>
 
 <script setup lang="ts">
-const SECTION = {
-	TITLE: 'Join Us',
-	COMMENT: `<span class="text-weight-bold">Join us in advancing Embodied AI
-	evaluation!</span> We invite outstanding Embodied AI models to participate in
-	our comprehensive evaluation platform. We also cordially welcome researchers
-	and practitioners to contribute high-quality and innovative benchmarks that
-	advance the field of Embodied AI evaluation.`,
-	BAR: {
-		LEFT: {
-			TITLE: 'Evaluation Leaderboards',
-			COMMENT: `Showcase your model: Join the leaderboard competition,
-			demonstrate your Embodied AI capabilities across comprehensive
-			benchmarks, and establish your model's position in the future of
-			Embodied AI. `,
-		},
-		RIGHT: {
-			TITLE: 'Benchmark Community',
-			COMMENT: `Make your benchmark shine: Co-create and share evaluation
-			benchmarks with the community, establish distinctive leaderboards, and
-			collectively shape the future of large-scale Embodied AI evaluation.`,
-		},
-	},
-};
+import AppMarkdownHtml from 'components/MarkdownHTML.vue';
 
 defineOptions({ name: 'AppPageHomeSectionContribution' });
 </script>

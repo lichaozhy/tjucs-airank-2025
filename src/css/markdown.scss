@@ -143,7 +143,6 @@ $link-hover: #e74c3c;
 	// 代码块
 	pre {
 		background-color: $code-bg;
-		border-radius: 8px;
 		padding: 1.2em;
 		overflow-x: auto;
 		margin: 1.5em 0;
@@ -151,16 +150,6 @@ $link-hover: #e74c3c;
 		font-size: 0.95em;
 		line-height: 1.5;
 		tab-size: 4;
-
-		// 代码滚动条
-		&::-webkit-scrollbar {
-			height: 6px;
-		}
-
-		&::-webkit-scrollbar-thumb {
-			background: rgba($primary, 0.3);
-			border-radius: 3px;
-		}
 	}
 
 	code {
@@ -168,14 +157,12 @@ $link-hover: #e74c3c;
 			'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
 		background-color: rgba($code-bg, 0.7);
 		padding: 0.2em 0.4em;
-		border-radius: 4px;
 		font-size: 0.95em;
 	}
 
 	pre code {
 		padding: 0;
 		background: none;
-		border-radius: 0;
 	}
 
 	// 引用块
@@ -184,7 +171,6 @@ $link-hover: #e74c3c;
 		border-left: 5px solid $blockquote-border;
 		margin: 1.5em 0;
 		padding: 1.2em 1.5em;
-		border-radius: 0 8px 8px 0;
 		position: relative;
 
 		p {
@@ -212,7 +198,6 @@ $link-hover: #e74c3c;
 		margin: 1.5em 0;
 		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 		overflow: hidden;
-		border-radius: 8px;
 
 		@media (max-width: 768px) {
 			display: block;
@@ -270,71 +255,12 @@ $link-hover: #e74c3c;
 	kbd {
 		background-color: $code-bg;
 		border: 1px solid #ccc;
-		border-radius: 4px;
 		padding: 0.2em 0.6em;
 		font-family: monospace;
 		box-shadow:
 			0 1px 0 rgba(0, 0, 0, 0.1),
 			inset 0 0 0 1px #fff;
 		display: inline-block;
-	}
-
-	// 提示框
-	.alert {
-		padding: 1em 1.2em;
-		border-radius: 8px;
-		margin: 1.5em 0;
-		border-left: 4px solid;
-		position: relative;
-		padding-left: 3.5em;
-
-		&::before {
-			position: absolute;
-			left: 1em;
-			top: 1em;
-			font-size: 1.2em;
-		}
-
-		strong {
-			display: block;
-			margin-bottom: 0.5em;
-		}
-	}
-
-	.alert-info {
-		background-color: #e1f0fa;
-		border-color: $primary;
-
-		&::before {
-			content: 'ℹ️';
-		}
-	}
-
-	.alert-warning {
-		background-color: #fdf8e4;
-		border-color: #f39c12;
-
-		&::before {
-			content: '⚠️';
-		}
-	}
-
-	.alert-success {
-		background-color: #e6f6e6;
-		border-color: $secondary;
-
-		&::before {
-			content: '✅';
-		}
-	}
-
-	.alert-danger {
-		background-color: #fbeaea;
-		border-color: #e74c3c;
-
-		&::before {
-			content: '❌';
-		}
 	}
 
 	// 任务列表

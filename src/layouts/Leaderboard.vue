@@ -14,18 +14,20 @@
 				dense
 			>
 				<q-route-tab
-					v-for="item in leaderboardList"
-					:key="item.id"
-					:name="item.id"
-					:to="{ params: { leaderboardId: item.id } }"
+					v-for="leaderboard in leaderboardList"
+					:key="leaderboard.id"
+					:name="leaderboard.id"
+					:to="{ params: { leaderboardId: leaderboard.id } }"
 					class="text-h6 text-black text-weight-medieum"
 					style="opacity: 0.6"
 					active-class="app-solid-tab"
 				>
 					<div class="row no-wrap">
-						<div class="col">{{ item.name }}</div>
+						<div class="col">Embodied {{ leaderboard.name }} Leaderboard</div>
 						<q-btn-dropdown
-							:class="{ invisible: $route.params.leaderboardId !== item.id }"
+							:class="{
+								invisible: $route.params.leaderboardId !== leaderboard.id,
+							}"
 							flat
 							dense
 							rounded
@@ -86,30 +88,39 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onBeforeMount, reactive, ref, provide, watch } from 'vue';
+import { onBeforeMount, reactive, ref, provide, watch } from 'vue';
 import { useRoute } from 'vue-router';
 
+import * as Spec from 'src/spec';
 import * as Backend from 'src/backend';
 import AppBannerWithLayout from './BannerWith.vue';
-import * as Spec from 'src/spec';
+
+interface BenchmarkAbstract {
+	id: string;
+	name: string;
+}
+
+interface SummaryAbstract {
+	id: string;
+	name: string;
+}
+
+interface LeaderboardAbstract {
+	id: string;
+	name: string;
+}
 
 const route = useRoute();
-const leaderboard = ref<Spec.Leaderboard.Type | null>(null);
-const leaderboardList = ref<Spec.Leaderboard.Type[]>([]);
-const benchmarkList = ref<Spec.Benchmark.Type[]>([]);
+const leaderboardId = route.params.leaderboardId as string;
+const leaderboard = ref<LeaderboardAbstract | null>(null);
+const leaderboardList = ref<LeaderboardAbstract[]>([]);
+const benchmarkList = ref<BenchmarkAbstract[]>([]);
+const summaryList = ref<SummaryAbstract[]>([]);
 const selectedBenchmark = reactive<{ [key: string]: boolean }>({});
 const selectedSummary = reactive<{ [key: string]: boolean }>({});
 
 provide(Spec.INJECTION_KEY.LEADERBOARD_SUMMARY_SELECTED, selectedSummary);
 provide(Spec.INJECTION_KEY.LEADERBOARD_BENCHMARK_SELECTED, selectedBenchmark);
-
-const summaryList = computed(() => {
-	if (leaderboard.value === null) {
-		return [];
-	}
-
-	return leaderboard.value.summaries;
-});
 
 watch(
 	() => [{ ...selectedBenchmark }, { ...selectedSummary }],
@@ -158,20 +169,21 @@ watch(
 
 onBeforeMount(async () => {
 	const leaderboardListData = await Backend.API.Leaderboard.query();
-	const { leaderboardId } = route.params;
-	const LeaderboardAPI = Backend.API.Leaderboard(leaderboardId as string);
+	const LeaderboardAPI = Backend.API.Leaderboard(leaderboardId);
 	const leaderboardData = await LeaderboardAPI.get();
-	const benchmarkListData = await LeaderboardAPI.Benchmark.query();
+	const benchmarkDataList = await LeaderboardAPI.Benchmark.query();
+	const summaryDataList = await LeaderboardAPI.Summary.query();
 
 	leaderboard.value = leaderboardData;
 	leaderboardList.value = leaderboardListData;
-	benchmarkList.value = benchmarkListData;
+	benchmarkList.value = benchmarkDataList.map(({ id, name }) => ({ id, name }));
+	summaryList.value = summaryDataList.map(({ id, name }) => ({ id, name }));
 
-	for (const benchmark of benchmarkListData) {
+	for (const benchmark of benchmarkDataList) {
 		selectedBenchmark[benchmark.id] = false;
 	}
 
-	for (const summary of leaderboardData.summaries) {
+	for (const summary of summaryDataList) {
 		selectedSummary[summary.id] = true;
 	}
 });

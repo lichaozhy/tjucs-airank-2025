@@ -8,7 +8,7 @@
 			style="max-width: 24em"
 		>
 			<span
-				v-for="(span, index) in SECTION.title"
+				v-for="(span, index) in data.title"
 				:key="index"
 				class="q-mr-md"
 				:class="{ 'text-weight-bold': span.emphasized }"
@@ -20,14 +20,14 @@
 			style="max-width: 60em"
 		>
 			<span
-				v-for="(person, index) in SECTION.personList"
+				v-for="(person, index) in data.personList"
 				:key="index"
 				class="q-ml-xs"
 				>{{ person.name
 				}}<sup
 					>{{ person.core ? '*' : ''
 					}}{{ person.at.map((n) => n + 1).join(',') }}</sup
-				><span v-if="index < SECTION.personList.length - 1">,</span></span
+				><span v-if="index < data.personList.length - 1">,</span></span
 			>
 		</div>
 		<div
@@ -35,7 +35,7 @@
 			style="max-width: 48em"
 		>
 			<div
-				v-for="(name, index) in SECTION.organizationList"
+				v-for="(name, index) in data.organizationList"
 				:key="index"
 				class="q-ml-md text-no-wrap col-shrink"
 			>
@@ -46,42 +46,30 @@
 </template>
 
 <script setup lang="ts">
-const SECTION = {
-	title: [
-		{
-			emphasized: true,
-			text: 'EmbodiedArena:',
-		},
-		{
-			emphasized: false,
-			text: 'A Comprehensive Evaluation Platform and Leaderboards for Embodied AI',
-		},
-	],
-	personList: [
-		{
-			at: [],
-			core: false,
-			name: 'EmbodiedArena Team',
-		},
-	],
-	organizationList: [
-		'Tianjin University',
-		'Huawei Noah\'s Ark Lab',
-		'Sun Yat-sen University',
-		'Peng Cheng Laboratory',
-		'Tsinghua University',
-		'Peking University',
-		'Shanghai Jiao Tong University',
-		'Peking University',
-		'HongShan',
-		'Nanjing University',
-		'Tongji University',
-		'Imperial College London',
-		'King\'s College London',
-		'TU Darmstadt',
-		'University College London',
-	],
-};
+import { onBeforeMount, ref } from 'vue';
+
+import * as Backend from 'src/backend';
+
+const data = ref<{
+	title: {
+		emphasized: boolean;
+		text: string;
+	}[];
+	personList: {
+		at: number[];
+		0: boolean;
+		name: string;
+	}[];
+	organizationList: string[];
+}>({
+	title: [],
+	personList: [],
+	organizationList: [],
+});
+
+onBeforeMount(async () => {
+	data.value = await Backend.API.Page.Home.Contributor.get();
+});
 
 defineOptions({ name: 'AppPageHomeSectionContributor' });
 </script>

@@ -1,5 +1,5 @@
 <template>
-	<AppScoreCard>
+	<AppScoreCard v-if="summary !== null">
 		<template #header>
 			<q-item class="card-header justify-between">
 				<q-item-section class="col-shrink">
@@ -20,6 +20,8 @@
 </template>
 
 <script setup lang="ts">
+import type * as Data from 'src/data';
+import type { SummaryAbstract, BenchmarkAbstract } from './type';
 import type { ModelData } from 'components/ScoreTable.vue';
 import type { ModelFilter } from 'components/ModelFilter.vue';
 import { computed, onBeforeMount, ref } from 'vue';
@@ -28,7 +30,6 @@ import AppScoreCard from 'components/ScoreCard.vue';
 import AppScoreTable from 'components/ScoreTable.vue';
 import AppModelFilter from 'components/ModelFilter.vue';
 
-import type * as Spec from 'src/spec';
 import * as Backend from 'src/backend';
 import { toNumberOrNull } from 'components/utils';
 
@@ -44,50 +45,20 @@ function avg(a: number[]) {
 const LeaderboardAPI = Backend.API.Leaderboard(props.leaderboardId);
 const SummaryAPI = LeaderboardAPI.Summary(props.summaryId);
 
-const summary = ref<Spec.Leaderboard.Summary | null>(null);
-const benchmarkList = ref<Spec.Benchmark.Type[]>([]);
-const scoreList = ref<Spec.Score.Type[]>([]);
-const modelList = ref<Spec.Model.Type[]>([]);
-
-const isReady = computed(() => {
-	if (summary.value === null) {
-		return false;
-	}
-
-	if (benchmarkList.value.length === 0) {
-		return false;
-	}
-
-	if (scoreList.value.length === 0) {
-		return false;
-	}
-
-	if (modelList.value.length === 0) {
-		return false;
-	}
-
-	return true;
-});
+const summary = ref<SummaryAbstract | null>(null);
+const benchmarkList = ref<BenchmarkAbstract[]>([]);
+const modelList = ref<Data.Model[]>([]);
+const currentFilter = ref<ModelFilter>(() => true);
 
 const columnList = computed(() => {
-	if (!isReady.value) {
-		return [];
-	}
-
 	return summary.value!.properties.map((property) => property.label);
 });
-
-const currentFilter = ref<ModelFilter>(() => true);
 
 function setFilter(filter: ModelFilter) {
 	currentFilter.value = filter;
 }
 
 const rowList = computed<ModelData[]>(() => {
-	if (!isReady.value) {
-		return [];
-	}
-
 	return modelList.value.filter(currentFilter.value).map((model) => {
 		const data: ModelData = {
 			id: model.id,

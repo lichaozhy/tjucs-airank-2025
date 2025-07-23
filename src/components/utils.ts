@@ -6,7 +6,7 @@ export function getColumnEMWidth(labelLength: number) {
 	return Math.max(Math.ceil(labelLength * EM_RATIO + FIXED_SPACE), MIN_WIDTH);
 }
 
-export function toNumberOrNull(value: number | null) {
+export function toNumberOrNull(value: number | null | undefined = null) {
 	return value === null ? null : value;
 }
 

@@ -3,15 +3,12 @@
 		id="app-home-evaluation"
 		class="column content-center justify-center q-pa-xl relative-position bg-white text-center items-center"
 	>
-		<h2 class="text-indigo-10 text-weight-bold">{{ SECTION.TITLE }}</h2>
-		<p
-			class="text-center text-body1 text-grey-8"
+		<h2 class="text-indigo-10 text-weight-bold">{{ data.title }}</h2>
+		<app-markdown-html
+			class="text-grey-8"
 			style="max-width: 70em"
-			v-for="(content, index) in SECTION.COMMENT"
-			:key="index"
-		>
-			{{ content }}
-		</p>
+			src="page/home/evaluation"
+		></app-markdown-html>
 		<q-btn
 			class="q-my-xl"
 			label="Go to Evaluation Rules to learn more →"
@@ -30,33 +27,20 @@
 </template>
 
 <script setup lang="ts">
-const SECTION = {
-	TITLE: 'Embodied Arena Evaluation System',
-	COMMENT: [
-		`Embodied Arena extensively supports comprehensive evaluation of models
-		from different sources (i.e., open-source, closed-source) by different
-		means (e.g., model weights, API), offering flexibility and convenience
-		for users to join. For evaluation data, Embodied Arena integrates a
-		diverse range of existing well-curated Embodied AI benchmarks, and
-		moreover, it is greatly powered by a unique LLM-driven automatic generation
-		pipeline for targeted evaluation data. Hence, Embodied Arena has prominent
-		superiorities in providing diverse scenarios and tasks, breaking the
-		scaling bottleneck of manually constructed data, keeping evaluation data
-		evolving and in blackbox thus ensuring a high-level safety.`,
-		`Embodied Arena conducts comprehensive evaluation for each model across all
-		benchmarks and generative evaluation data. Different evaluation metrics are
-		adopted according to the characteristics of the benchmark or data.
-		Accuracies based on exact matching (i.e., Rule-based) and fuzzy matching
-		(i.e., Rule-based, LLM-based) are used for Embodied QA assessment; Success
-		Rate metrics (i.e., multimodal matching, interactive simulation-based
-		testing) are used for Embodied Navigation and Embodied Task Planning
-		evaluation. Evaluation results are normalized and summarized across
-		multiple benchmarks and capability dimensions accordingly, which arrives at
-		the evaluation scores. Finally, Embodied Arena presents the ranking of
-		models on three types of leaderboards and the radar plot in terms of seven
-		embodied capabilities for concise and intuitive comparison.`,
-	],
-};
+import { onBeforeMount, ref } from 'vue';
+
+import AppMarkdownHtml from 'components/MarkdownHTML.vue';
+import * as Backend from 'src/backend';
+
+const data = ref<{
+	title: string;
+}>({
+	title: '',
+});
+
+onBeforeMount(async () => {
+	data.value = await Backend.API.Page.Home.Evaluation.get();
+});
 
 defineOptions({ name: 'AppPageHomeSectionEvaluation' });
 </script>

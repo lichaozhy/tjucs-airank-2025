@@ -3,9 +3,9 @@
 		class="column content-center justify-center items-center q-pa-xl text-indigo-10"
 	>
 		<div class="app-content-main full-width q-mt-xl">
-			<AppHomeBenchmark />
+			<AppHomeBenchmarkProfile />
 			<q-space class="q-my-xl q-py-xl" />
-			<AppHomeRankProfile />
+			<AppHomeModelProfile />
 			<q-space class="q-my-xl q-py-xl" />
 			<AppHomeCapabilityProfile />
 		</div>
@@ -13,9 +13,9 @@
 </template>
 
 <script setup lang="ts">
-import AppHomeBenchmark from './BenchmarkProfile.vue';
+import AppHomeBenchmarkProfile from './BenchmarkProfile.vue';
 import AppHomeCapabilityProfile from './CapabilityProfile.vue';
-import AppHomeRankProfile from './RankProfile.vue';
+import AppHomeModelProfile from './ModelProfile.vue';
 
 defineOptions({ name: 'AppPageHomeSectionIntroduction' });
 </script>

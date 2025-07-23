@@ -36,3 +36,4 @@ yarn-error.log*
 *.ign*
 
 /public/html/**
+/src/data.json

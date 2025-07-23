@@ -2,12 +2,17 @@
 	<div
 		id="app-leaderboard-task"
 		class="row q-col-gutter-lg"
-		v-if="isReady"
 	>
-		<div class="text-body text-grey-9 col-12">{{ BannerData.caption }}</div>
+		<div class="col-12">
+			<app-markdown-html
+				style="min-height: 6em;"
+				class="text-grey-9"
+				src="page/leaderboard/task"
+			></app-markdown-html>
+		</div>
 		<div
 			class="col-12"
-			v-for="summary in filterdSummaryList"
+			v-for="summary in filteredSummaryList"
 			:key="summary.id"
 		>
 			<AppSummaryScoreCard
@@ -21,68 +26,49 @@
 			v-for="benchmark in filteredBenchmarkList"
 			:key="benchmark.id"
 		>
-			<AppBenchmarkScoreCard :benchmark="benchmark" />
+			<AppBenchmarkScoreCard :benchmark-id="benchmark.id" />
 		</div>
 	</div>
 </template>
 
 <script setup lang="ts">
+import type { BenchmarkAbstract, SummaryAbstract } from './type';
 import { computed, onBeforeMount, ref, inject } from 'vue';
 import { useRoute } from 'vue-router';
 
 import * as Spec from 'src/spec';
 import * as Backend from 'src/backend';
 
+import AppMarkdownHtml from 'components/MarkdownHTML.vue';
 import AppSummaryScoreCard from './SummaryScoreCard.vue';
 import AppBenchmarkScoreCard from './BenchmarkScoreCard.vue';
-
-import BannerData from './banner.json';
 
 const { params } = useRoute();
 const leaderboardId = String(params.leaderboardId);
 const LeaderboardAPI = Backend.API.Leaderboard(leaderboardId);
 
-const leaderboard = ref<Spec.Leaderboard.Type | null>(null);
-const benchmarkList = ref<Array<Spec.Benchmark.Type>>([]);
+const benchmarkList = ref<BenchmarkAbstract[]>([]);
+const summaryList = ref<SummaryAbstract[]>([]);
 
 const { INJECTION_KEY: INJECTION } = Spec;
 const selectedBenchmark = inject(INJECTION.LEADERBOARD_BENCHMARK_SELECTED);
 const selectedSummary = inject(INJECTION.LEADERBOARD_SUMMARY_SELECTED);
 
-if (selectedBenchmark === undefined || selectedSummary === undefined) {
-	throw new Error(
-		'AppLeaderboardDetailPage MUST be in AppLeaderboardLayoutPage',
-	);
-}
-
-const isReady = computed(() => {
-	return benchmarkList.value.length > 0 && leaderboard.value !== null;
-});
-
-const filterdSummaryList = computed(() => {
-	if (!isReady.value) {
-		return [];
-	}
-
-	return leaderboard.value!.summaries.filter(
-		(summary) => selectedSummary[summary.id],
-	);
+const filteredSummaryList = computed(() => {
+	return summaryList.value.filter(({ id }) => selectedSummary![id]);
 });
 
 const filteredBenchmarkList = computed(() => {
-	if (!isReady.value) {
-		return [];
-	}
-
-	return benchmarkList.value.filter(
-		(benchmark) => selectedBenchmark[benchmark.id],
-	);
+	return benchmarkList.value.filter(({ id }) => selectedBenchmark![id]);
 });
 
 onBeforeMount(async () => {
-	leaderboard.value = await LeaderboardAPI.get();
-	benchmarkList.value = await LeaderboardAPI.Benchmark.query();
+	const benchmarkDataList = await LeaderboardAPI.Benchmark.query();
+	const summaryDataList = await LeaderboardAPI.Summary.query();
+
+	benchmarkList.value = benchmarkDataList.map(({ id, name }) => ({ id, name }));
+	summaryList.value = summaryDataList.map(({ id, name }) => ({ id, name }));
 });
 
-defineOptions({ name: 'AppLeaderboardPageTask' });
+defineOptions({ name: 'AppPageLeaderboardTask' });
 </script>
