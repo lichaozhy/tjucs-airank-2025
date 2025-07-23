@@ -33,17 +33,22 @@ Embodied Arena currently supports the following evaluation metrics based on the 
 
 - Embodied Question Answering
   - Accuracy Based on Exact Matching
-    - VSI-Bench, Where2Place, ERQA, VABench-Point, MineAnyBuild, SQA3D.
+    - VSI-Bench, Where2Place, ERQA, VABench-Point, MineAnyBuild, SQA3D, ScanQA.
   - Accuracy Based on Fuzzy Matching
     - Rule-based Metric (e.g., CIDEr, BELU, MRA)
-      - RoboVQA, Scan2Cap, ScanQA, VSI-Bench.
+      - RoboVQA(BELU), Scan2Cap(CIDEr), ScanQA(CIDEr), VSI-Bench(MRA).
     - LLM-based Metric
       - OpenEQA, UniEQA, MineAnyBuild.
-  - Other (micro-F1 score)
-    - PhyBlock
+  - Other
+    - micro-F1 score
+      - PhyBlock 
+    - Acc@0.25
+      - ScanRefer
+    - F1@0.25
+      - Multi3DRefer
 - Embodied Navigation
   - Success Rate
-    - EB-Navigation, R2R, RxR.
+    - EB-Navigation, R2R, RxR, HM3D, MP3D.
 - Embodied Task Planning
   - Success Rate
     - EB-ALFRED, EB-Habitat, ET-Plan-Bench.
