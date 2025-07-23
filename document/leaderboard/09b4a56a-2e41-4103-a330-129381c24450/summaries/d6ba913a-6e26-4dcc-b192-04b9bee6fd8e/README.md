@@ -1,5 +1,5 @@
 ---
-name: 2D-All Benchmarks
+name: 2D-Embodied QA Benchmarks
 properties:
   - type: computed
     label: Total Score

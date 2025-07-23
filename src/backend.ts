@@ -1,6 +1,11 @@
 import type { DataType } from './data';
 const root: DataType = await import('./data.json');
 
+export type ModelPropertyRecordGroup = Record<
+	'vision' | 'language' | 'author' | 'size' | 'year',
+	Record<string, number>
+>;
+
 function readText(response: Response) {
 	return response.text();
 }
@@ -39,8 +44,9 @@ export const API = {
 					},
 					{
 						async query() {
-							return Object.entries(leaderboardData.summaries)
-								.map(([id, { $data }]) => ({ id, ...$data }));
+							return Object.entries(leaderboardData.summaries).map(
+								([id, { $data }]) => ({ id, ...$data }),
+							);
 						},
 					},
 				),
@@ -48,8 +54,10 @@ export const API = {
 		},
 		{
 			async query() {
-				return Object.entries(root.leaderboard)
-					.map(([id, { $data }]) => ({ id, ...$data }));
+				return Object.entries(root.leaderboard).map(([id, { $data }]) => ({
+					id,
+					...$data,
+				}));
 			},
 		},
 	),
@@ -57,7 +65,7 @@ export const API = {
 		return {
 			async get() {
 				for (const { summaries } of Object.values(root.leaderboard)) {
-					for (const [id, { $data } ] of Object.entries(summaries)) {
+					for (const [id, { $data }] of Object.entries(summaries)) {
 						if (id === summaryId) {
 							return { id, ...$data };
 						}
@@ -78,8 +86,10 @@ export const API = {
 		},
 		{
 			async query() {
-				return Object.entries(root.benchmark)
-					.map(([id, { $data }]) => ({ id, ...$data }));
+				return Object.entries(root.benchmark).map(([id, { $data }]) => ({
+					id,
+					...$data,
+				}));
 			},
 		},
 	),
@@ -98,8 +108,10 @@ export const API = {
 		},
 		{
 			async query() {
-				return Object.entries(root.model)
-					.map(([id, { $data }]) => ({ id, ...$data }));
+				return Object.entries(root.model).map(([id, { $data }]) => ({
+					id,
+					...$data,
+				}));
 			},
 			async queryHasBenchmark(benchmarkId: string) {
 				return Object.entries(root.model)
@@ -108,32 +120,141 @@ export const API = {
 			},
 			async queryHasSummary(summaryId: string) {
 				return Object.entries(root.model)
-					.filter(([, { $data }]) => summaryId in $data.score)
+					.filter(([, { $data }]) => summaryId in $data.score.summary)
 					.map(([id, { $data }]) => ({ id, ...$data }));
+			},
+			PropertyRecord: {
+				async query(...modelIdList: string[]) {
+					const record: ModelPropertyRecordGroup = {
+						vision: {},
+						language: {},
+						author: {},
+						size: {},
+						year: {},
+					};
+
+					for (const { author, component, size, release } of modelIdList.map(
+						(id) => root.model[id]!.$data,
+					)) {
+						if (Array.isArray(author)) {
+							for (const value of author) {
+								if (!record.author[value]) {
+									record.author[value] = 0;
+								}
+
+								record.author[value] += 1;
+							}
+						}
+
+						if (component !== undefined) {
+							const { vision, language } = component;
+
+							if (Array.isArray(vision)) {
+								for (const value of vision) {
+									if (!record.vision[value]) {
+										record.vision[value] = 0;
+									}
+
+									record.vision[value] += 1;
+								}
+							}
+
+							if (Array.isArray(language)) {
+								for (const value of language) {
+									if (!record.language[value]) {
+										record.language[value] = 0;
+									}
+
+									record.language[value] += 1;
+								}
+							}
+						}
+
+						if (Array.isArray(size)) {
+							for (const value of size) {
+								if (!record.size[value]) {
+									record.size[value] = 0;
+								}
+
+								record.size[value] += 1;
+							}
+						}
+
+						if (release !== undefined) {
+							const { year } = release;
+
+							if (typeof year === 'number') {
+								if (!record.year[year]) {
+									record.year[year] = 0;
+								}
+
+								record.year[year] += 1;
+							}
+						}
+					}
+
+					return record;
+				},
 			},
 		},
 	),
-	Capability: Object.assign((capabilityId: string) => {
-		const parentCapabilityData = root.capability.children[capabilityId]!;
+	Capability: Object.assign(
+		(capabilityId: string) => {
+			const parentCapabilityData = root.capability.children[capabilityId]!;
 
-		return Object.assign((capabilityId: string) => {
-			return parentCapabilityData.children![capabilityId];
-		}, {
-			async query() {
-				if (!Object.hasOwn(parentCapabilityData, 'children')) {
-					return [];
-				}
+			return Object.assign(
+				(capabilityId: string) => {
+					return {
+						async get() {
+							return parentCapabilityData.children![capabilityId]!;
+						},
+					};
+				},
+				{
+					async get() {
+						return {
+							id: capabilityId,
+							...root.capability.children[capabilityId]!.$data,
+						};
+					},
+					async query() {
+						if (!Object.hasOwn(parentCapabilityData, 'children')) {
+							return [];
+						}
 
-				return Object.entries(parentCapabilityData.children!)
-					.map(([id, { $data }]) => ({ id, ...$data }));
-			},
-		});
-	}, {
-		async query() {
-			return Object.entries(root.capability.children)
-				.map(([id, { $data }]) => ({ id, ...$data }));
+						return Object.entries(parentCapabilityData.children!).map(
+							([id, { $data }]) => ({ id, ...$data }),
+						);
+					},
+					Configuration: {
+						async get() {
+							const capability = root.capability.children[capabilityId]!;
+
+							if (!Object.hasOwn(capability, 'configuration')) {
+								return null;
+							}
+
+							return {
+								...root.capability.children[capabilityId]!.configuration!.$data,
+							};
+						},
+					},
+				},
+			);
 		},
-	}),
+		{
+			async query() {
+				return Object.entries(root.capability.children).map(
+					([id, { $data }]) => ({ id, ...$data }),
+				);
+			},
+			Configuration: {
+				async get() {
+					return { ...root.capability.configuration.$data };
+				},
+			},
+		},
+	),
 	Document: {
 		async read(pathname: string) {
 			return fetch(`/html/${pathname}.html`).then(readText);
@@ -184,12 +305,16 @@ export const API = {
 					Category: {
 						General: {
 							async get() {
-								return { ...root.page.home.profile.model.category.general.$data };
+								return {
+									...root.page.home.profile.model.category.general.$data,
+								};
 							},
 						},
 						Embodied: {
 							async get() {
-								return { ...root.page.home.profile.model.category.embodied.$data };
+								return {
+									...root.page.home.profile.model.category.embodied.$data,
+								};
 							},
 						},
 					},
@@ -215,6 +340,11 @@ export const API = {
 			Task: {
 				async get() {
 					return { ...root.page.leaderboard.task.$data };
+				},
+			},
+			Capability: {
+				async get() {
+					return { ...root.page.leaderboard.capability.$data };
 				},
 			},
 		},

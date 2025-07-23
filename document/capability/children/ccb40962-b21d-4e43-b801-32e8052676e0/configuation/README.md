@@ -1,9 +1,0 @@
----
-ScoreTable:
-  Order:
-    - ef1b0233-b238-421e-aa68-568be1599882
-    - ef769c5b-5865-4918-b99c-d5281c6147a1
-    - f8ad281d-3f92-4f75-aa4a-f4c09b90d112
-    - 1b70980e-fa1a-4eaf-b401-665e68b72ad1
-    - 8153b32d-c4e2-4b2d-b7e8-18d55e1d655d
----

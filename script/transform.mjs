@@ -52,11 +52,7 @@ function computeSummary() {
 		}
 	}
 
-	let m_count = 0;
-
 	for (const [m_id, { $data: m }] of Object.entries(dataRoot.model)) {
-		m_count++;
-
 		const sum_ids = {};
 
 		for (const bm_id in m.score.benchmark) {
@@ -109,4 +105,4 @@ function computeCapabilityLevel0Total() {
 computeSummary();
 computeCapabilityLevel0Total();
 
-// writeFile(PATH.TARGET.DATA, JSON.stringify(dataRoot));
+writeFile(PATH.TARGET.DATA, JSON.stringify(dataRoot));

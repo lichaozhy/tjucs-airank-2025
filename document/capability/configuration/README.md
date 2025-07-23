@@ -8,4 +8,7 @@ order:
   - 9baa89a1-9993-4a56-aadf-645709d17df5
   - a88b3a6d-4046-42e9-9f17-3f4826417521
   - ccb40962-b21d-4e43-b801-32e8052676e0
+level:
+  0: Core
+  1: Fine-grained
 ---

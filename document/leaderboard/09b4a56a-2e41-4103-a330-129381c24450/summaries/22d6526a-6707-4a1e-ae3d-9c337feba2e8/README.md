@@ -1,5 +1,5 @@
 ---
-name: 3D-All Benchmarks
+name: 3D-Embodied QA Benchmarks
 properties:
   - type: computed
     label: Total Score

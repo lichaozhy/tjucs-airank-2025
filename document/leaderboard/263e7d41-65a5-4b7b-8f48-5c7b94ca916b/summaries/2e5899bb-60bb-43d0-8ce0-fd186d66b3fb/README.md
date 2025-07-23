@@ -1,5 +1,5 @@
 ---
-name: Nav-All Benchmarks
+name: Vision Language Navigation Benchmarks
 properties:
   - type: computed
     label: Total SR

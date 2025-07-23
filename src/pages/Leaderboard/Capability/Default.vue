@@ -3,7 +3,13 @@
 		id="app-leaderboard-capability"
 		class="row q-col-gutter-lg"
 	>
-		<div class="text-body text-grey-9 col-12">{{ BannerData.caption }}</div>
+		<div class="col-12">
+			<app-markdown-html
+				style="min-height: 6em;"
+				class="text-grey-9"
+				src="page/leaderboard/capability"
+			></app-markdown-html>
+		</div>
 		<div class="col-12">
 			<q-toolbar
 				class="col-12 q-px-none justify-evenly"
@@ -28,32 +34,41 @@
 			v-for="source in selectedSourceList"
 			:key="source.id"
 		>
-			<AppScoreCard
+			<component
 				:source="source"
-				:level="level"
-			/>
+				:is="AppCapabilityScoreCardComponent[level]"
+			></component>
 		</div>
 	</div>
 </template>
 
 <script setup lang="ts">
-import type { SourceScoreModel } from './ScoreCard.vue';
-import { computed, ref, inject } from 'vue';
+import type * as Data from 'src/data';
+import type * as Type from './type';
+import { computed, ref, inject, onBeforeMount } from 'vue';
 
+import * as Backend from 'src/backend';
 import * as Spec from 'src/spec';
 
-import AppScoreCard from './ScoreCard.vue';
-
-import BannerData from './banner.json';
+import AppMarkdownHtml from 'components/MarkdownHTML.vue';
+import AppCapabilityLevel0ScoreCard from './Level0ScoreCard.vue';
+import AppCapabilityLevel1ScoreCard from './Level1ScoreCard.vue';
 
 const { INJECTION_KEY: INJECTION } = Spec;
 
-const level = ref<'core' | 'sub'>('core');
+const AppCapabilityScoreCardComponent = {
+	0: AppCapabilityLevel0ScoreCard,
+	1: AppCapabilityLevel1ScoreCard,
+};
+
+const levelRecord = ref<Record<Data.CapabilityLevel, string>>({ 0: '', 1: '' });
+const level = ref<Data.CapabilityLevel>(0);
 const selectedBenchmark = inject(INJECTION.LEADERBOARD_BENCHMARK_SELECTED);
 const selectedSummary = inject(INJECTION.LEADERBOARD_SUMMARY_SELECTED);
 
-const selectedSourceList = computed<SourceScoreModel[]>(() => {
-	const list: SourceScoreModel[] = [];
+
+const selectedSourceList = computed<Type.SourceScoreModel[]>(() => {
+	const list: Type.SourceScoreModel[] = [];
 
 	for (const id in selectedSummary) {
 		if (selectedSummary[id]) {
@@ -70,14 +85,18 @@ const selectedSourceList = computed<SourceScoreModel[]>(() => {
 	return list;
 });
 
-const CAPABILITY_LEVEL_RECORD = {
-	0: 'Core Capabilities',
-	1: 'Fine-grained Capabilities',
-};
+const capabilityLevelList = computed(() => {
+	return Object.entries(levelRecord.value).map(([key, name]) => ({
+		label: `${name} Capabilities`,
+		value: Number(key),
+	}));
+});
 
-const capabilityLevelList = Object.entries(CAPABILITY_LEVEL_RECORD).map(
-	([value, label]) => ({ value, label }),
-);
+onBeforeMount(async () => {
+	const configuration = await Backend.API.Capability.Configuration.get();
+
+	levelRecord.value = { ...configuration.level };
+});
 
 defineOptions({ name: 'AppLeaderboardPageCapability' });
 </script>

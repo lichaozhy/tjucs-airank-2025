@@ -1,5 +1,5 @@
 ---
-name: TP-All Benchmarks
+name: Task Planning Benchmarks
 properties:
   - type: computed
     label: Total SR

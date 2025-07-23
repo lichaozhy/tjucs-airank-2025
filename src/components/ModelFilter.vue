@@ -37,16 +37,29 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onBeforeMount, onMounted, ref, watch } from 'vue';
+import type * as Data from 'src/data';
+import type { ModelData } from './ScoreTable.vue';
+import { computed, ref, watch } from 'vue';
 
 import * as Backend from 'src/backend';
 import * as Spec from 'src/spec';
-import type * as Data from 'src/data';
-import type { ModelData } from './ScoreTable.vue';
 
-export type ModelFilter = (data: Data.Model) => boolean;
+export type ModelPropertyValueGroup = {
+	vision: string[];
+	language: string[];
+	author: string[];
+	size: number[];
+	year: number[];
+};
 
-const DEFAULT_FILTER = () => true;
+const props = withDefaults(
+	defineProps<{
+		models?: ModelData[];
+	}>(),
+	{
+		models: () => [],
+	},
+);
 
 const COMMON_UNSELIECTED = Object.freeze({
 	label: 'All',
@@ -58,12 +71,20 @@ type OptionObject = {
 	value: null | number | string | boolean;
 };
 
-const PROPERTY_GROUP = ref<null>(null);
+const PROPERTY_GROUP = ref<ModelPropertyValueGroup>({
+	vision: [],
+	language: [],
+	author: [],
+	size: [],
+	year: [],
+});
+
+const modelList = ref<(Data.Model & { id: string })[]>([]);
 const propertyNameOption = ref<string | null>(null);
 const propertyValueOption = ref<string | number | null>(null);
 
 type PropertyTester = (
-	data: Spec.Model.Type,
+	data: Data.Model & { id: string },
 	target: string | number | boolean,
 ) => boolean;
 
@@ -178,11 +199,11 @@ const toBooleanOption = (v: boolean) => ({ label: v ? 'Yes' : 'No', value: v });
 const toYearOption = (v: number) => ({ label: `${v}`, value: v });
 
 const PropertyValueOptionsGenerator = {
-	language: () => PROPERTY_GROUP.value!.language.map(toOption),
-	vision: () => PROPERTY_GROUP.value!.vision.map(toOption),
-	author: () => PROPERTY_GROUP.value!.author.map(toOption),
-	size: () => PROPERTY_GROUP.value!.size.map(toSizeOption),
-	year: () => PROPERTY_GROUP.value!.year.map(toYearOption),
+	language: () => PROPERTY_GROUP.value.language.map(toOption),
+	vision: () => PROPERTY_GROUP.value.vision.map(toOption),
+	author: () => PROPERTY_GROUP.value.author.map(toOption),
+	size: () => PROPERTY_GROUP.value.size.map(toSizeOption),
+	year: () => PROPERTY_GROUP.value.year.map(toYearOption),
 	dimension: () => Spec.Model.PROPERTY.QA.map(toOption),
 	opensource: () => Spec.Model.PROPERTY.OPENSOURCE.map(toBooleanOption),
 	imageVideo: () => Spec.Model.PROPERTY.IMAGE_VIDEO.map(toOption),
@@ -207,30 +228,62 @@ watch(propertyNameOption, (newNameOption, oldNameOption) => {
 	}
 });
 
-watch(propertyValueOption, (valueOption) => {
-	if (valueOption === null) {
-		return emit('filter-update', DEFAULT_FILTER);
+const modelDataRecord = computed(() => {
+	const record: Record<string, Data.Model & { id: string }> = {};
+
+	for (const data of modelList.value) {
+		record[data.id] = data;
 	}
 
-	const Property = {
-		name: propertyNameOption.value as keyof ModelData,
-		value: valueOption,
-	};
+	return record;
+});
 
-	emit('filter-update', (data) => {
-		return PropertyTester[Property.name]!(data, Property.value);
+watch(propertyValueOption, (valueOption) => {
+	if (valueOption === null) {
+		return emit('filtered', props.models);
+	}
+
+	const test = PropertyTester[propertyNameOption.value!]!;
+	const propertyValue = propertyValueOption.value!;
+
+	const filteredList = props.models.filter((data: ModelData) => {
+		return test(modelDataRecord.value[data.id]!, propertyValue);
 	});
+
+	emit('filtered', filteredList);
 });
 
 const emit = defineEmits<{
-	'filter-update': [ModelFilter];
+	'filtered': [ModelData[]];
 }>();
 
-onBeforeMount(async () => {
-	PROPERTY_GROUP.value = await Backend.API.Model.Property.ValueGroup.query();
-});
+watch(() => props.models, async () => {
+	const ids = props.models.map((modelData) => modelData.id);
+	const record = await Backend.API.Model.PropertyRecord.query(...ids);
 
-onMounted(() => {});
+	const group: ModelPropertyValueGroup = {
+		vision: [],
+		language: [],
+		author: [],
+		size: [],
+		year: [],
+	};
+
+	group.vision = Object.keys(record.vision);
+	group.language = Object.keys(record.language);
+	group.author = Object.keys(record.author);
+	group.size = Object.keys(record.size).map(v => Number(v));
+	group.year = Object.keys(record.year).map(v => Number(v));
+
+	propertyNameOption.value = null;
+	PROPERTY_GROUP.value = group;
+
+	modelList.value = await Promise.all(ids.map(id => {
+		return Backend.API.Model(id).get();
+	}));
+
+	emit('filtered', props.models);
+}, { immediate: true });
 
 defineOptions({ name: 'AppLeaderboardModelFilterPanel' });
 </script>

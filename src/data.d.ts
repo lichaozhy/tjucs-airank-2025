@@ -55,11 +55,9 @@ interface CapabilityItem {
 	};
 }
 
-interface ConfiguationItem {
+interface ConfigurationItem {
 	$data: {
-		ScoreTable: {
-			Order: string[];
-		};
+		order: string[];
 	};
 }
 
@@ -67,7 +65,7 @@ interface CapabilityItem {
 	children?: {
 		[key: string]: CapabilityItem;
 	};
-	configuation?: ConfiguationItem;
+	configuration?: ConfigurationItem;
 	$data: CapabilityItem;
 }
 
@@ -75,13 +73,14 @@ interface CapabilityChildren {
 	[key: string]: CapabilityItem;
 }
 
+export type CapabilityLevel = 0 | 1;
+
 interface Capability {
 	children: CapabilityChildren;
-	configuation: {
+	configuration: {
 		$data: {
-			ScoreTable: {
-				Order: string[];
-			};
+			order: string[];
+			level: Record<CapabilityLevel, string>
 		};
 	};
 }
@@ -181,6 +180,17 @@ export interface DataType {
 	page: {
 		leaderboard: {
 			task: {
+				$data: {
+					banner: {
+						title: string;
+						navigation: {
+							label: string;
+							caption: string;
+						}
+					}
+				};
+			};
+			capability: {
 				$data: {
 					banner: {
 						title: string;
