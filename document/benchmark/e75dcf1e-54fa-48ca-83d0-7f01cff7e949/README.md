@@ -1,6 +1,6 @@
 ---
 leaderboard: 09b4a56a-2e41-4103-a330-129381c24450
-name: Multi3drefer
+name: Multi3DRefer
 description: >
   Multi3DRefer: Grounding Text Description to Multiple 3D Objects
 organization: Simon Fraser University,Alberta Machine Intelligence Institute (Amii)
@@ -20,7 +20,7 @@ properties:
   Object Navigation:
     order: 1
     index: 0
-    label: Spatial Localization
+    label: F1@0.25
     unit: null
   Total:
     order: 0

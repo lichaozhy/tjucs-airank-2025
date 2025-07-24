@@ -1,6 +1,6 @@
 ---
 leaderboard: 09b4a56a-2e41-4103-a330-129381c24450
-name: Scanrefer
+name: ScanRefer
 description: >
   ScanRefer: 3D Object Localization in RGB-D Scans using Natural Language
 organization: Technical University of Munich, Simon Fraser University
@@ -20,7 +20,7 @@ properties:
   Object Navigation:
     order: 1
     index: 0
-    label: Spatial Localization
+    label: Acc@0.25
     unit: null
   Total:
     order: 0

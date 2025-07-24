@@ -33,10 +33,10 @@ properties:
     index: 2
     label: Navi + Relation
     unit: ''
-  NaviManiMultiObjectsTemporalConstraints:
+  NaviTemporal:
     order: 4
     index: 3
-    label: Navi & Mani + Multi Objects + Temporal Constraints
+    label: Navi + Temporal
     unit: ''
   TotalSR:
     order: 0
