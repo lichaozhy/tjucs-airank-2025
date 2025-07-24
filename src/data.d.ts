@@ -85,7 +85,7 @@ interface Capability {
 	};
 }
 
-interface SummaryItem {
+export interface SummaryItem {
 	name: string;
 	properties: {
 		type: string;

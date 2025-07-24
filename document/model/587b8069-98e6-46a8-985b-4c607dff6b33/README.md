@@ -1,5 +1,5 @@
 ---
-name: navillm
+name: NaviLLM
 component:
   vision:
     - EVA-CLIP

@@ -53,10 +53,6 @@ const rowList = computed<ModelData[]>(() => {
 	const list: ModelData[] = [];
 
 	for (const model of modelList.value) {
-		if (!Object.hasOwn(summary.value!.models, model.id)) {
-			continue;
-		}
-
 		const data: ModelData = {
 			id: model.id,
 			name: model.name,

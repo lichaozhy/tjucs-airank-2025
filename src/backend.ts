@@ -1,4 +1,4 @@
-import type { DataType } from './data';
+import type { DataType, SummaryItem } from './data';
 const root: DataType = await import('./data.json');
 
 export type ModelPropertyRecordGroup = Record<
@@ -119,8 +119,20 @@ export const API = {
 					.map(([id, { $data }]) => ({ id, ...$data }));
 			},
 			async queryHasSummary(summaryId: string) {
+				let summary: SummaryItem;
+
+				lb: for (const leaderboard of Object.values(root.leaderboard)) {
+					for (const [id, { $data }] of Object.entries(leaderboard.summaries)) {
+						if (id === summaryId) {
+							summary = $data;
+							break lb;
+						}
+					}
+				}
+
 				return Object.entries(root.model)
 					.filter(([, { $data }]) => summaryId in $data.score.summary)
+					.filter(([id]) => id in summary.models)
 					.map(([id, { $data }]) => ({ id, ...$data }));
 			},
 			PropertyRecord: {
