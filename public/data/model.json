@@ -2422,7 +2422,7 @@
 	},
 	{
 		"id": "587b8069-98e6-46a8-985b-4c607dff6b33",
-		"name": "navillm",
+		"name": "NaviLLM",
 		"component": {
 			"vision": [
 				"EVA-CLIP"
@@ -15162,74 +15162,6 @@
 		}
 	},
 	{
-		"id": "d1b8e0bc-90ee-45a6-bafe-0430007bd6d4",
-		"name": "NaVid-7B",
-		"component": {
-			"vision": [
-				"EVA-CLIP"
-			],
-			"language": [
-				"Vicuna-7B-v1.5"
-			]
-		},
-		"author": [
-			"Peking University"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
-		"website": "https://pku-epic.github.io/Uni-NaVid",
-		"navigation": true,
-		"taskPlanning": true,
-		"reason": true,
-		"opensource": true,
-		"release": {
-			"year": 2024
-		},
-		"imageVideo": "image/video",
-		"score": {
-			"benchmark": {},
-			"summary": {}
-		}
-	},
-	{
-		"id": "3456f0c2-c764-4e1a-93b7-f121b3cc628d",
-		"name": "UniNaVid-7B",
-		"component": {
-			"vision": [
-				"EVA-CLIP"
-			],
-			"language": [
-				"Vicuna-7B-v1.5"
-			]
-		},
-		"author": [
-			"Peking University"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
-		"website": "https://pku-epic.github.io/Uni-NaVid",
-		"navigation": true,
-		"taskPlanning": true,
-		"reason": true,
-		"opensource": false,
-		"release": {
-			"year": 2024
-		},
-		"imageVideo": "image/video",
-		"score": {
-			"benchmark": {},
-			"summary": {}
-		}
-	},
-	{
 		"id": "05a2873a-3f35-4d8e-b1bb-55945178c3f9",
 		"name": "MapNav",
 		"component": {
@@ -15495,40 +15427,6 @@
 		}
 	},
 	{
-		"id": "3c9327f1-fd21-4adc-af48-fd3e60404cb2",
-		"name": "SAT",
-		"component": {
-			"vision": [
-				"ViT"
-			],
-			"language": [
-				"LLaVA-1.5-7B/13B"
-			]
-		},
-		"author": [
-			"Boston University"
-		],
-		"qa": [
-			"2D"
-		],
-		"dimension": [
-			"2D"
-		],
-		"website": "https://github.com/arijitray1993/SAT",
-		"navigation": true,
-		"taskPlanning": true,
-		"reason": true,
-		"opensource": true,
-		"release": {
-			"year": 2024
-		},
-		"imageVideo": "image/video",
-		"score": {
-			"benchmark": {},
-			"summary": {}
-		}
-	},
-	{
 		"id": "ecde821e-40e3-4a5d-87d5-cfa95773f1f8",
 		"name": "robo-refer",
 		"component": {
@@ -15588,6 +15486,123 @@
 			"year": 2024
 		},
 		"imageVideo": "image/video",
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
+	},
+	{
+		"id": "967c20a0-7b9d-479c-a797-6a4ea401ea29",
+		"name": "Inst3D-LLM",
+		"component": {
+			"vision": [
+				"CLIP-ViT-L/14-336px"
+			],
+			"language": [
+				"Vicuna-7B-v1.5"
+			]
+		},
+		"author": [
+			"Zhejiang University"
+		],
+		"qa": [
+			"3D"
+		],
+		"dimension": [
+			"3D"
+		],
+		"website": "https://github.com/hanxunyu/Inst3D-LMM",
+		"navigation": true,
+		"taskPlanning": true,
+		"reason": true,
+		"opensource": true,
+		"release": {
+			"year": 2025
+		},
+		"imageVideo": "Point Clouds",
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
+	},
+	{
+		"id": "f616e78d-483a-4e2b-95f7-7c1f5719d7d6",
+		"name": "3D-LLaVA",
+		"component": {
+			"language": [
+				"LLaVA-7B"
+			]
+		},
+		"author": [
+			"Tsinghua University"
+		],
+		"qa": [
+			"3D"
+		],
+		"dimension": [
+			"3D"
+		],
+		"website": "https://github.com/djiajunustc/3D-LLaVA",
+		"navigation": true,
+		"taskPlanning": true,
+		"reason": true,
+		"opensource": true,
+		"release": {
+			"year": 2025
+		},
+		"imageVideo": "Point Clouds",
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
+	},
+	{
+		"id": "062c7625-882c-4534-a5d8-bf677a73934c",
+		"name": "GPT4Scene-HDM",
+		"author": [
+			"The University of Hong Kong, Shanghai AI Laboratory"
+		],
+		"qa": [
+			"2D"
+		],
+		"dimension": [
+			"2D"
+		],
+		"website": "https://gpt4scene.github.io/",
+		"navigation": true,
+		"taskPlanning": true,
+		"reason": true,
+		"opensource": true,
+		"release": {
+			"year": 2025
+		},
+		"imageVideo": "Point Clouds",
+		"score": {
+			"benchmark": {},
+			"summary": {}
+		}
+	},
+	{
+		"id": "a6d70f82-c636-44c4-832e-b8a87b5ad896",
+		"name": "3DRS",
+		"author": [
+			"Visual AI Lab, The University of Hong Kong & Baidu VIS"
+		],
+		"qa": [
+			"3D"
+		],
+		"dimension": [
+			"3D"
+		],
+		"website": "https://github.com/Visual-AI/3DRS",
+		"navigation": true,
+		"taskPlanning": true,
+		"reason": true,
+		"opensource": true,
+		"release": {
+			"year": 2025
+		},
+		"imageVideo": "Point Clouds",
 		"score": {
 			"benchmark": {},
 			"summary": {}
