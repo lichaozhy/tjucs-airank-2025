@@ -18,13 +18,6 @@ release:
   year: 2023
 imageVideo: Image
 score:
-  benchmark:
-    68bf8b5b-d8d4-49d7-9e7e-03e4d547189b:
-      legacy:
-        - null
-        - null
-        - null
-        - 58.6
-        - 58.6
+  benchmark: {}
   summary: {}
 ---

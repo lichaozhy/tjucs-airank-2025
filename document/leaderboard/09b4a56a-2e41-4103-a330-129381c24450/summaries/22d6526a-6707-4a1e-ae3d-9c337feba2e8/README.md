@@ -18,6 +18,16 @@ properties:
     ref:
       benchmark: df46aa1a-099f-4841-bc02-ba9608e18c7d
       key: Total
+  - type: reference
+    label: Scanrefer
+    ref:
+      benchmark: bb0cf73e-8e66-46f9-8880-3b4160a5feb4
+      key: Total
+  - type: reference
+    label: Multi3drefer
+    ref:
+      benchmark: e75dcf1e-54fa-48ca-83d0-7f01cff7e949
+      key: Total
 models:
   a72406cc-1374-4992-ad62-b052f23908f8: true
   8cb6f6bb-9534-4da7-bff7-b25f4359faec: true
@@ -34,4 +44,10 @@ models:
   f616e78d-483a-4e2b-95f7-7c1f5719d7d6: true
   062c7625-882c-4534-a5d8-bf677a73934c: true
   a6d70f82-c636-44c4-832e-b8a87b5ad896: true
+  323ef65f-630b-49df-bff8-e7bc32815387: true
+  0cb4cf61-fe9a-4974-9c89-96c023957e9f: true
+  7b3f0bae-5319-4d34-b7ad-62ba67a43da4: true
+  af3acd4e-d0b0-4aec-b45a-2ad7088a54f8: true
+  09929601-b5f9-439b-94d3-fe8dedb11b13: true
+  66e0e288-d20d-4c78-890e-3bd68aa931dc: true
 ---

@@ -4,7 +4,7 @@ component:
   vision:
     - pretrained CLIP
 author:
-  - Bejing Institute for General Artificial Intelligence
+  - BAAI
 qa:
   - 3D
 dimension:
@@ -28,5 +28,9 @@ score:
         - 80.3
         - 36
         - 58.18
+    bb0cf73e-8e66-46f9-8880-3b4160a5feb4:
+      legacy:
+        - 57
+        - 57
   summary: {}
 ---

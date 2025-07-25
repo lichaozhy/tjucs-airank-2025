@@ -99,10 +99,33 @@ function computeSummary() {
 }
 
 function computeCapabilityLevel0Total() {
+	for (const { $data } of Object.values(dataRoot.model)) {
+		for (const namespace of Object.values($data.score)) {
+			for (const scoreGroup of Object.values(namespace)) {
+				if (Object.hasOwn(scoreGroup, '0')) {
+					scoreGroup[0][7] = avg(scoreGroup[0].slice(0, 7));
+				}
+			}
+		}
+	}
+}
 
+function toFixedAllScoreTable(factionDigital = 2) {
+	for (const { $data } of Object.values(dataRoot.model)) {
+		for (const namespace of Object.values($data.score)) {
+			for (const scoreGroup of Object.values(namespace)) {
+				for (const scoreList of Object.values(scoreGroup)) {
+					scoreList.forEach((v, i) => {
+						scoreList[i] = v === null ? null : Number(v.toFixed(factionDigital));
+					});
+				}
+			}
+		}
+	}
 }
 
 computeSummary();
 computeCapabilityLevel0Total();
+toFixedAllScoreTable(2);
 
 writeFile(PATH.TARGET.DATA, JSON.stringify(dataRoot));

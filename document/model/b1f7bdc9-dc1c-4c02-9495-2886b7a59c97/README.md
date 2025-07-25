@@ -4,7 +4,7 @@ component:
   language:
     - Qwen2-VL-7B-Instruct
 author:
-  - The University of Hong Kong, Shanghai AI Laboratory
+  - University of Hong Kong
 qa:
   - 2D
 dimension:

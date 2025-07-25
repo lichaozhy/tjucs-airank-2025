@@ -1,7 +1,7 @@
 ---
 name: NaVILA
 author:
-  - UC San Diego, USC, NVIDIA
+  - UC San Diego
 qa:
   - 2D
 dimension:

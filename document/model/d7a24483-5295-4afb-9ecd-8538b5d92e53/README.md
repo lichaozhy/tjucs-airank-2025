@@ -9,7 +9,7 @@ component:
 size:
   - 7
 author:
-  - Bejing Institute for General Artificial Intelligence
+  - BAAI
 qa:
   - 3D
 dimension:

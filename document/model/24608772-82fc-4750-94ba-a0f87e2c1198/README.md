@@ -19,12 +19,17 @@ release:
 imageVideo: Image
 score:
   benchmark:
+    b9a18add-a3fb-4893-89e3-ddeea8053ce2:
+      legacy:
+        - 25.52
+        - 8
+        - 52.76
     68bf8b5b-d8d4-49d7-9e7e-03e4d547189b:
       legacy:
         - 89.89
         - 77.25
         - 63.14
-        - null
-        - 76.76
+        - 57.71
+        - 71.9975
   summary: {}
 ---

@@ -1,7 +1,7 @@
 ---
 name: RoboBrain2.0-32B
 author:
-  - Beijing Academy of Artificial Intelligence
+  - BAAI
 qa:
   - 2D
 dimension:
@@ -16,60 +16,42 @@ release:
 imageVideo: image/video
 score:
   benchmark:
-    a9228f2e-3191-4a08-8f03-64e73cae2e78:
-      legacy:
-        - 73.59
-        - 73.59
-    5df5ca38-7ca9-4d35-81c6-3dfe52700755:
-      legacy:
-        - 51.39
-        - 43.24
-        - 35.29
-        - 41.67
-        - 47.27
-        - 44.74
-        - 46.97
-        - 50
-        - 45.07
-    25206b0f-a955-4e39-86cf-53dcc9528bfc:
-      legacy:
-        - 45.12
-        - 25.32
-        - 48.24
-        - 40.13
-        - 45.03
-        - 43.01
-        - 38.04
-        - 25.08
-        - 42.69
-    1961aa46-9085-42ed-b384-d9ffe52921a8:
-      legacy:
-        - 30
-        - 18
-        - 42
-        - 20
-        - 14
-        - 10
-        - 22.33333333
-        - 24.45611015
-    cbb64d1c-4377-4231-a465-73ffb10972c5:
-      legacy:
-        - 74
-        - 38
-        - 46
-        - 42
-        - 36
-        - 32
-        - 44.66666667
-    73de273a-7d38-40c0-b869-2b2e6156c897:
-      legacy:
-        - 46
-        - 33
-        - 38
-        - 31.6
-        - 15
-        - 10
     ba0be521-6b10-4881-964c-97cd4d2d6070:
+      0:
+        - 29.036666666666665
+        - 15.36
+        - null
+        - 36.15
+        - 34.87
+        - null
+        - null
+        - null
+      1:
+        - 14.36
+        - 32.34
+        - 40.41
+        - null
+        - null
+        - null
+        - 15.36
+        - null
+        - null
+        - null
+        - 36.15
+        - null
+        - null
+        - null
+        - null
+        - 34.87
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
       legacy:
         - 14.36
         - 32.43
@@ -80,6 +62,41 @@ score:
         - null
         - 28.93
     034bf6b5-dc18-45da-bfaf-337589125632:
+      0:
+        - 35.00333333333334
+        - 49.43
+        - 57.78
+        - 49.010000000000005
+        - 35.2475
+        - 45.67
+        - null
+        - null
+      1:
+        - 25.01
+        - 39.59
+        - 40.41
+        - null
+        - 49.43
+        - null
+        - null
+        - null
+        - 64.67
+        - 50.89
+        - 38.52
+        - 59.5
+        - 47
+        - null
+        - null
+        - null
+        - 23.495
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 45.67
+        - null
       legacy:
         - 25.01
         - 39.59
@@ -93,6 +110,456 @@ score:
         - 47
         - 12.32
         - 45.67
-        - 42.30666667
+        - 42.31
+    025ca0fe-f04c-4d17-9f4c-9d1aca6666bd:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+    1961aa46-9085-42ed-b384-d9ffe52921a8:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 19.1140275375
+        - null
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 24.45611015
+        - 20
+        - 14
+        - null
+        - 18
+        - null
+        - null
+        - null
+      legacy:
+        - 30
+        - 18
+        - 42
+        - 20
+        - 14
+        - 10
+        - 22.33
+        - 24.46
+    1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+    25206b0f-a955-4e39-86cf-53dcc9528bfc:
+      0:
+        - 46.68
+        - 39.17451209
+        - null
+        - null
+        - 25.08
+        - 38.04
+        - null
+        - null
+      1:
+        - null
+        - 48.24
+        - null
+        - 45.12
+        - 43.01
+        - 34.38353627
+        - null
+        - 40.13
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 25.08
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 38.04
+        - null
+      legacy:
+        - 45.12
+        - 25.32
+        - 48.24
+        - 40.13
+        - 45.03
+        - 43.01
+        - 38.04
+        - 25.08
+        - 42.69
+    5df5ca38-7ca9-4d35-81c6-3dfe52700755:
+      0:
+        - 38.480000000000004
+        - 43.24
+        - null
+        - null
+        - 45.91090909
+        - null
+        - null
+        - null
+      1:
+        - 35.29
+        - null
+        - 41.67
+        - null
+        - 43.24
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 41.67
+        - 46.97
+        - null
+        - 49.09272727
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      legacy:
+        - 51.39
+        - 43.24
+        - 35.29
+        - 41.67
+        - 47.27
+        - 44.74
+        - 46.97
+        - 50
+        - 45.07
+    73de273a-7d38-40c0-b869-2b2e6156c897:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 10
+        - null
+        - null
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 10
+        - null
+        - null
+      legacy:
+        - 46
+        - 33
+        - 38
+        - 31.6
+        - 15
+        - 10
+    a9228f2e-3191-4a08-8f03-64e73cae2e78:
+      0:
+        - null
+        - null
+        - null
+        - 73.59
+        - null
+        - null
+        - null
+        - null
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 73.59
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      legacy:
+        - 73.59
+        - 73.59
+    b9a18add-a3fb-4893-89e3-ddeea8053ce2:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - 13.745
+        - null
+        - null
+        - null
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 22.45
+        - null
+        - 5.04
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      legacy:
+        - 22.45
+        - 5.04
+        - 36.43
+    cbb64d1c-4377-4231-a465-73ffb10972c5:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 40.0625
+        - null
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 44.25
+        - 42
+        - 36
+        - null
+        - 38
+        - null
+        - null
+        - null
+      legacy:
+        - 74
+        - 38
+        - 46
+        - 42
+        - 36
+        - 32
+        - 44.66666667
+    089294d0-59db-47f0-a543-19d8e3708448:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+    27e481d6-6057-49dc-ad80-529f9127245f:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 13.56
+        - null
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 13.56
+        - null
+        - null
+        - null
+        - null
+        - null
+      legacy:
+        - 17.32
+        - 17.32
   summary: {}
 ---

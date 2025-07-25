@@ -28,5 +28,13 @@ score:
         - 70.6
         - 35.5
         - 53.05
+    bb0cf73e-8e66-46f9-8880-3b4160a5feb4:
+      legacy:
+        - 47.9
+        - 47.9
+    e75dcf1e-54fa-48ca-83d0-7f01cff7e949:
+      legacy:
+        - 45.2
+        - 45.2
   summary: {}
 ---
