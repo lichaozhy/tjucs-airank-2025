@@ -94,6 +94,7 @@
 </template>
 
 <script setup lang="ts">
+import type * as Type from 'src/data';
 import type * as Spec from 'src/spec';
 import { ref, onMounted, computed } from 'vue';
 import { useRoute } from 'vue-router';
@@ -107,7 +108,7 @@ interface Score {
 	items: Array<number | null>;
 }
 
-const model = ref<Spec.Model.Type | null>(null);
+const model = ref<Type.Model | null>(null);
 const modelScores = ref<Score[]>([]);
 const benchmarkList = ref<Array<Spec.Benchmark.Type>>([]);
 
@@ -133,8 +134,6 @@ const propertyEntityList = computed<PropertyEntity[]>(() => {
 			author,
 			release,
 			opensource,
-			dimension,
-			imageVideo,
 		} = model.value;
 
 		if (component !== undefined) {
@@ -179,10 +178,10 @@ const propertyEntityList = computed<PropertyEntity[]>(() => {
 			const { year, month, date } = release;
 			const sectionList = [year];
 
-			if (month !== undefined) {
+			if (month !== undefined && month !== null) {
 				sectionList.push(month);
 
-				if (date !== undefined) {
+				if (date !== undefined && date !== null) {
 					sectionList.push(date);
 				}
 			}
@@ -201,24 +200,6 @@ const propertyEntityList = computed<PropertyEntity[]>(() => {
 				color: opensource ? 'positive' : 'negative',
 			});
 		}
-
-		if (dimension !== undefined) {
-			for (const value of dimension) {
-				list.push({
-					label: 'Dimension',
-					icon: 'view_in_ar',
-					value,
-				});
-			}
-		}
-
-		if (imageVideo !== undefined) {
-			list.push({
-				label: 'Modality',
-				icon: 'ondemand_video',
-				value: imageVideo,
-			});
-		}
 	}
 
 	return list;
@@ -229,17 +210,9 @@ onMounted(async () => {
 	const modelId = route.params.id as string;
 
 	const modelResponse = await API.Model(modelId).get();
-	const scoresResponse = await API.Model(modelId).Score.query();
 	benchmarkList.value = await API.Benchmark.query();
 
 	model.value = modelResponse;
-	modelScores.value = scoresResponse.map((score) => ({
-		...score,
-		leaderboard:
-			benchmarkList.value.find((bm) => bm.id === score.benchmark)
-				?.leaderboard || '',
-		total: score.items.at(-1) || 0,
-	}));
 });
 
 defineOptions({ name: 'ModelDetailPage' });

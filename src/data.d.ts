@@ -132,6 +132,8 @@ export interface Model {
 	opensource: boolean;
 	release?: {
 		year: number;
+		month: number | null;
+		date: number | null;
 	};
 	imageVideo?: string;
 	score: {
