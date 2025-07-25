@@ -29,12 +29,12 @@
 </template>
 
 <script setup lang="ts">
-import type { ModelData, GroupOptions } from './ScoreTable.vue';
+import type { ModelData, GroupOptions } from 'components/ScoreTable.vue';
 import { ref } from 'vue';
 
 import AppScoreCard from 'components/ScoreCard.vue';
 import AppModelFilter from 'components/ModelFilter.vue';
-import AppScoreTable from './ScoreTable.vue';
+import AppScoreTable from 'components/ScoreTable.vue';
 
 const props = withDefaults(
 	defineProps<{

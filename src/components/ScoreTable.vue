@@ -8,11 +8,50 @@
 		flat
 		v-model:pagination="pagination"
 		bordered
+		separator="cell"
 		binary-state-sort
 		ref="table"
 	>
+		<template #header="scopeProps">
+			<q-tr
+				:props="scopeProps"
+				style="visibility: collapse"
+			>
+				<q-th
+					v-for="col in scopeProps.cols"
+					:key="col.name"
+					:props="scopeProps"
+				></q-th>
+			</q-tr>
+			<q-tr v-if="props.groups !== null">
+				<q-th
+					colspan="2"
+					class="app-cell-sticky"
+				></q-th>
+				<q-th
+					style="z-index: 1"
+					v-for="(column, index) in props.groups"
+					:key="index"
+					:colspan="column.colspan"
+					>{{ column.label }}</q-th
+				>
+			</q-tr>
+			<q-tr :props="scopeProps">
+				<q-th
+					v-for="col in scopeProps.cols"
+					:key="col.name"
+					:props="scopeProps"
+				>
+					{{ col.label }}
+				</q-th>
+			</q-tr>
+		</template>
+
 		<template #body-cell-rank="props">
-			<q-td :props="props">
+			<q-td
+				:props="props"
+				style="padding: 0 !important"
+			>
 				<AppRankBadge
 					:order="props.rowIndex + 1"
 					v-if="props.rowIndex < 3"
@@ -50,10 +89,10 @@
 
 <script setup lang="ts">
 import type { QTable, QTableProps } from 'quasar';
-import { computed, ref, watch } from 'vue';
+import { computed, onMounted, ref, watch } from 'vue';
 
-import AppRankBadge from './RankBadge.vue';
-import { toNoneOrFixed, getColumnEMWidth } from './utils';
+import AppRankBadge from 'components/RankBadge.vue';
+import { toNoneOrFixed, getColumnEMWidth } from 'components/utils';
 
 export type Score = number | null;
 
@@ -72,6 +111,11 @@ export interface ColumnOptions {
 	align: ColumnAlignment;
 	headerStyle: string;
 	[key: string]: unknown;
+}
+
+export interface GroupOptions {
+	label: string;
+	colspan: number;
 }
 
 const PREFIX_COLUMN_LIST = [
@@ -108,10 +152,12 @@ const props = withDefaults(
 	defineProps<{
 		rows?: ModelData[];
 		columns?: string[];
+		groups?: null | GroupOptions[];
 	}>(),
 	{
 		rows: () => [],
 		columns: () => [],
+		groups: null,
 	},
 );
 
@@ -127,14 +173,13 @@ watch(pagination, () => {
 	pagination.value!.descending = true;
 });
 
+
 const columnList = computed(() => {
 	const propertyColumnList: ColumnOptions[] = [];
 
 	for (const [index, name] of props.columns.entries()) {
 		const styleList = [
 			`width:${getColumnEMWidth(name.length)}em`,
-			// 'writing-mode: vertical-rl',
-			// 'text-orientation: mixed',
 		];
 
 		propertyColumnList.push({
@@ -148,6 +193,13 @@ const columnList = computed(() => {
 	}
 
 	return [...PREFIX_COLUMN_LIST, ...propertyColumnList, ...SUFFIX_COLUNM_LIST];
+});
+
+onMounted(() => {
+	const tableComponent = table.value!;
+
+	tableComponent.sort('item(0)');
+	tableComponent.sort('item(0)');
 });
 
 defineOptions({ name: 'AppLeaderboardScoreTable' });
