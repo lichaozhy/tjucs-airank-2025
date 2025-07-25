@@ -49,9 +49,19 @@ export const API = {
 					},
 					{
 						async query() {
-							return Object.entries(leaderboardData.summaries).map(
-								([id, { $data }]) => ({ id, ...$data }),
-							);
+							const indexRecord: Record<string, number> = {};
+
+							for (const [index, { id }] of Object.entries(
+								root.page.leaderboard.$data.leaderboards.find(
+									({ id }) => id === leaderboardId,
+								)!.summaries,
+							)) {
+								indexRecord[id] = Number(index);
+							}
+
+							return Object.entries(leaderboardData.summaries)
+								.sort(([aId], [bId]) => indexRecord[aId]! - indexRecord[bId]!)
+								.map(([id, { $data }]) => ({ id, ...$data }));
 						},
 					},
 				),
@@ -59,10 +69,17 @@ export const API = {
 		},
 		{
 			async query() {
-				return Object.entries(root.leaderboard).map(([id, { $data }]) => ({
-					id,
-					...$data,
-				}));
+				const indexRecord: Record<string, number> = {};
+
+				for (const [index, { id }] of Object.entries(
+					root.page.leaderboard.$data.leaderboards,
+				)) {
+					indexRecord[id] = Number(index);
+				}
+
+				return Object.entries(root.leaderboard)
+					.sort(([aId], [bId]) => indexRecord[aId]! - indexRecord[bId]!)
+					.map(([id, { $data }]) => ({ id, ...$data }));
 			},
 		},
 	),
@@ -362,6 +379,11 @@ export const API = {
 			Capability: {
 				async get() {
 					return { ...root.page.leaderboard.capability.$data };
+				},
+			},
+			Configuration: {
+				async get() {
+					return { ...root.page.leaderboard.$data };
 				},
 			},
 		},

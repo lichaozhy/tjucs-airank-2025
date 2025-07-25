@@ -66,7 +66,6 @@ const level = ref<Data.CapabilityLevel>(0);
 const selectedBenchmark = inject(INJECTION.LEADERBOARD_BENCHMARK_SELECTED);
 const selectedSummary = inject(INJECTION.LEADERBOARD_SUMMARY_SELECTED);
 
-
 const selectedSourceList = computed<Type.SourceScoreModel[]>(() => {
 	const list: Type.SourceScoreModel[] = [];
 

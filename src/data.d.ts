@@ -201,6 +201,12 @@ export interface DataType {
 					}
 				};
 			};
+			$data: {
+				leaderboards: {
+					id: string;
+					summaries: { id: string }[];
+				}[];
+			}
 		};
 		home: {
 			banner: {
