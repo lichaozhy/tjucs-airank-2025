@@ -20,6 +20,10 @@
 			:rows="filteredModelDataList"
 		></AppScoreTable>
 	</AppScoreCard>
+	<app-markdown-html
+		class="q-mt-md"
+		:src="`benchmark/${props.benchmarkId}/comment`"
+	></app-markdown-html>
 </template>
 
 <script setup lang="ts">
@@ -28,6 +32,7 @@ import type { BenchmarkAbstract } from './type';
 import type { ModelData } from 'components/ScoreTable.vue';
 import { computed, onBeforeMount, ref } from 'vue';
 
+import AppMarkdownHtml from 'components/MarkdownHTML.vue';
 import AppScoreCard from 'components/ScoreCard.vue';
 import AppScoreTable from 'components/ScoreTable.vue';
 import AppModelFilter from 'components/ModelFilter.vue';

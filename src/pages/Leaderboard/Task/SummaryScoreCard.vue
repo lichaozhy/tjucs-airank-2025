@@ -20,6 +20,10 @@
 			:rows="filteredModelDataList"
 		></AppScoreTable>
 	</AppScoreCard>
+	<app-markdown-html
+		class="q-mt-md"
+		:src="`leaderboard/${props.leaderboardId}/summaries/${props.summaryId}/comment`"
+	></app-markdown-html>
 </template>
 
 <script setup lang="ts">
@@ -27,6 +31,7 @@ import type * as Data from 'src/data';
 import type { ModelData } from 'components/ScoreTable.vue';
 import { computed, onBeforeMount, ref } from 'vue';
 
+import AppMarkdownHtml from 'components/MarkdownHTML.vue';
 import AppScoreCard from 'components/ScoreCard.vue';
 import AppScoreTable from 'components/ScoreTable.vue';
 import AppModelFilter from 'components/ModelFilter.vue';
