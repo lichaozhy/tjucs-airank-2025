@@ -101,7 +101,9 @@ const filteredBenchmarkList = computed(() => {
 	const keywordValue = keyword.value;
 
 	if (keywordValue !== '' && keywordValue !== null) {
-		list = list.filter(({ name }) => name.includes(keywordValue));
+		const reg = new RegExp(keywordValue, 'i');
+
+		list = list.filter(({ name }) => reg.test(name));
 	}
 
 	return list;
