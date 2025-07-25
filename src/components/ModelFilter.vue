@@ -179,16 +179,8 @@ const propertyNameOptionList = computed<OptionObject[]>(() => {
 			value: 'year',
 		},
 		{
-			label: 'Dimension',
-			value: 'dimension',
-		},
-		{
 			label: 'Open Source',
 			value: 'opensource',
-		},
-		{
-			label: 'Modality',
-			value: 'imageVideo',
 		},
 	];
 });
@@ -245,6 +237,7 @@ watch(propertyValueOption, (valueOption) => {
 
 	const test = PropertyTester[propertyNameOption.value!]!;
 	const propertyValue = propertyValueOption.value!;
+
 
 	const filteredList = props.models.filter((data: ModelData) => {
 		return test(modelDataRecord.value[data.id]!, propertyValue);
