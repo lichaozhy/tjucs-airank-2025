@@ -6,6 +6,7 @@ import {
 	createWebHistory,
 } from 'vue-router';
 
+import * as Backend from 'src/backend';
 import routes from './routes';
 
 const sleep = (ms = 1000) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -25,6 +26,8 @@ export default defineRouter(async function (/* { store, ssrContext } */) {
 		: process.env.VUE_ROUTER_MODE === 'history'
 			? createWebHistory
 			: createWebHashHistory;
+
+	await Backend.init();
 
 	const Router = createRouter({
 		async scrollBehavior(to, from, saved) {

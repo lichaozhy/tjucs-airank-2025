@@ -1,5 +1,10 @@
 import type { DataType, SummaryItem } from './data';
-const root: DataType = await import('./data.json');
+
+let root: DataType;
+
+export async function init() {
+	root = await import('./data.json');
+}
 
 export type ModelPropertyRecordGroup = Record<
 	'vision' | 'language' | 'author' | 'size' | 'year',
