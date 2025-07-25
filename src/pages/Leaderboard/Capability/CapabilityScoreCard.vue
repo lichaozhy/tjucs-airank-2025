@@ -26,6 +26,7 @@
 			:groups="props.groups"
 		></AppScoreTable>
 	</AppScoreCard>
+	<slot></slot>
 </template>
 
 <script setup lang="ts">

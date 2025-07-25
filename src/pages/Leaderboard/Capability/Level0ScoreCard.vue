@@ -8,17 +8,23 @@
 				>{{ props.source.type }}({{ abstract.name }}) - Core Capability</span
 			>
 		</template>
+
+		<app-markdown-html
+			class="q-mt-md"
+			:src="`capability/comment/${source.type}/${source.id}`"
+		></app-markdown-html>
 	</AppCapabilityScoreCard>
 </template>
 
 <script setup lang="ts">
 import type * as Data from 'src/data';
 import type * as Type from './type';
-import type { ModelData } from './ScoreTable.vue';
+import type { ModelData } from 'components/ScoreTable.vue';
 import { computed, onBeforeMount, ref } from 'vue';
 
 import * as Backend from 'src/backend';
 
+import AppMarkdownHtml from 'components/MarkdownHTML.vue';
 import AppCapabilityScoreCard from './CapabilityScoreCard.vue';
 import { useSource } from './source';
 
