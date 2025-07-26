@@ -18,6 +18,16 @@ properties:
     ref:
       benchmark: 025ca0fe-f04c-4d17-9f4c-9d1aca6666bd
       key: TotalSR
+  - type: reference
+    label: MP3D
+    ref:
+      benchmark: 903014ce-ec7d-4f0d-8827-b5fd893d8741
+      key: Total
+  - type: reference
+    label: HM3D
+    ref:
+      benchmark: e6d0fdb7-9de8-4320-9af4-fcd9de517827
+      key: Total
 models:
   6d2b9e8a-97ff-400f-8ea1-f403c7452408: true
   f0fc7970-1e20-4ea2-a5fd-65ed7dd6802a: true
