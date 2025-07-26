@@ -17,7 +17,7 @@ default:
 capabilities:
   - Spatial Reasoning
 properties:
-  Spatial Reasoning:
+  AffordancePrediction:
     order: 1
     index: 0
     label: Affordance Prediction
