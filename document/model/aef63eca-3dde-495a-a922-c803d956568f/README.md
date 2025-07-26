@@ -543,8 +543,8 @@ score:
         - null
         - null
         - null
-        - null
         - 8
+        - null
         - null
         - null
         - 8
@@ -560,9 +560,9 @@ score:
         - null
         - null
         - null
-        - null
-        - null
         - 8
+        - null
+        - null
         - null
         - null
         - null

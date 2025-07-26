@@ -538,8 +538,8 @@ score:
         - null
         - null
         - null
-        - null
         - 4.02
+        - null
         - null
         - null
         - 4.02
@@ -555,9 +555,9 @@ score:
         - null
         - null
         - null
-        - null
-        - null
         - 4.02
+        - null
+        - null
         - null
         - null
         - null

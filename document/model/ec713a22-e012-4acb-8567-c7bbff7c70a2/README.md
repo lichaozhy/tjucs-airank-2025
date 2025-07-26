@@ -465,8 +465,8 @@ score:
         - null
         - null
         - null
-        - null
         - 8.66
+        - null
         - null
         - null
         - 8.66
@@ -482,9 +482,9 @@ score:
         - null
         - null
         - null
-        - null
-        - null
         - 8.66
+        - null
+        - null
         - null
         - null
         - null

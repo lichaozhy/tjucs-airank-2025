@@ -539,8 +539,8 @@ score:
         - null
         - null
         - null
-        - null
         - 15
+        - null
         - null
         - null
         - 15
@@ -556,9 +556,9 @@ score:
         - null
         - null
         - null
-        - null
-        - null
         - 15
+        - null
+        - null
         - null
         - null
         - null
