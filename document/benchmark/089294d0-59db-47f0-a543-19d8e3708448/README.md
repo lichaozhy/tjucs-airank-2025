@@ -20,7 +20,7 @@ properties:
   Spatial Reasoning:
     order: 1
     index: 0
-    label: Spatial Reasoning
+    label: Affordance Prediction
     unit: null
   Total:
     order: 0
