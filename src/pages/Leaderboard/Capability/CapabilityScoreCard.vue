@@ -24,6 +24,10 @@
 			:columns="props.columns"
 			:rows="filteredModelDataList"
 			:groups="props.groups"
+			:column-selectable="[false, true, true, true, true]"
+			:row-selectable="filteredModelDataList.map(() => true)"
+			v-model:selected-rows="selectedRows"
+			v-model:selected-columns="selectedColumns"
 		></AppScoreTable>
 	</AppScoreCard>
 	<slot></slot>
@@ -36,6 +40,9 @@ import { ref } from 'vue';
 import AppScoreCard from 'components/ScoreCard.vue';
 import AppModelFilter from 'components/ModelFilter.vue';
 import AppScoreTable from 'components/ScoreTable.vue';
+
+const selectedRows = ref<Record<string, boolean>>({});
+const selectedColumns = ref<Record<string, boolean>>({});
 
 const props = withDefaults(
 	defineProps<{
