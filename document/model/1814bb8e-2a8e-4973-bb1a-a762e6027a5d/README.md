@@ -20,9 +20,5 @@ score:
       legacy:
         - 62.8
         - 62.8
-    903014ce-ec7d-4f0d-8827-b5fd893d8741:
-      legacy:
-        - null
-        - null
   summary: {}
 ---

@@ -33,10 +33,5 @@ score:
         - 96.3
         - null
         - 96.3
-    df46aa1a-099f-4841-bc02-ba9608e18c7d:
-      legacy:
-        - null
-        - null
-        - null
   summary: {}
 ---
