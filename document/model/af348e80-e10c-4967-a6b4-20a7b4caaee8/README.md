@@ -20,6 +20,6 @@ release:
   year: 2025
 imageVideo: image/video
 score:
-  benchmark:
+  benchmark: {}
   summary: {}
 ---

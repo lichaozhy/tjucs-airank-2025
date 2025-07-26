@@ -20,4 +20,5 @@ score:
       legacy:
         - 55
         - 55
+  summary: {}
 ---
