@@ -113,7 +113,7 @@ score:
         - 60.22
         - 31.39
         - 31.39
-        - 47.76
+        - 47.7614285714286
     25206b0f-a955-4e39-86cf-53dcc9528bfc:
       0:
         - 59.55
@@ -413,8 +413,8 @@ score:
         - null
         - 6.1
       legacy:
-        - 6.1
-        - 6.1
+        - 10
+        - 10
     025ca0fe-f04c-4d17-9f4c-9d1aca6666bd:
       0:
         - null
@@ -452,8 +452,8 @@ score:
         - null
         - 10
       legacy:
-        - 10
-        - 10
+        - 6.1
+        - 6.1
     b9a18add-a3fb-4893-89e3-ddeea8053ce2:
       0:
         - null
@@ -533,6 +533,7 @@ score:
       legacy:
         - 39.3
         - 39.3
+        - null
     089294d0-59db-47f0-a543-19d8e3708448:
       0:
         - null
@@ -579,6 +580,13 @@ score:
         - 8.09
         - 6.57
         - 9.03
+    68bf8b5b-d8d4-49d7-9e7e-03e4d547189b:
+      legacy:
+        - null
+        - null
+        - null
+        - 57.27
+        - 57.27
   summary:
     d6ba913a-6e26-4dcc-b192-04b9bee6fd8e:
       0:

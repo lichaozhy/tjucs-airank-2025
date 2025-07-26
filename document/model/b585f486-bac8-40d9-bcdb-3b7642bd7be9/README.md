@@ -455,6 +455,7 @@ score:
       legacy:
         - 43.6
         - 43.6
+        - null
     089294d0-59db-47f0-a543-19d8e3708448:
       0:
         - null
@@ -531,8 +532,8 @@ score:
         - null
         - 3.3
       legacy:
-        - 3.3
-        - 3.3
+        - 20
+        - 20
     1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09:
       0:
         - null
@@ -570,8 +571,8 @@ score:
         - null
         - 20
       legacy:
-        - 20
-        - 20
+        - 3.3
+        - 3.3
     ed3fc303-b421-4e73-936a-e93a5aada777:
       legacy:
         - 11.73
@@ -579,6 +580,13 @@ score:
         - 6.56
         - 4.85
         - 8.12
+    68bf8b5b-d8d4-49d7-9e7e-03e4d547189b:
+      legacy:
+        - null
+        - null
+        - null
+        - 57.71
+        - 57.71
   summary:
     d6ba913a-6e26-4dcc-b192-04b9bee6fd8e:
       0:
