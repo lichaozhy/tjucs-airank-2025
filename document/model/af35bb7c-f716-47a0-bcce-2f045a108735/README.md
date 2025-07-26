@@ -25,7 +25,7 @@ score:
         - 42.4
         - 62.515
         - 62.63
-        - 39.474999999999994
+        - 39.47499999999999
         - 50.62
         - null
         - 50.791355665
@@ -71,7 +71,7 @@ score:
         - 51.47
     ba0be521-6b10-4881-964c-97cd4d2d6070:
       0:
-        - 61.553333333333335
+        - 61.55333333333333
         - 31.39
         - null
         - 60.22
@@ -113,11 +113,11 @@ score:
         - 60.22
         - 31.39
         - 31.39
-        - 47.76
+        - 47.7614285714286
     25206b0f-a955-4e39-86cf-53dcc9528bfc:
       0:
         - 59.55
-        - 40.126683936666666
+        - 40.12668393666667
         - null
         - null
         - 55.1
@@ -166,7 +166,7 @@ score:
         - 37.84
         - null
         - null
-        - 40.000060606666665
+        - 40.00006060666666
         - null
         - null
         - 43.59389000000001
@@ -297,7 +297,7 @@ score:
         - null
         - null
         - null
-        - 39.166666667499996
+        - 39.1666666675
         - 39.16667
       1:
         - null
@@ -413,8 +413,8 @@ score:
         - null
         - 6.1
       legacy:
-        - 6.1
-        - 6.1
+        - 10
+        - 10
     025ca0fe-f04c-4d17-9f4c-9d1aca6666bd:
       0:
         - null
@@ -452,8 +452,8 @@ score:
         - null
         - 10
       legacy:
-        - 10
-        - 10
+        - 6.1
+        - 6.1
     b9a18add-a3fb-4893-89e3-ddeea8053ce2:
       0:
         - null
@@ -533,13 +533,14 @@ score:
       legacy:
         - 39.3
         - 39.3
+        - null
     089294d0-59db-47f0-a543-19d8e3708448:
       0:
         - null
         - null
         - null
-        - null
         - 9.33
+        - null
         - null
         - null
         - 9.33
@@ -555,9 +556,9 @@ score:
         - null
         - null
         - null
-        - null
-        - null
         - 9.33
+        - null
+        - null
         - null
         - null
         - null
@@ -579,6 +580,335 @@ score:
         - 8.09
         - 6.57
         - 9.03
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+    68bf8b5b-d8d4-49d7-9e7e-03e4d547189b:
+      legacy:
+        - null
+        - null
+        - null
+        - 57.27
+        - 57.27
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+    8b56c6cf-becf-4bef-b612-1804d2f20cda:
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+    903014ce-ec7d-4f0d-8827-b5fd893d8741:
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+    bb0cf73e-8e66-46f9-8880-3b4160a5feb4:
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+    df46aa1a-099f-4841-bc02-ba9608e18c7d:
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+    e6d0fdb7-9de8-4320-9af4-fcd9de517827:
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+    e75dcf1e-54fa-48ca-83d0-7f01cff7e949:
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+    e0465aba-17b0-4f34-9aa4-345c9bacdac2:
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
   summary:
     d6ba913a-6e26-4dcc-b192-04b9bee6fd8e:
       0:

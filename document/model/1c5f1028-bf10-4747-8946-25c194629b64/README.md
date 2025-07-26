@@ -1,17 +1,12 @@
 ---
-name: SAT
-component:
-  vision:
-    - ViT
-  language:
-    - LLaVA-1.5-7B/13B
+name: VoroNav
 author:
-  - Boston University
+  - Peking University
 qa:
   - 2D
 dimension:
   - 2D
-website: https://github.com/arijitray1993/SAT
+website: https://voro-nav.github.io/
 navigation: true
 taskPlanning: true
 reason: true
@@ -20,6 +15,10 @@ release:
   year: 2024
 imageVideo: image/video
 score:
-  benchmark: {}
+  benchmark:
+    e6d0fdb7-9de8-4320-9af4-fcd9de517827:
+      legacy:
+        - 42
+        - 42
   summary: {}
 ---

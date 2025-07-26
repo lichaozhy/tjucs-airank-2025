@@ -27,7 +27,6 @@ function avg(a) {
 	return length === 0 ? null : Number((sum / length).toFixed(2));
 }
 
-
 function computeSummary() {
 	const sumds = {};
 	const bm_sumo = {};
@@ -56,6 +55,11 @@ function computeSummary() {
 		const sum_ids = {};
 
 		for (const bm_id in m.score.benchmark) {
+			if (bm_sumo[bm_id] === undefined) {
+				console.log(`Benchmark(${bm_id}) is NOT in any summary.`);
+				continue;
+			}
+
 			sum_ids[bm_sumo[bm_id].id] = true;
 		}
 
@@ -101,6 +105,10 @@ function computeSummary() {
 function computeCapabilityLevel0Total() {
 	for (const { $data } of Object.values(dataRoot.model)) {
 		for (const namespace of Object.values($data.score)) {
+			if (namespace === undefined || namespace === null) {
+				debugger;
+			}
+
 			for (const scoreGroup of Object.values(namespace)) {
 				if (Object.hasOwn(scoreGroup, '0')) {
 					scoreGroup[0][7] = avg(scoreGroup[0].slice(0, 7));

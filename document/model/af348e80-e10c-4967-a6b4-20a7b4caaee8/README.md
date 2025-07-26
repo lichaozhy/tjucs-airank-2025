@@ -1,23 +1,23 @@
 ---
-name: UniNaVid-7B
+name: StreamVLN
 component:
   vision:
-    - EVA-CLIP
+    - ViT
   language:
-    - Vicuna-7B-v1.5
+    - GPT-4o
 author:
-  - Peking University
+  - Shanghai AI Lab
 qa:
   - 2D
 dimension:
   - 2D
-website: https://pku-epic.github.io/Uni-NaVid
+website: hhttps://streamvln.github.io/
 navigation: true
 taskPlanning: true
 reason: true
-opensource: false
+opensource: true
 release:
-  year: 2024
+  year: 2025
 imageVideo: image/video
 score:
   benchmark: {}
