@@ -496,5 +496,6 @@ score:
       legacy:
         - 16.72
         - 16.72
+        - null
   summary: {}
 ---

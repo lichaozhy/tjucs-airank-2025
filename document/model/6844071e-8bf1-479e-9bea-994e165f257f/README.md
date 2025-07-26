@@ -171,7 +171,6 @@ score:
         - 0
         - 0
         - 0.67
-        - 0.55
     1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09:
       0:
         - null
@@ -502,6 +501,9 @@ score:
         - null
         - null
         - null
+      legacy:
+        - 18.56
+        - 18.56
     27e481d6-6057-49dc-ad80-529f9127245f:
       0:
         - null
@@ -541,5 +543,13 @@ score:
       legacy:
         - 16.32
         - 16.32
+        - null
+    ed3fc303-b421-4e73-936a-e93a5aada777:
+      legacy:
+        - 2.76
+        - 2.37
+        - 2.62
+        - 2.55
+        - 2.72
   summary: {}
 ---

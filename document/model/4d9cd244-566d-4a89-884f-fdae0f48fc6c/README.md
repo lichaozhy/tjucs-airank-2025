@@ -18,11 +18,11 @@ score:
   benchmark:
     1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09:
       legacy:
-        - 54
-        - 54
+        - 49.3
+        - 49.3
     025ca0fe-f04c-4d17-9f4c-9d1aca6666bd:
       legacy:
-        - 49.3
-        - 49.3
+        - 54
+        - 54
   summary: {}
 ---
