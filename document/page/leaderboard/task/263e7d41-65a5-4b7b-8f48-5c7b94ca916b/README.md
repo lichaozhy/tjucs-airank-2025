@@ -1,0 +1,1 @@
+The Embodied Navigation Leaderboard is a dedicated ranking system for evaluating and comparing the performance of embodied AI models in navigation tasks. This platform integrates several representative evaluation benchmarks, such as EB-Navigation and VLN-CE R2R, aiming to help researchers quickly understand the performance of different models in embodied navigation tasks.

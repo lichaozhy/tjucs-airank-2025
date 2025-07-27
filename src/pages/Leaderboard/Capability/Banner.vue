@@ -4,6 +4,12 @@
 			{{ data.banner.title }}
 		</div>
 		<q-space class="q-my-lg"></q-space>
+		<app-markdown-html
+			style="min-height: 6em; max-width: 72em;"
+			class="text-body text-weight-light text-justify"
+			src="page/leaderboard/capability"
+		></app-markdown-html>
+		<q-space class="q-my-lg"></q-space>
 		<q-btn
 			flat
 			no-caps
@@ -25,6 +31,7 @@ import { onBeforeMount, ref, inject } from 'vue';
 import * as Backend from 'src/backend';
 
 const setExclude = inject(Spec.INJECTION_KEY.SET_EXCLUDE)!;
+import AppMarkdownHtml from 'components/MarkdownHTML.vue';
 
 const data = ref<{
 	banner: {

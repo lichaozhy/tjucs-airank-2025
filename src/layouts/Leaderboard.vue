@@ -4,7 +4,7 @@
 		class="column content-center"
 		padding
 	>
-		<AppBannerWithLayout>
+		<AppBannerWithLayout :height="480">
 			<template #banner>
 				<router-view name="banner"></router-view>
 			</template>

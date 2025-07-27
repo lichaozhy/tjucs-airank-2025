@@ -7,7 +7,7 @@
 			<app-markdown-html
 				style="min-height: 6em;"
 				class="text-grey-9"
-				src="page/leaderboard/task"
+				:src="`page/leaderboard/task/${leaderboardId}`"
 			></app-markdown-html>
 		</div>
 		<div

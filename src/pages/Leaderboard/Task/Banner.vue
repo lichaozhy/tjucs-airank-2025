@@ -4,6 +4,12 @@
 			{{ data.banner.title }}
 		</div>
 		<q-space class="q-my-lg"></q-space>
+		<app-markdown-html
+			style="min-height: 6em; max-width: 72em;"
+			class="text-body text-weight-light text-justify"
+			src="page/leaderboard/task"
+		></app-markdown-html>
+		<q-space class="q-my-lg"></q-space>
 		<q-btn
 			flat
 			no-caps
@@ -22,6 +28,8 @@
 import { onBeforeMount, ref } from 'vue';
 
 import * as Backend from 'src/backend';
+
+import AppMarkdownHtml from 'components/MarkdownHTML.vue';
 
 const data = ref<{
 	banner: {
