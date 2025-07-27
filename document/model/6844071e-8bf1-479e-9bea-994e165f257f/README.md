@@ -554,11 +554,12 @@ score:
         - 16.32
     ed3fc303-b421-4e73-936a-e93a5aada777:
       legacy:
-        - 2.76
-        - 2.37
-        - 2.62
-        - 2.55
-        - 2.72
+        - 44.08
+        - 34.25
+        - 40.5
+        - 38.83
+        - 52.88
+        - 43
       1:
         - null
         - null
@@ -882,5 +883,113 @@ score:
         - null
         - null
         - null
-  summary: {}
+  summary:
+    d6ba913a-6e26-4dcc-b192-04b9bee6fd8e:
+      0:
+        - 41.93710093896713
+        - 34.87117671902099
+        - 38.145
+        - 35.82347953216374
+        - 21.32645585944914
+        - 37.48751269035533
+        - 16.32
+        - null
+      1:
+        - 23.50173535791757
+        - 48.74934682080924
+        - 37.55494071146245
+        - 54.14
+        - 38.75076808721506
+        - 33.36468912
+        - 18.09
+        - 32.74
+        - 49.44
+        - 26.85
+        - 37.59863445378151
+        - 34.89960000000001
+        - 45.93
+        - 18.60407480314961
+        - 34.85
+        - 9.555543071161049
+        - 25.18186974821428
+        - null
+        - null
+        - 16.32
+        - null
+        - null
+        - null
+        - 37.48751269035533
+        - null
+    2e5899bb-60bb-43d0-8ce0-fd186d66b3fb:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 0.741818182
+        - null
+        - null
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 0.741818182
+        - null
+        - null
+    3a43d3d8-f078-43fd-b45c-ab2af7a0c283:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 2.09968438788185
+        - null
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 4.571361502524883
+        - 0.8265227447956823
+        - 0.0
+        - null
+        - 3.00497512437811
+        - null
+        - null
+        - null
 ---

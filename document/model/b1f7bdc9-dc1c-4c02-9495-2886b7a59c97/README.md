@@ -4,7 +4,7 @@ component:
   language:
     - Qwen2-VL-7B-Instruct
 author:
-  - University of Hong Kong
+  - Shanghai AI Lab
 qa:
   - 2D
 dimension:
@@ -133,5 +133,41 @@ score:
         - null
         - null
         - null
-  summary: {}
+  summary:
+    2e5899bb-60bb-43d0-8ce0-fd186d66b3fb:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 28.36279069767442
+        - null
+        - null
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 28.36279069767442
 ---

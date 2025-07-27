@@ -2,9 +2,9 @@
 name: StreamVLN
 component:
   vision:
-    - ViT
+    - SigLIP
   language:
-    - GPT-4o
+    - Qwen2-7B
 author:
   - Shanghai AI Lab
 qa:
@@ -135,5 +135,41 @@ score:
         - null
         - null
         - null
-  summary: {}
+  summary:
+    2e5899bb-60bb-43d0-8ce0-fd186d66b3fb:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
 ---

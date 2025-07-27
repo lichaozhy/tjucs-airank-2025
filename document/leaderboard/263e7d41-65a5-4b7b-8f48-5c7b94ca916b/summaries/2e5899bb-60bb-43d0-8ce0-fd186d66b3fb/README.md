@@ -11,12 +11,12 @@ properties:
   - type: reference
     label: VLN-CE R2R
     ref:
-      benchmark: 1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09
+      benchmark: 025ca0fe-f04c-4d17-9f4c-9d1aca6666bd
       key: TotalSR
   - type: reference
     label: VLN-CE RxR
     ref:
-      benchmark: 025ca0fe-f04c-4d17-9f4c-9d1aca6666bd
+      benchmark: 1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09
       key: TotalSR
 models:
   6d2b9e8a-97ff-400f-8ea1-f403c7452408: true

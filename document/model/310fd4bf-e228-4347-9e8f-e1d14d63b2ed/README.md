@@ -361,12 +361,12 @@ score:
         - null
         - null
       legacy:
-        - 22
-        - 16
-        - 12
-        - 15
-        - 2
-        - 13.4
+        - 32
+        - 20
+        - 21
+        - 21
+        - 5
+        - 19.8
     a9228f2e-3191-4a08-8f03-64e73cae2e78:
       0:
         - null
@@ -527,8 +527,8 @@ score:
         - null
         - null
       legacy:
-        - 17.88
-        - 17.88
+        - 66
+        - 66
     27e481d6-6057-49dc-ad80-529f9127245f:
       0:
         - null
@@ -892,5 +892,113 @@ score:
         - null
         - null
         - null
-  summary: {}
+  summary:
+    d6ba913a-6e26-4dcc-b192-04b9bee6fd8e:
+      0:
+        - 29.23397132796781
+        - 39.14221870394684
+        - 34.58
+        - 47.66251461988304
+        - 24.596569030979
+        - 23.46030456852792
+        - 26.2
+        - null
+      1:
+        - 27.55804772234274
+        - 28.79731791907514
+        - 44.44036890645586
+        - 12.55
+        - 51.1104360753221
+        - 26.71272021
+        - 23.56
+        - 30.23999999999999
+        - 45.45
+        - 23.71
+        - 42.34207983193277
+        - 52.0594
+        - 42.46
+        - 18.26594488188977
+        - 34.85
+        - 35.32543071161049
+        - 37.41386554653361
+        - null
+        - null
+        - 26.2
+        - null
+        - null
+        - null
+        - 23.46030456852792
+        - null
+    2e5899bb-60bb-43d0-8ce0-fd186d66b3fb:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 19.06363636
+        - null
+        - null
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 19.06363636
+        - null
+        - null
+    3a43d3d8-f078-43fd-b45c-ab2af7a0c283:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 6.540177920826459
+        - null
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 10.49201877911455
+        - 7.785659213569776
+        - 6.288215488215489
+        - null
+        - 1.00497512437811
+        - null
+        - null
+        - null
 ---

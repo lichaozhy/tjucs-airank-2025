@@ -218,5 +218,41 @@ score:
         - null
         - null
         - null
-  summary: {}
+  summary:
+    22d6526a-6707-4a1e-ae3d-9c337feba2e8:
+      0:
+        - null
+        - 54.1
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 54.1
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
 ---

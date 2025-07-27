@@ -1,7 +1,7 @@
 ---
 name: NaVILA
 author:
-  - UC San Diego
+  - NVIDIA
 qa:
   - 2D
 dimension:
@@ -130,5 +130,41 @@ score:
         - null
         - null
         - null
-  summary: {}
+  summary:
+    2e5899bb-60bb-43d0-8ce0-fd186d66b3fb:
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 52.90697674418605
+        - null
+        - null
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 52.90697674418605
 ---
