@@ -1,13 +1,5 @@
 ---
 name: 3DMIT
-component:
-  vision:
-    - EPCL
-    - Ulip2
-    - Uni3D
-  language:
-    - Vicuna-7B
-    - LLaVA1.5-7B
 size:
   - 7
 author:

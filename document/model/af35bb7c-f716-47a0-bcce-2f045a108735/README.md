@@ -25,7 +25,7 @@ score:
         - 42.4
         - 62.515
         - 62.63
-        - 39.47499999999999
+        - 39.474999999999994
         - 50.62
         - null
         - 50.791355665
@@ -71,11 +71,11 @@ score:
         - 51.47
     ba0be521-6b10-4881-964c-97cd4d2d6070:
       0:
-        - 61.55333333333333
-        - 31.39
+        - 61.553333333333335
+        - 28.58
         - null
         - 60.22
-        - 29.03
+        - 32.519999999999996
         - null
         - null
         - 45.6118408
@@ -86,14 +86,14 @@ score:
         - null
         - null
         - null
-        - 31.39
+        - 28.58
         - null
         - null
         - null
         - 60.22
         - null
         - null
-        - 31.39
+        - 38.37
         - null
         - 26.67
         - null
@@ -111,13 +111,13 @@ score:
         - 64.81
         - 26.67
         - 60.22
-        - 31.39
-        - 31.39
-        - 47.7614285714286
+        - 28.58
+        - 38.37
+        - 48.3571428571429
     25206b0f-a955-4e39-86cf-53dcc9528bfc:
       0:
         - 59.55
-        - 40.12668393666667
+        - 40.126683936666666
         - null
         - null
         - 55.1
@@ -166,7 +166,7 @@ score:
         - 37.84
         - null
         - null
-        - 40.00006060666666
+        - 40.000060606666665
         - null
         - null
         - 43.59389000000001
@@ -297,7 +297,7 @@ score:
         - null
         - null
         - null
-        - 39.1666666675
+        - 36.99018595
         - 39.16667
       1:
         - null
@@ -317,7 +317,7 @@ score:
         - null
         - null
         - null
-        - 48.66666667
+        - 39.9607438
         - 36
         - 34
         - null
@@ -340,7 +340,7 @@ score:
         - null
         - null
         - null
-        - 48.7
+        - 46.85079545
         - null
         - 48.7
       1:
@@ -366,7 +366,7 @@ score:
         - null
         - null
         - null
-        - 48.7
+        - 46.85079545
         - null
         - null
       legacy:
@@ -383,7 +383,7 @@ score:
         - null
         - null
         - null
-        - 6.1
+        - 10
         - null
         - 6.1
       1:
@@ -411,7 +411,7 @@ score:
         - null
         - null
         - null
-        - 6.1
+        - 10
       legacy:
         - 10
         - 10
@@ -422,7 +422,7 @@ score:
         - null
         - null
         - null
-        - 10
+        - 6.1
         - null
         - 10
       1:
@@ -450,7 +450,7 @@ score:
         - null
         - null
         - null
-        - 10
+        - 6.1
       legacy:
         - 6.1
         - 6.1
@@ -533,7 +533,6 @@ score:
       legacy:
         - 39.3
         - 39.3
-        - null
     089294d0-59db-47f0-a543-19d8e3708448:
       0:
         - null
@@ -589,16 +588,16 @@ score:
         - null
         - null
         - null
+        - 40.75
+        - null
+        - null
+        - 41.16666667
         - null
         - null
         - null
         - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
+        - 30.22297297
+        - 38.25
         - null
         - null
         - null
@@ -609,11 +608,11 @@ score:
       0:
         - null
         - null
+        - 40.75
+        - 41.16666667
+        - 30.22297297
         - null
-        - null
-        - null
-        - null
-        - null
+        - 38.25
         - null
     68bf8b5b-d8d4-49d7-9e7e-03e4d547189b:
       legacy:
@@ -643,7 +642,7 @@ score:
         - null
         - null
         - null
-        - null
+        - 57.27
         - null
         - null
         - null
@@ -655,7 +654,7 @@ score:
         - null
         - null
         - null
-        - null
+        - 57.27
         - null
     8b56c6cf-becf-4bef-b612-1804d2f20cda:
       1:

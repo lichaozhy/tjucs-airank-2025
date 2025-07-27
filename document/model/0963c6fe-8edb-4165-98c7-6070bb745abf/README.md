@@ -2,7 +2,7 @@
 name: LLava-v1.5-7B
 component:
   vision:
-    - CLIP ViT-L/14
+    - CLIP ViT-L-14
   language:
     - Vicuna-7B
 size:
@@ -45,8 +45,8 @@ score:
         - 39.68
         - 28.11
         - 29.11
-        - 16.98
-        - 16.98
-        - 0
+        - 12.87
+        - 22.27
+        - 24.1057142857143
   summary: {}
 ---

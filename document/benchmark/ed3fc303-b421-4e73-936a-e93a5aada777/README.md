@@ -20,29 +20,34 @@ capabilities:
   - Task Reasoning
   - Basic Planning
 properties:
-  BELU-1:
+  affordance:
     order: 1
     index: 0
-    label: BELU-1
+    label: affordance
     unit: null
-  BELU-2:
+  future_prediction:
     order: 2
     index: 1
-    label: BELU-2
+    label: future_prediction
     unit: null
-  BELU-3:
+  past_description:
     order: 3
     index: 2
-    label: BELU-3
+    label: past_description
     unit: null
-  BELU-4:
+  planning:
     order: 4
     index: 3
-    label: BELU-4
+    label: planning
+    unit: null
+  success:
+    order: 5
+    index: 4
+    label: success
     unit: null
   Total:
     order: 0
-    index: 4
+    index: 5
     label: Total Score
     unit: null
 ---

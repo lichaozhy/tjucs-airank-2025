@@ -6,7 +6,7 @@ component:
 size:
   - 11
 author:
-  - Huawei Noah’s Ark Lab
+  - Noah’s Ark Lab
 qa:
   - 3D
 dimension:

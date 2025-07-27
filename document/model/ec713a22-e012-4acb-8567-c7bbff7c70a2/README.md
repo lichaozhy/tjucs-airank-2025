@@ -25,7 +25,7 @@ score:
   benchmark:
     034bf6b5-dc18-45da-bfaf-337589125632:
       0:
-        - 31.59333333333333
+        - 31.593333333333334
         - 22.19
         - 42.34
         - 44.555
@@ -75,11 +75,11 @@ score:
         - 34.58
     ba0be521-6b10-4881-964c-97cd4d2d6070:
       0:
-        - 31.98333333333333
-        - 12.88
+        - 31.983333333333334
+        - 11.17
         - null
         - 37.04
-        - 25.94
+        - 38.545
         - null
         - null
         - 27.090365895000005
@@ -90,14 +90,14 @@ score:
         - null
         - null
         - null
-        - 12.88
+        - 11.17
         - null
         - null
         - null
         - 37.04
         - null
         - null
-        - 12.88
+        - 38.09
         - null
         - 39
         - null
@@ -115,13 +115,13 @@ score:
         - 51.92
         - 39
         - 37.04
-        - 12.88
-        - 12.88
-        - 28.25
+        - 11.17
+        - 38.09
+        - 31.6071428571429
     25206b0f-a955-4e39-86cf-53dcc9528bfc:
       0:
         - 30.39
-        - 22.17747409333333
+        - 22.177474093333334
         - null
         - null
         - 4.85
@@ -166,11 +166,11 @@ score:
         - 22.75
     5df5ca38-7ca9-4d35-81c6-3dfe52700755:
       0:
-        - 37.995
+        - 37.995000000000005
         - 40.54
         - null
         - null
-        - 31.64418181666666
+        - 31.644181816666663
         - null
         - null
         - 36.78666666666667
@@ -257,7 +257,7 @@ score:
         - null
         - null
         - null
-        - 1.16666666675
+        - 1.1666666667499999
         - 1.166666667
       1:
         - null
@@ -301,7 +301,7 @@ score:
         - null
         - null
         - null
-        - 9.75
+        - 8.71875
         - 9.75
       1:
         - null
@@ -321,7 +321,7 @@ score:
         - null
         - null
         - null
-        - 13
+        - 8.875
         - 10
         - 14
         - null
@@ -344,7 +344,7 @@ score:
         - null
         - null
         - null
-        - 11.4
+        - 10.97454545
         - null
         - 11.4
       1:
@@ -370,7 +370,7 @@ score:
         - null
         - null
         - null
-        - 11.4
+        - 10.97454545
         - null
         - null
       legacy:
@@ -386,7 +386,7 @@ score:
         - null
         - null
         - null
-        - 16.315
+        - 16.314999999999998
         - null
         - null
         - 16.315
@@ -459,7 +459,6 @@ score:
       legacy:
         - 21.7
         - 21.7
-        - null
     089294d0-59db-47f0-a543-19d8e3708448:
       0:
         - null
@@ -506,7 +505,7 @@ score:
         - null
         - null
         - null
-        - 0
+        - 1
         - null
         - 0
       1:
@@ -534,7 +533,7 @@ score:
         - null
         - null
         - null
-        - 0
+        - 1
       legacy:
         - 1
         - 1
@@ -545,7 +544,7 @@ score:
         - null
         - null
         - null
-        - 1
+        - 0
         - null
         - 1
       1:
@@ -573,7 +572,7 @@ score:
         - null
         - null
         - null
-        - 1
+        - 0
       legacy:
         - 0
         - 0
@@ -593,16 +592,16 @@ score:
         - null
         - null
         - null
+        - 21
+        - null
+        - null
+        - 44.33333333
         - null
         - null
         - null
         - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
+        - 41.43783784
+        - 34.5
         - null
         - null
         - null
@@ -613,11 +612,11 @@ score:
       0:
         - null
         - null
+        - 21
+        - 44.33333333
+        - 41.43783784
         - null
-        - null
-        - null
-        - null
-        - null
+        - 34.5
         - null
     68bf8b5b-d8d4-49d7-9e7e-03e4d547189b:
       legacy:
@@ -647,7 +646,7 @@ score:
         - null
         - null
         - null
-        - null
+        - 8.81
         - null
         - null
         - null
@@ -659,7 +658,7 @@ score:
         - null
         - null
         - null
-        - null
+        - 8.81
         - null
     8b56c6cf-becf-4bef-b612-1804d2f20cda:
       1:

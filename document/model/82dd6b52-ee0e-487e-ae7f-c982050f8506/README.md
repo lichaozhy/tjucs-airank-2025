@@ -6,7 +6,7 @@ component:
 size:
   - 3
 author:
-  - MiniCPM
+  - ModelBest
 qa:
   - 2D
 dimension:
@@ -43,8 +43,8 @@ score:
         - 54.03
         - 36.41
         - 34.43
-        - 16.04
-        - 16.04
-        - 26.6985714285714
+        - 13.65
+        - 19.14
+        - 26.8
   summary: {}
 ---

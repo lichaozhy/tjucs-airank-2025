@@ -1,5 +1,5 @@
 ---
-name: Vision Language Navigation Benchmarks
+name: Navigation Benchmarks - Unified Evaluation Framework
 properties:
   - type: computed
     label: Total SR
@@ -18,16 +18,6 @@ properties:
     ref:
       benchmark: 025ca0fe-f04c-4d17-9f4c-9d1aca6666bd
       key: TotalSR
-  - type: reference
-    label: MP3D
-    ref:
-      benchmark: 903014ce-ec7d-4f0d-8827-b5fd893d8741
-      key: Total
-  - type: reference
-    label: HM3D
-    ref:
-      benchmark: e6d0fdb7-9de8-4320-9af4-fcd9de517827
-      key: Total
 models:
   6d2b9e8a-97ff-400f-8ea1-f403c7452408: true
   f0fc7970-1e20-4ea2-a5fd-65ed7dd6802a: true
@@ -55,11 +45,12 @@ models:
   310fd4bf-e228-4347-9e8f-e1d14d63b2ed: true
   c1bc8f89-1907-4d8c-9271-628125b335c5: true
   ecde821e-40e3-4a5d-87d5-cfa95773f1f8: true
-  10710d64-db8f-4958-8a19-842ce1f692c7: true
+  a7bde639-b09a-4cbf-a647-cbde9a634e6c: true
   587b8069-98e6-46a8-985b-4c607dff6b33: true
   d43c7af4-55f6-4054-bcd4-88d27efd0d10: true
   8d42636e-05c2-4179-a0d1-625f474f1622: true
-  05a2873a-3f35-4d8e-b1bb-55945178c3f9: true
+  bfee5170-8314-49ea-96e6-762fc8e2bba4: true
   4d9cd244-566d-4a89-884f-fdae0f48fc6c: true
   b1f7bdc9-dc1c-4c02-9495-2886b7a59c97: true
+  af348e80-e10c-4967-a6b4-20a7b4caaee8: true
 ---

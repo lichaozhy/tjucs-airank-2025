@@ -8,7 +8,7 @@ component:
 size:
   - 7
 author:
-  - Peking University
+  - BAAI
 qa:
   - 2D
 dimension:
@@ -27,9 +27,115 @@ score:
       legacy:
         - 23.8
         - 23.8
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 23.8
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 23.8
+        - null
+        - null
     025ca0fe-f04c-4d17-9f4c-9d1aca6666bd:
       legacy:
         - 37.4
         - 37.4
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 37.4
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 37.4
+        - null
+        - null
+    73de273a-7d38-40c0-b869-2b2e6156c897:
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
   summary: {}
 ---

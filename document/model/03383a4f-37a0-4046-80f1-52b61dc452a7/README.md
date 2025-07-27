@@ -2,7 +2,7 @@
 name: EmbodiedGPT
 component:
   vision:
-    - ViT-G/14
+    - ViT-G-14
   language:
     - LLaMA-7B
 size:
@@ -25,11 +25,11 @@ score:
   benchmark:
     034bf6b5-dc18-45da-bfaf-337589125632:
       0:
-        - 26.48666666666667
+        - 26.486666666666668
         - 52.28
         - 37.95
         - 30.125
-        - 27.0725
+        - 27.072499999999998
         - 48.48
         - null
         - 34.662680525
@@ -76,10 +76,10 @@ score:
     ba0be521-6b10-4881-964c-97cd4d2d6070:
       0:
         - 28.25333333333333
-        - 18.79
+        - 17.78
         - null
         - 32.55
-        - 28.52
+        - 29.175
         - null
         - null
         - 27.14443162
@@ -90,14 +90,14 @@ score:
         - null
         - null
         - null
-        - 18.79
+        - 17.78
         - null
         - null
         - null
         - 32.55
         - null
         - null
-        - 18.79
+        - 20.1
         - null
         - 38.25
         - null
@@ -115,9 +115,9 @@ score:
         - 47.22
         - 38.25
         - 32.55
-        - 18.79
-        - 18.79
-        - 0
+        - 17.78
+        - 20.1
+        - 27.6342857142857
     25206b0f-a955-4e39-86cf-53dcc9528bfc:
       0:
         - 0
@@ -459,7 +459,6 @@ score:
       legacy:
         - 12.3
         - 12.3
-        - null
     089294d0-59db-47f0-a543-19d8e3708448:
       0:
         - null
@@ -587,16 +586,16 @@ score:
         - null
         - null
         - null
+        - 11.25
+        - null
+        - null
+        - 34.75
         - null
         - null
         - null
         - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
+        - 30.77162162
+        - 29.75
         - null
         - null
         - null
@@ -607,11 +606,11 @@ score:
       0:
         - null
         - null
+        - 11.25
+        - 34.75
+        - 30.77162162
         - null
-        - null
-        - null
-        - null
-        - null
+        - 29.75
         - null
     68bf8b5b-d8d4-49d7-9e7e-03e4d547189b:
       1:

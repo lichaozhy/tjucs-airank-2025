@@ -25,11 +25,11 @@ score:
   benchmark:
     034bf6b5-dc18-45da-bfaf-337589125632:
       0:
-        - 29.48333333333333
+        - 29.483333333333334
         - 55.5
         - 38.43
         - 29.395
-        - 27.245
+        - 27.244999999999997
         - 52.53
         - null
         - 36.75934507666667
@@ -75,11 +75,11 @@ score:
         - 33.62
     ba0be521-6b10-4881-964c-97cd4d2d6070:
       0:
-        - 29.43
-        - 16.75
+        - 29.429999999999996
+        - 24.71
         - null
         - 27.88
-        - 29.21
+        - 21.23
         - null
         - null
         - 25.8583977175
@@ -90,14 +90,14 @@ score:
         - null
         - null
         - null
-        - 16.75
+        - 24.71
         - null
         - null
         - null
         - 27.88
         - null
         - null
-        - 16.75
+        - 0.79
         - null
         - 41.67
         - null
@@ -115,12 +115,12 @@ score:
         - 33.73
         - 41.67
         - 27.88
-        - 16.75
-        - 16.75
-        - 27.3342857142857
+        - 24.71
+        - 0.79
+        - 26.1914285714286
     25206b0f-a955-4e39-86cf-53dcc9528bfc:
       0:
-        - 15.045
+        - 15.045000000000002
         - 32.47833764999999
         - null
         - null
@@ -166,7 +166,7 @@ score:
         - 25.88
     5df5ca38-7ca9-4d35-81c6-3dfe52700755:
       0:
-        - 35.40000000000001
+        - 35.400000000000006
         - 35.14
         - null
         - null
@@ -301,7 +301,7 @@ score:
         - null
         - null
         - null
-        - 11.25
+        - 9.771694215
         - 11.25
       1:
         - null
@@ -321,7 +321,7 @@ score:
         - null
         - null
         - null
-        - 23
+        - 17.08677686
         - 8
         - 14
         - null
@@ -344,7 +344,7 @@ score:
         - null
         - null
         - null
-        - 16.6
+        - 16.04068182
         - null
         - 16.6
       1:
@@ -370,7 +370,7 @@ score:
         - null
         - null
         - null
-        - 16.6
+        - 16.04068182
         - null
         - null
       legacy:
@@ -387,7 +387,7 @@ score:
         - null
         - null
         - null
-        - 2
+        - 6.7
         - null
         - 2
       1:
@@ -415,7 +415,7 @@ score:
         - null
         - null
         - null
-        - 2
+        - 6.7
       legacy:
         - 6.7
         - 6.7
@@ -426,7 +426,7 @@ score:
         - null
         - null
         - null
-        - 6.7
+        - 2
         - null
         - 6.7
       1:
@@ -454,7 +454,7 @@ score:
         - null
         - null
         - null
-        - 6.7
+        - 2
       legacy:
         - 2
         - 2
@@ -537,7 +537,6 @@ score:
       legacy:
         - 19.7
         - 19.7
-        - null
     089294d0-59db-47f0-a543-19d8e3708448:
       0:
         - null
@@ -593,16 +592,16 @@ score:
         - null
         - null
         - null
+        - 47.75
+        - null
+        - null
+        - 69.33333333
         - null
         - null
         - null
         - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
+        - 55.24932432
+        - 45.91666667
         - null
         - null
         - null
@@ -613,11 +612,11 @@ score:
       0:
         - null
         - null
+        - 47.75
+        - 69.33333333
+        - 55.24932432
         - null
-        - null
-        - null
-        - null
-        - null
+        - 45.91666667
         - null
     68bf8b5b-d8d4-49d7-9e7e-03e4d547189b:
       legacy:
@@ -647,7 +646,7 @@ score:
         - null
         - null
         - null
-        - null
+        - 0
         - null
         - null
         - null
@@ -659,7 +658,7 @@ score:
         - null
         - null
         - null
-        - null
+        - 0
         - null
     8b56c6cf-becf-4bef-b612-1804d2f20cda:
       1:

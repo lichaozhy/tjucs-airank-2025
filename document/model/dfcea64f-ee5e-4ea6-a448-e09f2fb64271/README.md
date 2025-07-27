@@ -2,7 +2,7 @@
 name: pllava-7b
 component:
   vision:
-    - CLIP ViT-L/14
+    - CLIP ViT-L-14
   language:
     - Vicuna-7B-v1.5
 size:
@@ -45,8 +45,8 @@ score:
         - 43.43
         - 33.95
         - 25.82
-        - 12.08
-        - 12.08
-        - 22.2814285714286
+        - 6.27
+        - 19.62
+        - 22.5285714285714
   summary: {}
 ---

@@ -1,28 +1,33 @@
 ---
 name: Embodied-R1-3B
+component:
+  vision:
+    - Qwem2.5-VL-3B-Instruct
+  language:
+    - Qwem2.5-VL-3B-Instruct
 author:
-  - Tsinghua University
+  - Tianjin University
 qa:
   - 2D
 dimension:
   - 2D
-website: https://embodiedcity.github.io/Embodied-R/
+website: https://github.com/pickxiguapi/Embodied-R1
 navigation: true
 taskPlanning: true
 reason: true
 opensource: true
 release:
   year: 2025
-imageVideo: image/video
+imageVideo: image
 score:
   benchmark:
     ba0be521-6b10-4881-964c-97cd4d2d6070:
       0:
         - 40.10333333333333
-        - 20.83
+        - 23.56
         - null
         - 40.9
-        - 42.17
+        - 28.395
         - null
         - null
         - null
@@ -33,14 +38,14 @@ score:
         - null
         - null
         - null
-        - 20.83
+        - 23.56
         - null
         - null
         - null
         - 40.9
         - null
         - null
-        - null
+        - 14.62
         - null
         - 42.17
         - null
@@ -58,9 +63,9 @@ score:
         - 50.05
         - 42.17
         - 40.9
-        - 20.83
-        - 20.83
-        - 0
+        - 23.56
+        - 14.62
+        - 34.5085714285714
     034bf6b5-dc18-45da-bfaf-337589125632:
       0:
         - 37.56
@@ -155,7 +160,7 @@ score:
         - null
         - null
         - null
-        - 1.18696213425
+        - 1.1869621342499999
         - null
       1:
         - null
@@ -229,7 +234,7 @@ score:
         - null
     25206b0f-a955-4e39-86cf-53dcc9528bfc:
       0:
-        - 14.61
+        - 14.610000000000001
         - 33.41757340333333
         - null
         - null
@@ -326,7 +331,7 @@ score:
         - null
         - null
         - null
-        - 19.8
+        - 19.06363636
         - null
         - null
       1:
@@ -352,7 +357,7 @@ score:
         - null
         - null
         - null
-        - 19.8
+        - 19.06363636
         - null
         - null
       legacy:
@@ -407,7 +412,7 @@ score:
         - null
         - null
         - null
-        - 11.78
+        - 11.780000000000001
         - null
         - null
         - null
@@ -490,7 +495,7 @@ score:
         - null
         - null
         - null
-        - null
+        - 66
         - null
         - null
         - null
@@ -507,7 +512,7 @@ score:
         - null
         - null
         - null
-        - null
+        - 66
         - null
         - null
         - null
@@ -563,7 +568,6 @@ score:
       legacy:
         - 26.2
         - 26.2
-        - null
     68bf8b5b-d8d4-49d7-9e7e-03e4d547189b:
       1:
         - null

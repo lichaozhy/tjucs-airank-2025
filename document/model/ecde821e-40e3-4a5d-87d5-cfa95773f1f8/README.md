@@ -450,7 +450,7 @@ score:
         - null
         - null
         - null
-        - null
+        - 4.62
         - null
         - null
         - null
@@ -467,7 +467,7 @@ score:
         - null
         - null
         - null
-        - null
+        - 4.62
         - null
         - null
         - null
@@ -523,7 +523,6 @@ score:
       legacy:
         - 11.62
         - 11.62
-        - null
     68bf8b5b-d8d4-49d7-9e7e-03e4d547189b:
       1:
         - null

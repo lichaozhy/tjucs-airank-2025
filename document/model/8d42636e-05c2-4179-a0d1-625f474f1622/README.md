@@ -8,7 +8,7 @@ component:
 size:
   - 7
 author:
-  - Peking University
+  - BAAI
 qa:
   - 2D
 dimension:
@@ -27,13 +27,119 @@ score:
       legacy:
         - 48.7
         - 48.7
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 48.7
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 48.7
+        - null
+        - null
     025ca0fe-f04c-4d17-9f4c-9d1aca6666bd:
       legacy:
         - 47
         - 47
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 47
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 47
+        - null
+        - null
     e6d0fdb7-9de8-4320-9af4-fcd9de517827:
       legacy:
         - 73.7
         - 73.7
+    73de273a-7d38-40c0-b869-2b2e6156c897:
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
   summary: {}
 ---

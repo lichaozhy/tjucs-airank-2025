@@ -124,7 +124,8 @@ function toFixedAllScoreTable(factionDigital = 2) {
 			for (const scoreGroup of Object.values(namespace)) {
 				for (const scoreList of Object.values(scoreGroup)) {
 					scoreList.forEach((v, i) => {
-						scoreList[i] = v === null ? null : Number(v.toFixed(factionDigital));
+						scoreList[i] = v === null || v === undefined
+							? null : Number(v.toFixed(factionDigital));
 					});
 				}
 			}

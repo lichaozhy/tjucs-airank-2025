@@ -1,1 +1,1 @@
-COMMENT: Vision Language Navigation Benchmarks
+COMMENT: Navigation Benchmarks - Unified Evaluation Framework

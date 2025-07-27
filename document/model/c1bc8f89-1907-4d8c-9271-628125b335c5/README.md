@@ -4,10 +4,9 @@ component:
   vision:
     - ViT
   language:
-    - LLaVA-1.5-7B/13B
+    - LLaVA-1.5-7B
 size:
   - 7
-  - 13
 author:
   - Boston University
 qa:
@@ -455,7 +454,7 @@ score:
         - null
         - null
         - null
-        - null
+        - 0
         - null
         - null
         - null
@@ -472,7 +471,7 @@ score:
         - null
         - null
         - null
-        - null
+        - 0
         - null
         - null
         - null
@@ -528,7 +527,6 @@ score:
       legacy:
         - 13.26
         - 13.26
-        - null
     68bf8b5b-d8d4-49d7-9e7e-03e4d547189b:
       1:
         - null

@@ -3,11 +3,6 @@ name: SpatialBot
 component:
   vision:
     - SigLIP
-  language:
-    - Phi-2-3B
-    - Phi-3-4B
-    - QWen-1.5-4B
-    - Llama-3-8B
 size:
   - 3
   - 4

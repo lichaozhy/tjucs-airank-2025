@@ -1,5 +1,7 @@
 ---
 name: Qwen2.5-VL-7B
+author:
+  - Alibaba
 navigation: false
 taskPlanning: false
 reason: false

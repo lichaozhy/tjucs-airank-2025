@@ -22,10 +22,10 @@ score:
     ba0be521-6b10-4881-964c-97cd4d2d6070:
       0:
         - 47.99666666666667
-        - 26.78
+        - 28.21
         - null
         - 45.67
-        - 36.19
+        - 28.905
         - null
         - null
         - null
@@ -36,14 +36,14 @@ score:
         - null
         - null
         - null
-        - 26.78
+        - 28.21
         - null
         - null
         - null
         - 45.67
         - null
         - null
-        - null
+        - 21.62
         - null
         - 36.19
         - null
@@ -61,15 +61,15 @@ score:
         - 62.14
         - 36.19
         - 45.67
-        - 26.78
-        - 26.78
-        - 0
+        - 28.21
+        - 21.62
+        - 39.3828571428572
     034bf6b5-dc18-45da-bfaf-337589125632:
       0:
         - 38.61666666666667
         - 50.95
         - 49.515
-        - 42.38
+        - 42.379999999999995
         - 32.85
         - 55
         - null
@@ -278,7 +278,7 @@ score:
         - 41.76
     5df5ca38-7ca9-4d35-81c6-3dfe52700755:
       0:
-        - 46.15000000000001
+        - 46.150000000000006
         - 16.22
         - null
         - null
@@ -329,7 +329,7 @@ score:
         - null
         - null
         - null
-        - 13.4
+        - 12.82090909
         - null
         - null
       1:
@@ -355,7 +355,7 @@ score:
         - null
         - null
         - null
-        - 13.4
+        - 12.82090909
         - null
         - null
       legacy:
@@ -493,7 +493,7 @@ score:
         - null
         - null
         - null
-        - null
+        - 17.88
         - null
         - null
         - null
@@ -510,7 +510,7 @@ score:
         - null
         - null
         - null
-        - null
+        - 17.88
         - null
         - null
         - null
@@ -566,7 +566,6 @@ score:
       legacy:
         - 17.4
         - 17.4
-        - null
     68bf8b5b-d8d4-49d7-9e7e-03e4d547189b:
       1:
         - null
@@ -865,16 +864,16 @@ score:
         - null
         - null
         - null
+        - 39.75
+        - null
+        - null
+        - 69.33333333
         - null
         - null
         - null
         - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
+        - 50.75608108
+        - 43.66666667
         - null
         - null
         - null
@@ -885,11 +884,11 @@ score:
       0:
         - null
         - null
+        - 39.75
+        - 69.33333333
+        - 50.75608108
         - null
-        - null
-        - null
-        - null
-        - null
+        - 43.66666667
         - null
   summary: {}
 ---

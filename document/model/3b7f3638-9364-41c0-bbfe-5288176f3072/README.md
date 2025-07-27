@@ -2,7 +2,7 @@
 name: LLaVA-NeXT-Video-7B
 component:
   language:
-    - lmsys/vicuna-7B-v1.5
+    - Vicuna-7B-v1.5
 size:
   - 7
 author:
@@ -43,9 +43,9 @@ score:
         - 61.35
         - 39.63
         - 33.02
-        - 24.53
-        - 24.53
-        - 0
+        - 22.14
+        - 27.62
+        - 34.2614285714286
     25206b0f-a955-4e39-86cf-53dcc9528bfc:
       legacy:
         - 48.5

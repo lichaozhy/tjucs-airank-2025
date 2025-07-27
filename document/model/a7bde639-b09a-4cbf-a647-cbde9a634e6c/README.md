@@ -2,7 +2,7 @@
 name: RoboPoint
 component:
   vision:
-    - ViT-L/14 336px
+    - ViT-L-14-336px
   language:
     - Vicuna-v1.5-13B
 size:
@@ -25,12 +25,13 @@ score:
   benchmark:
     034bf6b5-dc18-45da-bfaf-337589125632:
       0:
-        - 21.40666667
+        - 21.406666666666666
         - 30.32
         - 24.7
         - 17.605
         - 28.72
         - 33.84
+        - null
         - null
       1:
         - 4.29
@@ -74,11 +75,11 @@ score:
         - 24.45
     ba0be521-6b10-4881-964c-97cd4d2d6070:
       0:
-        - 31.32012448
-        - 11.93
+        - 30.756666666666664
+        - 8.8
         - null
         - 27.31
-        - 14.81782609
+        - 14.809999999999999
         - null
         - null
         - null
@@ -114,9 +115,9 @@ score:
         - 46.76
         - 13.67
         - 27.31
-        - 11.93
-        - 11.93
-        - 22.4442857142857
+        - 8.8
+        - 15.95
+        - 22.5714285714286
     a9228f2e-3191-4a08-8f03-64e73cae2e78:
       0:
         - null
@@ -165,6 +166,41 @@ score:
         - 0
         - 0
         - 0
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 0
+        - 0
+        - 0
+        - null
+        - 0
+        - null
+        - null
+        - null
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 0
+        - null
     cbb64d1c-4377-4231-a465-73ffb10972c5:
       0:
         - null
@@ -256,14 +292,335 @@ score:
       legacy:
         - 19.09
         - 19.09
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 19.09
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      0:
+        - null
+        - null
+        - null
+        - 19.09
+        - null
+        - null
+        - null
+        - null
     b9a18add-a3fb-4893-89e3-ddeea8053ce2:
       legacy:
         - 22.16
         - 4.42
         - 33.18
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 22.16
+        - null
+        - 4.42
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      0:
+        - null
+        - null
+        - null
+        - null
+        - 13.29
+        - null
+        - null
+        - null
     27e481d6-6057-49dc-ad80-529f9127245f:
       legacy:
         - 16.72
         - 16.72
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 16.72
+        - null
+        - null
+        - null
+        - null
+        - null
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 16.72
+        - null
+    1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09:
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+    025ca0fe-f04c-4d17-9f4c-9d1aca6666bd:
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+    25206b0f-a955-4e39-86cf-53dcc9528bfc:
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+    5df5ca38-7ca9-4d35-81c6-3dfe52700755:
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+    68bf8b5b-d8d4-49d7-9e7e-03e4d547189b:
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+    ed3fc303-b421-4e73-936a-e93a5aada777:
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
   summary: {}
 ---

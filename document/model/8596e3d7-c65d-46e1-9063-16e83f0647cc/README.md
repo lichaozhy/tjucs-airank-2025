@@ -1,9 +1,5 @@
 ---
-name: llama-vid-7b-full-224
-component:
-  language:
-    - LLaMA
-    - Vicuna-7B
+name: Llama-vid-7b-full-224
 size:
   - 7
 author:
@@ -44,8 +40,8 @@ score:
         - 15.04
         - 12.56
         - 15.02
-        - 4.41
-        - 4.41
-        - 9.40857142857143
+        - 1.87
+        - 7.69
+        - 9.51428571428572
   summary: {}
 ---
