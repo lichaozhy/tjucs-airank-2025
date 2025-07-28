@@ -1,5 +1,10 @@
 ---
 name: LLaVA-OneVision-7B
+component:
+  vision:
+    - SigLIP
+  language:
+    - Qwen2-7B
 size:
   - 7
 author:

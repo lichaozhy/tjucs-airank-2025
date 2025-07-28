@@ -4,7 +4,7 @@ component:
   vision:
     - ViT
   language:
-    - Qwen2.5-VL-7B-Instruct
+    - Qwen2.5-7B
 size:
   - 7
 author:

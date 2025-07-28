@@ -3,6 +3,8 @@ name: VeBrain
 component:
   language:
     - Qwen2.5-VL
+size:
+  - 8
 author:
   - Shanghai AI Lab
 qa:

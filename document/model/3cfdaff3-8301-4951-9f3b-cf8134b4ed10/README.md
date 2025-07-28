@@ -13,7 +13,7 @@ website: https://huggingface.co/spaces/Qwen/Qwen-VL-Max
 navigation: true
 taskPlanning: true
 reason: true
-opensource: true
+opensource: false
 release:
   year: 2024
 imageVideo: Image

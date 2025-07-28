@@ -5,6 +5,8 @@ component:
     - CLIP-ConvNeXt-XXLarge
   language:
     - Meta LLaMA-3
+size:
+  - 8
 author:
   - Microsoft
 qa:

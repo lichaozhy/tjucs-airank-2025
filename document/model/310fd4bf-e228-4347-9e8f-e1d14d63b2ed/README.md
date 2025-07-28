@@ -5,6 +5,8 @@ component:
     - Qwem2.5-VL-3B-Instruct
   language:
     - Qwem2.5-VL-3B-Instruct
+size:
+  - 3
 author:
   - Tianjin University
 qa:
