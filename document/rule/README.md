@@ -35,10 +35,10 @@ Embodied Arena currently supports the following evaluation metrics based on the 
   - Accuracy Based on Exact Matching
     - VSI-Bench, Where2Place, ERQA, VABench-Point, MineAnyBuild, SQA3D, ScanQA.
   - Accuracy Based on Fuzzy Matching
-    - Rule-based Metric (e.g., CIDEr, BELU, MRA)
-      - RoboVQA(BELU), Scan2Cap(CIDEr), ScanQA(CIDEr), VSI-Bench(MRA).
+    - Rule-based Metric (e.g., CIDEr, MRA)
+      -Scan2Cap(CIDEr), ScanQA(CIDEr), VSI-Bench(MRA).
     - LLM-based Metric
-      - OpenEQA, UniEQA, MineAnyBuild.
+      - OpenEQA, UniEQA, MineAnyBuild, RoboVQA.
   - Other
     - micro-F1 score
       - PhyBlock 
