@@ -4,41 +4,135 @@ label: General Large
 icon: psychology
 itemList:
   - organizationList:
-      - OpenAI
+      - Shanghai AI Lab
     modelList:
-      - GPT-4o
-      - GPT-4V
-      - GPT-3.5-Turbo
+      - LLaVA-3D
+      - ChatScene
+      - InternVL2-8B
+      - InternVL2-40B
+      - InternVL2_5-8B
+      - InternVL2_5-8B-MPO
+      - InternVL2_5-38B
+      - InternVL2_5-38B-MPO
+      - InternVL2_5-78B
+      - InternVL2_5-78B-MPO
+      - InternVL3-8B
+      - InternVL3-14B
+      - InternVL3-38B
+      - InternVL3-78B
+  - organizationList:
+      - Alibaba
+    modelList:
+      - Qwen-VL-Max
+      - Qwen2-VL-7B
+      - Qwen2-VL-7B-Instruct
+      - Qwen2-VL-72B-Instruct
+      - Qwen2.5-VL-3B-Instruct
+      - Qwen2.5-VL-7B
+      - Qwen2.5-VL-7B-Instruct
+      - Qwen2.5-VL-72B-Instruct
+      - mPLUG-Owl3
+  - organizationList:
+      - ByteDance
+    modelList:
+      - LLaVA-OneVision-0.5B
+      - LLaVA-OneVision-7B
+      - LLaVA-OneVision-72B
+      - LLaVA-NeXT-Video-7B
+      - LLaVA-NeXT-Video-72B
+      - LongVA-7B
+      - Seed1.5-VL
+      - pllava-7b
   - organizationList:
       - Google DeepMind
     modelList:
-      - Gemini-2.0-Flash
+      - Gemini-1.5-flash
+      - Gemini-1.5-Pro
+      - Gemini-2.0-flash
       - Gemini-2.0-Pro
+      - Gemini-2.0-Pro w CoT
+      - Gemini-2.5-flash
       - Gemini-2.5-Pro
+      - Llama-3.2-11B-Vision-Instruct
+  - organizationList:
+      - OpenAI
+    modelList:
+      - o3
+      - o4-mini
+      - GPT-4
+      - GPT-4o
+      - GPT-4o mini
+      - GPT-4o w CoT
+  - organizationList:
+      - Meta AI
+    modelList:
+      - Llama3-8B
+      - Llama3-70B
+      - Llama-3.2-90B-Vision-Instruct
+  - organizationList:
+      - Zhejiang University
+    modelList:
+      - Inst3D-LLM
+      - Chat-3D
+      - Chat-3D v2
   - organizationList:
       - Anthropic
     modelList:
       - Claude-3.5-Sonnet
       - Claude-3.7-Sonnet
   - organizationList:
-      - Alibaba Group
+      - ModelBest
     modelList:
-      - Qwen-VL-Max
-      - Qwen2.5-VL-3B-Ins
-      - Qwen2.5-VL-7B-Ins
-      - Qwen2.5-VL-72B-Ins
-  - organizationList:
-      - ByteDance
-    modelList:
-      - Seed1.5-VL
-      - LLaVA-OneVision
-  - organizationList:
-      - Shanghai AI Lab
-      - Tsinghua
-    modelList:
-      - InternVL3
+      - MiniCPM-V
+      - MiniCPM-V 2.6
   - organizationList:
       - NVIDIA
     modelList:
-      - VILA-1.5
+      - VILA-1.5-13B
+      - VILA-1.5-40B
+  - organizationList:
+      - Salesforce Research
+    modelList:
+      - Instructblip-flant5xl
+      - BLIP-2-flant5xl
+  - organizationList:
+      - BAAI
+    modelList:
+      - PQ3D
+  - organizationList:
+      - Beijing Jiaotong University
+    modelList:
+      - PhysVLM
+  - organizationList:
+      - Chinese University of Hong Kong
+    modelList:
+      - Llama-vid-7b-full-224
+  - organizationList:
+      - King Abdullah University of Science and Technology
+    modelList:
+      - MiniGPT4-Vicuna7B
+  - organizationList:
+      - Microsoft
+    modelList:
+      - Phi-3-vision-128k-instruct
+  - organizationList:
+      - Peking University
+    modelList:
+      - Video-LLaVA-7B
+  - organizationList:
+      - Tencent PCG
+    modelList:
+      - LL3DA
+  - organizationList:
+      - Tsinghua University
+    modelList:
+      - 3D-LLaVA
+  - organizationList:
+      - University of Wisconsin-Madison
+    modelList:
+      - LLava-v1.5-7B
+  - organizationList:
+      - Visual AI Lab
+    modelList:
+      - 3DRS
 ---

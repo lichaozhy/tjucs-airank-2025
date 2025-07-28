@@ -216,7 +216,7 @@ score:
         - 63.62423889858445
         - null
         - null
-        - null
+        - 60.6
         - null
         - null
         - null
@@ -234,7 +234,7 @@ score:
         - null
         - null
         - null
-        - null
+        - 60.6
         - null
         - null
         - null

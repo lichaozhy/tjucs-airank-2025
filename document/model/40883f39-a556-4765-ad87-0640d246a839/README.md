@@ -221,10 +221,10 @@ score:
     22d6526a-6707-4a1e-ae3d-9c337feba2e8:
       0:
         - null
-        - 45.3
+        - 68.12562222378904
         - null
         - null
-        - null
+        - 61.2
         - null
         - null
         - null
@@ -233,16 +233,16 @@ score:
         - null
         - null
         - null
+        - 95.5
         - null
-        - null
-        - 45.3
-        - null
-        - null
-        - null
+        - 40.75124444757808
         - null
         - null
         - null
         - null
+        - null
+        - null
+        - 61.2
         - null
         - null
         - null

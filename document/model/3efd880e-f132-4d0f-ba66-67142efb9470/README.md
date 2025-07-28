@@ -179,53 +179,14 @@ score:
         - null
         - null
         - null
-    e75dcf1e-54fa-48ca-83d0-7f01cff7e949:
-      legacy:
-        - null
-        - null
-      1:
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-      0:
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
   summary:
     22d6526a-6707-4a1e-ae3d-9c337feba2e8:
       0:
         - null
-        - 54.1
+        - 62.18364943946979
         - null
         - null
-        - null
+        - 55.6
         - null
         - null
         - null
@@ -234,16 +195,16 @@ score:
         - null
         - null
         - null
+        - 79.2
         - null
-        - null
-        - 54.1
-        - null
-        - null
-        - null
+        - 45.16729887893958
         - null
         - null
         - null
         - null
+        - null
+        - null
+        - 55.6
         - null
         - null
         - null
