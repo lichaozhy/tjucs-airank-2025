@@ -108,8 +108,8 @@ export type ColumnAlignment = 'left' | 'center' | 'right';
 export interface ColumnOptions {
 	name: string;
 	label: string;
-	field: (data: ModelData) => unknown;
-	align: ColumnAlignment;
+	field: string | ((data: ModelData) => unknown);
+	align?: ColumnAlignment;
 	headerStyle: string;
 	[key: string]: unknown;
 }
@@ -119,7 +119,7 @@ export interface GroupOptions {
 	colspan: number;
 }
 
-const PREFIX_COLUMN_LIST = [
+const PREFIX_COLUMN_LIST: ColumnOptions[] = [
 	{
 		name: 'rank',
 		label: '#',
@@ -146,6 +146,7 @@ const SUFFIX_COLUNM_LIST = [
 		name: 'blank',
 		label: ' ',
 		field: 'blank',
+		style: 'border-bottom-width: 0',
 	},
 ];
 
