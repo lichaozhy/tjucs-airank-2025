@@ -1,6 +1,7 @@
 <template>
 	<q-table
 		class="app-rank-table fixed-layout-table width-full"
+		table-style="overflow-y: hidden;"
 		:rows="props.rows"
 		:columns="columnList"
 		hide-pagination

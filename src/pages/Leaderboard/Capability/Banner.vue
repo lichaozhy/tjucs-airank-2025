@@ -19,9 +19,12 @@
 </template>
 
 <script setup lang="ts">
-import { onBeforeMount, ref } from 'vue';
+import * as Spec from 'src/spec';
+import { onBeforeMount, ref, inject } from 'vue';
 
 import * as Backend from 'src/backend';
+
+const setExclude = inject(Spec.INJECTION_KEY.SET_EXCLUDE)!;
 
 const data = ref<{
 	banner: {
@@ -42,7 +45,10 @@ const data = ref<{
 });
 
 onBeforeMount(async () => {
-	data.value = await Backend.API.Page.Leaderboard.Capability.get();
+	const { exclude, banner } = await Backend.API.Page.Leaderboard.Capability.get();
+
+	data.value = { banner };
+	setExclude(exclude);
 });
 
 defineOptions({ name: 'AppLeaderboardCapabilityBanner' });

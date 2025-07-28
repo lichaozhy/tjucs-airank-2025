@@ -1,4 +1,6 @@
 ---
+exclude:
+  4fda9744-ded5-43cf-b5fe-694eb6b00afd: true
 banner:
   title: Embodied Arena Leaderboards - Capability View
   navigation:

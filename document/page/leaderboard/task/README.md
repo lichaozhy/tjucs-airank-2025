@@ -1,4 +1,5 @@
 ---
+exclude: {}
 banner:
   title: Embodied Arena Leaderboards - Benchmark View
   navigation:

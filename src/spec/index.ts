@@ -16,6 +16,7 @@ export interface SelectedRecord {
 export const INJECTION_KEY = {
 	LEADERBOARD_SUMMARY_SELECTED: Symbol() as InjectionKey<SelectedRecord>,
 	LEADERBOARD_BENCHMARK_SELECTED: Symbol() as InjectionKey<SelectedRecord>,
+	SET_EXCLUDE: Symbol() as InjectionKey<(record: Record<string, boolean>) => unknown>,
 };
 
 export type Alignment = 'left' | 'center' | 'right';

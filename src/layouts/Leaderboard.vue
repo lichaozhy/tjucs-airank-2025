@@ -40,7 +40,7 @@
 								}}</q-item-label>
 								<q-item
 									tag="label"
-									v-for="summary in summaryList"
+									v-for="summary in filteredSummaryList"
 									:key="summary.id"
 									clickable
 								>
@@ -60,7 +60,7 @@
 								}}</q-item-label>
 								<q-item
 									tag="label"
-									v-for="benchmark in benchmarkList"
+									v-for="benchmark in filteredBenchmarkList"
 									:key="benchmark.id"
 									clickable
 								>
@@ -88,7 +88,7 @@
 </template>
 
 <script setup lang="ts">
-import { onBeforeMount, reactive, ref, provide, watch } from 'vue';
+import { onBeforeMount, reactive, ref, provide, watch, computed } from 'vue';
 import { useRoute } from 'vue-router';
 
 import * as Spec from 'src/spec';
@@ -118,9 +118,23 @@ const benchmarkList = ref<BenchmarkAbstract[]>([]);
 const summaryList = ref<SummaryAbstract[]>([]);
 const selectedBenchmark = reactive<{ [key: string]: boolean }>({});
 const selectedSummary = reactive<{ [key: string]: boolean }>({});
+const exclude = ref<Record<string, boolean>>({});
 
 provide(Spec.INJECTION_KEY.LEADERBOARD_SUMMARY_SELECTED, selectedSummary);
 provide(Spec.INJECTION_KEY.LEADERBOARD_BENCHMARK_SELECTED, selectedBenchmark);
+provide(Spec.INJECTION_KEY.SET_EXCLUDE, setExclude);
+
+function setExclude(record: Record<string, boolean>) {
+	exclude.value = record;
+}
+
+const filteredBenchmarkList = computed(() => {
+	return benchmarkList.value.filter(data => !exclude.value[data.id]);
+});
+
+const filteredSummaryList = computed(() => {
+	return summaryList.value.filter(data => !exclude.value[data.id]);
+});
 
 watch(
 	() => [{ ...selectedBenchmark }, { ...selectedSummary }],
@@ -184,7 +198,12 @@ onBeforeMount(async () => {
 	}
 
 	for (const summary of summaryDataList) {
+		selectedSummary[summary.id] = false;
+	}
+
+	for (const summary of summaryDataList) {
 		selectedSummary[summary.id] = true;
+		break;
 	}
 });
 

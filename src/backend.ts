@@ -31,7 +31,14 @@ export const API = {
 				},
 				Benchmark: {
 					async query() {
+						const indexRecord: Record<string, number> = {};
+
+						for (const [index, { id }] of Object.entries(root.page.leaderboard.$data.benchmarks)) {
+							indexRecord[id] = Number(index);
+						}
+
 						return Object.entries(root.benchmark)
+							.sort(([aId], [bId]) => indexRecord[aId]! - indexRecord[bId]!)
 							.filter(([, { $data }]) => $data.leaderboard === leaderboardId)
 							.map(([id, { $data }]) => ({ id, ...$data }));
 					},
@@ -108,10 +115,15 @@ export const API = {
 		},
 		{
 			async query() {
-				return Object.entries(root.benchmark).map(([id, { $data }]) => ({
-					id,
-					...$data,
-				}));
+				const indexRecord: Record<string, number> = {};
+
+				for (const [index, { id }] of Object.entries(root.page.leaderboard.$data.benchmarks)) {
+					indexRecord[id] = Number(index);
+				}
+
+				return Object.entries(root.benchmark)
+					.sort(([aId], [bId]) => indexRecord[aId]! - indexRecord[bId]!)
+					.map(([id, { $data }]) => ({ id, ...$data }));
 			},
 		},
 	),

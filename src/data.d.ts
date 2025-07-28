@@ -3,8 +3,8 @@ export type ScoreValueList = (number | null)[];
 
 interface DateInfo {
 	year: number;
-	month: number | null;
-	date: number | null;
+	month?: number | null;
+	date?: number | null;
 }
 
 interface ReleasedInfo {
@@ -130,11 +130,7 @@ export interface Model {
 	taskPlanning: boolean;
 	reason: boolean;
 	opensource: boolean;
-	release?: {
-		year: number;
-		month: number | null;
-		date: number | null;
-	};
+	release?: DateInfo;
 	imageVideo?: string;
 	score: {
 		benchmark: {
@@ -183,6 +179,7 @@ export interface DataType {
 		leaderboard: {
 			task: {
 				$data: {
+					exclude: Record<string, boolean>;
 					banner: {
 						title: string;
 						navigation: {
@@ -194,6 +191,7 @@ export interface DataType {
 			};
 			capability: {
 				$data: {
+					exclude: Record<string, boolean>;
 					banner: {
 						title: string;
 						navigation: {
@@ -208,7 +206,10 @@ export interface DataType {
 					id: string;
 					summaries: { id: string }[];
 				}[];
-			}
+				benchmarks: {
+					id: string;
+				}[];
+			};
 		};
 		home: {
 			banner: {
