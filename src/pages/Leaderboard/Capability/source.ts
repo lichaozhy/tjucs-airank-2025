@@ -12,6 +12,11 @@ const ModelFetcher = {
 	summary: (id: string) => Backend.API.Model.queryHasSummary(id),
 };
 
+const CapabilityFetcher = {
+	benchmark: (id: string) => Backend.API.Benchmark(id).Capability.get(),
+	summary: (id: string) => Backend.API.Summary(id).Capatiliby.get(),
+};
+
 export function useSource(source: Type.SourceScoreModel) {
 	const abstract = ref<Type.SourceAbstract>({ name: '' });
 
@@ -25,5 +30,16 @@ export function useSource(source: Type.SourceScoreModel) {
 		return ModelFetcher[source.type](source.id);
 	}
 
-	return { abstract, fetchAbstract, fetchModelList };
+	async function fetchCapability(level: 0 | 1) {
+		const record = await CapabilityFetcher[source.type](source.id);
+
+		return record[level];
+	}
+
+	return {
+		abstract,
+		fetchAbstract,
+		fetchModelList,
+		fetchCapability,
+	};
 }

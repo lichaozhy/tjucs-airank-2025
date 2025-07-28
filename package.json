@@ -18,6 +18,7 @@
 	"dependencies": {
 		"@quasar/extras": "^1.17.0",
 		"@sindresorhus/slugify": "^2.2.1",
+		"echarts": "^5.6.0",
 		"particles.js-es": "^1.0.7",
 		"quasar": "^2.18.1",
 		"vue": "^3.5.16",

@@ -3,6 +3,7 @@
 		:columns="columnList"
 		:rows="rowList"
 		:groups="groupList"
+		:radar-options="radarOptions"
 	>
 		<template #subtitle>
 			<span class="text-capitalize"
@@ -16,8 +17,9 @@
 <script setup lang="ts">
 import type * as Data from 'src/data';
 import type * as Type from './type';
-import type { GroupOptions, ModelData } from './ScoreTable.vue';
+import type { GroupOptions, ModelData } from 'components/ScoreTable.vue';
 import AppCapabilityScoreCard from './CapabilityScoreCard.vue';
+import type { RadarProps } from './CapabilityScoreCard.vue';
 import { onBeforeMount, ref, computed } from 'vue';
 
 import * as Backend from 'src/backend';
@@ -31,6 +33,7 @@ const propertyRecord = ref<Record<string, Type.PropertyAbstract>>({});
 const groupList = ref<GroupOptions[]>([]);
 const order = ref<string[]>([]);
 const modelList = ref<(Data.Model & { id: string })[]>([]);
+const validColumns = ref<Record<string, true>>({});
 
 const Source = useSource(props.source);
 const { abstract } = Source;
@@ -67,6 +70,18 @@ const rowList = computed<ModelData[]>(() => {
 	return list;
 });
 
+const radarOptions = computed<RadarProps>(() => {
+	const record: Record<string, true> = {};
+
+	for (const [index, capabilityId] of order.value.entries()) {
+		if (validColumns.value[capabilityId]) {
+			record[index] = true;
+		}
+	}
+
+	return { columns: record };
+});
+
 onBeforeMount(async () => {
 	await Source.fetchAbstract();
 	const configuration = await Backend.API.Capability.Configuration.get();
@@ -97,6 +112,7 @@ onBeforeMount(async () => {
 	propertyRecord.value = _propertyRecorder;
 	order.value = _order;
 	modelList.value = await Source.fetchModelList();
+	validColumns.value = await Source.fetchCapability(1) as Record<string, true>;
 });
 
 defineOptions({ name: 'AppPageLeaderboardCapabilityLevel1ScoreCard' });

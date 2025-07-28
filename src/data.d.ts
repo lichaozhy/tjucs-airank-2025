@@ -37,7 +37,15 @@ interface DataItem {
 	id?: string;
 }
 
+interface CapabilityRecord {
+	0: Record<string, boolean>;
+	1: Record<string, boolean>;
+}
+
 interface BenchmarkItem {
+	capability: {
+		$data: CapabilityRecord;
+	};
 	profile: {
 		$data: {};
 	};
@@ -106,6 +114,8 @@ interface LeaderboardItem {
 	};
 	summaries: {
 		[summaryId: string]: {
+			capability: { $data: CapabilityRecord };
+			comment: { $data: {} };
 			$data: SummaryItem;
 		};
 	};

@@ -2,6 +2,7 @@
 	<AppCapabilityScoreCard
 		:columns="columnList"
 		:rows="rowList"
+		:radar-options="radarOptions"
 	>
 		<template #subtitle>
 			<span class="text-capitalize"
@@ -20,6 +21,7 @@
 import type * as Data from 'src/data';
 import type * as Type from './type';
 import type { ModelData } from 'components/ScoreTable.vue';
+import type { RadarProps } from './CapabilityScoreCard.vue';
 import { computed, onBeforeMount, ref } from 'vue';
 
 import * as Backend from 'src/backend';
@@ -32,11 +34,13 @@ const props = defineProps<{
 	source: Type.SourceScoreModel;
 }>();
 
+const isDebugging = new URL(location.href).searchParams.has('debug');
 const Source = useSource(props.source);
 const { abstract } = Source;
 const propertyRecord = ref<Record<string, Type.PropertyAbstract>>({});
 const order = ref<string[]>([]);
 const modelList = ref<(Data.Model & { id: string })[]>([]);
+const validColumns = ref<Record<string, true>>({});
 
 const columnList = computed<string[]>(() => {
 	return order.value
@@ -51,7 +55,10 @@ const rowList = computed<ModelData[]>(() => {
 		const scoreList = score[source.type][source.id]![0];
 
 		if (scoreList === undefined) {
-			console.log(`No model(${id}) ${source.type}(${source.id}) score[0].`);
+			if (isDebugging) {
+				console.log(`No model(${id}) ${source.type}(${source.id}) score[0].`);
+			}
+
 			continue;
 		}
 
@@ -70,8 +77,21 @@ const rowList = computed<ModelData[]>(() => {
 	return list;
 });
 
+const radarOptions = computed<RadarProps>(() => {
+	const record: Record<string, true> = {};
+
+	for (const [index, capabilityId] of order.value.entries()) {
+		if (validColumns.value[capabilityId]) {
+			record[index] = true;
+		}
+	}
+
+	return { columns: record };
+});
+
 onBeforeMount(async () => {
 	await Source.fetchAbstract();
+
 	const configuration = await Backend.API.Capability.Configuration.get();
 	const _propertyRecorder: Record<string, Type.PropertyAbstract> = {};
 
@@ -82,6 +102,7 @@ onBeforeMount(async () => {
 	propertyRecord.value = _propertyRecorder;
 	order.value = [...configuration.order];
 	modelList.value = await Source.fetchModelList();
+	validColumns.value = await Source.fetchCapability(0) as Record<string, true>;
 });
 
 defineOptions({ name: 'AppPageLeaderboardCapabilityLevel0ScoreCard' });

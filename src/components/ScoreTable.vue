@@ -13,21 +13,21 @@
 		binary-state-sort
 		ref="table"
 	>
-		<template #header="scopeProps">
+		<template #header="slotProps">
 			<q-tr
-				:props="scopeProps"
+				:props="slotProps"
 				style="visibility: collapse"
 			>
 				<q-th
-					v-for="col in scopeProps.cols"
+					v-for="col in slotProps.cols"
 					:key="col.name"
-					:props="scopeProps"
+					:props="slotProps"
 				></q-th>
 			</q-tr>
 			<q-tr v-if="props.groups !== null">
 				<q-th
 					colspan="2"
-					class="app-cell-sticky"
+					class="app-cell-sticky app-right-shadow"
 				></q-th>
 				<q-th
 					style="z-index: 1"
@@ -37,12 +37,23 @@
 					>{{ column.label }}</q-th
 				>
 			</q-tr>
-			<q-tr :props="scopeProps">
+			<q-tr :props="slotProps">
 				<q-th
-					v-for="col in scopeProps.cols"
+					v-for="(col, index) in slotProps.cols"
 					:key="col.name"
-					:props="scopeProps"
+					:props="slotProps"
+					class="relative-position"
+					:class="{ 'app-right-shadow': col.name === 'model' }"
 				>
+					<q-checkbox
+						class="absolute"
+						style="top: 2px; left: 2px"
+						v-model="selectedColumns[index - 2]"
+						dense
+						color="dark"
+						size="sm"
+						v-if="selectedColumns !== null && selectableColumns[col.name]"
+					/>
 					{{ col.label }}
 				</q-th>
 			</q-tr>
@@ -61,17 +72,28 @@
 			</q-td>
 		</template>
 
-		<template v-slot:body-cell-model="props">
-			<q-td :props="props">
+		<template v-slot:body-cell-model="slotProps">
+			<q-td
+				class="app-right-shadow"
+				:props="slotProps"
+			>
+				<q-checkbox
+					v-if="selectedRows !== null && props.rowSelectable[slotProps.row.id]"
+					class="absolute"
+					style="top: 2px; right: 2px"
+					v-model="selectedRows[slotProps.row.id]"
+					size="sm"
+					dense
+				/>
 				<router-link
 					style="text-decoration: none"
 					:to="{
 						name: 'app.model.detail',
-						params: { id: props.row.id },
+						params: { id: slotProps.row.id },
 					}"
 					class="col-shrink text-black"
 				>
-					<div class="text-weight-medium">{{ props.row.name }}</div>
+					<span class="text-weight-medium">{{ slotProps.row.name }}</span>
 				</router-link>
 			</q-td>
 		</template>
@@ -155,13 +177,27 @@ const props = withDefaults(
 		rows?: ModelData[];
 		columns?: string[];
 		groups?: null | GroupOptions[];
+		rowSelectable?: Record<string, boolean>;
+		columnSelectable?: Record<string, boolean>;
 	}>(),
 	{
 		rows: () => [],
 		columns: () => [],
 		groups: null,
+		rowSelectable: () => ({}),
+		columnSelectable: () => ({}),
 	},
 );
+
+type SelectedRecord = Record<string, boolean>;
+
+const selectedRows = defineModel<SelectedRecord | null>('selectedRows', {
+	default: null,
+});
+
+const selectedColumns = defineModel<SelectedRecord | null>('selectedColumns', {
+	default: null,
+});
 
 const table = ref<QTable | null>(null);
 
@@ -171,18 +207,37 @@ const pagination = ref<QTableProps['pagination']>({
 	rowsPerPage: 30,
 });
 
-watch(pagination, () => {
-	pagination.value!.descending = true;
-});
+watch(pagination, () => pagination.value!.descending = true);
 
+watch([() => props.columns, selectedColumns], async () => {
+	if (selectedColumns.value === null) {
+		return;
+	}
+
+	const record: SelectedRecord = {};
+
+	for (let index = 0; index < props.columns.length; index++) {
+		record[index] = selectedColumns.value[index] || false;
+	}
+
+	Object.assign(selectedColumns.value, record);
+}, { immediate: true });
+
+const selectableColumns = computed<Record<string, boolean>>(() => {
+	const record: Record<string, boolean> = {};
+
+	for (const [index, flag] of Object.entries(props.columnSelectable)) {
+		record[`item(${index})`] = flag === true ? true : false;
+	}
+
+	return record;
+});
 
 const columnList = computed(() => {
 	const propertyColumnList: ColumnOptions[] = [];
 
 	for (const [index, name] of props.columns.entries()) {
-		const styleList = [
-			`width:${getColumnEMWidth(name.length)}em`,
-		];
+		const styleList = [`width:${getColumnEMWidth(name.length)}em`];
 
 		propertyColumnList.push({
 			name: `item(${index})`,
@@ -206,3 +261,11 @@ onMounted(() => {
 
 defineOptions({ name: 'AppLeaderboardScoreTable' });
 </script>
+
+<style lang="scss">
+$size: 4px;
+
+.app-right-shadow {
+	box-shadow: inset $size * -1 0 $size $size * -1 rgba(0, 0, 0, 0.2);
+}
+</style>

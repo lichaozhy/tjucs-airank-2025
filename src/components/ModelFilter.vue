@@ -238,45 +238,54 @@ watch(propertyValueOption, (valueOption) => {
 	const test = PropertyTester[propertyNameOption.value!]!;
 	const propertyValue = propertyValueOption.value!;
 
-
 	const filteredList = props.models.filter((data: ModelData) => {
 		return test(modelDataRecord.value[data.id]!, propertyValue);
 	});
 
-	emit('filtered', filteredList);
+	emit('filtered', filteredList, propertyNameOption.value, propertyValue);
 });
 
 const emit = defineEmits<{
-	'filtered': [ModelData[]];
+	filtered: [
+		result: ModelData[],
+		property: string | null,
+		value: string | number | null,
+	];
 }>();
 
-watch(() => props.models, async () => {
-	const ids = props.models.map((modelData) => modelData.id);
-	const record = await Backend.API.Model.PropertyRecord.query(...ids);
+watch(
+	() => props.models,
+	async () => {
+		const ids = props.models.map((modelData) => modelData.id);
+		const record = await Backend.API.Model.PropertyRecord.query(...ids);
 
-	const group: ModelPropertyValueGroup = {
-		vision: [],
-		language: [],
-		author: [],
-		size: [],
-		year: [],
-	};
+		const group: ModelPropertyValueGroup = {
+			vision: [],
+			language: [],
+			author: [],
+			size: [],
+			year: [],
+		};
 
-	group.vision = Object.keys(record.vision);
-	group.language = Object.keys(record.language);
-	group.author = Object.keys(record.author);
-	group.size = Object.keys(record.size).map(v => Number(v));
-	group.year = Object.keys(record.year).map(v => Number(v));
+		group.vision = Object.keys(record.vision);
+		group.language = Object.keys(record.language);
+		group.author = Object.keys(record.author);
+		group.size = Object.keys(record.size).map((v) => Number(v));
+		group.year = Object.keys(record.year).map((v) => Number(v));
 
-	propertyNameOption.value = null;
-	PROPERTY_GROUP.value = group;
+		propertyNameOption.value = null;
+		PROPERTY_GROUP.value = group;
 
-	modelList.value = await Promise.all(ids.map(id => {
-		return Backend.API.Model(id).get();
-	}));
+		modelList.value = await Promise.all(
+			ids.map((id) => {
+				return Backend.API.Model(id).get();
+			}),
+		);
 
-	emit('filtered', props.models);
-}, { immediate: true });
+		emit('filtered', props.models);
+	},
+	{ immediate: true },
+);
 
 defineOptions({ name: 'AppLeaderboardModelFilterPanel' });
 </script>

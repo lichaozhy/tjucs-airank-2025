@@ -45,12 +45,16 @@ export const API = {
 				},
 				Summary: Object.assign(
 					(summaryId: string) => {
+						const summary = leaderboardData.summaries[summaryId]!;
+
 						return {
 							async get() {
-								return {
-									id: summaryId,
-									...leaderboardData.summaries[summaryId]!.$data,
-								};
+								return { id: summaryId, ...summary.$data };
+							},
+							Capatiliby: {
+								async get() {
+									return { ...summary.capability.$data };
+								},
 							},
 						};
 					},
@@ -103,13 +107,33 @@ export const API = {
 
 				throw new Error('Not Found');
 			},
+			Capatiliby: {
+				async get() {
+					for (const { summaries } of Object.values(root.leaderboard)) {
+						for (const [id, { capability }] of Object.entries(summaries)) {
+							if (id === summaryId) {
+								return { ...capability.$data };
+							}
+						}
+					}
+
+					throw new Error('Not Found');
+				},
+			},
 		};
 	}, {}),
 	Benchmark: Object.assign(
 		(benchmarkId: string) => {
+			const benchmark = root.benchmark[benchmarkId]!;
+
 			return {
 				async get() {
-					return { id: benchmarkId, ...root.benchmark[benchmarkId]!.$data };
+					return { id: benchmarkId, ...benchmark.$data };
+				},
+				Capability: {
+					async get() {
+						return { ...benchmark.capability.$data };
+					},
 				},
 			};
 		},

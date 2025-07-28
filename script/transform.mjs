@@ -27,10 +27,14 @@ function avg(a) {
 	return length === 0 ? null : Number((sum / length).toFixed(2));
 }
 
-function computeSummary() {
-	const sumds = {};
-	const bm_sumo = {};
+function random100() {
+	return Number((Math.random() * 100).toFixed(2));
+}
 
+const sumds = {};
+const bm_sumo = {};
+
+function computeSummary() {
 	for (const { summaries } of Object.values(dataRoot.leaderboard)) {
 		for (const [sum_id, { $data: sum }] of Object.entries(summaries)) {
 			sumds[sum_id] = sum;
