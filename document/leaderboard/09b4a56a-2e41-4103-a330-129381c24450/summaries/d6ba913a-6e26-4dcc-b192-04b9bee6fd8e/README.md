@@ -51,7 +51,7 @@ properties:
 models:
   6d2b9e8a-97ff-400f-8ea1-f403c7452408: true
   f0fc7970-1e20-4ea2-a5fd-65ed7dd6802a: true
-  a0515273-7168-4717-a07a-b143b0208074: true
+  24608772-82fc-4750-94ba-a0f87e2c1198: true
   af35bb7c-f716-47a0-bcce-2f045a108735: true
   b585f486-bac8-40d9-bcdb-3b7642bd7be9: true
   74443d95-8883-40ab-b4bd-8e7b184ebe54: true

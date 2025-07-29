@@ -7,11 +7,12 @@ index: 11
 <div class="col-8">
 
 | **Benchmark** | **Capability Dimension**                        |
-| ------------- | ----------------------------------------------- |
+|---------------|-------------------------------------------------|
 | Where2Place   | Affordance Prediction                           |
 | RoBoVQA       | Discriminative Affordance/Generative Affordance |
 | UniEQA        | Affordance                                      |
 | PhyBlock      | Affordance                                      |
+| VABench-Point | Affordance Prediction                           |
 
 </div>
 

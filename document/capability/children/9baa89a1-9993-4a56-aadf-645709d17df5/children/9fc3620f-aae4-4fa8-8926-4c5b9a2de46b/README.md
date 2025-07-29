@@ -6,12 +6,12 @@ index: 16
 <div class="row">
 <div class="col-8">
 
-| **Benchmark** | **Capability Dimension**                                              |
-| ------------- | --------------------------------------------------------------------- |
-| ERQA          | Task Reasoning/Action Reasoning                                       |
-| RoBoVQA       | Success/Future prediction                                             |
-| UniEQA        | Task-related Object Reasoning/Situated Reasoning/Closed-loop Planning |
-| PhyBlock      | Predictive                                                            |
+| **Benchmark** | **Capability Dimension**                           |
+| ------------- | -------------------------------------------------- |
+| ERQA          | Task Reasoning/Action Reasoning                    |
+| RoBoVQA       | Success/Future prediction                          |
+| UniEQA        | Task-related Object Reasoning/Closed-loop Planning |
+| PhyBlock      | Predictive                                         |
 
 </div>
 

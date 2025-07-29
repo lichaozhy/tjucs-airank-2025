@@ -7,7 +7,8 @@ index: 23
 <div class="col-8">
 
 | **Benchmark** | **Capability Dimension** |
-| ------------- | ------------------------ |
+|---------------|--------------------------|
+| VSI-Bench     | RoutePlan                |
 | UniEQA        | Open-loop Planning       |
 
 </div>

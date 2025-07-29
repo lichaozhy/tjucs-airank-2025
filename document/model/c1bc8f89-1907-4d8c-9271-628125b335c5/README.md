@@ -25,15 +25,31 @@ score:
   benchmark:
     ba0be521-6b10-4881-964c-97cd4d2d6070:
       0:
+        - 1.6266666666666667
+        - 0
         - null
-        - null
-        - null
-        - null
-        - null
+        - 0
+        - 0
         - null
         - null
         - null
       1:
+        - 0
+        - 0
+        - 4.88
+        - null
+        - null
+        - null
+        - 0
+        - null
+        - null
+        - null
+        - 0
+        - null
+        - null
+        - 0
+        - null
+        - 0
         - null
         - null
         - null
@@ -43,22 +59,15 @@ score:
         - null
         - null
         - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
+      legacy:
+        - 0
+        - 0
+        - 4.88
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0.697142857
     034bf6b5-dc18-45da-bfaf-337589125632:
       0:
         - null
