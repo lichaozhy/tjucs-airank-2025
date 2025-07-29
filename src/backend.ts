@@ -247,6 +247,7 @@ export const API = {
 	Capability: Object.assign(
 		(capabilityId: string) => {
 			const parentCapabilityData = root.capability.children[capabilityId]!;
+			const { configuration } = parentCapabilityData;
 
 			return Object.assign(
 				(capabilityId: string) => {
@@ -268,9 +269,14 @@ export const API = {
 							return [];
 						}
 
-						return Object.entries(parentCapabilityData.children!).map(
-							([id, { $data }]) => ({ id, ...$data }),
-						);
+						// return Object.entries(parentCapabilityData.children!)
+						// 	.map(([id, { $data }]) => ({ id, ...$data }));
+
+						return configuration!.$data.order
+							.map((capabilityId) => ({
+								id: capabilityId,
+								...parentCapabilityData.children![capabilityId]!.$data,
+							}));
 					},
 					Configuration: {
 						async get() {
