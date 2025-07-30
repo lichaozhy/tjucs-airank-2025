@@ -1,20 +1,28 @@
 ---
 name: Navigation Benchmarks - Unified Evaluation Framework
 properties:
-  - type: computed
+  - type: avg-rank
+    label: Avg Rank
+    sorting: asc
+    fixed: 1
+  - type: avg
     label: Total SR
+    sorting: desc
   - type: reference
     label: EB-Navigation
+    sorting: desc
     ref:
       benchmark: 73de273a-7d38-40c0-b869-2b2e6156c897
       key: TotalSR
   - type: reference
     label: VLN-CE R2R
+    sorting: desc
     ref:
       benchmark: 025ca0fe-f04c-4d17-9f4c-9d1aca6666bd
       key: TotalSR
   - type: reference
     label: VLN-CE RxR
+    sorting: desc
     ref:
       benchmark: 1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09
       key: TotalSR

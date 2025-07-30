@@ -34,6 +34,9 @@ function random100() {
 const sumds = {};
 const bm_sumo = {};
 
+/** @type {Record<string, { id: string, score: number }[]>} */
+const bm_rank = {};
+
 function computeSummary() {
 	for (const { summaries } of Object.values(dataRoot.leaderboard)) {
 		for (const [sum_id, { $data: sum }] of Object.entries(summaries)) {
@@ -44,6 +47,8 @@ function computeSummary() {
 					if (ref.benchmark in bm_sumo) {
 						debugger;
 					}
+
+					bm_rank[ref.benchmark] = [];
 
 					bm_sumo[ref.benchmark] = {
 						p: ref.key,
@@ -75,7 +80,7 @@ function computeSummary() {
 
 		for (const sum_id in sum_ids) {
 			const r = sums[sum_id] = Object.assign({}, m.score.summary[sum_id]);
-			const s_list = r.legacy = [];
+			const s_list = r.legacy = new Array(sumds[sum_id].properties.length).fill(null);
 
 			for (const [index, p] of Object.entries(sumds[sum_id].properties)) {
 				if (p.type === 'reference') {
@@ -86,7 +91,10 @@ function computeSummary() {
 						if (bm_r === undefined || bm_r.legacy === undefined) {
 							s_list[index] = null;
 						} else {
-							s_list[index] = bm_r.legacy[bm_sumo[bm_id].i];
+							const scoreValue = bm_r.legacy[bm_sumo[bm_id].i];
+
+							s_list[index] = scoreValue;
+							bm_rank[bm_id].push({ id: m_id, score: scoreValue });
 						}
 					} catch (e) {
 						console.log(e);
@@ -96,13 +104,58 @@ function computeSummary() {
 			}
 
 			for (const [index, p] of Object.entries(sumds[sum_id].properties)) {
-				if (p.type === 'computed') {
+				if (p.type === 'avg') {
 					s_list[index] = avg(s_list);
 				}
 			}
 		}
 
 		m.score.summary = sums;
+	}
+}
+
+function computeSummaryAvgRank() {
+	/** @type {Record<string, Record<string, number>>} */
+	const m_bm_idx = {};
+
+	for (const [bm_id, m_s_l] of Object.entries(bm_rank)) {
+		for (const [
+			idx, { id: m_id },
+		] of m_s_l.sort((a, b) => b.score - a.score).entries()) {
+			if (m_bm_idx[m_id] === undefined) {
+				m_bm_idx[m_id] = {};
+			}
+
+			m_bm_idx[m_id][bm_id] = idx;
+		}
+	}
+
+	for (const { summaries } of Object.values(dataRoot.leaderboard)) {
+		for (const [sum_id, { $data: sum }] of Object.entries(summaries)) {
+			const bm_id_l = [];
+
+			for (const { type, ref } of sum.properties) {
+				if (type === 'reference') {
+					bm_id_l.push(ref.benchmark);
+				}
+			}
+
+			for (const [i, p] of sum.properties.entries()) {
+				if (p.type !== 'avg-rank') {
+					continue;
+				}
+
+				for (const m_id in m_bm_idx) {
+					const sc_g = dataRoot.model[m_id].$data.score.summary[sum_id];
+
+					if (sc_g === undefined) {
+						continue;
+					}
+
+					sc_g.legacy[i] = (avg(bm_id_l.map(bm_id => m_bm_idx[m_id][bm_id])) ?? 99) + 1;
+				}
+			}
+		}
 	}
 }
 
@@ -138,6 +191,7 @@ function toFixedAllScoreTable(factionDigital = 2) {
 }
 
 computeSummary();
+computeSummaryAvgRank();
 computeCapabilityLevel0Total();
 toFixedAllScoreTable(2);
 

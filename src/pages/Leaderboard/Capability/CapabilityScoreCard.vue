@@ -49,7 +49,7 @@
 </template>
 
 <script setup lang="ts">
-import type { ModelData, GroupOptions } from 'components/ScoreTable.vue';
+import type { ModelData, GroupOptions, Column } from 'components/ScoreTable.vue';
 import type * as Radar from 'components/CapabilityRadarChart.vue';
 import { computed, ref, watch } from 'vue';
 
@@ -67,7 +67,7 @@ export type RadarProps = RadarOptions | null;
 const props = withDefaults(
 	defineProps<{
 		groups?: GroupOptions[] | null;
-		columns?: string[];
+		columns?: Column[];
 		rows?: ModelData[];
 		radarOptions?: RadarProps;
 	}>(),
@@ -140,7 +140,7 @@ const radarIndicatorList = computed<Radar.IndicatorOptions[]>(() => {
 
 	return Object.entries(columnIndeies)
 		.filter(([, flag]) => flag)
-		.map(([index]) => ({ name: props.columns[Number(index)]! }));
+		.map(([index]) => ({ name: props.columns[Number(index)]!.name }));
 });
 
 const radarDataList = computed<Radar.DataObject[]>(() => {

@@ -1,20 +1,28 @@
 ---
 name: Task Planning Benchmarks
 properties:
-  - type: computed
+  - type: avg-rank
+    label: Avg Rank
+    sorting: asc
+    fixed: 1
+  - type: avg
     label: Total SR
+    sorting: desc
   - type: reference
     label: ET-Plan_Bench
+    sorting: desc
     ref:
       benchmark: 68bf8b5b-d8d4-49d7-9e7e-03e4d547189b
       key: TotalSR
   - type: reference
     label: EB-ALFRED
+    sorting: desc
     ref:
       benchmark: 1961aa46-9085-42ed-b384-d9ffe52921a8
       key: TotalSR
   - type: reference
     label: EB-Habitat
+    sorting: desc
     ref:
       benchmark: cbb64d1c-4377-4231-a465-73ffb10972c5
       key: TotalSR

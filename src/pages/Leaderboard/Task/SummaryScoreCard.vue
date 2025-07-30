@@ -28,7 +28,7 @@
 
 <script setup lang="ts">
 import type * as Data from 'src/data';
-import type { ModelData } from 'components/ScoreTable.vue';
+import type { ModelData, Column } from 'components/ScoreTable.vue';
 import { computed, onBeforeMount, ref } from 'vue';
 
 import AppMarkdownHtml from 'components/MarkdownHTML.vue';
@@ -50,8 +50,12 @@ const summary = ref<Data.SummaryItem | null>(null);
 const modelList = ref<(Data.Model & { id: string })[]>([]);
 const filteredModelDataList = ref<ModelData[]>([]);
 
-const columnList = computed(() => {
-	return summary.value!.properties.map((property) => property.label);
+const columnList = computed<Column[]>(() => {
+	return summary.value!.properties.map((property) => ({
+		name: property.label,
+		sorting: property.sorting as Column['sorting'],
+		fixed: property.fixed ?? 2,
+	}));
 });
 
 const rowList = computed<ModelData[]>(() => {

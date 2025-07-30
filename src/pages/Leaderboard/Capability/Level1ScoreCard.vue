@@ -17,7 +17,7 @@
 <script setup lang="ts">
 import type * as Data from 'src/data';
 import type * as Type from './type';
-import type { GroupOptions, ModelData } from 'components/ScoreTable.vue';
+import type { GroupOptions, ModelData, Column } from 'components/ScoreTable.vue';
 import AppCapabilityScoreCard from './CapabilityScoreCard.vue';
 import type { RadarProps } from './CapabilityScoreCard.vue';
 import { onBeforeMount, ref, computed } from 'vue';
@@ -38,9 +38,11 @@ const validColumns = ref<Record<string, true>>({});
 const Source = useSource(props.source);
 const { abstract } = Source;
 
-const columnList = computed<string[]>(() => {
-	return order.value
-		.map(capabilityId => propertyRecord.value[capabilityId]!.name);
+const columnList = computed<Column[]>(() => {
+	return order.value.map(capabilityId => ({
+		name: propertyRecord.value[capabilityId]!.name,
+		sorting: 'desc',
+	}));
 });
 
 const rowList = computed<ModelData[]>(() => {

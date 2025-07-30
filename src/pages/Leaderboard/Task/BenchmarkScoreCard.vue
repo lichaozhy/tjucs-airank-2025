@@ -29,7 +29,7 @@
 <script setup lang="ts">
 import type * as Data from 'src/data';
 import type { BenchmarkAbstract } from './type';
-import type { ModelData } from 'components/ScoreTable.vue';
+import type { ModelData, Column } from 'components/ScoreTable.vue';
 import { computed, onBeforeMount, ref } from 'vue';
 
 import AppMarkdownHtml from 'components/MarkdownHTML.vue';
@@ -55,10 +55,10 @@ const modelList = ref<(Data.Model & { id: string })[]>([]);
 const modelScoreRecord = ref<Record<string, Data.ScoreValueList>>({});
 const filteredModelDataList = ref<ModelData[]>([]);
 
-const columnList = computed(() => {
+const columnList = computed<Column[]>(() => {
 	return Object.values(benchmark.value!.properties)
 		.sort((a, b) => a.order - b.order)
-		.map((property) => property.label);
+		.map((property) => ({ name: property.label, sorting: 'desc' }));
 });
 
 const rowList = computed<ModelData[]>(() => {

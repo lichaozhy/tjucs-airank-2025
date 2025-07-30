@@ -1,30 +1,36 @@
 ---
 name: 3D-Embodied QA Benchmarks
 properties:
-  - type: computed
+  - type: avg
     label: Total Score
+    sorting: desc
   - type: reference
     label: SQA3D
+    sorting: desc
     ref:
       benchmark: 8b56c6cf-becf-4bef-b612-1804d2f20cda
       key: Total
   - type: reference
     label: ScanQA
+    sorting: desc
     ref:
       benchmark: e0465aba-17b0-4f34-9aa4-345c9bacdac2
       key: Total
   - type: reference
     label: Scan2Cap
+    sorting: desc
     ref:
       benchmark: df46aa1a-099f-4841-bc02-ba9608e18c7d
       key: Total
   - type: reference
     label: Scanrefer
+    sorting: desc
     ref:
       benchmark: bb0cf73e-8e66-46f9-8880-3b4160a5feb4
       key: Total
   - type: reference
     label: Multi3drefer
+    sorting: desc
     ref:
       benchmark: e75dcf1e-54fa-48ca-83d0-7f01cff7e949
       key: Total

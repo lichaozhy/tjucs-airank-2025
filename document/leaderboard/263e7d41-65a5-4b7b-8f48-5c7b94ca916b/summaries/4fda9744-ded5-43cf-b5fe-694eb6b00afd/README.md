@@ -1,13 +1,19 @@
 ---
 name: Navigation Benchmarks - Customized Evaluation Framework
 properties:
+  - type: avg-rank
+    label: Avg Rank
+    sorting: asc
+    fixed: 1
   - type: reference
     label: MP3D
+    sorting: desc
     ref:
       benchmark: 903014ce-ec7d-4f0d-8827-b5fd893d8741
       key: Total
   - type: reference
     label: HM3D
+    sorting: desc
     ref:
       benchmark: e6d0fdb7-9de8-4320-9af4-fcd9de517827
       key: Total

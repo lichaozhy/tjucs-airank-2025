@@ -1,50 +1,60 @@
 ---
 name: 2D-Embodied QA Benchmarks
 properties:
-  - type: computed
+  - type: avg
     label: Total Score
+    sorting: desc
   - type: reference
     label: UniEQA
+    sorting: desc
     ref:
       benchmark: 034bf6b5-dc18-45da-bfaf-337589125632
       key: Total
   - type: reference
     label: OpenEQA
+    sorting: desc
     ref:
       benchmark: ba0be521-6b10-4881-964c-97cd4d2d6070
       key: Total
   - type: reference
     label: VSI
+    sorting: desc
     ref:
       benchmark: 25206b0f-a955-4e39-86cf-53dcc9528bfc
       key: Total
   - type: reference
     label: ERQA
+    sorting: desc
     ref:
       benchmark: 5df5ca38-7ca9-4d35-81c6-3dfe52700755
       key: Total
   - type: reference
     label: RoboVQA
+    sorting: desc
     ref:
       benchmark: ed3fc303-b421-4e73-936a-e93a5aada777
       key: Total
   - type: reference
     label: Where2Place
+    sorting: desc
     ref:
       benchmark: a9228f2e-3191-4a08-8f03-64e73cae2e78
       key: Total
   - type: reference
     label: MineAnyBuild
+    sorting: desc
     ref:
       benchmark: b9a18add-a3fb-4893-89e3-ddeea8053ce2
       key: Total
   - type: reference
     label: PhyBlock
+    sorting: desc
     ref:
       benchmark: 27e481d6-6057-49dc-ad80-529f9127245f
       key: Total
   - type: reference
     label: VABench-Point
+    sorting: desc
     ref:
       benchmark: 089294d0-59db-47f0-a543-19d8e3708448
       key: Total

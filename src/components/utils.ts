@@ -10,8 +10,8 @@ export function toNumberOrNull(value: number | null | undefined = null) {
 	return value === null ? null : value;
 }
 
-export function toNoneOrFixed(value: number | null) {
-	return value === null ? '-' : value.toFixed(2);
+export function toNoneOrFixed(value: number | null, fractionDigital = 2) {
+	return value === null ? '-' : value.toFixed(fractionDigital);
 }
 
 export type ColumnAlignment = 'left' | 'center' | 'right';

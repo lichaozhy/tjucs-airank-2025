@@ -98,6 +98,8 @@ export interface SummaryItem {
 	properties: {
 		type: string;
 		label: string;
+		sorting: string | null;
+		fixed?: number;
 		ref?: {
 			benchmark: string;
 			key: string;

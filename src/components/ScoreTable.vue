@@ -104,7 +104,7 @@
 			#[`body-cell-item(${index})`]="props"
 		>
 			<q-td :props="props">{{
-				toNoneOrFixed((props.row as ModelData).scores[index]!)
+				toNoneOrFixed((props.row as ModelData).scores[index]!, property.fixed ?? 2)
 			}}</q-td>
 		</template>
 	</q-table>
@@ -123,6 +123,12 @@ export interface ModelData {
 	id: string;
 	name: string;
 	scores: Score[];
+}
+
+export interface Column {
+	name: string;
+	sorting: 'desc' | 'asc' | null;
+	fixed?: number;
 }
 
 export type ColumnAlignment = 'left' | 'center' | 'right';
@@ -175,7 +181,7 @@ const SUFFIX_COLUNM_LIST = [
 const props = withDefaults(
 	defineProps<{
 		rows?: ModelData[];
-		columns?: string[];
+		columns?: Column[];
 		groups?: null | GroupOptions[];
 		rowSelectable?: Record<string, boolean>;
 		columnSelectable?: Record<string, boolean>;
@@ -207,8 +213,6 @@ const pagination = ref<QTableProps['pagination']>({
 	rowsPerPage: 30,
 });
 
-watch(pagination, () => pagination.value!.descending = true);
-
 watch([() => props.columns, selectedColumns], async () => {
 	if (selectedColumns.value === null) {
 		return;
@@ -233,16 +237,40 @@ const selectableColumns = computed<Record<string, boolean>>(() => {
 	return record;
 });
 
+const columnNameSortingRecord = computed(() => {
+	const record: Record<string, string | null> = {};
+
+	for (const [index, options] of props.columns.entries()) {
+		const { sorting } = options;
+
+		record[`item(${index})`] = sorting;
+	}
+
+	return record;
+});
+
+watch(pagination, () => {
+	const { sortBy } = pagination.value!;
+
+	if (columnNameSortingRecord.value[sortBy!] === 'desc') {
+		pagination.value!.descending = true;
+	}
+
+	if (columnNameSortingRecord.value[sortBy!] === 'asc') {
+		pagination.value!.descending = false;
+	}
+});
+
 const columnList = computed(() => {
 	const propertyColumnList: ColumnOptions[] = [];
 
-	for (const [index, name] of props.columns.entries()) {
-		const styleList = [`width:${getColumnEMWidth(name.length)}em`];
+	for (const [index, options] of props.columns.entries()) {
+		const styleList = [`width:${getColumnEMWidth(options.name.length)}em`];
 
 		propertyColumnList.push({
 			name: `item(${index})`,
 			field: (data) => data.scores[index],
-			label: name,
+			label: options.name,
 			align: 'right',
 			sortable: true,
 			headerStyle: styleList.join(';'),
