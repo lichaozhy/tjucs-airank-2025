@@ -32,7 +32,7 @@ score:
         - null
         - null
         - null
-        - 56.83
-        - 56.83
+        - 56.39
+        - 56.39
   summary: {}
 ---
