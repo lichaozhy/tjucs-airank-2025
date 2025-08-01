@@ -33,7 +33,6 @@ function resizeChart() {
 
 onMounted(() => {
 	chart = charts.init(container.value, 'embodied');
-	console.log(chart);
 	window.addEventListener('resize', resizeChart);
 
 	watch(props, () => {
@@ -46,6 +45,22 @@ onMounted(() => {
 			},
 			radar: {
 				indicator: props.indicatorList.map(({ name }) => ({ name, max: 100 })),
+				axisName: {
+					color: '#111',
+					borderRadius: 3,
+					padding: [3, 5],
+					fontSize: 16,
+				},
+				axisLabel: {
+					show: true,
+					color: '#000',
+					fontSize: 6,
+				},
+				splitLine: {
+					lineStyle: {
+						color: '#ccc',
+					},
+				},
 			},
 			series: [
 				{
@@ -57,6 +72,9 @@ onMounted(() => {
 						opacity: 0.7,
 					},
 					emphasis: {
+						label: {
+							show: true,
+						},
 						lineStyle: {
 							width: 2,
 							opacity: 1,

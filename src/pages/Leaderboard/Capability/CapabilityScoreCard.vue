@@ -2,9 +2,9 @@
 	<div
 		v-if="hasRadar && hasEnoughtColumns"
 		class="app-echart-radar row justify-center"
-		style="height: 480px"
+		style="height: 560px"
 	>
-		<div class="col-8 relative-position">
+		<div class="col-10 relative-position">
 			<AppCapabilityRadarChart
 				:indicator-list="radarIndicatorList"
 				:data-list="radarDataList"
@@ -185,8 +185,10 @@ watch(
 				}
 			}
 
+			newModelDataList.sort((a, b) => b.scores[0]! - a.scores[0]!);
+
 			for (const [index, { id }] of Object.entries(newModelDataList)) {
-				rows[id] = Number(index) < 10;
+				rows[id] = Number(index) < 5;
 			}
 
 			selectedColumns.value = columns;
