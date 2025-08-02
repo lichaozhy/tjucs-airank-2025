@@ -101,21 +101,21 @@ const rowList = computed<ModelData[]>(() => {
 });
 
 onBeforeMount(async () => {
-	const BenchmarkAPI = Backend.API.Benchmark(props.benchmarkId);
-	const benchmarkData = await BenchmarkAPI.get();
+	const { benchmarkId } = props;
+	const BenchmarkAPI = Backend.API.Benchmark(benchmarkId);
+	const _benchmark = await BenchmarkAPI.get();
+	const _modelList = await Backend.API.Model.queryHasBenchmark(benchmarkId);
 
 	benchmark.value = {
-		id: benchmarkData.id,
-		name: benchmarkData.name,
-		properties: benchmarkData.properties,
+		id: _benchmark.id,
+		name: _benchmark.name,
+		properties: _benchmark.properties,
 	};
 
-	modelList.value = await Backend.API.Model.queryHasBenchmark(
-		props.benchmarkId,
-	);
+	modelList.value = _modelList;
 
 	for (const { id, score } of modelList.value) {
-		modelScoreRecord.value[id] = score.benchmark[benchmarkData.id]!.legacy!;
+		modelScoreRecord.value[id] = score.benchmark[_benchmark.id]!.legacy!;
 	}
 });
 

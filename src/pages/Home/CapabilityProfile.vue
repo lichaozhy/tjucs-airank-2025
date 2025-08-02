@@ -148,20 +148,26 @@ watch(level0Id, (level0Id) => {
 });
 
 onBeforeMount(async () => {
-	data.value = await Backend.API.Page.Home.Profile.Capability.get();
+	const PageHomeAPI = Backend.API.Page.Home;
+	const _data = await PageHomeAPI.Profile.Capability.get();
+	const _datail = await PageHomeAPI.Profile.Capability.Detail.get();
+	const _mapping = await PageHomeAPI.Profile.Capability.Mapping.get();
+	const _level0Record: Record<string, CapabilityItemAbastract> = {};
 
 	for (const itemData of await Backend.API.Capability.query()) {
 		const childItemList = await Backend.API.Capability(itemData.id).query();
 
-		levelORecord.value[itemData.id] = {
+		_level0Record[itemData.id] = {
 			...itemData,
 			children: childItemList.map(({ id, name }) => ({ id, name })),
 		};
 	}
 
-	level0Id.value = data.value.itemList[0]!.id;
-	detail.value = await Backend.API.Page.Home.Profile.Capability.Detail.get();
-	mapping.value = await Backend.API.Page.Home.Profile.Capability.Mapping.get();
+	data.value = _data;
+	level0Id.value = _data.itemList[0]!.id;
+	detail.value = _datail;
+	mapping.value = _mapping;
+	levelORecord.value = _level0Record;
 });
 
 defineOptions({ name: 'AppPageHomeCapabilityProfile' });

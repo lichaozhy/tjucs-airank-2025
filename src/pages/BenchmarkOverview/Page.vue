@@ -69,8 +69,13 @@ import * as Backend from 'src/backend';
 import AppBannerWithLayout from 'layouts/BannerWith.vue';
 import AppBenchmarkCard from './BenchmarkCard.vue';
 
+interface LeaderboardAbstract {
+	id: string;
+	name: string;
+}
+
 const benchmarkList = ref<Array<Spec.Benchmark.Type>>([]);
-const leaderboardList = ref<Spec.Leaderboard.Type[]>([]);
+const leaderboardList = ref<LeaderboardAbstract[]>([]);
 const leaderboardId = ref<string | null>(null);
 const keyword = ref<string | null>(null);
 
@@ -110,8 +115,11 @@ const filteredBenchmarkList = computed(() => {
 });
 
 onBeforeMount(async () => {
-	leaderboardList.value = await Backend.API.Leaderboard.query();
-	benchmarkList.value = await Backend.API.Benchmark.query();
+	const _leaderboardList = await Backend.API.Leaderboard.query();
+	const _benchmarkList = await Backend.API.Benchmark.query();
+
+	leaderboardList.value = _leaderboardList;
+	benchmarkList.value = _benchmarkList;
 });
 
 defineOptions({ name: 'BenchmarkIndexPage' });

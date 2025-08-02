@@ -50,7 +50,7 @@
 					animated
 					swipeable
 					infinite
-					style="height: 480px"
+					style="height: 84em"
 				>
 					<q-tab-panel
 						class="q-pa-none"
@@ -154,19 +154,23 @@ const columns = [
 		label: 'Model',
 		field: 'modelList',
 		align: 'left' as Utils.Alignment,
+		style: 'white-space: normal',
 	},
 ];
 
 onBeforeMount(async () => {
-	data.value = await Backend.API.Page.Home.Profile.Model.get();
-	detail.value = await Backend.API.Page.Home.Profile.Model.Detail.get();
+	const _data = await Backend.API.Page.Home.Profile.Model.get();
+	const _detail = await Backend.API.Page.Home.Profile.Model.Detail.get();
 
-	categoryList.value = [
+	const _categoryList = [
 		await Backend.API.Page.Home.Profile.Model.Category.General.get(),
 		await Backend.API.Page.Home.Profile.Model.Category.Embodied.get(),
 	];
 
-	category.value = categoryList.value[0]!.id;
+	category.value = _categoryList[0]!.id;
+	categoryList.value = _categoryList;
+	data.value = _data;
+	detail.value = _detail;
 });
 
 defineOptions({ name: 'AppPageHomeRankProfile' });

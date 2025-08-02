@@ -157,12 +157,23 @@ watch(leaderboard, () => {
 	benchmark.value = selectedLeaderboard.benchmarkList[0]!.id;
 });
 
-onBeforeMount(async () => {
-	const configuration = await Backend.API.Configuration.get();
-	const leaderboardDataList = await Backend.API.Leaderboard.query();
-	const idNameRecord: LeaderboardRecord = {};
+interface LeaderboardAbstract {
+	id: string;
+	name: string;
+	benchmarkList: {
+		id: string;
+		name: string;
+	}[];
+}
 
-	for (const { id, name } of leaderboardDataList) {
+onBeforeMount(async () => {
+	const PageAPI = Backend.API.Page;
+	const configuration = await Backend.API.Configuration.get();
+	const _detail = await PageAPI.Home.Profile.Benchmark.Leaderboard.get();
+	const _data = await PageAPI.Home.Profile.Benchmark.get();
+	const idNameRecord: Record<string, LeaderboardAbstract> = {};
+
+	for (const { id, name } of await Backend.API.Leaderboard.query()) {
 		const LeaderboardAPI = Backend.API.Leaderboard(id);
 		const benchmarkDataList = await LeaderboardAPI.Benchmark.query();
 
@@ -175,9 +186,8 @@ onBeforeMount(async () => {
 
 	leaderboard.value = configuration.DEFAULT_LEADERBOARD;
 	leaderboardRecord.value = idNameRecord;
-	data.value = await Backend.API.Page.Home.Profile.Benchmark.get();
-	detail.value =
-		await Backend.API.Page.Home.Profile.Benchmark.Leaderboard.get();
+	data.value = _data;
+	detail.value =_detail;
 });
 
 defineOptions({ name: 'AppPageHomeBenchmarkProfile' });

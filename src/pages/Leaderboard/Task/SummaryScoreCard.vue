@@ -75,10 +75,11 @@ const rowList = computed<ModelData[]>(() => {
 });
 
 onBeforeMount(async () => {
-	const summaryData = await SummaryAPI.get();
+	const _summary = await SummaryAPI.get();
+	const _modelList = await Backend.API.Model.queryHasSummary(props.summaryId);
 
-	summary.value = summaryData;
-	modelList.value = await Backend.API.Model.queryHasSummary(props.summaryId);
+	summary.value = _summary;
+	modelList.value = _modelList;
 });
 
 defineOptions({ name: 'AppPageLeaderboardDetailSummaryScoreCard' });
