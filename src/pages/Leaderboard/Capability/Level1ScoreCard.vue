@@ -89,6 +89,9 @@ onBeforeMount(async () => {
 	const configuration = await Backend.API.Capability.Configuration.get();
 	const _propertyRecorder: Record<string, Type.PropertyAbstract> = {};
 	const _order: string[] = [];
+	const _modelList = await Source.fetchModelList();
+	const _validColumns = await Source.fetchCapability(1) as Record<string, true>;
+	const _groupList: GroupOptions[] = [];
 
 	for (const capabilityId of configuration.order) {
 		const CapabilityAPI = Backend.API.Capability(capabilityId);
@@ -98,23 +101,29 @@ onBeforeMount(async () => {
 			continue;
 		}
 
-		_order.push(...configuration.order);
+		const childItemList = await CapabilityAPI.query();
+		_order.push(...configuration.order.filter(id => _validColumns[id]));
 
 		const { name } = await CapabilityAPI.get();
 		const groupItem = { label: name, colspan: 0 };
 
-		for (const { id, index, name } of await CapabilityAPI.query()) {
-			groupItem.colspan++;
-			_propertyRecorder[id] = { name, index };
+		for (const { id, index, name } of childItemList) {
+			if (_validColumns[id]) {
+				groupItem.colspan++;
+				_propertyRecorder[id] = { name, index };
+			}
 		}
 
-		groupList.value.push(groupItem);
+		if (groupItem.colspan > 0) {
+			_groupList.push(groupItem);
+		}
 	}
 
 	propertyRecord.value = _propertyRecorder;
 	order.value = _order;
-	modelList.value = await Source.fetchModelList();
-	validColumns.value = await Source.fetchCapability(1) as Record<string, true>;
+	modelList.value = _modelList;
+	validColumns.value = _validColumns;
+	groupList.value = _groupList;
 });
 
 defineOptions({ name: 'AppPageLeaderboardCapabilityLevel1ScoreCard' });

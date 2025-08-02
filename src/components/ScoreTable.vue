@@ -30,12 +30,15 @@
 					class="app-cell-sticky app-right-shadow"
 				></q-th>
 				<q-th
+					class="ellipsis"
 					style="z-index: 1"
 					v-for="(column, index) in props.groups"
 					:key="index"
 					:colspan="column.colspan"
+					:title="column.label"
 					>{{ column.label }}</q-th
 				>
+				<q-th></q-th>
 			</q-tr>
 			<q-tr :props="slotProps">
 				<q-th

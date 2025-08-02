@@ -101,10 +101,13 @@ onBeforeMount(async () => {
 		_propertyRecorder[id] = { name, index };
 	}
 
+	const _modelList = await Source.fetchModelList();
+	const _validColumns = await Source.fetchCapability(0) as Record<string, true>;
+
 	propertyRecord.value = _propertyRecorder;
-	order.value = [...configuration.order];
-	modelList.value = await Source.fetchModelList();
-	validColumns.value = await Source.fetchCapability(0) as Record<string, true>;
+	order.value = [...configuration.order].filter(id => _validColumns[id]);
+	modelList.value = _modelList;
+	validColumns.value = _validColumns;
 });
 
 defineOptions({ name: 'AppPageLeaderboardCapabilityLevel0ScoreCard' });
