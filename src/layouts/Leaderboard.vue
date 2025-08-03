@@ -3,6 +3,7 @@
 		id="app-leaderboard-layout"
 		class="column content-center"
 		padding
+		v-if="isLoaded"
 	>
 		<AppBannerWithLayout :height="480">
 			<template #banner>
@@ -181,6 +182,8 @@ watch(
 	},
 );
 
+const isLoaded = ref<boolean>(false);
+
 onBeforeMount(async () => {
 	const leaderboardListData = await Backend.API.Leaderboard.query();
 	const LeaderboardAPI = Backend.API.Leaderboard(leaderboardId);
@@ -205,6 +208,8 @@ onBeforeMount(async () => {
 		selectedSummary[summary.id] = true;
 		break;
 	}
+
+	isLoaded.value = true;
 });
 
 defineOptions({ name: 'AppLeaderboardLayout' });
