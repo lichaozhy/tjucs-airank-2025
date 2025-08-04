@@ -1,93 +1,100 @@
 <template>
-	<q-card
-		flat
-		square
-		bordered
-		class="full-height"
+	<router-link
+		:to="{ name: 'app.benchmark.detail', params: { id: benchmark.id } }"
+		custom
+		v-slot="{ navigate }"
 	>
-		<q-card-section>
-			<q-badge
-				color="indigo-10"
-				:label="benchmark.released?.at.year"
-				:outline="benchmark.released?.at.year !== CUTTENT_YEAR"
-				class="q-mr-sm bg-white"
-				floating
-			/>
+		<q-card
+			flat
+			square
+			bordered
+			class="full-height"
+			@click="navigate"
+		>
+			<q-card-section>
+				<q-badge
+					color="indigo-10"
+					:label="benchmark.released?.at.year"
+					:outline="benchmark.released?.at.year !== CUTTENT_YEAR"
+					class="q-mr-sm bg-white"
+					floating
+				/>
 
-			<q-btn
-				size="lg"
-				flat
-				dense
-				class="q-px-none full-width"
-				:to="{ name: 'app.benchmark.detail', params: { id: benchmark.id } }"
-				no-caps
-				><div class="full-width text-left row">
-					<span>{{ benchmark.name }}</span>
-					<q-icon
-						name="link"
-						size="sm"
-						color="primary"
-						class="q-ml-sm"
-					/></div
-			></q-btn>
+				<q-btn
+					size="lg"
+					flat
+					dense
+					class="q-px-none full-width"
+					:to="{ name: 'app.benchmark.detail', params: { id: benchmark.id } }"
+					no-caps
+					><div class="full-width text-left row">
+						<span>{{ benchmark.name }}</span>
+						<q-icon
+							name="link"
+							size="sm"
+							color="primary"
+							class="q-ml-sm"
+						/></div
+				></q-btn>
 
-			<div class="text-caption text-grey-9 ellipsis">
-				<span>
-					{{ benchmark.organization }}
-					<q-tooltip
-						v-if="benchmark.organization"
-						anchor="top start"
-						self="center start"
-						transition-show="fade"
-						transition-hide="none"
-						class="bg-black"
-					>
+				<div class="text-caption text-grey-9 ellipsis">
+					<span>
 						{{ benchmark.organization }}
-					</q-tooltip>
-				</span>
-			</div>
-
-			<div
-				class="text-body q-mt-md"
-				style="height: 5em"
-			>
-				<div v-if="benchmark.description">
-					{{ benchmark.description }}
+						<q-tooltip
+							v-if="benchmark.organization"
+							anchor="top start"
+							self="center start"
+							transition-show="fade"
+							transition-hide="none"
+							class="bg-black"
+						>
+							{{ benchmark.organization }}
+						</q-tooltip>
+					</span>
 				</div>
 
 				<div
-					v-else
-					class="text-grey-9 text-italic"
+					class="text-body q-mt-md"
+					style="height: 5em"
 				>
-					No description
+					<div v-if="benchmark.description">
+						{{ benchmark.description }}
+					</div>
+
+					<div
+						v-else
+						class="text-grey-9 text-italic"
+					>
+						No description
+					</div>
 				</div>
-			</div>
-		</q-card-section>
+			</q-card-section>
 
-		<q-card-section>
-			<div class="text-caption text-grey">Capability Dimension</div>
-			<q-chip
-				v-if="tagList.length === 0"
-				class="q-ml-none text-white"
-				dense
-				square
-				color="grey-8"
-				size="sm"
-				label="Unknown"
-			></q-chip>
+			<q-card-section>
+				<div class="text-caption text-grey">Capability Dimension</div>
+				<q-chip
+					v-if="tagList.length === 0"
+					class="q-ml-none text-white"
+					dense
+					square
+					color="grey-8"
+					size="sm"
+					label="Unknown"
+				></q-chip>
 
-			<q-chip
-				v-for="(tag, index) in tagList"
-				:key="index"
-				class="q-ml-none text-white"
-				dense
-				square
-				:label="tag.label"
-				:color="tag.color"
-				size="sm"
-			/>
-		</q-card-section>
-	</q-card>
+				<q-chip
+					v-for="(tag, index) in tagList"
+					:key="index"
+					class="q-ml-none text-white"
+					dense
+					square
+					:label="tag.label"
+					:color="tag.color"
+					size="sm"
+				/>
+			</q-card-section>
+		</q-card>
+	</router-link>
 </template>
 
 <script setup lang="ts">
