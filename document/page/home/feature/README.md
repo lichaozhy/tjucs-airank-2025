@@ -12,7 +12,7 @@ features:
   - icon: electric_bolt
     title: Flexible Benchmark Integration
     description: >
-      Flexible integration of 18+ evaluation benchmarks across three
+      Flexible integration of 22 evaluation benchmarks across three
       core types of leaderboards with easy extensibility under consistent
       evaluation protocols, enabling the platform to evolve with advancement
       in the field.

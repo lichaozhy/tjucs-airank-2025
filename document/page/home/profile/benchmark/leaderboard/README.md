@@ -1,5 +1,5 @@
 ---
-title: 3 Types of Leaderboards, 18 Evaluation Benchmarks
+title: 3 Types of Leaderboards, 22 Evaluation Benchmarks
 list:
   - id: 09b4a56a-2e41-4103-a330-129381c24450
     icon: question_answer
