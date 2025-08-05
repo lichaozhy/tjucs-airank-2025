@@ -11,7 +11,7 @@
 ### 🎯 **Comprehensive Evaluation System**
 
 - **3 Types of Leaderboards**: Question Answering, Navigation, and Task Planning
-- **18+ Evaluation Benchmarks**: Covering diverse embodied AI scenarios
+- **22+ Evaluation Benchmarks**: Covering diverse embodied AI scenarios
 - **30+ Advanced Models**: Including both general large models and specialized embodied AI models
 - **20+ Institutes**: Representing leading research organizations worldwide
 
@@ -22,12 +22,12 @@
 Systematic categorization spanning object perception, spatial reasoning, temporal understanding, embodied knowledge, navigation, and task planning across multiple dimensions. Embodied Arena uses a systematic taxonomy of embodied capability, carefully sifted and refined from diverse embodied tasks and benchmarks, providing concentrated metrics for reliable evaluation and essential objectives for research breakthrough.
 
 - **7 Core Embodied Capabilities**
-- **25+ Fine-grained Dimensions**
+- **25 Fine-grained Dimensions**
 - **Comprehensive Benchmark-Capability Mapping**
 
 #### 🤖 **Rich Model Support**
 
-Comprehensive evaluation support for diverse AI architectures including general multimodal LLMs, specialized embodied models, and both open-source and close-source models. The platform offers flexibility and convenience for users to join with professional integration support.
+Comprehensive evaluation support for diverse AI architectures including general multimodal LLMs, specialized embodied models, and both open-source and closed-source models. The platform offers flexibility and convenience for users to join with professional integration support.
 
 - **30+ Advanced Models**: From 20+ leading research institutes worldwide
 - **Multiple Model Types**: General LLMs, embodied multimodal models, and 3D vision models
@@ -37,7 +37,7 @@ Comprehensive evaluation support for diverse AI architectures including general 
 
 Comprehensive integration of diverse evaluation benchmarks including visual QA, navigation tasks, task planning, and both 2D/3D scenarios, with flexible extensibility for new benchmarks.
 
-- **18+ Evaluation Benchmarks**: Covering diverse embodied AI scenarios
+- **22+ Evaluation Benchmarks**: Covering diverse embodied AI scenarios
 - **Multi-domain Coverage**: 2D visual reasoning, 3D interactive environments, and simulation-based testing
 - **Extensible Architecture**: Easy onboarding for new benchmarks and evaluation tasks
 
@@ -82,11 +82,13 @@ Complementary evaluation paradigms including accuracy-based QA assessment (exact
 - **SQA3D**: 3D scene understanding with 33.4k reasoning questions across 650 scenes
 - **ScanQA**: 3D spatial understanding with 41k question-answer pairs from 800 indoor scenes
 - **Scan2Cap**: Dense captioning in 3D scans with natural language descriptions and bounding boxes
+- **ScanRefer**: 3D object localization using natural language descriptions in RGB-D scans with 51,583 expressions referring to 11,046 objects across 800 indoor scenes
+- **Multi3DRefer**: Multi-object localization in 3D scenes with over 61,900 descriptions referencing more than 11,600 objects
 - **PhyBlock**: Physical understanding assessment through robotic 3D block assembly tasks (2600 block tasks including 400 assembly tasks and 2200 VQA tasks)
 - **MineAnyBuild**: Spatial planning abilities evaluation in Minecraft with 4,000 curated tasks from multi-modal instructions
 - **RoboVQA**: Robot visual question answering with 829,502 video-text pairs for long-horizon reasoning
 - **Where2Place**: Spatial free-space reference evaluation on 100 real-world images from cluttered environments
-- **VABench-Point**: Spatial reasoning benchmark (mentioned in the benchmark mapping table)
+- **VABench-Point**: Spatial reasoning benchmark for precise spatial understanding
 
 ### 2. 🧭 **Embodied Navigation Leaderboard**
 
@@ -97,6 +99,8 @@ Complementary evaluation paradigms including accuracy-based QA assessment (exact
 - **EB-Navigation**: Navigation-focused benchmark evaluating low-level perception and action prediction
 - **VLN-CE R2R**: Room-to-Room navigation in continuous environments
 - **VLN-CE RxR**: Multilingual navigation with both Guide and Follower trajectories
+- **MP3D**: ObjectNav benchmark on Matterport3D dataset with 90+ buildings including homes, offices, and churches, evaluating object search strategies across complex layouts
+- **HM3D**: Habitat-Matterport 3D dataset providing hundreds of high-resolution, richly annotated environments for more challenging ObjectNav scenarios
 
 ### 3. 📋 **Embodied Task Planning Leaderboard**
 
@@ -136,7 +140,7 @@ Understanding spatial relationships and positioning in 3D environments through v
 - **Spatial Localization**: Location perception capability that requires the model to localize based on visual inputs, such as a 'bounding box'
 - **Spatial Size**: Size perception capability that requires the model to make judgements on space size based on visual inputs, such as 'size of this room'
 
-**Supported Benchmarks**: PhyBlock, VSI-Bench, ERQA, ScanQA, Scan2Cap, ET-Plan-Bench
+**Supported Benchmarks**: PhyBlock, VSI-Bench, ERQA, ScanQA, Scan2Cap, ScanRefer, Multi3DRefer, ET-Plan-Bench
 
 ### ⏰ **Temporal Perception**
 
@@ -184,7 +188,7 @@ Navigation capabilities in complex environments with different types of guidance
 - **Location Navigation**: Navigation capability for tasks where the instruction requires navigation to a specified location
 - **Instruction Navigation**: Navigation capability for tasks where the instruction specifies a navigation path
 
-**Supported Benchmarks**: EB-Navigation, R2R-CE, RxR-CE
+**Supported Benchmarks**: EB-Navigation, R2R-CE, RxR-CE, MP3D, HM3D
 
 ### 📋 **Embodied Task Planning**
 
@@ -233,12 +237,18 @@ Models specifically designed and optimized for embodied AI tasks, featuring enha
 
 Specialized for 2D visual reasoning benchmarks and embodied question answering tasks.
 
-- **Tianjin University**: RoboAnnotatorX, Embodied-FSD
-- **Boston University**: SAT
+- **BAAI**: Navid, UniNavid, RoboBrain
+- **Shanghai AI Lab**: VeBrain, VLN-R1, navillm, StreamVLN
+- **Tianjin University**: RoboAnnotatorX, Embodied-FSD, HuLE-Nav
 - **University of Washington**: RoboPoint
 - **Shanghai Jiao Tong University**: SpatialBot
+- **The University of Hong Kong**: EmbodiedGPT
+- **Georgia Institute of Technology**: VLFM, Habitat-Web
 - **Google DeepMind**: SpatialVLM
+- **Peking University**: Space-R, VoroNav, InstructNav
 - **Huawei Noah's Ark Lab**: SpatialCoT, Mem2Ego
+- **NVIDIA**: Cosmos-reason
+- **Beihang University**: Robo-Refer
 
 **Applications**: VSI-Bench, ERQA, Where2Place, RoboVQA, and other 2D QA benchmarks
 
@@ -246,20 +256,19 @@ Specialized for 2D visual reasoning benchmarks and embodied question answering t
 
 Advanced models designed for 3D scene understanding and spatial reasoning tasks.
 
+- **Shanghai AI Lab**: Grounded-3D-LLM, GPT4Scene
 - **Beijing Jiaotong University / Peking University**: PhysVLM, UniNavid, Navid
-- **The University of Hong Kong**: EmbodiedGPT, Video-3D LLM, LLaVA-3D, GPT4Scene
-- **The Chinese University of Hong Kong**: Video-3D LLM, LLaVA-3D
-- **Shanghai AI Lab & Zhejiang University**: Grounded-3D-LLM
-- **Beijing University of Posts and Telecom**: 3DMIT
+- **The University of Hong Kong**: Video-3D LLM, LLaVA-3D, GPT4Scene
+- **The Chinese University of Hong Kong**: Video-3D LLM
 - **UMass Amherst**: 3D-Mem
 
-**Applications**: ScanQA, SQA3D, Scan2Cap, and other 3D QA benchmarks
+**Applications**: ScanQA, SQA3D, Scan2Cap, ScanRefer, Multi3DRefer, and other 3D QA benchmarks
 
 ---
 
 ## How to Evaluate
 
-Embodied Arena extensively supports comprehensive evaluation of models from different sources (open-source, close-source) by different means (model parameters, API), offering flexibility and convenience for users to join. The platform leverages a diverse range of well-curated embodied AI benchmarks, ensuring high alignment with canonical evaluation methods and the best completeness compared to prior works.
+Embodied Arena extensively supports comprehensive evaluation of models from different sources (open-source, closed-source) by different means (model parameters, API), offering flexibility and convenience for users to join. The platform leverages a diverse range of well-curated embodied AI benchmarks, ensuring high alignment with canonical evaluation methods and the best completeness compared to prior works.
 
 ### **Evaluation Metrics**
 
@@ -267,20 +276,22 @@ During the evaluation phase, we select the corresponding evaluation metric based
 
 #### **Embodied Question Answering**
 
-- Accuracy Based on Exact Matching
+- **Accuracy Based on Exact Matching**
   - Applied to benchmarks: VSI-Bench, Where2Place, ERQA, etc.
-- Accuracy Based on Fuzzy Matching
+- **Accuracy Based on Fuzzy Matching**
   - **Rule-based Metric** (e.g., CIDEr, BLEU, MRA): RoboVQA, Scan2Cap, ScanQA, etc.
   - **LLM-based Metric**: OpenEQA, UniEQA, etc.
 
 #### **Embodied Navigation**
 
-- Success Rate
-  - Applied to benchmarks: EB-Navigation, HSSD, R2R, etc.
+- **Success Rate**
+  - Applied to benchmarks: EB-Navigation, MP3D, HM3D, R2R-CE, RxR-CE, etc.
+- **Path Length Weighted Success Rate (SPL)**
+  - Evaluates navigation efficiency by considering both success and path optimality
 
 #### **Embodied Task Planning**
 
-- Success Rate
+- **Success Rate**
   - Applied to benchmarks: EB-ALFRED, EB-Habitat, ET-Plan-Bench, etc.
 
 ### **Update Frequency**
@@ -317,7 +328,7 @@ During the evaluation phase, we select the corresponding evaluation metric based
 **How to Contribute Benchmarks**:
 
 1. Design innovative evaluation tasks for embodied AI
-2. Ensure alignment with our capability taxonomy
+2. Ensure alignment with our capability taxonomy by mapping your benchmark's native capabilities to our 7 core capabilities and 25 fine-grained dimensions
 3. Submit benchmark proposals with comprehensive documentation
 4. Collaborate with the community to refine and improve evaluation methods
 
