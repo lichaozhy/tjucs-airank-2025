@@ -8,9 +8,8 @@ itemList:
     modelList:
       - Navid
       - UniNavid
-      - RoboBrain1.0-7B
-      - RoboBrain2.0-7B
-      - RoboBrain2.0-32B
+      - RoboBrain1.0
+      - RoboBrain2.0
       - LEO
       - MapNav
   - organizationList:
@@ -22,26 +21,6 @@ itemList:
       - GPT4Scene
       - navillm
       - StreamVLN
-  - organizationList:
-      - Noah's Ark Lab
-    modelList:
-      - Noah(UniE-VLM)
-      - OmniEVA
-      - Mem2Ego
-      - SpatialCoT
-  - organizationList:
-      - Tianjin University
-    modelList:
-      - Embodied-FSD
-      - Embodied-R1-3B
-      - RoboAnnotatorX
-      - HuLE-Nav
-  - organizationList:
-      - Chinese University of Hong Kong
-    modelList:
-      - Video-3D LLM
-      - Video-3D LLM (16 frames)
-      - Video-3D LLM (32 frames)
   - organizationList:
       - Georgia Institute of Technology
     modelList:
@@ -60,6 +39,16 @@ itemList:
       - Space-R
       - VoroNav
       - InstructNav
+  - organizationList:
+      - Noah's Ark Lab
+    modelList:
+      - Noah(UniE-VLM)
+      - OmniEVA
+  - organizationList:
+      - Tianjin University
+    modelList:
+      - Embodied-R1-3B
+      - HuLE-Nav
   - organizationList:
       - Google DeepMind
     modelList:
@@ -86,13 +75,13 @@ itemList:
       - EmbodiedGPT
       - GPT4Scene-HDM
   - organizationList:
+      - Chinese University of Hong Kong
+    modelList:
+      - Video-3D LLM
+  - organizationList:
       - Beihang University
     modelList:
       - Robo-Refer
-  - organizationList:
-      - Beijing University of Posts and Telecommunications
-    modelList:
-      - 3DMIT
   - organizationList:
       - Boston University
     modelList:
@@ -110,10 +99,6 @@ itemList:
     modelList:
       - SpatialBot
   - organizationList:
-      - UMass Amherst
-    modelList:
-      - 3D-Mem
-  - organizationList:
       - University of California
     modelList:
       - ESC
@@ -125,4 +110,6 @@ itemList:
       - University of Washington
     modelList:
       - RoboPoint
+
 ---
+
