@@ -8,8 +8,11 @@
 			flat
 			square
 			bordered
-			class="full-height"
+			class="full-height cursor-pointer"
+			:class="{ 'bg-grey-2': hover }"
 			@click="navigate"
+			@mouseenter="hover = true"
+			@mouseleave="hover = false"
 		>
 			<q-card-section>
 				<q-badge
@@ -20,22 +23,9 @@
 					floating
 				/>
 
-				<q-btn
-					size="lg"
-					flat
-					dense
-					class="q-px-none full-width"
-					:to="{ name: 'app.benchmark.detail', params: { id: benchmark.id } }"
-					no-caps
-					><div class="full-width text-left row">
-						<span>{{ benchmark.name }}</span>
-						<q-icon
-							name="link"
-							size="sm"
-							color="primary"
-							class="q-ml-sm"
-						/></div
-				></q-btn>
+				<div class="text-h5 ">
+					<span>{{ benchmark.name }}</span>
+				</div>
 
 				<div class="text-caption text-grey-9 ellipsis">
 					<span>
@@ -99,9 +89,10 @@
 
 <script setup lang="ts">
 import type * as Spec from 'src/spec';
-import { computed } from 'vue';
+import { computed, ref } from 'vue';
 
 const CUTTENT_YEAR = new Date().getFullYear();
+const hover = ref<boolean>(false);
 
 const { benchmark } = defineProps<{
 	benchmark: Spec.Benchmark.Type;
