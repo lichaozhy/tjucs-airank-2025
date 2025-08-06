@@ -57,10 +57,7 @@ The scoring rules for the embodied capability leaderboards and the embodied task
 
 - Embodied Task Leaderboards
 
-  Given $N$ benchmarks, let there be a benchmark $B^n(n=1,2,\cdots, N)$ consisting of $M$ fine-grained original capability dimensions. For each capability dimension $m(m=1,2,\cdots,M)$:
-  $k^n_m$: the total number of questions in the $m$-th capability dimension.
-  $c^n_m$: the number of questions answered correctly in the $m$-th capability dimension.
-  Each question has a score in the interval $[0,1]$.
+  Given $N$ benchmarks, let there be a benchmark $B^n(n=1,2,\cdots, N)$ consisting of $M$ fine-grained original capability dimensions. For each capability dimension $m(m=1,2,\cdots, M)$, $k^n_m$ denotes the total number of questions in the $m$-th capability dimension, and $c^n_m$ is the number of questions answered correctly in the $m$-th capability dimension. Each question has a score in the interval $[0,1]$.
 
   - Score Calculation for a Single Benchmark
 
@@ -78,11 +75,7 @@ The scoring rules for the embodied capability leaderboards and the embodied task
 
 - Embodied Capability Leaderboards
 
-  Given $N$ benchmarks, let there be a benchmark $B^n(n=1,2,\cdots, N)$ consisting of $M$ fine-grained original capability dimensions and $P$ core capabilities. For each fine-grained capability dimension $m(m=1,2,\cdots,M)$:
-
-  $k^n_m$: the total number of questions in the $m$-th capability dimension. (Note: If the benchmark has multiple original capability dimensions mapped to the capability dimension, then $k^n_m$ is the sum of the number of questions in the multiple original capability dimensions.)
-
-  $c^n_m$: the number of questions answered correctly in the $m$-th capability dimension.
+  Given $N$ benchmarks, let there be a benchmark $B^n(n=1,2,\cdots, N)$ consisting of $M$ fine-grained original capability dimensions and $P$ core capabilities. For each fine-grained capability dimension $m(m=1,2,\cdots, M)$, $k^n_m$ denotes the total number of questions in the $m$-th capability dimension, and $c^n_m$ is the number of questions answered correctly in the $m$-th capability dimension. (Note: If the benchmark has multiple original capability dimensions mapped to the capability dimension, then $k^n_m$ is the sum of the number of questions in the multiple original capability dimensions.)
 
   Each question has a score in the interval $[0,1]$.
 
