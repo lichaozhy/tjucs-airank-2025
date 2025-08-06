@@ -1,6 +1,6 @@
 <template>
 	<q-table
-		class="app-rank-table fixed-layout-table width-full"
+		class="app-rank-table width-full"
 		table-style="overflow-y: hidden;"
 		:rows="props.rows"
 		:columns="columnList"
@@ -38,7 +38,6 @@
 					:title="column.label"
 					>{{ column.label }}</q-th
 				>
-				<q-th></q-th>
 			</q-tr>
 			<q-tr :props="slotProps">
 				<q-th
@@ -118,7 +117,7 @@ import type { QTable, QTableProps } from 'quasar';
 import { computed, onMounted, ref, watch } from 'vue';
 
 import AppRankBadge from 'components/RankBadge.vue';
-import { toNoneOrFixed, getColumnEMWidth } from 'components/utils';
+import { toNoneOrFixed } from 'components/utils';
 
 export type Score = number | null;
 
@@ -141,7 +140,7 @@ export interface ColumnOptions {
 	label: string;
 	field: string | ((data: ModelData) => unknown);
 	align?: ColumnAlignment;
-	headerStyle: string;
+	headerStyle?: string;
 	[key: string]: unknown;
 }
 
@@ -158,7 +157,7 @@ const PREFIX_COLUMN_LIST: ColumnOptions[] = [
 		align: 'center',
 		classes: 'app-cell-sticky',
 		headerClasses: 'app-cell-sticky',
-		headerStyle: 'width: 4em;padding: 0 !important;',
+		headerStyle: 'width: 4em;min-width: 4em;padding: 0 !important;',
 	},
 	{
 		name: 'model',
@@ -168,16 +167,7 @@ const PREFIX_COLUMN_LIST: ColumnOptions[] = [
 		classes: 'app-cell-sticky',
 		headerClasses: 'app-cell-sticky',
 		style: 'left:4em',
-		headerStyle: 'width: 260px;left:4em',
-	},
-];
-
-const SUFFIX_COLUNM_LIST = [
-	{
-		name: 'blank',
-		label: ' ',
-		field: 'blank',
-		style: 'border-bottom-width: 0',
+		headerStyle: 'width: 260px;min-width:260px;left:4em',
 	},
 ];
 
@@ -268,19 +258,16 @@ const columnList = computed(() => {
 	const propertyColumnList: ColumnOptions[] = [];
 
 	for (const [index, options] of props.columns.entries()) {
-		const styleList = [`width:${getColumnEMWidth(options.name.length)}em`];
-
 		propertyColumnList.push({
 			name: `item(${index})`,
 			field: (data) => data.scores[index],
 			label: options.name,
 			align: 'right',
 			sortable: true,
-			headerStyle: styleList.join(';'),
 		});
 	}
 
-	return [...PREFIX_COLUMN_LIST, ...propertyColumnList, ...SUFFIX_COLUNM_LIST];
+	return [...PREFIX_COLUMN_LIST, ...propertyColumnList];
 });
 
 onMounted(() => {
