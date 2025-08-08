@@ -18,11 +18,11 @@
 			:to="{ name: 'app.rule' }"
 			no-caps
 		></q-btn>
-		<q-img
-			class="q-my-xl"
+		<app-markdown-html
+			class="text-grey-8"
 			style="max-width: 70em"
-			src="/image/evaluation-figure.png"
-		></q-img>
+			src="page/home/evaluation/detail"
+		></app-markdown-html>
 	</div>
 </template>
 
