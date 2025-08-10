@@ -49,7 +49,7 @@ onMounted(() => {
 					color: '#111',
 					borderRadius: 3,
 					padding: [3, 5],
-					fontSize: 16,
+					fontSize: 12,
 				},
 				axisLabel: {
 					show: true,
