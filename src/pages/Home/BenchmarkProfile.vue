@@ -84,14 +84,14 @@
 						:name="benchmark.id"
 					>
 						<app-markdown-html
-							style="min-height: 12em"
+							style="min-height: 10em"
 							:src="`benchmark/${benchmark.id}/profile`"
 						></app-markdown-html>
 					</q-tab-panel>
 				</q-tab-panels>
 			</div>
 		</div>
-		<q-toolbar class="q-mt-lg justify-around">
+		<q-toolbar class="q-mt-xs justify-around">
 			<q-btn
 				label="View Leaderboards →"
 				flat
