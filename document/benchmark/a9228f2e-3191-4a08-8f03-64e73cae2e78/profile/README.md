@@ -4,3 +4,6 @@ to evaluate free space reference using spatial relations. The images are
 collected from various cluttered environments. Each image is labeled with a
 sentence describing the desired some free space and a mask of the desired
 region.
+
+Reference:  
+Yuan W, Duan J, Blukis V, et al. Robopoint: A vision-language model for spatial affordance prediction for robotics[J]. arXiv preprint arXiv:2406.10721, 2024.

@@ -6,3 +6,6 @@ total of 5378 question-answer pairs, of which 4445 are completely different
 questions format. By integrating multiple existing EQA benchmarks with newly
 annotated datasets and performing manual review, UniEQA effectively ensures its
 reliability, comprehensiveness and diversity.
+
+Reference:  
+Zhang, Min and Fu, Xian and Hao, Jianye, and Tang, Hongyao and Zheng, Yan and Han, Peilong:UniEQA & UniEval: A Unified Benchmark and Evaluation Platform for  Multimodal Foundation Models in Embodied Question Answering, 2025

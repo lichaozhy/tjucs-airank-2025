@@ -4,3 +4,6 @@ R2R and a pre-computed shortest path following the waypoints via low-level
 actions. The low-level action space of R2R-CE makes trajectories
 significantly longer horizon tasks – with an average of 55.88 steps
 compared to the 4-6 in R2R.
+
+Reference:  
+Zhang J, Wang K, Xu R, et al. Navid: Video-based vlm plans the next step for vision-and-language navigation[J]. arXiv preprint arXiv:2402.15852, 2024.

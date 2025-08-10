@@ -1,1 +1,4 @@
 The Habitat-Matterport 3D (HM3D) dataset is a larger and more diverse dataset, curated for high-quality geometry and semantic richness. It comprises hundreds of high-resolution, richly annotated environments that provide a more challenging benchmark for ObjectNav. The HM3D-based ObjectNav benchmark emphasizes robustness and generalization due to the increased variability in scene structure, clutter, and scale. It supports more complex navigation scenarios, often requiring more advanced semantic reasoning and spatial memory capabilities. Evaluations use the same core metrics as MP3D (SR, SPL) but with greater emphasis on large-scale generalization.
+
+Reference:  
+Ramakrishnan S K, Gokaslan A, Wijmans E, et al. Habitat-matterport 3d dataset (hm3d): 1000 large-scale 3d environments for embodied ai[J]. arXiv preprint arXiv:2109.08238, 2021.

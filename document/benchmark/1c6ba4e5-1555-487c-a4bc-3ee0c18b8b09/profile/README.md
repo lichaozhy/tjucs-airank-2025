@@ -8,3 +8,6 @@ poses of instruction creators and validators. VLN-CE RxR dataset contains
 instructions of fine granularity that describe rich landmarks and longer
 trajectories, which establishes a large language and visual gap that is
 suitable for evaluating the generalization potential of the methods.
+
+Reference:  
+Krantz J, Wijmans E, Majumdar A, et al. Beyond the nav-graph: Vision-and-language navigation in continuous environments[C]//European Conference on Computer Vision. Cham: Springer International Publishing, 2020: 104-120.

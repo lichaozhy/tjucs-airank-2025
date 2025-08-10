@@ -10,3 +10,6 @@ collected from 800 indoor scenes based on the ScanNet dataset. It poses
 unique challenges in linking natural language to spatially grounded visual
 information, offering a comprehensive benchmark for evaluating multimodal
 reasoning in 3D environments.
+
+Reference:  
+Azuma D, Miyanishi T, Kurita S, et al. Scanqa: 3d question answering for spatial scene understanding[C]//proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2022: 19129-19139.
