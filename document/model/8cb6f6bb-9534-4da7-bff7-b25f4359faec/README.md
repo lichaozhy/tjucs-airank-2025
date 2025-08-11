@@ -73,7 +73,6 @@ score:
         - 14.55
         - 27.78
         - 32.41
-        - null
     ba0be521-6b10-4881-964c-97cd4d2d6070:
       0:
         - 37.74
@@ -642,7 +641,7 @@ score:
         - null
         - null
         - null
-        - null
+        - 21.15
         - null
         - null
         - null
@@ -654,8 +653,14 @@ score:
         - null
         - null
         - null
+        - 21.15
+        - null
+      legacy:
         - null
         - null
+        - null
+        - 21.15
+        - 21.15
     8b56c6cf-becf-4bef-b612-1804d2f20cda:
       1:
         - null
@@ -989,7 +994,7 @@ score:
         - null
         - null
         - null
-        - 0.0
+        - 4.2299999999999995
         - 9108.01
       1:
         - null
@@ -1012,7 +1017,7 @@ score:
         - 0.0
         - 0.0
         - 0.0
-        - null
+        - 21.15
         - 0.0
         - null
         - null

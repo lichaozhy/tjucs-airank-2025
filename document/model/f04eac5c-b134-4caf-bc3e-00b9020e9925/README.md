@@ -113,7 +113,6 @@ score:
         - 15.23
         - 45.67
         - 36.2
-        - null
     025ca0fe-f04c-4d17-9f4c-9d1aca6666bd:
       0:
         - null
@@ -594,7 +593,7 @@ score:
         - null
         - null
         - null
-        - null
+        - 55.95
         - null
         - null
         - null
@@ -606,8 +605,14 @@ score:
         - null
         - null
         - null
+        - 55.95
+        - null
+      legacy:
         - null
         - null
+        - null
+        - 55.95
+        - 55.95
     8b56c6cf-becf-4bef-b612-1804d2f20cda:
       1:
         - null
@@ -984,7 +989,7 @@ score:
         - null
         - null
         - null
-        - 28.76820936397414
+        - 34.20456749117931
         - null
       1:
         - null
@@ -1007,7 +1012,7 @@ score:
         - 33.45164318981221
         - 29.09175019275251
         - 23.88148148148148
-        - null
+        - 55.95
         - 28.64796259185037
         - null
         - null

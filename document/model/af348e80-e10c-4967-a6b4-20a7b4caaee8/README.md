@@ -50,14 +50,14 @@ score:
         - null
         - null
         - null
-        - null
+        - 56.9
       0:
         - null
         - null
         - null
         - null
         - null
-        - null
+        - 56.9
         - null
         - null
     1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09:
@@ -89,14 +89,14 @@ score:
         - null
         - null
         - null
-        - null
+        - 52.9
       0:
         - null
         - null
         - null
         - null
         - null
-        - null
+        - 52.9
         - null
         - null
     73de273a-7d38-40c0-b869-2b2e6156c897:
@@ -143,7 +143,7 @@ score:
         - null
         - null
         - null
-        - null
+        - 55.96976744186046
         - null
         - null
       1:
@@ -171,5 +171,5 @@ score:
         - null
         - null
         - null
-        - null
+        - 55.96976744186046
 ---

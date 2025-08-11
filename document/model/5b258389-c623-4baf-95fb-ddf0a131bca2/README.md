@@ -116,7 +116,6 @@ score:
         - 19.44
         - 55
         - 41.36
-        - null
     025ca0fe-f04c-4d17-9f4c-9d1aca6666bd:
       0:
         - null
