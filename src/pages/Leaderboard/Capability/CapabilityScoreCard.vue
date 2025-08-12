@@ -4,7 +4,7 @@
 		class="app-echart-radar row justify-center"
 		style="height: 560px"
 	>
-		<div class="col-lg-10 col-md-12 relative-position">
+		<div class="col-lg-10 col-12 relative-position">
 			<AppCapabilityRadarChart
 				:indicator-list="radarIndicatorList"
 				:data-list="radarDataList"

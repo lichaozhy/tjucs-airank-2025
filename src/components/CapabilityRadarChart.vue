@@ -39,12 +39,13 @@ onMounted(() => {
 		chart.setOption({
 			legend: {
 				orient: 'vertical',
-				left: 20,
-				top: 'middle',
+				left: 0,
+				bottom: '10%',
 				data: props.dataList.map(({ name }) => name),
 			},
 			radar: {
 				indicator: props.indicatorList.map(({ name }) => ({ name, max: 100 })),
+				radius: '80%',
 				axisName: {
 					color: '#111',
 					borderRadius: 3,
