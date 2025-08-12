@@ -1,5 +1,5 @@
 ---
-name: InternVL2_5-8B-MPO
+name: InternVL2.5-8B-MPO
 component:
   vision:
     - InternViT-300M-448px-V2_5

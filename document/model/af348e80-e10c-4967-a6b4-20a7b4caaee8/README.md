@@ -11,7 +11,7 @@ qa:
   - 2D
 dimension:
   - 2D
-website: hhttps://streamvln.github.io/
+website: https://streamvln.github.io/
 navigation: true
 taskPlanning: true
 reason: true

@@ -1,0 +1,2 @@
+On the EB-ALFRED and EB-Habitat datasets, Embodied Arena use the EmbodiedBench evaluation framework to flexibly replace the base model to achieve a quantitative evaluation of the task planning performance of different models.
+On the ET-Plan-Bench dataset, Embodied Arena use the ET-Plan-Bench evaluation framework to flexibly replace the base model to achieve a quantitative evaluation of the task planning performance of different models.

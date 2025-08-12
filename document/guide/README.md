@@ -2,7 +2,7 @@
 
 ## Platform Overview
 
-**Embodied Arena** is an open-source, comprehensive, and user-friendly evaluation system and platform for embodied AI models. It features three types of core embodied tasks, a diverse range of high-quality benchmarks, LLM-driven automatic evaluation data generation, and a systematic embodied capability taxonomy. The platform aims to present an up-to-date overview of embodied capabilities of advanced models and facilitate the identification of critical research areas, thereby accelerating progress in the field of Embodied AI.
+**Embodied Arena** is an open-source, comprehensive, and user-friendly evaluation system and platform for embodied AI models. It features three types of core embodied tasks, a diverse range of high-quality benchmarks, LLM-driven automated evaluation data generation, and a systematic embodied capability taxonomy. The platform aims to present an up-to-date overview of embodied capabilities of advanced models and facilitate the identification of critical research areas, thereby accelerating progress in the field of Embodied AI.
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: InternVL2_5-38B
+name: InternVL2.5-38B
 component:
   vision:
     - InternViT-6B-448px-V2_5

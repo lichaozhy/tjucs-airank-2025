@@ -7,7 +7,7 @@ from different sources (i.e., open-source, closed-source) by different
 means (e.g., model weights, API), offering flexibility and convenience
 for users to join. For evaluation data, Embodied Arena integrates a
 diverse range of existing well-curated Embodied AI benchmarks, and
-moreover, it is greatly powered by a unique LLM-driven automatic generation
+moreover, it is greatly powered by a unique LLM-driven automated generation
 pipeline for targeted evaluation data. Hence, Embodied Arena has prominent
 superiorities in providing diverse scenarios and tasks, breaking the
 scaling bottleneck of manually constructed data, keeping evaluation data
