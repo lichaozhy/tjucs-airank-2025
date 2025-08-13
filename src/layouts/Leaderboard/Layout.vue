@@ -26,14 +26,11 @@
 					<div class="row no-wrap">
 						<div class="col">Embodied {{ leaderboard.name }} Leaderboard</div>
 						<q-btn-dropdown
-							:class="{
-								invisible: $route.params.leaderboardId !== leaderboard.id,
-							}"
 							flat
 							dense
 							rounded
-							@pointerdown.stop
-							@mousedown.stop
+							v-model="sourceMenuShowingRecord[leaderboard.id]!"
+							transition-show="none"
 						>
 							<q-list dense>
 								<q-item-label header>{{
@@ -89,12 +86,24 @@
 </template>
 
 <script setup lang="ts">
-import { onBeforeMount, reactive, ref, provide, watch, computed } from 'vue';
+import {
+	onBeforeMount,
+	reactive,
+	ref,
+	provide,
+	watch,
+	computed,
+	onBeforeUnmount,
+} from 'vue';
 import { useRoute } from 'vue-router';
 
+import AppBannerWithLayout from 'layouts/BannerWith.vue';
 import * as Spec from 'src/spec';
 import * as Backend from 'src/backend';
-import AppBannerWithLayout from './BannerWith.vue';
+import { useState } from './state';
+
+const { fromURL } = useState();
+const sourceMenuShowingRecord = ref<Record<string, boolean>>({});
 
 interface BenchmarkAbstract {
 	id: string;
@@ -130,11 +139,11 @@ function setExclude(record: Record<string, boolean>) {
 }
 
 const filteredBenchmarkList = computed(() => {
-	return benchmarkList.value.filter(data => !exclude.value[data.id]);
+	return benchmarkList.value.filter((data) => !exclude.value[data.id]);
 });
 
 const filteredSummaryList = computed(() => {
-	return summaryList.value.filter(data => !exclude.value[data.id]);
+	return summaryList.value.filter((data) => !exclude.value[data.id]);
 });
 
 watch(
@@ -196,6 +205,10 @@ onBeforeMount(async () => {
 	benchmarkList.value = benchmarkDataList.map(({ id, name }) => ({ id, name }));
 	summaryList.value = summaryDataList.map(({ id, name }) => ({ id, name }));
 
+	for (const { id } of leaderboardListData) {
+		sourceMenuShowingRecord.value[id] = id === leaderboardId && !fromURL.value;
+	}
+
 	for (const benchmark of benchmarkDataList) {
 		selectedBenchmark[benchmark.id] = false;
 	}
@@ -211,6 +224,8 @@ onBeforeMount(async () => {
 
 	isLoaded.value = true;
 });
+
+onBeforeUnmount(() => (fromURL.value = false));
 
 defineOptions({ name: 'AppLeaderboardLayout' });
 </script>
