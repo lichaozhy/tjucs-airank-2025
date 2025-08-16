@@ -5,7 +5,7 @@
 	>
 		<div class="col-12">
 			<app-markdown-html
-				style="min-height: 6em;"
+				style="min-height: 4em;"
 				class="text-grey-9"
 				:src="`page/leaderboard/task/${leaderboardId}`"
 			></app-markdown-html>

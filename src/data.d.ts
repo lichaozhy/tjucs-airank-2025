@@ -183,6 +183,13 @@ export interface DataType {
 	guide: {
 		$data: {};
 	};
+	component: {
+		'score-card': {
+			hint: {
+				$data: {};
+			};
+		};
+	};
 	leaderboard: Leaderboard;
 	model: {
 		[key: string]: { $data: Model };
