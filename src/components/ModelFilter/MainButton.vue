@@ -5,14 +5,15 @@
 		dropdown-icon="filter_alt"
 		outline
 		square
-		content-class="no-border-radius overflow-hidden"
+		content-class="no-border-radius"
+		transition-show="none"
 	>
 		<template #label>
 			<span>{{ props.models.length }}</span>
 		</template>
 
 		<q-list
-			style="width: 30em"
+			style="width: 50vw; max-width: 600px; min-width: 300px;"
 			dense
 		>
 			<q-item-label
@@ -28,7 +29,7 @@
 				<q-item-label
 					header
 					caption
-					class="text-capitalize q-py-sm"
+					class="text-capitalize text-weight-bold q-py-sm"
 					>{{ name }}</q-item-label
 				>
 				<q-item>
@@ -37,7 +38,7 @@
 						v-bind="props"
 					></component>
 				</q-item>
-				<q-separator />
+				<q-separator spaced />
 			</template>
 		</q-list>
 		<q-toolbar>
@@ -66,50 +67,6 @@ import AppItemRange from './Item/Range.vue';
 const manager = new Item.FilterItemManager();
 
 provide(ItemSymbol.MANAGER, manager);
-
-const itemList = computed(() => {
-	return [
-		{
-			name: 'vision',
-			ItemComponent: AppItemEnum,
-			props: {
-				id: 'vision',
-			},
-		},
-		{
-			name: 'language',
-			ItemComponent: AppItemEnum,
-			props: {
-				id: 'language',
-			},
-		},
-		{
-			name: 'author',
-			ItemComponent: AppItemEnum,
-			props: {
-				id: 'author',
-			},
-		},
-		{
-			name: 'size',
-			ItemComponent: AppItemRange,
-			props: {
-				id: 'size',
-				min: 1,
-				max: 700,
-			},
-		},
-		{
-			name: 'year',
-			ItemComponent: AppItemRange,
-			props: {
-				id: 'year',
-				min: 2017,
-				max: 2025,
-			},
-		},
-	];
-});
 
 export type ValueGroup = {
 	vision: string[];
@@ -148,9 +105,66 @@ const group = ref<ValueGroup>({
 	year: [],
 });
 
+const itemList = computed(() => {
+	const { vision, language, author, size, year } = group.value;
+
+	return [
+		{
+			name: 'vision',
+			ItemComponent: AppItemEnum,
+			props: {
+				id: 'vision',
+				values: vision,
+			},
+		},
+		{
+			name: 'language',
+			ItemComponent: AppItemEnum,
+			props: {
+				id: 'language',
+				values: language,
+			},
+		},
+		{
+			name: 'author',
+			ItemComponent: AppItemEnum,
+			props: {
+				id: 'author',
+				values: author,
+			},
+		},
+		{
+			name: 'size',
+			ItemComponent: AppItemRange,
+			props: {
+				id: 'size',
+				min: Math.min(...size),
+				max: Math.max(...size),
+			},
+		},
+		{
+			name: 'year',
+			ItemComponent: AppItemRange,
+			props: {
+				id: 'year',
+				min: Math.min(...year),
+				max: Math.max(...year),
+			},
+		},
+	];
+});
+
 watch(() => props.models, async (modelList) => {
 	const idList = modelList.map(({ id }) => id);
 	const _group = await Backend.API.Model.PropertyRecord.query(...idList);
+
+	group.value = {
+		vision: Object.keys(_group.vision),
+		language: Object.keys(_group.language),
+		author: Object.keys(_group.author),
+		size: Object.keys(_group.size).map(Number),
+		year: Object.keys(_group.year).map(Number),
+	};
 
 	emit('filtered', [...modelList]);
 }, { immediate: true });

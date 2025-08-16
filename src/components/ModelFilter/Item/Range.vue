@@ -1,5 +1,5 @@
 <template>
-	<q-item-section class="q-pt-lg">
+	<q-item-section class="q-pt-lg q-px-md">
 		<q-range
 			v-model="range"
 			:min="props.min"
@@ -16,15 +16,23 @@
 </template>
 
 <script setup lang="ts">
-import { inject, onBeforeMount, onUnmounted, ref, watch } from 'vue';
-import * as Item from './symbol';
+import { onBeforeMount, onUnmounted, ref, watch } from 'vue';
+import { useManager } from './use';
 
 type Range = { min: number, max: number };
 
-const manager = inject(Item.MANAGER);
-if (manager === undefined) {
-	throw new Error('<AppModelFilterItemRange> MUST in <AppModelFilter>.');
-}
+const props = withDefaults(defineProps<{
+	id: string;
+	min: number;
+	max: number;
+	step?: number;
+}>(), {
+	step: 1,
+});
+
+const emit = defineEmits<{
+	configure: [(value: number) => boolean]
+}>();
 
 function reset() {
 	range.value = {
@@ -32,6 +40,9 @@ function reset() {
 		max: props.max,
 	};
 }
+
+const { manager } = useManager();
+const range = ref<Range>({ min: props.min, max: props.max });
 
 manager.register(reset);
 
@@ -48,23 +59,6 @@ onBeforeMount(() => {
 	}
 });
 
-const props = withDefaults(defineProps<{
-	id: string;
-	min: number;
-	max: number;
-	step?: number;
-}>(), {
-	step: 1,
-});
-
-const emit = defineEmits<{
-	configure: [(value: number) => boolean]
-}>();
-
-const range = ref<Range>({
-	min: props.min,
-	max: props.max,
-});
 
 watch(range, ({ min, max }) => {
 	emit('configure', value => value <= max && value >- min);
