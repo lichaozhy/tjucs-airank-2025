@@ -44,7 +44,7 @@ const filter = defineModel<Filter>('filter', { required: true });
 
 watch(selected, (selected) => {
 	filter.value = (value) => selected[value] === true;
-});
+}, { deep: true });
 
 onMounted(() => {
 	reset.value = () => {
