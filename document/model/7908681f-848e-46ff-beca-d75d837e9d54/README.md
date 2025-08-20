@@ -635,7 +635,7 @@ score:
         - null
         - null
         - null
-        - null
+        - 0
         - null
         - null
         - null
@@ -647,8 +647,14 @@ score:
         - null
         - null
         - null
+        - 0
+        - null
+      legacy:
         - null
         - null
+        - null
+        - 0
+        - 0
     8b56c6cf-becf-4bef-b612-1804d2f20cda:
       1:
         - null
@@ -982,7 +988,7 @@ score:
         - null
         - null
         - null
-        - 0.2276995304274648
+        - 0.18215962434197183
         - null
       1:
         - null
@@ -1005,7 +1011,7 @@ score:
         - 0.9107981217098592
         - 0.0
         - 0.0
-        - null
+        - 0.0
         - 0.0
         - null
         - null

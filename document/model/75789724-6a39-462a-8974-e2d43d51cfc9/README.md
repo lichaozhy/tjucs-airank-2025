@@ -625,7 +625,7 @@ score:
         - null
         - null
         - 48.9
-        - 55.07
+        - 48.9
       1:
         - null
         - null
