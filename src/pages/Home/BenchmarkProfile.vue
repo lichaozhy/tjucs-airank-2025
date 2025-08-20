@@ -84,7 +84,7 @@
 						:name="benchmark.id"
 					>
 						<app-markdown-html
-							style="min-height: 10em"
+							style="min-height: 12.5em"
 							:src="`benchmark/${benchmark.id}/profile`"
 						></app-markdown-html>
 					</q-tab-panel>

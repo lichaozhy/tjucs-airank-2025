@@ -7,5 +7,9 @@ questions format. By integrating multiple existing EQA benchmarks with newly
 annotated datasets and performing manual review, UniEQA effectively ensures its
 reliability, comprehensiveness and diversity.
 
-Reference:  
-Min Zhang and Xian Fu and Jianye Hao and Hongyao Tang and Yan Zheng and Peilong Han: UniEQA & UniEval: A Unified Benchmark and Evaluation Platform for  Multimodal Foundation Models in Embodied Question Answering, 2025
+<div class="text-caption">
+
+Reference:<br>
+Min Zhang and Xian Fu and Jianye Hao and Hongyao Tang and Yan Zheng and Peilong Han: UniEQA & UniEval: A Unified Benchmark and Evaluation Platform for Multimodal Foundation Models in Embodied Question Answering, 2025
+
+</div>

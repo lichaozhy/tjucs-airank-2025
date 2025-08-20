@@ -9,5 +9,9 @@ objects and their contextual relationships. Built on the ScanRefer dataset,
 Scan2Cap provides a challenging testbed for evaluating multimodal models that
 combine 3D perception with language capabilities.
 
-Reference:  
+<div class="text-caption">
+
+Reference:<br>
 Chen Z, Gholami A, Nießner M, et al. Scan2cap: Context-aware dense captioning in rgb-d scans[C]//Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2021: 3193-3203.
+
+</div>

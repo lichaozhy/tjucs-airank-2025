@@ -10,5 +10,9 @@ counting, or localization, ERQA emphasizes higher-level reasoning skills
 critical for physical interaction, making it a complementary addition to
 current evaluation suites.
 
-Reference:  
+<div class="text-caption">
+
+Reference:<br>
 Team G R, Abeyruwan S, Ainslie J, et al. Gemini robotics: Bringing ai into the physical world[J]. arXiv preprint arXiv:2503.20020, 2025.
+
+</div>

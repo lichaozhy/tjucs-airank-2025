@@ -9,5 +9,9 @@ instructions of fine granularity that describe rich landmarks and longer
 trajectories, which establishes a large language and visual gap that is
 suitable for evaluating the generalization potential of the methods.
 
-Reference:  
+<div class="text-caption">
+
+Reference:<br>
 Krantz J, Wijmans E, Majumdar A, et al. Beyond the nav-graph: Vision-and-language navigation in continuous environments[C]//European Conference on Computer Vision. Cham: Springer International Publishing, 2020: 104-120.
+
+</div>

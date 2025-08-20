@@ -50,7 +50,7 @@
 					animated
 					swipeable
 					infinite
-					style="height: 84em"
+					style="min-height: 75em"
 				>
 					<q-tab-panel
 						class="q-pa-none"

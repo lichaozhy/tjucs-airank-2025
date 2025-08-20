@@ -8,5 +8,9 @@ holistic scene understanding. PhyBlock includes 2600 block tasks (400
 assembly tasks, 2200 VQA tasks) and evaluates models across three key
 dimensions: partial completion, failure diagnosis, and planning robustness.
 
-Reference:  
+<div class="text-caption">
+
+Reference:<br>
 Ma L, Wen J, Lin M, et al. PhyBlock: A Progressive Benchmark for Physical Understanding and Planning via 3D Block Assembly[J]. arXiv preprint arXiv:2506.08708, 2025.
+
+</div>

@@ -10,5 +10,9 @@ tailored to these situations. These questions evaluate a broad spectrum of
 reasoning capabilities in intelligent agents, including spatial
 understanding, commonsense reasoning, navigation, and multi-hop inference.
 
-Reference:  
+<div class="text-caption">
+
+Reference:<br>
 Ma X, Yong S, Zheng Z, et al. Sqa3d: Situated question answering in 3d scenes[J]. arXiv preprint arXiv:2210.07474, 2022.
+
+</div>

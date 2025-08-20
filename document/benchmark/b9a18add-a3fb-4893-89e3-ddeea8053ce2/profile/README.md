@@ -7,5 +7,9 @@ creativity, and commonsense. The evaluation reveals significant limitations
 but also great potential in current MLLM-based agents, highlighting the
 importance of MineAnyBuild for advancing spatial intelligence in AI.
 
-Reference:  
+<div class="text-caption">
+
+Reference:<br>
 Wei Z, Lin B, Jiao Z, et al. MineAnyBuild: Benchmarking Spatial Planning for Open-world AI Agents[J]. arXiv preprint arXiv:2505.20148, 2025.
+
+</div>

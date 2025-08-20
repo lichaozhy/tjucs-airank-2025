@@ -4,5 +4,9 @@ models' abilities to generate spatial affordance and visual traces from natural
 language instructions, using metrics including point accuracy, trajectory
 MAE/RMSE, and GPT-based qualitative scoring.
 
-Reference:  
+<div class="text-caption">
+
+Reference:<br>
 Yifu Yuan and Haiqin Cui and Yibin Chen and Zibin Dong and Fei Ni and Longxin Kou and Jinyi Liu and Pengyi Li and Yan Zheng and Jianye Hao: From Seeing to Doing: Bridging Reasoning and Decision for Robotic Manipulation, 2025
+
+</div>
