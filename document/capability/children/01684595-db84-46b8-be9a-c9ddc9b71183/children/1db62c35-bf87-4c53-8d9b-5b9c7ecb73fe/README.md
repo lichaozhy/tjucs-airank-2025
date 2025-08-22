@@ -16,7 +16,7 @@ index: 2
 
 <div class="col-4">
 
-![alt text](objectState.png)
+![alt text](objectstate.png)
 
 </div>
 

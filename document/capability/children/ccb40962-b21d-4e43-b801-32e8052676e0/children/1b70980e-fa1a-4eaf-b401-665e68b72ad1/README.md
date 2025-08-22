@@ -14,7 +14,7 @@ index: 20
 
 <div class="col-4">
 
-![alt text](temporalReferencePlanning.png)
+![alt text](temporalreferenceplanning.png)
 
 </div>
 

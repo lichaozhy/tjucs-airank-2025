@@ -15,7 +15,7 @@ index: 21
 
 <div class="col-4">
 
-![alt text](knowledgeReferencePlanning.png)
+![alt text](knowledgereferenceplanning.png)
 
 </div>
 

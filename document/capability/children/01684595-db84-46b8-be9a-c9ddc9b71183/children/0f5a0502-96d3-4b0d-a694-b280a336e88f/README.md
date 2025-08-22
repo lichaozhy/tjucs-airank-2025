@@ -17,7 +17,7 @@ index: 1
 
 <div class="col-4">
 
-![alt text](objectProperty.png)
+![alt text](objectproperty.png)
 
 </div>
 

@@ -15,7 +15,7 @@ index: 10
 
 <div class="col-4">
 
-![alt text](generalKnowledge.png)
+![alt text](generalknowledge.png)
 
 </div>
 

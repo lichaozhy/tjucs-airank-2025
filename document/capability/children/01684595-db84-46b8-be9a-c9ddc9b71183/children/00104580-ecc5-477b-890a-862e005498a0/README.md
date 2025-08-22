@@ -17,7 +17,7 @@ index: 0
 
 <div class="col-4">
 
-![alt text](objectType.png)
+![alt text](objecttype.png)
 
 </div>
 

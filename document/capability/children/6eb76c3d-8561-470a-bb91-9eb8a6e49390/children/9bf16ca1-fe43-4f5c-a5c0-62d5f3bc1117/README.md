@@ -15,7 +15,7 @@ index: 8
 
 <div class="col-4">
 
-![alt text](temporalDescription.png)
+![alt text](temporaldescription.png)
 
 </div>
 

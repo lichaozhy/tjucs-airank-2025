@@ -18,7 +18,7 @@ index: 4
 
 <div class="col-4">
 
-![alt text](spatialRelationship.png)
+![alt text](spatialrelationship.png)
 
 </div>
 

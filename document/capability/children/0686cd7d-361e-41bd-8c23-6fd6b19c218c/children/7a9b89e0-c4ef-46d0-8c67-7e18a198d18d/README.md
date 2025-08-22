@@ -15,7 +15,7 @@ index: 6
 
 <div class="col-4">
 
-![alt text](spatialLocalization.png)
+![alt text](spatiallocalization.png)
 
 </div>
 

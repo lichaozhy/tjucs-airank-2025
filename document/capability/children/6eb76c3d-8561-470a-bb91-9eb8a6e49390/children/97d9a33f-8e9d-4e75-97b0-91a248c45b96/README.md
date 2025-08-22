@@ -16,7 +16,7 @@ index: 9
 
 <div class="col-4">
 
-![alt text](temporalOrder.png)
+![alt text](temporalorder.png)
 
 </div>
 

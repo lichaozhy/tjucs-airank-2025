@@ -15,7 +15,7 @@ index: 3
 
 <div class="col-4">
 
-![alt text](objectCount.png)
+![alt text](objectcount.png)
 
 </div>
 

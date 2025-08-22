@@ -15,7 +15,7 @@ index: 5
 
 <div class="col-4">
 
-![alt text](spatialDistance.png)
+![alt text](spatialdistance.png)
 
 </div>
 

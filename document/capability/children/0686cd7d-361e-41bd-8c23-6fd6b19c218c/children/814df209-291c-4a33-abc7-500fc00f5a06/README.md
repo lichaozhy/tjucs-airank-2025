@@ -14,7 +14,7 @@ index: 7
 
 <div class="col-4">
 
-![alt text](spatialSize.png)
+![alt text](spatialsize.png)
 
 </div>
 

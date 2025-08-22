@@ -18,7 +18,7 @@ index: 11
 
 <div class="col-4">
 
-![alt text](affordancePrediction.png)
+![alt text](affordanceprediction.png)
 
 </div>
 
