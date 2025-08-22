@@ -9,8 +9,7 @@ qa:
   - 2D
 dimension:
   - 2D
-website: 
-  https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-0-flash
+website: https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-0-flash
 navigation: true
 taskPlanning: true
 reason: true
@@ -991,7 +990,7 @@ score:
         - null
         - null
         - null
-        - 46.089696501999995
+        - 46.089696502739955
         - 2608.0099999999998
       1:
         - null
@@ -1011,11 +1010,11 @@ score:
         - null
         - null
         - null
-        - 49.78497652
-        - 41.86738628
-        - 40.61010101
+        - 49.78497652350235
+        - 41.86738627602159
+        - 40.61010101010101
         - 55.51
-        - 42.6760187
+        - 42.67601870407481
         - null
         - null
         - null

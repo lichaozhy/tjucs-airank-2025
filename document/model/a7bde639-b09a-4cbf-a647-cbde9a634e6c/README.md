@@ -572,7 +572,7 @@ score:
         - null
         - null
         - null
-        - null
+        - 0
         - null
         - null
         - null
@@ -584,8 +584,14 @@ score:
         - null
         - null
         - null
+        - 0
+        - null
+      legacy:
         - null
         - null
+        - null
+        - 0
+        - 0
     ed3fc303-b421-4e73-936a-e93a5aada777:
       1:
         - null
@@ -726,7 +732,7 @@ score:
         - 0.0
         - 0.0
         - 0.0
-        - null
+        - 0.0
         - 0.0
         - null
         - null

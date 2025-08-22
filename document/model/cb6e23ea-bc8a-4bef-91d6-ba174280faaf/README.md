@@ -13,8 +13,7 @@ qa:
   - 2D
 dimension:
   - 2D
-website: 
-  https://huggingface.co/collections/Qwen/qwen25-vl-6795ffac22b334a837c0f9a5
+website: https://huggingface.co/collections/Qwen/qwen25-vl-6795ffac22b334a837c0f9a5
 navigation: true
 taskPlanning: true
 reason: true
@@ -995,7 +994,7 @@ score:
         - null
         - null
         - null
-        - 13.4045429348
+        - 13.40454293492574
         - 3708.010000000001
       1:
         - null
@@ -1015,11 +1014,11 @@ score:
         - null
         - null
         - null
-        - 8.837089203
-        - 4.132613724
-        - 6.288215488
+        - 8.837089203249766
+        - 4.132613723978412
+        - 6.288215488215489
         - 46.7
-        - 1.064796259
+        - 1.064796259185037
         - null
         - null
         - null
