@@ -6,7 +6,7 @@ qa:
   - 2D
 dimension:
   - 2D
-website: https://arxiv.org/abs/2301.13166?utm_source=chatgpt.com
+website: https://arxiv.org/abs/2301.13166
 navigation: true
 taskPlanning: true
 reason: true
