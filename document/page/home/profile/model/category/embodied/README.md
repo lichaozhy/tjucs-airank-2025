@@ -110,6 +110,10 @@ itemList:
       - University of Washington
     modelList:
       - RoboPoint
+  - organizationList:
+      - University of California Berkeley
+    modelList:
+      -  VLMNav
 
 ---
 
