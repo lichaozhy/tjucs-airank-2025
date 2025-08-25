@@ -6,7 +6,7 @@ qa:
   - 2D
 dimension:
   - 2D
-website: https://arxiv.org/pdf/2502.13451
+website: https://arxiv.org/abs/2502.13451
 navigation: false
 taskPlanning: false
 reason: false
