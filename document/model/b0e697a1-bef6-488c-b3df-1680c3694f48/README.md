@@ -11,7 +11,7 @@ qa:
   - 3D
 dimension:
   - 3D
-website: https://github.com/ZzZZCHS/Chat-Scene
+website: https://javyduck.github.io/chatscene/
 navigation: false
 taskPlanning: false
 reason: false
