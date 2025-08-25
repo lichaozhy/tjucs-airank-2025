@@ -65,12 +65,12 @@ itemList:
       - SG-Nav
       - UniGoal
   - organizationList:
-      - UMass Embodied AGI Group
+      - UMass Amherst
     modelList:
       - 3D-LLM(BLIP2-flant5)
       - 3D-LLM(Flamingo)
   - organizationList:
-      - University of Hong Kong
+      - The University of Hong Kong
     modelList:
       - EmbodiedGPT
       - GPT4Scene-HDM
@@ -110,6 +110,10 @@ itemList:
       - University of Washington
     modelList:
       - RoboPoint
+  - organizationList:
+      - University of California Berkeley
+    modelList:
+      -  VLMNav
 
 ---
 

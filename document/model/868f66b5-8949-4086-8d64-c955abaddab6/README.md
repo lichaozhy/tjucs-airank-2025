@@ -13,7 +13,7 @@ qa:
   - 2D
 dimension:
   - 2D
-website: https://github.com/LongXinKou/RoboannotatorX
+website: https://roboannotatex.github.io/
 navigation: true
 taskPlanning: true
 reason: false

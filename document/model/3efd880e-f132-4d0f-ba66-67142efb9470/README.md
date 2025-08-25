@@ -6,12 +6,12 @@ component:
 size:
   - 7
 author:
-  - Shanghai AI Lab
+  - The University of Hong Kong
 qa:
   - 3D
 dimension:
   - 3D
-website: https://github.com/ZCMax/LLaVA-3D
+website: https://zcmax.github.io/projects/LLaVA-3D/
 navigation: false
 taskPlanning: false
 reason: true

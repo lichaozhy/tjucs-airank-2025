@@ -13,7 +13,7 @@ qa:
   - 2D
 dimension:
   - 2D
-website: https://huggingface.co/nvidia/Cosmos-Reason1-7B
+website: https://research.nvidia.com/labs/dir/cosmos-reason1/
 navigation: false
 taskPlanning: false
 reason: false

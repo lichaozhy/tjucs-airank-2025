@@ -13,7 +13,7 @@ qa:
   - 3D
 dimension:
   - 3D
-website: https://github.com/OpenRobotLab/Grounded_3D-LLM
+website: https://groundedscenellm.github.io/grounded_3d-llm.github.io/
 navigation: false
 taskPlanning: false
 reason: true

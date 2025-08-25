@@ -6,7 +6,7 @@ qa:
   - 2D
 dimension:
   - 2D
-website: https://arxiv.org/abs/2301.07302
+website: https://ram81.github.io/projects/pirlnav
 navigation: true
 taskPlanning: true
 reason: true

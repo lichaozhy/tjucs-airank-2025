@@ -8,12 +8,12 @@ component:
 size:
   - 8
 author:
-  - Chinese University of Hong Kong
+  - The Chinese University of Hong Kong
 qa:
   - 3D
 dimension:
   - 3D
-website: https://huggingface.co/ChaimZhu/LLaVA-3D-7B
+website: https://github.com/LaVi-Lab/Video-3D-LLM
 navigation: false
 taskPlanning: false
 reason: true

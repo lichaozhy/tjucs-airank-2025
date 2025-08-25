@@ -1,5 +1,7 @@
 ---
 name: 3D-LLM
+author:
+  - UMass Amherst
 qa:
   - 3D
 website: https://github.com/UMass-Embodied-AGI/3D-LLM

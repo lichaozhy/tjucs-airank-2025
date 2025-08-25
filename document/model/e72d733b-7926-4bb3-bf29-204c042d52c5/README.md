@@ -8,9 +8,9 @@ size:
 author:
   - Noah’s Ark Lab
 qa:
-  - 3D
+  - 2D
 dimension:
-  - 3D
+  - 2D
 website: https://arxiv.org/pdf/2502.14254
 navigation: true
 taskPlanning: false

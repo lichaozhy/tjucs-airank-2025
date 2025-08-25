@@ -13,7 +13,7 @@ qa:
   - 2D
 dimension:
   - 2D
-website: https://github.com/wentaoyuan/RoboPoint
+website: https://robo-point.github.io/
 navigation: true
 taskPlanning: true
 reason: false

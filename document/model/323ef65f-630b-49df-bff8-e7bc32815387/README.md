@@ -6,7 +6,7 @@ component:
   language:
     - Open-Flamingo
 author:
-  - UMass Embodied AGI Group
+  - UMass Amherst
 qa:
   - 3D
 dimension:

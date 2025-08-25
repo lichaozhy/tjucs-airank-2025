@@ -9,7 +9,7 @@ qa:
   - 2D
 dimension:
   - 2D
-website: https://huggingface.co/spaces/Qwen/Qwen-VL-Max
+website: https://github.com/QwenLM/Qwen-VL
 navigation: true
 taskPlanning: true
 reason: true

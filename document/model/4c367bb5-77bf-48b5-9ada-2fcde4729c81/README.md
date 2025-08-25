@@ -13,7 +13,7 @@ qa:
   - 3D
 dimension:
   - 3D
-website: https://github.com/Qi-Zhangyang/gpt4scene
+website: https://gpt4scene.github.io/
 navigation: false
 taskPlanning: false
 reason: true

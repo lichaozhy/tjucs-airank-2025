@@ -13,7 +13,7 @@ qa:
   - 3D
 dimension:
   - 3D
-website: https://github.com/UMass-Embodied-AGI/3D-Mem
+website: https://umass-embodied-agi.github.io/3D-Mem/
 navigation: true
 taskPlanning: false
 reason: false
