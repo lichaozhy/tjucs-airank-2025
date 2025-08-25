@@ -2,7 +2,7 @@
 name: VLMNav
 author:
   - University of California Berkeley
-website: https://arxiv.org/abs/2411.05755
+website: https://jirl-upenn.github.io/VLMnav/
 navigation: false
 taskPlanning: false
 reason: false
