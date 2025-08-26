@@ -13,7 +13,7 @@ qa:
   - 2D
 dimension:
   - 2D
-website: https://github.com/pickxiguapi/Embodied-R1
+website: https://embodied-r1.github.io/
 navigation: true
 taskPlanning: true
 reason: true

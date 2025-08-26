@@ -13,7 +13,7 @@ qa:
   - 2D
 dimension:
   - 2D
-website: https://github.com/pickxiguapi/Embodied-FSD
+website: https://embodied-fsd.github.io/
 navigation: true
 taskPlanning: true
 reason: true

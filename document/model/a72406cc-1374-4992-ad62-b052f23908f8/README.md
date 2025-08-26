@@ -13,7 +13,7 @@ qa:
   - 2D
 dimension:
   - 2D
-website: https://github.com/FlagOpen/RoboBrain
+website: https://huggingface.co/BAAI/RoboBrain
 navigation: true
 taskPlanning: true
 reason: false

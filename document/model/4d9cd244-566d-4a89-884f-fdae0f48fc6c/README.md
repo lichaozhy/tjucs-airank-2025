@@ -6,7 +6,7 @@ qa:
   - 2D
 dimension:
   - 2D
-website: https://github.com/AnjieCheng/NaVILA
+website: https://navila-bot.github.io/
 navigation: true
 taskPlanning: true
 reason: true

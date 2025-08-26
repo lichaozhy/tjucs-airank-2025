@@ -11,7 +11,7 @@ qa:
   - 2D
 dimension:
   - 2D
-website: https://github.com/OuyangKun10/SpaceR
+website: https://huggingface.co/RUBBISHLIKE/SpaceR
 navigation: true
 taskPlanning: true
 reason: true

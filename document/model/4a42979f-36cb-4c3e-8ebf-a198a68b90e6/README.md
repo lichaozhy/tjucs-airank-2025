@@ -9,6 +9,7 @@ qa:
   - 2D
 dimension:
   - 2D
+website: https://developers.googleblog.com/en/gemini-2-family-expands/
 navigation: true
 taskPlanning: true
 reason: true
