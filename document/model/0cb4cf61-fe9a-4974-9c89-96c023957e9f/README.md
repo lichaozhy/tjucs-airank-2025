@@ -6,7 +6,7 @@ component:
   language:
     - Flan-T5
 author:
-  - UMass Embodied AGI Group
+  - UMass Amherst
 qa:
   - 3D
 dimension:
