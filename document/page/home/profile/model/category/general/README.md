@@ -8,7 +8,7 @@ itemList:
     modelList:
       - InternVL2-8B
       - InternVL2-40B
-			- InternVL2_5-8B
+      - InternVL2_5-8B
       - InternVL2_5-38B
       - InternVL2_5-78B
       - InternVL3-8B
@@ -16,7 +16,7 @@ itemList:
       - InternVL3-38B
       - InternVL3-78B
       - ChatScene
-	- organizationList:
+  - organizationList:
       - Alibaba
     modelList:
       - Qwen-VL-Max
@@ -32,7 +32,7 @@ itemList:
       - ByteDance
     modelList:
       - LongVA-7B
-			- LLaVA-OneVision-0.5B
+      - LLaVA-OneVision-0.5B
       - LLaVA-OneVision-7B
       - LLaVA-OneVision-72B
       - LLaVA-NeXT-Video-7B
@@ -47,7 +47,7 @@ itemList:
       - Gemini-2.0-flash
       - Gemini-2.5-flash
       - Gemini-2.5-Pro
-	- organizationList:
+  - organizationList:
       - OpenAI
     modelList:
       - o3
