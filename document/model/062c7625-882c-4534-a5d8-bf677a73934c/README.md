@@ -1,7 +1,7 @@
 ---
 name: GPT4Scene-HDM
 author:
-  - University of Hong Kong
+  - The University of Hong Kong
 qa:
   - 3D
 dimension:
