@@ -8,7 +8,7 @@ component:
 size:
   - 7
 author:
-  - University of Hong Kong
+  - The University of Hong Kong
 qa:
   - 2D
 dimension:
