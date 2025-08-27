@@ -6,7 +6,7 @@ component:
 size:
   - 7
 author:
-  - Shanghai AI Lab
+  - The University of Hong Kong
 qa:
   - 3D
 dimension:
