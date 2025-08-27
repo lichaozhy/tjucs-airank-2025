@@ -6,7 +6,7 @@ component:
 size:
   - 11
 author:
-  - Google DeepMind
+  - Meta AI
 qa:
   - 2D
 dimension:
