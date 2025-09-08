@@ -60,34 +60,38 @@
 				</q-chip>
 			</div>
 
-			<div class="q-mt-lg">
-				<h2 class="text-h6">Benchmark Scores</h2>
-				<q-list
-					bordered
-					separator
+			<div class="text-h6 q-mt-lg">Benchmark Scores</div>
+			<q-separator class="q-my-sm"></q-separator>
+
+			<div class="row q-col-gutter-sm">
+				<div
+					class="col-lg-2 col-md-3 col-sm-4 col-xs-6"
+					v-for="({ name, value, label }, index) in benchmarkScoreList"
+					:key="index"
 				>
-					<q-item
-						v-for="score in modelScores"
-						:key="score.benchmark"
-						clickable
-						:to="{
-							name: 'app.leaderboard.rank',
-							params: {
-								leaderboardId: score.leaderboard,
-								benchmarkId: score.benchmark,
-							},
-						}"
+					<q-card
+						square
+						flat
+						bordered
 					>
-						<q-item-section>
-							<q-item-label>{{
-								getBenchmarkName(score.benchmark)
-							}}</q-item-label>
-							<q-item-label caption
-								>Total Score: {{ score.total }}</q-item-label
-							>
-						</q-item-section>
-					</q-item>
-				</q-list>
+						<q-item>
+							<q-item-section>
+								<q-item-label class="text-weight-bold">{{ name }}</q-item-label>
+								<q-item-label
+									caption
+									lines="1"
+									>{{ label }}</q-item-label
+								>
+							</q-item-section>
+
+							<q-item-section side>
+								<div class="text-grey-9 text-weight-medium">
+									{{ value?.toFixed(2) }}
+								</div>
+							</q-item-section>
+						</q-item>
+					</q-card>
+				</div>
 			</div>
 		</div>
 	</q-page>
@@ -95,27 +99,45 @@
 
 <script setup lang="ts">
 import type * as Type from 'src/data';
-import type * as Spec from 'src/spec';
-import { ref, onMounted, computed } from 'vue';
+import { ref, computed, onBeforeMount } from 'vue';
 import { useRoute } from 'vue-router';
 import { API } from 'src/backend';
 
-interface Score {
-	leaderboard: string;
-	benchmark: string;
-	model: string;
-	total: number;
-	items: Array<number | null>;
+interface BenchmarkScoreDescriptor {
+	name: string;
+	label: string;
+	index: number;
 }
 
+const route = useRoute();
 const model = ref<Type.Model | null>(null);
-const modelScores = ref<Score[]>([]);
-const benchmarkList = ref<Array<Spec.Benchmark.Type>>([]);
+const descriptors = ref<Record<string, BenchmarkScoreDescriptor>>({});
 
-const getBenchmarkName = (id: string) => {
-	const benchmark = benchmarkList.value.find((bm) => bm.id === id);
-	return benchmark ? benchmark.name : `Benchmark ${id}`;
-};
+const benchmarkScoreList = computed(() => {
+	const scoreList: {
+		name: string;
+		label: string;
+		value: number | null;
+	}[] = [];
+
+	if (model.value !== null) {
+		const { score } = model.value;
+
+		if ('benchmark' in score) {
+			for (const [benchmarkId, { legacy }] of Object.entries(score.benchmark)) {
+				if (legacy === undefined) {
+					continue;
+				}
+
+				const { label, index, name } = descriptors.value[benchmarkId]!;
+
+				scoreList.push({ name, label, value: legacy[index] ?? null });
+			}
+		}
+	}
+
+	return scoreList;
+});
 
 interface PropertyEntity {
 	icon?: string;
@@ -128,13 +150,7 @@ const propertyEntityList = computed<PropertyEntity[]>(() => {
 	const list: PropertyEntity[] = [];
 
 	if (model.value !== null) {
-		const {
-			component,
-			size,
-			author,
-			release,
-			opensource,
-		} = model.value;
+		const { component, size, author, release, opensource } = model.value;
 
 		if (component !== undefined) {
 			if (component.vision !== undefined) {
@@ -205,14 +221,22 @@ const propertyEntityList = computed<PropertyEntity[]>(() => {
 	return list;
 });
 
-onMounted(async () => {
-	const route = useRoute();
-	const modelId = route.params.id as string;
+onBeforeMount(async () => {
+	const modelData = await API.Model(route.params.id as string).get();
+	const _descriptors: Record<string, BenchmarkScoreDescriptor> = {};
 
-	const modelResponse = await API.Model(modelId).get();
-	benchmarkList.value = await API.Benchmark.query();
+	for (const benchmark of await API.Benchmark.query()) {
+		const { label, index } = benchmark.properties[benchmark.default.property]!;
 
-	model.value = modelResponse;
+		_descriptors[benchmark.id] = {
+			name: benchmark.name,
+			label,
+			index,
+		};
+	}
+
+	descriptors.value = _descriptors;
+	model.value = modelData;
 });
 
 defineOptions({ name: 'ModelDetailPage' });
