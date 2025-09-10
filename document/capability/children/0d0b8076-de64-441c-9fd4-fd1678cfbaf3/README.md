@@ -1,4 +1,4 @@
 ---
-name: Total Score
+name: Summary
 index: 7
 ---

@@ -37,7 +37,7 @@ const bm_sumo = {};
 /** @type {Record<string, { id: string, score: number }[]>} */
 const bm_rank = {};
 
-function computeSummary() {
+function computeTaskSummary() {
 	for (const { summaries } of Object.values(dataRoot.leaderboard)) {
 		for (const [sum_id, { $data: sum }] of Object.entries(summaries)) {
 			sumds[sum_id] = sum;
@@ -114,7 +114,7 @@ function computeSummary() {
 	}
 }
 
-function computeSummaryAvgRank() {
+function computeTaskSummaryAvgRank() {
 	/** @type {Record<string, Record<string, number>>} */
 	const m_bm_idx = {};
 
@@ -159,7 +159,7 @@ function computeSummaryAvgRank() {
 	}
 }
 
-function computeCapabilityLevel0Total() {
+function computeCapabilityLevelTotal() {
 	for (const { $data } of Object.values(dataRoot.model)) {
 		for (const namespace of Object.values($data.score)) {
 			if (namespace === undefined || namespace === null) {
@@ -169,6 +169,10 @@ function computeCapabilityLevel0Total() {
 			for (const scoreGroup of Object.values(namespace)) {
 				if (Object.hasOwn(scoreGroup, '0')) {
 					scoreGroup[0][7] = avg(scoreGroup[0].slice(0, 7));
+				}
+
+				if (Object.hasOwn(scoreGroup, '1')) {
+					scoreGroup[1][25] = avg(scoreGroup[0].slice(0, 25));
 				}
 			}
 		}
@@ -190,9 +194,9 @@ function toFixedAllScoreTable(factionDigital = 2) {
 	}
 }
 
-computeSummary();
-computeSummaryAvgRank();
-computeCapabilityLevel0Total();
+computeTaskSummary();
+computeTaskSummaryAvgRank();
+computeCapabilityLevelTotal();
 toFixedAllScoreTable(2);
 
 writeFile(PATH.TARGET.DATA, JSON.stringify(dataRoot));
