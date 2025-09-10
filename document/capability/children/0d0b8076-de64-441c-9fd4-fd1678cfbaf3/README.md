@@ -1,4 +1,4 @@
 ---
-name: Summary
+name: Average
 index: 7
 ---
