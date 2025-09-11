@@ -1,5 +1,6 @@
 ---
 name: Spatial Reasoning
+radar: true
 index: 13
 ---
 

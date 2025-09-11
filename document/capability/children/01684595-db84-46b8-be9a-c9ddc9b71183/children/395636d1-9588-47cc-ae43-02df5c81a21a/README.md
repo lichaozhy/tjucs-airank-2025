@@ -1,5 +1,6 @@
 ---
 name: Object Count
+radar: true
 index: 3
 ---
 

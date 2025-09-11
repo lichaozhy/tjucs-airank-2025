@@ -1,5 +1,6 @@
 ---
 name: Embodied Task Planning
+radar: true
 index: 6
 ---
 

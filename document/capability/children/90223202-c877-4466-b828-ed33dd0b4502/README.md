@@ -1,5 +1,6 @@
 ---
 name: Embodied Knowledge
+radar: true
 index: 3
 ---
 

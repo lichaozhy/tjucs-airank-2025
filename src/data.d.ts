@@ -59,6 +59,7 @@ interface Benchmark {
 interface CapabilityItem {
 	$data: {
 		name: string;
+		radar: boolean;
 		index: number;
 	};
 }

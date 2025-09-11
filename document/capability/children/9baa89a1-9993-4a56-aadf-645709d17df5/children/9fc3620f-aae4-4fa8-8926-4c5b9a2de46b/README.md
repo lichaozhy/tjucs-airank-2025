@@ -1,5 +1,6 @@
 ---
 name: Task Reasoning
+radar: true
 index: 16
 ---
 

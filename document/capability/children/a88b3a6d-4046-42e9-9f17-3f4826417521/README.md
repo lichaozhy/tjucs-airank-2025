@@ -1,5 +1,6 @@
 ---
 name: Embodied Navigation
+radar: true
 index: 5
 ---
 

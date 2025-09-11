@@ -10,5 +10,6 @@ export interface SourceAbstract {
 
 export interface PropertyAbstract {
 	name: string;
+	radar: boolean;
 	index: number;
 }

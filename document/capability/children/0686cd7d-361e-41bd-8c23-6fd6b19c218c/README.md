@@ -1,5 +1,6 @@
 ---
 name: Spatial Perception
+radar: true
 index: 1
 ---
 

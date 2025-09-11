@@ -1,5 +1,6 @@
 ---
 name: Object State
+radar: true
 index: 2
 ---
 

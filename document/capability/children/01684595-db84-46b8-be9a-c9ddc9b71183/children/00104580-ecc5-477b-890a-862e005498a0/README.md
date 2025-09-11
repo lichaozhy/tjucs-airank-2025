@@ -1,5 +1,6 @@
 ---
 name: Object Type
+radar: true
 index: 0
 ---
 

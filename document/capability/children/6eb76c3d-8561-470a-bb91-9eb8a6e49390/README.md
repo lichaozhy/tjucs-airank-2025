@@ -1,5 +1,6 @@
 ---
 name: Temporal Perception
+radar: true
 index: 2
 ---
 

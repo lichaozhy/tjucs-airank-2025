@@ -32,7 +32,7 @@
 				<q-th
 					class="ellipsis"
 					style="z-index: 1"
-					v-for="(column, index) in props.groups"
+					v-for="(column, index) in groups"
 					:key="index"
 					:colspan="column.colspan"
 					:title="column.label"
@@ -189,6 +189,28 @@ const props = withDefaults(
 );
 
 type SelectedRecord = Record<string, boolean>;
+
+const groups = computed<GroupOptions[] | null>(() => {
+	if (props.groups === null) {
+		return null;
+	}
+
+	const list: GroupOptions[] = [];
+	let index = 0;
+
+	for (const group of props.groups) {
+		const finalGroup = { ...group };
+
+		if (group.colspan === 1 && props.columns[index]?.name === group.label) {
+			finalGroup.label = '';
+		}
+
+		list.push(finalGroup);
+		index += group.colspan;
+	}
+
+	return list;
+});
 
 const selectedRows = defineModel<SelectedRecord | null>('selectedRows', {
 	default: null,

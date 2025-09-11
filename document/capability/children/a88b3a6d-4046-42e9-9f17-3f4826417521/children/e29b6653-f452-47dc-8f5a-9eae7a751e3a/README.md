@@ -1,5 +1,6 @@
 ---
 name: Object Navigation
+radar: true
 index: 22
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: Instruction Navigation
+radar: true
 index: 24
 ---
 

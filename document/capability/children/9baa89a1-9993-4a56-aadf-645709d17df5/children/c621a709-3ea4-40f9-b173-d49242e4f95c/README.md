@@ -1,5 +1,6 @@
 ---
 name: Object Reasoning
+radar: true
 index: 12
 ---
 

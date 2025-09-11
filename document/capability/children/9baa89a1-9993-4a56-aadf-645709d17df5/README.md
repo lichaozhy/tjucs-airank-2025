@@ -1,5 +1,6 @@
 ---
 name: Embodied Reasoning
+radar: true
 index: 4
 ---
 

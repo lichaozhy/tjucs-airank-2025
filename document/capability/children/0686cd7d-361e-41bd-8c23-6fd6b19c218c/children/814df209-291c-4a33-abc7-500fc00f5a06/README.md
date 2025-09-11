@@ -1,5 +1,6 @@
 ---
 name: Spatial Size
+radar: true
 index: 7
 ---
 

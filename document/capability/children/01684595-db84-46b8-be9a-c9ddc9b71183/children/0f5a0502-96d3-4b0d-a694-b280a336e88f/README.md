@@ -1,5 +1,6 @@
 ---
 name: Object Property
+radar: true
 index: 1
 ---
 

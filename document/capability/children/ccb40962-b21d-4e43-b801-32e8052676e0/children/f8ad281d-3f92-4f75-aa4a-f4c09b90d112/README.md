@@ -1,5 +1,6 @@
 ---
 name: Spatial Reference Planning
+radar: true
 index: 19
 ---
 
@@ -7,7 +8,7 @@ index: 19
 <div class="col-8">
 
 | **Benchmark** | **Capability Dimension**   |
-|---------------|----------------------------|
+| ------------- | -------------------------- |
 | PhyBlock      | Spatial Reference Planning |
 | EB-ALFRED     | Spatial Awareness          |
 | EB-Habitat    | Spatial Awareness          |

@@ -1,5 +1,6 @@
 ---
 name: Temporal Reference Planning
+radar: true
 index: 20
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: Affordance Prediction
+radar: true
 index: 11
 ---
 
@@ -7,7 +8,7 @@ index: 11
 <div class="col-8">
 
 | **Benchmark** | **Capability Dimension**                        |
-|---------------|-------------------------------------------------|
+| ------------- | ----------------------------------------------- |
 | Where2Place   | Affordance Prediction                           |
 | RoBoVQA       | Discriminative Affordance/Generative Affordance |
 | UniEQA        | Affordance                                      |

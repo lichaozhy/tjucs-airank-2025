@@ -1,5 +1,6 @@
 ---
 name: Object Perception
+radar: true
 index: 0
 ---
 

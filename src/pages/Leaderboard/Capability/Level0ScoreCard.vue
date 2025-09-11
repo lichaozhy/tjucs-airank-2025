@@ -43,7 +43,7 @@ const modelList = ref<(Data.Model & { id: string })[]>([]);
 const validColumns = ref<Record<string, true>>({});
 
 const columnList = computed<Column[]>(() => {
-	return order.value.map(capabilityId => ({
+	return order.value.map((capabilityId) => ({
 		name: propertyRecord.value[capabilityId]!.name,
 		sorting: 'desc',
 	}));
@@ -81,9 +81,11 @@ const rowList = computed<ModelData[]>(() => {
 
 const radarOptions = computed<RadarProps>(() => {
 	const record: Record<string, true> = {};
+	const _validColumns = validColumns.value;
+	const _propertyRecorder = propertyRecord.value;
 
 	for (const [index, capabilityId] of order.value.entries()) {
-		if (validColumns.value[capabilityId]) {
+		if (_validColumns[capabilityId] && _propertyRecorder[capabilityId]?.radar) {
 			record[index] = true;
 		}
 	}
@@ -97,17 +99,17 @@ onBeforeMount(async () => {
 	const configuration = await Backend.API.Capability.Configuration.get();
 	const _propertyRecorder: Record<string, Type.PropertyAbstract> = {};
 
-	for (const { id, name, index } of await Backend.API.Capability.query()) {
-		_propertyRecorder[id] = { name, index };
+	for (const { id, ...rest } of await Backend.API.Capability.query()) {
+		_propertyRecorder[id] = { ...rest };
 	}
 
 	const _modelList = await Source.fetchModelList();
-	const _validColumns = await Source.fetchCapability(0) as Record<string, true>;
+	const _validColumns = await Source.fetchCapability(0);
 
 	propertyRecord.value = _propertyRecorder;
-	order.value = [...configuration.order].filter(id => _validColumns[id]);
+	order.value = [...configuration.order].filter((id) => _validColumns[id]);
 	modelList.value = _modelList;
-	validColumns.value = _validColumns;
+	validColumns.value = _validColumns as Record<string, true>;
 });
 
 defineOptions({ name: 'AppPageLeaderboardCapabilityLevel0ScoreCard' });

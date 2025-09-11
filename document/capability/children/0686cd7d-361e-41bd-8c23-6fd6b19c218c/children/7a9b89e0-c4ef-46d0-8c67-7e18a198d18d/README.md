@@ -1,5 +1,6 @@
 ---
 name: Spatial Localization
+radar: true
 index: 6
 ---
 

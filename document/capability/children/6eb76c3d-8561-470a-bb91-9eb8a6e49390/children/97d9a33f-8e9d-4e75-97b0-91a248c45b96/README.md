@@ -1,5 +1,6 @@
 ---
 name: Temporal Order
+radar: true
 index: 9
 ---
 

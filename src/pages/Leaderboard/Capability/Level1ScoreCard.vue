@@ -74,9 +74,11 @@ const rowList = computed<ModelData[]>(() => {
 
 const radarOptions = computed<RadarProps>(() => {
 	const record: Record<string, true> = {};
+	const _validColumns = validColumns.value;
+	const _propertyRecorder = propertyRecord.value;
 
 	for (const [index, capabilityId] of order.value.entries()) {
-		if (validColumns.value[capabilityId]) {
+		if (_validColumns[capabilityId] && _propertyRecorder[capabilityId]?.radar) {
 			record[index] = true;
 		}
 	}
@@ -107,10 +109,10 @@ onBeforeMount(async () => {
 		const { name } = await CapabilityAPI.get();
 		const groupItem = { label: name, colspan: 0 };
 
-		for (const { id, index, name } of childItemList) {
+		for (const { id, ...rest } of childItemList) {
 			if (_validColumns[id]) {
 				groupItem.colspan++;
-				_propertyRecorder[id] = { name, index };
+				_propertyRecorder[id] = { ...rest };
 			}
 		}
 

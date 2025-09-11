@@ -1,5 +1,6 @@
 ---
 name: General Knowledge
+radar: true
 index: 10
 ---
 

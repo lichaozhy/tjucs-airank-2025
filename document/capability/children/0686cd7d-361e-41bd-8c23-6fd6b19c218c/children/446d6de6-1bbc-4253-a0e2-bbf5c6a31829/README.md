@@ -1,5 +1,6 @@
 ---
 name: Spatial Relationship
+radar: true
 index: 4
 ---
 

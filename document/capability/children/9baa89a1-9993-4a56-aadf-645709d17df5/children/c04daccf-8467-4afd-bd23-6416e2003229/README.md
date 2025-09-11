@@ -1,5 +1,6 @@
 ---
 name: Knowledge Reasoning
+radar: true
 index: 15
 ---
 

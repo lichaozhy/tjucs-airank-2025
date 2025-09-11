@@ -1,5 +1,6 @@
 ---
 name: Visual Reference Planning
+radar: true
 index: 18
 ---
 

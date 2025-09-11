@@ -1,5 +1,6 @@
 ---
 name: Basic Planning
+radar: true
 index: 17
 ---
 

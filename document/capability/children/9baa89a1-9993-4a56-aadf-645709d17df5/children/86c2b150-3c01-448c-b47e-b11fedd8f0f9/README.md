@@ -1,5 +1,6 @@
 ---
 name: Temporal Reasoning
+radar: true
 index: 14
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: Knowledge Reference Planning
+radar: true
 index: 21
 ---
 

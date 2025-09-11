@@ -1,5 +1,6 @@
 ---
 name: Spatial Distance
+radar: true
 index: 5
 ---
 
