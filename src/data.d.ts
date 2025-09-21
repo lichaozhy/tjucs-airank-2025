@@ -12,7 +12,7 @@ interface ReleasedInfo {
 }
 
 export interface BenchmarkProperty {
-	order: number;
+	order?: number | null;
 	index: number;
 	label: string;
 	unit: string | null;

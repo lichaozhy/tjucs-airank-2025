@@ -27,10 +27,6 @@ function avg(a) {
 	return length === 0 ? null : Number((sum / length).toFixed(2));
 }
 
-function random100() {
-	return Number((Math.random() * 100).toFixed(2));
-}
-
 const sumds = {};
 const bm_sumo = {};
 
@@ -159,6 +155,33 @@ function computeTaskSummaryAvgRank() {
 	}
 }
 
+const PR_P_NAME = 'PercentileRank';
+
+function computeTaskBenchmarkRankScore() {
+	for (const [bm_id, bm] of Object.entries(dataRoot.benchmark)) {
+		const m_s_l = [];
+		const ps = bm.$data.properties;
+		const dp = bm.$data.default.property;
+		const { index: d_i } = ps[dp];
+		const { index: p_i } = ps[PR_P_NAME];
+
+		for (const m of Object.values(dataRoot.model)) {
+			if (bm_id in m.$data.score.benchmark) {
+				const s_g = m.$data.score.benchmark[bm_id];
+
+				if ('legacy' in s_g) {
+					m_s_l.push(s_g.legacy);
+				}
+			}
+		}
+
+		const m_l = m_s_l.length;
+
+		m_s_l.sort((a, b) => b[d_i] - a[d_i]);
+		m_s_l.forEach((s, r) => s[p_i] = (m_l - (r + 1) + 1) / m_l);
+	}
+}
+
 function computeCapabilityLevelTotal() {
 	for (const { $data } of Object.values(dataRoot.model)) {
 		for (const namespace of Object.values($data.score)) {
@@ -197,6 +220,7 @@ function toFixedAllScoreTable(factionDigital = 2) {
 computeTaskSummary();
 computeTaskSummaryAvgRank();
 computeCapabilityLevelTotal();
+computeTaskBenchmarkRankScore();
 toFixedAllScoreTable(2);
 
 writeFile(PATH.TARGET.DATA, JSON.stringify(dataRoot));

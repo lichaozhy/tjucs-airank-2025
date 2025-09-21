@@ -27,6 +27,11 @@ properties:
     index: 1
     label: Total Score
     unit: null
+  PercentileRank:
+    order: null
+    index: 2
+    label: PR
+    unit: null
 ---
 
 ## Introduction
@@ -34,6 +39,7 @@ properties:
 ![alt text](assets/Scanrefer.png)
 
 ScanRefer is a benchmark for 3D object localization using natural language descriptions in RGB-D scans. The task challenges models to identify and localize a target object in a 3D point cloud based solely on a free-form textual description. Unlike traditional object detection tasks, ScanRefer requires grounding language in 3D space, capturing both object semantics and spatial context. The benchmark is built on a large-scale dataset comprising 51,583 natural language expressions referring to 11,046 objects across 800 indoor scenes from ScanNet, making it the first extensive resource for studying language-driven object localization directly in 3D environments.
+
 ## Benchmark Characteristics
 
 ### Task Definition: Single-Object 3D Language Grounding
@@ -42,6 +48,7 @@ ScanRefer is a benchmark for 3D object localization using natural language descr
 Given a 3D point cloud scene and a text description, localize the single target object referred to by the text.
 
 **Example Scenarios**
+
 - Attribute-based: "The red armchair in the living room"
 - Spatial relation: "The coffee table in front of the sofa"
 - Contextual: "The small wooden table near the window"
@@ -53,11 +60,13 @@ Unlike 2D image grounding, this task leverages depth and structural context in 3
 ### Dataset Construction and Annotations
 
 **Source Data**
+
 - Based on ScanNet (1,513 indoor scenes)
 - Over 2.5 million 3D points per scene
 - Covers 31 object categories, including furniture, electronics, etc.
 
 **Annotation Scale**
+
 - 51,583 text descriptions paired with 14,132 3D objects
 - Average of 3.65 descriptions per object, promoting linguistic diversity
 
@@ -67,12 +76,13 @@ Example: "The TV stand in the corner of the room"
 
 **Linguistic Complexity**
 Descriptions include:
+
 - Attribute details (color, material, size)
 - Spatial relations (e.g., positional prepositions)
 - Functional descriptions (e.g., "the chair you can sit on")
 
-
 ## Evaluation
+
 Acc@0.25: A prediction is considered correct if the predicted bounding box overlaps with the ground truth bounding box by more than 25% (measured by IoU - Intersection over Union).
 
 ## Citation

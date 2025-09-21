@@ -5,10 +5,10 @@
 		style="height: 560px"
 	>
 		<div class="col-lg-10 col-12 relative-position">
-			<AppCapabilityRadarChart
+			<AppRadarChart
 				:indicator-list="radarIndicatorList"
 				:data-list="radarDataList"
-			></AppCapabilityRadarChart>
+			></AppRadarChart>
 		</div>
 	</div>
 	<AppScoreCard>
@@ -50,13 +50,13 @@
 
 <script setup lang="ts">
 import type { ModelData, GroupOptions, Column } from 'components/ScoreTable.vue';
-import type * as Radar from 'components/CapabilityRadarChart.vue';
+import type * as Radar from 'components/RadarChart.vue';
 import { computed, ref, watch } from 'vue';
 
 import AppScoreCard from 'components/ScoreCard.vue';
 import AppModelFilter from 'components/ModelFilter.vue';
 import AppScoreTable from 'components/ScoreTable.vue';
-import AppCapabilityRadarChart from 'components/CapabilityRadarChart.vue';
+import AppRadarChart from 'components/RadarChart.vue';
 
 export interface RadarOptions {
 	columns: Record<string, true>;

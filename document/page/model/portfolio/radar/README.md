@@ -1,0 +1,1 @@
+**The model's normalized ranking score on the specific benchmark**, calculated as (N - rank + 1) / N, where N is the total number of evaluated models. Scores range from 0 to 1, with 1.0 indicating first place.

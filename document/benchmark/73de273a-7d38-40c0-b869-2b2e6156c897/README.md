@@ -47,6 +47,11 @@ properties:
     index: 5
     label: Total SR
     unit: null
+  PercentileRank:
+    order: null
+    index: 6
+    label: PR
+    unit: null
 ---
 
 ## Introduction

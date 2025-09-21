@@ -55,6 +55,11 @@ properties:
     index: 6
     label: Total SR
     unit: null
+  PercentileRank:
+    order: null
+    index: 7
+    label: PR
+    unit: null
 ---
 
 ## Introduction
@@ -100,7 +105,6 @@ EB-ALFRED is designed to evaluate the high-level reasoning and planning ability 
 300 tasks sampled from ALFRED's valid_seen scenes.
 
 - 6 evaluation subsets, each with 50 tasks:
-
   - Base
   - Common-Sense
   - Complex Instruction

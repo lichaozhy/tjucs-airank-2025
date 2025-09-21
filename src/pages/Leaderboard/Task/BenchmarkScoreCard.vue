@@ -57,16 +57,17 @@ const filteredModelDataList = ref<ModelData[]>([]);
 
 const columnList = computed<Column[]>(() => {
 	return Object.values(benchmark.value!.properties)
-		.sort((a, b) => a.order - b.order)
+	  .filter(property => typeof property.order === 'number')
+		.sort((a, b) => a.order! - b.order!)
 		.map((property) => ({ name: property.label, sorting: 'desc' }));
 });
 
 const rowList = computed<ModelData[]>(() => {
 	const list: ModelData[] = [];
 
-	const propertyList = Object.values(benchmark.value!.properties).sort(
-		(a, b) => a.order - b.order,
-	);
+	const propertyList = Object.values(benchmark.value!.properties)
+	  .filter(property => typeof property.order === 'number')
+		.sort((a, b) => a.order! - b.order!);
 
 	const scores = modelScoreRecord.value;
 

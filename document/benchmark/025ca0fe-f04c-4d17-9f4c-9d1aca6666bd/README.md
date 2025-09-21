@@ -27,6 +27,11 @@ properties:
     index: 1
     label: Instruction Navigation
     unit: null
+  PercentileRank:
+    order: null
+    index: 2
+    label: PR
+    unit: null
 ---
 
 ## Introduction

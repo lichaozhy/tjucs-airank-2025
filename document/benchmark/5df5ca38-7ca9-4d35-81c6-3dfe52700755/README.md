@@ -67,6 +67,11 @@ properties:
     index: 8
     label: Total Score
     unit: null
+  PercentileRank:
+    order: null
+    index: 9
+    label: PR
+    unit: null
 ---
 
 ## Introduction
