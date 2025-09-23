@@ -2,7 +2,7 @@
 name: Space-R
 component:
   language:
-    - Qwen2.5-7B
+    - Qwen2.5-VL-7B-Instruct
 size:
   - 8
 author:

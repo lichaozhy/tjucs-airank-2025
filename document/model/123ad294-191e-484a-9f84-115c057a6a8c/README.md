@@ -1,10 +1,5 @@
 ---
 name: SpatialCoT
-component:
-  vision:
-    - ViT
-  language:
-    - Vicuna-v1.5-13B
 size:
   - 13
 author:

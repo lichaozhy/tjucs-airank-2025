@@ -6,7 +6,7 @@ qa:
   - 2D
 dimension:
   - 2D
-website: https://github.com/shalexyuan/GAMap
+website: https://shalexyuan.github.io/GAMap/
 navigation: true
 taskPlanning: true
 reason: true

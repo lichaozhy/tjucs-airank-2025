@@ -2,9 +2,9 @@
 name: VILA-1.5-13B
 component:
   vision:
-    - SigLIP
+    - CLIP-L
   language:
-    - Qwen2
+    - LLama-2-13B
 size:
   - 13
 author:

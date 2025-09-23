@@ -1,8 +1,5 @@
 ---
 name: LLaVA-OneVision-72B
-component:
-  language:
-    - Qwen2-72B
 size:
   - 72
 author:

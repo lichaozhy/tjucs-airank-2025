@@ -2,7 +2,7 @@
 name: Video-3D LLM
 component:
   vision:
-    - ViT
+    - 3D Visual Geometry Encoder combined with 2D Visual Encoder
   language:
     - LLaVA-Video-7B
 size:

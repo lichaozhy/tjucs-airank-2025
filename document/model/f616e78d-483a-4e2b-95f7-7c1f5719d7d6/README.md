@@ -4,7 +4,7 @@ component:
   language:
     - LLaVA-7B
 author:
-  - Tsinghua University
+  - The University of Adelaide
 qa:
   - 3D
 dimension:

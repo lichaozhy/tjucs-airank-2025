@@ -1,10 +1,7 @@
 ---
 name: PQ3D
-component:
-  vision:
-    - pretrained CLIP
 author:
-  - BAAI
+  - BIGAI
 qa:
   - 3D
 dimension:

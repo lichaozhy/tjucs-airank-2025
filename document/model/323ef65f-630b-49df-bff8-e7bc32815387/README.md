@@ -2,9 +2,9 @@
 name: 3D-LLM(Flamingo)
 component:
   vision:
-    - CLIP ViT-L-14
+    - NFNet-F6
   language:
-    - Open-Flamingo
+    - Chinchilla-7B
 author:
   - UMass Amherst
 qa:

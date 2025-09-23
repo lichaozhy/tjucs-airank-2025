@@ -2,9 +2,9 @@
 name: Qwen2-VL-7B-Instruct
 component:
   vision:
-    - NaViT
+    - ViT
   language:
-    - Qwen2.5-7B
+    - Qwen2-7B
 size:
   - 7
 author:

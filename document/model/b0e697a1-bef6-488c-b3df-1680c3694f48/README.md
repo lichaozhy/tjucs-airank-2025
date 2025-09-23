@@ -6,12 +6,12 @@ component:
   language:
     - Vicuna-7B-v1.5
 author:
-  - Shanghai AI Lab
+  - Zhejiang University
 qa:
   - 3D
 dimension:
   - 3D
-website: https://javyduck.github.io/chatscene/
+website: https://github.com/ZzZZCHS/Chat-Scene
 navigation: false
 taskPlanning: false
 reason: false

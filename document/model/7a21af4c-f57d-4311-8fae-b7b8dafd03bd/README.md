@@ -1,8 +1,5 @@
 ---
 name: VILA-1.5-40B
-component:
-  language:
-    - VILA
 size:
   - 40
 author:

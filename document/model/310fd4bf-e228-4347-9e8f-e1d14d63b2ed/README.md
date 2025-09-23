@@ -2,9 +2,9 @@
 name: Embodied-R1-3B
 component:
   vision:
-    - Qwem2.5-VL-3B-Instruct
+    - ViT
   language:
-    - Qwem2.5-VL-3B-Instruct
+    - Qwen2.5
 size:
   - 3
 author:

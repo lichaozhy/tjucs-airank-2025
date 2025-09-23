@@ -1,8 +1,5 @@
 ---
 name: robo-refer
-component:
-  language:
-    - RoboRefer-8B
 size:
   - 8
 author:

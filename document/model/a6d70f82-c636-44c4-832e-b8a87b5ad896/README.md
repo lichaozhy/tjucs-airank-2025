@@ -1,7 +1,7 @@
 ---
 name: 3DRS
 author:
-  - Visual AI Lab
+  - The University of Hong Kong
 qa:
   - 3D
 dimension:

@@ -238,11 +238,12 @@ Models specifically designed and optimized for embodied AI tasks, featuring enha
 Specialized for 2D visual reasoning benchmarks and embodied question answering tasks.
 
 - **BAAI**: Navid, UniNavid, RoboBrain
-- **Shanghai AI Lab**: VeBrain, VLN-R1, navillm, StreamVLN
+- **Shanghai AI Lab**: VeBrain, VLN-R1, StreamVLN
 - **Tianjin University**: RoboAnnotatorX, Embodied-FSD, HuLE-Nav
 - **University of Washington**: RoboPoint
 - **Shanghai Jiao Tong University**: SpatialBot
 - **The University of Hong Kong**: EmbodiedGPT
+- **The Chinese University of Hong Kong**: navillm
 - **Georgia Institute of Technology**: VLFM, Habitat-Web
 - **Google DeepMind**: SpatialVLM
 - **Peking University**: Space-R, VoroNav, InstructNav

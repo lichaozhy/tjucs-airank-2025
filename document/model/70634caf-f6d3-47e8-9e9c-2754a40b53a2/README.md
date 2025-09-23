@@ -4,7 +4,7 @@ component:
   vision:
     - 3D Visual Geometry Encoder combined with 2D Visual Encoder
   language:
-    - Qwen2.5-VL
+    - LLaVA-Video-7B
 author:
   - The Chinese University of Hong Kong
 qa:

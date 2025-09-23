@@ -1,10 +1,5 @@
 ---
 name: Grounded 3D-LLM
-component:
-  vision:
-    - Submanifold Sparse Convolutional Networks
-  language:
-    - Tiny-Vicuna-1B
 size:
   - 1
 author:

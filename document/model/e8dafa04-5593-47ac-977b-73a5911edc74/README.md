@@ -2,7 +2,7 @@
 name: Qwen2.5-VL-72B-Instruct
 component:
   vision:
-    - ViT
+    - Redesigned ViT
   language:
     - Qwen2.5-72B
 size:

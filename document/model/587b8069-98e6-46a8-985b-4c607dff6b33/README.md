@@ -2,13 +2,13 @@
 name: navillm
 component:
   vision:
-    - EVA-CLIP
+    - SceneEncoder
   language:
-    - Vicuna-7B-v1.5
+    - Vicuna-7B-v0
 size:
   - 7
 author:
-  - Shanghai AI Lab
+  - The Chinese University of Hong Kong
 qa:
   - 2D
 dimension:

@@ -15,7 +15,6 @@ itemList:
       - InternVL3-14B
       - InternVL3-38B
       - InternVL3-78B
-      - ChatScene
   - organizationList:
       - Alibaba
     modelList:
@@ -55,6 +54,17 @@ itemList:
       - GPT-4o
       - GPT-4o mini
   - organizationList:
+      - Zhejiang University
+    modelList:
+      - Inst3D-LLM
+      - Chat-3D v2
+      - ChatScene
+  - organizationList:
+      - The University of Hong Kong
+    modelList:
+      - LLaVA-3D
+      - 3DRS
+  - organizationList:
       - Meta AI
     modelList:
       - Llama-3.2-11B-Vision-Instruct
@@ -75,17 +85,12 @@ itemList:
       - Instructblip-flant5xl
       - BLIP-2-flant5xl
   - organizationList:
-      - Zhejiang University
-    modelList:
-      - Inst3D-LLM
-      - Chat-3D v2
-  - organizationList:
       - ModelBest
     modelList:
       - MiniCPM-V
       - MiniCPM-V 2.6
   - organizationList:
-      - BAAI
+      - BIGAI
     modelList:
       - PQ3D
   - organizationList:
@@ -97,17 +102,13 @@ itemList:
     modelList:
       - Video-LLaVA-7B
   - organizationList:
-      - Tsinghua University
+      - The University of Adelaide
     modelList:
       - 3D-LLaVA
   - organizationList:
-      - Tencent PCG
+      - Fudan University
     modelList:
       - LL3DA
-  - organizationList:
-      - The University of Hong Kong
-    modelList:
-      - LLaVA-3D
   - organizationList:
       - The Chinese University of Hong Kong
     modelList:
@@ -120,8 +121,4 @@ itemList:
       - University of Wisconsin-Madison
     modelList:
       - LLava-v1.5-7B
-  - organizationList:
-      - Visual AI Lab
-    modelList:
-      - 3DRS
 ---

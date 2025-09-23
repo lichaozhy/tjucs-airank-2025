@@ -1,7 +1,7 @@
 ---
 name: LL3DA
 author:
-  - Tencent PCG
+  - Fudan University
 qa:
   - 3D
 dimension:

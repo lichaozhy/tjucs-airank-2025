@@ -2,9 +2,9 @@
 name: SAT
 component:
   vision:
-    - ViT
+    - LLaVA-Video-7B
   language:
-    - LLaVA-1.5-7B
+    - LLaVA-1.5-13B
 size:
   - 7
 author:

@@ -10,7 +10,6 @@ itemList:
       - UniNavid
       - RoboBrain1.0
       - RoboBrain2.0
-      - LEO
       - MapNav
   - organizationList:
       - Shanghai AI Lab
@@ -19,7 +18,6 @@ itemList:
       - Grounded 3D-LLM
       - VLN-R1
       - GPT4Scene
-      - navillm
       - StreamVLN
   - organizationList:
       - Georgia Institute of Technology
@@ -78,10 +76,15 @@ itemList:
       - Chinese University of Hong Kong
     modelList:
       - Video-3D LLM
+      - navillm
   - organizationList:
       - Beihang University
     modelList:
       - Robo-Refer
+  - organizationList:
+      - BIGAI
+    modelList:
+      - LEO
   - organizationList:
       - Boston University
     modelList:
@@ -113,7 +116,6 @@ itemList:
   - organizationList:
       - University of California Berkeley
     modelList:
-      -  VLMNav
-
+      - VLMNav
 ---
 

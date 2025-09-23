@@ -1,8 +1,6 @@
 ---
 name: GPT4Scene
 component:
-  vision:
-    - Qwen2-VL-7B
   language:
     - Qwen2-VL-7B
 size:

@@ -2,9 +2,9 @@
 name: Magma
 component:
   vision:
-    - CLIP-ConvNeXt-XXLarge
+    - CLIP
   language:
-    - Meta LLaMA-3
+    - LLaMA-3-8B
 size:
   - 8
 author:

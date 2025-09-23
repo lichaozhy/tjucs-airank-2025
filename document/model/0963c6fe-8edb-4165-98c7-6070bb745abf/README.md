@@ -13,7 +13,7 @@ qa:
   - 2D
 dimension:
   - 2D
-website: https://huggingface.co/llava-hf/llava-1.5-7b-hf
+website: https://llava-vl.github.io/
 navigation: false
 taskPlanning: false
 reason: false

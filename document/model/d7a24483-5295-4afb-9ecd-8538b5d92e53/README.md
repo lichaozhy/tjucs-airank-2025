@@ -6,7 +6,7 @@ component:
 size:
   - 7
 author:
-  - BAAI
+  - BIGAI
 qa:
   - 3D
 dimension:
