@@ -15,7 +15,7 @@
 		</template>
 
 		<q-list
-			style="width: 50vw; max-width: 600px; min-width: 300px;"
+			style="width: 50vw; max-width: 800px; min-width: 300px;"
 			dense
 		>
 			<q-item-label
@@ -39,14 +39,14 @@
 						v-if="item.type === 'enum'"
 						v-bind="item.props"
 						v-model:reset="item.modelReset"
-						v-model:filter="item.modelFilter"
+						v-model:filter="filters[item.name]"
 						v-model="item.modelValue"
 					></app-item-enum>
 					<app-item-range
 						v-if="item.type === 'range'"
 						v-bind="item.props"
 						v-model:reset="item.modelReset"
-						v-model:filter="item.modelFilter"
+						v-model:filter="filters[item.name]"
 						v-model="item.modelValue"
 					></app-item-range>
 				</q-item>
@@ -68,17 +68,11 @@
 <script setup lang="ts">
 import type * as Data from 'src/data';
 import type { ModelData } from '../ScoreTable.vue';
-import { computed, provide, ref, watch } from 'vue';
+import { computed, ref, watch } from 'vue';
 
 import * as Backend from 'src/backend';
-import * as Item from './ItemManager';
-import * as ItemSymbol from './Item/symbol';
 import AppItemEnum from './Item/Enum.vue';
 import AppItemRange from './Item/Range.vue';
-
-const manager = new Item.FilterItemManager();
-
-provide(ItemSymbol.MANAGER, manager);
 
 const props = withDefaults(
 	defineProps<{
@@ -93,9 +87,11 @@ const emit = defineEmits<{
 	filtered: [result: ModelData[]];
 }>();
 
+type ItemName = 'vision' | 'language' | 'author' | 'size' | 'year';
+type Filter = (value: number | string) => boolean;
+
 interface BaseItem {
-	name: string;
-	modelFilter: (value: number | string) => boolean;
+	name: ItemName;
 	modelReset: () => unknown;
 }
 
@@ -130,14 +126,67 @@ function resetAll() {
 	}
 }
 
+const filters = ref<Record<ItemName, Filter>>({
+	vision: DEFAULT.FILTER,
+	language: DEFAULT.FILTER,
+	author: DEFAULT.FILTER,
+	size: DEFAULT.FILTER,
+	year: DEFAULT.FILTER,
+});
+
 const filteredList = computed<ModelData[]>(() => {
 	const record = modelDataRecord.value;
+	const Filter = filters.value;
 
 	return props.models.filter(({ id }) => {
 		const data = record[id];
 
 		if (data === undefined) {
 			return false;
+		}
+
+		const { component, author, size, release } = data;
+
+		if (component !== undefined) {
+			const { vision, language } = component;
+
+			if (vision !== undefined) {
+				for (const value of vision) {
+					if (!Filter.vision(value)) {
+						return false;
+					}
+				}
+			}
+
+			if (language !== undefined) {
+				for (const value of language) {
+					if (!Filter.language(value)) {
+						return false;
+					}
+				}
+			}
+
+			if (author !== undefined) {
+				for (const value of author) {
+					if (!Filter.author(value)) {
+						return false;
+					}
+				}
+			}
+
+			if (size !== undefined) {
+				for (const value of size) {
+					if (!Filter.size(value)) {
+						return false;
+					}
+				}
+			}
+
+			if (release !== undefined) {
+				if (!Filter.year(release.year)) {
+					return false;
+				}
+			}
 		}
 
 		return true;
@@ -163,7 +212,6 @@ watch(() => props.models, async (modelList) => {
 		{
 			name: 'vision',
 			type: 'enum',
-			modelFilter: DEFAULT.FILTER,
 			modelReset: DEFAULT.RESET,
 			modelValue: Record(visionList),
 			props: {
@@ -173,7 +221,6 @@ watch(() => props.models, async (modelList) => {
 		{
 			name: 'language',
 			type: 'enum',
-			modelFilter: DEFAULT.FILTER,
 			modelReset: DEFAULT.RESET,
 			modelValue: Record(languageList),
 			props: {
@@ -183,7 +230,6 @@ watch(() => props.models, async (modelList) => {
 		{
 			name: 'author',
 			type: 'enum',
-			modelFilter: DEFAULT.FILTER,
 			modelReset: DEFAULT.RESET,
 			modelValue: Record(authorList),
 			props: {
@@ -193,7 +239,6 @@ watch(() => props.models, async (modelList) => {
 		{
 			name: 'size',
 			type: 'range',
-			modelFilter: DEFAULT.FILTER,
 			modelReset: DEFAULT.RESET,
 			modelValue: {
 				min: Math.min(...sizeList),
@@ -207,7 +252,6 @@ watch(() => props.models, async (modelList) => {
 		{
 			name: 'year',
 			type: 'range',
-			modelFilter: DEFAULT.FILTER,
 			modelReset: DEFAULT.RESET,
 			modelValue: {
 				min: Math.min(...yearList),
