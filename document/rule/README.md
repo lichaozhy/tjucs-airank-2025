@@ -103,7 +103,7 @@ The scoring rules for the embodied capability leaderboards and the embodied task
 
 ## ⏰ Update Frequency
 
-- The Leaderboards are updated once a week, and a snapshot of the results is taken on the first working day of each week, as the leaderboards of the previous week.
+- The Leaderboards are updated every two weeks.
 - Each manufacturer is only allowed to submit an evaluation application once a month. After receiving the evaluation application, it is generally updated within 7 working days.
 
 ---
