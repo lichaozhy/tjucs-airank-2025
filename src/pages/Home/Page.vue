@@ -1,6 +1,7 @@
 <template>
 	<q-page id="app-home">
 		<app-home-banner-section />
+		<app-home-news-section />
 		<AppHomeProfileSection />
 		<app-home-evaluation />
 		<app-home-feature />
@@ -12,6 +13,7 @@
 
 <script setup lang="ts">
 import AppHomeBannerSection from './BannerSection.vue';
+import AppHomeNewsSection from './NewsSection.vue';
 import AppHomeProfileSection from './ProfileSection.vue';
 import AppHomeEvaluation from './EvaluationSection.vue';
 import AppHomeFeature from './FeatureSection.vue';

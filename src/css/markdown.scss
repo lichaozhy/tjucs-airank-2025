@@ -263,6 +263,13 @@ $link-hover: #e74c3c;
 		display: inline-block;
 	}
 
+	input[type='checkbox'] {
+		margin-right: 0.5em;
+		position: relative;
+		top: 0.2em;
+		pointer-events: none;
+	}
+
 	// 任务列表
 	.task-list-item {
 		list-style-type: none;

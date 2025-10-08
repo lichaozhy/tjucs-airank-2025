@@ -6,6 +6,7 @@ import { JSDOM } from 'jsdom';
 import MarkdownIt from 'markdown-it';
 import markdownItMathTemml from 'markdown-it-math/temml';
 import MarkdownItAnchor from 'markdown-it-anchor';
+import MarkdownItCheckbox from '@gerhobbelt/markdown-it-checkbox';
 import slugify from '@sindresorhus/slugify';
 
 import { Hash, ensureDirectory, PATH } from './utils.mjs';
@@ -17,6 +18,7 @@ export const parser = MarkdownIt({ html: true, linkify: true });
 
 parser.use(markdownItMathTemml);
 parser.use(MarkdownItAnchor, { slugify: (s) => slugify(s) });
+parser.use(MarkdownItCheckbox, { disabled: true });
 
 export const missingPathname = [];
 
