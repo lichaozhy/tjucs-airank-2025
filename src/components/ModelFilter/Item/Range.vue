@@ -16,13 +16,13 @@
 </template>
 
 <script setup lang="ts">
-import { onBeforeMount, onUnmounted, ref, watch } from 'vue';
-import { useManager } from './use';
+import { onMounted, watch } from 'vue';
 
 type Range = { min: number, max: number };
+type ResetHandler = () => unknown;
+type Filter = (value: number) => boolean;
 
 const props = withDefaults(defineProps<{
-	id: string;
 	min: number;
 	max: number;
 	step?: number;
@@ -30,38 +30,16 @@ const props = withDefaults(defineProps<{
 	step: 1,
 });
 
-const emit = defineEmits<{
-	configure: [(value: number) => boolean]
-}>();
+const range = defineModel<Range>({ required: true });
+const reset = defineModel<ResetHandler>('reset', { required: true });
+const filter = defineModel<Filter>('filter', { required: true });
 
-function reset() {
-	range.value = {
-		min: props.min,
-		max: props.max,
-	};
-}
-
-const { manager } = useManager();
-const range = ref<Range>({ min: props.min, max: props.max });
-
-manager.register(reset);
-
-onUnmounted(() => {
-	manager.remove(reset);
-	manager.setValue(props.id, { ...range.value });
+onMounted(() => {
+	reset.value = () => range.value = { min: props.min, max: props.max };
 });
-
-onBeforeMount(() => {
-	const oldValue = manager.getValue(props.id);
-
-	if (oldValue !== undefined) {
-		range.value = { ...oldValue as Range };
-	}
-});
-
 
 watch(range, ({ min, max }) => {
-	emit('configure', value => value <= max && value >- min);
+	filter.value = (value) => value >= min && value <= max;
 });
 
 defineOptions({ name: 'AppModelFilterItemRange' });

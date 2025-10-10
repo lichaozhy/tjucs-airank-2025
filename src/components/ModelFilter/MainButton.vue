@@ -9,6 +9,8 @@
 		transition-show="none"
 	>
 		<template #label>
+			<span>{{ filteredList.length }}</span>
+			<span class="q-mx-sm">/</span>
 			<span>{{ props.models.length }}</span>
 		</template>
 
@@ -23,20 +25,30 @@
 			>
 			<q-separator />
 			<template
-				v-for="{ name, ItemComponent, props } in itemList"
-				:key="name"
+				v-for="(item) in itemList"
+				:key="item.name"
 			>
 				<q-item-label
 					header
 					caption
 					class="text-capitalize text-weight-bold q-py-sm"
-					>{{ name }}</q-item-label
+					>{{ item.name }}</q-item-label
 				>
 				<q-item>
-					<component
-						:is="ItemComponent"
-						v-bind="props"
-					></component>
+					<app-item-enum
+						v-if="item.type === 'enum'"
+						v-bind="item.props"
+						v-model:reset="item.modelReset"
+						v-model:filter="item.modelFilter"
+						v-model="item.modelValue"
+					></app-item-enum>
+					<app-item-range
+						v-if="item.type === 'range'"
+						v-bind="item.props"
+						v-model:reset="item.modelReset"
+						v-model:filter="item.modelFilter"
+						v-model="item.modelValue"
+					></app-item-range>
 				</q-item>
 				<q-separator spaced />
 			</template>
@@ -47,7 +59,7 @@
 				flat
 				square
 				label="reset"
-				@click="manager.resetAll()"
+				@click="resetAll"
 			/>
 		</q-toolbar>
 	</q-btn-dropdown>
@@ -68,22 +80,6 @@ const manager = new Item.FilterItemManager();
 
 provide(ItemSymbol.MANAGER, manager);
 
-export type ValueGroup = {
-	vision: string[];
-	language: string[];
-	author: string[];
-	size: number[];
-	year: number[];
-};
-
-type ValueCheckGroup = {
-	vision: Record<string, boolean>;
-	language: Record<string, boolean>;
-	author: Record<string, boolean>;
-	size: Record<number, boolean>;
-	year: Record<number, boolean>;
-};
-
 const props = withDefaults(
 	defineProps<{
 		models?: ModelData[];
@@ -97,76 +93,136 @@ const emit = defineEmits<{
 	filtered: [result: ModelData[]];
 }>();
 
-const group = ref<ValueGroup>({
-	vision: [],
-	language: [],
-	author: [],
-	size: [],
-	year: [],
+interface BaseItem {
+	name: string;
+	modelFilter: (value: number | string) => boolean;
+	modelReset: () => unknown;
+}
+
+interface EnumItem extends BaseItem {
+	type: 'enum';
+	modelValue: Record<string, boolean>;
+	props: {
+		values: string[]
+	}
+}
+
+interface RangeItem extends BaseItem {
+	type: 'range';
+	modelValue: { min: number, max: number };
+	props: {
+		min: number;
+		max: number;
+	}
+}
+
+const DEFAULT = {
+	RESET: () => {},
+	FILTER: () => true,
+};
+
+const modelDataRecord = ref<Record<string, Data.Model>>({});
+const itemList = ref<(EnumItem | RangeItem)[]>([]);
+
+function resetAll() {
+	for (const { modelReset: reset } of itemList.value) {
+		reset();
+	}
+}
+
+const filteredList = computed<ModelData[]>(() => {
+	const record = modelDataRecord.value;
+
+	return props.models.filter(({ id }) => {
+		const data = record[id];
+
+		if (data === undefined) {
+			return false;
+		}
+
+		return true;
+	});
 });
 
-const itemList = computed(() => {
-	const { vision, language, author, size, year } = group.value;
+const Record = (list: string[]) => Object.fromEntries(list.map(v => [v, true]));
 
-	return [
+watch(filteredList, list => emit('filtered', list), { immediate: true });
+
+watch(() => props.models, async (modelList) => {
+	const idList = modelList.map(({ id }) => id);
+	const modelFetchingList = idList.map(id => Backend.API.Model(id).get());
+	const modelDataList = await Promise.all(modelFetchingList);
+	const _group = await Backend.API.Model.PropertyRecord.query(...idList);
+	const visionList = Object.keys(_group.vision);
+	const languageList = Object.keys(_group.language);
+	const authorList = Object.keys(_group.author);
+	const sizeList = Object.keys(_group.size).map(Number);
+	const yearList = Object.keys(_group.year).map(Number);
+
+	itemList.value = [
 		{
 			name: 'vision',
-			ItemComponent: AppItemEnum,
+			type: 'enum',
+			modelFilter: DEFAULT.FILTER,
+			modelReset: DEFAULT.RESET,
+			modelValue: Record(visionList),
 			props: {
-				id: 'vision',
-				values: vision,
+				values: visionList,
 			},
 		},
 		{
 			name: 'language',
-			ItemComponent: AppItemEnum,
+			type: 'enum',
+			modelFilter: DEFAULT.FILTER,
+			modelReset: DEFAULT.RESET,
+			modelValue: Record(languageList),
 			props: {
-				id: 'language',
-				values: language,
+				values: languageList,
 			},
 		},
 		{
 			name: 'author',
-			ItemComponent: AppItemEnum,
+			type: 'enum',
+			modelFilter: DEFAULT.FILTER,
+			modelReset: DEFAULT.RESET,
+			modelValue: Record(authorList),
 			props: {
-				id: 'author',
-				values: author,
+				values: authorList,
 			},
 		},
 		{
 			name: 'size',
-			ItemComponent: AppItemRange,
+			type: 'range',
+			modelFilter: DEFAULT.FILTER,
+			modelReset: DEFAULT.RESET,
+			modelValue: {
+				min: Math.min(...sizeList),
+				max: Math.max(...sizeList),
+			},
 			props: {
-				id: 'size',
-				min: Math.min(...size),
-				max: Math.max(...size),
+				min: Math.min(...sizeList),
+				max: Math.max(...sizeList),
 			},
 		},
 		{
 			name: 'year',
-			ItemComponent: AppItemRange,
+			type: 'range',
+			modelFilter: DEFAULT.FILTER,
+			modelReset: DEFAULT.RESET,
+			modelValue: {
+				min: Math.min(...yearList),
+				max: Math.max(...yearList),
+			},
 			props: {
-				id: 'year',
-				min: Math.min(...year),
-				max: Math.max(...year),
+				min: Math.min(...yearList),
+				max: Math.max(...yearList),
 			},
 		},
 	];
-});
 
-watch(() => props.models, async (modelList) => {
-	const idList = modelList.map(({ id }) => id);
-	const _group = await Backend.API.Model.PropertyRecord.query(...idList);
+	const modelDataEntries = modelDataList.map(({ id, ...data }) => [id, data]);
 
-	group.value = {
-		vision: Object.keys(_group.vision),
-		language: Object.keys(_group.language),
-		author: Object.keys(_group.author),
-		size: Object.keys(_group.size).map(Number),
-		year: Object.keys(_group.year).map(Number),
-	};
-
-	emit('filtered', [...modelList]);
+	modelDataRecord.value = Object.fromEntries(modelDataEntries);
 }, { immediate: true });
 
 defineOptions({ name: 'AppModelFilter' });
