@@ -1,5 +1,5 @@
 ---
-name: wall-oss-nav
+name: wall-oss-fast
 component:
   vision:
     - ViT
