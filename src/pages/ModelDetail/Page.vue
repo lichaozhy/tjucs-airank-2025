@@ -105,7 +105,7 @@ const propertyEntityList = computed<PropertyEntity[]>(() => {
 			if (component.vision !== undefined) {
 				for (const vision of component.vision) {
 					list.push({
-						label: 'Vision Nodel',
+						label: 'Vision Model',
 						value: vision,
 						icon: 'visibility',
 					});
