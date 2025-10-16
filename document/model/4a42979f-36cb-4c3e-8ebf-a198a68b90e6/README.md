@@ -16,6 +16,7 @@ reason: true
 opensource: false
 release:
   year: 2025
+category: general
 score:
   benchmark:
     a9228f2e-3191-4a08-8f03-64e73cae2e78:

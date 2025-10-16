@@ -6,6 +6,7 @@ navigation: false
 taskPlanning: false
 reason: false
 opensource: false
+category: embodied
 score:
   benchmark:
     8b56c6cf-becf-4bef-b612-1804d2f20cda:

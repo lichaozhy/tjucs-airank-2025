@@ -5,8 +5,7 @@ component:
     - InternViT-300M-448px
   language:
     - internlm2_5-7b-chat
-size:
-  - 8
+size: 8
 author:
   - Shanghai AI Lab
 qa:
@@ -20,6 +19,7 @@ reason: false
 opensource: true
 release:
   year: 2024
+category: general
 imageVideo: image/video
 score:
   benchmark:

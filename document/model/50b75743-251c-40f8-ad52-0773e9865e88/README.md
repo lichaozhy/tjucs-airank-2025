@@ -1,12 +1,11 @@
 ---
-name: InternVL2.5-38B-MPO
+name: InternVL2_5-38B-MPO
 component:
   vision:
     - InternViT-6B-448px-V2_5
   language:
     - Qwen2.5-32B-Instruct
-size:
-  - 38
+size: 38
 author:
   - Shanghai AI Lab
 qa:
@@ -20,6 +19,7 @@ reason: false
 opensource: true
 release:
   year: 2024
+category: general
 imageVideo: image/video
 score:
   benchmark: {}

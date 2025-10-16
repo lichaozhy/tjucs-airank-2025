@@ -5,8 +5,7 @@ component:
     - CLIP-ViT-L-336px
   language:
     - Vicuna-13B
-size:
-  - 13
+size: 13
 author:
   - Tianjin University
 qa:
@@ -20,6 +19,7 @@ reason: true
 opensource: true
 release:
   year: 2025
+category: embodied
 imageVideo: image/video
 score:
   benchmark: {}

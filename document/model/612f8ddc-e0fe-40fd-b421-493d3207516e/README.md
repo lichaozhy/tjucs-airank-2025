@@ -5,11 +5,12 @@ component:
     - ViT
   language:
     - Qwen 2.5
+size: 4
 author:
   - X square robot
-size:
-  - 4
 qa:
+  - 2D
+dimension:
   - 2D
 website: https://x2robot.com/en/research/68bc2cde8497d7f238dde690
 navigation: true
@@ -18,6 +19,7 @@ reason: false
 opensource: true
 release:
   year: 2025
+category: embodied
 imageVideo: image/video
 score:
   benchmark:

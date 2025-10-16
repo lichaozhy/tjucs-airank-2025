@@ -5,8 +5,7 @@ component:
     - 3D Visual Geometry Encoder combined with 2D Visual Encoder
   language:
     - LLaVA-Video-7B
-size:
-  - 8
+size: 8
 author:
   - The Chinese University of Hong Kong
 qa:
@@ -20,6 +19,7 @@ reason: true
 opensource: true
 release:
   year: 2024
+category: embodied
 imageVideo: Video
 score:
   benchmark:

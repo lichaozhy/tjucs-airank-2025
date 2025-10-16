@@ -5,8 +5,7 @@ component:
     - CLIP ViT-L-14
   language:
     - Vicuna-7B
-size:
-  - 7
+size: 7
 author:
   - University of Wisconsin-Madison
 qa:
@@ -20,6 +19,7 @@ reason: false
 opensource: true
 release:
   year: 2023
+category: general
 imageVideo: Image
 score:
   benchmark:

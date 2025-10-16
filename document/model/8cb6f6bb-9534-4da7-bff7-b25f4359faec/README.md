@@ -5,8 +5,7 @@ component:
     - ViT
   language:
     - PaLM-E 12B
-size:
-  - 12
+size: 12
 author:
   - Google DeepMind
 qa:
@@ -20,6 +19,7 @@ reason: true
 opensource: true
 release:
   year: 2024
+category: embodied
 imageVideo: image/video
 score:
   benchmark:

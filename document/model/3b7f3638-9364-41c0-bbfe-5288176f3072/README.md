@@ -3,8 +3,7 @@ name: LLaVA-NeXT-Video-7B
 component:
   language:
     - Vicuna-7B-v1.5
-size:
-  - 7
+size: 7
 author:
   - ByteDance
 qa:
@@ -18,6 +17,7 @@ reason: false
 opensource: true
 release:
   year: 2024
+category: general
 imageVideo: image/video
 score:
   benchmark:

@@ -5,8 +5,7 @@ component:
     - CLIP
   language:
     - LLaVA-1.5-7B
-size:
-  - 7
+size: 7
 author:
   - UMass Amherst
 qa:
@@ -20,6 +19,7 @@ reason: false
 opensource: true
 release:
   year: 2025
+category: embodied
 imageVideo: image/video
 score:
   benchmark: {}

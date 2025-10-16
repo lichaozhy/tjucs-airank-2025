@@ -1,7 +1,6 @@
 ---
 name: VILA-1.5-40B
-size:
-  - 40
+size: 40
 author:
   - NVIDIA
 qa:
@@ -15,6 +14,7 @@ reason: true
 opensource: true
 release:
   year: 2024
+category: general
 imageVideo: image/video
 score:
   benchmark:

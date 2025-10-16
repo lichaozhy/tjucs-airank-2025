@@ -2,7 +2,7 @@
 name: Inst3D-LLM
 component:
   vision:
-    - CLIP-ViT-L/14-336px
+    - CLIP-ViT-L-14-336px
   language:
     - Vicuna-7B-v1.5
 author:
@@ -18,6 +18,7 @@ reason: false
 opensource: true
 release:
   year: 2025
+category: general
 imageVideo: Point Clouds
 score:
   benchmark:

@@ -5,8 +5,7 @@ component:
     - ViT
   language:
     - Qwen2.5-7B
-size:
-  - 7
+size: 7
 author:
   - NVIDIA
 qa:
@@ -20,6 +19,7 @@ reason: false
 opensource: true
 release:
   year: 2025
+category: embodied
 imageVideo: image/video
 score:
   benchmark:

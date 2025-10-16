@@ -3,8 +3,7 @@ name: Space-R
 component:
   language:
     - Qwen2.5-VL-7B-Instruct
-size:
-  - 8
+size: 8
 author:
   - Peking University
 qa:
@@ -18,6 +17,7 @@ reason: true
 opensource: true
 release:
   year: 2025
+category: embodied
 imageVideo: image/video
 score:
   benchmark:

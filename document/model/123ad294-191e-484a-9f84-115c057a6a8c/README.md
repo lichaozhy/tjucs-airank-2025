@@ -1,7 +1,6 @@
 ---
 name: SpatialCoT
-size:
-  - 13
+size: 13
 author:
   - Noah’s Ark Lab
 qa:
@@ -15,6 +14,7 @@ reason: true
 opensource: false
 release:
   year: 2025
+category: embodied
 imageVideo: Image
 score:
   benchmark: {}

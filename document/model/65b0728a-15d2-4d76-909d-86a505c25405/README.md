@@ -5,8 +5,7 @@ component:
     - BLIP-2
   language:
     - Flan-T5-xl
-size:
-  - 3
+size: 3
 author:
   - Salesforce Research
 qa:
@@ -20,6 +19,7 @@ reason: false
 opensource: true
 release:
   year: 2023
+category: general
 imageVideo: Image
 score:
   benchmark:

@@ -4,9 +4,8 @@ component:
   vision:
     - ViT
   language:
-    - Qwen2.5
-size:
-  - 3
+    - Qwen 2.5
+size: 3
 author:
   - Tianjin University
 qa:
@@ -20,6 +19,7 @@ reason: true
 opensource: true
 release:
   year: 2025
+category: embodied
 imageVideo: image
 score:
   benchmark:

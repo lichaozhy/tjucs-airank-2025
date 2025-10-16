@@ -5,8 +5,7 @@ component:
     - ViT
   language:
     - Qwen2-72B
-size:
-  - 72
+size: 72
 author:
   - Alibaba
 qa:
@@ -20,6 +19,7 @@ reason: false
 opensource: true
 release:
   year: 2024
+category: general
 imageVideo: image/video
 score:
   benchmark:

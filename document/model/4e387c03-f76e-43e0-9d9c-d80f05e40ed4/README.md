@@ -5,22 +5,21 @@ component:
     - SigLIP
   language:
     - Qwen2-7B
-size:
-  - 7
+size: 7
 author:
   - ByteDance
 qa:
   - 2D
 dimension:
   - 2D
-website: >-
-  https://huggingface.co/collections/lmms-lab/llava-onevision-66a259c3526e15166d6bba37
+website: https://huggingface.co/collections/lmms-lab/llava-onevision-66a259c3526e15166d6bba37
 navigation: true
 taskPlanning: true
 reason: true
 opensource: true
 release:
   year: 2024
+category: general
 score:
   benchmark:
     034bf6b5-dc18-45da-bfaf-337589125632:

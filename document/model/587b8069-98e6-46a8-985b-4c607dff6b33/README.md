@@ -5,8 +5,7 @@ component:
     - SceneEncoder
   language:
     - Vicuna-7B-v0
-size:
-  - 7
+size: 7
 author:
   - The Chinese University of Hong Kong
 qa:
@@ -20,6 +19,7 @@ reason: false
 opensource: true
 release:
   year: 2023
+category: embodied
 imageVideo: Image
 score:
   benchmark:

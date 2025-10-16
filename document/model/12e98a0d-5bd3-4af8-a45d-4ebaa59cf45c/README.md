@@ -3,8 +3,7 @@ name: Llama3-70B
 component:
   language:
     - Llama3.0-70B
-size:
-  - 70
+size: 70
 author:
   - Meta AI
 qa:
@@ -18,6 +17,7 @@ reason: false
 opensource: true
 release:
   year: 2024
+category: general
 score:
   benchmark: {}
   summary: {}
