@@ -13,7 +13,8 @@ reason: false
 opensource: true
 release:
   year: 2023
-imageVideo: Point Clouds
+category: general
+imageVideo: .nan
 score:
   benchmark:
     e0465aba-17b0-4f34-9aa4-345c9bacdac2:

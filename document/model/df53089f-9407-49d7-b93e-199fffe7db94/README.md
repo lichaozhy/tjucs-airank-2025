@@ -3,8 +3,7 @@ name: Llama3-8B
 component:
   language:
     - Llama3.0-8B
-size:
-  - 8
+size: 8
 author:
   - Meta AI
 qa:
@@ -18,6 +17,7 @@ reason: false
 opensource: true
 release:
   year: 2024
+category: general
 score:
   benchmark: {}
   summary: {}

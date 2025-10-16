@@ -18,7 +18,8 @@ reason: true
 opensource: true
 release:
   year: 2025
-imageVideo: image/video
+category: embodied
+imageVideo: .nan
 score:
   benchmark:
     025ca0fe-f04c-4d17-9f4c-9d1aca6666bd:

@@ -1,7 +1,6 @@
 ---
 name: Grounded 3D-LLM
-size:
-  - 1
+size: 1
 author:
   - Shanghai AI Lab
 qa:
@@ -15,6 +14,7 @@ reason: true
 opensource: true
 release:
   year: 2024
+category: embodied
 imageVideo: Point Clouds
 score:
   benchmark:

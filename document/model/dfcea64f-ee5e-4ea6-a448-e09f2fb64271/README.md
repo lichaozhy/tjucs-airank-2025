@@ -5,10 +5,9 @@ component:
     - CLIP ViT-L-14
   language:
     - Vicuna-7B-v1.5
-size:
-  - 7
+size: 7
 author:
-  - Bytedance
+  - ByteDance
 qa:
   - 2D
 dimension:
@@ -20,6 +19,7 @@ reason: false
 opensource: true
 release:
   year: 2024
+category: general
 imageVideo: image/video
 score:
   benchmark:

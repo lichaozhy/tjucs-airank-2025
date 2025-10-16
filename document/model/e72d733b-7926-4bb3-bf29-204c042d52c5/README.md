@@ -3,8 +3,7 @@ name: Mem2Ego
 component:
   language:
     - Llama3.2-11B
-size:
-  - 11
+size: 11
 author:
   - Noah’s Ark Lab
 qa:
@@ -18,6 +17,7 @@ reason: false
 opensource: false
 release:
   year: 2025
+category: embodied
 imageVideo: Image
 score:
   benchmark: {}

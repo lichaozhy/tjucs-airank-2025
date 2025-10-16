@@ -13,6 +13,7 @@ reason: false
 opensource: true
 release:
   year: 2024
+category: general
 score:
   benchmark:
     034bf6b5-dc18-45da-bfaf-337589125632:

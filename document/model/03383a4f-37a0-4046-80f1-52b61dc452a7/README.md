@@ -5,8 +5,7 @@ component:
     - ViT-G-14
   language:
     - LLaMA-7B
-size:
-  - 7
+size: 7
 author:
   - The University of Hong Kong
 qa:
@@ -20,6 +19,7 @@ reason: true
 opensource: true
 release:
   year: 2023
+category: embodied
 imageVideo: image/video
 score:
   benchmark:

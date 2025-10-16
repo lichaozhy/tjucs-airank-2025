@@ -5,8 +5,7 @@ component:
     - CLIP
   language:
     - LLaMA-3-8B
-size:
-  - 8
+size: 8
 author:
   - Microsoft
 qa:
@@ -20,6 +19,7 @@ reason: true
 opensource: true
 release:
   year: 2025
+category: embodied
 imageVideo: image/video
 score:
   benchmark:

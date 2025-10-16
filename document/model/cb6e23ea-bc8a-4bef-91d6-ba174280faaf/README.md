@@ -5,8 +5,7 @@ component:
     - Redesigned ViT
   language:
     - Qwen2.5-7B
-size:
-  - 7
+size: 7
 author:
   - Alibaba
 qa:
@@ -20,6 +19,7 @@ reason: true
 opensource: true
 release:
   year: 2025
+category: general
 imageVideo: image/video
 score:
   benchmark:

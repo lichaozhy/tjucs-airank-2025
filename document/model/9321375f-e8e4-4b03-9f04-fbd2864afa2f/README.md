@@ -6,6 +6,7 @@ navigation: false
 taskPlanning: false
 reason: false
 opensource: false
+category: embodied
 score:
   benchmark: {}
   summary: {}

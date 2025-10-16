@@ -1,7 +1,6 @@
 ---
 name: 3DMIT
-size:
-  - 7
+size: 7
 author:
   - Beijing University of Posts and Telecommunications
 qa:
@@ -15,6 +14,7 @@ reason: true
 opensource: true
 release:
   year: 2024
+category: embodied
 imageVideo: Point Clouds
 score:
   benchmark: {}

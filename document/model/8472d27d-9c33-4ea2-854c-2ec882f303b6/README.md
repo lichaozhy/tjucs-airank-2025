@@ -18,6 +18,7 @@ reason: false
 opensource: true
 release:
   year: 2023
+category: general
 imageVideo: Point Clouds
 score:
   benchmark:

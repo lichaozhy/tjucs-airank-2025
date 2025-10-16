@@ -9,14 +9,14 @@ qa:
   - 2D
 dimension:
   - 2D
-website: 
-  https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/
+website: https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/
 navigation: false
 taskPlanning: false
 reason: false
 opensource: false
 release:
   year: 2024
+category: general
 imageVideo: Image
 score:
   benchmark:

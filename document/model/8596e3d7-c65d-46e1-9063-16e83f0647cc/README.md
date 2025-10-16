@@ -1,7 +1,6 @@
 ---
 name: Llama-vid-7b-full-224
-size:
-  - 7
+size: 7
 author:
   - The Chinese University of Hong Kong
 qa:
@@ -15,6 +14,7 @@ reason: false
 opensource: true
 release:
   year: 2023
+category: general
 imageVideo: image/video
 score:
   benchmark:

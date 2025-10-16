@@ -5,8 +5,7 @@ component:
     - EVA-CLIP
   language:
     - Vicuna-7B-v1.5
-size:
-  - 7
+size: 7
 author:
   - BAAI
 qa:
@@ -20,6 +19,7 @@ reason: false
 opensource: true
 release:
   year: 2024
+category: embodied
 imageVideo: image/video
 score:
   benchmark:

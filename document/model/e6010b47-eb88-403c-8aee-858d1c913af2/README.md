@@ -1,7 +1,9 @@
 ---
 name: Llama-3.2-11B-Vision-Instruct
-size:
-  - 11
+component:
+  language:
+    - Llama 3.1
+size: 11
 author:
   - Meta AI
 qa:
@@ -15,6 +17,7 @@ reason: false
 opensource: true
 release:
   year: 2024
+category: general
 imageVideo: Image
 score:
   benchmark:

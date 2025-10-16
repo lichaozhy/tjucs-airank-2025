@@ -5,8 +5,7 @@ component:
     - CLIP-L
   language:
     - LLama-2-13B
-size:
-  - 13
+size: 13
 author:
   - NVIDIA
 qa:
@@ -20,6 +19,7 @@ reason: true
 opensource: true
 release:
   year: 2024
+category: general
 imageVideo: image/video
 score:
   benchmark:

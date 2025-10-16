@@ -16,6 +16,7 @@ reason: true
 opensource: false
 release:
   year: 2024
+category: general
 imageVideo: Image
 score:
   benchmark:

@@ -1,7 +1,6 @@
 ---
 name: RoboBrain2.0-32B
-size:
-  - 32
+size: 32
 author:
   - BAAI
 qa:
@@ -15,6 +14,7 @@ reason: true
 opensource: true
 release:
   year: 2025
+category: embodied
 imageVideo: image/video
 score:
   benchmark:

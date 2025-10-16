@@ -1,7 +1,9 @@
 ---
-name: robo-refer
-size:
-  - 8
+name: Robo-Refer
+component:
+  language:
+    - RoboRefer-8B
+size: 8
 author:
   - Beihang University
 qa:
@@ -15,6 +17,7 @@ reason: true
 opensource: true
 release:
   year: 2025
+category: embodied
 imageVideo: image/video
 score:
   benchmark:
