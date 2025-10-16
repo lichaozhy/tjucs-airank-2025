@@ -20,6 +20,7 @@ reason: false
 opensource: true
 release:
   year: 2024
+category: embodied
 imageVideo: image/video
 score:
   benchmark: {}

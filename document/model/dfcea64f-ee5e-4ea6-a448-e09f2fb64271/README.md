@@ -8,7 +8,7 @@ component:
 size:
   - 7
 author:
-  - Bytedance
+  - ByteDance
 qa:
   - 2D
 dimension:
@@ -20,6 +20,7 @@ reason: false
 opensource: true
 release:
   year: 2024
+category: general
 imageVideo: image/video
 score:
   benchmark:

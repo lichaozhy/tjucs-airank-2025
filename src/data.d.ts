@@ -129,6 +129,7 @@ interface Leaderboard {
 }
 
 export interface Model {
+	category: 'general' | 'embodied';
 	name: string;
 	component?: {
 		vision?: string[];

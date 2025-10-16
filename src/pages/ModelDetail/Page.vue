@@ -97,9 +97,10 @@ interface PropertyEntity {
 
 const propertyEntityList = computed<PropertyEntity[]>(() => {
 	const list: PropertyEntity[] = [];
+	const _model = model.value;
 
-	if (model.value !== null) {
-		const { component, size, author, release, opensource } = model.value;
+	if (_model) {
+		const { component, size, author, release, opensource, category } = _model;
 
 		if (component !== undefined) {
 			if (component.vision !== undefined) {
@@ -163,6 +164,14 @@ const propertyEntityList = computed<PropertyEntity[]>(() => {
 				label: 'Open Source',
 				icon: opensource ? 'check' : 'close',
 				color: opensource ? 'positive' : 'negative',
+			});
+		}
+
+		if (category !== undefined) {
+			list.push({
+				label: 'Category',
+				icon: 'category',
+				value: category,
 			});
 		}
 	}

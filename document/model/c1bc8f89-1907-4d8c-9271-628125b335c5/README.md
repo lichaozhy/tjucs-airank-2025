@@ -2,9 +2,9 @@
 name: SAT
 component:
   vision:
-    - LLaVA-Video-7B
+    - ViT
   language:
-    - LLaVA-1.5-13B
+    - LLaVA-1.5-7B
 size:
   - 7
 author:
@@ -20,6 +20,7 @@ reason: false
 opensource: true
 release:
   year: 2024
+category: embodied
 imageVideo: image/video
 score:
   benchmark:

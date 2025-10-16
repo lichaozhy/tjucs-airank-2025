@@ -20,6 +20,7 @@ reason: true
 opensource: true
 release:
   year: 2023
+category: embodied
 imageVideo: image/video
 score:
   benchmark:

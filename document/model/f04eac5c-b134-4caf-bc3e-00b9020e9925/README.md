@@ -15,6 +15,7 @@ reason: true
 opensource: true
 release:
   year: 2025
+category: embodied
 imageVideo: image/video
 score:
   benchmark:

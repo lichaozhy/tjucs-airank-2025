@@ -1,5 +1,8 @@
 ---
 name: Llama-3.2-11B-Vision-Instruct
+component:
+  language:
+    - Llama 3.1
 size:
   - 11
 author:
@@ -15,6 +18,7 @@ reason: false
 opensource: true
 release:
   year: 2024
+category: general
 imageVideo: Image
 score:
   benchmark:

@@ -5,7 +5,7 @@ author:
 qa:
   - 2D
 dimension:
-  - 2D
+  - 3D
 website: https://bagh2178.github.io/SG-Nav/
 navigation: true
 taskPlanning: true
@@ -13,7 +13,8 @@ reason: true
 opensource: true
 release:
   year: 2024
-imageVideo: image/video
+category: embodied
+imageVideo: .nan
 score:
   benchmark:
     e6d0fdb7-9de8-4320-9af4-fcd9de517827:

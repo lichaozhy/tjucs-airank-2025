@@ -4,7 +4,7 @@ component:
   vision:
     - ViT
   language:
-    - Qwen2.5
+    - Qwen 2.5
 size:
   - 3
 author:
@@ -20,6 +20,7 @@ reason: true
 opensource: true
 release:
   year: 2025
+category: embodied
 imageVideo: image
 score:
   benchmark:

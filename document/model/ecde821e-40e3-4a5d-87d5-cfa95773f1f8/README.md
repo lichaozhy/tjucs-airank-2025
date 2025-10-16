@@ -1,5 +1,8 @@
 ---
-name: robo-refer
+name: Robo-Refer
+component:
+  language:
+    - RoboRefer-8B
 size:
   - 8
 author:
@@ -15,6 +18,7 @@ reason: true
 opensource: true
 release:
   year: 2025
+category: embodied
 imageVideo: image/video
 score:
   benchmark:

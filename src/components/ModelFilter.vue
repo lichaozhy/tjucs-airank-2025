@@ -50,6 +50,7 @@ export type ModelPropertyValueGroup = {
 	author: string[];
 	size: number[];
 	year: number[];
+	category: string[];
 };
 
 const props = withDefaults(
@@ -77,6 +78,7 @@ const PROPERTY_GROUP = ref<ModelPropertyValueGroup>({
 	author: [],
 	size: [],
 	year: [],
+	category: [],
 });
 
 const modelList = ref<(Data.Model & { id: string })[]>([]);
@@ -153,6 +155,13 @@ const PropertyTester: Record<string, PropertyTester> = {
 
 		return data.release.year === target;
 	},
+	category: (data, target) => {
+		if (data.category === undefined) {
+			return false;
+		}
+
+		return data.category === target;
+	},
 };
 
 const propertyNameOptionList = computed<OptionObject[]>(() => {
@@ -182,6 +191,10 @@ const propertyNameOptionList = computed<OptionObject[]>(() => {
 			label: 'Open Source',
 			value: 'opensource',
 		},
+		{
+			label: 'Category',
+			value: 'category',
+		},
 	];
 });
 
@@ -199,6 +212,7 @@ const PropertyValueOptionsGenerator = {
 	dimension: () => Spec.Model.PROPERTY.QA.map(toOption),
 	opensource: () => Spec.Model.PROPERTY.OPENSOURCE.map(toBooleanOption),
 	imageVideo: () => Spec.Model.PROPERTY.IMAGE_VIDEO.map(toOption),
+	category: () => Spec.Model.PROPERTY.CATEGORY.map(toOption),
 };
 
 type PropertyNameValue = keyof typeof PropertyValueOptionsGenerator;
@@ -248,8 +262,8 @@ watch(propertyValueOption, (valueOption) => {
 const emit = defineEmits<{
 	filtered: [
 		result: ModelData[],
-		property: string | null,
-		value: string | number | null,
+		property?: string | null,
+		value?: string | number | null,
 	];
 }>();
 
@@ -265,6 +279,7 @@ watch(
 			author: [],
 			size: [],
 			year: [],
+			category: [],
 		};
 
 		group.vision = Object.keys(record.vision);

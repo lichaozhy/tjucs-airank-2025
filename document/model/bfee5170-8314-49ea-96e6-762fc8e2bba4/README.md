@@ -1,5 +1,10 @@
 ---
 name: MapNav
+component:
+  vision:
+    - SigLIP-So400M
+  language:
+    - Qwen2-7B-Instruct
 author:
   - BAAI
 qa:
@@ -13,6 +18,7 @@ reason: false
 opensource: false
 release:
   year: 2025
+category: embodied
 score:
   benchmark:
     1c6ba4e5-1555-487c-a4bc-3ee0c18b8b09:

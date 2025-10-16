@@ -18,6 +18,7 @@ reason: false
 opensource: true
 release:
   year: 2024
+category: general
 score:
   benchmark: {}
   summary: {}

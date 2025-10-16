@@ -16,6 +16,7 @@ reason: false
 opensource: false
 release:
   year: 2024
+category: embodied
 imageVideo: Point Clouds
 score:
   benchmark:

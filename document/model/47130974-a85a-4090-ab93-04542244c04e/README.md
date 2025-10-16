@@ -12,6 +12,7 @@ reason: false
 opensource: false
 release:
   year: 2025
+category: general
 score:
   benchmark: {}
   summary: {}

@@ -4,7 +4,7 @@ component:
   language:
     - Qwen2-VL-7B-Instruct
 author:
-  - The University of Hong Kong
+  - Shanghai AI Lab
 qa:
   - 2D
 dimension:
@@ -16,6 +16,7 @@ reason: true
 opensource: false
 release:
   year: 2025
+category: embodied
 imageVideo: image/video
 score:
   benchmark:

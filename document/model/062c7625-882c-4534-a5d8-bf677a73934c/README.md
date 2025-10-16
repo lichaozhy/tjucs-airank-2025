@@ -5,7 +5,7 @@ author:
 qa:
   - 3D
 dimension:
-  - 3D
+  - 2D
 website: https://gpt4scene.github.io/
 navigation: false
 taskPlanning: false
@@ -13,6 +13,7 @@ reason: false
 opensource: true
 release:
   year: 2025
+category: embodied
 imageVideo: Point Clouds
 score:
   benchmark:

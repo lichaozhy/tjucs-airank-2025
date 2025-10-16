@@ -1,7 +1,7 @@
 ---
 name: InternVLA-N1
 author:
-  - Shanghai AI Laboratory
+  - Shanghai AI Lab
 qa:
   - 2D
 dimension:
@@ -13,6 +13,8 @@ reason: false
 opensource: true
 release:
   year: 2025
+category: embodied
+imageVideo: .nan
 score:
   benchmark:
     025ca0fe-f04c-4d17-9f4c-9d1aca6666bd:

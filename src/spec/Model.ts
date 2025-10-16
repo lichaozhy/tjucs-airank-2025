@@ -57,4 +57,5 @@ export const PROPERTY = {
 	SIZE: [],
 	AUTHOR: [],
 	YEARS: [],
+	CATEGORY: ['general', 'embodied'],
 };

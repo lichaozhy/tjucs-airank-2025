@@ -8,14 +8,14 @@ qa:
   - 2D
 dimension:
   - 2D
-website: >-
-  https://huggingface.co/collections/lmms-lab/llava-onevision-66a259c3526e15166d6bba37
+website: https://huggingface.co/collections/lmms-lab/llava-onevision-66a259c3526e15166d6bba37
 navigation: true
 taskPlanning: true
 reason: true
 opensource: true
 release:
   year: 2024
+category: general
 score:
   benchmark:
     25206b0f-a955-4e39-86cf-53dcc9528bfc:
