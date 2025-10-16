@@ -5,8 +5,7 @@ component:
     - SigLIP-400M
   language:
     - Qwen2.5-3B-Instruct
-size:
-  - 3
+size: 3
 author:
   - Beijing Jiaotong University
 qa:

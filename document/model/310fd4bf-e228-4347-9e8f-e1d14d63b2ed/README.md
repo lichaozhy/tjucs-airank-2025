@@ -5,8 +5,12 @@ component:
     - ViT
   language:
     - Qwen 2.5
+<<<<<<< HEAD
 size:
   - 3
+=======
+size: 3
+>>>>>>> ee01108 (Add files via upload)
 author:
   - Tianjin University
 qa:

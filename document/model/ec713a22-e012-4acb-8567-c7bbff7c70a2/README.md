@@ -5,8 +5,7 @@ component:
     - CLIP-L
   language:
     - LLama-2-13B
-size:
-  - 13
+size: 13
 author:
   - NVIDIA
 qa:

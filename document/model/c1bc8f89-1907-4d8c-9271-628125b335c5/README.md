@@ -5,8 +5,7 @@ component:
     - ViT
   language:
     - LLaVA-1.5-7B
-size:
-  - 7
+size: 7
 author:
   - Boston University
 qa:

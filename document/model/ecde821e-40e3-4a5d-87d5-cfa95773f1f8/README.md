@@ -3,8 +3,7 @@ name: Robo-Refer
 component:
   language:
     - RoboRefer-8B
-size:
-  - 8
+size: 8
 author:
   - Beihang University
 qa:

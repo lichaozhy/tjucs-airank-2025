@@ -5,8 +5,12 @@ component:
     - ViT
   language:
     - Qwen 2.5
+<<<<<<< HEAD
 size:
   - 4
+=======
+size: 4
+>>>>>>> ee01108 (Add files via upload)
 author:
   - X square robot
 qa:

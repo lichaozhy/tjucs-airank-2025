@@ -5,8 +5,7 @@ component:
     - BLIP-2
   language:
     - Flan-T5-xl
-size:
-  - 3
+size: 3
 author:
   - Salesforce Research
 qa:

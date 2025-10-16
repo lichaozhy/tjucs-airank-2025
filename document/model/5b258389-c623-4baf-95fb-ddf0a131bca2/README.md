@@ -3,8 +3,7 @@ name: Space-R
 component:
   language:
     - Qwen2.5-VL-7B-Instruct
-size:
-  - 8
+size: 8
 author:
   - Peking University
 qa:

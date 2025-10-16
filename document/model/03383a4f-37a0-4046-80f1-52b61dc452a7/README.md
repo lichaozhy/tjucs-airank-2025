@@ -5,8 +5,7 @@ component:
     - ViT-G-14
   language:
     - LLaMA-7B
-size:
-  - 7
+size: 7
 author:
   - The University of Hong Kong
 qa:

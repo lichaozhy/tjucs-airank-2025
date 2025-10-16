@@ -1,7 +1,6 @@
 ---
 name: LLaVA-OneVision-72B
-size:
-  - 72
+size: 72
 author:
   - ByteDance
 qa:

@@ -3,8 +3,12 @@ name: Llama-3.2-90B-Vision-Instruct
 component:
   language:
     - Llama 3.1
+<<<<<<< HEAD
 size:
   - 90
+=======
+size: 90
+>>>>>>> ee01108 (Add files via upload)
 author:
   - Meta AI
 qa:

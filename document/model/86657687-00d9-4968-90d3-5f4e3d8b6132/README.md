@@ -5,8 +5,7 @@ component:
     - SigLIP-So400M
   language:
     - Qwen2-7B
-size:
-  - 7
+size: 7
 author:
   - ModelBest
 qa:

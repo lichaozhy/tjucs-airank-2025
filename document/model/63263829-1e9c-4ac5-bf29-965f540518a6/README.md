@@ -5,8 +5,7 @@ component:
     - InternViT-6B-448px-V2_5
   language:
     - Qwen2.5-32B-Instruct
-size:
-  - 38
+size: 38
 author:
   - Shanghai AI Lab
 qa:

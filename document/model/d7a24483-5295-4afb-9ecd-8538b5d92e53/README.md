@@ -3,8 +3,7 @@ name: LEO
 component:
   language:
     - Vicuna-7B-v1.1
-size:
-  - 7
+size: 7
 author:
   - BIGAI
 qa:

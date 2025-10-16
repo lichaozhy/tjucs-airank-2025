@@ -1,7 +1,6 @@
 ---
 name: Grounded 3D-LLM
-size:
-  - 1
+size: 1
 author:
   - Shanghai AI Lab
 qa:
