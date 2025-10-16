@@ -99,29 +99,7 @@ const propertyEntityList = computed<PropertyEntity[]>(() => {
 	const list: PropertyEntity[] = [];
 
 	if (model.value !== null) {
-		const { component, size, author, release, opensource } = model.value;
-
-		if (component !== undefined) {
-			if (component.vision !== undefined) {
-				for (const vision of component.vision) {
-					list.push({
-						label: 'Vision Model',
-						value: vision,
-						icon: 'visibility',
-					});
-				}
-			}
-
-			if (component.language !== undefined) {
-				for (const language of component.language) {
-					list.push({
-						label: 'Language Model',
-						value: language,
-						icon: 'translate',
-					});
-				}
-			}
-		}
+		const { size, author, release, opensource } = model.value;
 
 		if (size !== undefined) {
 			for (const sizeValue of size) {
