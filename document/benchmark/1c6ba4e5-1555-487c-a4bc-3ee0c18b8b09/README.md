@@ -1,6 +1,7 @@
 ---
 leaderboard: 263e7d41-65a5-4b7b-8f48-5c7b94ca916b
 name: VLN-CE RxR
+code: vln-ce-rxr
 description: >
   Beyond the Nav-Graph: Vision and Language Navigation in Continuous Environments
 organization: Oregon State University, Georgia Institute of Technology, Facebook AI Research

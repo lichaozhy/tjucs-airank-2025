@@ -1,6 +1,7 @@
 ---
 leaderboard: 09b4a56a-2e41-4103-a330-129381c24450
 name: Multi3DRefer
+code: multi3d-refer
 description: >
   Multi3DRefer: Grounding Text Description to Multiple 3D Objects
 organization: Simon Fraser University,Alberta Machine Intelligence Institute (Amii)

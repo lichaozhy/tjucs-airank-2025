@@ -1,6 +1,7 @@
 ---
 leaderboard: 263e7d41-65a5-4b7b-8f48-5c7b94ca916b
 name: EB-Navigation
+code: eb-navigation
 description: >
   EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents
 organization: University of Illinois Urbana-Champaign, Northwestern University, University of Toronto, Toyota Technological Institute at Chicago

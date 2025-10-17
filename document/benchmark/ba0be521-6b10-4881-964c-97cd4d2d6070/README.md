@@ -2,6 +2,7 @@
 id: ba0be521-6b10-4881-964c-97cd4d2d6070
 leaderboard: 09b4a56a-2e41-4103-a330-129381c24450
 name: OpenEQA
+code: open-eqa
 description: >
   OpenEQA: Embodied Question Answering in the Era of Foundation Models
 organization: Meta

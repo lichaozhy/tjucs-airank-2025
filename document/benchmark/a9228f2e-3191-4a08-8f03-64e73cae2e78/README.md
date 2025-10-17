@@ -1,6 +1,7 @@
 ---
 leaderboard: 09b4a56a-2e41-4103-a330-129381c24450
 name: Where2Place
+code: where-2-place
 description: >
   RoboPoint: A Vision-Language Model for Spatial Affordance Prediction for Robotics
 organization: University of Washington

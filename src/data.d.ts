@@ -18,9 +18,15 @@ export interface BenchmarkProperty {
 	unit: string | null;
 }
 
-interface DataItem {
+interface CapabilityRecord {
+	0: Record<string, boolean>;
+	1: Record<string, boolean>;
+}
+
+export interface BenchmarkData {
 	leaderboard: string;
 	name: string;
+	code: string;
 	description: string;
 	organization: string;
 	released: ReleasedInfo;
@@ -34,12 +40,6 @@ interface DataItem {
 	properties: {
 		[key: string]: BenchmarkProperty;
 	};
-	id?: string;
-}
-
-interface CapabilityRecord {
-	0: Record<string, boolean>;
-	1: Record<string, boolean>;
 }
 
 interface BenchmarkItem {
@@ -49,7 +49,7 @@ interface BenchmarkItem {
 	profile: {
 		$data: {};
 	};
-	$data: DataItem;
+	$data: BenchmarkData;
 }
 
 interface Benchmark {
@@ -89,7 +89,7 @@ interface Capability {
 	configuration: {
 		$data: {
 			order: string[];
-			level: Record<CapabilityLevel, string>
+			level: Record<CapabilityLevel, string>;
 		};
 	};
 }
@@ -104,7 +104,7 @@ export interface SummaryItem {
 		ref?: {
 			benchmark: string;
 			key: string;
-		}
+		};
 	}[];
 	models: {
 		[modelId: string]: boolean;
@@ -129,7 +129,7 @@ interface Leaderboard {
 }
 
 export interface Model {
-	category: 'general' | 'embodied';
+	category: string;
 	name: string;
 	component?: {
 		vision?: string[];
@@ -145,7 +145,7 @@ export interface Model {
 	reason: boolean;
 	opensource: boolean;
 	release?: DateInfo;
-	imageVideo?: string;
+	imageVideo?: string | null;
 	score: {
 		benchmark: {
 			[benchmarkId: string]: {
@@ -206,8 +206,8 @@ export interface DataType {
 						navigation: {
 							label: string;
 							caption: string;
-						}
-					}
+						};
+					};
 				};
 			};
 			capability: {
@@ -218,8 +218,8 @@ export interface DataType {
 						navigation: {
 							label: string;
 							caption: string;
-						}
-					}
+						};
+					};
 				};
 			};
 			$data: {
@@ -238,11 +238,11 @@ export interface DataType {
 					title: string;
 					subtitle: string;
 					slogan: string;
-				}
-			},
+				};
+			};
 			citation: {
 				$data: {};
-			},
+			};
 			contributor: {
 				$data: {
 					title: {
@@ -254,14 +254,14 @@ export interface DataType {
 						0: boolean;
 						name: string;
 					}[];
-					organizationList: string[];
-				}
-			},
+					organizationList: string[] | null;
+				};
+			};
 			evaluation: {
 				$data: {
 					title: string;
-				}
-			},
+				};
+			};
 			profile: {
 				benchmark: {
 					$data: {
@@ -276,15 +276,15 @@ export interface DataType {
 							}[];
 						};
 					};
-				},
+				};
 				model: {
 					category: {
 						embodied: {
 							$data: PageHomeModelProfileCategoryData;
 						};
 						general: {
-							$data: PageHomeModelProfileCategoryData
-						}
+							$data: PageHomeModelProfileCategoryData;
+						};
 					};
 					detail: {
 						$data: {
@@ -294,17 +294,17 @@ export interface DataType {
 					$data: {
 						title: string;
 					};
-				},
+				};
 				capability: {
 					detail: {
 						$data: {
 							title: string;
-						}
+						};
 					};
 					mapping: {
 						$data: {
 							title: string;
-						}
+						};
 					};
 					$data: {
 						title: string;
@@ -322,12 +322,12 @@ export interface DataType {
 						icon: string;
 						title: string;
 						description: string;
-					}[]
-				}
-			}
+					}[];
+				};
+			};
 		};
 	};
 	rule: {
 		$data: {};
-  };
+	};
 }

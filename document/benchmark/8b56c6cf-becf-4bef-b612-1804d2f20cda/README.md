@@ -1,6 +1,7 @@
 ---
 leaderboard: 09b4a56a-2e41-4103-a330-129381c24450
 name: SQA3D
+code: sqa3d
 description: >
   SQA3D: Situated Question Answering in 3D Scenes
 organization: Beijing Institute for General Artificial Intelligence (BIGAI), UCLA, Tsinghua University, Peking University

@@ -1,6 +1,7 @@
 ---
 leaderboard: 1143b13b-2754-4660-9f79-d0d0dc1f273e
 name: EB-Habitat
+code: eb-habitat
 description: >
   EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents
 organization: University of Illinois Urbana-Champaign, Northwestern University, University of Toronto, Toyota Technological Institute at Chicago

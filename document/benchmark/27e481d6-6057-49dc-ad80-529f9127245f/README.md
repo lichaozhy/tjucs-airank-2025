@@ -1,6 +1,7 @@
 ---
 leaderboard: 09b4a56a-2e41-4103-a330-129381c24450
 name: PhyBlock
+code: phy-block
 description: >
   PhyBlock: A Progressive Benchmark for Physical Understanding and Planning via 3D Block Assembly
 organization: Sun Yat-sen University

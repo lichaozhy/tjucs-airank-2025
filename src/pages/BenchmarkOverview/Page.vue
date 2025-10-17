@@ -62,7 +62,7 @@
 </template>
 
 <script setup lang="ts">
-import type * as Spec from 'src/spec';
+import type * as DataType from 'src/data';
 import { computed, onBeforeMount, ref } from 'vue';
 
 import * as Backend from 'src/backend';
@@ -74,7 +74,7 @@ interface LeaderboardAbstract {
 	name: string;
 }
 
-const benchmarkList = ref<Array<Spec.Benchmark.Type>>([]);
+const benchmarkList = ref<Array<DataType.BenchmarkData & { id: string }>>([]);
 const leaderboardList = ref<LeaderboardAbstract[]>([]);
 const leaderboardId = ref<string | null>(null);
 const keyword = ref<string | null>(null);
@@ -94,7 +94,7 @@ const filterItemList = computed(() => {
 
 const filteredBenchmarkList = computed(() => {
 	let list = [...benchmarkList.value].sort(
-		(a, b) => b.released!.at.year - a.released!.at.year,
+		(a, b) => b.released.at.year - a.released.at.year,
 	);
 
 	if (leaderboardId.value !== null) {

@@ -1,6 +1,7 @@
 ---
 leaderboard: 263e7d41-65a5-4b7b-8f48-5c7b94ca916b
 name: HM3D
+code: hm3d
 description: >
   Habitat-Matterport 3D Dataset (HM3D): 1000 Large-scale 3D Environments for Embodied AI
 organization: Facebook AI Research

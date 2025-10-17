@@ -1,6 +1,7 @@
 ---
 leaderboard: 1143b13b-2754-4660-9f79-d0d0dc1f273e
 name: ET-Plan-Bench
+code: et-plan-bench
 description: >
   ET-Plan-Bench: Embodied Task-level Planning Benchmark Towards Spatial-Temporal Cognition with Foundation Models
 organization: Huawei Noah’s Ark Lab, Huawei Cloud

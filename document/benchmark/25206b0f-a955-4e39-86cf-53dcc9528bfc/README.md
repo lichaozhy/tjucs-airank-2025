@@ -1,6 +1,7 @@
 ---
 leaderboard: 09b4a56a-2e41-4103-a330-129381c24450
 name: VSI
+code: vsi
 description: >
   Thinking in Space: How Multimodal Large Language Models See, Remember and Recall Spaces
 organization: New York University
