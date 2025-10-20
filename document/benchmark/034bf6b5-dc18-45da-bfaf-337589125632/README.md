@@ -1,6 +1,7 @@
 ---
 leaderboard: 09b4a56a-2e41-4103-a330-129381c24450
 name: UniEQA
+code: uni-eqa
 description: >
   UniEQA & UniEval: A Unified Benchmark and Evaluation Platform for Multimodal Foundation Models in Embodied Question Answering
 organization: Tianjin University

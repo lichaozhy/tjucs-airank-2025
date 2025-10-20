@@ -1,6 +1,7 @@
 ---
 leaderboard: 09b4a56a-2e41-4103-a330-129381c24450
 name: VABench-Point
+code: va-bench-point
 description: >
   From Seeing to Doing: Bridging Reasoning and Decision for Robotic Manipulation
 organization: Tianjin University

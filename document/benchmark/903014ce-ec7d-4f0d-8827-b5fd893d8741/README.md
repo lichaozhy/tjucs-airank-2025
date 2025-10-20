@@ -1,6 +1,7 @@
 ---
 leaderboard: 263e7d41-65a5-4b7b-8f48-5c7b94ca916b
 name: MP3D
+code: mp3d
 description: >
   Matterport3D: Learning from RGB-D Data in Indoor Environments
 organization: Princeton University,Stanford University,Technical University of Munich

@@ -1,6 +1,9 @@
 <template>
 	<router-link
-		:to="{ name: 'app.benchmark.detail', params: { id: benchmark.id } }"
+		:to="{
+			name: 'app.benchmark.detail',
+			params: { benchmarkCode: benchmark.code },
+		}"
 		custom
 		v-slot="{ navigate }"
 	>
@@ -23,7 +26,7 @@
 					floating
 				/>
 
-				<div class="text-h5 ">
+				<div class="text-h5">
 					<span>{{ benchmark.name }}</span>
 				</div>
 
@@ -88,14 +91,14 @@
 </template>
 
 <script setup lang="ts">
-import type * as Spec from 'src/spec';
+import type * as DataType from 'src/data';
 import { computed, ref } from 'vue';
 
 const CUTTENT_YEAR = new Date().getFullYear();
 const hover = ref<boolean>(false);
 
 const { benchmark } = defineProps<{
-	benchmark: Spec.Benchmark.Type;
+	benchmark: DataType.BenchmarkData & { id: string };
 }>();
 
 const tagList = computed(() => {

@@ -1,6 +1,7 @@
 ---
 leaderboard: 09b4a56a-2e41-4103-a330-129381c24450
 name: ERQA
+code: erqa
 description: >
   Gemini Robotics: Bringing AI into the Physical World
 organization: Google

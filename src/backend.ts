@@ -1,4 +1,4 @@
-import type { DataType, SummaryItem } from './data';
+import type { BenchmarkItem, DataType, SummaryItem } from './data';
 
 let root: DataType;
 
@@ -10,6 +10,10 @@ export type ModelPropertyRecordGroup = Record<
 	'vision' | 'language' | 'author' | 'size' | 'year',
 	Record<string, number>
 >;
+
+interface BenchmarkFilter {
+	code?: string;
+}
 
 function readText(response: Response) {
 	return response.text();
@@ -124,28 +128,52 @@ export const API = {
 	}, {}),
 	Benchmark: Object.assign(
 		(benchmarkId: string) => {
-			const benchmark = root.benchmark[benchmarkId]!;
+			const benchmark = root.benchmark[benchmarkId];
+
+			function assertExisted() {
+				if (!benchmark) {
+					throw new Error(`Benchmark(id:${benchmarkId}) is NOT found`);
+				}
+			}
 
 			return {
 				async get() {
-					return { id: benchmarkId, ...benchmark.$data };
+					assertExisted();
+
+					return { id: benchmarkId, ...benchmark!.$data };
 				},
 				Capability: {
 					async get() {
-						return { ...benchmark.capability.$data };
+						assertExisted();
+
+						return { ...benchmark!.capability.$data };
 					},
 				},
 			};
 		},
 		{
-			async query() {
+			async query(filter: BenchmarkFilter = {}) {
 				const indexRecord: Record<string, number> = {};
 
 				for (const [index, { id }] of Object.entries(root.page.leaderboard.$data.benchmarks)) {
 					indexRecord[id] = Number(index);
 				}
 
-				return Object.entries(root.benchmark)
+				const filtered: [string, BenchmarkItem][] = [];
+
+				for (const entry of Object.entries(root.benchmark)) {
+					const [, benchmark] = entry;
+
+					if ('code' in filter) {
+						if (benchmark.$data.code !== filter.code) {
+							continue;
+						}
+					}
+
+					filtered.push(entry);
+				}
+
+				return filtered
 					.sort(([aId], [bId]) => indexRecord[aId]! - indexRecord[bId]!)
 					.map(([id, { $data }]) => ({ id, ...$data }));
 			},

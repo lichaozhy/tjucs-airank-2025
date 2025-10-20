@@ -1,6 +1,7 @@
 ---
 leaderboard: 09b4a56a-2e41-4103-a330-129381c24450
 name: RoboVQA
+code: robot-vqa
 description: >
   RoboVQA: Multimodal Long-Horizon Reasoning for Robotics
 organization: Google DeepMind

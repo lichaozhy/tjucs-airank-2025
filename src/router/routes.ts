@@ -72,7 +72,7 @@ const routes: RouteRecordRaw[] = [
 					},
 					{
 						name: 'app.benchmark.detail',
-						path: ':benchmarkId',
+						path: ':benchmarkCode',
 						component: () => import('pages/BenchmarkDetail/Page.vue'),
 					},
 				],
@@ -86,11 +86,6 @@ const routes: RouteRecordRaw[] = [
 				name: 'app.guide',
 				path: 'guide',
 				component: () => import('pages/Guide/Page.vue'),
-			},
-			{
-				name: 'app.benchmark.detail',
-				path: 'benchmark/:id',
-				component: () => import('pages/BenchmarkDetail/Page.vue'),
 			},
 			{
 				name: 'app.model.detail',

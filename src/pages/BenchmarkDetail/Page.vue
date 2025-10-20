@@ -84,7 +84,7 @@
 								</q-item-section>
 								<q-item-section>
 									<q-item-label class="text-weight-bold"
-										>Organization</q-item-label
+										>Institute</q-item-label
 									>
 									<q-item-label caption>{{
 										information.organization || '-'
@@ -164,18 +164,16 @@
 </template>
 
 <script setup lang="ts">
+import type * as DataType from 'src/data';
 import * as Q from 'quasar';
 import { computed, onBeforeMount, ref } from 'vue';
 import { useRoute } from 'vue-router';
 
-import type * as Spec from 'src/spec';
 import * as Backend from 'src/backend';
 import AppMarkdownHtml from 'components/MarkdownHTML.vue';
 
 const route = useRoute();
-const benchmarkId = route.params.id as string;
-const BenchmarkAPI = Backend.API.Benchmark(benchmarkId);
-const benchmark = ref<Spec.Benchmark.Type | null>(null);
+const benchmark = ref<DataType.BenchmarkData & { id: string } | null>(null);
 
 interface InformationData {
 	releasedAt: string | null;
@@ -218,7 +216,7 @@ const information = computed<InformationData>(() => {
 		if (released !== undefined) {
 			if (released !== null) {
 				const { year, month, date } = released.at;
-				const at = new Date(year, month - 1, date === null ? 1 : date);
+				const at = new Date(year, month! - 1, date === null ? 1 : date);
 
 				data.releasedAt = Q.date.formatDate(
 					at,
@@ -235,12 +233,23 @@ const information = computed<InformationData>(() => {
 	return data;
 });
 
-onBeforeMount(async () => {
-	benchmark.value = await BenchmarkAPI.get();
+async function fetchBenchmark(operand: string) {
+	try {
+		return await Backend.API.Benchmark(operand).get();
+	} catch {
+		const code = operand;
+		const [benchmark] = await Backend.API.Benchmark.query({ code });
 
-	if (!benchmark.value) {
-		throw new Error(`Benchmark with ID ${benchmarkId} not found`);
+		if (benchmark === undefined) {
+			throw new Error(`Benchmark with code ${code} not found`);
+		}
+
+		return benchmark;
 	}
+}
+
+onBeforeMount(async () => {
+	benchmark.value = await fetchBenchmark(route.params.benchmarkCode as string);
 });
 
 defineOptions({ name: 'BenchmarkDetailPage' });

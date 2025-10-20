@@ -1,6 +1,7 @@
 ---
 leaderboard: 09b4a56a-2e41-4103-a330-129381c24450
 name: Scan2Cap
+code: scan-2-cap
 description: >
   Scan2Cap: Context-aware Dense Captioning in RGB-D Scans
 organization: Technical University of Munich, Simon Fraser University

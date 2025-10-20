@@ -1,6 +1,7 @@
 ---
 leaderboard: 09b4a56a-2e41-4103-a330-129381c24450
 name: ScanQA
+code: scan-qa
 description: >
   ScanQA: 3D Question Answering for Spatial Scene Understanding
 organization: Kyoto University, ATR, RIKEN AIP, etc
