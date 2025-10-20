@@ -856,12 +856,52 @@ score:
         - null
         - null
         - null
+    b34bd93a-0809-4038-979a-37fbc0d93b38:
+      legacy:
+        - 6.25
+        - 0
+        - 3.125
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 6.25
+        - 0
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      0:
+        - null
+        - null
+        - 3.125
+        - null
+        - null
+        - null
+        - null
+        - null
   summary:
     d6ba913a-6e26-4dcc-b192-04b9bee6fd8e:
       0:
         - null
         - null
-        - null
+        - 3.125
         - 31.3742372881356
         - 14.74
         - null
@@ -876,8 +916,8 @@ score:
         - null
         - null
         - null
-        - null
-        - null
+        - 6.25
+        - 0.0
         - null
         - 31.3742372881356
         - null

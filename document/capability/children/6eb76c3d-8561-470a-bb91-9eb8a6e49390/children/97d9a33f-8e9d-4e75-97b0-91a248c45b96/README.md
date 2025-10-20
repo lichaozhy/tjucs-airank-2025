@@ -7,11 +7,12 @@ index: 9
 <div class="row">
 <div class="col-8">
 
-| **Benchmark** | **Capability Dimension** |
-| ------------- | ------------------------ |
-| VSI-Bench     | Appearance Order         |
-| UniEQA        | Temporal Perception      |
-| PhyBlock      | Ordering                 |
+| **Benchmark** | **Capability Dimension**      |
+| ------------- |-------------------------------|
+| VSI-Bench     | Appearance Order              |
+| UniEQA        | Temporal Perception           |
+| PhyBlock      | Ordering                      |
+ | EA-Temporal-Auto-20251020| Temporal Action Understanding |
 
 </div>
 

@@ -11,6 +11,7 @@ index: 8
 | ------------- | ------------------------ |
 | RoBoVQA       | Past Description         |
 | UniEQA        | Action Perception        |
+ | EA-Temporal-Auto-20251020 | State Change Perception|
 
 </div>
 
