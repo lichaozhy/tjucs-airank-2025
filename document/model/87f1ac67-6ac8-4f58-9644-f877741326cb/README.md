@@ -3,7 +3,8 @@ name: Llama-3.2-90B-Vision-Instruct
 component:
   language:
     - Llama 3.1
-size: 90
+size:
+  - 90
 author:
   - Meta AI
 qa:

@@ -3,7 +3,8 @@ name: MiniCPM-V
 component:
   language:
     - MiniCPM-2.4B
-size: 3
+size:
+  - 3
 author:
   - ModelBest
 qa:

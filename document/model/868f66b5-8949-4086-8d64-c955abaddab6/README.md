@@ -5,7 +5,8 @@ component:
     - ViT
   language:
     - Vicuna-7B
-size: 7
+size:
+  - 7
 author:
   - Tianjin University
 qa:

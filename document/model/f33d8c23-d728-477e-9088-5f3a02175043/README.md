@@ -1,6 +1,7 @@
 ---
 name: 3DMIT
-size: 7
+size:
+  - 7
 author:
   - Beijing University of Posts and Telecommunications
 qa:

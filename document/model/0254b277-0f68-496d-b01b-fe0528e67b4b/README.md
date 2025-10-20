@@ -5,7 +5,8 @@ component:
     - ViT
   language:
     - Qwen2.5-7B
-size: 7
+size:
+  - 7
 author:
   - NVIDIA
 qa:

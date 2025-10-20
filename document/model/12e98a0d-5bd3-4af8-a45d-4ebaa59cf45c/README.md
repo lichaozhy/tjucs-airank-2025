@@ -3,7 +3,8 @@ name: Llama3-70B
 component:
   language:
     - Llama3.0-70B
-size: 70
+size:
+  - 70
 author:
   - Meta AI
 qa:

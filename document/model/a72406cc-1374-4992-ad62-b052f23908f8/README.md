@@ -5,7 +5,8 @@ component:
     - SigLIP
   language:
     - Qwen2.5-7B-Instruct
-size: 7
+size:
+  - 7
 author:
   - BAAI
 qa:

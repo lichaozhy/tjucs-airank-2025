@@ -1,6 +1,7 @@
 ---
 name: SpatialCoT
-size: 13
+size:
+  - 13
 author:
   - Noah’s Ark Lab
 qa:

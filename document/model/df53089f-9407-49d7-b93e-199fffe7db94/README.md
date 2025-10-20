@@ -3,7 +3,8 @@ name: Llama3-8B
 component:
   language:
     - Llama3.0-8B
-size: 8
+size:
+  - 8
 author:
   - Meta AI
 qa:

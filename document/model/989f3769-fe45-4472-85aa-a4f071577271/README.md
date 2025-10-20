@@ -5,7 +5,8 @@ component:
     - SigLIP-So400M
   language:
     - Qwen2-72B
-size: 72
+size:
+  - 73
 author:
   - ByteDance
 qa:

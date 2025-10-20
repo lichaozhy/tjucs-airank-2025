@@ -3,7 +3,8 @@ name: SpatialBot
 component:
   vision:
     - SigLIP
-size: 3
+size:
+  - 8
 author:
   - Shanghai Jiao Tong University
 qa:

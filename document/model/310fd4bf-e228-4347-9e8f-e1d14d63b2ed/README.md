@@ -5,7 +5,8 @@ component:
     - ViT
   language:
     - Qwen 2.5
-size: 3
+size:
+  - 3
 author:
   - Tianjin University
 qa:

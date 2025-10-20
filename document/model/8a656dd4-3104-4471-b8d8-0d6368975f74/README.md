@@ -3,7 +3,8 @@ name: Phi-3-vision-128k-instruct
 component:
   language:
     - Phi-3 Mini
-size: 4
+size:
+  - 4
 author:
   - Microsoft
 qa:

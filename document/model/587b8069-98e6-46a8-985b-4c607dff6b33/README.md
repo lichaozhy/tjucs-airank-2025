@@ -5,7 +5,8 @@ component:
     - SceneEncoder
   language:
     - Vicuna-7B-v0
-size: 7
+size:
+  - 7
 author:
   - The Chinese University of Hong Kong
 qa:

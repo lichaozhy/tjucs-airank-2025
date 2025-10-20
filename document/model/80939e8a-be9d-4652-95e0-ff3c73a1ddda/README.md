@@ -3,7 +3,8 @@ name: Video-LLaVA-7B
 component:
   language:
     - Vicuna-7B-v1.5
-size: 7
+size:
+  - 7
 author:
   - Peking University
 qa:

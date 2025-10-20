@@ -5,7 +5,8 @@ component:
     - EVA-CLIP
   language:
     - Vicuna-7B-v1.5
-size: 7
+size:
+  - 7
 author:
   - BAAI
 qa:

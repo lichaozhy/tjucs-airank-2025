@@ -5,7 +5,8 @@ component:
     - ViT
   language:
     - Qwen2-72B
-size: 72
+size:
+  - 73
 author:
   - Alibaba
 qa:

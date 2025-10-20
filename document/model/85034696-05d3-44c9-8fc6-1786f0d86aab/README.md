@@ -1,8 +1,5 @@
 ---
 name: Claude-3.5-Sonnet
-component:
-  language:
-    - Claude-3.5-Sonnet
 author:
   - Anthropic
 qa:

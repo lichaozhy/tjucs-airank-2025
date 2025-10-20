@@ -5,7 +5,8 @@ component:
     - CLIP
   language:
     - LLaMA-3-8B
-size: 8
+size:
+  - 8
 author:
   - Microsoft
 qa:

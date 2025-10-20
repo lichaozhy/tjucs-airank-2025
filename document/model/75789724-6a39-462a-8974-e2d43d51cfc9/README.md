@@ -5,7 +5,8 @@ component:
     - InternViT-300M-448px-V2_5
   language:
     - Qwen2.5-14B
-size: 14
+size:
+  - 15
 author:
   - Shanghai AI Lab
 qa:

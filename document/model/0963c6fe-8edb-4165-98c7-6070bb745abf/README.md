@@ -5,7 +5,8 @@ component:
     - CLIP ViT-L-14
   language:
     - Vicuna-7B
-size: 7
+size:
+  - 7
 author:
   - University of Wisconsin-Madison
 qa:

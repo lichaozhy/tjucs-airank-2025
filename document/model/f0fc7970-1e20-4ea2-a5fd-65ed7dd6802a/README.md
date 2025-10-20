@@ -1,8 +1,5 @@
 ---
 name: o3
-component:
-  language:
-    - o3
 author:
   - OpenAI
 qa:

@@ -5,7 +5,8 @@ component:
     - SigLIP
   language:
     - Qwen2-7B
-size: 7
+size:
+  - 8
 author:
   - ByteDance
 qa:

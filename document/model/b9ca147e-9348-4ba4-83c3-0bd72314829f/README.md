@@ -1,6 +1,7 @@
 ---
 name: RoboBrain2.0-7B
-size: 7
+size:
+  - 7
 author:
   - BAAI
 qa:

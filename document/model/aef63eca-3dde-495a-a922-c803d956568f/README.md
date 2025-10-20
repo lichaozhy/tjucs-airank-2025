@@ -5,7 +5,8 @@ component:
     - Redesigned ViT
   language:
     - Qwen2.5-3B
-size: 3
+size:
+  - 4
 author:
   - Alibaba
 qa:

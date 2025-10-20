@@ -3,9 +3,8 @@ name: SpatialVLM
 component:
   vision:
     - ViT
-  language:
-    - PaLM-E 12B
-size: 12
+size:
+  - 12
 author:
   - Google DeepMind
 qa:

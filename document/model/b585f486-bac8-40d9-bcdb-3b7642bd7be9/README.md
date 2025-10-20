@@ -1,8 +1,5 @@
 ---
 name: Gemini-2.5-Pro
-component:
-  language:
-    - Gemini-2.5-Pro
 author:
   - Google DeepMind
 qa:

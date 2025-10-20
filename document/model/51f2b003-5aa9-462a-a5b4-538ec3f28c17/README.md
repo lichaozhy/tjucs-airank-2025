@@ -3,7 +3,8 @@ name: LongVA-7B
 component:
   language:
     - Qwen2-7B-Instruct
-size: 7
+size:
+  - 8
 author:
   - ByteDance
 qa:

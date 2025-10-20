@@ -3,7 +3,8 @@ name: Mem2Ego
 component:
   language:
     - Llama3.2-11B
-size: 11
+size:
+  - 11
 author:
   - Noah’s Ark Lab
 qa:

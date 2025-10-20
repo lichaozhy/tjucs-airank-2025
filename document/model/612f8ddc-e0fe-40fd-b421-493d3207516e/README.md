@@ -5,7 +5,8 @@ component:
     - ViT
   language:
     - Qwen 2.5
-size: 4
+size:
+  - 4
 author:
   - X square robot
 qa:

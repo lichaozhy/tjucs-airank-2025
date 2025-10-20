@@ -1,6 +1,7 @@
 ---
 name: Llama-vid-7b-full-224
-size: 7
+size:
+  - 7
 author:
   - The Chinese University of Hong Kong
 qa:

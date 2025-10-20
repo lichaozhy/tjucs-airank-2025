@@ -5,7 +5,8 @@ component:
     - CLIP-ViT-L-336px
   language:
     - Vicuna-13B
-size: 13
+size:
+  - 13
 author:
   - Tianjin University
 qa:

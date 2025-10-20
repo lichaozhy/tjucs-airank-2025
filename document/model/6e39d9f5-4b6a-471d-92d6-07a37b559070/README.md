@@ -5,7 +5,8 @@ component:
     - InternViT-6B-448px-V1_5
   language:
     - Nous-Hermes-2-Yi-34B
-size: 40
+size:
+  - 40
 author:
   - Shanghai AI Lab
 qa:

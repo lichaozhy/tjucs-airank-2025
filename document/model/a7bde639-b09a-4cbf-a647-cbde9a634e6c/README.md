@@ -5,7 +5,8 @@ component:
     - ViT-L-14-336px
   language:
     - Vicuna-v1.5-13B
-size: 13
+size:
+  - 13
 author:
   - University of Washington
 qa:

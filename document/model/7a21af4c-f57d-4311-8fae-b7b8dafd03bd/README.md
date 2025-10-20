@@ -1,6 +1,7 @@
 ---
 name: VILA-1.5-40B
-size: 40
+size:
+  - 40
 author:
   - NVIDIA
 qa:

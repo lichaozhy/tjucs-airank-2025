@@ -1,8 +1,5 @@
 ---
 name: o4-mini
-component:
-  language:
-    - o4-mini
 author:
   - OpenAI
 qa:
