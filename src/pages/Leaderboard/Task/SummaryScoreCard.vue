@@ -34,7 +34,7 @@ import { computed, onBeforeMount, ref } from 'vue';
 import AppMarkdownHtml from 'components/MarkdownHTML.vue';
 import AppScoreCard from 'components/ScoreCard.vue';
 import AppScoreTable from 'components/ScoreTable.vue';
-import AppModelFilter from 'components/ModelFilter.vue';
+import AppModelFilter from 'components/ModelFilter';
 
 import * as Backend from 'src/backend';
 

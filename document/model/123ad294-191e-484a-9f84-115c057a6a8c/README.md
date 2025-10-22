@@ -1,13 +1,13 @@
 ---
 name: SpatialCoT
 size:
-  - 13
+- 13
 author:
-  - Noah’s Ark Lab
+- "Noah\u2019s Ark Lab"
 qa:
-  - 2D
+- 2D
 dimension:
-  - 2D
+- 2D
 website: https://spatialcot.github.io/
 navigation: true
 taskPlanning: true
@@ -20,4 +20,10 @@ imageVideo: Image
 score:
   benchmark: {}
   summary: {}
+component:
+  vision:
+  - unsigned
+  language:
+  - unsigned
 ---
+

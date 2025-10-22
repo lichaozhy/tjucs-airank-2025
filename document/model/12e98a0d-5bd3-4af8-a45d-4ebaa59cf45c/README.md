@@ -2,15 +2,17 @@
 name: Llama3-70B
 component:
   language:
-    - Llama3.0-70B
+  - Llama3.0-70B
+  vision:
+  - unsigned
 size:
-  - 70
+- 70
 author:
-  - Meta AI
+- Meta AI
 qa:
-  - 2D
+- 2D
 dimension:
-  - 2D
+- 2D
 website: https://huggingface.co/meta-llama/Meta-Llama-3-70B
 navigation: false
 taskPlanning: false
@@ -23,3 +25,4 @@ score:
   benchmark: {}
   summary: {}
 ---
+

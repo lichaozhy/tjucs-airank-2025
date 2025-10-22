@@ -24,7 +24,7 @@ score:
         - null
         - null
         - null
-        - 58.2
+        - null
         - null
         - null
       1:
@@ -52,7 +52,7 @@ score:
         - null
         - null
         - null
-        - 58.2
+        - null
       legacy:
         - 58.2
         - 58.2
@@ -63,7 +63,7 @@ score:
         - null
         - null
         - null
-        - 53.5
+        - null
         - null
         - null
       1:
@@ -91,45 +91,14 @@ score:
         - null
         - null
         - null
-        - 53.5
+        - null
       legacy:
         - 53.5
         - 53.5
-  summary:
-    2e5899bb-60bb-43d0-8ce0-fd186d66b3fb:
-      0:
-        - null
-        - null
-        - null
-        - null
-        - null
-        - 57.10697674418605
-        - null
-        - null
-      1:
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - 57.10697674418605
+  summary: {}
+component:
+  vision:
+    - unsigned
+  language:
+    - unsigned
 ---

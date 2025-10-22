@@ -2,16 +2,18 @@
 name: SpatialBot
 component:
   vision:
-    - SigLIP
+  - SigLIP
+  language:
+  - unsigned
 size:
-  - 8
+- 8
 author:
-  - Shanghai Jiao Tong University
+- Shanghai Jiao Tong University
 qa:
-  - 2D
-  - 3D
+- 2D
+- 3D
 dimension:
-  - 2D
+- 2D
 website: https://github.com/BAAI-DCAI/SpatialBot
 navigation: true
 taskPlanning: true
@@ -25,7 +27,7 @@ score:
   benchmark:
     a9228f2e-3191-4a08-8f03-64e73cae2e78:
       legacy:
-        - 14.96
-        - 14.96
+      - 14.96
+      - 14.96
   summary: {}
 ---

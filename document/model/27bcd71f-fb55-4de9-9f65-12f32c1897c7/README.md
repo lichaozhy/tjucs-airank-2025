@@ -1,7 +1,7 @@
 ---
 name: EgoThinker
 author:
-  - Zhejiang University
+- Zhejiang University
 navigation: false
 taskPlanning: true
 reason: false
@@ -13,4 +13,10 @@ imageVideo: image/video
 score:
   benchmark: {}
   summary: {}
+component:
+  vision:
+  - unsigned
+  language:
+  - unsigned
 ---
+

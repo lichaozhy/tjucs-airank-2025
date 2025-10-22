@@ -2,15 +2,17 @@
 name: Mem2Ego
 component:
   language:
-    - Llama3.2-11B
+  - Llama3.2-11B
+  vision:
+  - unsigned
 size:
-  - 11
+- 11
 author:
-  - Noah’s Ark Lab
+- "Noah\u2019s Ark Lab"
 qa:
-  - 2D
+- 2D
 dimension:
-  - 2D
+- 2D
 website: https://arxiv.org/pdf/2502.14254
 navigation: true
 taskPlanning: false
@@ -24,3 +26,4 @@ score:
   benchmark: {}
   summary: {}
 ---
+

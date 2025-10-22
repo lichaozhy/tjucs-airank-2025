@@ -2,15 +2,17 @@
 name: GPT4Scene
 component:
   language:
-    - Qwen2-VL-7B
+  - Qwen2-VL-7B
+  vision:
+  - unsigned
 size:
-  - 8
+- 8
 author:
-  - Shanghai AI Lab
+- Shanghai AI Lab
 qa:
-  - 3D
+- 3D
 dimension:
-  - 3D
+- 3D
 website: https://gpt4scene.github.io/
 navigation: false
 taskPlanning: false
@@ -24,3 +26,4 @@ score:
   benchmark: {}
   summary: {}
 ---
+

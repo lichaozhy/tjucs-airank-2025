@@ -1,11 +1,11 @@
 ---
 name: GPT-4o w CoT
 author:
-  - OpenAI
+- OpenAI
 qa:
-  - 2D
+- 2D
 dimension:
-  - 2D
+- 2D
 navigation: false
 taskPlanning: false
 reason: false
@@ -16,4 +16,10 @@ category: general
 score:
   benchmark: {}
   summary: {}
+component:
+  vision:
+  - unsigned
+  language:
+  - unsigned
 ---
+

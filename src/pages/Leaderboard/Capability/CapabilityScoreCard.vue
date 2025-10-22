@@ -54,7 +54,7 @@ import type * as Radar from 'components/RadarChart.vue';
 import { computed, ref, watch } from 'vue';
 
 import AppScoreCard from 'components/ScoreCard.vue';
-import AppModelFilter from 'components/ModelFilter.vue';
+import AppModelFilter from 'components/ModelFilter';
 import AppScoreTable from 'components/ScoreTable.vue';
 import AppRadarChart from 'components/RadarChart.vue';
 

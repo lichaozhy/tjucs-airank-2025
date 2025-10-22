@@ -249,4 +249,9 @@ score:
         - null
         - null
         - null
+component:
+  vision:
+    - unsigned
+  language:
+    - unsigned
 ---
