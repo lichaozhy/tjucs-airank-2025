@@ -74,16 +74,16 @@
 			</q-td>
 		</template>
 
-		<template v-slot:body-cell-model="slotProps">
+		<template v-slot:body-cell-model="sProps">
 			<q-td
 				class="app-right-shadow"
-				:props="slotProps"
+				:props="sProps"
 			>
 				<q-checkbox
-					v-if="selectedRows !== null && props.rowSelectable[slotProps.row.id]"
+					v-if="selectedRows !== null && props.rowSelectable[sProps.row.id]"
 					class="absolute"
 					style="top: 2px; right: 2px"
-					v-model="selectedRows[slotProps.row.id]"
+					v-model="selectedRows[sProps.row.id]"
 					size="sm"
 					dense
 				/>
@@ -91,12 +91,27 @@
 					style="text-decoration: none"
 					:to="{
 						name: 'app.model.detail',
-						params: { id: slotProps.row.id },
+						params: { id: sProps.row.id },
 					}"
 					class="col-shrink text-black"
 				>
-					<span class="text-weight-medium">{{ slotProps.row.name }}</span>
+					<div class="flex items-center">
+						<q-avatar
+							size="xs"
+							:color="Category[sProps.row.category as CategoryName].color"
+							text-color="white"
+							class="q-mr-xs"
+							v-if="sProps.row.category !== undefined"
+							>{{
+								Category[sProps.row.category as CategoryName].text
+							}}</q-avatar
+						>
+						<span class="text-weight-medium">{{ sProps.row.name }}</span>
+					</div>
 				</router-link>
+				<div class="text-caption text-grey ">
+					{{ sProps.row.caption ?? '-' }}
+				</div>
 			</q-td>
 		</template>
 
@@ -106,7 +121,10 @@
 			#[`body-cell-item(${index})`]="props"
 		>
 			<q-td :props="props">{{
-				toNoneOrFixed((props.row as ModelData).scores[index]!, property.fixed ?? 2)
+				toNoneOrFixed(
+					(props.row as ModelData).scores[index]!,
+					property.fixed ?? 2,
+				)
 			}}</q-td>
 		</template>
 	</q-table>
@@ -121,9 +139,24 @@ import { toNoneOrFixed } from 'components/utils';
 
 export type Score = number | null;
 
+type CategoryName = 'embodied' | 'general';
+
+const Category = {
+	embodied: {
+		color: 'indigo',
+		text: 'E',
+	},
+	general: {
+		color: 'green',
+		text: 'G',
+	},
+};
+
 export interface ModelData {
 	id: string;
 	name: string;
+	category?: string;
+	caption?: string;
 	scores: Score[];
 }
 
@@ -228,19 +261,23 @@ const pagination = ref<QTableProps['pagination']>({
 	rowsPerPage: 30,
 });
 
-watch([() => props.columns, selectedColumns], async () => {
-	if (selectedColumns.value === null) {
-		return;
-	}
+watch(
+	[() => props.columns, selectedColumns],
+	async () => {
+		if (selectedColumns.value === null) {
+			return;
+		}
 
-	const record: SelectedRecord = {};
+		const record: SelectedRecord = {};
 
-	for (let index = 0; index < props.columns.length; index++) {
-		record[index] = selectedColumns.value[index] || false;
-	}
+		for (let index = 0; index < props.columns.length; index++) {
+			record[index] = selectedColumns.value[index] || false;
+		}
 
-	Object.assign(selectedColumns.value, record);
-}, { immediate: true });
+		Object.assign(selectedColumns.value, record);
+	},
+	{ immediate: true },
+);
 
 const selectableColumns = computed<Record<string, boolean>>(() => {
 	const record: Record<string, boolean> = {};

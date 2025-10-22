@@ -61,11 +61,21 @@ const columnList = computed<Column[]>(() => {
 const rowList = computed<ModelData[]>(() => {
 	const list: ModelData[] = [];
 
-	for (const model of modelList.value) {
+	for (const {
+		id,
+		name,
+		category,
+		release,
+		author,
+		_author,
+		score,
+	} of modelList.value) {
 		const data: ModelData = {
-			id: model.id,
-			name: model.name,
-			scores: [...model.score.summary[props.summaryId]!.legacy!],
+			id,
+			name,
+			category,
+			caption: `${release?.year} | ${(_author ?? author ?? []).join(', ')}`,
+			scores: [...score.summary[props.summaryId]!.legacy!],
 		};
 
 		list.push(data);

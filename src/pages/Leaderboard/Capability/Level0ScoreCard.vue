@@ -53,7 +53,15 @@ const rowList = computed<ModelData[]>(() => {
 	const { source } = props;
 	const list: ModelData[] = [];
 
-	for (const { id, name, score } of modelList.value) {
+	for (const {
+		id,
+		name,
+		score,
+		category,
+		release,
+		author,
+		_author,
+	} of modelList.value) {
 		const scoreList = score[source.type][source.id]![0];
 
 		if (scoreList === undefined) {
@@ -64,7 +72,13 @@ const rowList = computed<ModelData[]>(() => {
 			continue;
 		}
 
-		const modelData: ModelData = { id, name, scores: [] };
+		const modelData: ModelData = {
+			id,
+			name,
+			category,
+			caption: `${release?.year} | ${(_author ?? author ?? []).join(', ')}`,
+			scores: [],
+		};
 
 		for (const [index, capabilityId] of order.value.entries()) {
 			const property = propertyRecord.value[capabilityId]!;

@@ -137,6 +137,7 @@ export interface Model {
 	};
 	size?: number[];
 	author?: string[];
+	_author?: string[];
 	qa?: string[];
 	dimension?: string[];
 	website?: string;

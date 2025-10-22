@@ -17,7 +17,11 @@
 <script setup lang="ts">
 import type * as Data from 'src/data';
 import type * as Type from './type';
-import type { GroupOptions, ModelData, Column } from 'components/ScoreTable.vue';
+import type {
+	GroupOptions,
+	ModelData,
+	Column,
+} from 'components/ScoreTable.vue';
 import AppCapabilityScoreCard from './CapabilityScoreCard.vue';
 import type { RadarProps } from './CapabilityScoreCard.vue';
 import { onBeforeMount, ref, computed } from 'vue';
@@ -39,7 +43,7 @@ const Source = useSource(props.source);
 const { abstract } = Source;
 
 const columnList = computed<Column[]>(() => {
-	return order.value.map(capabilityId => ({
+	return order.value.map((capabilityId) => ({
 		name: propertyRecord.value[capabilityId]!.name,
 		sorting: 'desc',
 	}));
@@ -49,7 +53,15 @@ const rowList = computed<ModelData[]>(() => {
 	const { source } = props;
 	const list: ModelData[] = [];
 
-	for (const { id, name, score } of modelList.value) {
+	for (const {
+		id,
+		name,
+		score,
+		category,
+		release,
+		author,
+		_author,
+	} of modelList.value) {
 		const scoreList = score[source.type][source.id]![1];
 
 		if (scoreList === undefined) {
@@ -57,7 +69,13 @@ const rowList = computed<ModelData[]>(() => {
 			continue;
 		}
 
-		const modelData: ModelData = { id, name, scores: [] };
+		const modelData: ModelData = {
+			id,
+			name,
+			category,
+			caption: `${release?.year} | ${(_author ?? author ?? []).join(', ')}`,
+			scores: [],
+		};
 
 		for (const [index, capabilityId] of order.value.entries()) {
 			const property = propertyRecord.value[capabilityId]!;
@@ -92,7 +110,10 @@ onBeforeMount(async () => {
 	const _propertyRecorder: Record<string, Type.PropertyAbstract> = {};
 	const _order: string[] = [];
 	const _modelList = await Source.fetchModelList();
-	const _validColumns = await Source.fetchCapability(1) as Record<string, true>;
+	const _validColumns = (await Source.fetchCapability(1)) as Record<
+		string,
+		true
+	>;
 	const _groupList: GroupOptions[] = [];
 
 	for (const capabilityId of configuration.order) {
@@ -104,7 +125,7 @@ onBeforeMount(async () => {
 		}
 
 		const childItemList = await CapabilityAPI.query();
-		_order.push(...configuration.order.filter(id => _validColumns[id]));
+		_order.push(...configuration.order.filter((id) => _validColumns[id]));
 
 		const { name } = await CapabilityAPI.get();
 		const groupItem = { label: name, colspan: 0 };

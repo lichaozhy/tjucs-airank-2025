@@ -57,7 +57,7 @@ const filteredModelDataList = ref<ModelData[]>([]);
 
 const columnList = computed<Column[]>(() => {
 	return Object.values(benchmark.value!.properties)
-	  .filter(property => typeof property.order === 'number')
+		.filter((property) => typeof property.order === 'number')
 		.sort((a, b) => a.order! - b.order!)
 		.map((property) => ({ name: property.label, sorting: 'desc' }));
 });
@@ -66,23 +66,32 @@ const rowList = computed<ModelData[]>(() => {
 	const list: ModelData[] = [];
 
 	const propertyList = Object.values(benchmark.value!.properties)
-	  .filter(property => typeof property.order === 'number')
+		.filter((property) => typeof property.order === 'number')
 		.sort((a, b) => a.order! - b.order!);
 
 	const scores = modelScoreRecord.value;
 
-	for (const model of modelList.value) {
+	for (const {
+		id,
+		name,
+		category,
+		release,
+		author,
+		_author,
+	} of modelList.value) {
 		const data: ModelData = {
-			id: model.id,
-			name: model.name,
+			id,
+			name,
+			category,
+			caption: `${release?.year} | ${(_author ?? author ?? []).join(', ')}`,
 			scores: [],
 		};
 
-		const items = scores[model.id]!;
+		const items = scores[id]!;
 
 		if (items === undefined) {
 			const spanList = [
-				`Model(${model.id}) `,
+				`Model(${id}) `,
 				`benchmark ${props.benchmarkId}) `,
 				'legacy score is missing.',
 			];

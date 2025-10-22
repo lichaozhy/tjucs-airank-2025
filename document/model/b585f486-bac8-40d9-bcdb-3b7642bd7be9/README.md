@@ -2,6 +2,8 @@
 name: Gemini-2.5-Pro
 author:
   - Google DeepMind
+# _author:
+#   - GDM
 qa:
   - 2D
 dimension:
