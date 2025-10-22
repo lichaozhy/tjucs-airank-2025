@@ -59,12 +59,18 @@
 				</template>
 			</q-list>
 			<q-toolbar>
-				<q-space />
 				<q-btn
 					flat
 					square
 					label="reset"
 					@click="resetAll"
+				/>
+				<q-space />
+				<q-btn
+					color="indigo-10"
+					square
+					label="confirm"
+					@click="showing = false"
 				/>
 			</q-toolbar>
 		</q-card>
@@ -113,6 +119,8 @@ interface RangeItem extends BaseItem {
 	type: 'range';
 	modelValue: { min: number; max: number };
 	props: {
+		unit?: string;
+		overflow?: boolean;
 		min: number;
 		max: number;
 	};
@@ -146,13 +154,12 @@ const filteredList = computed<ModelData[]>(() => {
 	const Filter = filters.value;
 
 	return props.models.filter(({ id }) => {
-		const data = record[id];
-
-		if (data === undefined) {
+		if (record[id] === undefined) {
 			return false;
 		}
 
-		const { component, author, size, release } = data;
+		let matched = true;
+		const { component, author, size, release } = record[id];
 
 		if (component !== undefined) {
 			const { vision, language } = component;
@@ -160,7 +167,7 @@ const filteredList = computed<ModelData[]>(() => {
 			if (vision !== undefined) {
 				for (const value of vision) {
 					if (!Filter.vision(value)) {
-						return false;
+						matched &&= false;
 					}
 				}
 			}
@@ -168,35 +175,35 @@ const filteredList = computed<ModelData[]>(() => {
 			if (language !== undefined) {
 				for (const value of language) {
 					if (!Filter.language(value)) {
-						return false;
+						matched &&= false;
 					}
-				}
-			}
-
-			if (author !== undefined) {
-				for (const value of author) {
-					if (!Filter.author(value)) {
-						return false;
-					}
-				}
-			}
-
-			if (size !== undefined) {
-				for (const value of size) {
-					if (!Filter.size(value)) {
-						return false;
-					}
-				}
-			}
-
-			if (release !== undefined) {
-				if (!Filter.year(release.year)) {
-					return false;
 				}
 			}
 		}
 
-		return true;
+		if (author !== undefined) {
+			for (const value of author) {
+				if (!Filter.author(value)) {
+					matched &&= false;
+				}
+			}
+		}
+
+		if (size !== undefined) {
+			for (const value of size) {
+				if (!Filter.size(value)) {
+					matched &&= false;
+				}
+			}
+		}
+
+		if (release !== undefined) {
+			if (!Filter.year(release.year)) {
+				matched &&= false;
+			}
+		}
+
+		return matched;
 	});
 });
 
@@ -255,6 +262,8 @@ watch(
 					max: Math.max(...sizeList),
 				},
 				props: {
+					unit: 'B',
+					overflow: true,
 					min: Math.min(...sizeList),
 					max: Math.max(...sizeList),
 				},
