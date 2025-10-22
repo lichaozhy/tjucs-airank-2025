@@ -1,11 +1,8 @@
 // app global css in SCSS form
 @import './markdown.scss';
 
-html {
-	overflow-y: scroll;
-}
-
 body {
+	overflow-y: scroll;
 	font-family:
 		-apple-system, BlinkMacSystemFont, 'system-ui', 'Segoe UI', Roboto,
 		'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
