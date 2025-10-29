@@ -2,13 +2,15 @@
 name: GPT-4
 component:
   language:
-    - GPT-4
+  - GPT-4
+  vision:
+  - unsigned
 author:
-  - OpenAI
+- OpenAI
 qa:
-  - 2D
+- 2D
 dimension:
-  - 2D
+- 2D
 website: https://openai.com/index/gpt-4-research/
 navigation: false
 taskPlanning: false
@@ -22,3 +24,4 @@ score:
   benchmark: {}
   summary: {}
 ---
+

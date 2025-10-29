@@ -1,13 +1,13 @@
 ---
 name: LLaVA-OneVision-72B
 size:
-  - 73
+- 73
 author:
-  - ByteDance
+- ByteDance
 qa:
-  - 2D
+- 2D
 dimension:
-  - 2D
+- 2D
 website: https://huggingface.co/collections/lmms-lab/llava-onevision-66a259c3526e15166d6bba37
 navigation: true
 taskPlanning: true
@@ -20,14 +20,19 @@ score:
   benchmark:
     25206b0f-a955-4e39-86cf-53dcc9528bfc:
       legacy:
-        - 43.5
-        - 23.9
-        - 57.6
-        - 37.5
-        - 42.5
-        - 39.9
-        - 32.5
-        - 44.6
-        - 40.2
+      - 43.5
+      - 23.9
+      - 57.6
+      - 37.5
+      - 42.5
+      - 39.9
+      - 32.5
+      - 44.6
+      - 40.2
   summary: {}
+component:
+  vision:
+  - unsigned
+  language:
+  - unsigned
 ---
