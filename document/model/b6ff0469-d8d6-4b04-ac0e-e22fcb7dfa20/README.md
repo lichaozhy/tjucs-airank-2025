@@ -1,11 +1,11 @@
 ---
 name: InstructNav
 author:
-- Peking University
+  - Peking University
 qa:
-- 2D
+  - 2D
 dimension:
-- 2D
+  - 2D
 website: https://sites.google.com/view/instructnav
 navigation: true
 taskPlanning: true
@@ -19,12 +19,12 @@ score:
   benchmark:
     e6d0fdb7-9de8-4320-9af4-fcd9de517827:
       legacy:
-      - 58
-      - 58
+        - 58
+        - 58
   summary: {}
 component:
   vision:
-  - unsigned
+    - unsigned
   language:
-  - unsigned
+    - unsigned
 ---

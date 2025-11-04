@@ -109,7 +109,7 @@
 						<span class="text-weight-medium">{{ sProps.row.name }}</span>
 					</div>
 				</router-link>
-				<div class="text-caption text-grey ">
+				<div class="text-caption text-grey">
 					{{ sProps.row.caption ?? '-' }}
 				</div>
 			</q-td>

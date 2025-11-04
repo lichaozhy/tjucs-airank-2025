@@ -173,7 +173,7 @@ import * as Backend from 'src/backend';
 import AppMarkdownHtml from 'components/MarkdownHTML.vue';
 
 const route = useRoute();
-const benchmark = ref<DataType.BenchmarkData & { id: string } | null>(null);
+const benchmark = ref<(DataType.BenchmarkData & { id: string }) | null>(null);
 
 interface InformationData {
 	releasedAt: string | null;

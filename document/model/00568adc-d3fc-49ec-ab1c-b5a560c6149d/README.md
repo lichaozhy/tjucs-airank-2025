@@ -1,9 +1,9 @@
 ---
 name: 3D-LLM
 author:
-- UMass Amherst
+  - UMass Amherst
 qa:
-- 3D
+  - 3D
 website: https://github.com/UMass-Embodied-AGI/3D-LLM
 navigation: false
 taskPlanning: false
@@ -18,8 +18,7 @@ score:
   summary: {}
 component:
   vision:
-  - unsigned
+    - unsigned
   language:
-  - unsigned
+    - unsigned
 ---
-

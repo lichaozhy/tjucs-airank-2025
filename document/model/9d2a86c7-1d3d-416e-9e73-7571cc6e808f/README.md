@@ -1,11 +1,11 @@
 ---
 name: PIRLNav-IL-RL
 author:
-- Georgia Institute of Technology
+  - Georgia Institute of Technology
 qa:
-- 2D
+  - 2D
 dimension:
-- 2D
+  - 2D
 website: https://ram81.github.io/projects/pirlnav
 navigation: true
 taskPlanning: true
@@ -19,12 +19,12 @@ score:
   benchmark:
     e6d0fdb7-9de8-4320-9af4-fcd9de517827:
       legacy:
-      - 70.4
-      - 70.4
+        - 70.4
+        - 70.4
   summary: {}
 component:
   vision:
-  - unsigned
+    - unsigned
   language:
-  - unsigned
+    - unsigned
 ---

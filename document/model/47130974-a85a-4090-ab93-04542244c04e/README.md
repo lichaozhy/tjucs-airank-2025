@@ -1,11 +1,11 @@
 ---
 name: Gemini-2.0-Pro w CoT
 author:
-- Google DeepMind
+  - Google DeepMind
 qa:
-- 2D
+  - 2D
 dimension:
-- 2D
+  - 2D
 navigation: false
 taskPlanning: false
 reason: false
@@ -18,8 +18,7 @@ score:
   summary: {}
 component:
   vision:
-  - unsigned
+    - unsigned
   language:
-  - unsigned
+    - unsigned
 ---
-

@@ -1,9 +1,9 @@
 ---
 name: VLMNav
 author:
-- University of California Berkeley
+  - University of California Berkeley
 dimension:
-- 2D
+  - 2D
 website: https://jirl-upenn.github.io/VLMnav/
 navigation: false
 taskPlanning: false
@@ -17,12 +17,12 @@ score:
   benchmark:
     e6d0fdb7-9de8-4320-9af4-fcd9de517827:
       legacy:
-      - 50.4
-      - 50.4
+        - 50.4
+        - 50.4
   summary: {}
 component:
   vision:
-  - unsigned
+    - unsigned
   language:
-  - unsigned
+    - unsigned
 ---

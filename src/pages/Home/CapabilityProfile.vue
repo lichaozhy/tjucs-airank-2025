@@ -15,8 +15,10 @@
 
 		<q-space class="q-my-lg" />
 
-		<div class="row q-col-gutter-lg no-wrap"
-					v-if="level0Id !== null">
+		<div
+			class="row q-col-gutter-lg no-wrap"
+			v-if="level0Id !== null"
+		>
 			<div class="col-grow row">
 				<q-tabs
 					vertical

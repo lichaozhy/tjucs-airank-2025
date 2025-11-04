@@ -50,7 +50,7 @@ const data = ref<{
 		title: string;
 		icon: string;
 		description: string;
-	}[]
+	}[];
 }>({
 	title: '',
 	features: [],

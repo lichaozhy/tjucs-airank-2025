@@ -10,10 +10,9 @@
 				id="app-home-contribution-card"
 				class="q-pa-xl"
 			>
-
 				<q-card-section>
 					<app-markdown-html
-						style="max-width: 80em;"
+						style="max-width: 80em"
 						src="page/home/contribute"
 					></app-markdown-html>
 				</q-card-section>

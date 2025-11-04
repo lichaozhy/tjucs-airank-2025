@@ -187,7 +187,7 @@ onBeforeMount(async () => {
 	leaderboard.value = configuration.DEFAULT_LEADERBOARD;
 	leaderboardRecord.value = idNameRecord;
 	data.value = _data;
-	detail.value =_detail;
+	detail.value = _detail;
 });
 
 defineOptions({ name: 'AppPageHomeBenchmarkProfile' });

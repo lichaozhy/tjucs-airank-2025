@@ -2,17 +2,17 @@
 name: Llama3-8B
 component:
   language:
-  - Llama3.0-8B
+    - Llama3.0-8B
   vision:
-  - unsigned
+    - unsigned
 size:
-- 8
+  - 8
 author:
-- Meta AI
+  - Meta AI
 qa:
-- 2D
+  - 2D
 dimension:
-- 2D
+  - 2D
 website: https://huggingface.co/meta-llama/Meta-Llama-3-8B
 navigation: false
 taskPlanning: false
@@ -25,4 +25,3 @@ score:
   benchmark: {}
   summary: {}
 ---
-

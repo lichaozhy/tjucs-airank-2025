@@ -1,6 +1,6 @@
 <template>
 	<app-markdown-html
-		style="font-size: 14px;"
+		style="font-size: 14px"
 		class="text-weight-thin app-score-card-hint"
 		src="component/score-card/hint"
 	></app-markdown-html>

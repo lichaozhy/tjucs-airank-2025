@@ -1,4 +1,3 @@
-
 export interface SourceScoreModel {
 	type: 'summary' | 'benchmark';
 	id: string;

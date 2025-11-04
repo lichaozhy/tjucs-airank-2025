@@ -2,17 +2,17 @@
 name: LongVA-7B
 component:
   language:
-  - Qwen2-7B-Instruct
+    - Qwen2-7B-Instruct
   vision:
-  - unsigned
+    - unsigned
 size:
-- 8
+  - 8
 author:
-- ByteDance
+  - ByteDance
 qa:
-- 2D
+  - 2D
 dimension:
-- 2D
+  - 2D
 website: https://huggingface.co/lmms-lab/LongVA-7B
 navigation: false
 taskPlanning: false
@@ -26,14 +26,14 @@ score:
   benchmark:
     25206b0f-a955-4e39-86cf-53dcc9528bfc:
       legacy:
-      - 38
-      - 16.6
-      - 38.9
-      - 22.2
-      - 33.1
-      - 43.3
-      - 25.4
-      - 15.7
-      - 29.2
+        - 38
+        - 16.6
+        - 38.9
+        - 22.2
+        - 33.1
+        - 43.3
+        - 25.4
+        - 15.7
+        - 29.2
   summary: {}
 ---

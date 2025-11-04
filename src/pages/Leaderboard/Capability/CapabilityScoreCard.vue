@@ -49,7 +49,11 @@
 </template>
 
 <script setup lang="ts">
-import type { ModelData, GroupOptions, Column } from 'components/ScoreTable.vue';
+import type {
+	ModelData,
+	GroupOptions,
+	Column,
+} from 'components/ScoreTable.vue';
 import type * as Radar from 'components/RadarChart.vue';
 import { computed, ref, watch } from 'vue';
 
@@ -150,13 +154,15 @@ const radarDataList = computed<Radar.DataObject[]>(() => {
 		return [];
 	}
 
-	const columns = Object.entries(selectedColumns.value!)
-		.filter(([, flag]) => flag);
+	const columns = Object.entries(selectedColumns.value!).filter(
+		([, flag]) => flag,
+	);
 
 	return props.rows
 		.filter(({ id }) => selected[id] === true)
 		.map(({ name, scores }) => ({
-			name, value: columns.map(([index]) => scores[Number(index)]!),
+			name,
+			value: columns.map(([index]) => scores[Number(index)]!),
 		}));
 });
 
@@ -165,7 +171,7 @@ const hasEnoughtColumns = computed(() => {
 		return false;
 	}
 
-	if (Object.values(selectedColumns.value).filter(flag => flag).length < 3) {
+	if (Object.values(selectedColumns.value).filter((flag) => flag).length < 3) {
 		return false;
 	}
 

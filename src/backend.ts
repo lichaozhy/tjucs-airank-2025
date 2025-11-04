@@ -37,7 +37,9 @@ export const API = {
 					async query() {
 						const indexRecord: Record<string, number> = {};
 
-						for (const [index, { id }] of Object.entries(root.page.leaderboard.$data.benchmarks)) {
+						for (const [index, { id }] of Object.entries(
+							root.page.leaderboard.$data.benchmarks,
+						)) {
 							indexRecord[id] = Number(index);
 						}
 
@@ -155,7 +157,9 @@ export const API = {
 			async query(filter: BenchmarkFilter = {}) {
 				const indexRecord: Record<string, number> = {};
 
-				for (const [index, { id }] of Object.entries(root.page.leaderboard.$data.benchmarks)) {
+				for (const [index, { id }] of Object.entries(
+					root.page.leaderboard.$data.benchmarks,
+				)) {
 					indexRecord[id] = Number(index);
 				}
 
@@ -324,11 +328,10 @@ export const API = {
 						// return Object.entries(parentCapabilityData.children!)
 						// 	.map(([id, { $data }]) => ({ id, ...$data }));
 
-						return configuration!.$data.order
-							.map((capabilityId) => ({
-								id: capabilityId,
-								...parentCapabilityData.children![capabilityId]!.$data,
-							}));
+						return configuration!.$data.order.map((capabilityId) => ({
+							id: capabilityId,
+							...parentCapabilityData.children![capabilityId]!.$data,
+						}));
 					},
 					Configuration: {
 						async get() {

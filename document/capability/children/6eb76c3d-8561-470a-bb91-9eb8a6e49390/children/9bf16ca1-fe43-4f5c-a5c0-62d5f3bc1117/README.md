@@ -7,11 +7,11 @@ index: 8
 <div class="row">
 <div class="col-8">
 
-| **Benchmark** | **Capability Dimension** |
-| ------------- | ------------------------ |
-| RoBoVQA       | Past Description         |
-| UniEQA        | Action Perception        |
- | EA-Temporal-Auto-20251020 | State Change Perception|
+| **Benchmark**             | **Capability Dimension** |
+| ------------------------- | ------------------------ |
+| RoBoVQA                   | Past Description         |
+| UniEQA                    | Action Perception        |
+| EA-Temporal-Auto-20251020 | State Change Perception  |
 
 </div>
 

@@ -5,7 +5,7 @@
 		</div>
 		<q-space class="q-my-lg"></q-space>
 		<app-markdown-html
-			style="min-height: 6em; max-width: 72em;"
+			style="min-height: 6em; max-width: 72em"
 			class="text-body text-weight-light text-justify"
 			src="page/leaderboard/task"
 		></app-markdown-html>

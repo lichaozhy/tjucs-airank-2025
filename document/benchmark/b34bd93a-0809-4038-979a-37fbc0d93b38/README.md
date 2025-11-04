@@ -46,8 +46,6 @@ properties:
 
 ![](assets/EA-Temporal-Auto-20251020.png)
 
-
-
 The EA-Temporal-Auto-20251020 benchmark provides a quantitative evaluation of the temporal reasoning capabilities of Multimodal Large Language Models (MLLMs) through first-person view image sequences. The benchmark comprises over 500 question-answer pairs derived from embodied agent trajectory data generated based on the ALFRED dataset, with secondary annotation and verification conducted by human experts.
 
 The benchmark primarily evaluates the temporal understanding capabilities of agents from two dimensions:
@@ -59,24 +57,24 @@ By reusing the precise action-level and state-level annotations from the ALFRED 
 
 ## Benchmark Characteristics
 
-+ **Purpose**: The benchmark specifically focuses on temporal reasoning in embodied agent scenarios, requiring capabilities like temporal state tracking and action-effect causality inference, going beyond static image understanding or isolated frame-level perception.
-+ **Quality**: The benchmark is high-quality, with trajectory data generated from ALFRED's validated task sequences and undergone secondary human expert annotation to ensure accurate temporal event ordering and correct state transition labels.
+- **Purpose**: The benchmark specifically focuses on temporal reasoning in embodied agent scenarios, requiring capabilities like temporal state tracking and action-effect causality inference, going beyond static image understanding or isolated frame-level perception.
+- **Quality**: The benchmark is high-quality, with trajectory data generated from ALFRED's validated task sequences and undergone secondary human expert annotation to ensure accurate temporal event ordering and correct state transition labels.
 
 ## Data Statistics
 
-+ **Data Source**: It comprises over 500 question-answer pairs derived from embodied agent trajectories generated based on the ALFRED dataset, with secondary annotation conducted by human experts.
+- **Data Source**: It comprises over 500 question-answer pairs derived from embodied agent trajectories generated based on the ALFRED dataset, with secondary annotation conducted by human experts.
 
 The dataset involves over 100 distinct object types across diverse household environments, which through task-object combinations yield more than 300 unique task scenarios, ensuring comprehensive coverage of everyday embodied interactions.These samples encompass two primary question types:
+
 1. Action inference from paired images, requiring models to deduce what action occurred between two temporal observations
 2. Temporal reordering of multi-frame sequences, challenging models to reconstruct the correct chronological order.
-
-
 
 ## Evaluation
 
 EA-Temporal-Auto-20251020 employs a GPT-based semantic evaluation approach with a three-tier scoring system: 1.0 for semantically correct answers, 0.5 for partially correct responses, and 0.0 for incorrect answers. For dimension 1, we employ the basic semantic evaluation. For dimension 2, we further perform precise matching of each model’s output according to the required output format specified in the question.
 
 ## Citation
+
 ```
 @article{EmbodiedArena2025,
 	title={EmbodiedArena: A Comprehensive, Unified, and Evolving Evaluation Platform for Embodied AI},
@@ -84,5 +82,3 @@ EA-Temporal-Auto-20251020 employs a GPT-based semantic evaluation approach with 
 	year={2025}
 }
 ```
-
-

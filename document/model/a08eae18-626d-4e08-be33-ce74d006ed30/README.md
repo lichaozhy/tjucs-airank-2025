@@ -2,15 +2,15 @@
 name: Seed1.5-VL
 component:
   language:
-  - Seed1.5-VL
+    - Seed1.5-VL
   vision:
-  - unsigned
+    - unsigned
 author:
-- ByteDance
+  - ByteDance
 qa:
-- 2D
+  - 2D
 dimension:
-- 2D
+  - 2D
 website: https://github.com/ByteDance-Seed/Seed1.5-VL
 navigation: true
 taskPlanning: true
@@ -24,4 +24,3 @@ score:
   benchmark: {}
   summary: {}
 ---
-

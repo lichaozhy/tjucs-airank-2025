@@ -3,7 +3,7 @@
 		<div class="column content-center items-center text-center">
 			<h2 class="text-indigo-10 text-weight-bold">{{ data.title }}</h2>
 			<app-markdown-html
-				style="max-width: 70em;"
+				style="max-width: 70em"
 				class="text-grey-8"
 				src="page/home/profile/model"
 			></app-markdown-html>

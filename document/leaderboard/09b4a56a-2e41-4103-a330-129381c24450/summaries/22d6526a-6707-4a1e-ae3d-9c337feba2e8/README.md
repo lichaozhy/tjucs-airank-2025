@@ -38,6 +38,18 @@ properties:
     ref:
       benchmark: e75dcf1e-54fa-48ca-83d0-7f01cff7e949
       key: Total
+  - type: reference
+    label: Beacon3D-QA(3D)
+    sorting: desc
+    ref:
+      benchmark: 7b7d97b2-c603-4cf1-8875-925b3bd4393c
+      key: Total
+  - type: reference
+    label: Beacon3D-Grounding
+    sorting: desc
+    ref:
+      benchmark: 65daecd1-5419-47ea-9a52-3072f84eb122
+      key: Total
 models:
   323ef65f-630b-49df-bff8-e7bc32815387: true
   0cb4cf61-fe9a-4974-9c89-96c023957e9f: true

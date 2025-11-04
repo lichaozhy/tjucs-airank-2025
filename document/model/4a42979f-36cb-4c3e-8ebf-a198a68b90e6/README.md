@@ -2,15 +2,15 @@
 name: Gemini-2.0-Pro
 component:
   language:
-  - Gemini-2.0-Pro
+    - Gemini-2.0-Pro
   vision:
-  - unsigned
+    - unsigned
 author:
-- Google DeepMind
+  - Google DeepMind
 qa:
-- 2D
+  - 2D
 dimension:
-- 2D
+  - 2D
 website: https://developers.googleblog.com/en/gemini-2-family-expands/
 navigation: true
 taskPlanning: true
@@ -23,7 +23,7 @@ score:
   benchmark:
     a9228f2e-3191-4a08-8f03-64e73cae2e78:
       legacy:
-      - 38.8
-      - 38.8
+        - 38.8
+        - 38.8
   summary: {}
 ---

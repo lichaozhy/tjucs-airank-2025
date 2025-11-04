@@ -1,11 +1,11 @@
 ---
 name: L3MVN
 author:
-- University of Groningen
+  - University of Groningen
 qa:
-- 2D
+  - 2D
 dimension:
-- 2D
+  - 2D
 website: https://sites.google.com/view/l3mvn
 navigation: true
 taskPlanning: true
@@ -19,12 +19,12 @@ score:
   benchmark:
     e6d0fdb7-9de8-4320-9af4-fcd9de517827:
       legacy:
-      - 54.2
-      - 54.2
+        - 54.2
+        - 54.2
   summary: {}
 component:
   vision:
-  - unsigned
+    - unsigned
   language:
-  - unsigned
+    - unsigned
 ---

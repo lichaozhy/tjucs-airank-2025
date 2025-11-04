@@ -42,13 +42,17 @@ const selected = defineModel<Record<string, boolean>>({ required: true });
 const reset = defineModel<ResetHandler>('reset', { required: true });
 const filter = defineModel<Filter>('filter', { required: true });
 
-watch(selected, (selected) => {
-	filter.value = (value) => selected[value] === true;
-}, { deep: true });
+watch(
+	selected,
+	(selected) => {
+		filter.value = (value) => selected[value] === true;
+	},
+	{ deep: true },
+);
 
 onMounted(() => {
 	reset.value = () => {
-		selected.value = Object.fromEntries(props.values.map(k => [k, true]));
+		selected.value = Object.fromEntries(props.values.map((k) => [k, true]));
 	};
 });
 

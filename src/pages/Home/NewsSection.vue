@@ -5,7 +5,11 @@
 	>
 		<div class="app-max-width-1680 row justify-center">
 			<div class="col-lg-9 col-md-12">
-				<div class="text-indigo-10 text-h2 text-weight-bold text-center q-py-lg">News</div>
+				<div
+					class="text-indigo-10 text-h2 text-weight-bold text-center q-py-lg"
+				>
+					News
+				</div>
 				<app-markdown-html :src="'page/home/news'"></app-markdown-html>
 			</div>
 		</div>

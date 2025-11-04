@@ -1,0 +1,8 @@
+Beacon3D is a novel benchmark for 3D grounding and question answering (QA) tasks. Beacon3D features an object-centric evaluation framework, with Grounding Chains (G-Chains) and Grounding-QA Chains (GQA-Chains) for each object. Beacon3D comprises 800+ objects across ScanNet, 3RScan, and MultiScan. The evaluation adopts object-centric metrics to ensure robustness and utilizes chain analysis for studies in task coherence. We also design various knowledge types such as class, appearance ("App."), geometry ("Geo."), spatial ("Spa."), and existence ("Exi.").
+
+<div class="text-caption">
+
+Reference:<br>
+Huang, Jiangyong, et al. "Unveiling the mist over 3d vision-language understanding: Object-centric evaluation with chain-of-analysis." Proceedings of the Computer Vision and Pattern Recognition Conference. 2025.
+
+</div>
