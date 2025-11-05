@@ -89,6 +89,7 @@
 				/>
 				<router-link
 					style="text-decoration: none"
+					target="_blank"
 					:to="{
 						name: 'app.model.detail',
 						params: { id: sProps.row.id },
