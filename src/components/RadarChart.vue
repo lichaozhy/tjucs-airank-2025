@@ -63,12 +63,12 @@ onMounted(() => {
 						color: '#111',
 						borderRadius: 3,
 						padding: [3, 5],
-						fontSize: 12,
+						fontSize: 20,
 					},
 					axisLabel: {
 						show: true,
 						color: '#000',
-						fontSize: 6,
+						fontSize: 12,
 					},
 					splitLine: {
 						lineStyle: {
