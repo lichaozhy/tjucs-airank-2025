@@ -992,11 +992,11 @@ score:
         - null
         - null
       legacy:
-        - 45.4
         - 14.38
-        - 55.31
+        - 45.4
         - 49.66
         - 47.72
+        - 55.31
         - 46.06
   summary:
     d6ba913a-6e26-4dcc-b192-04b9bee6fd8e:

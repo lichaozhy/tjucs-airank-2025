@@ -42,19 +42,14 @@ properties:
     index: 3
     label: Spatial
     unit: null
-  Existence:
-    order: 5
-    index: 4
-    label: Existence
-    unit: null
   Total:
     order: 0
-    index: 5
+    index: 4
     label: Total Score
     unit: null
   PercentileRank:
     order: null
-    index: 6
+    index: 5
     label: PR
     unit: null
 ---
