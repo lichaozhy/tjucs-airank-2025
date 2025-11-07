@@ -41,7 +41,7 @@ import type {
 } from 'components/ScoreTable.vue';
 import AppCapabilityScoreCard from './CapabilityScoreCard.vue';
 import type { RadarProps } from './CapabilityScoreCard.vue';
-import { onBeforeMount, ref, computed } from 'vue';
+import { onBeforeMount, ref, computed, watch } from 'vue';
 
 import * as Backend from 'src/backend';
 import { useSource } from './source';
@@ -126,6 +126,37 @@ const radarOptions = computed<RadarProps>(() => {
 	return { columns: record };
 });
 
+watch(columenSelected, async (selected) => {
+	const configuration = await Backend.API.Capability.Configuration.get();
+	const _groupList: GroupOptions[] = [];
+
+	for (const capabilityId of configuration.order) {
+		const CapabilityAPI = Backend.API.Capability(capabilityId);
+		const configuration = await CapabilityAPI.Configuration.get();
+
+		if (configuration === null) {
+			continue;
+		}
+
+		const childItemList = await CapabilityAPI.query();
+
+		const { name } = await CapabilityAPI.get();
+		const groupItem = { label: name, colspan: 0 };
+
+		for (const { id } of childItemList) {
+			if (selected[id]) {
+				groupItem.colspan++;
+			}
+		}
+
+		if (groupItem.colspan > 0) {
+			_groupList.push(groupItem);
+		}
+	}
+
+	groupList.value = _groupList;
+}, { deep: true });
+
 onBeforeMount(async () => {
 	await Source.fetchAbstract();
 	const configuration = await Backend.API.Capability.Configuration.get();
@@ -136,7 +167,6 @@ onBeforeMount(async () => {
 		string,
 		true
 	>;
-	const _groupList: GroupOptions[] = [];
 
 	for (const capabilityId of configuration.order) {
 		const CapabilityAPI = Backend.API.Capability(capabilityId);
@@ -149,18 +179,10 @@ onBeforeMount(async () => {
 		const childItemList = await CapabilityAPI.query();
 		_order.push(...configuration.order.filter((id) => _validColumns[id]));
 
-		const { name } = await CapabilityAPI.get();
-		const groupItem = { label: name, colspan: 0 };
-
 		for (const { id, ...rest } of childItemList) {
 			if (_validColumns[id]) {
-				groupItem.colspan++;
 				_propertyRecorder[id] = { ...rest };
 			}
-		}
-
-		if (groupItem.colspan > 0) {
-			_groupList.push(groupItem);
 		}
 	}
 
@@ -168,7 +190,6 @@ onBeforeMount(async () => {
 	order.value = _order;
 	modelList.value = _modelList;
 	validColumns.value = _validColumns;
-	groupList.value = _groupList;
 	columenSelected.value = { ..._validColumns };
 });
 
