@@ -10,6 +10,23 @@
 			>
 		</template>
 
+		<template #append>
+			<div
+				class="row text-white text-weight-light"
+				style="font-size: 10px"
+			>
+				<div
+					class="cursor-pointer q-mr-sm"
+					v-for="(_flag, id) in validColumns"
+					:key="id"
+					:class="{ 'text-grey-5': !columenSelected[id] }"
+					@click="columenSelected[id] = !columenSelected[id]"
+				>
+					{{ propertyRecord[id]!.name }}
+				</div>
+			</div>
+		</template>
+
 		<app-markdown-html
 			class="q-mt-md"
 			:src="`capability/comment/${source.type}/${source.id}`"
@@ -41,9 +58,14 @@ const propertyRecord = ref<Record<string, Type.PropertyAbstract>>({});
 const order = ref<string[]>([]);
 const modelList = ref<(Data.Model & { id: string })[]>([]);
 const validColumns = ref<Record<string, true>>({});
+const columenSelected = ref<Record<string, boolean>>({});
+
+const filteredOrder = computed<string[]>(() => {
+	return order.value.filter((id) => columenSelected.value[id]);
+});
 
 const columnList = computed<Column[]>(() => {
-	return order.value.map((capabilityId) => ({
+	return filteredOrder.value.map((capabilityId) => ({
 		name: propertyRecord.value[capabilityId]!.name,
 		sorting: 'desc',
 	}));
@@ -52,6 +74,7 @@ const columnList = computed<Column[]>(() => {
 const rowList = computed<ModelData[]>(() => {
 	const { source } = props;
 	const list: ModelData[] = [];
+	const _filteredOrderEntries = [...filteredOrder.value.entries()];
 
 	for (const {
 		id,
@@ -80,7 +103,7 @@ const rowList = computed<ModelData[]>(() => {
 			scores: [],
 		};
 
-		for (const [index, capabilityId] of order.value.entries()) {
+		for (const [index, capabilityId] of _filteredOrderEntries) {
 			const property = propertyRecord.value[capabilityId]!;
 			const value = scoreList[property.index];
 
@@ -98,7 +121,7 @@ const radarOptions = computed<RadarProps>(() => {
 	const _validColumns = validColumns.value;
 	const _propertyRecorder = propertyRecord.value;
 
-	for (const [index, capabilityId] of order.value.entries()) {
+	for (const [index, capabilityId] of filteredOrder.value.entries()) {
 		if (_validColumns[capabilityId] && _propertyRecorder[capabilityId]?.radar) {
 			record[index] = true;
 		}
@@ -124,6 +147,7 @@ onBeforeMount(async () => {
 	order.value = [...configuration.order].filter((id) => _validColumns[id]);
 	modelList.value = _modelList;
 	validColumns.value = _validColumns as Record<string, true>;
+	columenSelected.value = { ..._validColumns };
 });
 
 defineOptions({ name: 'AppPageLeaderboardCapabilityLevel0ScoreCard' });

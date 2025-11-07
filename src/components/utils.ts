@@ -11,7 +11,9 @@ export function toNumberOrNull(value: number | null | undefined = null) {
 }
 
 export function toNoneOrFixed(value: number | null, fractionDigital = 2) {
-	return value === null ? '-' : value.toFixed(fractionDigital);
+	return value === null || value === undefined
+		? '-'
+		: value.toFixed(fractionDigital);
 }
 
 export type ColumnAlignment = 'left' | 'center' | 'right';

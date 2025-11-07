@@ -25,6 +25,7 @@
 							</div>
 						</div>
 					</div>
+					<slot name="append"></slot>
 				</q-item-section>
 				<q-item-section side>
 					<AppModelFilter
