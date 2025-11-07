@@ -28,12 +28,16 @@ const routes: RouteRecordRaw[] = [
 				component: () => import('layouts/Leaderboard'),
 				async beforeEnter(to, from, next) {
 					if (!Object.hasOwn(to.params, 'leaderboardOperand')) {
-						const Configuration = await Backend.API.Configuration.get();
+						const configuration = await Backend.API.Configuration.get();
+
+						const leaderboard = await Backend.API
+							.Leaderboard(configuration.DEFAULT_LEADERBOARD)
+							.get();
 
 						return next({
 							name: to.name,
 							params: {
-								leaderboardOperand: Configuration.DEFAULT_LEADERBOARD,
+								leaderboardOperand: leaderboard.code,
 							},
 						});
 					}
