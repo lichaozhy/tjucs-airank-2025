@@ -7,7 +7,7 @@
 			<app-markdown-html
 				style="min-height: 4em"
 				class="text-grey-9"
-				:src="`page/leaderboard/capability/${leaderboardId}`"
+				:src="`page/leaderboard/capability/${operand!.id}`"
 			></app-markdown-html>
 		</div>
 		<div class="col-12">
@@ -46,10 +46,10 @@
 import type * as Data from 'src/data';
 import type * as Type from './type';
 import { computed, ref, inject, onBeforeMount } from 'vue';
-import { useRoute } from 'vue-router';
 
 import * as Backend from 'src/backend';
 import * as Spec from 'src/spec';
+import * as LeaderboardLayout from 'layouts/Leaderboard';
 
 import AppMarkdownHtml from 'components/MarkdownHTML.vue';
 import AppCapabilityLevel0ScoreCard from './Level0ScoreCard.vue';
@@ -62,8 +62,7 @@ const AppCapabilityScoreCardComponent = {
 	1: AppCapabilityLevel1ScoreCard,
 };
 
-const { params } = useRoute();
-const leaderboardId = String(params.leaderboardId);
+const operand = inject(LeaderboardLayout.Operand.symbol);
 const levelRecord = ref<Record<Data.CapabilityLevel, string>>({ 0: '', 1: '' });
 const level = ref<Data.CapabilityLevel>(0);
 const selectedBenchmark = inject(INJECTION.LEADERBOARD_BENCHMARK_SELECTED);

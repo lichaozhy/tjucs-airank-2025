@@ -18,7 +18,7 @@
 					v-for="leaderboard in leaderboardList"
 					:key="leaderboard.id"
 					:name="leaderboard.id"
-					:to="{ params: { leaderboardId: leaderboard.id } }"
+					:to="{ params: { leaderboardOperand: leaderboard.code } }"
 					class="text-h6 text-black text-weight-medieum"
 					style="opacity: 0.6"
 					active-class="app-solid-tab"
@@ -102,6 +102,8 @@ import * as Spec from 'src/spec';
 import * as Backend from 'src/backend';
 import { useState } from './state';
 
+import * as Operand from './Operand';
+
 const { fromURL } = useState();
 const sourceMenuShowingRecord = ref<Record<string, boolean>>({});
 
@@ -118,10 +120,10 @@ interface SummaryAbstract {
 interface LeaderboardAbstract {
 	id: string;
 	name: string;
+	code: string;
 }
 
 const route = useRoute();
-const leaderboardId = route.params.leaderboardId as string;
 const leaderboard = ref<LeaderboardAbstract | null>(null);
 const leaderboardList = ref<LeaderboardAbstract[]>([]);
 const benchmarkList = ref<BenchmarkAbstract[]>([]);
@@ -129,10 +131,12 @@ const summaryList = ref<SummaryAbstract[]>([]);
 const selectedBenchmark = reactive<{ [key: string]: boolean }>({});
 const selectedSummary = reactive<{ [key: string]: boolean }>({});
 const exclude = ref<Record<string, boolean>>({});
+const operand = ref<Operand.LeaderboardOperand>({ id: null, code: null });
 
 provide(Spec.INJECTION_KEY.LEADERBOARD_SUMMARY_SELECTED, selectedSummary);
 provide(Spec.INJECTION_KEY.LEADERBOARD_BENCHMARK_SELECTED, selectedBenchmark);
 provide(Spec.INJECTION_KEY.SET_EXCLUDE, setExclude);
+provide(Operand.symbol, operand);
 
 function setExclude(record: Record<string, boolean>) {
 	exclude.value = record;
@@ -193,10 +197,29 @@ watch(
 
 const isLoaded = ref<boolean>(false);
 
+async function fetchLeaderboardByOperand() {
+	const operand = route.params.leaderboardOperand as string;
+
+	try {
+		const id = operand;
+
+		return await Backend.API.Leaderboard(id).get();
+	} catch {
+		const code = operand;
+		const [leaderboard] = await Backend.API.Leaderboard.query({ code });
+
+		if (leaderboard === undefined) {
+			throw new Error(`Leaderboard with code ${code} not found`);
+		}
+
+		return leaderboard;
+	}
+}
+
 onBeforeMount(async () => {
 	const leaderboardListData = await Backend.API.Leaderboard.query();
-	const LeaderboardAPI = Backend.API.Leaderboard(leaderboardId);
-	const leaderboardData = await LeaderboardAPI.get();
+	const leaderboardData = await fetchLeaderboardByOperand();
+	const LeaderboardAPI = Backend.API.Leaderboard(leaderboardData.id);
 	const benchmarkDataList = await LeaderboardAPI.Benchmark.query();
 	const summaryDataList = await LeaderboardAPI.Summary.query();
 
@@ -206,7 +229,7 @@ onBeforeMount(async () => {
 	summaryList.value = summaryDataList.map(({ id, name }) => ({ id, name }));
 
 	for (const { id } of leaderboardListData) {
-		sourceMenuShowingRecord.value[id] = id === leaderboardId && !fromURL.value;
+		sourceMenuShowingRecord.value[id] = id === leaderboardData.id && !fromURL.value;
 	}
 
 	for (const benchmark of benchmarkDataList) {
@@ -223,6 +246,8 @@ onBeforeMount(async () => {
 	}
 
 	isLoaded.value = true;
+	operand.value.id = leaderboardData.id;
+	operand.value.code = leaderboardData.code;
 });
 
 onBeforeUnmount(() => (fromURL.value = false));

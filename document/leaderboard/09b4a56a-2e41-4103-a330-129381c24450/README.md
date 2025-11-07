@@ -1,5 +1,6 @@
 ---
 name: Question Answering
+code: question-answering
 ---
 
 The Embodied Question Answering Leaderboard is a dedicated ranking system for

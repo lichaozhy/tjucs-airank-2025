@@ -1,5 +1,6 @@
 ---
 name: Task Planning
+code: task-planning
 ---
 
 The Embodied Task Planning Leaderboard is a dedicated ranking system for

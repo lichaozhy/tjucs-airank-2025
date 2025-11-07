@@ -114,6 +114,7 @@ export interface SummaryItem {
 interface LeaderboardItem {
 	$data: {
 		name: string;
+		code: string;
 	};
 	summaries: {
 		[summaryId: string]: {

@@ -1,4 +1,4 @@
-import type { BenchmarkItem, DataType, SummaryItem } from './data';
+import type { BenchmarkItem, DataType, LeaderboardItem, SummaryItem } from './data';
 
 let root: DataType;
 
@@ -12,6 +12,10 @@ export type ModelPropertyRecordGroup = Record<
 >;
 
 interface BenchmarkFilter {
+	code?: string;
+}
+
+interface LeaderboardFilter {
 	code?: string;
 }
 
@@ -85,7 +89,7 @@ export const API = {
 			};
 		},
 		{
-			async query() {
+			async query(filter: LeaderboardFilter = {}) {
 				const indexRecord: Record<string, number> = {};
 
 				for (const [index, { id }] of Object.entries(
@@ -94,7 +98,21 @@ export const API = {
 					indexRecord[id] = Number(index);
 				}
 
-				return Object.entries(root.leaderboard)
+				const filtered: [string, LeaderboardItem][] = [];
+
+				for (const entry of Object.entries(root.leaderboard)) {
+					const [, leaderboard] = entry;
+
+					if ('code' in filter) {
+						if (leaderboard.$data.code !== filter.code) {
+							continue;
+						}
+					}
+
+					filtered.push(entry);
+				}
+
+				return filtered
 					.sort(([aId], [bId]) => indexRecord[aId]! - indexRecord[bId]!)
 					.map(([id, { $data }]) => ({ id, ...$data }));
 			},

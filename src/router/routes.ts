@@ -23,17 +23,17 @@ const routes: RouteRecordRaw[] = [
 			},
 			{
 				name: 'app.leaderboard',
-				path: 'leaderboard/:leaderboardId?',
+				path: 'leaderboard/:leaderboardOperand?',
 				redirect: { name: 'app.leaderboard.task' },
 				component: () => import('layouts/Leaderboard'),
 				async beforeEnter(to, from, next) {
-					if (!Object.hasOwn(to.params, 'leaderboardId')) {
+					if (!Object.hasOwn(to.params, 'leaderboardOperand')) {
 						const Configuration = await Backend.API.Configuration.get();
 
 						return next({
 							name: to.name,
 							params: {
-								leaderboardId: Configuration.DEFAULT_LEADERBOARD,
+								leaderboardOperand: Configuration.DEFAULT_LEADERBOARD,
 							},
 						});
 					}

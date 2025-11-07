@@ -1,5 +1,6 @@
 ---
 name: Navigation
+code: navigation
 ---
 
 The Embodied Navigation Leaderboard is a dedicated ranking system for evaluating

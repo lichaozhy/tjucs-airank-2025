@@ -7,7 +7,7 @@
 			<app-markdown-html
 				style="min-height: 4em"
 				class="text-grey-9"
-				:src="`page/leaderboard/task/${leaderboardId}`"
+				:src="`page/leaderboard/task/${operand.id}`"
 			></app-markdown-html>
 		</div>
 		<div
@@ -16,7 +16,7 @@
 			:key="summary.id"
 		>
 			<AppSummaryScoreCard
-				:leaderboard-id="leaderboardId"
+				:leaderboard-id="operand.id!"
 				:summary-id="summary.id"
 			></AppSummaryScoreCard>
 		</div>
@@ -34,18 +34,17 @@
 <script setup lang="ts">
 import type { BenchmarkAbstract, SummaryAbstract } from './type';
 import { computed, onBeforeMount, ref, inject } from 'vue';
-import { useRoute } from 'vue-router';
 
 import * as Spec from 'src/spec';
 import * as Backend from 'src/backend';
+import * as LeaderboardLayout from 'layouts/Leaderboard';
 
 import AppMarkdownHtml from 'components/MarkdownHTML.vue';
 import AppSummaryScoreCard from './SummaryScoreCard.vue';
 import AppBenchmarkScoreCard from './BenchmarkScoreCard.vue';
 
-const { params } = useRoute();
-const leaderboardId = String(params.leaderboardId);
-const LeaderboardAPI = Backend.API.Leaderboard(leaderboardId);
+const operand = inject(LeaderboardLayout.Operand.symbol)!;
+const LeaderboardAPI = Backend.API.Leaderboard(operand.value.id!);
 
 const benchmarkList = ref<BenchmarkAbstract[]>([]);
 const summaryList = ref<SummaryAbstract[]>([]);
