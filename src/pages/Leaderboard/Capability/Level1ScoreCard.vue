@@ -13,18 +13,17 @@
 		</template>
 
 		<template #append>
-			<div
-				class="row text-white text-weight-light"
-				style="font-size: 10px"
-			>
+			<div class="row text-white text-weight-light q-gutter-xs">
 				<div
-					class="cursor-pointer q-mr-sm"
 					v-for="(_flag, id) in validColumns"
 					:key="id"
-					:class="{ 'text-grey-5': !columenSelected[id] }"
-					@click="columenSelected[id] = !columenSelected[id]"
 				>
-					{{ propertyRecord[id]!.name }}
+					<q-badge
+						class="cursor-pointer"
+						@click="columenSelected[id] = !columenSelected[id]"
+						:color="columenSelected[id] ? 'primary' : 'indigo-10'"
+						>{{ propertyRecord[id]!.name }}</q-badge
+					>
 				</div>
 			</div>
 		</template>
@@ -126,36 +125,40 @@ const radarOptions = computed<RadarProps>(() => {
 	return { columns: record };
 });
 
-watch(columenSelected, async (selected) => {
-	const configuration = await Backend.API.Capability.Configuration.get();
-	const _groupList: GroupOptions[] = [];
+watch(
+	columenSelected,
+	async (selected) => {
+		const configuration = await Backend.API.Capability.Configuration.get();
+		const _groupList: GroupOptions[] = [];
 
-	for (const capabilityId of configuration.order) {
-		const CapabilityAPI = Backend.API.Capability(capabilityId);
-		const configuration = await CapabilityAPI.Configuration.get();
+		for (const capabilityId of configuration.order) {
+			const CapabilityAPI = Backend.API.Capability(capabilityId);
+			const configuration = await CapabilityAPI.Configuration.get();
 
-		if (configuration === null) {
-			continue;
-		}
+			if (configuration === null) {
+				continue;
+			}
 
-		const childItemList = await CapabilityAPI.query();
+			const childItemList = await CapabilityAPI.query();
 
-		const { name } = await CapabilityAPI.get();
-		const groupItem = { label: name, colspan: 0 };
+			const { name } = await CapabilityAPI.get();
+			const groupItem = { label: name, colspan: 0 };
 
-		for (const { id } of childItemList) {
-			if (selected[id]) {
-				groupItem.colspan++;
+			for (const { id } of childItemList) {
+				if (selected[id]) {
+					groupItem.colspan++;
+				}
+			}
+
+			if (groupItem.colspan > 0) {
+				_groupList.push(groupItem);
 			}
 		}
 
-		if (groupItem.colspan > 0) {
-			_groupList.push(groupItem);
-		}
-	}
-
-	groupList.value = _groupList;
-}, { deep: true });
+		groupList.value = _groupList;
+	},
+	{ deep: true },
+);
 
 onBeforeMount(async () => {
 	await Source.fetchAbstract();

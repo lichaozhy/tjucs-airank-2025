@@ -11,18 +11,17 @@
 		</template>
 
 		<template #append>
-			<div
-				class="row text-white text-weight-light"
-				style="font-size: 10px"
-			>
+			<div class="row text-white text-weight-light q-gutter-xs">
 				<div
-					class="cursor-pointer q-mr-sm"
 					v-for="(_flag, id) in validColumns"
 					:key="id"
-					:class="{ 'text-grey-5': !columenSelected[id] }"
-					@click="columenSelected[id] = !columenSelected[id]"
 				>
-					{{ propertyRecord[id]!.name }}
+					<q-badge
+						class="cursor-pointer"
+						@click="columenSelected[id] = !columenSelected[id]"
+						:color="columenSelected[id] ? 'primary' : 'indigo-10'"
+						>{{ propertyRecord[id]!.name }}</q-badge
+					>
 				</div>
 			</div>
 		</template>
