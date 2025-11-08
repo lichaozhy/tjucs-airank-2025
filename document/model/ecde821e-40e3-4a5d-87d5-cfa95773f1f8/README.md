@@ -872,8 +872,8 @@ score:
         - null
         - null
         - null
-        - 6.25
-        - 0
+        - 2.61
+        - 4.3
         - null
         - null
         - null
@@ -939,7 +939,7 @@ score:
       0:
         - null
         - null
-        - 3.125
+        - 3.455
         - 31.3742372881356
         - 14.74
         - null
@@ -954,8 +954,8 @@ score:
         - null
         - null
         - null
-        - 6.25
-        - 0.0
+        - 2.61
+        - 4.3
         - null
         - 31.3742372881356
         - null
