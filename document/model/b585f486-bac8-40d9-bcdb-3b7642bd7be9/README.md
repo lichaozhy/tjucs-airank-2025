@@ -1,5 +1,6 @@
 ---
 name: Gemini-2.5-Pro
+code: gemini-2-5-pro
 author:
   - Google DeepMind
 # _author:

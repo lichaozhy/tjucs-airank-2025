@@ -93,7 +93,7 @@ const routes: RouteRecordRaw[] = [
 			},
 			{
 				name: 'app.model.detail',
-				path: 'model/:id',
+				path: 'model/:modelKey',
 				component: () => import('pages/ModelDetail/Page.vue'),
 			},
 			{

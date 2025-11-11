@@ -74,6 +74,7 @@ const rowList = computed<ModelData[]>(() => {
 	for (const {
 		id,
 		name,
+		code,
 		category,
 		release,
 		author,
@@ -82,6 +83,7 @@ const rowList = computed<ModelData[]>(() => {
 		const data: ModelData = {
 			id,
 			name,
+			code,
 			category,
 			caption: `${release?.year} | ${(_author ?? author ?? []).join(', ')}`,
 			scores: [],
