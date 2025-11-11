@@ -1,5 +1,6 @@
 ---
 name: Llama-vid-7b-full-224
+code: llama-vid-7b-full-224
 size:
   - 7
 author:

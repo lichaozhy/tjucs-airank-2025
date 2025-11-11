@@ -1,5 +1,6 @@
 ---
 name: Gemini-1.5-flash
+code: gemini-1-5-flash
 author:
   - Google DeepMind
 qa:

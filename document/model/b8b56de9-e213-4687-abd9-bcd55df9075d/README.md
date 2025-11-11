@@ -1,5 +1,6 @@
 ---
 name: UniGoal
+code: unigoal
 author:
   - Tsinghua University
 qa:

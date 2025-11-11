@@ -1,5 +1,6 @@
 ---
 name: Seed1.5-VL
+code: seed1-5-vl
 component:
   language:
     - Seed1.5-VL

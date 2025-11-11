@@ -1,5 +1,6 @@
 ---
 name: Video-LLaVA-7B
+code: video-llava-7b
 component:
   language:
     - Vicuna-7B-v1.5

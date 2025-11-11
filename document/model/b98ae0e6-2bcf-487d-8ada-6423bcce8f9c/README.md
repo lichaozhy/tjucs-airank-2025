@@ -1,5 +1,6 @@
 ---
 name: GPT-4o w CoT
+code: gpt-4o-w-cot
 author:
   - OpenAI
 qa:

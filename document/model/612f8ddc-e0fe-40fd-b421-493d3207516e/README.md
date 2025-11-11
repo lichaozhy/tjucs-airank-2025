@@ -1,5 +1,6 @@
 ---
 name: wall-oss-fast
+code: wall-oss-fast
 component:
   vision:
     - ViT

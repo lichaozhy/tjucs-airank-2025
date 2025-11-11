@@ -1,5 +1,6 @@
 ---
 name: Llama3-70B
+code: llama3-70b
 component:
   language:
     - Llama3.0-70B

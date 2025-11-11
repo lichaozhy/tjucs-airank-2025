@@ -1,5 +1,6 @@
 ---
 name: SG-Nav
+code: sg-nav
 author:
   - Tsinghua University
 qa:

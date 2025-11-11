@@ -1,5 +1,6 @@
 ---
 name: RoboPoint
+code: robopoint
 component:
   vision:
     - ViT-L-14-336px

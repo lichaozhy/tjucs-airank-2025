@@ -1,5 +1,6 @@
 ---
 name: Noah(UniE-VLM) (16 frames)
+code: noah-unie-vlm-16frames
 author:
   - Noah's Ark Lab
 navigation: false

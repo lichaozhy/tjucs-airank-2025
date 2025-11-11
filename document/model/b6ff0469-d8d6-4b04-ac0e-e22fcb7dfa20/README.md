@@ -1,5 +1,6 @@
 ---
 name: InstructNav
+code: instructnav
 author:
   - Peking University
 qa:

@@ -1,5 +1,6 @@
 ---
 name: Gemini-2.0-Pro w CoT
+code: gemini-2-0-pro-w-cot
 author:
   - Google DeepMind
 qa:

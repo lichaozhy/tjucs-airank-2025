@@ -1,5 +1,6 @@
 ---
 name: GPT-4o
+code: gpt-4o
 component:
   language:
     - GPT-4o

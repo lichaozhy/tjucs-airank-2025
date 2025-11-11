@@ -1,5 +1,6 @@
 ---
 name: RoboBrain2.0-32B
+code: robobrain2-0-32b
 size:
   - 32
 author:

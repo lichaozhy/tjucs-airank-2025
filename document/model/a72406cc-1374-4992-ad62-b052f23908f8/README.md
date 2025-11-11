@@ -1,5 +1,6 @@
 ---
 name: RoboBrain1.0-7B
+code: robobrain1-0-7b
 component:
   vision:
     - SigLIP

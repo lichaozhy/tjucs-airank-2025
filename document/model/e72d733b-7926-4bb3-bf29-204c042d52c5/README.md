@@ -1,5 +1,6 @@
 ---
 name: Mem2Ego
+code: mem2ego
 component:
   language:
     - Llama3.2-11B

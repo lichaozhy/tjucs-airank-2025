@@ -1,5 +1,6 @@
 ---
 name: MiniCPM-V
+code: minicpm-v
 component:
   language:
     - MiniCPM-2.4B

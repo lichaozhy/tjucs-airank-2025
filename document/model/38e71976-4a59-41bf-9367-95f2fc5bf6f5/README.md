@@ -1,5 +1,6 @@
 ---
 name: LLaVA-OneVision-72B
+code: llava-onevision-72b
 size:
   - 73
 author:

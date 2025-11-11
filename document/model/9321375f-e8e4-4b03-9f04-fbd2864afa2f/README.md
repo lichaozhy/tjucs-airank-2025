@@ -1,5 +1,6 @@
 ---
 name: Noah(UniE-VLM)
+code: noah-unie-vlm
 author:
   - Noah's Ark Lab
 navigation: false

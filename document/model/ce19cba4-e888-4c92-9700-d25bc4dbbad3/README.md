@@ -1,5 +1,6 @@
 ---
 name: Gemini-1.5-Pro
+code: gemini-1-5-pro
 author:
   - Google DeepMind
 qa:

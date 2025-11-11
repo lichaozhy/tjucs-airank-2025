@@ -1,5 +1,6 @@
 ---
 name: PhysVLM
+code: physvlm
 component:
   vision:
     - SigLIP-400M

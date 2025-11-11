@@ -130,6 +130,7 @@ interface Leaderboard {
 }
 
 export interface Model {
+	code?: string;
 	category: string;
 	name: string;
 	component?: {

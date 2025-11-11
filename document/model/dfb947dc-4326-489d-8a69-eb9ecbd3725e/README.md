@@ -1,5 +1,6 @@
 ---
 name: Qwen2.5-VL-7B
+code: qwen2-5-vl-7b
 author:
   - Alibaba
 website: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct

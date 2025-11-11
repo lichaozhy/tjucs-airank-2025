@@ -1,5 +1,6 @@
 ---
 name: LLaVA-3D
+code: llava-3d
 component:
   language:
     - LLaVA-Video-7B

@@ -1,5 +1,6 @@
 ---
 name: MiniGPT4-Vicuna7B
+code: minigpt4-vicuna7b
 component:
   vision:
     - BLIP-2

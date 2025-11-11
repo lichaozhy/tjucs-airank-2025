@@ -1,5 +1,6 @@
 ---
 name: o3
+code: o3
 author:
   - OpenAI
 qa:

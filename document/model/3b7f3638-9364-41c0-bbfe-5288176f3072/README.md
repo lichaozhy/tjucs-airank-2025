@@ -1,5 +1,6 @@
 ---
 name: LLaVA-NeXT-Video-7B
+code: llava-next-video-7b
 component:
   language:
     - Vicuna-7B-v1.5

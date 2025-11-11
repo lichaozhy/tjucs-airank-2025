@@ -1,5 +1,6 @@
 ---
 name: UniNavid
+code: uninavid
 component:
   vision:
     - EVA-CLIP

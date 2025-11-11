@@ -1,5 +1,6 @@
 ---
 name: Embodied-R1-3B
+code: embodied-r1-3b
 component:
   vision:
     - ViT

@@ -1,5 +1,6 @@
 ---
 name: pllava-7b
+code: pllava-7b
 component:
   vision:
     - CLIP ViT-L-14

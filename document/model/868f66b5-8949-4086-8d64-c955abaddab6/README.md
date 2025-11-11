@@ -1,5 +1,6 @@
 ---
 name: RoboAnnotatorX
+code: roboannotatorx
 component:
   vision:
     - ViT

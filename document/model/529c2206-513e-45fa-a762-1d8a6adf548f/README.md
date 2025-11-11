@@ -1,5 +1,6 @@
 ---
 name: Qwen2-VL-7B
+code: qwen2-vl-7b
 component:
   vision:
     - ViT

@@ -1,5 +1,6 @@
 ---
 name: Embodied-FSD
+code: embodied-fsd
 component:
   vision:
     - CLIP-ViT-L-336px

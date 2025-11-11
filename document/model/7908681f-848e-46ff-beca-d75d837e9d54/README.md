@@ -1,5 +1,6 @@
 ---
 name: Magma
+code: magma
 component:
   vision:
     - CLIP

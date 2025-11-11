@@ -1,5 +1,6 @@
 ---
 name: Claude-3.7-Sonnet
+code: claude-3-7-sonnet
 component:
   language:
     - Claude-3.7-Sonnet

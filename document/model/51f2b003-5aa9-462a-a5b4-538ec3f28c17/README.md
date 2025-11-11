@@ -1,5 +1,6 @@
 ---
 name: LongVA-7B
+code: longva-7b
 component:
   language:
     - Qwen2-7B-Instruct

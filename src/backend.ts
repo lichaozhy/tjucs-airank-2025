@@ -1,4 +1,4 @@
-import type { BenchmarkItem, DataType, LeaderboardItem, SummaryItem } from './data';
+import type { BenchmarkItem, DataType, LeaderboardItem, Model, SummaryItem } from './data';
 
 let root: DataType;
 
@@ -16,6 +16,10 @@ interface BenchmarkFilter {
 }
 
 interface LeaderboardFilter {
+	code?: string;
+}
+
+interface ModelFilter {
 	code?: string;
 }
 
@@ -215,8 +219,22 @@ export const API = {
 			};
 		},
 		{
-			async query() {
-				return Object.entries(root.model).map(([id, { $data }]) => ({
+			async query(filter: ModelFilter) {
+				const filtered: [string, { $data: Model }][] = [];
+
+				for (const entry of Object.entries(root.model)) {
+					const [, model] = entry;
+
+					if ('code' in filter) {
+						if (model.$data.code !== filter.code) {
+							continue;
+						}
+					}
+
+					filtered.push(entry);
+				}
+
+				return filtered.map(([id, { $data }]) => ({
 					id,
 					...$data,
 				}));

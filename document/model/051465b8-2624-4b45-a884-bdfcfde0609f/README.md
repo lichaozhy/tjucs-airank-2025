@@ -1,5 +1,6 @@
 ---
 name: LLaVA-OneVision-0.5B
+code: llava-onevision-0-5b
 author:
   - ByteDance
 qa:

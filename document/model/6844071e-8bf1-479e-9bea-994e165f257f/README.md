@@ -1,5 +1,6 @@
 ---
 name: VeBrain
+code: vebrain
 component:
   language:
     - Qwen2.5-VL

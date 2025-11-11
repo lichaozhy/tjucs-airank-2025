@@ -1,5 +1,6 @@
 ---
 name: 3D-LLaVA
+code: 3d-llava
 component:
   language:
     - LLaVA-7B

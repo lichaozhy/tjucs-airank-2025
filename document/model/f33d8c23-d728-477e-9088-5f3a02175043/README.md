@@ -1,5 +1,6 @@
 ---
 name: 3DMIT
+code: 3dmit
 size:
   - 7
 author:

@@ -1,5 +1,6 @@
 ---
 name: Llama-3.2-11B-Vision-Instruct
+code: llama-3-2-11b-vision-instruct
 component:
   language:
     - Llama 3.1

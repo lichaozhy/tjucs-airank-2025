@@ -1,5 +1,6 @@
 ---
 name: InternVL3-14B
+code: internvl3-14b
 component:
   vision:
     - InternViT-300M-448px-V2_5

@@ -157,10 +157,25 @@ const propertyEntityList = computed<PropertyEntity[]>(() => {
 	return list;
 });
 
-onBeforeMount(async () => {
-	const modelData = await API.Model(route.params.id as string).get();
+async function fetchModel(key: string) {
+	try {
+		const id = key;
 
-	model.value = modelData;
+		return await API.Model(id).get();
+	} catch {
+		const code = key;
+		const [model] = await API.Model.query({ code });
+
+		if (model === undefined) {
+			throw new Error(`Model with code ${code} not found.`);
+		}
+
+		return model;
+	}
+}
+
+onBeforeMount(async () => {
+	model.value = await fetchModel(route.params.modelKey as string);
 });
 
 defineOptions({ name: 'ModelDetailPage' });

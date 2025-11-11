@@ -1,5 +1,6 @@
 ---
 name: NaVILA
+code: navila
 author:
   - NVIDIA
 qa:

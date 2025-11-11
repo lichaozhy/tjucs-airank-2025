@@ -1,5 +1,6 @@
 ---
 name: InternVL2_5-38B-MPO
+code: internvl2-5-38b-mpo
 component:
   vision:
     - InternViT-6B-448px-V2_5

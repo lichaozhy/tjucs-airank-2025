@@ -1,5 +1,6 @@
 ---
 name: Space-R
+code: space-r
 component:
   language:
     - Qwen2.5-VL-7B-Instruct

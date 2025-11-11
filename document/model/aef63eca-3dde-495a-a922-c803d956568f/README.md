@@ -1,5 +1,6 @@
 ---
 name: Qwen2.5-VL-3B-Instruct
+code: qwen2-5-vl-3b-instruct
 component:
   vision:
     - Redesigned ViT

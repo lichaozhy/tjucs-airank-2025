@@ -1,5 +1,6 @@
 ---
 name: MapNav
+code: mapnav
 component:
   vision:
     - SigLIP-So400M

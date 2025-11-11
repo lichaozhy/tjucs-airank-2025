@@ -69,10 +69,12 @@ const rowList = computed<ModelData[]>(() => {
 		author,
 		_author,
 		score,
+		code,
 	} of modelList.value) {
 		const data: ModelData = {
 			id,
 			name,
+			code,
 			category,
 			caption: `${release?.year} | ${(_author ?? author ?? []).join(', ')}`,
 			scores: [...score.summary[props.summaryId]!.legacy!],

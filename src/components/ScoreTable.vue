@@ -92,7 +92,7 @@
 					target="_blank"
 					:to="{
 						name: 'app.model.detail',
-						params: { id: sProps.row.id },
+						params: { modelKey: sProps.row.code ?? sProps.row.id },
 					}"
 					class="col-shrink text-black"
 				>
@@ -156,6 +156,7 @@ const Category = {
 export interface ModelData {
 	id: string;
 	name: string;
+	code?: string | undefined;
 	category?: string;
 	caption?: string;
 	scores: Score[];

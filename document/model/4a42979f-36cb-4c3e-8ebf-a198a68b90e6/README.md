@@ -1,5 +1,6 @@
 ---
 name: Gemini-2.0-Pro
+code: gemini-2-0-pro
 component:
   language:
     - Gemini-2.0-Pro

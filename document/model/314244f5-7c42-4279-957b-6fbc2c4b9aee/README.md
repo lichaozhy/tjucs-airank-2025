@@ -1,5 +1,6 @@
 ---
 name: GPT-4
+code: gpt-4
 component:
   language:
     - GPT-4

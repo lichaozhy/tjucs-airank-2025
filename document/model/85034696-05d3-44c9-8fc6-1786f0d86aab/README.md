@@ -1,5 +1,6 @@
 ---
 name: Claude-3.5-Sonnet
+code: claude-3-5-sonnet
 author:
   - Anthropic
 qa:

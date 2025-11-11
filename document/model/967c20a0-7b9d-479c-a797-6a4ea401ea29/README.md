@@ -1,5 +1,6 @@
 ---
 name: Inst3D-LLM
+code: inst3d-llm
 component:
   vision:
     - CLIP-ViT-L-14-336px

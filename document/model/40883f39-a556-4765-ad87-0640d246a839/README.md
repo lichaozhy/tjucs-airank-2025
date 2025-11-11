@@ -1,5 +1,6 @@
 ---
 name: OmniEVA
+code: omnieva
 author:
   - Noah's Ark Lab
 qa:

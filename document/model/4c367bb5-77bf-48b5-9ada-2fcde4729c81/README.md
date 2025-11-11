@@ -1,5 +1,6 @@
 ---
 name: GPT4Scene
+code: gpt4scene
 component:
   language:
     - Qwen2-VL-7B

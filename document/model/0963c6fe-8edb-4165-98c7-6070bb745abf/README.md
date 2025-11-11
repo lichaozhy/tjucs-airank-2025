@@ -1,5 +1,6 @@
 ---
 name: LLava-v1.5-7B
+code: llava-v1-5-7b
 component:
   vision:
     - CLIP ViT-L-14

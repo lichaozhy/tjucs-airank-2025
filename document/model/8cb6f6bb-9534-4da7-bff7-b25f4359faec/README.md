@@ -1,5 +1,6 @@
 ---
 name: SpatialVLM
+code: spatialvlm
 component:
   vision:
     - ViT

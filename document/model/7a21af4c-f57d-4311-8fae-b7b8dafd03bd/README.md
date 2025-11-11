@@ -1,5 +1,6 @@
 ---
 name: VILA-1.5-40B
+code: vila-1-5-40b
 size:
   - 40
 author:

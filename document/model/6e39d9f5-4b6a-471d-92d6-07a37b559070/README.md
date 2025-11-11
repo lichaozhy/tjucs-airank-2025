@@ -1,5 +1,6 @@
 ---
 name: InternVL2-40B
+code: internvl2-40b
 component:
   vision:
     - InternViT-6B-448px-V1_5

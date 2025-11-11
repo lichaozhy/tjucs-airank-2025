@@ -1,5 +1,6 @@
 ---
 name: 3DRS
+code: 3drs
 author:
   - The University of Hong Kong
 qa:

@@ -1,5 +1,6 @@
 ---
 name: 3D-LLM
+code: 3d-llm
 author:
   - UMass Amherst
 qa:
