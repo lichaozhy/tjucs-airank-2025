@@ -229,7 +229,8 @@ onBeforeMount(async () => {
 	summaryList.value = summaryDataList.map(({ id, name }) => ({ id, name }));
 
 	for (const { id } of leaderboardListData) {
-		sourceMenuShowingRecord.value[id] = id === leaderboardData.id && !fromURL.value;
+		sourceMenuShowingRecord.value[id] =
+			id === leaderboardData.id && !fromURL.value;
 	}
 
 	for (const benchmark of benchmarkDataList) {

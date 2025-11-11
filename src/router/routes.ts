@@ -30,9 +30,9 @@ const routes: RouteRecordRaw[] = [
 					if (!Object.hasOwn(to.params, 'leaderboardOperand')) {
 						const configuration = await Backend.API.Configuration.get();
 
-						const leaderboard = await Backend.API
-							.Leaderboard(configuration.DEFAULT_LEADERBOARD)
-							.get();
+						const leaderboard = await Backend.API.Leaderboard(
+							configuration.DEFAULT_LEADERBOARD,
+						).get();
 
 						return next({
 							name: to.name,

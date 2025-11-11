@@ -74,10 +74,17 @@ interface LeaderboardAbstract {
 	name: string;
 }
 
+interface BenchmarkArticle {
+	name?: string;
+	benchmarkId: string;
+	primary: boolean;
+}
+
 const benchmarkList = ref<Array<DataType.BenchmarkData & { id: string }>>([]);
 const leaderboardList = ref<LeaderboardAbstract[]>([]);
 const leaderboardId = ref<string | null>(null);
 const keyword = ref<string | null>(null);
+const articleRecord = ref<Record<string, BenchmarkArticle>>({});
 
 const filterItemList = computed(() => {
 	return [
@@ -87,7 +94,7 @@ const filterItemList = computed(() => {
 		},
 		...leaderboardList.value.map(({ id, name }) => ({
 			value: id,
-			label: name.replace('Leaderboard', 'Benchmarks'),
+			label: name,
 		})),
 	];
 });
@@ -96,6 +103,22 @@ const filteredBenchmarkList = computed(() => {
 	let list = [...benchmarkList.value].sort(
 		(a, b) => b.released.at.year - a.released.at.year,
 	);
+
+	const articles = articleRecord.value;
+
+	list = list.filter((benchmark) => {
+		if (benchmark.id in articles) {
+			const article = articles[benchmark.id]!;
+
+			if ('name' in article) {
+				benchmark.name = article.name;
+			}
+
+			return article.primary;
+		}
+
+		return true;
+	});
 
 	if (leaderboardId.value !== null) {
 		list = list.filter(
@@ -117,9 +140,16 @@ const filteredBenchmarkList = computed(() => {
 onBeforeMount(async () => {
 	const _leaderboardList = await Backend.API.Leaderboard.query();
 	const _benchmarkList = await Backend.API.Benchmark.query();
+	const _articleList = await Backend.API.Benchmark.Article.query();
+	const _articleRecord: Record<string, BenchmarkArticle> = {};
+
+	for (const article of _articleList) {
+		_articleRecord[article.benchmarkId] = article;
+	}
 
 	leaderboardList.value = _leaderboardList;
 	benchmarkList.value = _benchmarkList;
+	articleRecord.value = _articleRecord;
 });
 
 defineOptions({ name: 'BenchmarkIndexPage' });

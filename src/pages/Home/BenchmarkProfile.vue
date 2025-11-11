@@ -58,9 +58,10 @@
 					v-model="benchmark"
 					class="q-mt-md"
 					v-if="leaderboard !== null"
+					dense
 				>
 					<q-tab
-						v-for="benchmark in leaderboardRecord[leaderboard]!.benchmarkList"
+						v-for="benchmark in benchmarkList"
 						:key="benchmark.id"
 						:label="benchmark.name"
 						:name="benchmark.id"
@@ -79,12 +80,12 @@
 				>
 					<q-tab-panel
 						class="q-px-none text-body1"
-						v-for="benchmark in leaderboardRecord[leaderboard]!.benchmarkList"
+						v-for="benchmark in benchmarkList"
 						:key="benchmark.id"
 						:name="benchmark.id"
 					>
 						<app-markdown-html
-							style="min-height: 12.5em"
+							style="min-height: 13em"
 							:src="`benchmark/${benchmark.id}/profile`"
 						></app-markdown-html>
 					</q-tab-panel>
@@ -122,7 +123,7 @@
 </template>
 
 <script setup lang="ts">
-import { onBeforeMount, ref, watch } from 'vue';
+import { onBeforeMount, ref, watch, computed } from 'vue';
 
 import * as Backend from 'src/backend';
 import AppMarkdownHtml from 'components/MarkdownHTML.vue';
@@ -134,6 +135,12 @@ interface LeaderboardAbstract {
 		id: string;
 		name: string;
 	}[];
+}
+
+interface BenchmarkArticle {
+	name?: string;
+	benchmarkId: string;
+	primary: boolean;
 }
 
 const data = ref<{ title: string }>({ title: '' });
@@ -149,6 +156,27 @@ const detail = ref<{
 const leaderboardRecord = ref<Record<string, LeaderboardAbstract>>({});
 const leaderboard = ref<string | null>(null);
 const benchmark = ref<string | null>(null);
+const articleRecord = ref<Record<string, BenchmarkArticle>>({});
+
+const benchmarkList = computed(() => {
+	const leaderboards = leaderboardRecord.value;
+	const current = leaderboard.value!;
+	const articles = articleRecord.value;
+
+	return leaderboards[current]!.benchmarkList.filter((benchmark) => {
+		if (benchmark.id in articles) {
+			const article = articles[benchmark.id]!;
+
+			if ('name' in article) {
+				benchmark.name = article.name;
+			}
+
+			return article.primary;
+		}
+
+		return true;
+	});
+});
 
 watch(leaderboard, () => {
 	const leaderboardId = leaderboard.value!;
@@ -157,21 +185,18 @@ watch(leaderboard, () => {
 	benchmark.value = selectedLeaderboard.benchmarkList[0]!.id;
 });
 
-interface LeaderboardAbstract {
-	id: string;
-	name: string;
-	benchmarkList: {
-		id: string;
-		name: string;
-	}[];
-}
-
 onBeforeMount(async () => {
 	const PageAPI = Backend.API.Page;
 	const configuration = await Backend.API.Configuration.get();
 	const _detail = await PageAPI.Home.Profile.Benchmark.Leaderboard.get();
 	const _data = await PageAPI.Home.Profile.Benchmark.get();
 	const idNameRecord: Record<string, LeaderboardAbstract> = {};
+	const _articleList = await Backend.API.Benchmark.Article.query();
+	const _articleRecord: Record<string, BenchmarkArticle> = {};
+
+	for (const article of _articleList) {
+		_articleRecord[article.benchmarkId] = article;
+	}
 
 	for (const { id, name } of await Backend.API.Leaderboard.query()) {
 		const LeaderboardAPI = Backend.API.Leaderboard(id);
@@ -188,6 +213,7 @@ onBeforeMount(async () => {
 	leaderboardRecord.value = idNameRecord;
 	data.value = _data;
 	detail.value = _detail;
+	articleRecord.value = _articleRecord;
 });
 
 defineOptions({ name: 'AppPageHomeBenchmarkProfile' });
