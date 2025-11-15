@@ -1,5 +1,6 @@
 ---
 name: L3MVN
+code: l3mvn
 author:
   - University of Groningen
 qa:

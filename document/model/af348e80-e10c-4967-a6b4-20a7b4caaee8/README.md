@@ -1,5 +1,6 @@
 ---
 name: StreamVLN
+code: streamvln
 component:
   vision:
     - SigLIP

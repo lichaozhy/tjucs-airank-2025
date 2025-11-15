@@ -1,5 +1,6 @@
 ---
 name: mPLUG-Owl3
+code: mplug-owl3
 component:
   vision:
     - SigLIP-So400M

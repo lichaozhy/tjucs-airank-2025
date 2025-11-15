@@ -1,5 +1,6 @@
 ---
 name: 3D-LLM(Flamingo)
+code: 3d-llm-flamingo
 component:
   vision:
     - NFNet-F6

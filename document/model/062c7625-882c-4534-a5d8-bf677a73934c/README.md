@@ -1,5 +1,6 @@
 ---
 name: GPT4Scene-HDM
+code: gpt4scene-hdm
 author:
   - The University of Hong Kong
 # _author:

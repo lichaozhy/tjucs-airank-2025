@@ -1,5 +1,6 @@
 ---
 name: VLFM
+code: vlfm
 author:
   - Georgia Institute of Technology
 qa:

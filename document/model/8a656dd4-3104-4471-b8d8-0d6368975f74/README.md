@@ -1,5 +1,6 @@
 ---
 name: Phi-3-vision-128k-instruct
+code: phi-3-vision-128k-instruct
 component:
   language:
     - Phi-3 Mini

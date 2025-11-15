@@ -1,5 +1,6 @@
 ---
 name: GPT-4o mini
+code: gpt-4o-mini
 component:
   language:
     - GPT-4o mini

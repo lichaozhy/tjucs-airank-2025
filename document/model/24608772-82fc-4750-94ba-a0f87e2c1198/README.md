@@ -1,5 +1,6 @@
 ---
 name: o4-mini
+code: o4-mini
 author:
   - OpenAI
 qa:

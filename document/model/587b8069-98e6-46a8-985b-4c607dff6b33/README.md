@@ -1,5 +1,6 @@
 ---
 name: navillm
+code: navillm
 component:
   vision:
     - SceneEncoder

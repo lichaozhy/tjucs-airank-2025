@@ -1,5 +1,6 @@
 ---
 name: Navid
+code: navid
 component:
   vision:
     - EVA-CLIP

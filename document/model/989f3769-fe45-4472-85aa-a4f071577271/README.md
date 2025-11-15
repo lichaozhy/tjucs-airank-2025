@@ -1,5 +1,6 @@
 ---
 name: LLaVA-NeXT-Video-72B
+code: llava-next-video-72b
 component:
   vision:
     - SigLIP-So400M

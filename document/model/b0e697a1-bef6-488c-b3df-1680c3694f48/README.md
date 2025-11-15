@@ -1,5 +1,6 @@
 ---
 name: ChatScene
+code: chatscene
 component:
   vision:
     - Mask3D

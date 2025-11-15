@@ -1,5 +1,6 @@
 ---
 name: VLN-R1
+code: vln-r1
 component:
   language:
     - Qwen2-VL-7B-Instruct

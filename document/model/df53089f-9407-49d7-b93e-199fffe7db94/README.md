@@ -1,5 +1,6 @@
 ---
 name: Llama3-8B
+code: llama3-8b
 component:
   language:
     - Llama3.0-8B

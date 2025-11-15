@@ -1,5 +1,6 @@
 ---
 name: InternVLA-N1
+code: internvla-n1
 author:
   - Shanghai AI Lab
 qa:

@@ -1,5 +1,6 @@
 ---
 name: GAMap
+code: gamap
 author:
   - NYUAD Center for Artificial Intelligence and Robotics
 qa:

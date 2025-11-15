@@ -1,5 +1,6 @@
 ---
 name: LFG
+code: lfg
 author:
   - Google DeepMind
 qa:

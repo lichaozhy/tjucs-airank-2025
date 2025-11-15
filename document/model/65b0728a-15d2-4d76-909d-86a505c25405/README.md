@@ -1,5 +1,6 @@
 ---
 name: Instructblip-flant5xl
+code: instructblip-flant5xl
 component:
   vision:
     - BLIP-2

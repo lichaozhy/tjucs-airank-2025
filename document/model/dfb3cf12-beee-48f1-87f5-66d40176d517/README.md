@@ -1,5 +1,6 @@
 ---
 name: SceneLLM
+code: scenellm
 component:
   language:
     - Llama-2-7B

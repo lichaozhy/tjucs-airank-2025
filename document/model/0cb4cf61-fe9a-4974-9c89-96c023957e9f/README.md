@@ -1,5 +1,6 @@
 ---
 name: 3D-LLM(BLIP2-flant5)
+code: 3d-llm-blip2-flant5
 component:
   vision:
     - BLIP-2

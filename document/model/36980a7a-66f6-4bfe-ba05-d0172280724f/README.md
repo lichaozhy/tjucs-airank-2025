@@ -1,5 +1,6 @@
 ---
 name: Chat-3D
+code: chat-3d
 author:
   - Zhejiang University
 qa:

@@ -1,5 +1,6 @@
 ---
 name: InternVL2_5-8B
+code: internvl2-5-8b
 component:
   vision:
     - InternViT-300M-448px-V2_5

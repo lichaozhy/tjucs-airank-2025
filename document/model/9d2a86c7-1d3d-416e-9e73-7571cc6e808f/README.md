@@ -1,5 +1,6 @@
 ---
 name: PIRLNav-IL-RL
+code: pirlnav-il-rl
 author:
   - Georgia Institute of Technology
 qa:

@@ -1,5 +1,6 @@
 ---
 name: Gemini-2.0-flash
+code: gemini-2-0-flash
 component:
   language:
     - Gemini-2.0-flash

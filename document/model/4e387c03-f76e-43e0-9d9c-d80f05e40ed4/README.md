@@ -1,5 +1,6 @@
 ---
 name: LLaVA-OneVision-7B
+code: llava-onevision-7b
 component:
   vision:
     - SigLIP

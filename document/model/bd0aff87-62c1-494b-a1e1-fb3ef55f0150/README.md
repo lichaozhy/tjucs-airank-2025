@@ -1,5 +1,6 @@
 ---
 name: SpatialBot
+code: spatialbot
 component:
   vision:
     - SigLIP

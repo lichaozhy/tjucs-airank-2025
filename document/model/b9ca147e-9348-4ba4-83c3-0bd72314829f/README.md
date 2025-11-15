@@ -1,5 +1,6 @@
 ---
 name: RoboBrain2.0-7B
+code: robobrain2-0-7b
 size:
   - 7
 author:

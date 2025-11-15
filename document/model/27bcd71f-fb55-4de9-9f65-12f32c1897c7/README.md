@@ -1,5 +1,6 @@
 ---
 name: EgoThinker
+code: egothinker
 author:
   - Zhejiang University
 navigation: false

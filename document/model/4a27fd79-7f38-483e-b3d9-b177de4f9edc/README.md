@@ -1,5 +1,6 @@
 ---
 name: VLMNav
+code: vlmnav
 author:
   - University of California Berkeley
 dimension:

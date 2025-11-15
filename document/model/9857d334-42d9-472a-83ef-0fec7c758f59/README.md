@@ -1,5 +1,6 @@
 ---
 name: HuLE-Nav
+code: hule-nav
 author:
   - Tianjin University
 qa:

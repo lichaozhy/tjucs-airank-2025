@@ -1,5 +1,6 @@
 ---
 name: SpatialCoT
+code: spatialcot
 size:
   - 13
 author:

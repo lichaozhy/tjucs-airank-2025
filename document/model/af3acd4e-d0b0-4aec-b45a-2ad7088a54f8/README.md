@@ -1,5 +1,6 @@
 ---
 name: Grounded 3D-LLM
+code: grounded-3d-llm
 size:
   - 1
 author:

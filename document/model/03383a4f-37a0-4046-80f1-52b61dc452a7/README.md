@@ -1,5 +1,6 @@
 ---
 name: EmbodiedGPT
+code: embodiedgpt
 component:
   vision:
     - ViT-G-14

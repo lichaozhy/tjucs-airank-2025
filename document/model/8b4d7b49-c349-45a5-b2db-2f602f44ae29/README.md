@@ -1,5 +1,6 @@
 ---
 name: 3D-Mem
+code: 3d-mem
 component:
   vision:
     - CLIP

@@ -1,5 +1,6 @@
 ---
 name: Habitat-Web
+code: habitat-web
 author:
   - Georgia Institute of Technology
 qa:

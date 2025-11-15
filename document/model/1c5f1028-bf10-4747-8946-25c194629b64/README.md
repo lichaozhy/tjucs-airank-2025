@@ -1,5 +1,6 @@
 ---
 name: VoroNav
+code: voronav
 author:
   - Peking University
 qa:

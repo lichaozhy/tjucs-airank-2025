@@ -1,5 +1,6 @@
 ---
 name: Video-3D LLM
+code: video-3d-llm
 component:
   vision:
     - 3D Visual Geometry Encoder combined with 2D Visual Encoder

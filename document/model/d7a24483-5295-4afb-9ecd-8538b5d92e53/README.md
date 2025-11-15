@@ -1,5 +1,6 @@
 ---
 name: LEO
+code: leo
 component:
   language:
     - Vicuna-7B-v1.1

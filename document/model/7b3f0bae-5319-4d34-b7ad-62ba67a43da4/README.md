@@ -1,5 +1,6 @@
 ---
 name: PQ3D
+code: pq3d
 author:
   - BIGAI
 qa:

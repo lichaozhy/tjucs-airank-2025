@@ -1,5 +1,6 @@
 ---
 name: Robo-Refer
+code: robo-refer
 component:
   language:
     - RoboRefer-8B

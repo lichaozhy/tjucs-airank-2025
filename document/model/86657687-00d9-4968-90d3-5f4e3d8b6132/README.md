@@ -1,5 +1,6 @@
 ---
 name: MiniCPM-V 2.6
+code: minicpm-v-2-6
 component:
   vision:
     - SigLIP-So400M

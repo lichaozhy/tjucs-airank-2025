@@ -1,5 +1,6 @@
 ---
 name: Chat-3D v2
+code: chat-3d-v2
 component:
   vision:
     - PointGroup

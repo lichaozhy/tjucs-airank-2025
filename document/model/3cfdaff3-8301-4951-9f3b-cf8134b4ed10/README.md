@@ -1,5 +1,6 @@
 ---
 name: Qwen-VL-Max
+code: qwen-vl-max
 component:
   language:
     - Qwen-VL-Max

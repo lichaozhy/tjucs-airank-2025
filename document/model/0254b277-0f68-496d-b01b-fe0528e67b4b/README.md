@@ -1,5 +1,6 @@
 ---
 name: Cosmos-Reason-1-7B
+code: cosmos-reason-1-7b
 component:
   vision:
     - ViT

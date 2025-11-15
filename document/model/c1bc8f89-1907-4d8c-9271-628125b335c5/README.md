@@ -1,5 +1,6 @@
 ---
 name: SAT
+code: sat
 component:
   vision:
     - ViT

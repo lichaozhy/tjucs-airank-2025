@@ -1,5 +1,6 @@
 ---
 name: VILA-1.5-13B
+code: vila-1-5-13b
 component:
   vision:
     - CLIP-L
