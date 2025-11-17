@@ -74,6 +74,12 @@ properties:
     ref:
       benchmark: 6dcb903d-e649-440b-9ca6-449018d4a9c6
       key: Total
+  - type: reference
+    label: OST-Bench
+    sorting: desc
+    ref:
+      benchmark: d696c0e0-3b22-4d18-ba41-54d40f58228e
+      key: Total
 models:
   6d2b9e8a-97ff-400f-8ea1-f403c7452408: true
   f0fc7970-1e20-4ea2-a5fd-65ed7dd6802a: true
