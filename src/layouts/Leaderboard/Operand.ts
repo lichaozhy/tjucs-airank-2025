@@ -5,6 +5,6 @@ export interface LeaderboardOperand {
 	code: string | null;
 }
 
-export const symbol = Symbol(
-	'LeaderboardOperand',
-) as InjectionKey<Ref<LeaderboardOperand>>;
+export const symbol = Symbol('LeaderboardOperand') as InjectionKey<
+	Ref<LeaderboardOperand>
+>;

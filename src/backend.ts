@@ -1,4 +1,10 @@
-import type { BenchmarkItem, DataType, LeaderboardItem, Model, SummaryItem } from './data';
+import type {
+	BenchmarkItem,
+	DataType,
+	LeaderboardItem,
+	Model,
+	SummaryItem,
+} from './data';
 
 let root: DataType;
 
@@ -202,6 +208,16 @@ export const API = {
 				return filtered
 					.sort(([aId], [bId]) => indexRecord[aId]! - indexRecord[bId]!)
 					.map(([id, { $data }]) => ({ id, ...$data }));
+			},
+			Article: {
+				async query() {
+					return Object.entries(root.benchmark)
+						.filter(([, item]) => 'article' in item)
+						.map(([benchmarkId, { article }]) => ({
+							benchmarkId,
+							...article!.$data,
+						}));
+				},
 			},
 		},
 	),

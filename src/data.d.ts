@@ -49,6 +49,12 @@ interface BenchmarkItem {
 	profile: {
 		$data: {};
 	};
+	article?: {
+		$data: {
+			primary: boolean;
+			name?: string;
+		};
+	};
 	$data: BenchmarkData;
 }
 
