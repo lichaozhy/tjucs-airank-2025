@@ -19,6 +19,7 @@ itemList:
       - VLN-R1
       - GPT4Scene
       - StreamVLN
+      - InternVLA-N1
   - organizationList:
       - Georgia Institute of Technology
     modelList:
