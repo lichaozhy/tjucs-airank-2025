@@ -80,6 +80,12 @@ properties:
     ref:
       benchmark: d696c0e0-3b22-4d18-ba41-54d40f58228e
       key: Total
+  - type: reference
+    label: MSQA
+    sorting: desc
+    ref:
+      benchmark: d6684924-f854-4e4b-87c5-0f7c724e4d61
+      key: Total
 models:
   6d2b9e8a-97ff-400f-8ea1-f403c7452408: true
   f0fc7970-1e20-4ea2-a5fd-65ed7dd6802a: true

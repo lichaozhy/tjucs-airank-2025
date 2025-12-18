@@ -938,13 +938,49 @@ score:
         - null
         - null
         - null
+    d6684924-f854-4e4b-87c5-0f7c724e4d61:
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
   summary:
     d6ba913a-6e26-4dcc-b192-04b9bee6fd8e:
       0:
-        - 1.62666666666667
+        - 1.6266666666666667
         - 0.0
-        - 15.35
-        - 9.96432203389831
+        - 15.350000000000001
+        - 9.964322033898306
         - 8.29541686854471
         - null
         - 13.26
@@ -961,11 +997,11 @@ score:
         - 19.14
         - 11.56
         - 0.0
-        - 19.9286440677966
+        - 19.92864406779661
         - null
-        - 15.5945790554415
+        - 15.59457905544148
         - null
-        - 0.99625468164794
+        - 0.9962546816479401
         - null
         - null
         - null

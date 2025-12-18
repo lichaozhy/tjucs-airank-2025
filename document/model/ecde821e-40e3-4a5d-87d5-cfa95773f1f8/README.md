@@ -935,6 +935,42 @@ score:
         - null
         - null
         - null
+    d6684924-f854-4e4b-87c5-0f7c724e4d61:
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      0:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
   summary:
     d6ba913a-6e26-4dcc-b192-04b9bee6fd8e:
       0:
