@@ -68,7 +68,7 @@
 					no-caps
 					flat
 					stretch
-					label="Blog"
+					label="Reports"
 					:class="{ active: routeMatched('app.blog') }"
 					:to="{ name: 'app.blog' }"
 				></q-btn>
