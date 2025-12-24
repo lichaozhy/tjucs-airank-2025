@@ -12,7 +12,8 @@ qa:
   - 2D
 dimension:
   - 2D
-website: https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/
+website: 
+  https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/
 navigation: false
 taskPlanning: false
 reason: false
@@ -534,7 +535,7 @@ score:
         - null
         - null
         - null
-        - 16.7974191354651
+        - 16.797419135465116
         - null
         - 3307.010000000001
       1:
@@ -562,7 +563,7 @@ score:
         - null
         - 32.05995455
         - null
-        - 1.53488372093023
+        - 1.534883720930233
     3a43d3d8-f078-43fd-b45c-ab2af7a0c283:
       0:
         - null
@@ -571,7 +572,7 @@ score:
         - null
         - null
         - null
-        - 30.2938149451684
+        - 30.293814945168407
         - 3308.010000000001
       1:
         - null
@@ -591,11 +592,11 @@ score:
         - null
         - null
         - null
-        - 24.5784037566103
-        - 23.1734772552043
-        - 26.4915824915825
+        - 24.57840375661033
+        - 23.17347725520432
+        - 26.49158249158249
         - 52.42
-        - 24.8056112224449
+        - 24.80561122244489
         - null
         - null
         - null
