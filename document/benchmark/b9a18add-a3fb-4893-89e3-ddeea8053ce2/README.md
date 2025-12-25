@@ -19,12 +19,12 @@ capabilities:
   - Spatial Reasoning
   - Knowledge Reasoning
 properties:
-  Spatial Reasoning:
+  SpatialReasoning:
     order: 1
     index: 0
     label: Spatial Reasoning
     unit: null
-  Spatial Commonsense:
+  SpatialCommonsense:
     order: 2
     index: 1
     label: Spatial Commonsense

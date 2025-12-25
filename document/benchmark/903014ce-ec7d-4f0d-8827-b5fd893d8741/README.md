@@ -18,7 +18,7 @@ default:
 capabilities:
   - Object Navigation
 properties:
-  Object Navigation:
+  ObjectNavigation:
     order: 1
     index: 0
     label: Object Navigation

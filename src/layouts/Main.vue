@@ -67,6 +67,16 @@
 					class="app-navbar-feature-item text-weight-regular"
 					no-caps
 					flat
+					label="Benchmark Statistics"
+					:to="{ name: 'app.statistics' }"
+					stretch
+					:class="{ active: routeMatched('app.statistics') }"
+				></q-btn>
+
+				<q-btn
+					class="app-navbar-feature-item text-weight-regular"
+					no-caps
+					flat
 					stretch
 					label="Embodied Leaderboard Rules"
 					:class="{ active: routeMatched('app.rule') }"

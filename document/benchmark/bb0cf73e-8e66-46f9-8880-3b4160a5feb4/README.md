@@ -18,7 +18,7 @@ default:
 capabilities:
   - Spatial Localization
 properties:
-  Object Navigation:
+  ObjectNavigation:
     order: 1
     index: 0
     label: Acc@0.25

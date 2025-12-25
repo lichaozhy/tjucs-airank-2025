@@ -179,6 +179,16 @@ export const API = {
 						return { ...benchmark!.capability.$data };
 					},
 				},
+				Statistics: {
+					async get() {
+						const { capabilities, properties } = benchmark!.statistics.$data;
+
+						return {
+							properties: { ...properties },
+							capabilities: { ...capabilities },
+						};
+					},
+				},
 			};
 		},
 		{

@@ -55,6 +55,12 @@ interface BenchmarkItem {
 			name?: string;
 		};
 	};
+	statistics: {
+		$data: {
+			properties: Record<string, number>;
+			capabilities: Record<string, number>;
+		};
+	};
 	$data: BenchmarkData;
 }
 

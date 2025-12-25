@@ -1,8 +1,5 @@
 <template>
-	<div
-		ref="container"
-		class="absolute-full"
-	></div>
+	<div ref="container"></div>
 </template>
 
 <script setup lang="ts">
@@ -16,12 +13,22 @@ let chart: Echart.ECharts;
 const props = withDefaults(
 	defineProps<{
 		xData?: string[];
+		yName?: string;
 		dataList?: number[];
 		serieName?: string;
+		max?: number;
+		legendShow?: boolean;
+		xInverse?: boolean;
+		fontSize?: number;
+		tooltip?: boolean;
 	}>(),
 	{
+		xInverse: false,
+		legendShow: true,
 		xData: () => [],
 		dataList: () => [],
+		fontSize: 10,
+		tooltip: false,
 	},
 );
 
@@ -36,21 +43,46 @@ onMounted(() => {
 	watch(
 		props,
 		() => {
+			const maxOptions: { max?: number } = {};
+
+			if (typeof props.max === 'number') {
+				maxOptions.max = props.max;
+			}
+
+			const tooltipOptions: Record<string, unknown> = {};
+
+			if (props.tooltip) {
+				tooltipOptions.tooltip = {
+					axisPointer: {
+						type: 'cross',
+					},
+				};
+			}
+
+			console.log(tooltipOptions);
+
 			chart.setOption({
-				legend: {},
+				...tooltipOptions,
+				legend: {
+					show: props.legendShow,
+				},
 				xAxis: {
 					type: 'category',
-					inverse: true,
+					inverse: props.xInverse,
 					data: [...props.xData],
 					axisLabel: {
 						interval: 0,
 						rotate: 20,
-						fontSize: 10,
+						fontSize: props.fontSize,
 					},
 				},
 				yAxis: {
 					type: 'value',
-					max: 100,
+					name: props.yName,
+					...maxOptions,
+					axisLabel: {
+						fontSize: props.fontSize,
+					},
 				},
 				series: [
 					{

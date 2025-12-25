@@ -20,6 +20,8 @@
 						:x-data="barNameList"
 						:data-list="barValueList"
 						:serie-name="model!.name"
+						:max="100"
+						x-inverse
 					></AppBarChart>
 				</q-responsive>
 				<app-markdown-html src="page/model/portfolio/bar"></app-markdown-html>

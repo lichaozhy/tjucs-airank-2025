@@ -27,7 +27,7 @@ capabilities:
   - Knowledge Reasoning
   - Task Reasoning
 properties:
-  Spatial Reference Planning:
+  SpatialReferencePlanning:
     order: 1
     index: 0
     label: Spatial Reference Planning

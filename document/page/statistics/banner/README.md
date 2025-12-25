@@ -1,0 +1,1 @@
+The benchmark statistics view presents detailed statistics on the 7 core embodied capabilities and 25 fine-grained embodied capabilities across all embodied AI benchmarks integrated in the Embodied Arena platform.

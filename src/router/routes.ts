@@ -64,6 +64,11 @@ const routes: RouteRecordRaw[] = [
 				],
 			},
 			{
+				name: 'app.statistics',
+				path: 'statistics',
+				component: () => import('pages/Statistics/Page.vue'),
+			},
+			{
 				name: 'app.benchmark',
 				path: 'benchmark',
 				redirect: { name: 'app.benchmark.overview' },

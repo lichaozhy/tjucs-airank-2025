@@ -182,6 +182,7 @@ onBeforeMount(async () => {
 		}
 
 		const childItemList = await CapabilityAPI.query();
+
 		_order.push(...configuration.order.filter((id) => _validColumns[id]));
 
 		for (const { id, ...rest } of childItemList) {
