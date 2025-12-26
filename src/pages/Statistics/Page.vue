@@ -55,6 +55,29 @@
 						:options="capabilityLevelList"
 						stretch
 					/>
+
+					<div>
+						<q-btn
+							class="q-mx-xs"
+							square
+							unelevated
+							color="indigo-10"
+							text-color="white"
+							label="Select All"
+							@click="setAll(true)"
+						></q-btn>
+
+						<q-btn
+							class="q-mx-xs"
+							square
+							unelevated
+							color="indigo-10"
+							text-color="white"
+							label="Unselect All"
+							@click="setAll(false)"
+						></q-btn>
+					</div>
+
 				</q-toolbar>
 			</div>
 
@@ -80,7 +103,7 @@
 								square
 								flat
 							>
-								<q-card-section class="q-py-none q-px-xs">
+								<q-card-section class="q-py-none q-px-xs ellipsis">
 									<span
 										><q-checkbox v-model="selected[benchmark.id]"></q-checkbox
 									></span>
@@ -161,6 +184,16 @@ const selectedList = computed(() => {
 		.filter(([, value]) => value === true)
 		.map(([benchmarkId]) => benchmarkId);
 });
+
+function setAll(flag: boolean) {
+	const _selected = { ...selected.value };
+
+	for (const key in _selected) {
+		_selected[key] = flag;
+	}
+
+	selected.value = _selected;
+}
 
 watch(
 	currentLeaderboard,
