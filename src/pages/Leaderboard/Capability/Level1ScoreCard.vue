@@ -7,7 +7,7 @@
 	>
 		<template #subtitle>
 			<span class="text-capitalize"
-				>{{ props.source.type }}({{ abstract.name }}) - Fine-grained
+			>{{ props.source.type }}({{ abstract.name }}) - Fine-grained
 				Capability</span
 			>
 		</template>
@@ -22,7 +22,7 @@
 						class="cursor-pointer"
 						@click="columenSelected[id] = !columenSelected[id]"
 						:color="columenSelected[id] ? 'primary' : 'indigo-10'"
-						>{{ propertyRecord[id]!.name }}</q-badge
+					>{{ propertyRecord[id]!.name }}</q-badge
 					>
 				</div>
 			</div>

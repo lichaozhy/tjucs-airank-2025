@@ -12,8 +12,7 @@ qa:
   - 2D
 dimension:
   - 2D
-website: 
-  https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-0-flash
+website: https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-0-flash
 navigation: true
 taskPlanning: true
 reason: true

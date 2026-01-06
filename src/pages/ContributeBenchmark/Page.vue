@@ -177,7 +177,7 @@
 									<q-item-label
 										caption
 										lines="2"
-										>Improving the introduction of benchmarks can accelerate the
+									>Improving the introduction of benchmarks can accelerate the
 										approval process</q-item-label
 									>
 								</q-item-section>
@@ -202,7 +202,7 @@
 									<q-item-label
 										caption
 										lines="2"
-										>Private benchmark are visible only to the author，And
+									>Private benchmark are visible only to the author，And
 										benchmark can still be made public after
 										created</q-item-label
 									>

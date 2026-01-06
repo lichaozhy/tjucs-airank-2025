@@ -6,7 +6,7 @@
 	>
 		<template #subtitle>
 			<span class="text-capitalize"
-				>{{ props.source.type }}({{ abstract.name }}) - Core Capability</span
+			>{{ props.source.type }}({{ abstract.name }}) - Core Capability</span
 			>
 		</template>
 
@@ -20,7 +20,7 @@
 						class="cursor-pointer"
 						@click="columenSelected[id] = !columenSelected[id]"
 						:color="columenSelected[id] ? 'primary' : 'indigo-10'"
-						>{{ propertyRecord[id]!.name }}</q-badge
+					>{{ propertyRecord[id]!.name }}</q-badge
 					>
 				</div>
 			</div>

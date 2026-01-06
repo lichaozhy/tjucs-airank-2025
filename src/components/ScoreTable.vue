@@ -36,7 +36,7 @@
 					:key="index"
 					:colspan="column.colspan"
 					:title="column.label"
-					>{{ column.label }}</q-th
+				>{{ column.label }}</q-th
 				>
 			</q-tr>
 			<q-tr :props="slotProps">
@@ -103,9 +103,9 @@
 							text-color="white"
 							class="q-mr-xs"
 							v-if="sProps.row.category !== undefined"
-							>{{
-								Category[sProps.row.category as CategoryName].text
-							}}</q-avatar
+						>{{
+							Category[sProps.row.category as CategoryName].text
+						}}</q-avatar
 						>
 						<span class="text-weight-medium">{{ sProps.row.name }}</span>
 					</div>

@@ -12,7 +12,7 @@
 				<q-toolbar-title
 					shrink
 					class="text-h4"
-					>{{ model.name }}</q-toolbar-title
+				>{{ model.name }}</q-toolbar-title
 				>
 				<q-btn
 					v-if="model.website"

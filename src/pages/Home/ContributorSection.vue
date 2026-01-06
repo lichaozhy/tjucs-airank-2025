@@ -12,7 +12,7 @@
 				:key="index"
 				class="q-mr-md"
 				:class="{ 'text-weight-bold': span.emphasized }"
-				>{{ span.text }}</span
+			>{{ span.text }}</span
 			>
 		</div>
 		<div
@@ -23,11 +23,11 @@
 				v-for="(person, index) in data.personList"
 				:key="index"
 				class="q-ml-xs"
-				>{{ person.name
-				}}<sup
-					>{{ person.core ? '*' : ''
-					}}{{ person.at.map((n) => n + 1).join(',') }}</sup
-				><span v-if="index < data.personList.length - 1">,</span></span
+			>{{ person.name
+			}}<sup
+			>{{ person.core ? '*' : ''
+			}}{{ person.at.map((n) => n + 1).join(',') }}</sup
+			><span v-if="index < data.personList.length - 1">,</span></span
 			>
 		</div>
 		<div

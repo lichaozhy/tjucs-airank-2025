@@ -77,7 +77,6 @@
 							@click="setAll(false)"
 						></q-btn>
 					</div>
-
 				</q-toolbar>
 			</div>
 
@@ -105,7 +104,7 @@
 							>
 								<q-card-section class="q-py-none q-px-xs ellipsis">
 									<span
-										><q-checkbox v-model="selected[benchmark.id]"></q-checkbox
+									><q-checkbox v-model="selected[benchmark.id]"></q-checkbox
 									></span>
 									<span>{{ benchmark.name }}</span>
 								</q-card-section>

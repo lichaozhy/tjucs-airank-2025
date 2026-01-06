@@ -14,8 +14,7 @@ qa:
   - 2D
 dimension:
   - 2D
-website: 
-  https://huggingface.co/collections/lmms-lab/llava-onevision-66a259c3526e15166d6bba37
+website: https://huggingface.co/collections/lmms-lab/llava-onevision-66a259c3526e15166d6bba37
 navigation: true
 taskPlanning: true
 reason: true

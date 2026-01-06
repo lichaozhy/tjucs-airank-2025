@@ -20,7 +20,7 @@
 							<q-item-label
 								caption
 								lines="1"
-								>{{ label }}</q-item-label
+							>{{ label }}</q-item-label
 							>
 						</q-item-section>
 

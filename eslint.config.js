@@ -96,6 +96,7 @@ export default defineConfigWithVueTs(
 			'@typescript-eslint/no-floating-promises': 'warn',
 			// '@typescript-eslint/await-thenable': 'off',
 			'@typescript-eslint/require-await': 'off',
+			'vue/html-indent': ['error', 'tab'],
 		},
 	},
 	{

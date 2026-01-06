@@ -67,7 +67,7 @@
 								</q-item-section>
 								<q-item-section>
 									<q-item-label class="text-weight-bold"
-										>Released At</q-item-label
+									>Released At</q-item-label
 									>
 									<q-item-label caption>{{
 										information.releasedAt || '-'
@@ -84,7 +84,7 @@
 								</q-item-section>
 								<q-item-section>
 									<q-item-label class="text-weight-bold"
-										>Institute</q-item-label
+									>Institute</q-item-label
 									>
 									<q-item-label caption>{{
 										information.organization || '-'
@@ -95,7 +95,7 @@
 							<q-item clickable>
 								<q-item-section>
 									<q-item-label class="text-weight-bold"
-										>Hugging Face</q-item-label
+									>Hugging Face</q-item-label
 									>
 									<q-item-label caption>{{
 										information.huggingface || '-'
@@ -117,7 +117,7 @@
 							<q-item clickable>
 								<q-item-section>
 									<q-item-label class="text-weight-bold"
-										>Repository</q-item-label
+									>Repository</q-item-label
 									>
 									<q-item-label caption>{{
 										information.repository || '-'

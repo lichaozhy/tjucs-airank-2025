@@ -26,7 +26,7 @@
 				<q-item-label
 					header
 					class="text-capitalize text-black text-weight-bold"
-					>Filter Options</q-item-label
+				>Filter Options</q-item-label
 				>
 				<q-separator />
 				<template
@@ -37,7 +37,7 @@
 						header
 						caption
 						class="text-capitalize text-weight-bold q-py-sm"
-						>{{ item.name }}</q-item-label
+					>{{ item.name }}</q-item-label
 					>
 					<q-item>
 						<app-item-enum
