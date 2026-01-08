@@ -14,7 +14,8 @@ qa:
   - 2D
 dimension:
   - 2D
-website: https://huggingface.co/collections/lmms-lab/llava-onevision-66a259c3526e15166d6bba37
+website: 
+  https://huggingface.co/collections/lmms-lab/llava-onevision-66a259c3526e15166d6bba37
 navigation: true
 taskPlanning: true
 reason: true
@@ -917,10 +918,9 @@ score:
         - null
     b34bd93a-0809-4038-979a-37fbc0d93b38:
       legacy:
-        - 34.43
-        - 10.75
-        - 22.59
-        - null
+        - 35.34
+        - 2.55
+        - 18.945
       1:
         - null
         - null
@@ -1089,16 +1089,16 @@ score:
         - null
         - null
       legacy:
-        - 18.82352941
-        - 18.28571429
-        - 18.7401575
-        - 19.59183673
-        - 17.72020725
-        - 18.2300885
-        - 18.431
-        - 17.57575758
-        - 18.1184669
-        - 18.3907923
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
   summary:
     d6ba913a-6e26-4dcc-b192-04b9bee6fd8e:
       0:

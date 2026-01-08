@@ -633,10 +633,9 @@ score:
         - null
     b34bd93a-0809-4038-979a-37fbc0d93b38:
       legacy:
-        - null
-        - null
-        - null
-        - 评测有问题，暂时删除
+        - 0
+        - 0
+        - 0
       1:
         - null
         - null

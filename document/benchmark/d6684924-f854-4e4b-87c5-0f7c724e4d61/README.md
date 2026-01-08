@@ -62,12 +62,12 @@ properties:
   SpatialRelationship:
     order: 8
     index: 7
-    label: Spatial Relationship
+    label: Room Type
     unit: null
   RoomType:
     order: 9
     index: 8
-    label: Room Type
+    label: Spatial Relationship
     unit: null
   Total:
     order: 0
