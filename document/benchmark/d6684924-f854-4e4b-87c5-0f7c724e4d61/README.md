@@ -59,15 +59,15 @@ properties:
     index: 6
     label: Object Refer
     unit: null
-  SpatialRelationship:
+  RoomType:
     order: 8
     index: 7
-    label: Spatial Relationship
+    label: Room Type
     unit: null
-  RoomType:
+  SpatialRelationship:
     order: 9
     index: 8
-    label: Room Type
+    label: Spatial Relationship
     unit: null
   Total:
     order: 0
