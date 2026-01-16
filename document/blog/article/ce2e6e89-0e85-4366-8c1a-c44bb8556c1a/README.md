@@ -1,21 +1,133 @@
----
-title: Sample
-code: sample-2
-abstract: You’ll notice immediately upon changing their default values that Quasar Components follow these colors as a guideline.
-by: any
-at: 2025-11-30
----
+# **MSQA Benchmark 评测报告——结构化3D情境问答的主要挑战在物体定位与计数**
 
-## 📚 Benchmark Source
+## **1. Benchmark 简介**
 
-Embodied Arena has currently integrated multiple academically influential benchmarks. We sincerely welcome various benchmark construction teams in this field to actively contribute their achievements and jointly participate in the co-construction and continuous optimization of the evaluation system.
+### **1.1 来源**
 
-- Influential Academic Benchmarks
-  - Embodied Question Answering Benchmarks
-    - OpenEQA, VSI-Bench, ScanQA (3D), etc.
-  - Embodied Navigation Benchmarks
-    - EB-Navigation, VLN-CE R2R, VLN-CE RxR etc.
-  - Embodied Task Planning Benchmarks
-    - ET-Plan-Bench, EB-Habitat, EB-ALFRED, etc.
-- Benchmarks Willing to Join
-- Please provide the benchmark link and relevant information in the [Contribute Benchmark](https://www.embodied-arena.com/#/googleform/2ncVcX8K6quaEc7TA?height=2029) of Embodied Arena.
+MSQA（Multi-modal Situated Question Answering）发表于 **NeurIPS 2024 Datasets & Benchmarks Track**，论文题目为《Multi-modal Situated Reasoning in 3D Scenes》，由北京通用人工智能研究院（BIGAI）与北京大学联合提出，是一个大规模、可复现的 3D 情境问答评测集，用结构化场景信息替代纯视觉输入，系统化地检验模型的空间推理能力。
+
+- 项目主页：msr3d.github.io
+- 论文：arxiv.org/abs/2409.02389
+- 榜单：embodied-arena.com
+
+### **1.2 数据集概览**
+
+MSQA 包含约 **251K** 条情境问答样本，覆盖 **9 类任务**。本次测试在1404条样本上进行，任务类型的具体分布如下：
+
+- **空间关系问题（Spatial Relationship）**：287 条，涵盖分析对象间相对位置关系和空间布局的理解能力。
+- **计数问题（Counting）**：254 条，涵盖对场景中特定类型或满足条件的对象进行准确计数。
+- **导航问题（Navigation）**：226 条，涵盖基于空间理解进行路径规划和方向指引的能力。
+- **存在性问题（Existence）**：193 条，涵盖判断特定对象是否存在于指定位置或方向的能力测试。
+- **属性识别问题（Attribute）**：175 条，涵盖对象物理属性（颜色、材质、形状、状态等）的识别和描述。
+- **指代问题（Refer）**：102 条，涵盖理解和解析空间指代表达的语言理解能力。
+- **功能性问题（Affordance）**：85 条，涵盖理解对象功能用途和交互可能性的推理能力。
+- **描述问题（Description）**：49 条，涵盖对场景或对象进行详细描述和总结的表达能力。
+- **房间类型问题（Room Type）**：33 条，涵盖识别和分类不同空间环境类型的场景理解能力。
+
+9 类任务可以映射为4个能力项：
+
+- **物体感知（Object Perception）**: Counting, Existence, Attribute, Refer, Description
+- **空间感知（Spatial Perception）**: Spatial Relationship, Room Type
+- **具身知识（Embodied Konwledge）**: Affordance
+- **具身导航（Embodied Navigation）**: Navigation
+
+数据集中每条样本包含：多模态情境描述（文本/图片/点云）、3D 场景信息（场景图或点云表征）、以及对应的问答。核心目标是评估模型在"具体情境 + 3D 场景约束"下的推理能力。
+
+下面是一条存在性问题的QA示例。
+
+- **问题**：
+    - **机器人信息**：
+        - 位于3D厨房场景中，坐标为 [-2.377, 1.276, 0.0]
+        - 朝向角度为 1.726（面向特定方向）
+        - 当前状态：正在清空垃圾桶
+    - **场景结构化文本表示**：
+        - 瑜伽垫（yoga mat）：位于 [-2.882, 1.72, 0.677]，绿色，圆柱形，泡沫材质
+        - 其他物品：厨房岛台、椅子、书籍、垃圾桶等共计数十个物体
+    - **测试问题**：Can I find a [瑜伽垫图片] in front of me?
+- **标准答案**："no"
+
+### **1.3 评估指标**
+
+由于回答为开放式文本，本次评测采用模糊匹配， 使用LLM进行评分。模型对每道题的回答打 1–5 分，再映射为百分制（满分 100）。
+
+## **2. 评测概况**
+
+### **2.1 评测设定**
+
+本次评测采用**结构化文本输入**：将 3D 场景序列化为文本，包含物体类别、3D 坐标、包围盒尺寸，以及 agent 位置与朝向；部分对象附带补充图像。
+
+相比纯视觉 VQA 或纯点云任务，这一设定歧义更少，但对**结构化信息利用能力**要求更高。
+
+### **2.2 总体排名**
+
+本次在 **1404 条样本**上评测 **24 个模型**，榜首为 **claude_3_7_sonnet**（60.43%）。
+
+**Top-3 模型**
+
+| **Rank** | **Model** | **Total** |
+| --- | --- | --- |
+| 🥇 | Claude-3.7-Sonnet | 60.43% |
+| 🥈 | o4-mini | 60.32% |
+| 🥉 | Gemini-2.5-Pro | 57.77% |
+
+### **2.3 分组对比**
+
+24 个模型按来源分为三组：
+
+| **分组** | **数量** | **均值** | **范围** | **SOTA** |
+| --- | --- | --- | --- | --- |
+| 闭源通识 | 7 | 57.29% | 34–60% | Claude-3.7-Sonnet（60.43%） |
+| 具身模型 | 7 | 35.86% | 21–54% | RoboBrain2.0-32B（54.02%） |
+| 开源通识 | 10 | 24.95% | 0–45% | Qwen2.5-VL-3B（45.5%） |
+
+**趋势解读**：闭源通识在语义项上优势明显；具身模型上限接近闭源头部，但方差更大；开源通识整体偏弱，表明"结构化 3D 场景 + 格式约束"对开源模型仍是显著门槛。
+
+### **2.4 难度分布**
+
+以全模型均值衡量9种任务的难度（越低越难）：
+
+| **难度** | **类别** | **均值** |
+| --- | --- | --- |
+| 🔴 最难 | Counting | 16.52% |
+| 🔴 | Refer | 25.06% |
+| 🟠 | Spatial Relationship | 35.49% |
+| 🟠 | Navigation | 37.85% |
+| 🟠 | Description | 41.86% |
+| 🟠 | Attribute | 42.34% |
+| 🟠 | Existence | 43.04% |
+| 🟢 | Affordance | 57.91% |
+| 🟢 较易 | Room Type | 64.04 |
+
+**结论**：主要挑战集中在Couting，Spatial Relationship等任务，通识类任务相对容易。
+
+各任务的最优模型如下：
+
+| **类别** | 最优模型 | 得分 |
+| --- | --- | --- |
+| Counting | Claude-3.7-Sonnet | 39.25% |
+| Refer | Claude-3.7-Sonnet | 57.07% |
+| Spatial Relationship | o4-mini | 57.85% |
+| Navigation | o4-mini | 68.12% |
+| Description | Claude-3.7-Sonnet | 82.78% |
+| Attribute | RoboBrain2.0-32B | 77.50% |
+| Existence | Claude-3.7-Sonnet | 76.51% |
+| Affordance | RoboBrain2.0-32B | 91.88% |
+| Room Type | Cosmos-Reason-1-7B | 94.17% |
+
+## **3. 分析**
+
+### **3.1 Benchmark 有效性**
+
+- **区分度好**：头尾模型差距显著，能有效拉开差异。
+- **规模充足**：251K 样本、9 类任务，统计稳定；但自动化构建可能引入模板化与噪声，细粒度归因建议抽样核查。
+
+### **3.2 覆盖与局限**
+
+- **难点在空间绑定**：Counting最难，其次为 Spatial relationship和Navigation；Affordance和Room Type相对容易。瓶颈集中在"数哪些 / 指哪个 / 空间关系"。
+- **局限于离线 QA**：不涉及主动探索、长时序推理与操作控制，更适合作为"给定情境下推理能力"的补充评测。
+
+### **3.3 性能归因**
+
+- **高分关键**：稳定利用场景文本结构信息 + 对象图像，匹配到正确的对象信息。
+- **常见失分**：① 物体找错/漏找，导致偏差；② 空间词（左/右/前/后/最近）解释不稳定，影响空间关系与导航。
+- **改进方向**：引入"先定位再回答"流程，把距离/方位先算成中间结论；输出做格式规范化（统一 yes/no、数值格式）。
