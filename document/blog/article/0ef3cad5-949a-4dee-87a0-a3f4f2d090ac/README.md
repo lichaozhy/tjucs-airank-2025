@@ -2,7 +2,6 @@
 title: Beacon3D-QA(2D) Benchmark 评测报告——复杂场景**对象感知的**主要挑战在对象分类与外观属性识别
 code: Beacon3D-QA(2D)
 abstract: Beacon3D 发表于 CVPR 2025，论文题为《Unveiling the Mist over 3D Vision-Language Understanding》，由北京通用人工智能研究院（BIGAI）、北京大学与清华大学联合提出。该基准旨在通过以对象为中心（Object-centric）的评估框架，深入剖析模型在复杂 3D 场景中的视觉语言理解能力。此次评测关注其 2D 版本。
-by: 李雨宵
 at: 2026-1-16
 ---
 
