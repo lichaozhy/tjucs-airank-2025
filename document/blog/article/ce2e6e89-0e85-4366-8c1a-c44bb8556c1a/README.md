@@ -2,7 +2,6 @@
 title: MSQA Benchmark 评测报告——结构化3D情境问答的主要挑战在物体定位与计数
 code: MSQA
 abstract: MSQA（Multi-modal Situated Question Answering）发表于 **NeurIPS 2024 Datasets & Benchmarks Track**，论文题目为《Multi-modal Situated Reasoning in 3D Scenes》，由北京通用人工智能研究院（BIGAI）与北京大学联合提出，是一个大规模、可复现的 3D 情境问答评测集，用结构化场景信息替代纯视觉输入，系统化地检验模型的空间推理能力。
-by: 乔金彬
 at: 2026-1-16
 ---
 
