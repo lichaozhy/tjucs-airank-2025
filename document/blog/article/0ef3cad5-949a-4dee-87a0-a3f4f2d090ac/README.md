@@ -1,123 +1,145 @@
 ---
-title: Beacon3D-QA(2D) Benchmark 评测报告——复杂场景**对象感知的**主要挑战在对象分类与外观属性识别
+title: Beacon3D-QA(2D) Benchmark Evaluation Report—The main challenges of **object perception** in complex scenes lie in object classification and appearance attribute recognition
 code: Beacon3D-QA(2D)
-abstract: Beacon3D 发表于 CVPR 2025，论文题为《Unveiling the Mist over 3D Vision-Language Understanding》，由北京通用人工智能研究院（BIGAI）、北京大学与清华大学联合提出。该基准旨在通过以对象为中心（Object-centric）的评估框架，深入剖析模型在复杂 3D 场景中的视觉语言理解能力。此次评测关注其 2D 版本。
+abstract: Beacon3D, published at CVPR 2025, with the paper titled "Unveiling the Mist over 3D Vision-Language Understanding," was jointly proposed by the Beijing General Artificial Intelligence Research Institute (BIGAI), Peking University, and Tsinghua University. This benchmark aims to deeply analyze the model's visual language understanding capabilities in complex 3D scenes through an object-centric evaluation framework. This evaluation focuses on its 2D version.
 at: 2026-1-16
 ---
 
-## Beacon3D-QA(2D) Benchmark 评测报告——复杂场景**对象感知的**主要挑战在对象分类与外观属性识别
+## Beacon3D-QA(2D) Benchmark Evaluation Report—The main challenges of **object perception** in complex scenes lie in object classification and appearance attribute recognition
 
-## 1. Benchmark 简介
+## 1. Benchmark Introduction
 
-### 1.1 来源
+### 1.1 Source
 
-Beacon3D 发表于 CVPR 2025，论文题为《Unveiling the Mist over 3D Vision-Language Understanding》，由北京通用人工智能研究院（BIGAI）、北京大学与清华大学联合提出。该基准旨在通过以对象为中心（Object-centric）的评估框架，深入剖析模型在复杂 3D 场景中的视觉语言理解能力。此次评测关注其 2D 版本。
+Beacon3D, published at CVPR 2025, with the paper titled "Unveiling the Mist over 3D Vision-Language Understanding," was jointly proposed by the Beijing General Artificial Intelligence Research Institute (BIGAI), Peking University, and Tsinghua University. This benchmark aims to deeply analyze the model's visual language understanding capabilities in complex 3D scenes through an object-centric evaluation framework. This evaluation focuses on its 2D version.
 
-- 项目主页：[beacon-3d.github.io](http://beacon-3d.github.io)
-- 论文：https://arxiv.org/abs/2503.22420
-- 榜单：[embodied-arena.com](http://embodied-arena.com)
+- Project Homepage: [beacon-3d.github.io](http://beacon-3d.github.io)
 
-### 1.2 数据集概览
+- Paper: https://arxiv.org/abs/2503.22420
 
-Beacon3D-QA(2D) 包含 **4,890** 条测试样本（基于 2,445 个唯一 3D 问题，每个问题在 2 个不同视角下进行评测）。主要分为两大核心类别，覆盖 5 个细分能力项：
+- Leaderboard: [embodied-arena.com](http://embodied-arena.com)
 
-- **Object Perception（对象感知）**：
-    - **Class（对象分类）**：涵盖对 3D 场景中物体类别的语义识别（如识别出“相框”、“垃圾桶”）。
-    - **Appearance（外观属性）**：涵盖颜色、纹理、材质等视觉特征识别。
-    - **Geometry（几何形态）**：涵盖形状、结构等物理特征识别。
-    - **Existence（存在性）**：涵盖物体是否存在的判断。
-- **Spatial Perception（空间感知）**：
-    - **Spatial（空间关系）**：涵盖对象间的相对位置与布局判断（如“在...旁边”、“在...之上”）。
+### 1.2 Dataset Overview
 
-每条样本包含：多模态情境描述（2D 视角图像）、对应的问答对以及视点信息。核心目标是评估模型在具体情境下对细粒度视觉特征和空间关系的 Grounded 推理能力。
+Beacon3D-QA(2D) contains **4,890** test samples (based on 2,445 unique 3D questions, each evaluated from two different perspectives). It is mainly divided into two core categories, covering 5 sub-capabilities:
 
-**QA 示例（Object Perception - Appearance）：**
+- **Object Perception**:
 
-- **输入图像**：[一张包含多个相框的房间视角图]
-- **Question**：What color is the largest picture?（最大的那幅画是什么颜色的？）
-- **Reasoning Chain（推理链）**：
-    1. **Geometry (几何)**: 识别场景中所有相框的大小，定位到“最大”的那个。
-    2. **Appearance (外观)**: 提取该目标对象的颜色特征。
-- **Answer**：Blue and pink（蓝色和粉色）
+- **Class**: Covers semantic recognition of object categories in 3D scenes (e.g., recognizing "picture frame" and "trash can").
 
-### 1.3 评估指标
+- **Appearance**: Covers visual feature recognition such as color, texture, and material.
 
-- **评分逻辑**：采用**基于规则的子串匹配（Rule-based Substring Matching）**。系统会检查模型生成的回答中是否包含标准答案的核心关键词（Ground Truth）。例如，标准答案为“Blue”，模型回答“It is blue”即判定为正确。
-- **Total Score**：所有测试样本的平均准确率（百分制）。
+- **Geometry:** Covers the recognition of physical features such as shape and structure.
 
-## 2. 评测概况
+- **Existence:** Covers the determination of whether an object exists.
 
-### 2.1 评测设定
+- **Spatial Perception:**
 
-本次评测在 2D 图像模态下进行，输入包含场景图像及对应的问题。相比于纯文本或结构化数据任务，该设定对模型的视觉编码能力（Vision Encoding）和跨模态对齐能力提出了更高要求。
+- **Spatial Relationships:** Covers the determination of the relative position and layout between objects (e.g., "next to," "above").
 
-### 2.2 总体排名
+Each sample includes: a multimodal context description (2D viewpoint image), the corresponding question-answer pair, and viewpoint information. The core objective is to evaluate the model's grounded reasoning capability for fine-grained visual features and spatial relationships in specific contexts.
 
-本次共评测 **22** 个模型，榜首为 **o3**（69.77%）。
+**QA Example (Object Perception - Appearance):**
 
-Top-3 模型
+- **Input Image:** [A viewpoint image of a room containing multiple picture frames]
 
-| **Rank** | **Model** | **Total** |
-| --- | --- | --- |
-| 🥇 | o3  | 69.77% |
-| 🥈 | o4_mini | 68.24% |
-| 🥉 | Qwen-VL-Max | 61.27% |
+- **Question:** What color is the largest picture?
 
-### 2.3 分组对比
+- **Reasoning Chain:**
 
-模型按来源分为两组：
+1. **Geometry:** Identify the size of all picture frames in the scene and locate the "largest" one.
 
-| **分组** | **数量** | **均值** | **范围** | **SOTA** |
-| --- | --- | --- | --- | --- |
-| **闭源通识** | 7 | 57.65% | 42%–70% | o3 (69.77%) |
-| **开源通识** | 7 | 49.31% | 46%–52% | InternVL3-38B (52.00%) |
-| **具身模型** | 8 | 45.81% | 39%–52% | RoboBrain1.0-7B (52.03%) |
+2. **Appearance:** Extracts the color features of the target object.
 
-**趋势解读**：闭源通识大模型在视觉理解任务上占据显著优势，头部模型分差明显；开源及具身专用模型整体处于第二梯队，但在特定任务上表现出赶超趋势。
+- **Answer:** Blue and pink
 
-### 2.4 难度分布
+### 1.3 Evaluation Metrics
 
-以全模型均值衡量类别难度（越低越难）：
+- **Scoring Logic:** Employs **Rule-based Substring Matching**. The system checks whether the model's generated answer contains the core keywords (Ground Truth) of the standard answer. For example, if the standard answer is "Blue," a model answer of "It is blue" is considered correct.
 
-| **难度** | **类别** | **均值** |
-| --- | --- | --- |
-| 🔴 **最难** | **Class (分类)** | 24.3% |
-| 🟠 | **Spatial (空间)** | 50.6% |
-| 🟠 | **Geometry (几何)** | 50.8% |
-| 🟢 | **Appearance (外观)** | 52.6% |
-| 🟢 **较易** | **Existence (存在性)** | 57.7% |
+- **Total Score:** The average accuracy (out of 100) across all test samples.
 
-**结论**：主要挑战集中在 **对象分类（Class）**，由于 3D 场景中普遍存在的遮挡和非常规视角，模型难以准确定义物体类别；**外观属性（Appearance）** 为第二难点，细粒度纹理识别仍有一定门槛；**存在性检测（Existence）** 则是当前模型掌握较好的基础能力。
+## 2. Evaluation Overview
 
-各类别最优模型
+### 2.1 Evaluation Settings
 
-| **类别** | **最优模型** | **得分** |
-| --- | --- | --- |
-| **Class** | o3 | 45.86% |
-| **Spatial** | o3 | 72.33% |
-| **Geometry** | o3 | 72.86% |
-| **Appearance** | o3 | 70.25% |
-| **Existence** | GPT-4o | 73.80% |
+This evaluation is conducted in a 2D image modality. The input includes a scene image and the corresponding question. Compared to pure text or structured data tasks, this setting places higher demands on the model's vision encoding capability and cross-modal alignment capabilities.
 
-*注：**Gemini-2.5-Pro** 在 **Spatial** 维度得分为 63.53%，仅次于 o3/o4 系列，优于 Qwen-VL-Max 和 GPT-4o，体现了其在空间推理方面的显著优势。*
+### 2.2 Overall Ranking
 
-## 3. 分析
+A total of **22** models were evaluated in this assessment, with **o3** ranking first (69.77%).
 
-### 3.1 Benchmark 有效性
+Top-3 Models
 
-- **区分度显著**：头部模型（~70分）与尾部模型（~39分）分差巨大，且无模型达到 80+ 分数段，表明该基准尚未饱和，能有效衡量模型能力边界。
-- **数据规模适中**：近 5000 条样本在 2D 具身 QA 中属于中等偏上规模，足以支持统计结论。
+| **Rank** | **Model**       | **Total** |
+|----------|-----------------|-----------|
+| 🥇       | o3              | 69.77%    |
+| 🥈       | o4_mini         | 68.24%    |
+| 🥉       | Qwen-VL-Max     | 61.27%    |
 
-### 3.2 覆盖与局限
 
-- **感知覆盖**：
-评测在对象分类、外观、几何和空间关系上覆盖全面。然而，特别是 **Class（分类）** 维度的低分现状（均值仅 ~24%），精准地暴露了当前模型在复杂 3D 场景中（如遮挡、截断、非常规视角）进行**基础物体识别**的短板。相比之下，模型对纹理和材质的识别能力反而显著优于对物体类别的判断。
-- **维度缺失**：目前侧重于静态视觉感知，暂未包含 **Affordance（功能可见性）** 和 **Planning（规划）** 等与具身行动紧密相关的推理维度。
+### 2.3 Group Comparison
 
-### 3.3 性能归因
+Models are divided into two groups based on their source:
 
-- **通识底座优势**：Qwen-VL-Max 和 Gemini-2.5-Pro 的表现证明，强大的基础视觉-语言底座（Base Model）带来的泛化能力，在处理复杂场景时比小规模具身微调更关键。
-- **灾难性遗忘风险**：对比 RoboBrain 系列发现，2.0 版本（Total 43.66）低于 1.0 版本（Total 52.03），尤其 Appearance 维度跌幅明显。这表明在大规模具身对齐（Alignment）过程中，模型可能过拟合特定指令，导致通用视觉感知能力退化。
-- **改进方向**：
-    1. **增强细粒度感知**：引入高分辨率视觉编码器或多尺度注意力机制解决 Appearance 瓶颈。
-    2. **数据混合策略**：训练具身模型时保留一定比例通用 2D QA 数据（Replay），防止基础感知能力遗忘。
+| **Group**                          | **Number** | **Mean**  | **Range** | **SOTA**               |
+|------------------------------------|------------|-----------|-----------|------------------------|
+| **Closed-Source Common Knowledge** | 7          | 57.65%    | 42%–70%   | o3 (69.77%)            |
+| **Open-Source Common Knowledge**   | 7          | 49.31%    | 46%–52%   | InternVL3-38B (52.00%) |
+| **Embodied Models**                | 8          | 45.81%    | 39%–52%   | RoboBrain 1.0-7B (52.03%) |
+
+
+**Trend Analysis**: Closed-source general-purpose models hold a significant advantage in visual understanding tasks, with a clear gap in scores among top models; open-source and embodied-specific models are generally in the second tier, but show a catching-up trend in specific tasks.
+
+### 2.4 Difficulty Distribution
+
+Class difficulty is measured by the overall model mean (lower values ​​indicate greater difficulty):
+
+| **Difficulty**       | **Class**   | **Mean** |
+|----------------------|-------------|----------|
+| 🔴 **Most Difficult** | **Class**   | 24.3%    |
+| 🟠                   | **Spatial** | 50.6%    |
+| 🟠                   | **Geometry**| 50.8%    |
+| 🟢                   | **Appearance** | 52.6%  |
+| 🟢 **Relatively Easy**| **Existence**| 57.7%   |
+
+
+**Conclusion**: The main challenges are concentrated in **Object Classification**. Due to the prevalent occlusion and unconventional viewpoints in 3D scenes, the model struggles to accurately define object categories; **Appearance**... The second challenge is fine-grained texture recognition, which still presents a certain hurdle; **Existence detection** is a fundamental capability that current models have mastered relatively well.
+
+Best Models for Each Category
+
+| **Category** | **Best Model** | **Score** |
+|--------------|----------------|-----------|
+| **Class**    | o3             | 45.86%    |
+| **Spatial**  | o3             | 72.33%    |
+| **Geometry** | o3             | 72.86%    |
+| **Appearance** | o3           | 70.25%    |
+| **Existence**| GPT-4o         | 73.80%    |
+
+*Note: **Gemini-2.5-Pro** scored 63.53% in the **Spatial** dimension, second only to the o3/o4 series, and better than Qwen-VL-Max and GPT-4o, demonstrating its significant advantage in spatial reasoning. *
+
+## 3. Analysis
+
+### 3.1 Benchmark Validity
+
+- **Significant Discrimination:** The significant difference in scores between top-performing models (~70 points) and bottom-performing models (~39 points), with no model reaching 80+ points, indicates that the benchmark is not yet saturated and can effectively measure the model's capability boundaries.
+
+- **Moderate Data Scale:** The nearly 5000 samples are of a medium to large scale for 2D embodied QA, sufficient to support the statistical conclusions.
+
+### 3.2 Coverage and Limitations
+
+- **Perceptual Coverage:** The evaluation comprehensively covers object classification, appearance, geometry, and spatial relationships. However, the low score in the **Class** dimension (mean only ~24%) precisely exposes the current model's weakness in **basic object recognition** in complex 3D scenes (such as occlusion, truncation, and unconventional viewpoints). In contrast, the model's capability to recognize textures and materials is significantly better than its capability to determine object categories.
+
+- **Missing Dimensions:** Currently, the focus is on static visual perception, and reasoning dimensions closely related to embodied action, such as **Affordance (functional visibility)** and **Planning**, are not yet included.
+
+### 3.3 Performance Attribution
+
+- **Advantage of the General Knowledge Base:** The performance of Qwen-VL-Max and Gemini-2.5-Pro ​​demonstrates that the generalization capability provided by a strong basic visual-language base model is more critical than small-scale embodied fine-tuning when handling complex scenarios.
+
+- **Risk of Catastrophic Forgetting:** Comparison with the RoboBrain series reveals that version 2.0 (Total 43.66) is lower than version 1.0 (Total 52.03), especially with a significant drop in the Appearance dimension. This indicates that during large-scale embodied alignment, the model may overfit specific instructions, leading to a degradation of general visual perception capabilities.
+
+- **Improvement Directions**:
+
+1. **Enhanced Fine-Grained Perception**: Introduce a high-resolution visual encoder or multi-scale attention mechanism to address the appearance bottleneck.
+
+2. **Data Hybridization Strategy**: Retain a certain proportion of general 2D QA data (Replay) when training the embodied model to prevent the forgetting of basic perceptual capabilities.
