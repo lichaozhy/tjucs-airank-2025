@@ -78,6 +78,16 @@
 					no-caps
 					flat
 					stretch
+					label="Blog"
+					:class="{ active: routeMatched('app.blog') }"
+					:to="{ name: 'app.blog' }"
+				></q-btn>
+
+				<q-btn
+					class="app-navbar-feature-item text-weight-regular"
+					no-caps
+					flat
+					stretch
 					label="Embodied Leaderboard Rules"
 					:class="{ active: routeMatched('app.rule') }"
 					:to="{ name: 'app.rule' }"

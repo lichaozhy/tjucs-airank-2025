@@ -12,7 +12,7 @@
 			square
 			bordered
 			class="full-height cursor-pointer"
-			:class="{ 'bg-grey-2': hover }"
+			:class="{ 'bg-grey-1': hover }"
 			@click="navigate"
 			@mouseenter="hover = true"
 			@mouseleave="hover = false"

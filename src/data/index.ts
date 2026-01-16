@@ -42,7 +42,7 @@ export interface BenchmarkData {
 	};
 }
 
-interface BenchmarkItem {
+export interface BenchmarkItem {
 	capability: {
 		$data: CapabilityRecord;
 	};
@@ -68,26 +68,22 @@ interface Benchmark {
 	[key: string]: BenchmarkItem;
 }
 
-interface CapabilityItem {
-	$data: {
-		name: string;
-		radar: boolean;
-		index: number;
-	};
-}
-
 interface ConfigurationItem {
 	$data: {
 		order: string[];
 	};
 }
 
-interface CapabilityItem {
+export interface CapabilityItem {
 	children?: {
 		[key: string]: CapabilityItem;
 	};
 	configuration?: ConfigurationItem;
-	$data: CapabilityItem;
+	$data: {
+		name: string;
+		radar: boolean;
+		index: number;
+	};
 }
 
 interface CapabilityChildren {
@@ -123,7 +119,7 @@ export interface SummaryItem {
 	};
 }
 
-interface LeaderboardItem {
+export interface LeaderboardItem {
 	$data: {
 		name: string;
 		code: string;
@@ -188,6 +184,8 @@ interface PageHomeModelProfileCategoryData {
 		modelList: string[];
 	}[];
 }
+
+import type { Blog } from './Blog';
 
 export interface DataType {
 	benchmark: Benchmark;
@@ -342,6 +340,7 @@ export interface DataType {
 			};
 		};
 	};
+	blog: Blog.Node;
 	rule: {
 		$data: {};
 	};
