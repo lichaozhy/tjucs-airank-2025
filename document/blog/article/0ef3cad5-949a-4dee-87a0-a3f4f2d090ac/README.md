@@ -1,18 +1,116 @@
----
-title: Sample
-code: sample
-abstract: Most of the colors that Quasar Components use are strongly linked with these eight colors that you can change. Choosing these colors is the first step one should take when differentiating the design of an App.
-by: any
-at: 2025-12-01
----
+# Beacon3D-QA(2D) Benchmark 评测报告——复杂场景**对象感知的**主要挑战在对象分类与外观属性识别
 
-## 🤖 Model Type
+## 1. Benchmark 简介
 
-Embodied Arena has currently integrated a variety of influential general large models and embodied AI models. We sincerely welcome various model research teams in this field to actively contribute their achievements and jointly participate in the co-construction and continuous optimization of the evaluation system.
+### 1.1 来源
 
-- General Large Models
-  - GPT-4o, Gemini-2.5-Pro, Claude-3.7-Sonnet, Qwen-VL-Max, LLaVA-OneVision, InternVL3, VILA-1.5, etc.
-- Embodied AI Models
-  - RoboBrain, EmbodiedGPT, etc.
-- Models Willing to Join
-  - Please provide the weight link of Hugging Face or ModelScope, or the API URL, and relevant information in the [Contribute Model](https://www.embodied-arena.com/#/googleform/CLAcMUbvU7TsNeKD8?height=2157) of Embodied Arena.
+Beacon3D 发表于 CVPR 2025，论文题为《Unveiling the Mist over 3D Vision-Language Understanding》，由北京通用人工智能研究院（BIGAI）、北京大学与清华大学联合提出。该基准旨在通过以对象为中心（Object-centric）的评估框架，深入剖析模型在复杂 3D 场景中的视觉语言理解能力。此次评测关注其 2D 版本。
+
+- 项目主页：[beacon-3d.github.io](http://beacon-3d.github.io)
+- 论文：https://arxiv.org/abs/2503.22420
+- 榜单：[embodied-arena.com](http://embodied-arena.com)
+
+### 1.2 数据集概览
+
+Beacon3D-QA(2D) 包含 **4,890** 条测试样本（基于 2,445 个唯一 3D 问题，每个问题在 2 个不同视角下进行评测）。主要分为两大核心类别，覆盖 5 个细分能力项：
+
+- **Object Perception（对象感知）**：
+    - **Class（对象分类）**：涵盖对 3D 场景中物体类别的语义识别（如识别出“相框”、“垃圾桶”）。
+    - **Appearance（外观属性）**：涵盖颜色、纹理、材质等视觉特征识别。
+    - **Geometry（几何形态）**：涵盖形状、结构等物理特征识别。
+    - **Existence（存在性）**：涵盖物体是否存在的判断。
+- **Spatial Perception（空间感知）**：
+    - **Spatial（空间关系）**：涵盖对象间的相对位置与布局判断（如“在...旁边”、“在...之上”）。
+
+每条样本包含：多模态情境描述（2D 视角图像）、对应的问答对以及视点信息。核心目标是评估模型在具体情境下对细粒度视觉特征和空间关系的 Grounded 推理能力。
+
+**QA 示例（Object Perception - Appearance）：**
+
+- **输入图像**：[一张包含多个相框的房间视角图]
+- **Question**：What color is the largest picture?（最大的那幅画是什么颜色的？）
+- **Reasoning Chain（推理链）**：
+    1. **Geometry (几何)**: 识别场景中所有相框的大小，定位到“最大”的那个。
+    2. **Appearance (外观)**: 提取该目标对象的颜色特征。
+- **Answer**：Blue and pink（蓝色和粉色）
+
+### 1.3 评估指标
+
+- **评分逻辑**：采用**基于规则的子串匹配（Rule-based Substring Matching）**。系统会检查模型生成的回答中是否包含标准答案的核心关键词（Ground Truth）。例如，标准答案为“Blue”，模型回答“It is blue”即判定为正确。
+- **Total Score**：所有测试样本的平均准确率（百分制）。
+
+## 2. 评测概况
+
+### 2.1 评测设定
+
+本次评测在 2D 图像模态下进行，输入包含场景图像及对应的问题。相比于纯文本或结构化数据任务，该设定对模型的视觉编码能力（Vision Encoding）和跨模态对齐能力提出了更高要求。
+
+### 2.2 总体排名
+
+本次共评测 **22** 个模型，榜首为 **o3**（69.77%）。
+
+Top-3 模型
+
+| **Rank** | **Model** | **Total** |
+| --- | --- | --- |
+| 🥇 | o3  | 69.77% |
+| 🥈 | o4_mini | 68.24% |
+| 🥉 | Qwen-VL-Max | 61.27% |
+
+### 2.3 分组对比
+
+模型按来源分为两组：
+
+| **分组** | **数量** | **均值** | **范围** | **SOTA** |
+| --- | --- | --- | --- | --- |
+| **闭源通识** | 7 | 57.65% | 42%–70% | o3 (69.77%) |
+| **开源通识** | 7 | 49.31% | 46%–52% | InternVL3-38B (52.00%) |
+| **具身模型** | 8 | 45.81% | 39%–52% | RoboBrain1.0-7B (52.03%) |
+
+**趋势解读**：闭源通识大模型在视觉理解任务上占据显著优势，头部模型分差明显；开源及具身专用模型整体处于第二梯队，但在特定任务上表现出赶超趋势。
+
+### 2.4 难度分布
+
+以全模型均值衡量类别难度（越低越难）：
+
+| **难度** | **类别** | **均值** |
+| --- | --- | --- |
+| 🔴 **最难** | **Class (分类)** | 24.3% |
+| 🟠 | **Spatial (空间)** | 50.6% |
+| 🟠 | **Geometry (几何)** | 50.8% |
+| 🟢 | **Appearance (外观)** | 52.6% |
+| 🟢 **较易** | **Existence (存在性)** | 57.7% |
+
+**结论**：主要挑战集中在 **对象分类（Class）**，由于 3D 场景中普遍存在的遮挡和非常规视角，模型难以准确定义物体类别；**外观属性（Appearance）** 为第二难点，细粒度纹理识别仍有一定门槛；**存在性检测（Existence）** 则是当前模型掌握较好的基础能力。
+
+各类别最优模型
+
+| **类别** | **最优模型** | **得分** |
+| --- | --- | --- |
+| **Class** | o3 | 45.86% |
+| **Spatial** | o3 | 72.33% |
+| **Geometry** | o3 | 72.86% |
+| **Appearance** | o3 | 70.25% |
+| **Existence** | GPT-4o | 73.80% |
+
+*注：**Gemini-2.5-Pro** 在 **Spatial** 维度得分为 63.53%，仅次于 o3/o4 系列，优于 Qwen-VL-Max 和 GPT-4o，体现了其在空间推理方面的显著优势。*
+
+## 3. 分析
+
+### 3.1 Benchmark 有效性
+
+- **区分度显著**：头部模型（~70分）与尾部模型（~39分）分差巨大，且无模型达到 80+ 分数段，表明该基准尚未饱和，能有效衡量模型能力边界。
+- **数据规模适中**：近 5000 条样本在 2D 具身 QA 中属于中等偏上规模，足以支持统计结论。
+
+### 3.2 覆盖与局限
+
+- **感知覆盖**：
+评测在对象分类、外观、几何和空间关系上覆盖全面。然而，特别是 **Class（分类）** 维度的低分现状（均值仅 ~24%），精准地暴露了当前模型在复杂 3D 场景中（如遮挡、截断、非常规视角）进行**基础物体识别**的短板。相比之下，模型对纹理和材质的识别能力反而显著优于对物体类别的判断。
+- **维度缺失**：目前侧重于静态视觉感知，暂未包含 **Affordance（功能可见性）** 和 **Planning（规划）** 等与具身行动紧密相关的推理维度。
+
+### 3.3 性能归因
+
+- **通识底座优势**：Qwen-VL-Max 和 Gemini-2.5-Pro 的表现证明，强大的基础视觉-语言底座（Base Model）带来的泛化能力，在处理复杂场景时比小规模具身微调更关键。
+- **灾难性遗忘风险**：对比 RoboBrain 系列发现，2.0 版本（Total 43.66）低于 1.0 版本（Total 52.03），尤其 Appearance 维度跌幅明显。这表明在大规模具身对齐（Alignment）过程中，模型可能过拟合特定指令，导致通用视觉感知能力退化。
+- **改进方向**：
+    1. **增强细粒度感知**：引入高分辨率视觉编码器或多尺度注意力机制解决 Appearance 瓶颈。
+    2. **数据混合策略**：训练具身模型时保留一定比例通用 2D QA 数据（Replay），防止基础感知能力遗忘。
