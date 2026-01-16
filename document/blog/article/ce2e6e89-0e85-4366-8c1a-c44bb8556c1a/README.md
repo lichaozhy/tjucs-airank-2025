@@ -1,140 +1,166 @@
 ---
-title: MSQA Benchmark 评测报告——结构化3D情境问答的主要挑战在物体定位与计数
+title: MSQA Benchmark Evaluation Report—The Main Challenges of Structured 3D Contextual Question Answering Lie in Object Localization and Counting
 code: MSQA
-abstract: MSQA（Multi-modal Situated Question Answering）发表于 **NeurIPS 2024 Datasets & Benchmarks Track**，论文题目为《Multi-modal Situated Reasoning in 3D Scenes》，由北京通用人工智能研究院（BIGAI）与北京大学联合提出，是一个大规模、可复现的 3D 情境问答评测集，用结构化场景信息替代纯视觉输入，系统化地检验模型的空间推理能力。
+abstract: MSQA (Multi-modal Situated Question Answering), published in the **NeurIPS 2024 Datasets & Benchmarks Track**, with the paper titled "Multi-modal Situated Reasoning in 3D Scenes," was jointly proposed by the Beijing General Artificial Intelligence Research Institute (BIGAI) and Peking University. It is a large-scale, reproducible 3D contextual question answering benchmark that uses structured scene information to replace purely visual input, systematically testing the spatial reasoning capability of models.
 at: 2026-1-16
 ---
 
-## **MSQA Benchmark 评测报告——结构化3D情境问答的主要挑战在物体定位与计数**
+## **MSQA Benchmark Evaluation Report—The Main Challenges of Structured 3D Contextual Question Answering Lie in Object Localization and Counting**
 
-## **1. Benchmark 简介**
+## **1. Introduction to the Benchmark**
 
-### **1.1 来源**
+### **1.1 Source**
 
-MSQA（Multi-modal Situated Question Answering）发表于 **NeurIPS 2024 Datasets & Benchmarks Track**，论文题目为《Multi-modal Situated Reasoning in 3D Scenes》，由北京通用人工智能研究院（BIGAI）与北京大学联合提出，是一个大规模、可复现的 3D 情境问答评测集，用结构化场景信息替代纯视觉输入，系统化地检验模型的空间推理能力。
+MSQA (Multi-modal Situated Question Answering), published in the **NeurIPS 2024 Datasets & Benchmarks Track**, with the paper titled "Multi-modal Situated Reasoning in 3D Scenes," was jointly proposed by the Beijing General Artificial Intelligence Research Institute (BIGAI) and Peking University. It is a large-scale, reproducible 3D contextual question answering benchmark that uses structured scene information to replace purely visual input, systematically testing the spatial reasoning capability of models.
 
-- 项目主页：msr3d.github.io
-- 论文：arxiv.org/abs/2409.02389
-- 榜单：embodied-arena.com
+- Project Homepage: msr3d.github.io
 
-### **1.2 数据集概览**
+- Paper: arxiv.org/abs/2409.02389
 
-MSQA 包含约 **251K** 条情境问答样本，覆盖 **9 类任务**。本次测试在1404条样本上进行，任务类型的具体分布如下：
+- Leaderboard: embodied-arena.com
 
-- **空间关系问题（Spatial Relationship）**：287 条，涵盖分析对象间相对位置关系和空间布局的理解能力。
-- **计数问题（Counting）**：254 条，涵盖对场景中特定类型或满足条件的对象进行准确计数。
-- **导航问题（Navigation）**：226 条，涵盖基于空间理解进行路径规划和方向指引的能力。
-- **存在性问题（Existence）**：193 条，涵盖判断特定对象是否存在于指定位置或方向的能力测试。
-- **属性识别问题（Attribute）**：175 条，涵盖对象物理属性（颜色、材质、形状、状态等）的识别和描述。
-- **指代问题（Refer）**：102 条，涵盖理解和解析空间指代表达的语言理解能力。
-- **功能性问题（Affordance）**：85 条，涵盖理解对象功能用途和交互可能性的推理能力。
-- **描述问题（Description）**：49 条，涵盖对场景或对象进行详细描述和总结的表达能力。
-- **房间类型问题（Room Type）**：33 条，涵盖识别和分类不同空间环境类型的场景理解能力。
+### **1.2 Dataset Overview**
 
-9 类任务可以映射为4个能力项：
+MSQA contains approximately **251K** contextual question-answering samples, covering **9 task categories**. This test was conducted on 1404 samples, with the task types distributed as follows:
 
-- **物体感知（Object Perception）**: Counting, Existence, Attribute, Refer, Description
-- **空间感知（Spatial Perception）**: Spatial Relationship, Room Type
-- **具身知识（Embodied Konwledge）**: Affordance
-- **具身导航（Embodied Navigation）**: Navigation
+- **Spatial Relationship**: 287 items, covering the capability to analyze the relative positional relationships and spatial layout between objects.
 
-数据集中每条样本包含：多模态情境描述（文本/图片/点云）、3D 场景信息（场景图或点云表征）、以及对应的问答。核心目标是评估模型在"具体情境 + 3D 场景约束"下的推理能力。
+- **Counting**: 254 items, covering the accurate counting of specific types or objects that meet certain conditions in a scene.
 
-下面是一条存在性问题的QA示例。
+- **Navigation**: 226 items, covering the capability to perform path planning and direction guidance based on spatial understanding.
 
-- **问题**：
-    - **机器人信息**：
-        - 位于3D厨房场景中，坐标为 [-2.377, 1.276, 0.0]
-        - 朝向角度为 1.726（面向特定方向）
-        - 当前状态：正在清空垃圾桶
-    - **场景结构化文本表示**：
-        - 瑜伽垫（yoga mat）：位于 [-2.882, 1.72, 0.677]，绿色，圆柱形，泡沫材质
-        - 其他物品：厨房岛台、椅子、书籍、垃圾桶等共计数十个物体
-    - **测试问题**：Can I find a [瑜伽垫图片] in front of me?
-- **标准答案**："no"
+- **Existence**: 193 questions, covering the capability to determine whether a specific object exists in a specified location or direction.
 
-### **1.3 评估指标**
+- **Attribute**: 175 questions, covering the identification and description of an object's physical attributes (color, material, shape, state, etc.).
 
-由于回答为开放式文本，本次评测采用模糊匹配， 使用LLM进行评分。模型对每道题的回答打 1–5 分，再映射为百分制（满分 100）。
+- **Refer**: 102 questions, covering the capability to understand and interpret spatial references.
 
-## **2. 评测概况**
+- **Affordance**: 85 questions, covering the reasoning capability to understand the function, purpose, and interaction possibilities of an object.
 
-### **2.1 评测设定**
+- **Description**: 49 questions, covering the capability to provide detailed descriptions and summaries of scenes or objects.
 
-本次评测采用**结构化文本输入**：将 3D 场景序列化为文本，包含物体类别、3D 坐标、包围盒尺寸，以及 agent 位置与朝向；部分对象附带补充图像。
+- **Room Type**: 33 questions, covering the capability to identify and classify different spatial environment types.
 
-相比纯视觉 VQA 或纯点云任务，这一设定歧义更少，但对**结构化信息利用能力**要求更高。
+Nine task categories can be mapped to four capabilities:
 
-### **2.2 总体排名**
+- **Object Perception**: Counting, Existence, Attribute, Refer, Description
 
-本次在 **1404 条样本**上评测 **24 个模型**，榜首为 **claude_3_7_sonnet**（60.43%）。
+- **Spatial Perception**: Spatial Relationship, Room Type
 
-**Top-3 模型**
+- **Embodied Knowledge**: Affordance
 
-| **Rank** | **Model** | **Total** |
-| --- | --- | --- |
-| 🥇 | Claude-3.7-Sonnet | 60.43% |
-| 🥈 | o4-mini | 60.32% |
-| 🥉 | Gemini-2.5-Pro | 57.77% |
+- **Embodied Navigation**: Navigation
 
-### **2.3 分组对比**
+Each sample in the dataset contains: a multimodal context description (text/image/point cloud), 3D scene information (scene graph or point cloud representation), and a corresponding question answer. The core objective is to evaluate the model's reasoning capability under "concrete context + 3D scene constraints".
 
-24 个模型按来源分为三组：
+Below is an example QA for an existence question.
 
-| **分组** | **数量** | **均值** | **范围** | **SOTA** |
-| --- | --- | --- | --- | --- |
-| 闭源通识 | 7 | 57.29% | 34–60% | Claude-3.7-Sonnet（60.43%） |
-| 具身模型 | 7 | 35.86% | 21–54% | RoboBrain2.0-32B（54.02%） |
-| 开源通识 | 10 | 24.95% | 0–45% | Qwen2.5-VL-3B（45.5%） |
+- **Question**:
 
-**趋势解读**：闭源通识在语义项上优势明显；具身模型上限接近闭源头部，但方差更大；开源通识整体偏弱，表明"结构化 3D 场景 + 格式约束"对开源模型仍是显著门槛。
+- **Robot Information**:
 
-### **2.4 难度分布**
+- Located in a 3D kitchen scene, coordinates [-2.377, 1.276, 0.0]
 
-以全模型均值衡量9种任务的难度（越低越难）：
+- Orientation angle is 1.726 (facing a specific direction)
 
-| **难度** | **类别** | **均值** |
-| --- | --- | --- |
-| 🔴 最难 | Counting | 16.52% |
-| 🔴 | Refer | 25.06% |
-| 🟠 | Spatial Relationship | 35.49% |
-| 🟠 | Navigation | 37.85% |
-| 🟠 | Description | 41.86% |
-| 🟠 | Attribute | 42.34% |
-| 🟠 | Existence | 43.04% |
-| 🟢 | Affordance | 57.91% |
-| 🟢 较易 | Room Type | 64.04 |
+- Current status: Emptying the trash can
 
-**结论**：主要挑战集中在Couting，Spatial Relationship等任务，通识类任务相对容易。
+- **Scene Structured Text Representation**:
 
-各任务的最优模型如下：
+- Yoga mat: Located at [-2.882, 1.72, 0.677], green, cylindrical, foam material
 
-| **类别** | 最优模型 | 得分 |
-| --- | --- | --- |
-| Counting | Claude-3.7-Sonnet | 39.25% |
-| Refer | Claude-3.7-Sonnet | 57.07% |
-| Spatial Relationship | o4-mini | 57.85% |
-| Navigation | o4-mini | 68.12% |
-| Description | Claude-3.7-Sonnet | 82.78% |
-| Attribute | RoboBrain2.0-32B | 77.50% |
-| Existence | Claude-3.7-Sonnet | 76.51% |
-| Affordance | RoboBrain2.0-32B | 91.88% |
-| Room Type | Cosmos-Reason-1-7B | 94.17% |
+- Other items: Kitchen island, chairs, books, trash can, etc., totaling dozens of objects
 
-## **3. 分析**
+- **Test Question**: Can I find a [yoga mat image] in front of me?
 
-### **3.1 Benchmark 有效性**
+- **Standard Answer**: "no"
 
-- **区分度好**：头尾模型差距显著，能有效拉开差异。
-- **规模充足**：251K 样本、9 类任务，统计稳定；但自动化构建可能引入模板化与噪声，细粒度归因建议抽样核查。
+### **1.3 Evaluation Metrics**
 
-### **3.2 覆盖与局限**
+Since the answers are open-ended text, this evaluation uses fuzzy matching and LLM scoring. The model scores each answer from 1 to 5 points, then maps them to a percentage (out of 100).
 
-- **难点在空间绑定**：Counting最难，其次为 Spatial relationship和Navigation；Affordance和Room Type相对容易。瓶颈集中在"数哪些 / 指哪个 / 空间关系"。
-- **局限于离线 QA**：不涉及主动探索、长时序推理与操作控制，更适合作为"给定情境下推理能力"的补充评测。
+## **2. Evaluation Overview**
 
-### **3.3 性能归因**
+### **2.1 Evaluation Settings**
 
-- **高分关键**：稳定利用场景文本结构信息 + 对象图像，匹配到正确的对象信息。
-- **常见失分**：① 物体找错/漏找，导致偏差；② 空间词（左/右/前/后/最近）解释不稳定，影响空间关系与导航。
-- **改进方向**：引入"先定位再回答"流程，把距离/方位先算成中间结论；输出做格式规范化（统一 yes/no、数值格式）。
+This evaluation uses **structured text input**: the 3D scene is serialized into text, including object categories, 3D coordinates, bounding box size, and agent position and orientation; some objects are accompanied by supplementary images.
+
+Compared to pure visual VQA or pure point cloud tasks, this setting has less ambiguity but requires a higher level of **capability to utilize structured information**.
+
+### **2.2 Overall Ranking**
+
+This evaluation assesses **24 models** on **1404 samples**, with **claude_3_7_sonnet** ranking first (60.43%).
+
+**Top-3 Models**
+
+| Rank | Model             | Total  |
+|------|-------------------|--------|
+| 1.   | Claude-3.7-Sonnet | 60.43% |
+| 2.   | o4-mini           | 60.32% |
+| 3.   | Gemini-2.5-Pro    | 57.77% |
+
+
+### **2.3 Group Comparison**
+
+The 24 models are divided into three groups based on their source:
+
+| **Group**                     | **Number** | **Mean**  | **Range** | **SOTA**                     |
+|-------------------------------|------------|-----------|-----------|------------------------------|
+| Closed-Source General Knowledge | 7          | 57.29%    | 34–60%    | Claude-3.7-Sonnet (60.43%)   |
+| Embodied Models               | 7          | 35.86%    | 21–54%    | RoboBrain 2.0-32B (54.02%)   |
+| Open Source Knowledge         | 10         | 24.95%    | 0–45%     | Qwen 2.5-VL-3B (45.5%)       |
+
+
+**Trend Interpretation**: Closed-source knowledge shows a clear advantage in semantic terms; embodied models have an upper limit close to the top of closed-source models, but with greater variance; open-source knowledge is generally weak, indicating that "structured 3D scenes + format constraints" remain a significant hurdle for open-source models.
+
+### **2.4 Difficulty Distribution**
+
+The difficulty of the 9 tasks is measured by the overall model mean (lower values ​​indicate greater difficulty):
+
+| **Difficulty**       | **Category**          | **Mean**  |
+|----------------------|-----------------------|-----------|
+| 🔴 Most Difficult    | Counting              | 16.52%    |
+| 🔴                   | Refer                 | 25.06%    |
+| 🟠                   | Spatial Relationship  | 35.49%    |
+| 🟠                   | Navigation            | 37.85%    |
+| 🟠                   | Description           | 41.86%    |
+| 🟠                   | Attribute             | 42.34%    |
+| 🟠                   | Existence             | 43.04%    |
+| 🟢                   | Affordance            | 57.91%    |
+| 🟢 Relatively Easy   | Room Type             | 64.04%    |
+
+
+**Conclusion:** The main challenges lie in tasks related to Couting and Spatial Relationships, while general knowledge tasks are relatively easier.
+
+The optimal models for each task are as follows:
+
+| **Category**          | **Optimal Model**       | **Score** |
+|-----------------------|-------------------------|-----------|
+| Counting              | Claude-3.7-Sonnet       | 39.25%    |
+| Refer                 | Claude-3.7-Sonnet       | 57.07%    |
+| Spatial Relationship  | o4-mini                 | 57.85%    |
+| Navigation            | o4-mini                 | 68.12%    |
+| Description           | Claude-3.7-Sonnet       | 82.78%    |
+| Attribute             | RoboBrain2.0-32B        | 77.50%    |
+| Existence             | Claude-3.7-Sonnet       | 76.51%    |
+| Affordance            | RoboBrain2.0-32B        | 91.88%    |
+| Room Type             | Cosmos-Reason-1-7B      | 94.17%    |
+ 
+
+## **3. Analysis**
+
+### **3.1 Benchmark Validity**
+
+- **Good Discrimination**: Significant differences between the top and bottom models, effectively differentiating them.
+
+- **Sufficient Scale**: 251K samples, 9 task categories, statistically stable; however, automated construction may introduce templates and noise, fine-grained attribution requires sampling verification.
+
+### **3.2 Coverage and Limitations**
+
+- **Difficulty in Spatial Binding**: Counting is the most difficult, followed by Spatial relationship and Navigation; Affordance and Room Type are relatively easier. Bottlenecks are concentrated on "which to count / which to refer to / spatial relationships".
+
+- **Limited to Offline QA**: Does not involve active exploration, long-term reasoning, and operational control, more suitable as a supplementary evaluation of "reasoning capability in a given context".
+
+### **3.3 Performance Attribution**
+
+- **Key to High Scores**: Stable utilization of scene text structure information + object images to match the correct object information.
