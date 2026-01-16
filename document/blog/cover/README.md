@@ -1,3 +1,3 @@
-## Welcome to blog
+## Welcome to the official Embodied Arena blog!
 
-Most of the colors that Quasar Components use are strongly linked with these eight colors that you can change. Choosing these colors is the first step one should take when differentiating the design of an App. You’ll notice immediately upon changing their default values that Quasar Components follow these colors as a guideline.
+Embodied Arena is the industry's first comprehensive, unified, and continuously evolving platform for evaluating Embodied AI. Here, we will regularly publish evaluation reports, working with the global research community to witness historic breakthroughs in Embodied AI and explore the cutting-edge dynamics and technological evolution of the field.
