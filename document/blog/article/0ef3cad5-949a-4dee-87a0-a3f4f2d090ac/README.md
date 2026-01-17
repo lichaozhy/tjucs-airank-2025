@@ -1,5 +1,5 @@
 ---
-title: Beacon3D-QA(2D) Benchmark Evaluation Report—The main challenges of **object perception** in complex scenes lie in object classification and appearance attribute recognition
+title: Beacon3D-QA(2D) Benchmark Evaluation Report—The main challenges of object perception in complex scenes lie in object classification and appearance attribute recognition
 code: Beacon3D-QA(2D)
 abstract: Beacon3D, published at CVPR 2025, with the paper titled "Unveiling the Mist over 3D Vision-Language Understanding," was jointly proposed by the Beijing General Artificial Intelligence Research Institute (BIGAI), Peking University, and Tsinghua University. This benchmark aims to deeply analyze the model's visual language understanding capabilities in complex 3D scenes through an object-centric evaluation framework. This evaluation focuses on its 2D version.
 at: 2026-1-16
