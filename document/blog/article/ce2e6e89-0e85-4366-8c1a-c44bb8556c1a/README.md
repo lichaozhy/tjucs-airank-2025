@@ -1,7 +1,7 @@
 ---
 title: MSQA Benchmark Evaluation Report—The Main Challenges of Structured 3D Contextual Question Answering Lie in Object Localization and Counting
 code: MSQA
-abstract: MSQA (Multi-modal Situated Question Answering), published in the NeurIPS 2024 Datasets & Benchmarks Track, with the paper titled "Multi-modal Situated Reasoning in 3D Scenes," is jointly proposed by the Beijing Institute for General Artificial Intelligence (BIGAI) and Peking University. It is a large-scale, reproducible 3D contextual question answering benchmark that uses structured scene information to replace purely visual input, systematically testing the spatial reasoning capability of models.
+abstract: MSQA (Multi-modal Situated Question Answering), published in NeurIPS 2024 Datasets & Benchmarks Track, is a benchmark with the paper titled "Multi-modal Situated Reasoning in 3D Scenes," jointly proposed by the Beijing Institute for General Artificial Intelligence (BIGAI) and Peking University. It is a large-scale, reproducible benchmark for 3D contextual question answering that uses structured scene information to replace purely visual input, systematically testing the spatial reasoning capability of models.
 at: 2026-1-16
 ---
 
@@ -11,7 +11,7 @@ at: 2026-1-16
 
 ### **1.1 Source**
 
-MSQA (Multi-modal Situated Question Answering), published in the NeurIPS 2024 Datasets & Benchmarks Track, with the paper titled "Multi-modal Situated Reasoning in 3D Scenes," is jointly proposed by the Beijing Institute for General Artificial Intelligence (BIGAI) and Peking University. It is a large-scale, reproducible 3D contextual question answering benchmark that uses structured scene information to replace purely visual input, systematically testing the spatial reasoning capability of models.
+MSQA (Multi-modal Situated Question Answering), published in NeurIPS 2024 Datasets & Benchmarks Track, is a benchmark with the paper titled "Multi-modal Situated Reasoning in 3D Scenes," jointly proposed by the Beijing Institute for General Artificial Intelligence (BIGAI) and Peking University. It is a large-scale, reproducible benchmark for 3D contextual question answering that uses structured scene information to replace purely visual input, systematically testing the spatial reasoning capability of models.
 
 - Project Homepage: msr3d.github.io
 
