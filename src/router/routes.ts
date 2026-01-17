@@ -87,6 +87,24 @@ const routes: RouteRecordRaw[] = [
 				],
 			},
 			{
+				name: 'app.report',
+				path: 'reports',
+				redirect: { name: 'app.report.overview' },
+				component: MIDDLE_ROUTER_VIEW,
+				children: [
+					{
+						name: 'app.report.overview',
+						path: '',
+						component: () => import('pages/Blog/Overview/Page.vue'),
+					},
+					{
+						name: 'app.report.detail',
+						path: ':code',
+						component: () => import('pages/Blog/Detail/Page.vue'),
+					},
+				],
+			},
+			{
 				name: 'app.rule',
 				path: 'rule',
 				component: () => import('pages/Rule/Page.vue'),

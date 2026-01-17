@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-namespace */
 import type {
 	BenchmarkItem,
 	DataType,
@@ -5,6 +6,7 @@ import type {
 	Model,
 	SummaryItem,
 } from './data';
+import type { Blog } from './data/Blog';
 
 let root: DataType;
 
@@ -29,8 +31,16 @@ interface ModelFilter {
 	code?: string;
 }
 
+interface BlogFilter {
+	code?: string;
+}
+
 function readText(response: Response) {
 	return response.text();
+}
+
+export namespace Data {
+	export type Article = Blog.Article.Instance.Data & { id: string };
 }
 
 export const API = {
@@ -424,6 +434,29 @@ export const API = {
 			},
 		},
 	),
+	Blog: {
+		Article: {
+			async query(filter: BlogFilter = {}) {
+				const filtered: [string, Blog.Article.Instance.Node][] = [];
+
+				for (const entry of Object.entries(root.blog.article)) {
+					const [, article] = entry;
+
+					if ('code' in filter) {
+						if (article.$data.code !== filter.code) {
+							continue;
+						}
+					}
+
+					filtered.push(entry);
+				}
+
+				return filtered
+					.map(([id, { $data }]) => ({ id, ...$data }))
+					.sort((a, b) => new Date(a.at).getTime() - new Date(b.at).getTime());
+			},
+		},
+	},
 	Document: {
 		async read(pathname: string) {
 			return fetch(`/html/${pathname}.html`).then(readText);
