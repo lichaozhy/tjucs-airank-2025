@@ -1,7 +1,7 @@
 ---
 title: Beacon3D-QA(2D) Benchmark Evaluation Report—The Main Challenges of Object Perception in Complex Scenes Lie in Object Classification and Appearance Attribute Recognition
 code: Beacon3D-QA(2D)
-abstract: Beacon3D, published in the CVPR 2025, with the paper titled "Unveiling the Mist over 3D Vision-Language Understanding," is jointly proposed by the Beijing Institute for General Artificial Intelligence (BIGAI), Peking University, and Tsinghua University. This benchmark aims to deeply analyze the model's visual language understanding capabilities in complex 3D scenes through an object-centric evaluation framework. This evaluation focuses on its 2D version.
+abstract: Beacon3D, published in CVPR 2025, is a benchmark with the paper titled "Unveiling the Mist over 3D Vision-Language Understanding," jointly proposed by the Beijing Institute for General Artificial Intelligence (BIGAI), Peking University, and Tsinghua University. This benchmark aims to deeply analyze a model's visual-language understanding capabilities in complex 3D scenes through an object-centric evaluation framework. This evaluation focuses on the 2D version of the benchmark.
 at: 2026-1-16
 ---
 
@@ -11,7 +11,7 @@ at: 2026-1-16
 
 ### 1.1 Source
 
-Beacon3D, published in the CVPR 2025, with the paper titled "Unveiling the Mist over 3D Vision-Language Understanding," is jointly proposed by the Beijing Institute for General Artificial Intelligence (BIGAI), Peking University, and Tsinghua University. This benchmark aims to deeply analyze the model's visual language understanding capabilities in complex 3D scenes through an object-centric evaluation framework. This evaluation focuses on its 2D version.
+Beacon3D, published in CVPR 2025, is a benchmark with the paper titled "Unveiling the Mist over 3D Vision-Language Understanding," jointly proposed by the Beijing Institute for General Artificial Intelligence (BIGAI), Peking University, and Tsinghua University. This benchmark aims to deeply analyze a model's visual-language understanding capabilities in complex 3D scenes through an object-centric evaluation framework. This evaluation focuses on the 2D version of the benchmark.
 
 - Project Homepage: [beacon-3d.github.io](http://beacon-3d.github.io)
 
