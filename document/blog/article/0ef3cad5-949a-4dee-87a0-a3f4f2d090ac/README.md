@@ -1,7 +1,7 @@
 ---
 title: Beacon3D-QA(2D) Benchmark Evaluation Report—The Main Challenges of Object Perception in Complex Scenes Lie in Object Classification and Appearance Attribute Recognition
 code: Beacon3D-QA(2D)
-abstract: Beacon3D, published at CVPR 2025, with the paper titled "Unveiling the Mist over 3D Vision-Language Understanding," was jointly proposed by the Beijing General Artificial Intelligence Research Institute (BIGAI), Peking University, and Tsinghua University. This benchmark aims to deeply analyze the model's visual language understanding capabilities in complex 3D scenes through an object-centric evaluation framework. This evaluation focuses on its 2D version.
+abstract: Beacon3D, published at CVPR 2025, with the paper titled "Unveiling the Mist over 3D Vision-Language Understanding," is jointly proposed by the Beijing Institute for General Artificial Intelligence (BIGAI), Peking University, and Tsinghua University. This benchmark aims to deeply analyze the model's visual language understanding capabilities in complex 3D scenes through an object-centric evaluation framework. This evaluation focuses on its 2D version.
 at: 2026-1-16
 ---
 
@@ -11,7 +11,7 @@ at: 2026-1-16
 
 ### 1.1 Source
 
-Beacon3D, published at CVPR 2025, with the paper titled "Unveiling the Mist over 3D Vision-Language Understanding," was jointly proposed by the Beijing General Artificial Intelligence Research Institute (BIGAI), Peking University, and Tsinghua University. This benchmark aims to deeply analyze the model's visual language understanding capabilities in complex 3D scenes through an object-centric evaluation framework. This evaluation focuses on its 2D version.
+Beacon3D, published at CVPR 2025, with the paper titled "Unveiling the Mist over 3D Vision-Language Understanding," is jointly proposed by the Beijing Institute for General Artificial Intelligence (BIGAI), Peking University, and Tsinghua University. This benchmark aims to deeply analyze the model's visual language understanding capabilities in complex 3D scenes through an object-centric evaluation framework. This evaluation focuses on its 2D version.
 
 - Project Homepage: [beacon-3d.github.io](http://beacon-3d.github.io)
 
@@ -25,17 +25,17 @@ Beacon3D-QA(2D) contains **4,890** test samples (based on 2,445 unique 3D questi
 
 - **Object Perception**:
 
-- **Class**: Covers semantic recognition of object categories in 3D scenes (e.g., recognizing "picture frame" and "trash can").
+    - **Class**: Covers semantic recognition of object categories in 3D scenes (e.g., recognizing "picture frame" and "trash can").
 
-- **Appearance**: Covers visual feature recognition such as color, texture, and material.
+    - **Appearance**: Covers visual feature recognition such as color, texture, and material.
 
-- **Geometry:** Covers the recognition of physical features such as shape and structure.
+    - **Geometry:** Covers the recognition of physical features such as shape and structure.
 
-- **Existence:** Covers the determination of whether an object exists.
+    - **Existence:** Covers the determination of whether an object exists.
 
 - **Spatial Perception:**
 
-- **Spatial Relationships:** Covers the determination of the relative position and layout between objects (e.g., "next to," "above").
+    - **Spatial Relationships:** Covers the determination of the relative position and layout between objects (e.g., "next to," "above").
 
 Each sample includes: a multimodal context description (2D viewpoint image), the corresponding question-answer pair, and viewpoint information. The core objective is to evaluate the model's grounded reasoning capability for fine-grained visual features and spatial relationships in specific contexts.
 
@@ -47,9 +47,9 @@ Each sample includes: a multimodal context description (2D viewpoint image), the
 
 - **Reasoning Chain:**
 
-1. **Geometry:** Identify the size of all picture frames in the scene and locate the "largest" one.
+    1. **Geometry:** Identify the size of all picture frames in the scene and locate the "largest" one.
 
-2. **Appearance:** Extracts the color features of the target object.
+    2. **Appearance:** Extracts the color features of the target object.
 
 - **Answer:** Blue and pink
 
@@ -67,7 +67,7 @@ This evaluation is conducted in a 2D image modality. The input includes a scene 
 
 ### 2.2 Overall Ranking
 
-A total of **22** models were evaluated in this assessment, with **o3** ranking first (69.77%).
+A total of **22** models were evaluated in this evaluation, with **o3** ranking first (69.77%).
 
 Top-3 Models
 
@@ -104,9 +104,10 @@ Class difficulty is measured by the overall model mean (lower values ​​indic
 | 🟢 **Relatively Easy**| **Existence**| 57.7%   |
 
 
-**Conclusion**: The main challenges are concentrated in **Object Classification**. Due to the prevalent occlusion and unconventional viewpoints in 3D scenes, the model struggles to accurately define object categories; **Appearance**... The second challenge is fine-grained texture recognition, which still presents a certain hurdle; **Existence detection** is a fundamental capability that current models have mastered relatively well.
+**Conclusion**: The main challenges are concentrated in **Object Classification**. Due to the prevalent occlusion and unconventional viewpoints in 3D scenes, the model struggles to accurately define object categories; **Appearance** is the second most challenging aspect, and fine-grained texture recognition still presents a significant hurdle; **Existence detection** is a fundamental capability that current models have mastered relatively well.
 
-Best Models for Each Category
+
+Best Models for Each Category  
 
 | **Category** | **Best Model** | **Score** |
 |--------------|----------------|-----------|
@@ -140,6 +141,6 @@ Best Models for Each Category
 
 - **Improvement Directions**:
 
-1. **Enhanced Fine-Grained Perception**: Introduce a high-resolution visual encoder or multi-scale attention mechanism to address the appearance bottleneck.
+    1. **Enhanced Fine-Grained Perception**: Introduce a high-resolution visual encoder or multi-scale attention mechanism to address the appearance bottleneck.
 
-2. **Data Hybridization Strategy**: Retain a certain proportion of general 2D QA data (Replay) when training the embodied model to prevent the forgetting of basic perceptual capabilities.
+    2. **Data Hybridization Strategy**: Retain a certain proportion of general 2D QA data (Replay) when training the embodied model to prevent the forgetting of basic perceptual capabilities.
