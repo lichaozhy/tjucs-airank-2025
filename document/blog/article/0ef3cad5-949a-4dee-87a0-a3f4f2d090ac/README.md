@@ -5,7 +5,7 @@ abstract: Beacon3D, published at CVPR 2025, with the paper titled "Unveiling the
 at: 2026-1-16
 ---
 
-## Beacon3D-QA(2D) Benchmark Evaluation Report—The main challenges of **object perception** in complex scenes lie in object classification and appearance attribute recognition
+## Beacon3D-QA(2D) Benchmark Evaluation Report—The main challenges of object perception in complex scenes lie in object classification and appearance attribute recognition
 
 ## 1. Benchmark Introduction
 
