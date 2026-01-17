@@ -11,7 +11,7 @@ at: 2026-1-16
 
 ### **1.1 Source**
 
-MSQA (Multi-modal Situated Question Answering), published in the **NeurIPS 2024 Datasets & Benchmarks Track**, with the paper titled "Multi-modal Situated Reasoning in 3D Scenes," was jointly proposed by the Beijing General Artificial Intelligence Research Institute (BIGAI) and Peking University. It is a large-scale, reproducible 3D contextual question answering benchmark that uses structured scene information to replace purely visual input, systematically testing the spatial reasoning capability of models.
+MSQA (Multi-modal Situated Question Answering), published in the NeurIPS 2024 Datasets & Benchmarks Track, with the paper titled "Multi-modal Situated Reasoning in 3D Scenes," was jointly proposed by the Beijing General Artificial Intelligence Research Institute (BIGAI) and Peking University. It is a large-scale, reproducible 3D contextual question answering benchmark that uses structured scene information to replace purely visual input, systematically testing the spatial reasoning capability of models.
 
 - Project Homepage: msr3d.github.io
 
