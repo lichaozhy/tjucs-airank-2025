@@ -1,7 +1,7 @@
 ---
 title: MSQA Benchmark Evaluation Report—The Main Challenges of Structured 3D Contextual Question Answering Lie in Object Localization and Counting
 code: MSQA
-abstract: MSQA (Multi-modal Situated Question Answering), published in the **NeurIPS 2024 Datasets & Benchmarks Track**, with the paper titled "Multi-modal Situated Reasoning in 3D Scenes," was jointly proposed by the Beijing General Artificial Intelligence Research Institute (BIGAI) and Peking University. It is a large-scale, reproducible 3D contextual question answering benchmark that uses structured scene information to replace purely visual input, systematically testing the spatial reasoning capability of models.
+abstract: MSQA (Multi-modal Situated Question Answering), published in the NeurIPS 2024 Datasets & Benchmarks Track, with the paper titled "Multi-modal Situated Reasoning in 3D Scenes," is jointly proposed by the Beijing Institute for General Artificial Intelligence (BIGAI) and Peking University. It is a large-scale, reproducible 3D contextual question answering benchmark that uses structured scene information to replace purely visual input, systematically testing the spatial reasoning capability of models.
 at: 2026-1-16
 ---
 
@@ -11,7 +11,7 @@ at: 2026-1-16
 
 ### **1.1 Source**
 
-MSQA (Multi-modal Situated Question Answering), published in the NeurIPS 2024 Datasets & Benchmarks Track, with the paper titled "Multi-modal Situated Reasoning in 3D Scenes," was jointly proposed by the Beijing General Artificial Intelligence Research Institute (BIGAI) and Peking University. It is a large-scale, reproducible 3D contextual question answering benchmark that uses structured scene information to replace purely visual input, systematically testing the spatial reasoning capability of models.
+MSQA (Multi-modal Situated Question Answering), published in the NeurIPS 2024 Datasets & Benchmarks Track, with the paper titled "Multi-modal Situated Reasoning in 3D Scenes," is jointly proposed by the Beijing Institute for General Artificial Intelligence (BIGAI) and Peking University. It is a large-scale, reproducible 3D contextual question answering benchmark that uses structured scene information to replace purely visual input, systematically testing the spatial reasoning capability of models.
 
 - Project Homepage: msr3d.github.io
 
@@ -51,27 +51,27 @@ Nine task categories can be mapped to four capabilities:
 
 - **Embodied Navigation**: Navigation
 
-Each sample in the dataset contains: a multimodal context description (text/image/point cloud), 3D scene information (scene graph or point cloud representation), and a corresponding question answer. The core objective is to evaluate the model's reasoning capability under "concrete context + 3D scene constraints".
+Each sample in the dataset contains: a multimodal context description (text/image/point cloud), 3D scene information (scene graph or point cloud representation), and a corresponding question-answer. The core objective is to evaluate the model's reasoning capability under "concrete context + 3D scene constraints".
 
 Below is an example QA for an existence question.
 
 - **Question**:
 
-- **Robot Information**:
+  - **Robot Information**:
 
-- Located in a 3D kitchen scene, coordinates [-2.377, 1.276, 0.0]
+	  - Located in a 3D kitchen scene, coordinates [-2.377, 1.276, 0.0]
+	
+	  - Orientation angle is 1.726 (facing a specific direction)
+	
+	  - Current status: Emptying the trash can
 
-- Orientation angle is 1.726 (facing a specific direction)
+  - **Scene Structured Text Representation**:
 
-- Current status: Emptying the trash can
+	  - Yoga mat: Located at [-2.882, 1.72, 0.677], green, cylindrical, foam material
+	
+	  - Other items: Kitchen island, chairs, books, trash can, etc., totaling dozens of objects
 
-- **Scene Structured Text Representation**:
-
-- Yoga mat: Located at [-2.882, 1.72, 0.677], green, cylindrical, foam material
-
-- Other items: Kitchen island, chairs, books, trash can, etc., totaling dozens of objects
-
-- **Test Question**: Can I find a [yoga mat image] in front of me?
+  - **Test Question**: Can I find a [yoga mat image] in front of me?
 
 - **Standard Answer**: "no"
 
@@ -108,10 +108,10 @@ The 24 models are divided into three groups based on their source:
 |-------------------------------|------------|-----------|-----------|------------------------------|
 | Closed-Source General Knowledge | 7          | 57.29%    | 34–60%    | Claude-3.7-Sonnet (60.43%)   |
 | Embodied Models               | 7          | 35.86%    | 21–54%    | RoboBrain 2.0-32B (54.02%)   |
-| Open Source Knowledge         | 10         | 24.95%    | 0–45%     | Qwen 2.5-VL-3B (45.5%)       |
+| Open Source General Knowledge         | 10         | 24.95%    | 0–45%     | Qwen 2.5-VL-3B (45.5%)       |
 
 
-**Trend Interpretation**: Closed-source knowledge shows a clear advantage in semantic terms; embodied models have an upper limit close to the top of closed-source models, but with greater variance; open-source knowledge is generally weak, indicating that "structured 3D scenes + format constraints" remain a significant hurdle for open-source models.
+**Trend Interpretation**: Closed-Source General Knowledge shows a clear advantage in semantic terms; embodied models have an upper limit close to the top of closed-source models, but with greater variance; Open Source General Knowledge is generally weak, indicating that "structured 3D scenes + format constraints" remain a significant hurdle for open-source models.
 
 ### **2.4 Difficulty Distribution**
 
@@ -164,3 +164,7 @@ The optimal models for each task are as follows:
 ### **3.3 Performance Attribution**
 
 - **Key to High Scores**: Stable utilization of scene text structure information + object images to match the correct object information.
+
+- **Common Mistakes:** ① Incorrect or missed object identification, leading to errors; ② Unstable interpretation of spatial terms (left/right/front/back/nearest), affecting spatial relationships and navigation.
+
+- **Improvement Directions:** Introduce a "locate first, then answer" process, calculating distance/direction as an intermediate conclusion; standardize the output format (unify yes/no and numerical formats).
