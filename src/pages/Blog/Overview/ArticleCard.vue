@@ -18,7 +18,7 @@
 			@mouseleave="hover = false"
 		>
 			<q-card-section>
-				<div class="text-h6 text-weight-bold">{{ props.article.title }}</div>
+				<div class="text-h6">{{ props.article.title }}</div>
 			</q-card-section>
 			<q-card-section class="q-pt-none text-grey-8">
 				<div class="text-body2 text-justify ellipsis-2-lines">
