@@ -28,7 +28,6 @@
 			<q-card-section class="q-pt-none text-grey-6 text-caption">
 				<div class="row">
 					<div class="col-6">
-						<span class="q-mr-xs">Author:</span>{{ props.article.by }}
 					</div>
 					<div class="col-6 text-right">
 						{{ toYMD(new Date(props.article.at)) }}
