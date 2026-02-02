@@ -13,9 +13,10 @@ capabilities:
  #--- Embodied Task Planning---#
 
   ## Basic Planning
-  446d6de6-1bbc-4253-a0e2-bbf5c6a31829: 123
+  ef1b0233-b238-421e-aa68-568be1599882: 123
  ## Visual Reference Planning
   446d6de6-1bbc-4253-a0e2-bbf5c6a31829: 39
  ## Spatial Reference Planning
   446d6de6-1bbc-4253-a0e2-bbf5c6a31829: 138
 ---
+
