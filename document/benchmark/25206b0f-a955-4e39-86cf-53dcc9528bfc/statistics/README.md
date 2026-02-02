@@ -28,10 +28,10 @@ capabilities:
   #--- Embodied Reasoning ---#
 
   ## Temporal Reasoning
-  86c2b150-3c01-448c-b47e-b11fedd8f0f9: 5
+  86c2b150-3c01-448c-b47e-b11fedd8f0f9: 618
 
   #--- Embodied Navigation ---#
 
   ## Location Navigation
-  e7ee1d23-a082-4c5f-b3f6-ba90d03dbe3f: 5
+  e7ee1d23-a082-4c5f-b3f6-ba90d03dbe3f: 194
 ---
