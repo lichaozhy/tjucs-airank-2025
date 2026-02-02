@@ -8,8 +8,8 @@ organization: NVIDIA
 released:
   at:
     year: 2025
-    month: 5
-    date: 19
+    month: 3
+    date: 18
 repository: https://github.com/nvidia-cosmos/cosmos-reason1
 huggingface: https://huggingface.co/collections/nvidia/cosmos-reason1
 website: null
