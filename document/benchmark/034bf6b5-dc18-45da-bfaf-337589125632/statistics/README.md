@@ -44,12 +44,12 @@ capabilities:
   #--- Embodied Reasoning ---#
 
   ## Object Reasoning
-  c621a709-3ea4-40f9-b173-d49242e4f95c: 350
+  c621a709-3ea4-40f9-b173-d49242e4f95c: 300
   ## Task Reasoning
   9fc3620f-aae4-4fa8-8926-4c5b9a2de46b: 842
 
   #--- Embodied Navigation ---#
 
   ## Location Navigation
-  e7ee1d23-a082-4c5f-b3f6-ba90d03dbe3f: 5
+  e7ee1d23-a082-4c5f-b3f6-ba90d03dbe3f: 200
 ---
