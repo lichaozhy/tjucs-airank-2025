@@ -10,8 +10,9 @@ capabilities:
   #--- Spatial Perception ---#
 
   ## Spatial Relationship
-  446d6de6-1bbc-4253-a0e2-bbf5c6a31829: 3640
+  446d6de6-1bbc-4253-a0e2-bbf5c6a31829: 2434
  ## Spatial Distance
   55c8692a-e648-413c-b0cf-4137330ef459: 1206
 ---
+
 
