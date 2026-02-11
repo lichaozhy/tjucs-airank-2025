@@ -36,6 +36,10 @@ score:
         - 20.54
         - 6.08
         - 40.67
+        - null
+        - null
+        - null
+        - null
   summary: {}
 component:
   vision:

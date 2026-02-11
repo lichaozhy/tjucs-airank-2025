@@ -121,6 +121,8 @@ score:
         - 8.8
         - 15.95
         - 22.5714285714286
+        - null
+        - null
     a9228f2e-3191-4a08-8f03-64e73cae2e78:
       0:
         - null
@@ -335,6 +337,10 @@ score:
         - 22.16
         - 4.42
         - 33.18
+        - null
+        - null
+        - null
+        - null
       1:
         - null
         - null
@@ -633,9 +639,10 @@ score:
         - null
     b34bd93a-0809-4038-979a-37fbc0d93b38:
       legacy:
-        - 0
-        - 0
-        - 0
+        - null
+        - null
+        - null
+        - 评测有问题，暂时删除
       1:
         - null
         - null

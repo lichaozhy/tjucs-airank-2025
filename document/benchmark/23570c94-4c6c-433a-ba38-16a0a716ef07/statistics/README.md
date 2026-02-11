@@ -8,7 +8,7 @@ capabilities:
   #--- Embodied Reasoning---#
 
   ## Task Reasoning
-  446d6de6-1bbc-4253-a0e2-bbf5c6a31829: 210
+  9fc3620f-aae4-4fa8-8926-4c5b9a2de46b: 210
 
  #--- Embodied Task Planning---#
 

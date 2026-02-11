@@ -57,6 +57,10 @@ score:
         - 19.8
         - 6.9
         - 44.4
+        - null
+        - null
+        - null
+        - 7.75
     68bf8b5b-d8d4-49d7-9e7e-03e4d547189b:
       legacy:
         - 89.89
@@ -117,6 +121,7 @@ score:
         - 54.9
         - 19
         - 47.8
+        - 47.14
   summary: {}
 component:
   vision:

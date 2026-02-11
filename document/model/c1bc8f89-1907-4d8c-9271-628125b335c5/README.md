@@ -70,6 +70,8 @@ score:
         - 0
         - 0
         - 0.697142857
+        - null
+        - null
     034bf6b5-dc18-45da-bfaf-337589125632:
       0:
         - null
@@ -416,6 +418,10 @@ score:
         - 17.58
         - 5.32
         - 35.39
+        - null
+        - null
+        - null
+        - null
     cbb64d1c-4377-4231-a465-73ffb10972c5:
       0:
         - null
@@ -864,9 +870,10 @@ score:
         - null
     b34bd93a-0809-4038-979a-37fbc0d93b38:
       legacy:
-        - 20
-        - 1.02
-        - 10.51
+        - 19.14
+        - 11.56
+        - 15.35
+        - null
       1:
         - null
         - null

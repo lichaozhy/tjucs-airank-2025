@@ -12,8 +12,7 @@ qa:
   - 2D
 dimension:
   - 2D
-website: 
-  https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-0-flash
+website: https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-0-flash
 navigation: true
 taskPlanning: true
 reason: true
@@ -120,6 +119,8 @@ score:
         - 28.58
         - 38.37
         - 48.3571428571429
+        - null
+        - null
     25206b0f-a955-4e39-86cf-53dcc9528bfc:
       0:
         - 59.55
@@ -500,6 +501,10 @@ score:
         - 16
         - 6.82
         - 42.1
+        - null
+        - null
+        - null
+        - null
     27e481d6-6057-49dc-ad80-529f9127245f:
       0:
         - null
@@ -999,6 +1004,9 @@ score:
         - 39.05
         - 36.26
         - 42.77
+        - 38.874
+        - null
+        - null
     d696c0e0-3b22-4d18-ba41-54d40f58228e:
       1:
         - 89.6
@@ -1052,6 +1060,7 @@ score:
         - 48.9
         - 27.1
         - 49.5
+        - 49.14
     d6684924-f854-4e4b-87c5-0f7c724e4d61:
       1:
         - 72.4
@@ -1098,7 +1107,10 @@ score:
         - 50.53
         - 92.97
         - 42.52
-        - 54.7827866362946
+        - 54.78278664
+        - 63.2733333333334
+        - null
+        - 5.75
   summary:
     d6ba913a-6e26-4dcc-b192-04b9bee6fd8e:
       0:

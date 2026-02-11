@@ -14,8 +14,7 @@ qa:
   - 2D
 dimension:
   - 2D
-website: 
-  https://huggingface.co/collections/Qwen/qwen25-vl-6795ffac22b334a837c0f9a5
+website: https://huggingface.co/collections/Qwen/qwen25-vl-6795ffac22b334a837c0f9a5
 navigation: true
 taskPlanning: true
 reason: true
@@ -122,6 +121,8 @@ score:
         - 2.8
         - 16.67
         - 21.9742857142857
+        - null
+        - null
     25206b0f-a955-4e39-86cf-53dcc9528bfc:
       0:
         - 47.66
@@ -502,6 +503,10 @@ score:
         - 16
         - 6.3
         - 39.5
+        - null
+        - null
+        - null
+        - null
     27e481d6-6057-49dc-ad80-529f9127245f:
       0:
         - null
@@ -919,9 +924,10 @@ score:
         - null
     b34bd93a-0809-4038-979a-37fbc0d93b38:
       legacy:
-        - 39.36
-        - 14.03
-        - 26.695
+        - 43.07
+        - 8.06
+        - 25.565
+        - null
       1:
         - null
         - null
@@ -1000,6 +1006,9 @@ score:
         - 46.16
         - 62.76
         - 49.19
+        - 44.288
+        - null
+        - null
     d6684924-f854-4e4b-87c5-0f7c724e4d61:
       1:
         - 53.89
@@ -1046,7 +1055,10 @@ score:
         - 18.16
         - 91.96
         - 28.81
-        - 36.3349490994518
+        - 36.3349491
+        - 43.4633333333333
+        - null
+        - null
   summary:
     d6ba913a-6e26-4dcc-b192-04b9bee6fd8e:
       0:
