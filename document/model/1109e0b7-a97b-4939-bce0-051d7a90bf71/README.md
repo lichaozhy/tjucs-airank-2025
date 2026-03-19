@@ -64,7 +64,7 @@ score:
         - null
         - null
         - null
-        - 53.5
+        - null
         - null
         - null
       1:
@@ -104,7 +104,7 @@ score:
         - null
         - null
         - null
-        - 57.10697674418605
+        - 57.10697674
         - null
         - null
       1:
@@ -132,7 +132,7 @@ score:
         - null
         - null
         - null
-        - 57.10697674418605
+        - 57.10697674
 component:
   vision:
     - unsigned
