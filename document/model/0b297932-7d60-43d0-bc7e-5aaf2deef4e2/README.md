@@ -1,13 +1,6 @@
 ---
 name: KnowinBrain
 code: knowinbrain
-component:
-  vision:
-    - null
-  language:
-    - null
-size:
-  - null
 author:
   - KNOWIN
 qa:
