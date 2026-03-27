@@ -6,8 +6,6 @@ component:
     - GPT-5.2
   vision:
     - unsigned
-size:
-  - /
 author:
   - OpenAI
 qa:
