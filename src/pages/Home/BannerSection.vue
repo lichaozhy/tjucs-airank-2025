@@ -9,34 +9,62 @@
 			style="z-index: 0"
 		></div>
 		<div
-			class="text-white text-center q-pa-xl relative-position"
+			class="text-white text-center q-pa-xl column items-center"
 			style="z-index: 1"
 		>
-			<h1 class="text-weight-bolder">{{ data.title }}</h1>
-			<h2 class="">{{ data.subtitle }}</h2>
-			<h5 class="text-weight-light">{{ data.slogan }}</h5>
+			<h1 class="text-weight-bolder q-my-xl">{{ data.title }}</h1>
+			<h2 class="q-my-lg">{{ data.subtitle }}</h2>
+			<h5 class="text-weight-light q-my-md">{{ data.slogan }}</h5>
 
-			<div class="row justify-center q-my-xl">
-				<q-btn
-					class="q-ma-md q-px-xl"
-					size="xl"
-					label="Join Evaluation"
-					outline
-					square
-					:to="{
-						name: 'app.googleform',
-						params: { id: 'CLAcMUbvU7TsNeKD8' },
-						query: { height: 2157 },
-					}"
-				></q-btn>
-				<q-btn
-					class="q-ma-md q-px-xl"
-					size="xl"
-					label="View Leaderboards →"
-					outline
-					square
-					:to="{ name: 'app.leaderboard.capability' }"
-				></q-btn>
+			<div style="max-width: 900px;" class="q-my-lg">
+				<div class="row justify-center q-col-gutter-lg">
+					<div class="col-6">
+						<q-btn
+							class="full-width"
+							size="xl"
+							label="Join Evaluation"
+							outline
+							square
+							:to="{
+								name: 'app.googleform',
+								params: { id: 'CLAcMUbvU7TsNeKD8' },
+								query: { height: 2157 },
+							}"
+						></q-btn>
+					</div>
+					<div class="col-6">
+						<q-btn
+							class="full-width"
+							size="xl"
+							label="View Leaderboards →"
+							outline
+							square
+							:to="{ name: 'app.leaderboard.capability' }"
+						></q-btn>
+					</div>
+					<div class="col-6">
+						<q-btn
+							class="full-width"
+							size="xl"
+							label="opensource framework"
+							square
+							outline
+							style="background-color: rgba(255,255,255,.3) !important;"
+							href="https://github.com/lichaozhy/tjucs-airank-2025"
+						></q-btn>
+					</div>
+					<div class="col-6">
+						<q-btn
+							class="full-width"
+							size="xl"
+							label="red note reports"
+							square
+							outline
+							style="background-color: rgba(255,255,255,.3) !important;"
+							href="https://www.xiaohongshu.com/explore/698419b1000000001a022244?xsec_token=ABTJTjQVWVEgYb6JzlxyML85W0Y-0p9_sIgAPFdq8cl10=&xsec_source=pc_user"
+						></q-btn>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
