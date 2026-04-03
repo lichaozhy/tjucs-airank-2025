@@ -16,7 +16,7 @@
 			<h2 class="">{{ data.subtitle }}</h2>
 			<h5 class="text-weight-light">{{ data.slogan }}</h5>
 
-			<div class="row justify-center q-my-xl">
+			<div class="row justify-center q-mt-xl">
 				<q-btn
 					class="q-ma-md q-px-xl"
 					size="xl"
@@ -36,6 +36,24 @@
 					outline
 					square
 					:to="{ name: 'app.leaderboard.capability' }"
+				></q-btn>
+			</div>
+			<div class="row justify-center">
+				<q-btn
+					class="q-ma-md q-px-xl"
+					size="xl"
+					label="github"
+					outline
+					square
+					href="https://github.com/lichaozhy/tjucs-airank-2025"
+				></q-btn>
+				<q-btn
+					class="q-ma-md q-px-xl"
+					size="xl"
+					label="red note"
+					outline
+					square
+					href="https://www.xiaohongshu.com/explore/698419b1000000001a022244?xsec_token=ABTJTjQVWVEgYb6JzlxyML85W0Y-0p9_sIgAPFdq8cl10=&xsec_source=pc_user"
 				></q-btn>
 			</div>
 		</div>
