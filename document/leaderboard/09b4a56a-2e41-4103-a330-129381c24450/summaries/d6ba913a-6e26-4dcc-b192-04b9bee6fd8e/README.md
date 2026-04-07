@@ -45,10 +45,10 @@ properties:
       benchmark: a9228f2e-3191-4a08-8f03-64e73cae2e78
       key: Total
   - type: reference
-    label: VABench-Point
+    label: EmbSpatial
     sorting: desc
     ref:
-      benchmark: 089294d0-59db-47f0-a543-19d8e3708448
+      benchmark: 27afbbf0-907a-4211-82a0-3a7cbfdc9af9
       key: Total
   - type: reference
     label: Cosmos
@@ -57,10 +57,10 @@ properties:
       benchmark: 23570c94-4c6c-433a-ba38-16a0a716ef07
       key: Total
   - type: reference
-    label: EmbSpatial
+    label: VABench-Point
     sorting: desc
     ref:
-      benchmark: 27afbbf0-907a-4211-82a0-3a7cbfdc9af9
+      benchmark: 089294d0-59db-47f0-a543-19d8e3708448
       key: Total
 models:
   6d2b9e8a-97ff-400f-8ea1-f403c7452408: true
