@@ -9,7 +9,7 @@ component:
 size:
   - 8
 author:
-  - New York University & Stanford University
+  - NYU & Stanford
 qa:
   - 2D
 dimension:
@@ -42,7 +42,7 @@ score:
         - 64.45
         - 72.48
         - 42.59
-        - 69.135
+        - 69.13499999999999
     ba0be521-6b10-4881-964c-97cd4d2d6070:
       legacy:
         - 43.83

@@ -45,59 +45,35 @@ properties:
       benchmark: a9228f2e-3191-4a08-8f03-64e73cae2e78
       key: Total
   - type: reference
-    label: MineAnyBuild
-    sorting: desc
-    ref:
-      benchmark: b9a18add-a3fb-4893-89e3-ddeea8053ce2
-      key: Total
-  - type: reference
-    label: PhyBlock
-    sorting: desc
-    ref:
-      benchmark: 27e481d6-6057-49dc-ad80-529f9127245f
-      key: Total
-  - type: reference
     label: VABench-Point
     sorting: desc
     ref:
       benchmark: 089294d0-59db-47f0-a543-19d8e3708448
       key: Total
   - type: reference
-    label: EA-Temporal-Auto-20251020
+    label: Cosmos
     sorting: desc
     ref:
-      benchmark: b34bd93a-0809-4038-979a-37fbc0d93b38
+      benchmark: 23570c94-4c6c-433a-ba38-16a0a716ef07
       key: Total
   - type: reference
-    label: Beacon3D-QA(2D)
+    label: EmbSpatial
     sorting: desc
     ref:
-      benchmark: 6dcb903d-e649-440b-9ca6-449018d4a9c6
-      key: Total
-  - type: reference
-    label: OST-Bench
-    sorting: desc
-    ref:
-      benchmark: d696c0e0-3b22-4d18-ba41-54d40f58228e
-      key: Total
-  - type: reference
-    label: MSQA
-    sorting: desc
-    ref:
-      benchmark: d6684924-f854-4e4b-87c5-0f7c724e4d61
+      benchmark: 27afbbf0-907a-4211-82a0-3a7cbfdc9af9
       key: Total
 models:
   6d2b9e8a-97ff-400f-8ea1-f403c7452408: true
   f0fc7970-1e20-4ea2-a5fd-65ed7dd6802a: true
   24608772-82fc-4750-94ba-a0f87e2c1198: true
-  af35bb7c-f716-47a0-bcce-2f045a108735: true
+  # af35bb7c-f716-47a0-bcce-2f045a108735: true
   b585f486-bac8-40d9-bcdb-3b7642bd7be9: true
   74443d95-8883-40ab-b4bd-8e7b184ebe54: true
   3cfdaff3-8301-4951-9f3b-cf8134b4ed10: true
   4e387c03-f76e-43e0-9d9c-d80f05e40ed4: true
-  b30fbf25-94f2-4c76-9780-7c65e4cd5afc: true
-  75789724-6a39-462a-8974-e2d43d51cfc9: true
-  dea72f07-4d45-49bf-bfa6-09c7d328246d: true
+  # b30fbf25-94f2-4c76-9780-7c65e4cd5afc: true
+  # 75789724-6a39-462a-8974-e2d43d51cfc9: true
+  # dea72f07-4d45-49bf-bfa6-09c7d328246d: true
   aef63eca-3dde-495a-a922-c803d956568f: true
   cb6e23ea-bc8a-4bef-91d6-ba174280faaf: true
   ec713a22-e012-4acb-8567-c7bbff7c70a2: true
@@ -112,15 +88,18 @@ models:
   b9ca147e-9348-4ba4-83c3-0bd72314829f: true
   310fd4bf-e228-4347-9e8f-e1d14d63b2ed: true
   c1bc8f89-1907-4d8c-9271-628125b335c5: true
-  ecde821e-40e3-4a5d-87d5-cfa95773f1f8: true
+  # ecde821e-40e3-4a5d-87d5-cfa95773f1f8: true
   a7bde639-b09a-4cbf-a647-cbde9a634e6c: true
   612f8ddc-e0fe-40fd-b421-493d3207516e: true
   92d4cbaa-6c97-49cf-bcdf-142184b65bab: true
-  40091c74-11dd-4d7f-8bf8-779bd16fe19c: true
+  # 40091c74-11dd-4d7f-8bf8-779bd16fe19c: true
   52520d32-ef00-493d-90da-b669383aa881: true
   f234ef47-e6a1-4843-a7b2-77ed2278ae60: true
   e23581ee-c62a-4fd8-b474-e2c5286afb87: true
   e58506c6-3268-45e8-a68a-681b1cb11283: true
   b9c04dd4-d5f9-4184-9333-50efd99d4da2: true
   0b297932-7d60-43d0-bc7e-5aaf2deef4e2: true
+  9c511336-a216-4f94-9f5d-02a2e874e773: true
+  871b62cc-4940-4f53-a497-5008c2b7d11d: true
+  866fd032-0a4d-4071-a603-30d871e040da: true
 ---

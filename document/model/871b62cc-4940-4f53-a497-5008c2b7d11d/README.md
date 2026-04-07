@@ -1,32 +1,40 @@
 ---
-name: ChatScene
-code: chatscene
+name: RynnBrain-8B
+code: rynnbrain
 component:
-  vision:
-    - Mask3D
   language:
-    - Vicuna-7B-v1.5
+    - Qwen3-VL
+  vision:
+    - null
+size:
+  - 9
 author:
-  - Zhejiang University
+  - Alibaba-DAMO-Academy
 qa:
-  - 3D
+  - 2D
 dimension:
-  - 3D
-website: https://github.com/ZzZZCHS/Chat-Scene
-navigation: false
-taskPlanning: false
-reason: false
+  - 2D
+website: https://huggingface.co/Alibaba-DAMO-Academy/RynnBrain-8B
+navigation: true
+taskPlanning: true
+reason: true
 opensource: true
 release:
-  year: 2024
-category: general
-imageVideo: Point Clouds
+  year: 2026
+category: embodied
+imageVideo: image/video
+
 score:
   benchmark:
-    8b56c6cf-becf-4bef-b612-1804d2f20cda:
+    23570c94-4c6c-433a-ba38-16a0a716ef07:
       legacy:
-        - 54.6
-        - 54.6
+        - null
+        - null
+        - null
+        - null
+        - 54.84
+        - null
+        - null
       1:
         - null
         - null
@@ -41,13 +49,13 @@ score:
         - null
         - null
         - null
-        - 54.6
         - null
         - null
         - null
-        - null
-        - null
-        - null
+        - 75.24
+        - 61.79
+        - 35.9
+        - 25.36
         - null
         - null
         - null
@@ -58,62 +66,26 @@ score:
         - null
         - null
         - null
-        - 54.6
+        - 75.24
         - null
+        - 41.016666666666666
         - null
-        - null
-    e0465aba-17b0-4f34-9aa4-345c9bacdac2:
+    27afbbf0-907a-4211-82a0-3a7cbfdc9af9:
       legacy:
-        - 87.7
-        - 21.6
-        - 54.650000000000006
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 81.46
       1:
         - null
         - null
         - null
         - null
-        - null
-        - null
-        - 21.6
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-      0:
-        - null
-        - 21.6
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-    df46aa1a-099f-4841-bc02-ba9608e18c7d:
-      legacy:
-        - 77.1
-        - 36.3
-        - 77.1
-      1:
-        - null
-        - null
-        - null
-        - null
-        - 77.1
-        - null
+        - 87.39
+        - 69.49
         - null
         - null
         - null
@@ -135,36 +107,269 @@ score:
         - null
       0:
         - null
-        - 77.1
+        - 78.44
         - null
         - null
         - null
         - null
         - null
         - null
-    bb0cf73e-8e66-46f9-8880-3b4160a5feb4:
+    ba0be521-6b10-4881-964c-97cd4d2d6070:
       legacy:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 57.06
+        - null
+        - null
+      1:
+        - 53.03
+        - 70.31
+        - 63
+        - null
+        - null
+        - null
+        - 47.91
+        - null
+        - null
+        - null
+        - 54.93
+        - null
+        - null
+        - 49.43
+        - null
+        - 60.83
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      0:
+        - 62.11333333333334
+        - 47.91
+        - null
+        - 54.93
+        - 55.129999999999995
+        - null
+        - null
+        - null
+    034bf6b5-dc18-45da-bfaf-337589125632:
+      legacy:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 49.68
+        - null
+      1:
+        - 51.67
+        - 58.57
+        - 63.42
+        - null
+        - 47.73
+        - null
+        - null
+        - null
+        - 50.83
+        - 54.34
+        - 55.01
+        - 29.68
+        - 63.76
+        - null
+        - null
+        - null
+        - 17.89
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 45
+        - null
+      0:
+        - 57.88666666666668
+        - 47.73
+        - 52.585
+        - 42.345
+        - 40.825
+        - 45
+        - null
+        - null
+    a9228f2e-3191-4a08-8f03-64e73cae2e78:
+      legacy:
+        - 75.48
+        - 75.48
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 75.48
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      0:
+        - null
+        - null
+        - null
+        - 75.48
+        - null
+        - null
+        - null
+        - null
+    5df5ca38-7ca9-4d35-81c6-3dfe52700755:
+      legacy:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 40.4
+      1:
+        - 38.24
+        - null
+        - 49.09
+        - null
+        - 37.84
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 36.9
+        - 46.97
+        - null
+        - 49.13
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+      0:
+        - 43.665000000000006
+        - 37.84
+        - null
+        - null
+        - 44.333333333333336
+        - null
+        - null
+        - null
+    25206b0f-a955-4e39-86cf-53dcc9528bfc:
+      legacy:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 67.55
+      1:
+        - null
+        - 75.74
+        - null
+        - 72.65
+        - 83.03
+        - 57.46
+        - null
+        - 70.24
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 76.86
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 45.88
+        - null
+      0:
+        - 74.195
+        - 70.24333333333334
+        - null
+        - null
+        - 76.86
+        - 45.88
+        - null
+        - null
+    ed3fc303-b421-4e73-936a-e93a5aada777:
+      legacy:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 64.31
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 53.92
+        - null
+        - null
+        - 75.55
+        - null
+        - null
+        - null
+        - null
+        - 67.26
         - 55.5
-        - 55.5
-      1:
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - 55.5
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
         - null
         - null
         - null
@@ -174,53 +379,18 @@ score:
         - null
       0:
         - null
+        - null
+        - 53.92
+        - 75.55
+        - 67.26
+        - null
         - 55.5
         - null
-        - null
-        - null
-        - null
-        - null
-        - null
-    e75dcf1e-54fa-48ca-83d0-7f01cff7e949:
+    089294d0-59db-47f0-a543-19d8e3708448:
       legacy:
-        - 57.1
-        - 57.1
-      1:
         - null
         - null
-        - null
-        - null
-        - null
-        - null
-        - 57.1
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-      0:
-        - null
-        - 57.1
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-    7b7d97b2-c603-4cf1-8875-925b3bd4393c:
+    b34bd93a-0809-4038-979a-37fbc0d93b38:
       1:
         - null
         - null
@@ -230,8 +400,8 @@ score:
         - null
         - null
         - null
-        - null
-        - null
+        - 61.82
+        - 33.87
         - null
         - null
         - null
@@ -250,74 +420,28 @@ score:
       0:
         - null
         - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-    65daecd1-5419-47ea-9a52-3072f84eb122:
-      1:
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-      0:
-        - null
-        - null
-        - null
+        - 47.845
         - null
         - null
         - null
         - null
         - null
   summary:
-    22d6526a-6707-4a1e-ae3d-9c337feba2e8:
+    d6ba913a-6e26-4dcc-b192-04b9bee6fd8e:
       0:
-        - null
-        - 63.51988499
-        - null
-        - null
-        - 54.6
-        - null
-        - null
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
         - null
       1:
         - null
         - null
         - null
         - null
-        - 77.1
-        - null
-        - 49.93976999
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - 54.6
         - null
         - null
         - null
@@ -328,5 +452,15 @@ score:
         - null
         - null
         - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 0.0
         - null
 ---

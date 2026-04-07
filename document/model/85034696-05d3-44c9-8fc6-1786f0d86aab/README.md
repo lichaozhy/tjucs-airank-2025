@@ -121,7 +121,7 @@ score:
         - 54.9
         - 19
         - 47.8
-        - 47.14
+        - 47.13999999999999
   summary: {}
 component:
   vision:
