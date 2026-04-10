@@ -50,7 +50,7 @@
 							square
 							outline
 							style="background-color: rgba(255,255,255,.3) !important;"
-							href="https://github.com/lichaozhy/tjucs-airank-2025"
+							href="https://github.com/EmbodiedArena/embodied-arena"
 						></q-btn>
 					</div>
 					<div class="col-6">
