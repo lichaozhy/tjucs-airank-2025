@@ -69,39 +69,39 @@ score:
         - null
     034bf6b5-dc18-45da-bfaf-337589125632:
       0:
-        - 29.873333333333335
-        - 30.18
-        - 40.39
-        - 49.92
-        - 30.9625
-        - 45.67
         - null
         - null
-      1:
-        - 19.82
-        - 36.09
-        - 33.71
-        - null
-        - 30.18
-        - null
-        - null
-        - null
-        - 41.71
-        - 39.07
-        - 50.41
-        - 49.43
-        - 38.43
-        - null
-        - null
-        - null
-        - 23.495
         - null
         - null
         - null
         - null
         - null
         - null
-        - 45.67
+      1:
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
         - null
       legacy:
         - 19.82
@@ -242,30 +242,16 @@ score:
         - 6.7
     25206b0f-a955-4e39-86cf-53dcc9528bfc:
       0:
-        - 46.68
-        - 39.17451209
         - null
         - null
-        - 25.08
-        - 38.04
+        - null
+        - null
+        - null
+        - null
         - null
         - null
       1:
         - null
-        - 48.24
-        - null
-        - 45.12
-        - 43.01
-        - 34.38353627
-        - null
-        - 40.13
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - 25.08
         - null
         - null
         - null
@@ -274,7 +260,21 @@ score:
         - null
         - null
         - null
-        - 38.04
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
         - null
       legacy:
         - 45.12
@@ -884,16 +884,16 @@ score:
         - null
         - null
         - null
-        - 41.5
-        - null
-        - null
-        - 70.66666667
         - null
         - null
         - null
         - null
-        - 51.62364865
-        - 48
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
         - null
         - null
         - null
@@ -904,11 +904,11 @@ score:
       0:
         - null
         - null
-        - 41.5
-        - 70.66666667
-        - 51.62364865
         - null
-        - 48
+        - null
+        - null
+        - null
+        - null
         - null
       legacy:
         - 70.67
@@ -1129,39 +1129,39 @@ score:
   summary:
     d6ba913a-6e26-4dcc-b192-04b9bee6fd8e:
       0:
-        - 38.26190612
-        - 31.58076138
-        - 37.27781052
-        - 54.11459676
-        - 23.36958923
-        - 40.61654822
-        - 34.224
+        - 42.7096875687323
+        - 33.5378519593614
+        - 32.84
+        - 53.96716937354989
+        - 19.55358842965656
+        - 39.32
+        - 13.56
         - null
       1:
-        - 25.42902549
-        - 43.29082766
-        - 42.39285071
-        - 41.93492063
-        - 40.16950926
-        - 34.38353627
+        - 37.93598253275109
+        - 51.74689655172414
+        - 40.6357328990228
+        - 34.85
+        - 47.05694835680752
+        - null
         - 11.64
-        - 40.13
-        - 36.06631835
-        - 38.48930269
-        - 46.94844794
-        - 61.28074559
-        - 38.43
-        - 22.99442913
+        - null
+        - 28.58
+        - 37.1
+        - 43.24768292682927
+        - 58.36702922077922
+        - null
+        - 22.99442913385827
         - 46.97
-        - 29.28385768
-        - 35.72270405
-        - 48.0
+        - 29.28385767790262
+        - 49.09272727
+        - null
         - null
         - 13.56
         - null
         - null
         - 39.32
-        - 41.91309645
+        - null
         - null
     2e5899bb-60bb-43d0-8ce0-fd186d66b3fb:
       0:
