@@ -1,8 +1,8 @@
 ---
-name: WallBrain
+name: Wall-Brain-Preview
 code: wallbrain
 author:
-  - null
+  - X Square Robot
 qa:
   - null
 dimension:
