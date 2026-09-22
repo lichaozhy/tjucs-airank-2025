@@ -1,29 +1,21 @@
 ---
-name: Embodied-R1.5
-code: embodied-r1.5
-component:
-  language:
-    - Qwen3-VL
-  vision:
-    - null
-size:
-  - 9
+name: KnowinBrain-1.5
+code: knowinbrain-1_5
 author:
-  - Tianjin University
+  - KNOWIN
 qa:
-  - 2D
+  - null
 dimension:
-  - 2D
-website: https://embodied-r.github.io
-navigation: true
-taskPlanning: true
-reason: true
-opensource: true
+  - null
+website: null
+navigation: null
+taskPlanning: null
+reason: null
+opensource: null
 release:
-  year: 2025
+  year: 2026
 category: embodied
-imageVideo: image/video
-
+imageVideo: null
 score:
   benchmark:
     23570c94-4c6c-433a-ba38-16a0a716ef07:
@@ -32,7 +24,7 @@ score:
         - null
         - null
         - null
-        - 68.63
+        - 66.47
         - null
         - null
       1:
@@ -52,10 +44,10 @@ score:
         - null
         - null
         - null
-        - 80.48
-        - 73.98
+        - 75.24
+        - 73.17
         - 58.97
-        - 48.55
+        - 50.72
         - null
         - null
         - null
@@ -66,9 +58,9 @@ score:
         - null
         - null
         - null
-        - 80.48
+        - 75.24
         - null
-        - 60.5
+        - 60.953333333333326
         - null
     27afbbf0-907a-4211-82a0-3a7cbfdc9af9:
       legacy:
@@ -78,14 +70,14 @@ score:
         - null
         - null
         - null
-        - 76.43
+        - 83.76
       1:
         - null
         - null
         - null
         - null
-        - 82.83
-        - 63.52
+        - 90.35
+        - 70.48
         - null
         - null
         - null
@@ -107,7 +99,7 @@ score:
         - null
       0:
         - null
-        - 73.175
+        - 80.41499999999999
         - null
         - null
         - null
@@ -123,26 +115,26 @@ score:
         - null
         - null
         - null
-        - 62.96
+        - 66.32
         - null
         - null
       1:
-        - 60.28
-        - 75.94
-        - 73.51
+        - 63.1
+        - 79.06
+        - 76.98
         - null
         - null
         - null
-        - 62.83
+        - 61.41
         - null
         - null
         - null
-        - 58.57
+        - 64.08
         - null
         - null
-        - 46.02
+        - 53.98
         - null
-        - 60.83
+        - 65.44
         - null
         - null
         - null
@@ -153,11 +145,11 @@ score:
         - null
         - null
       0:
-        - 69.91000000000001
-        - 62.83
+        - 73.04666666666667
+        - 61.41
         - null
-        - 58.57
-        - 53.425
+        - 64.08
+        - 59.709999999999994
         - null
         - null
         - null
@@ -175,47 +167,47 @@ score:
         - null
         - null
         - null
-        - 40.9
+        - 45.62
         - null
       1:
-        - 33.11
-        - 54.93
-        - 46.28
+        - 42.69
+        - 61.02
+        - 51.4
         - null
-        - 36.49
-        - null
-        - null
-        - null
-        - 37.89
-        - 43.18
-        - 52.34
-        - 26.33
-        - 45.57
+        - 36.26
         - null
         - null
         - null
-        - 20.92
+        - 43.83
+        - 50.37
+        - 54.44
+        - 27.9
+        - 52.29
         - null
         - null
+        - null
+        - 19.84
         - null
         - null
         - null
         - null
-        - 44.5
+        - null
+        - null
+        - 46.83
         - null
       0:
-        - 44.77333333333333
-        - 36.49
-        - 40.535
-        - 39.335
-        - 33.245000000000005
-        - 44.5
+        - 51.70333333333334
+        - 36.26
+        - 47.099999999999994
+        - 41.17
+        - 36.065
+        - 46.83
         - null
         - null
     a9228f2e-3191-4a08-8f03-64e73cae2e78:
       legacy:
-        - 77
-        - 77
+        - 75.48
+        - 75.48
       1:
         - null
         - null
@@ -228,7 +220,7 @@ score:
         - null
         - null
         - null
-        - 77
+        - 75.48
         - null
         - null
         - null
@@ -246,7 +238,7 @@ score:
         - null
         - null
         - null
-        - 77
+        - 75.48
         - null
         - null
         - null
@@ -261,25 +253,25 @@ score:
         - null
         - null
         - null
-        - 44.5
+        - 47.89
       1:
         - 55.88
         - null
-        - 47.27
+        - 52.73
         - null
-        - 24.32
-        - null
-        - null
+        - 37.84
         - null
         - null
         - null
         - null
         - null
         - null
-        - 44.05
-        - 43.94
         - null
-        - 50.76
+        - null
+        - 50
+        - 40.91
+        - null
+        - 60.82
         - null
         - null
         - null
@@ -289,11 +281,11 @@ score:
         - null
         - null
       0:
-        - 51.575
-        - 24.32
+        - 54.305
+        - 37.84
         - null
         - null
-        - 46.25
+        - 50.57666666666666
         - null
         - null
         - null
@@ -307,40 +299,40 @@ score:
         - null
         - null
         - null
-        - 55.09
+        - 62.83
       1:
         - null
-        - 73.65
+        - 74.52
         - null
-        - 66.94
-        - 47.24
-        - 48.58
+        - 63.01
+        - 65.69
+        - 55.96
         - null
-        - 56.18
-        - null
-        - null
-        - null
-        - null
-        - null
-        - null
-        - 62.14
+        - 70.45
         - null
         - null
         - null
         - null
         - null
         - null
+        - 76.05
         - null
         - null
-        - 36.6
+        - null
+        - null
+        - null
+        - null
+        - null
+        - null
+        - 40.21
         - null
       0:
-        - 70.295
-        - 50.666666666666664
+        - 68.765
+        - 64.03333333333335
         - null
         - null
-        - 62.14
-        - 36.6
+        - 76.05
+        - 40.21
         - null
         - null
     ed3fc303-b421-4e73-936a-e93a5aada777:
@@ -350,7 +342,7 @@ score:
         - null
         - null
         - null
-        - 70.13
+        - 71.79
       1:
         - null
         - null
@@ -360,16 +352,16 @@ score:
         - null
         - null
         - null
-        - 58.72
+        - 62.06
         - null
         - null
-        - 79.42
+        - 80.68
         - null
         - null
         - null
         - null
-        - 76.48
-        - 61.13
+        - 73.23
+        - 64.13
         - null
         - null
         - null
@@ -380,16 +372,16 @@ score:
       0:
         - null
         - null
-        - 58.72
-        - 79.42
-        - 76.48
+        - 62.06
+        - 80.68
+        - 73.23
         - null
-        - 61.13
+        - 64.13
         - null
     089294d0-59db-47f0-a543-19d8e3708448:
       legacy:
         - null
-        - 74.33
+        - 69.67
       1:
         - null
         - null
@@ -402,7 +394,7 @@ score:
         - null
         - null
         - null
-        - 74.33
+        - 69.67
         - null
         - null
         - null
@@ -420,7 +412,7 @@ score:
         - null
         - null
         - null
-        - 74.33
+        - 69.67
         - null
         - null
         - null
@@ -428,38 +420,38 @@ score:
   summary:
     d6ba913a-6e26-4dcc-b192-04b9bee6fd8e:
       0:
-        - 59.24039780348759
-        - 59.66879487510211
-        - 43.94592693565976
-        - 63.86971875000001
-        - 50.9541916282642
-        - 40.61015228426396
-        - 60.92
+        - 62.15665031857813
+        - 67.88162302764522
+        - 49.90601962922572
+        - 64.51603125
+        - 52.56239759344598
+        - 43.57040609137055
+        - 63.07111111111111
         - null
       1:
-        - 40.75690889370932
-        - 68.15691329479769
-        - 55.39252964426878
-        - 66.94
-        - 64.0612646001797
-        - 55.1318690909091
-        - 62.83000000000001
-        - 56.18
-        - 45.48059322033898
-        - 43.18
-        - 55.12779411764706
-        - 66.2470567867036
-        - 45.57
-        - 45.47565789473685
-        - 43.94
-        - 60.82999999999999
-        - 48.07538730343623
-        - 63.31609958506224
+        - 48.28996746203904
+        - 70.9593641618497
+        - 59.98934123847168
+        - 63.01000000000001
+        - 72.24422282120395
+        - 62.32768
+        - 61.41
+        - 70.45
+        - 50.47313559322034
+        - 50.37
+        - 58.75369747899159
+        - 65.90090027700832
+        - 52.29
+        - 52.88026315789473
+        - 40.91
+        - 65.44
+        - 46.49885264997088
+        - 65.66792531120332
         - 58.97
-        - 48.55
+        - 50.72
         - null
         - null
         - null
-        - 40.61015228426396
+        - 43.57040609137055
         - null
 ---
