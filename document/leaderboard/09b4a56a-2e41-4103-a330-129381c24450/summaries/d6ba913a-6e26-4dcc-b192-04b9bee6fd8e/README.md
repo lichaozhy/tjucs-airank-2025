@@ -1,13 +1,13 @@
 ---
 name: 2D-Embodied QA Benchmarks
 properties:
+  - type: avg
+    label: Avg Score
+    sorting: desc
   - type: avg-rank
     label: Avg Rank
     sorting: asc
     fixed: 1
-  - type: avg
-    label: Total Score
-    sorting: desc
   - type: reference
     label: UniEQA
     sorting: desc
